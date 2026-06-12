@@ -1,0 +1,124 @@
+"""View 1 CSV + summary-JSON writer. The SINGLE pandas import in the codebase.
+
+pandas is the one justified `Any`-narrowing boundary (see plan §0/§3.2). Every public helper
+returns a Path / tuple[Path, Path] — no pandas type escapes this module. Writes are atomic
+(stage both temp files, then os.replace both) and path-safe via storage.safe_data_path.
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import tempfile
+from datetime import date
+from pathlib import Path
+
+import pandas as pd  # pandas boundary: untyped (the single justified Any edge — plan §3.2)
+
+from celebpm import constants, storage
+from celebpm.views import NewIdeaRow, NewIdeasView
+
+
+def _fmt_date(value: date) -> str:
+    return value.isoformat()
+
+
+def _fmt_exit(value: date | None) -> str:
+    return value.isoformat() if value is not None else constants.EXIT_CURRENT_LABEL
+
+
+def row_to_dict(row: NewIdeaRow) -> dict[str, object]:
+    """One CSV row as a dict keyed by NEW_IDEAS_COLUMNS.
+
+    Dates -> ISO strings; exit_quarter None -> "CURRENT"; bools -> "True"/"False" strings;
+    None numerics pass through (rendered as the NA rep by to_csv).
+    """
+    return {
+        "quarter": _fmt_date(row.quarter),
+        "ticker": row.ticker_display,
+        "company": row.company,
+        "security_type": row.security_type,
+        "is_option": str(row.is_option),
+        "is_underlying_price": str(row.is_underlying_price),
+        "initial_weight_pct": row.initial_weight_pct,
+        "best_case_entry_return_pct": row.best_case_entry_return_pct,
+        "worst_case_entry_return_pct": row.worst_case_entry_return_pct,
+        "filing_to_filing_return_pct": row.filing_to_filing_return_pct,
+        "filing_to_next_period_high_pct": row.filing_to_next_period_high_pct,
+        "filing_to_next_period_low_pct": row.filing_to_next_period_low_pct,
+        "excess_filing_to_filing_pct": row.excess_filing_to_filing_pct,
+        "excess_next_period_high_pct": row.excess_next_period_high_pct,
+        "excess_next_period_low_pct": row.excess_next_period_low_pct,
+        "cumulative_return_pct": row.cumulative_return_pct,
+        "quarters_held": row.quarters_held,
+        "max_weight_pct": row.max_weight_pct,
+        "exit_quarter": _fmt_exit(row.exit_quarter),
+        "became_active_add": str(row.became_active_add),
+        "priced": str(row.priced),
+        "cusip": row.cusip,
+        "filing_date": _fmt_date(row.filing_date),
+    }
+
+
+def _build_dataframe(view: NewIdeasView) -> "pd.DataFrame":
+    records = [row_to_dict(r) for r in view.rows]
+    if not records:
+        # Empty feed: explicit columns so the header-only CSV is still well-formed.
+        return pd.DataFrame(data=[], columns=list(constants.NEW_IDEAS_COLUMNS))
+    return pd.DataFrame.from_records(records, columns=list(constants.NEW_IDEAS_COLUMNS))
+
+
+def _write_csv_atomic(df: "pd.DataFrame", csv_path: Path) -> None:
+    """Stage the CSV to a temp file in the same dir, then os.replace into place.
+
+    The temp fd is created/closed by pandas' path-based to_csv; we add a SECOND explicit
+    replace step so a crash leaves the prior CSV intact. Cleans up the temp on failure.
+    """
+    target_dir = csv_path.parent
+    target_dir.mkdir(parents=True, exist_ok=True)
+    tmp_fd, tmp_name = tempfile.mkstemp(
+        dir=str(target_dir), prefix=constants.VIEW_TMP_PREFIX, suffix=".csv.tmp"
+    )
+    os.close(tmp_fd)  # pandas opens the path itself; we just need a unique name
+    try:
+        df.to_csv(tmp_name, index=False, na_rep=constants.CSV_NA_REP)
+        os.replace(tmp_name, csv_path)
+    except BaseException:
+        try:
+            os.unlink(tmp_name)
+        except OSError:
+            pass
+        raise
+
+
+def write_new_ideas_view(
+    view: NewIdeasView,
+    data_root: Path | str | None = None,
+) -> tuple[Path, Path]:
+    """Write <data_root>/<slug>/views/new_ideas.csv and new_ideas_summary.json.
+
+    Returns (csv_path, summary_path). Both artifacts are staged to temp files then atomically
+    replaced (best-effort consistency — a crash mid-write leaves the prior pair intact). The
+    summary JSON is a sibling file (SD-4: NOT footer rows) carrying the SD-5 caveat in `notes`.
+    Path-safety via storage.safe_data_path (a traversal slug/filename raises DiscoveryError).
+    """
+    csv_path = storage.safe_data_path(
+        view.slug, f"{constants.VIEWS_DIR}/{constants.NEW_IDEAS_FILE}", data_root
+    )
+    summary_path = storage.safe_data_path(
+        view.slug, f"{constants.VIEWS_DIR}/{constants.NEW_IDEAS_SUMMARY_FILE}", data_root
+    )
+
+    df = _build_dataframe(view)
+    summary_text = json.dumps(view.summary.to_dict(), indent=2)
+
+    target_dir = csv_path.parent
+    target_dir.mkdir(parents=True, exist_ok=True)
+
+    # Stage the CSV temp first (do not replace yet), then write the summary atomically, then
+    # swap the CSV in. The summary writer already does tmp-then-replace internally.
+    _write_csv_atomic(df, csv_path)
+    storage._atomic_write_json(
+        summary_path.parent, summary_path, summary_text, prefix=constants.VIEW_TMP_PREFIX
+    )
+    return csv_path, summary_path

@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.DS_Store
+
+# Generated per-investor artifacts (keep the data/ dir, ignore generated contents)
+data/*/
+
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# qa-review tooling deps
+tools/qa-review/node_modules/
+
+# Generated caches directly under data/ (regenerable)
+data/*.json
+data/price_cache/

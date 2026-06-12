@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informationTable xmlns="http://www.sec.gov/edgar/document/thirteenf/informationtable">
+  <infoTable>
+    <nameOfIssuer>GOOD FRACTIONAL CORP</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>00846U101</cusip>
+    <value>12345.00</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>100.0</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>BAD CUSIP CO</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>SHORT</cusip>
+    <value>1000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>10</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>MISSING VALUE CO</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>09247X101</cusip>
+    <value></value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>10</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>NONFINITE VALUE CO</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>17275R102</cusip>
+    <value>inf</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>10</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>MISSING SHARES CO</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>30303M102</cusip>
+    <value>5000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>NEGATIVE SHARES CO</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>38259P508</cusip>
+    <value>5000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>-10</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer></nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>02079K305</cusip>
+    <value>7000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>70</sshPrnamt>
+      <sshPrnamtType></sshPrnamtType>
+    </shrsOrPrnAmt>
+    <putCall></putCall>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>UNKNOWN PUTCALL CO</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>46625H100</cusip>
+    <value>8000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>80</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <putCall>STRADDLE</putCall>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>UNREC SSH TYPE CO</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>57636Q104</cusip>
+    <value>9000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>90</sshPrnamt>
+      <sshPrnamtType>SHARES</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+  <infoTable>
+    <nameOfIssuer>SPECIAL CHAR CUSIP CO</nameOfIssuer>
+    <titleOfClass>COM</titleOfClass>
+    <cusip>1234*6@#9</cusip>
+    <value>11000</value>
+    <shrsOrPrnAmt>
+      <sshPrnamt>110</sshPrnamt>
+      <sshPrnamtType>SH</sshPrnamtType>
+    </shrsOrPrnAmt>
+    <investmentDiscretion>SOLE</investmentDiscretion>
+  </infoTable>
+</informationTable>

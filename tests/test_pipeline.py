@@ -1,0 +1,226 @@
+"""End-to-end orchestrator integration tests (FAKE clients, tmp data_root)."""
+
+from __future__ import annotations
+
+import json
+from datetime import date
+from pathlib import Path
+
+import pytest
+
+from celebpm import constants
+from celebpm.constants import JSONObject
+from celebpm.discovery import discover_filings, latest_filing_per_period
+from celebpm.models import FilingRecord
+from celebpm.openfigi_client import MapMatch, MapResult
+from celebpm.pipeline import run_pipeline
+from tests.conftest import FakeClient, FakeMappingClient, FakePriceClient, build_series
+
+CIK = "0001777813"
+SLUG = "atreides_management"
+TODAY = date(2026, 6, 1)
+
+CUSIP_ALPHA = "00846U101"
+CUSIP_BETA = "09247X101"
+
+_FIXTURES = Path(__file__).parent / "fixtures"
+
+
+def _xml(name: str) -> str:
+    return (_FIXTURES / name).read_text(encoding="utf-8")
+
+
+def _json_fixture(name: str) -> JSONObject:
+    data = json.loads((_FIXTURES / name).read_text(encoding="utf-8"))
+    assert isinstance(data, dict)
+    return data
+
+
+def _submissions() -> tuple[JSONObject, JSONObject]:
+    return _json_fixture("submissions_sample.json"), _json_fixture("submissions_overflow.json")
+
+
+def _selected() -> list[FilingRecord]:
+    subs, ov = _submissions()
+    routes = {
+        constants.submissions_url(CIK): subs,
+        constants.submissions_overflow_url("CIK0001777813-submissions-001.json"): ov,
+    }
+    fl = discover_filings(CIK, FakeClient(routes))
+    return sorted(latest_filing_per_period(fl), key=lambda f: f.period_of_report)
+
+
+def _index_for(filing: FilingRecord) -> JSONObject:
+    # Reusable directory listing with the infoTable hint (filename matched by parser).
+    return {
+        "directory": {
+            "name": filing.filing_index_url,
+            "item": [
+                {"name": "primary_doc.xml", "type": "text"},
+                {"name": "form13fInfoTable.xml", "type": "text"},
+            ],
+        }
+    }
+
+
+def _map_result(cusip: str, ticker: str, name: str) -> MapResult:
+    return MapResult(
+        cusip=cusip,
+        matches=(
+            MapMatch(
+                ticker=ticker,
+                name=name,
+                exch_code="US",
+                security_type="Common Stock",
+                security_type2="Common Stock",
+                market_sector="Equity",
+                composite_figi="BBG000000001",
+                figi="BBG000000002",
+            ),
+        ),
+    )
+
+
+def _build_routes(
+    selected: list[FilingRecord],
+    *,
+    xml_by_period: dict[date, str],
+    raise_period: date | None = None,
+) -> FakeClient:
+    subs, ov = _submissions()
+    json_routes: dict[str, JSONObject] = {
+        constants.submissions_url(CIK): subs,
+        constants.submissions_overflow_url("CIK0001777813-submissions-001.json"): ov,
+    }
+    text_routes: dict[str, str] = {}
+    for filing in selected:
+        if raise_period is not None and filing.period_of_report == raise_period:
+            continue  # omit routes -> locate_and_fetch raises EdgarError (no route)
+        index_url = constants.filing_index_json_url(filing.filing_index_url)
+        json_routes[index_url] = _index_for(filing)
+        xml_url = filing.filing_index_url + "form13fInfoTable.xml"
+        text_routes[xml_url] = xml_by_period[filing.period_of_report]
+        if filing.amendment and filing.primary_doc:
+            # refine_amendment_type fetches the cover page (primary_doc.xml). Route a benign
+            # cover page so refine leaves amendment_type UNKNOWN + WARN (no abort).
+            cover_url = filing.filing_index_url + filing.primary_doc
+            text_routes[cover_url] = "<edgarSubmission></edgarSubmission>"
+    return FakeClient(json_routes, text_routes)
+
+
+def _price_client() -> FakePriceClient:
+    closes = {date(2023, 1, 1) + __import__("datetime").timedelta(days=7 * i): 100.0 + i for i in range(220)}
+    series = {
+        constants.SPY_BENCHMARK_SYMBOL: build_series(constants.SPY_BENCHMARK_SYMBOL, closes),
+        "ALPHA.US": build_series("ALPHA.US", closes),
+        "BETA.US": build_series("BETA.US", closes),
+    }
+    return FakePriceClient(series)
+
+
+def _figi() -> FakeMappingClient:
+    return FakeMappingClient(
+        {
+            CUSIP_ALPHA: _map_result(CUSIP_ALPHA, "ALPHA", "ALPHA CORP"),
+            CUSIP_BETA: _map_result(CUSIP_BETA, "BETA", "BETA INC"),
+        }
+    )
+
+
+def test_full_pipeline_produces_all_artifacts(tmp_path: Path) -> None:
+    selected = _selected()
+    periods = [f.period_of_report for f in selected]
+    # earliest quarter alpha-only; all later quarters alpha+beta -> BETA is a NEW.
+    xml_by_period = {periods[0]: _xml("infotable_alpha_only.xml")}
+    for p in periods[1:]:
+        xml_by_period[p] = _xml("infotable_common.xml")
+
+    edgar = _build_routes(selected, xml_by_period=xml_by_period)
+    result = run_pipeline(
+        CIK, today=TODAY, data_root=tmp_path, edgar=edgar, figi=_figi(),
+        price_client=_price_client(),
+    )
+
+    for fname in (
+        constants.FILINGS_FILE,
+        constants.POSITIONS_FILE,
+        constants.CHANGES_FILE,
+        constants.RETURNS_FILE,
+    ):
+        assert (tmp_path / SLUG / fname).exists()
+    assert (tmp_path / SLUG / constants.VIEWS_DIR / constants.NEW_IDEAS_FILE).exists()
+    assert (tmp_path / SLUG / constants.VIEWS_DIR / constants.NEW_IDEAS_SUMMARY_FILE).exists()
+
+    # internally-consistent counts
+    assert result.n_filings_parsed + result.n_filings_skipped == result.n_filings_selected
+    assert result.timeline_degraded == (result.n_filings_skipped > 0)
+    assert result.n_filings_skipped == 0
+    assert result.n_new_ideas >= 1  # BETA NEW
+
+    # result.summary matches on-disk summary JSON
+    disk = json.loads(
+        (tmp_path / SLUG / constants.VIEWS_DIR / constants.NEW_IDEAS_SUMMARY_FILE).read_text()
+    )
+    assert disk[constants.SUMMARY_KEY_TOTAL_NEW] == result.summary.total_new
+    assert result.summary.total_new == result.n_new_ideas
+
+    # CSV columns
+    import pandas as pd
+
+    df = pd.read_csv(
+        tmp_path / SLUG / constants.VIEWS_DIR / constants.NEW_IDEAS_FILE,
+        keep_default_na=False, dtype=str,
+    )
+    assert list(df.columns) == list(constants.NEW_IDEAS_COLUMNS)
+
+    # ascending period order in filings.json
+    filings_disk = json.loads((tmp_path / SLUG / constants.FILINGS_FILE).read_text())
+    written_periods = [f["period_of_report"] for f in filings_disk]
+    # storage sorts positions but writes filings in input (ascending) order
+    assert written_periods == sorted(written_periods)
+
+
+def test_single_quarter_empty_feed(tmp_path: Path) -> None:
+    selected = _selected()
+    # Keep ONLY the earliest filing -> 1 quarter -> 0 changes -> 0 NEW.
+    one = selected[:1]
+    xml_by_period = {one[0].period_of_report: _xml("infotable_alpha_only.xml")}
+    edgar = _build_routes(one, xml_by_period=xml_by_period)
+    result = run_pipeline(
+        CIK, today=TODAY, data_root=tmp_path, edgar=edgar, figi=_figi(),
+        price_client=_price_client(),
+    )
+    assert result.n_changes == 0
+    assert result.n_returns == 0
+    assert result.n_new_ideas == 0
+    csv_path = tmp_path / SLUG / constants.VIEWS_DIR / constants.NEW_IDEAS_FILE
+    import pandas as pd
+
+    df = pd.read_csv(csv_path, keep_default_na=False, dtype=str)
+    assert list(df.columns) == list(constants.NEW_IDEAS_COLUMNS)
+    assert len(df) == 0
+    disk = json.loads(
+        (tmp_path / SLUG / constants.VIEWS_DIR / constants.NEW_IDEAS_SUMMARY_FILE).read_text()
+    )
+    assert disk[constants.SUMMARY_KEY_TOTAL_NEW] == 0
+    assert disk[constants.SUMMARY_KEY_WIN_RATE_PCT] is None
+
+
+def test_bad_filing_skipped(tmp_path: Path) -> None:
+    selected = _selected()
+    periods = [f.period_of_report for f in selected]
+    xml_by_period = {periods[0]: _xml("infotable_alpha_only.xml")}
+    for p in periods[1:]:
+        xml_by_period[p] = _xml("infotable_common.xml")
+    # omit routes for the SECOND filing -> EdgarError on fetch -> skip
+    bad_period = periods[1]
+    edgar = _build_routes(selected, xml_by_period=xml_by_period, raise_period=bad_period)
+    result = run_pipeline(
+        CIK, today=TODAY, data_root=tmp_path, edgar=edgar, figi=_figi(),
+        price_client=_price_client(),
+    )
+    assert result.n_filings_skipped == 1
+    assert bad_period in result.skipped_periods
+    assert result.timeline_degraded is True
+    # pipeline still produces a CSV
+    assert (tmp_path / SLUG / constants.VIEWS_DIR / constants.NEW_IDEAS_FILE).exists()

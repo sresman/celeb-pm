@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "celebpm"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["requests>=2.31", "pandas>=2.0"]
+# pandas declared as canonical project stack (CLAUDE.md). Harmless in Prompt 1; used from Prompt 5+.
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "mypy>=1.8", "types-requests"]   # types-requests: requests has NO py.typed (v3)
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]                       # discovers exactly the `celebpm` package
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+files = ["src", "tests"]              # config/investors.json is data, not code — not type-checked
+# types-requests provides requests stubs (requests does NOT ship py.typed).
+
+# pandas ships no type stubs; confine it to view_io.py (the single justified Any boundary).
+[[tool.mypy.overrides]]
+module = ["pandas", "pandas.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]                 # tests_live/ deliberately excluded from default discovery
+addopts = "-q"
