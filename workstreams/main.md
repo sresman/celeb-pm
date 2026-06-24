@@ -4,9 +4,11 @@
 
 ---
 
-## Current State (as of June 12 2026)
+## Current State (as of June 24 2026)
 
 **Phase 1 COMPLETE.** Full investor-agnostic pipeline built and verified end-to-end (Prompts 1–6 via multi-prompt-build): EDGAR discovery → parse info-table XML → CUSIP→ticker (OpenFIGI) → QoQ diff & classification → filing-date-anchored returns + SPY → View 1 (New Ideas Feed) CSV. `mypy --strict` clean (47 files), `pytest` 526 passing; live-validated against Situational Awareness (CIK 0002045724) → 69 new ideas, full CSV + summary written. Run: `.venv/bin/python -m celebpm.pipeline <CIK> --data-root data` (with `.env` sourced).
+
+**View 2 (Conviction Tracker) COMPLETE** — built in `views.py`/`view_io.py`, wired into `run_pipeline` (writes `views/conviction_adds.csv` + `conviction_adds_summary.json` from the same in-memory `config`/`positions`/`changes`/`returns`, no extra network), and also rebuildable offline via `.venv/bin/python -m celebpm.build_views <CIK> --data-root data`. `mypy --strict` clean; `pytest` 567 passing; offline rebuild against Situational Awareness → 16 conviction adds.
 
 ---
 
@@ -23,7 +25,7 @@ Format: `path/to/spec.md` -- brief context on what's being worked on.
 
 _No active specs._ — Phase 1 of `docs/specs/13f_analysis_pipeline_spec.md` (Layer 1 + View 1) is COMPLETE. Implementation log: `docs/implementation_notes/13f_analysis_pipeline_implementation_notes.md`; deviations SD-1…SD-5 in the build workdir `spec-deviations.md`.
 
-Next spec sections (Phase 2, not started): §View 2 Conviction Tracker, §View 3 Exit Signals, §View 4 Survivors — add their paths here when work begins.
+Next spec sections (Phase 2): ~~§View 2 Conviction Tracker~~ DONE (`docs/specs/view2_conviction_tracker_spec.md`), §View 3 Exit Signals, §View 4 Survivors — add their paths here when work begins. View-2 deviations SD-V2-1…SD-V2-8 are recorded in `docs/implementation_notes/view2_conviction_tracker_implementation_notes.md`.
 
 ---
 
@@ -31,7 +33,8 @@ Next spec sections (Phase 2, not started): §View 2 Conviction Tracker, §View 3
 
 1. **Operator confirm SD-4** — View 1 summary stats are written to a sibling `new_ideas_summary.json` rather than as footer rows in `new_ideas.csv`. Confirm acceptable, or request footer rows (small follow-up).
 2. **(Optional) run the second investor** — `python -m celebpm.pipeline 0001777813 --data-root data` (Atreides, 26 quarters; first end-to-end run that exercises EODHD at volume + the OpenFIGI no-key rate limit).
-3. **Phase 2** — build View 2 (Conviction), View 3 (Exit), View 4 (Survivors): sibling builders in `views.py` + writers in `view_io.py`, consuming the existing `changes.json`/`returns.json`/`positions.json`. No pipeline changes needed.
+3. **Phase 2** — View 2 (Conviction) DONE; next is **View 3 (Exit Signals)** then **View 4 (Survivors)**: sibling builders in `views.py` + writers in `view_io.py`, consuming the existing `changes.json`/`returns.json`/`positions.json` over the same build+write wiring pattern.
+4. **Confirm SD-V2-1** — `still_held` is computed per security-chain (not per add-cycle); see `docs/implementation_notes/view2_conviction_tracker_implementation_notes.md`. Confirm per-chain, or request per-cycle (one-function change).
 
 ---
 
@@ -54,8 +57,8 @@ Full rationale: `workstreams/main-decisions.md` (2026-06-12 section).
 
 ## Key Files
 
-**Pipeline (`src/celebpm/`):** `pipeline.py` (thin end-to-end orchestrator + `python -m celebpm.pipeline` CLI) · `config_loader.py` (investors.json) · `discovery.py` (EDGAR filing discovery) · `parser.py` (info-table XML → PositionRecords) · `openfigi_client.py` + `cusip_map.py` (CUSIP→ticker) · `diff.py` (QoQ change classification) · `eodhd_client.py` + `price_cache.py` + `symbol_map.py` (prices) · `returns.py` (filing-anchored returns + SPY) · `views.py` + `view_io.py` (View 1 builder + CSV/summary writer) · `models.py` (all frozen records: FilingRecord/PositionRecord/CusipMapEntry/PositionChange/ReturnRecord + ChangeType) · `storage.py` (flat-JSON per-investor I/O) · `constants.py` · `errors.py` · `ratelimit.py` · `price_types.py`.
+**Pipeline (`src/celebpm/`):** `pipeline.py` (thin end-to-end orchestrator + `python -m celebpm.pipeline` CLI) · `config_loader.py` (investors.json) · `discovery.py` (EDGAR filing discovery) · `parser.py` (info-table XML → PositionRecords) · `openfigi_client.py` + `cusip_map.py` (CUSIP→ticker) · `diff.py` (QoQ change classification) · `eodhd_client.py` + `price_cache.py` + `symbol_map.py` (prices) · `returns.py` (filing-anchored returns + SPY) · `views.py` + `view_io.py` (View 1 + View 2 builders + CSV/summary writers) · `build_views.py` (standalone offline View 1+2 rebuild runner) · `models.py` (all frozen records: FilingRecord/PositionRecord/CusipMapEntry/PositionChange/ReturnRecord + ChangeType) · `storage.py` (flat-JSON per-investor I/O) · `constants.py` · `errors.py` · `ratelimit.py` · `price_types.py`.
 
-**Config/data:** `config/investors.json` (CIK→name/fund/slug) · outputs at `data/<slug>/{filings,positions,changes,returns}.json` + `views/new_ideas.csv` + `views/new_ideas_summary.json` · global `data/cusip_ticker_map.json`, `data/price_cache/<symbol>.json`.
+**Config/data:** `config/investors.json` (CIK→name/fund/slug) · outputs at `data/<slug>/{filings,positions,changes,returns}.json` + `views/new_ideas.csv` + `views/new_ideas_summary.json` + `views/conviction_adds.csv` + `views/conviction_adds_summary.json` · global `data/cusip_ticker_map.json`, `data/price_cache/<symbol>.json`.
 
 **Docs:** `docs/specs/13f_analysis_pipeline_spec.md` · `docs/implementation_notes/13f_analysis_pipeline_implementation_notes.md` · per-prompt handoffs in `handoffs/`.

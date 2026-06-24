@@ -23,7 +23,20 @@ Full per-prompt decision log: `docs/implementation_notes/13f_analysis_pipeline_i
 - **Orchestrator (`pipeline.py`) is thin** (compose-only): discover → parse → resolve tickers → diff → returns → View 1. Per-filing failures skip-and-warn with `timeline_degraded` surfaced; SPY-preflight failure is fatal.
 
 ### Deferred / out of scope (Phase 2+)
-- Views 2–4 (Conviction / Exit / Survivors) — consume the same `changes`/`returns`.
+- Views 3–4 (Exit / Survivors) — consume the same `changes`/`returns`. (View 2 Conviction DONE — see 2026-06-24 below.)
 - True additive-amendment merge + point-in-time historical ticker resolution.
 - SD-4 footer-rows-in-CSV (only if the operator prefers it over the sibling JSON).
 - 100%-liquidation / empty-quarter EXIT synthesis (needs the FilingRecord period list passed into `compute_changes`).
+
+---
+
+## 2026-06-24 — View 2 (Conviction Tracker) build (Prompts 1–3, multi-prompt-build)
+
+Full per-decision detail (SD-V2-1…SD-V2-8) lives in `docs/implementation_notes/view2_conviction_tracker_implementation_notes.md`. Key points:
+
+- **View 2 = one row per ACTIVE_ADD event.** Pure builder `build_conviction_adds_view` in `views.py` (reuses View-1 helpers, disk/network/pandas-free) + writer `write_conviction_adds_view` in `view_io.py`. Outputs `data/<slug>/views/conviction_adds.csv` + `conviction_adds_summary.json`.
+- **No new data fetching.** `prior_quarter_return_pct` = the prior chain entry's existing `ReturnRecord.filing_to_filing_return_pct`; `cumulative_return_since_entry_pct` = ratio of the add's vs the cycle-entry's `price_on_filing_date`. Reuses existing returns only (operator decision).
+- **Two entrypoints (operator chose "Both"):** wired into `run_pipeline` (build+write from the same in-memory inputs, no extra network) AND a standalone offline runner `python -m celebpm.build_views <CIK> --data-root data` that rebuilds View 1 + View 2 from persisted JSON.
+- **⚠️ SD-V2-1 OPEN (operator to confirm):** `still_held` is per security-CHAIN (chain's last entry at the dataset's `latest_period` and non-EXIT), NOT per add-cycle. Literal-spec reading; 2/3 QA reviewers preferred per-cycle. Locked by a test; flipping is a one-function change.
+- Mechanical deviations: `is_underlying_price` column omitted (SD-V2-2), sort tiebreak cusip/security_type (SD-V2-3), `quarters_held_before_add` counts observed not calendar quarters (SD-V2-4), "next quarter" = next chain entry (SD-V2-5), held-before-dataset = first entry of current cycle (SD-V2-6), `add_type` boundary 0.0 → AVERAGING_DOWN (SD-V2-7), `return_rec` test factory gained `price_on_filing` (SD-V2-8).
+- **Verification:** `mypy --strict` clean; `pytest` 567 passing (526 → +41 View-2 tests); offline rebuild vs Situational Awareness → 16 conviction adds.

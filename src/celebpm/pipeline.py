@@ -1,5 +1,5 @@
 """Thin end-to-end orchestrator: load_investor -> EDGAR -> parse -> OpenFIGI -> diff ->
-returns -> View 1 CSV. COMPOSE-ONLY — no business logic lives here (plan §4).
+returns -> View 1 + View 2 CSVs. COMPOSE-ONLY — no business logic lives here (plan §4).
 
 Also exposes a minimal `python -m celebpm.pipeline <cik>` runner (a runner, NOT a UI).
 """
@@ -31,8 +31,13 @@ from celebpm.parser import (
 from celebpm.price_cache import CachingPriceProvider
 from celebpm.price_types import PriceClient
 from celebpm.returns import compute_returns
-from celebpm.views import NewIdeasSummary, build_new_ideas_view
-from celebpm.view_io import write_new_ideas_view
+from celebpm.views import (
+    ConvictionAddsSummary,
+    NewIdeasSummary,
+    build_conviction_adds_view,
+    build_new_ideas_view,
+)
+from celebpm.view_io import write_conviction_adds_view, write_new_ideas_view
 
 logger = logging.getLogger(__name__)
 
@@ -54,6 +59,10 @@ class PipelineResult:
     csv_path: Path
     summary_path: Path
     summary: NewIdeasSummary
+    n_conviction_adds: int
+    conviction_csv_path: Path
+    conviction_summary_path: Path
+    conviction_summary: ConvictionAddsSummary
 
 
 def run_pipeline(
@@ -129,6 +138,13 @@ def run_pipeline(
     )
     csv_path, summary_path = write_new_ideas_view(view, data_root)
 
+    conv_view = build_conviction_adds_view(
+        config=config, positions=resolve.positions, changes=changes, returns=returns
+    )
+    conviction_csv_path, conviction_summary_path = write_conviction_adds_view(
+        conv_view, data_root
+    )
+
     n_skipped = len(skipped_periods)
     return PipelineResult(
         slug=slug,
@@ -146,6 +162,10 @@ def run_pipeline(
         csv_path=csv_path,
         summary_path=summary_path,
         summary=view.summary,
+        n_conviction_adds=len(conv_view.rows),
+        conviction_csv_path=conviction_csv_path,
+        conviction_summary_path=conviction_summary_path,
+        conviction_summary=conv_view.summary,
     )
 
 
@@ -167,10 +187,13 @@ def main(argv: list[str] | None = None) -> int:
     )
     print(
         f"positions={result.n_positions} changes={result.n_changes} "
-        f"returns={result.n_returns} new_ideas={result.n_new_ideas}"
+        f"returns={result.n_returns} new_ideas={result.n_new_ideas} "
+        f"conviction_adds={result.n_conviction_adds}"
     )
     print(f"csv={result.csv_path}")
     print(f"summary={result.summary_path}")
+    print(f"conviction_csv={result.conviction_csv_path}")
+    print(f"conviction_summary={result.conviction_summary_path}")
     return 0
 
 

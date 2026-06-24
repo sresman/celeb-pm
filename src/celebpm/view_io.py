@@ -1,4 +1,4 @@
-"""View 1 CSV + summary-JSON writer. The SINGLE pandas import in the codebase.
+"""View 1 + View 2 CSV + summary-JSON writers. The SINGLE pandas import in the codebase.
 
 pandas is the one justified `Any`-narrowing boundary (see plan §0/§3.2). Every public helper
 returns a Path / tuple[Path, Path] — no pandas type escapes this module. Writes are atomic
@@ -16,7 +16,7 @@ from pathlib import Path
 import pandas as pd  # pandas boundary: untyped (the single justified Any edge — plan §3.2)
 
 from celebpm import constants, storage
-from celebpm.views import NewIdeaRow, NewIdeasView
+from celebpm.views import ConvictionAddRow, ConvictionAddsView, NewIdeaRow, NewIdeasView
 
 
 def _fmt_date(value: date) -> str:
@@ -25,6 +25,11 @@ def _fmt_date(value: date) -> str:
 
 def _fmt_exit(value: date | None) -> str:
     return value.isoformat() if value is not None else constants.EXIT_CURRENT_LABEL
+
+
+def _fmt_optional_date(value: date | None) -> str | None:
+    """ISO string, or None (rendered as the CSV NA rep). NOT the View-1 'CURRENT' label."""
+    return value.isoformat() if value is not None else None
 
 
 def row_to_dict(row: NewIdeaRow) -> dict[str, object]:
@@ -68,16 +73,20 @@ def _build_dataframe(view: NewIdeasView) -> "pd.DataFrame":
     return pd.DataFrame.from_records(records, columns=list(constants.NEW_IDEAS_COLUMNS))
 
 
-def _write_csv_atomic(df: "pd.DataFrame", csv_path: Path) -> None:
+def _write_csv_atomic(
+    df: "pd.DataFrame", csv_path: Path, *, prefix: str = constants.VIEW_TMP_PREFIX
+) -> None:
     """Stage the CSV to a temp file in the same dir, then os.replace into place.
 
     The temp fd is created/closed by pandas' path-based to_csv; we add a SECOND explicit
     replace step so a crash leaves the prior CSV intact. Cleans up the temp on failure.
+    `prefix` names the transient temp file only (replaced away immediately); it defaults to
+    the View-1 prefix so existing callers are unchanged, and lets View 2 use a distinct one.
     """
     target_dir = csv_path.parent
     target_dir.mkdir(parents=True, exist_ok=True)
     tmp_fd, tmp_name = tempfile.mkstemp(
-        dir=str(target_dir), prefix=constants.VIEW_TMP_PREFIX, suffix=".csv.tmp"
+        dir=str(target_dir), prefix=prefix, suffix=".csv.tmp"
     )
     os.close(tmp_fd)  # pandas opens the path itself; we just need a unique name
     try:
@@ -120,5 +129,81 @@ def write_new_ideas_view(
     _write_csv_atomic(df, csv_path)
     storage._atomic_write_json(
         summary_path.parent, summary_path, summary_text, prefix=constants.VIEW_TMP_PREFIX
+    )
+    return csv_path, summary_path
+
+
+def conviction_add_row_to_dict(row: ConvictionAddRow) -> dict[str, object]:
+    """One CSV row as a dict keyed by CONVICTION_ADDS_COLUMNS.
+
+    Dates -> ISO strings; original_entry_quarter None -> None (NA rep "", NOT "CURRENT");
+    bools -> "True"/"False" strings; add_type + None numerics pass through (NA rep by to_csv).
+    """
+    return {
+        "quarter": _fmt_date(row.quarter),
+        "ticker": row.ticker_display,
+        "company": row.company,
+        "security_type": row.security_type,
+        "is_option": str(row.is_option),
+        "weight_before_pct": row.weight_before_pct,
+        "weight_after_pct": row.weight_after_pct,
+        "weight_delta_pct": row.weight_delta_pct,
+        "shares_delta_pct": row.shares_delta_pct,
+        "prior_quarter_return_pct": row.prior_quarter_return_pct,
+        "add_type": row.add_type,
+        "quarters_held_before_add": row.quarters_held_before_add,
+        "nth_add": row.nth_add,
+        "original_entry_quarter": _fmt_optional_date(row.original_entry_quarter),
+        "cumulative_return_since_entry_pct": row.cumulative_return_since_entry_pct,
+        "filing_to_filing_return_pct": row.filing_to_filing_return_pct,
+        "filing_to_next_period_high_pct": row.filing_to_next_period_high_pct,
+        "filing_to_next_period_low_pct": row.filing_to_next_period_low_pct,
+        "excess_filing_to_filing_pct": row.excess_filing_to_filing_pct,
+        "excess_next_period_high_pct": row.excess_next_period_high_pct,
+        "excess_next_period_low_pct": row.excess_next_period_low_pct,
+        "followed_by_exit": str(row.followed_by_exit),
+        "followed_by_another_add": str(row.followed_by_another_add),
+        "still_held": str(row.still_held),
+        "priced": str(row.priced),
+        "cusip": row.cusip,
+        "filing_date": _fmt_date(row.filing_date),
+    }
+
+
+def _build_conviction_dataframe(view: ConvictionAddsView) -> "pd.DataFrame":
+    records = [conviction_add_row_to_dict(r) for r in view.rows]
+    if not records:
+        # Empty feed: explicit columns so the header-only CSV is still well-formed.
+        return pd.DataFrame(data=[], columns=list(constants.CONVICTION_ADDS_COLUMNS))
+    return pd.DataFrame.from_records(records, columns=list(constants.CONVICTION_ADDS_COLUMNS))
+
+
+def write_conviction_adds_view(
+    view: ConvictionAddsView,
+    data_root: Path | str | None = None,
+) -> tuple[Path, Path]:
+    """Write <data_root>/<slug>/views/conviction_adds.csv and conviction_adds_summary.json.
+
+    Returns (csv_path, summary_path). Both artifacts are staged to temp files (prefixed with
+    CONVICTION_TMP_PREFIX so a concurrent View-1 rebuild never collides on temp names) then
+    atomically replaced. The summary JSON is a sibling file; its to_dict emits the nested
+    adding_to_winners / averaging_down objects. Path-safety via storage.safe_data_path.
+    """
+    csv_path = storage.safe_data_path(
+        view.slug, f"{constants.VIEWS_DIR}/{constants.CONVICTION_ADDS_FILE}", data_root
+    )
+    summary_path = storage.safe_data_path(
+        view.slug, f"{constants.VIEWS_DIR}/{constants.CONVICTION_ADDS_SUMMARY_FILE}", data_root
+    )
+
+    df = _build_conviction_dataframe(view)
+    summary_text = json.dumps(view.summary.to_dict(), indent=2)
+
+    target_dir = csv_path.parent
+    target_dir.mkdir(parents=True, exist_ok=True)
+
+    _write_csv_atomic(df, csv_path, prefix=constants.CONVICTION_TMP_PREFIX)
+    storage._atomic_write_json(
+        summary_path.parent, summary_path, summary_text, prefix=constants.CONVICTION_TMP_PREFIX
     )
     return csv_path, summary_path

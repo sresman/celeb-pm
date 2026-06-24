@@ -14,7 +14,10 @@ from celebpm.models import (
     PositionRecord,
     ReturnRecord,
 )
-from celebpm.views import build_new_ideas_view
+from celebpm.views import (
+    build_conviction_adds_view,
+    build_new_ideas_view,
+)
 
 CIK = "0001777813"
 CUSIP_A = "00846U101"  # ALPHABET / GOOGL-like
@@ -189,8 +192,14 @@ def return_rec(
     worst_entry: float | None = 8.0,
     cumulative: float | None = 20.0,
     change_type: ChangeType = ChangeType.NEW,
+    price_on_filing: float = 100.0,
 ) -> ReturnRecord:
     is_opt = security_type in {"PUT", "CALL"}
+    # Model invariant: entry-band fields are NEW-only. Null them for non-NEW records so the
+    # factory stays valid when used for ACTIVE_ADD/HOLD/etc. (View 2 needs non-NEW records).
+    if change_type != ChangeType.NEW:
+        best_entry = None
+        worst_entry = None
     if not priced:
         return ReturnRecord(
             cik=CIK,
@@ -239,7 +248,7 @@ def return_rec(
         next_filing_date=next_filing_date,
         priced=True,
         is_underlying_price=is_opt,
-        price_on_filing_date=100.0,
+        price_on_filing_date=price_on_filing,
         price_on_next_filing_date=110.0,
         next_period_high=115.0,
         next_period_low=95.0,
@@ -686,3 +695,690 @@ def test_duplicate_position_key_keep_first(caplog: pytest.LogCaptureFixture) -> 
         )
     assert view.rows[0].company == "FIRST"
     assert any("duplicate PositionRecord key" in r.message for r in caplog.records)
+
+
+# ======================================================================================
+# View 2 — Conviction Tracker tests
+# ======================================================================================
+
+
+def add_change(
+    *,
+    cusip: str = CUSIP_A,
+    security_type: str = "COMMON",
+    period: date,
+    filing_date: date,
+    prior_period: date,
+    prior_filing_date: date,
+    ticker: str | None = "ALPHA",
+    weight: float = 7.0,
+    prior_weight: float = 5.0,
+    shares_delta_pct: float | None = 20.0,
+) -> PositionChange:
+    """An ACTIVE_ADD with a controllable shares_delta_pct (incl. None)."""
+    return PositionChange(
+        cik=CIK,
+        period=period,
+        filing_date=filing_date,
+        prior_period=prior_period,
+        prior_filing_date=prior_filing_date,
+        cusip=cusip,
+        security_type=security_type,
+        ticker=ticker,
+        current_shares=1200,
+        current_value_reported=120000,
+        current_weight_pct=weight,
+        prior_shares=1000,
+        prior_value_reported=100000,
+        prior_weight_pct=prior_weight,
+        shares_delta=200,
+        shares_delta_pct=shares_delta_pct,
+        weight_delta_bps=(weight - prior_weight) * 100,
+        value_delta=20000,
+        value_delta_pct=20.0,
+        change_type=ChangeType.ACTIVE_ADD,
+        split_suspected=False,
+    )
+
+
+def _conv_row(view: object, quarter: date) -> object:
+    rows = {r.quarter: r for r in view.rows}  # type: ignore[attr-defined]
+    return rows[quarter]
+
+
+# 1
+def test_conviction_basic_add_row() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    ret_new = return_rec(filing_date=Q1F, period=Q1, next_filing_date=Q2F, change_type=ChangeType.NEW)
+    ret_add = return_rec(filing_date=Q2F, period=Q2, next_filing_date=Q3F, change_type=ChangeType.ACTIVE_ADD)
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add], returns=[ret_new, ret_add]
+    )
+    assert len(view.rows) == 1
+    row = view.rows[0]
+    assert row.weight_before_pct == 5.0
+    assert row.weight_after_pct == 7.0
+    assert row.weight_delta_pct == pytest.approx(2.0)
+    assert row.shares_delta_pct == 20.0
+    assert row.quarters_held_before_add == 1
+    assert row.nth_add == 1
+    assert row.original_entry_quarter == Q1
+    assert row.is_option is False
+    assert row.priced is True
+    assert row.filing_to_filing_return_pct == 10.0
+    assert row.excess_filing_to_filing_pct == pytest.approx(10.0 - 4.0)
+    assert row.excess_next_period_high_pct == pytest.approx(15.0 - 6.0)
+    assert row.excess_next_period_low_pct == pytest.approx(-5.0 - (-2.0))
+
+
+# 2
+def test_conviction_adding_to_winner() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    ret_new = return_rec(
+        filing_date=Q1F, period=Q1, next_filing_date=Q2F, f2f=10.0, change_type=ChangeType.NEW
+    )
+    ret_add = return_rec(filing_date=Q2F, period=Q2, next_filing_date=Q3F, change_type=ChangeType.ACTIVE_ADD)
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add], returns=[ret_new, ret_add]
+    )
+    row = view.rows[0]
+    assert row.prior_quarter_return_pct == 10.0
+    assert row.add_type == "ADDING_TO_WINNER"
+
+
+# 3
+def test_conviction_averaging_down() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    ret_new = return_rec(
+        filing_date=Q1F, period=Q1, next_filing_date=Q2F, f2f=-8.0, change_type=ChangeType.NEW
+    )
+    ret_add = return_rec(filing_date=Q2F, period=Q2, next_filing_date=Q3F, change_type=ChangeType.ACTIVE_ADD)
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add], returns=[ret_new, ret_add]
+    )
+    row = view.rows[0]
+    assert row.prior_quarter_return_pct == -8.0
+    assert row.add_type == "AVERAGING_DOWN"
+
+    # boundary: prior f2f == 0.0 -> AVERAGING_DOWN (<= 0)
+    ret_new0 = return_rec(
+        filing_date=Q1F, period=Q1, next_filing_date=Q2F, f2f=0.0, change_type=ChangeType.NEW
+    )
+    view0 = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add], returns=[ret_new0, ret_add]
+    )
+    assert view0.rows[0].prior_quarter_return_pct == 0.0
+    assert view0.rows[0].add_type == "AVERAGING_DOWN"
+
+
+# 4
+def test_conviction_nth_add_multiple() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add1 = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    c_hold = matched_change(
+        change_type=ChangeType.HOLD, period=Q3, filing_date=Q3F,
+        prior_period=Q2, prior_filing_date=Q2F, weight=7.0, prior_weight=7.0,
+    )
+    c_add2 = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q4, filing_date=Q4F,
+        prior_period=Q3, prior_filing_date=Q3F, weight=9.0, prior_weight=7.0,
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add1, c_hold, c_add2], returns=[]
+    )
+    assert len(view.rows) == 2
+    r2 = _conv_row(view, Q2)
+    r4 = _conv_row(view, Q4)
+    assert r2.nth_add == 1  # type: ignore[attr-defined]
+    assert r4.nth_add == 2  # type: ignore[attr-defined]
+    assert r4.quarters_held_before_add == 3  # type: ignore[attr-defined]
+
+
+# 5
+def test_conviction_original_entry_and_reentry() -> None:
+    c_new1 = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add1 = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    c_exit = exit_change(period=Q3, filing_date=Q3F, prior_period=Q2, prior_filing_date=Q2F)
+    c_new2 = new_change(period=Q4, filing_date=Q4F, prior_period=Q3, prior_filing_date=Q3F, weight=4.0)
+    c_add2 = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q5, filing_date=Q5F,
+        prior_period=Q4, prior_filing_date=Q4F, weight=6.0, prior_weight=4.0,
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new1, c_add1, c_exit, c_new2, c_add2], returns=[]
+    )
+    r2 = _conv_row(view, Q2)
+    r5 = _conv_row(view, Q5)
+    assert r2.original_entry_quarter == Q1  # type: ignore[attr-defined]
+    assert r2.nth_add == 1  # type: ignore[attr-defined]
+    assert r2.quarters_held_before_add == 1  # type: ignore[attr-defined]
+    assert r5.original_entry_quarter == Q4  # type: ignore[attr-defined]
+    assert r5.nth_add == 1  # type: ignore[attr-defined]
+    assert r5.quarters_held_before_add == 1  # type: ignore[attr-defined]
+
+
+# 6
+def test_conviction_held_before_dataset() -> None:
+    c_hold = matched_change(
+        change_type=ChangeType.HOLD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=5.0, prior_weight=5.0,
+    )
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q3, filing_date=Q3F,
+        prior_period=Q2, prior_filing_date=Q2F, weight=7.0, prior_weight=5.0,
+    )
+    ret_hold = return_rec(
+        filing_date=Q2F, period=Q2, next_filing_date=Q3F,
+        change_type=ChangeType.HOLD, price_on_filing=100.0,
+    )
+    ret_add = return_rec(
+        filing_date=Q3F, period=Q3, next_filing_date=Q4F,
+        change_type=ChangeType.ACTIVE_ADD, price_on_filing=130.0,
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_hold, c_add], returns=[ret_hold, ret_add]
+    )
+    row = view.rows[0]
+    assert row.original_entry_quarter is None
+    assert row.quarters_held_before_add == 1
+    assert row.cumulative_return_since_entry_pct == pytest.approx(30.0)
+
+
+# 7
+def test_conviction_prior_quarter_return_gap_NEW_HOLD_ADD() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_hold = matched_change(
+        change_type=ChangeType.HOLD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=5.0, prior_weight=5.0,
+    )
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q3, filing_date=Q3F,
+        prior_period=Q2, prior_filing_date=Q2F, weight=7.0, prior_weight=5.0,
+    )
+    ret_hold = return_rec(
+        filing_date=Q2F, period=Q2, next_filing_date=Q3F, f2f=5.0, change_type=ChangeType.HOLD
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_hold, c_add], returns=[ret_hold]
+    )
+    row = view.rows[0]
+    assert row.prior_quarter_return_pct == 5.0
+    assert row.add_type == "ADDING_TO_WINNER"
+
+
+# 8
+def test_conviction_cumulative_since_entry() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    ret_new = return_rec(
+        filing_date=Q1F, period=Q1, next_filing_date=Q2F,
+        change_type=ChangeType.NEW, price_on_filing=100.0,
+    )
+    ret_add = return_rec(
+        filing_date=Q2F, period=Q2, next_filing_date=Q3F,
+        change_type=ChangeType.ACTIVE_ADD, price_on_filing=150.0,
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add], returns=[ret_new, ret_add]
+    )
+    assert view.rows[0].cumulative_return_since_entry_pct == pytest.approx(50.0)
+
+
+# 9
+def test_conviction_followed_by_exit() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    c_exit = exit_change(period=Q3, filing_date=Q3F, prior_period=Q2, prior_filing_date=Q2F)
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add, c_exit], returns=[]
+    )
+    row = _conv_row(view, Q2)
+    assert row.followed_by_exit is True  # type: ignore[attr-defined]
+    assert row.followed_by_another_add is False  # type: ignore[attr-defined]
+    assert row.still_held is False  # type: ignore[attr-defined]
+
+
+# 10
+def test_conviction_followed_by_another_add() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add1 = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    c_add2 = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q3, filing_date=Q3F,
+        prior_period=Q2, prior_filing_date=Q2F, weight=9.0, prior_weight=7.0,
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add1, c_add2], returns=[]
+    )
+    r2 = _conv_row(view, Q2)
+    r3 = _conv_row(view, Q3)
+    assert r2.followed_by_another_add is True  # type: ignore[attr-defined]
+    assert r2.followed_by_exit is False  # type: ignore[attr-defined]
+    assert r3.followed_by_another_add is False  # type: ignore[attr-defined]
+
+
+# 11
+def test_conviction_still_held() -> None:
+    # security A: held through Q3 (last entry non-EXIT at latest period)
+    a_new = new_change(cusip=CUSIP_A, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    a_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_A, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    a_hold = matched_change(
+        change_type=ChangeType.HOLD, cusip=CUSIP_A, period=Q3, filing_date=Q3F,
+        prior_period=Q2, prior_filing_date=Q2F, weight=7.0, prior_weight=7.0,
+    )
+    # security B: NEW/ADD/EXIT -> exits at Q3 (still latest period, but EXIT)
+    b_new = new_change(cusip=CUSIP_B, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0, ticker="BETA")
+    b_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_B, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0, ticker="BETA",
+    )
+    b_exit = exit_change(cusip=CUSIP_B, period=Q3, filing_date=Q3F, prior_period=Q2, prior_filing_date=Q2F, ticker="BETA")
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[],
+        changes=[a_new, a_add, a_hold, b_new, b_add, b_exit], returns=[],
+    )
+    a_row = next(r for r in view.rows if r.cusip == CUSIP_A)
+    b_row = next(r for r in view.rows if r.cusip == CUSIP_B)
+    assert a_row.still_held is True
+    assert b_row.still_held is False
+
+
+# 12
+def test_conviction_unpriced_add(caplog: pytest.LogCaptureFixture) -> None:
+    import logging
+
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    with caplog.at_level(logging.WARNING):
+        view = build_conviction_adds_view(
+            config=CONFIG, positions=[], changes=[c_new, c_add], returns=[]
+        )
+    row = view.rows[0]
+    assert row.priced is False
+    assert row.filing_to_filing_return_pct is None
+    assert row.filing_to_next_period_high_pct is None
+    assert row.filing_to_next_period_low_pct is None
+    assert row.excess_filing_to_filing_pct is None
+    assert row.excess_next_period_high_pct is None
+    assert row.excess_next_period_low_pct is None
+    assert row.prior_quarter_return_pct is None
+    assert row.cumulative_return_since_entry_pct is None
+    assert row.add_type is None
+    assert row.weight_before_pct == 5.0
+    assert any(
+        "no ReturnRecord for ACTIVE_ADD" in r.message for r in caplog.records
+    )
+
+
+# 13
+def test_conviction_option_add() -> None:
+    c_new = new_change(
+        cusip=CUSIP_A, security_type="CALL", period=Q1, filing_date=Q1F,
+        prior_period=Q0, prior_filing_date=Q0F, weight=3.0,
+    )
+    c_add = add_change(
+        cusip=CUSIP_A, security_type="CALL", period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=5.0, prior_weight=3.0,
+    )
+    ret_add = return_rec(
+        cusip=CUSIP_A, security_type="CALL", filing_date=Q2F, period=Q2,
+        next_filing_date=Q3F, change_type=ChangeType.ACTIVE_ADD,
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add], returns=[ret_add]
+    )
+    row = view.rows[0]
+    assert row.is_option is True
+    assert row.filing_to_filing_return_pct == 10.0
+    assert row.excess_filing_to_filing_pct == pytest.approx(10.0 - 4.0)
+
+
+# 14
+def test_conviction_shares_delta_pct_none() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add = add_change(
+        period=Q2, filing_date=Q2F, prior_period=Q1, prior_filing_date=Q1F,
+        weight=7.0, prior_weight=5.0, shares_delta_pct=None,
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add], returns=[]
+    )
+    row = view.rows[0]
+    assert row.shares_delta_pct is None
+    assert row.weight_before_pct == 5.0
+    assert row.weight_after_pct == 7.0
+
+
+# 15
+def test_conviction_prior_unpriced_add_priced() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    # ADD priced; prior NEW unpriced.
+    ret_new = return_rec(
+        filing_date=Q1F, period=Q1, next_filing_date=Q2F, priced=False, change_type=ChangeType.NEW
+    )
+    ret_add = return_rec(filing_date=Q2F, period=Q2, next_filing_date=Q3F, change_type=ChangeType.ACTIVE_ADD)
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add], returns=[ret_new, ret_add]
+    )
+    row = view.rows[0]
+    assert row.priced is True
+    assert row.filing_to_filing_return_pct == 10.0
+    assert row.excess_filing_to_filing_pct is not None
+    assert row.excess_next_period_high_pct is not None
+    assert row.excess_next_period_low_pct is not None
+    assert row.prior_quarter_return_pct is None
+    assert row.add_type is None
+
+
+# 16
+def test_conviction_entry_unpriced_cumulative_none() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    # ADD priced; entry (NEW) record missing entirely.
+    ret_add = return_rec(filing_date=Q2F, period=Q2, next_filing_date=Q3F, change_type=ChangeType.ACTIVE_ADD)
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_add], returns=[ret_add]
+    )
+    row = view.rows[0]
+    assert row.cumulative_return_since_entry_pct is None
+    assert row.filing_to_filing_return_pct == 10.0
+    assert row.filing_to_next_period_high_pct == 15.0
+    assert row.filing_to_next_period_low_pct == -5.0
+    assert row.excess_filing_to_filing_pct is not None
+
+
+# 17
+def test_conviction_still_held_reentry() -> None:
+    c_new1 = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_add1 = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    c_exit = exit_change(period=Q3, filing_date=Q3F, prior_period=Q2, prior_filing_date=Q2F)
+    c_new2 = new_change(period=Q4, filing_date=Q4F, prior_period=Q3, prior_filing_date=Q3F, weight=4.0)
+    c_hold2 = matched_change(
+        change_type=ChangeType.HOLD, period=Q5, filing_date=Q5F,
+        prior_period=Q4, prior_filing_date=Q4F, weight=4.0, prior_weight=4.0,
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[],
+        changes=[c_new1, c_add1, c_exit, c_new2, c_hold2], returns=[],
+    )
+    # Only one ADD row (Q2); under per-CHAIN rule it reports still_held True.
+    row = _conv_row(view, Q2)
+    assert row.still_held is True  # type: ignore[attr-defined]
+
+
+# 18
+def test_conviction_ticker_company_fallback() -> None:
+    # (a) no ticker, no position -> ticker_display == cusip, company == cusip
+    c_new_a = new_change(cusip=CUSIP_A, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0, ticker=None)
+    c_add_a = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_A, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0, ticker=None,
+    )
+    view_a = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new_a, c_add_a], returns=[]
+    )
+    row_a = view_a.rows[0]
+    assert row_a.ticker_display == CUSIP_A
+    assert row_a.company == CUSIP_A
+
+    # (b) non-blank company name from the position
+    c_new_b = new_change(cusip=CUSIP_B, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0, ticker="BETA")
+    c_add_b = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_B, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0, ticker="BETA",
+    )
+    pos_b = position(cusip=CUSIP_B, period=Q2, filing_date=Q2F, company_name="BETA INC", ticker="BETA")
+    view_b = build_conviction_adds_view(
+        config=CONFIG, positions=[pos_b], changes=[c_new_b, c_add_b], returns=[]
+    )
+    row_b = view_b.rows[0]
+    assert row_b.ticker_display == "BETA"
+    assert row_b.company == "BETA INC"
+
+
+# 19
+def test_conviction_summary_split_math() -> None:
+    # 4 adds across distinct securities/periods so ReturnRecord keys are unique.
+    # winner1: prior +10 (adding-to-winner), forward +10
+    w1_new = new_change(cusip=CUSIP_A, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    w1_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_A, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    w1_new_ret = return_rec(cusip=CUSIP_A, filing_date=Q1F, period=Q1, next_filing_date=Q2F, f2f=10.0, change_type=ChangeType.NEW)
+    w1_add_ret = return_rec(cusip=CUSIP_A, filing_date=Q2F, period=Q2, next_filing_date=Q3F, f2f=10.0, f2h=20.0, change_type=ChangeType.ACTIVE_ADD)
+
+    # winner2: prior +10, forward +20
+    w2_new = new_change(cusip=CUSIP_B, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0, ticker="BETA")
+    w2_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_B, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=8.0, prior_weight=5.0, ticker="BETA",
+    )
+    w2_new_ret = return_rec(cusip=CUSIP_B, filing_date=Q1F, period=Q1, next_filing_date=Q2F, f2f=10.0, ticker="BETA", change_type=ChangeType.NEW)
+    w2_add_ret = return_rec(cusip=CUSIP_B, filing_date=Q2F, period=Q2, next_filing_date=Q3F, f2f=20.0, f2h=30.0, ticker="BETA", change_type=ChangeType.ACTIVE_ADD)
+
+    # averaging-down: prior -5, forward -5
+    d_new = new_change(cusip=CUSIP_C, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0, ticker="AAPL")
+    d_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_C, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=6.0, prior_weight=5.0, ticker="AAPL",
+    )
+    d_new_ret = return_rec(cusip=CUSIP_C, filing_date=Q1F, period=Q1, next_filing_date=Q2F, f2f=-5.0, ticker="AAPL", change_type=ChangeType.NEW)
+    d_add_ret = return_rec(cusip=CUSIP_C, filing_date=Q2F, period=Q2, next_filing_date=Q3F, f2f=-5.0, ticker="AAPL", change_type=ChangeType.ACTIVE_ADD)
+
+    # unpriced-prior add: no prior ret -> add_type None; forward +30 (in NEITHER cohort)
+    u_cusip = "459200101"
+    u_new = new_change(cusip=u_cusip, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0, ticker="IBM")
+    u_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=u_cusip, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0, ticker="IBM",
+    )
+    u_add_ret = return_rec(cusip=u_cusip, filing_date=Q2F, period=Q2, next_filing_date=Q3F, f2f=30.0, ticker="IBM", change_type=ChangeType.ACTIVE_ADD)
+
+    view = build_conviction_adds_view(
+        config=CONFIG,
+        positions=[],
+        changes=[w1_new, w1_add, w2_new, w2_add, d_new, d_add, u_new, u_add],
+        returns=[w1_new_ret, w1_add_ret, w2_new_ret, w2_add_ret, d_new_ret, d_add_ret, u_add_ret],
+    )
+    s = view.summary
+    assert s.total_adds == 4
+    assert s.priced_adds == 4
+    # forward-priced population = 4 (all add records priced); wins = +10,+20,+30 = 3 -> 75%
+    assert s.win_rate_pct == pytest.approx(75.0)
+    assert s.avg_winner_return_pct == pytest.approx((10.0 + 20.0 + 30.0) / 3)
+    assert s.avg_loser_return_pct == pytest.approx(-5.0)
+    # weight deltas: 2,3,1,2 -> mean 2.0
+    assert s.avg_weight_delta_pct == pytest.approx((2.0 + 3.0 + 1.0 + 2.0) / 4)
+    assert s.adding_to_winners.count == 2
+    assert s.averaging_down.count == 1
+    # winners cohort forward: +10,+20 -> 100% win, avg 15, avg f2h (20,30)->25
+    assert s.adding_to_winners.win_rate_pct == pytest.approx(100.0)
+    assert s.adding_to_winners.avg_return_pct == pytest.approx(15.0)
+    assert s.adding_to_winners.avg_next_period_high_pct == pytest.approx(25.0)
+    # averaging-down cohort forward: -5 -> 0% win
+    assert s.averaging_down.win_rate_pct == pytest.approx(0.0)
+    assert s.averaging_down.avg_return_pct == pytest.approx(-5.0)
+    # all 4 adds are first adds in their cycle
+    assert s.pct_first_add == pytest.approx(100.0)
+    assert s.pct_followed_by_exit == pytest.approx(0.0)
+    assert s.pct_followed_by_another_add == pytest.approx(0.0)
+    assert s.median_quarters_held_before_add == pytest.approx(1.0)
+    assert s.notes
+
+
+# 20
+def test_conviction_empty_population() -> None:
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    c_hold = matched_change(
+        change_type=ChangeType.HOLD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=5.0, prior_weight=5.0,
+    )
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[], changes=[c_new, c_hold], returns=[]
+    )
+    assert view.rows == ()
+    s = view.summary
+    assert s.total_adds == 0
+    assert s.priced_adds == 0
+    assert s.win_rate_pct is None
+    assert s.avg_winner_return_pct is None
+    assert s.avg_loser_return_pct is None
+    assert s.avg_weight_delta_pct is None
+    assert s.adding_to_winners.count == 0
+    assert s.adding_to_winners.win_rate_pct is None
+    assert s.adding_to_winners.avg_return_pct is None
+    assert s.adding_to_winners.avg_next_period_high_pct is None
+    assert s.averaging_down.count == 0
+    assert s.pct_followed_by_exit is None
+    assert s.pct_followed_by_another_add is None
+    assert s.median_quarters_held_before_add is None
+    assert s.pct_first_add is None
+    assert s.notes
+
+
+# 21
+def test_conviction_sort_order() -> None:
+    # A: delta 3 @ Q2 ; B: delta 5 @ Q2 ; C: delta 5 @ Q4 ; D: delta 5 @ Q2 larger cusip than B
+    a_new = new_change(cusip=CUSIP_A, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    a_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_A, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=8.0, prior_weight=5.0,
+    )  # delta 3.0
+    b_new = new_change(cusip=CUSIP_B, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0, ticker="BETA")
+    b_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_B, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=10.0, prior_weight=5.0, ticker="BETA",
+    )  # delta 5.0 @ Q2
+    c_new = new_change(cusip=CUSIP_C, period=Q3, filing_date=Q3F, prior_period=Q2, prior_filing_date=Q2F, weight=5.0, ticker="AAPL")
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=CUSIP_C, period=Q4, filing_date=Q4F,
+        prior_period=Q3, prior_filing_date=Q3F, weight=10.0, prior_weight=5.0, ticker="AAPL",
+    )  # delta 5.0 @ Q4
+    d_cusip = "459200101"  # larger than CUSIP_B ("09247X101")
+    d_new = new_change(cusip=d_cusip, period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0, ticker="IBM")
+    d_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, cusip=d_cusip, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=10.0, prior_weight=5.0, ticker="IBM",
+    )  # delta 5.0 @ Q2, cusip > B
+    view = build_conviction_adds_view(
+        config=CONFIG, positions=[],
+        changes=[a_new, a_add, b_new, b_add, c_new, c_add, d_new, d_add], returns=[],
+    )
+    order = [(r.cusip, r.quarter) for r in view.rows]
+    # delta 5 @ Q4 (C) first, then delta 5 @ Q2 cusip asc (B then D), then delta 3 (A)
+    assert order == [(CUSIP_C, Q4), (CUSIP_B, Q2), (d_cusip, Q2), (CUSIP_A, Q2)]
+
+
+# 22a
+def test_conviction_mixed_cik_raises() -> None:
+    # mismatch in CHANGES (a PositionChange with a foreign CIK)
+    c_new = new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F, weight=5.0)
+    foreign_add = PositionChange(
+        cik="0002045724",
+        period=Q2,
+        filing_date=Q2F,
+        prior_period=Q1,
+        prior_filing_date=Q1F,
+        cusip=CUSIP_A,
+        security_type="COMMON",
+        ticker="ALPHA",
+        current_shares=1200,
+        current_value_reported=120000,
+        current_weight_pct=7.0,
+        prior_shares=1000,
+        prior_value_reported=100000,
+        prior_weight_pct=5.0,
+        shares_delta=200,
+        shares_delta_pct=20.0,
+        weight_delta_bps=200.0,
+        value_delta=20000,
+        value_delta_pct=20.0,
+        change_type=ChangeType.ACTIVE_ADD,
+        split_suspected=False,
+    )
+    with pytest.raises(DiscoveryError):
+        build_conviction_adds_view(
+            config=CONFIG, positions=[], changes=[c_new, foreign_add], returns=[]
+        )
+
+    # mismatch in POSITIONS
+    other_pos = PositionRecord(
+        cik="0002045724",
+        accession_number="0002045724-25-000001",
+        period=Q1,
+        filing_date=Q1F,
+        cusip=CUSIP_B,
+        company_name="OTHER",
+        title_of_class="COM",
+        security_type="COMMON",
+        put_call="",
+        ticker="OTH",
+        shares=1,
+        ssh_prnamt_type="SH",
+        value_reported=1,
+        investment_discretion="SOLE",
+        weight_pct_reported=1.0,
+        weight_pct_equity_only=1.0,
+    )
+    with pytest.raises(DiscoveryError):
+        build_conviction_adds_view(
+            config=CONFIG, positions=[other_pos], changes=[c_new], returns=[]
+        )
+
+
+# 22b
+def test_conviction_wrong_cik_raises() -> None:
+    other_config = InvestorConfig(
+        cik="0002045724", name="X", fund="X", slug="x", notes="", is_known=True
+    )
+    c_add = matched_change(
+        change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+        prior_period=Q1, prior_filing_date=Q1F, weight=7.0, prior_weight=5.0,
+    )
+    with pytest.raises(DiscoveryError):
+        build_conviction_adds_view(
+            config=other_config, positions=[], changes=[c_add], returns=[]
+        )

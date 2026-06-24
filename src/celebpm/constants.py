@@ -119,6 +119,79 @@ SUMMARY_NOTES: Final[str] = (
     "(long-only, not inverted for written options)."
 )
 
+# --- View 2 (Conviction Tracker) output files ---
+CONVICTION_ADDS_FILE: Final[str] = "conviction_adds.csv"
+CONVICTION_ADDS_SUMMARY_FILE: Final[str] = "conviction_adds_summary.json"
+# Forward-looking: consumed by the LATER writer prompt (prompt 2); the builder does NOT use it.
+CONVICTION_TMP_PREFIX: Final[str] = ".conviction-"
+
+# --- View 2 add-type classification labels (string values land in the CSV) ---
+ADD_TYPE_WINNER: Final[str] = "ADDING_TO_WINNER"
+ADD_TYPE_AVERAGING_DOWN: Final[str] = "AVERAGING_DOWN"
+
+# --- View 2 column order (single source of truth for the CSV header) ---
+CONVICTION_ADDS_COLUMNS: Final[tuple[str, ...]] = (
+    "quarter",
+    "ticker",
+    "company",
+    "security_type",
+    "is_option",
+    "weight_before_pct",
+    "weight_after_pct",
+    "weight_delta_pct",
+    "shares_delta_pct",
+    "prior_quarter_return_pct",
+    "add_type",
+    "quarters_held_before_add",
+    "nth_add",
+    "original_entry_quarter",
+    "cumulative_return_since_entry_pct",
+    "filing_to_filing_return_pct",
+    "filing_to_next_period_high_pct",
+    "filing_to_next_period_low_pct",
+    "excess_filing_to_filing_pct",
+    "excess_next_period_high_pct",
+    "excess_next_period_low_pct",
+    "followed_by_exit",
+    "followed_by_another_add",
+    "still_held",
+    "priced",
+    "cusip",
+    "filing_date",
+)
+
+# --- View 2 summary JSON keys (flat) ---
+CONVICTION_KEY_TOTAL_ADDS: Final[str] = "total_adds"
+CONVICTION_KEY_PRICED_ADDS: Final[str] = "priced_adds"
+CONVICTION_KEY_WIN_RATE_PCT: Final[str] = "win_rate_pct"
+CONVICTION_KEY_AVG_WINNER: Final[str] = "avg_winner_return_pct"
+CONVICTION_KEY_AVG_LOSER: Final[str] = "avg_loser_return_pct"
+CONVICTION_KEY_AVG_WEIGHT_DELTA: Final[str] = "avg_weight_delta_pct"
+CONVICTION_KEY_ADDING_TO_WINNERS: Final[str] = "adding_to_winners"  # nested object
+CONVICTION_KEY_AVERAGING_DOWN: Final[str] = "averaging_down"  # nested object
+CONVICTION_KEY_PCT_FOLLOWED_BY_EXIT: Final[str] = "pct_followed_by_exit"
+CONVICTION_KEY_PCT_FOLLOWED_BY_ANOTHER_ADD: Final[str] = "pct_followed_by_another_add"
+CONVICTION_KEY_MEDIAN_QUARTERS_HELD_BEFORE_ADD: Final[str] = "median_quarters_held_before_add"
+CONVICTION_KEY_PCT_FIRST_ADD: Final[str] = "pct_first_add"
+CONVICTION_KEY_NOTES: Final[str] = "notes"
+
+# --- View 2 summary sub-object keys (shared by adding_to_winners + averaging_down) ---
+CONVICTION_SUBKEY_COUNT: Final[str] = "count"
+CONVICTION_SUBKEY_WIN_RATE_PCT: Final[str] = "win_rate_pct"
+CONVICTION_SUBKEY_AVG_RETURN_PCT: Final[str] = "avg_return_pct"
+CONVICTION_SUBKEY_AVG_NEXT_PERIOD_HIGH_PCT: Final[str] = "avg_next_period_high_pct"
+
+# --- View 2 summary notes (SD-5 caveat + add-type / prior-quarter-return one-liner) ---
+CONVICTION_SUMMARY_NOTES: Final[str] = (
+    "One row per ACTIVE_ADD event (re-adds counted separately). prior_quarter_return_pct is "
+    "the position's price move from the prior filing date to this add's filing date "
+    "(positive=adding to a winner, negative=averaging down); add_type is null when that prior "
+    "window is unpriced. Forward/excess returns are filing-date anchored; excess is a relative "
+    "heuristic vs SPY, not date-matched alpha; option returns are the underlying's directional "
+    "move (long-only, not inverted for written options). This measures the signal value of "
+    "public 13F disclosures, not investor P&L."
+)
+
 # --- Validation patterns (v3 path-safety) ---
 SLUG_PATTERN: Final[str] = r"^[a-z0-9_]+$"
 OVERFLOW_NAME_PATTERN: Final[str] = r"^CIK\d+-submissions-\d+\.json$"

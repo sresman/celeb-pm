@@ -173,6 +173,45 @@ def test_full_pipeline_produces_all_artifacts(tmp_path: Path) -> None:
     )
     assert list(df.columns) == list(constants.NEW_IDEAS_COLUMNS)
 
+    # View 2 (Conviction Tracker) artifacts exist
+    assert (tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_FILE).exists()
+    assert (
+        tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_SUMMARY_FILE
+    ).exists()
+
+    # result path fields point at the canonical on-disk locations
+    assert (
+        result.conviction_csv_path
+        == tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_FILE
+    )
+    assert (
+        result.conviction_summary_path
+        == tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_SUMMARY_FILE
+    )
+
+    # n_conviction_adds is a non-negative int tied to the summary's total_adds (wiring guard).
+    # NOTE: do NOT assert >= 1 — the fixture guarantees a BETA NEW (View 1) but not an
+    # ACTIVE_ADD (View 2), which needs a same-CUSIP weight increase above threshold across
+    # consecutive quarters that this fixture does not clearly create.
+    assert isinstance(result.n_conviction_adds, int)
+    assert result.n_conviction_adds >= 0
+    assert result.n_conviction_adds == result.conviction_summary.total_adds
+
+    # on-disk conviction summary matches the result object
+    conv_disk = json.loads(
+        (
+            tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_SUMMARY_FILE
+        ).read_text()
+    )
+    assert conv_disk[constants.CONVICTION_KEY_TOTAL_ADDS] == result.conviction_summary.total_adds
+
+    # conviction CSV columns
+    conv_df = pd.read_csv(
+        tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_FILE,
+        keep_default_na=False, dtype=str,
+    )
+    assert list(conv_df.columns) == list(constants.CONVICTION_ADDS_COLUMNS)
+
     # ascending period order in filings.json
     filings_disk = json.loads((tmp_path / SLUG / constants.FILINGS_FILE).read_text())
     written_periods = [f["period_of_report"] for f in filings_disk]
@@ -205,6 +244,19 @@ def test_single_quarter_empty_feed(tmp_path: Path) -> None:
     assert disk[constants.SUMMARY_KEY_TOTAL_NEW] == 0
     assert disk[constants.SUMMARY_KEY_WIN_RATE_PCT] is None
 
+    # View 2 empty-state: one quarter -> 0 changes -> 0 adds (header-only CSV).
+    assert result.n_conviction_adds == 0
+    conv_csv = tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_FILE
+    conv_df = pd.read_csv(conv_csv, keep_default_na=False, dtype=str)
+    assert list(conv_df.columns) == list(constants.CONVICTION_ADDS_COLUMNS)
+    assert len(conv_df) == 0
+    conv_disk = json.loads(
+        (
+            tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_SUMMARY_FILE
+        ).read_text()
+    )
+    assert conv_disk[constants.CONVICTION_KEY_TOTAL_ADDS] == 0
+
 
 def test_bad_filing_skipped(tmp_path: Path) -> None:
     selected = _selected()
@@ -224,3 +276,8 @@ def test_bad_filing_skipped(tmp_path: Path) -> None:
     assert result.timeline_degraded is True
     # pipeline still produces a CSV
     assert (tmp_path / SLUG / constants.VIEWS_DIR / constants.NEW_IDEAS_FILE).exists()
+    # View 2 artifacts are produced even when a filing is skipped
+    assert (tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_FILE).exists()
+    assert (
+        tmp_path / SLUG / constants.VIEWS_DIR / constants.CONVICTION_ADDS_SUMMARY_FILE
+    ).exists()
