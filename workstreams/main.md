@@ -4,11 +4,19 @@
 
 ---
 
+> **Related workstream:** Gavin Baker transcript corpus + thesis extraction lives in
+> `workstreams/transcripts.md` (branch `gavin-baker-transcript-corpus`) — standalone of this pipeline;
+> its `analysis/thesis_timeline.json` is intended to be cross-referenced against these 13F outputs.
+
 ## Current State (as of June 24 2026)
 
 **Phase 1 COMPLETE.** Full investor-agnostic pipeline built and verified end-to-end (Prompts 1–6 via multi-prompt-build): EDGAR discovery → parse info-table XML → CUSIP→ticker (OpenFIGI) → QoQ diff & classification → filing-date-anchored returns + SPY → View 1 (New Ideas Feed) CSV. `mypy --strict` clean (47 files), `pytest` 526 passing; live-validated against Situational Awareness (CIK 0002045724) → 69 new ideas, full CSV + summary written. Run: `.venv/bin/python -m celebpm.pipeline <CIK> --data-root data` (with `.env` sourced).
 
 **View 2 (Conviction Tracker) COMPLETE** — built in `views.py`/`view_io.py`, wired into `run_pipeline` (writes `views/conviction_adds.csv` + `conviction_adds_summary.json` from the same in-memory `config`/`positions`/`changes`/`returns`, no extra network), and also rebuildable offline via `.venv/bin/python -m celebpm.build_views <CIK> --data-root data`. `mypy --strict` clean; `pytest` 567 passing; offline rebuild against Situational Awareness → 16 conviction adds.
+
+**View 3 (Position Lifecycle) COMPLETE** — `build_position_lifecycle_view` in `views.py` + `write_position_lifecycle_view` (CSV-only) in `view_io.py`. Reshapes `changes.json`+`returns.json` into one row per `(cusip, security_type)` per quarter held, grouped into entry→exit cycles (`cycle_id` = `{ticker}_{security_type}_{n}`). Adds sector/industry via a NEW cached EODHD fundamentals fetch — `fundamentals.py` resolver + `FundamentalsEntry` model + `data/eodhd_fundamentals_cache.json` (shared, keyed by `eodhd_symbol`) + `EodhdClient.fetch_fundamentals`. Wired into `run_pipeline` AND `build_views`. **Sector/industry/theme now come PRIMARILY from a hand-maintained `data/ticker_classifications.json`** (shared, keyed by ticker; `storage.read_ticker_classifications`), with the EODHD fundamentals cache as a secondary fallback (sector/industry only). Added a `theme` column. `mypy --strict` clean; `pytest` **613 passing**. Real-data offline check (atreides, 211-ticker classifications) → 1321 rows, 1179 carry sector+theme, 142 uncovered blank. Decisions + deviations: `docs/implementation_notes/view_position_lifecycle_implementation_notes.md` (SD-V3-1…11). **FLAG-V3-A (EODHD fundamentals 403 on the current key) is now MITIGATED** for classified tickers via the manual file; the 403 graceful-skip fallback is unchanged. Extend the classifications file manually as new investors are added.
+
+**SMH benchmark added (2026-06-24)** — `ReturnRecord` now carries an SMH (VanEck Semiconductor ETF) trio alongside SPY (`smh_filing_to_filing_return_pct` + high/low), computed via the generalized `_benchmark_window` in `returns.py` (SMH has NO fatal preflight — secondary benchmark, missing → null; SD-SMH-1). Views: lifecycle gained `smh_period_return_pct` + `excess_vs_smh_pct` (after `excess_period_return_pct`); View 1 + View 2 gained `smh_excess_*` columns mirroring the SPY-excess block. `mypy --strict` clean; `pytest` **615 passing**. Real-data recompute verified (847/847 priced records get SMH; no committed-data writes). **To persist into stored returns.json + view CSVs, re-run the full pipeline:** `.venv/bin/python -m celebpm.pipeline 0001777813 --data-root data` (SMH.US already cached).
 
 ---
 
@@ -33,7 +41,8 @@ Next spec sections (Phase 2): ~~§View 2 Conviction Tracker~~ DONE (`docs/specs/
 
 1. **Operator confirm SD-4** — View 1 summary stats are written to a sibling `new_ideas_summary.json` rather than as footer rows in `new_ideas.csv`. Confirm acceptable, or request footer rows (small follow-up).
 2. **(Optional) run the second investor** — `python -m celebpm.pipeline 0001777813 --data-root data` (Atreides, 26 quarters; first end-to-end run that exercises EODHD at volume + the OpenFIGI no-key rate limit).
-3. **Phase 2** — View 2 (Conviction) DONE; next is **View 3 (Exit Signals)** then **View 4 (Survivors)**: sibling builders in `views.py` + writers in `view_io.py`, consuming the existing `changes.json`/`returns.json`/`positions.json` over the same build+write wiring pattern.
+3. **Phase 2** — View 2 (Conviction) DONE; View 3 (Position Lifecycle) DONE. Next: **View 4** (Exit Signals / Survivors per spec): sibling builders in `views.py` + writers in `view_io.py`, consuming the existing `changes.json`/`returns.json`/`positions.json` over the same build+write wiring pattern.
+   - **FLAG-V3-A mitigated:** sector/industry/theme now come from `data/ticker_classifications.json` (manual, keyed by ticker). EODHD fundamentals (HTTP 403 on the current key) remains a secondary fallback. To classify a new investor's tickers, append them to that file. (Upgrading the EODHD plan would re-enable the automatic fallback but is no longer required.)
 4. **Confirm SD-V2-1** — `still_held` is computed per security-chain (not per add-cycle); see `docs/implementation_notes/view2_conviction_tracker_implementation_notes.md`. Confirm per-chain, or request per-cycle (one-function change).
 
 ---
