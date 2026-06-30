@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "source": "Sohn NY 2026",
+    "date": "2026-05-12",
+    "host": "Sohn Conference",
+    "topic": "Tech investing fireside",
+    "duration_estimate_min": 25
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "Current memory cycle is unlike prior cycles \u2014 may be the first true capacity cycle since the mid-1990s, making it too early to sell memory stocks",
+      "detail": "Baker explicitly states that based on every prior memory cycle over 25 years, this is the time to sell. However, he argues the mid-1990s capacity cycle is the correct analog, not the typical demand cycles, and that we may still be very early. He takes the over on every bullish number presented by other speakers (Alex, Leon, Leslie). Micron margins cited at high 60s vs. historical average of ~16%.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker says 'I take the over on every number' and frames this as a structural capacity cycle, not a demand cycle \u2014 a rare and emphatic call given his explicit acknowledgment that history says sell",
+      "tickers_named": [
+        "MU"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain",
+        "memory cycle",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "this may be the first true capacity cycle"
+    },
+    {
+      "id": "T2",
+      "summary": "TSMC's deliberate capacity restraint will prevent an AI bubble and sustain a prolonged upcycle in leading-edge wafer supply",
+      "detail": "Baker argues TSMC leadership views themselves as guardians of Morris Chang's legacy and are deliberately not expanding capacity at the pace Jensen Huang demands. Jensen visits every 3 months wanting capacity to double or triple; TSMC expands ~5%. This physical constraint is structurally different from prior technology cycles and will prevent a bubble. Nvidia could sell $1\u20132 trillion of chips if capacity were available.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker frames this as a structural thesis with named actors, specific dynamics, and a direct causal mechanism \u2014 'flinty old men and women safeguarding Morris Chang's legacy are helping us all avoid a bubble'",
+      "tickers_named": [
+        "NVDA",
+        "TSM"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "they're simply not expanding capacity as fast as Jensen wants"
+    },
+    {
+      "id": "T3",
+      "summary": "Trainium is the most underestimated Nvidia alternative in 2026, analogous to what TPUs were in 2025",
+      "detail": "Baker says Trainium (Amazon) made aggressive design choices vs. Google's conservative TPU V8 design. Critically, all frontier models are mixture-of-experts (MoE) architectures requiring a 'switched scale-up network' for inference \u2014 only Nvidia GPUs and Amazon Trainium have functioning switched scale-up networks today. Trainium 3 ramp in H2 2026 is the key catalyst. Google will not submit TPUs to their own MLPerf benchmark, which Baker says is telling.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker says 'Trainium by far' when asked which alternative is most underestimated, provides specific technical reasoning (switched scale-up networks), and draws an explicit historical parallel to TPU in 2025",
+      "tickers_named": [
+        "AMZN",
+        "GOOGL",
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure",
+        "custom silicon"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "Trainium is for sure the most underestimated"
+    },
+    {
+      "id": "T4",
+      "summary": "Neo/specialist clouds (CoreWeave, Crusoe, Nebius, Lambda) represent a durable business model, not a transitional arbitrage",
+      "detail": "Baker argues running GPU clusters at high utilization is extremely difficult \u2014 analogous to driving a Formula 1 car. CoreWeave GPUs are utilized 2\u20133x more per hour than lower-quality providers. This operational excellence is a durable competitive advantage. Hyperscalers were historically in a cost mentality and are only now making the cultural shift. Atreides has a large position in Crusoe. Baker was conflicted out of CoreWeave at $1.1B valuation.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker has a disclosed large position in Crusoe, frames the category as structurally durable with a specific operational moat argument, and uses extended analogy to make the case",
+      "tickers_named": [],
+      "tickers_implied": [
+        "CoreWeave (CRWV)",
+        "Crusoe Energy",
+        "Nebius",
+        "Lambda Labs"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "neo clouds",
+        "GPU compute"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "it is durable and the hyper scalers for a long time were stuck in a cost mentality"
+    },
+    {
+      "id": "T5",
+      "summary": "Orbital/space-based compute will become commercially viable within 2 years and take meaningful market share by end of decade",
+      "detail": "Baker believes it becomes clear orbital compute is possible, workable, and economical within 2 years, with meaningful share gains toward end of decade. Architecture: sun-synchronous orbit satellites acting as racks (8ft x 2.5ft x 4ft), stitched via laser into virtual data centers, with solar power and passive radiative cooling. Training and RL workloads will remain terrestrial; inference and other workloads may shift to orbital.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker gives a specific 2-year timeline for commercial viability and end-of-decade for share gains, but acknowledges uncertainty and cannot name the provider",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "it becomes clear that it is possible going to work and economical in the next 2 years"
+    },
+    {
+      "id": "T6",
+      "summary": "Terrestrial data center power, cooling, and industrial infrastructure names face structural short risk as orbital compute approaches",
+      "detail": "Baker warns that companies in power, cooling, and industrial infrastructure that have massively flexed up capacity to support terrestrial data center build-out could face a 'screeching halt' in demand as orbital compute matures. The years leading up to orbital compute taking share will be 'very painful' for these names. In space, power comes from the sun and cooling from the dark side of the satellite \u2014 eliminating the two largest cost/infrastructure inputs.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker frames this as a clear structural short thesis but acknowledges the timeline is 5\u20137 years out, making it a medium-to-long-term risk rather than an imminent catalyst",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "power/energy",
+        "AI datacenter infrastructure",
+        "space/orbital compute"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "very painful for a lot of the companies in the power cooling spaces"
+    },
+    {
+      "id": "T7",
+      "summary": "AI frontier model pricing is shifting from flat-rate subscriptions to usage-based with overage, which is wildly bullish for AI revenue and token pricing",
+      "detail": "Baker draws analogy to cellular industry: flat-rate minutes plans gave way to per-minute overage pricing, driving massive growth. Best AI capabilities are now locked behind enterprise usage-based plans. Only 10 basis points of the world's population uses frontier AI models the way they should \u2014 scaling to 5% of global population would create unimaginable compute demand. OpenAI and Anthropic combined could reach $200B+ revenue in the near term.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker uses the word 'wildly bullish' and 'incredibly bullish,' draws a specific historical industry analogy, and endorses the $200B combined revenue figure for OpenAI/Anthropic",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI monetization",
+        "frontier AI models",
+        "token economics"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "wildly bullish for AI wildly bullish for the pricing of these frontier tokens"
+    },
+    {
+      "id": "T8",
+      "summary": "Coding/code generation is not just the killer app for AI but may be the ultimate AI application and the shortest path to AGI",
+      "detail": "Baker endorses the view that coding may be the shortest path to ASI/AGI because writing code to do things for yourself is a fast elegant path to AGI. He argues coding subsumes more and more applications over time. Practically recommends using Claude Code and Codex even for non-coders seeking investment insights.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker frames this as a forward-looking structural view but attributes the original insight to someone on X, and his own endorsement is strong but not framed as a portfolio position",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI software",
+        "frontier AI models",
+        "AGI"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "coding may be the shortest path to ASI and AGI"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "Crusoe Energy (private)",
+      "reasoning": "Atreides has a large disclosed position; Baker views neo clouds as a durable category with operational moats analogous to best-in-class retail operators",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "Memory stocks (Micron implied)",
+      "reasoning": "Baker argues this is the first true capacity cycle since the mid-1990s; takes the over on all bullish estimates; contrarian to the historical sell signal",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "Amazon (Trainium/AWS)",
+      "reasoning": "Trainium is the most underestimated Nvidia alternative; only two functioning switched scale-up networks exist for MoE inference \u2014 Nvidia and Amazon Trainium; Trainium 3 ramp in H2 2026 is a near-term catalyst",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "avoid",
+      "target": "Terrestrial data center power and cooling infrastructure names",
+      "reasoning": "Orbital compute will structurally displace demand for terrestrial power and cooling over the next 5-7 years; companies that have flexed up capacity face a potential screeching halt",
+      "confidence": "moderate"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Amazon Trainium",
+      "over": "Google TPU",
+      "reasoning": "Trainium made aggressive design choices; only two switched scale-up networks exist for MoE inference (Nvidia and Trainium); Google will not submit TPUs to their own MLPerf benchmark"
+    },
+    {
+      "preferred": "Neo/specialist clouds (CoreWeave, Crusoe, Nebius)",
+      "over": "Hyperscaler commodity GPU compute",
+      "reasoning": "Operational excellence in cluster management drives 2-3x higher GPU utilization; durable competitive moat analogous to best-in-class retail operators"
+    },
+    {
+      "preferred": "Memory stocks (capacity cycle analog)",
+      "over": "Historical sell signal",
+      "reasoning": "Mid-1990s capacity cycle is the correct analog, not typical demand cycles; may still be very early despite historical indicators saying sell"
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "AI infrastructure broadly",
+      "nature": "overhyped",
+      "detail": "Baker explicitly warns that every profound new technology in history has produced a bubble; he is cautiously optimistic AI avoids one due to physical wafer and watt constraints, but acknowledges the historical base rate is strongly against avoiding a bubble"
+    },
+    {
+      "target": "Terrestrial data center power/cooling/industrial names",
+      "nature": "structural_risk",
+      "detail": "Orbital compute could cause a screeching halt in terrestrial data center build-out demand within 5-7 years; companies that have massively flexed up capacity are exposed"
+    },
+    {
+      "target": "High-leverage companies generally",
+      "nature": "structural_risk",
+      "detail": "Baker's formative loss (Nextel International) reinforces permanent caution on high-leverage companies \u2014 price wars or unexpected competitive dynamics can cause bankruptcy even when the underlying thesis is correct"
+    },
+    {
+      "target": "Google TPU ecosystem",
+      "nature": "structural_risk",
+      "detail": "Conservative design choices on TPU V8 and failure to submit to MLPerf benchmark suggest TPU may underperform Trainium for MoE inference workloads in 2026"
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Trainium 3 ramp",
+      "timing": "H2 2026",
+      "impact": "Significant acceleration in Amazon's custom silicon competitiveness for MoE inference workloads; potential share shift from Nvidia in certain training/inference use cases",
+      "beneficiaries": [
+        "AMZN"
+      ],
+      "losers": [
+        "NVDA"
+      ]
+    },
+    {
+      "event": "Frontier AI models shift to usage-based pricing with overage",
+      "timing": "Near term (underway)",
+      "impact": "Dramatic increase in AI revenue for frontier model providers; best capabilities locked behind enterprise plans drives token price inflation",
+      "beneficiaries": [
+        "OpenAI (private)",
+        "Anthropic (private)"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Orbital compute commercial viability demonstrated",
+      "timing": "Within 2 years",
+      "impact": "Structural disruption to terrestrial data center demand for power and cooling; meaningful market share shift toward end of decade",
+      "beneficiaries": [],
+      "losers": [
+        "Terrestrial power/cooling/industrial infrastructure names"
+      ]
+    },
+    {
+      "event": "Memory capacity cycle continuation",
+      "timing": "Multi-year",
+      "impact": "Sustained high margins for memory producers if this is truly a capacity cycle analog to mid-1990s rather than a typical demand cycle",
+      "beneficiaries": [
+        "MU",
+        "SK Hynix (implied)",
+        "Samsung (implied)"
+      ],
+      "losers": []
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "Investment process",
+      "view": "Reading primary sources overwhelmingly dominates other research inputs",
+      "detail": "Baker rarely meets with public companies; reads vast amounts of transcripts and 10-Qs; values expert transcripts enhanced by AI; deprioritizes scuttlebutt as overrated"
+    },
+    {
+      "topic": "Pattern recognition",
+      "view": "Highly underrated as an investment skill",
+      "detail": "Baker cites being early to the semiconductor/AI framework in 2023 as a key source of alpha; most hedge funds didn't employ a semiconductor analyst when Nvidia's pivotal quarter hit in May 2023"
+    },
+    {
+      "topic": "Bubble risk in AI",
+      "view": "Cautiously optimistic AI avoids a bubble, but historical base rate is strongly against this",
+      "detail": "Every major technology in history (internet, PC, railroads, canals) produced a bubble; Baker believes physical constraints on watts and wafers may prevent one this time \u2014 'smoother for longer is what we all want'"
+    },
+    {
+      "topic": "Token maxing",
+      "view": "Any company or individual not token maxing should be",
+      "detail": "Jensen Huang's stated goal is for his best engineers to spend minimum half their comp on tokens; Baker implies companies not doing this are falling behind competitively"
+    },
+    {
+      "topic": "Valuation sensitivity and contrarianism",
+      "view": "Baker acknowledges being most comfortable on the 52-week low list \u2014 a behavioral tendency he has worked to overcome",
+      "detail": "He describes being extremely valuation sensitive and contrarian as a lifelong challenge; explicitly says he has been 'hanging on to memory stocks for dear life' \u2014 framing it as a difficult but maintained conviction position"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "source": "HedgeFundAlpha (writeup)",
+    "date": "2026-05-12",
+    "host": "Sohn NY 2026",
+    "topic": "Baker & Khaira fireside writeup",
+    "duration_estimate_min": 25
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "Memory cycle dynamics represent the most important investment judgment call Baker has faced in his career",
+      "detail": "Baker explicitly framed the memory cycle thesis as the most consequential judgment call of his career, suggesting high conviction and structural significance. The public writeup does not reveal the directional view (bull or bear on memory), but the framing implies a major inflection point in DRAM/HBM supply-demand dynamics is at hand.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker described it as 'the most important judgment call of his career' \u2014 the strongest possible personal conviction signal from a 25+ year technology investor.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "MU",
+        "HXSCL",
+        "005930.KS"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "memory cycle",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "most important judgment call of his career"
+    },
+    {
+      "id": "T2",
+      "summary": "Taiwan Semiconductor's capital discipline deserves defense and is underappreciated by the market",
+      "detail": "Baker made an explicit argument defending TSMC's capital allocation discipline, suggesting the market is not fully crediting the company's pricing power, capacity management, or long-term returns on invested capital. This is consistent with a bullish structural view on TSMC as the irreplaceable node in AI semiconductor supply chains.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker 'defended' TSMC's capital discipline as a named thesis point in a 25-minute high-signal session, indicating deliberate and prepared conviction.",
+      "tickers_named": [
+        "TSM"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure",
+        "capital discipline"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "defense of Taiwan Semiconductor's capital discipline"
+    },
+    {
+      "id": "T3",
+      "summary": "Amazon's Trainium chips are the most underestimated AI play in the market",
+      "detail": "Baker argued that Amazon's custom AI training silicon (Trainium) is being systematically undervalued by investors. This implies that AWS's AI infrastructure buildout and its ability to reduce dependence on Nvidia GPUs via proprietary silicon is not priced into AMZN shares. The thesis likely encompasses AWS margin expansion and competitive positioning in AI cloud services.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker used superlative framing \u2014 'most underestimated AI play in the market' \u2014 indicating a prepared, high-conviction differentiated view, not a passing mention.",
+      "tickers_named": [
+        "AMZN"
+      ],
+      "tickers_implied": [
+        "NVDA"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "custom silicon",
+        "cloud hyperscalers",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "Amazon's Trainium chips are the most underestimated AI play"
+    },
+    {
+      "id": "T4",
+      "summary": "Orbital compute represents a meaningful emerging investment theme",
+      "detail": "The conversation closed on orbital compute, suggesting Baker and Khaira view space-based computing infrastructure as a credible forward-looking investment theme. No specific tickers or timelines were disclosed in the public portion.",
+      "confidence": "passing_mention",
+      "confidence_evidence": "Described only as the closing topic of the session; no directional conviction or specific investment framing was disclosed in the public writeup excerpt.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "closed it on orbital compute"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "AMZN",
+      "reasoning": "Amazon's Trainium custom AI chips are described as the most underestimated AI play in the market, implying the stock does not reflect the value of AWS's proprietary silicon strategy and AI infrastructure positioning.",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "TSM",
+      "reasoning": "Baker defended TSMC's capital discipline, implying the market undervalues the company's pricing power and long-term returns as the irreplaceable AI chip fabricator.",
+      "confidence": "high_conviction"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Custom AI silicon (Trainium/AWS)",
+      "over": "Third-party GPU procurement (Nvidia-dependent cloud)",
+      "reasoning": "Baker's framing of Trainium as the most underestimated AI play implies custom silicon strategies are superior to pure GPU-rental models for long-term AI infrastructure value creation."
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "Memory sector (DRAM/HBM)",
+      "nature": "timing",
+      "detail": "Baker's framing of memory as the most important judgment call of his career implies significant uncertainty around the timing and direction of the memory cycle \u2014 a wrong call here carries outsized portfolio risk."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Amazon Trainium adoption ramp in AWS AI workloads",
+      "timing": "medium_term (2026-2027)",
+      "impact": "Could drive material AWS margin expansion and re-rating of AMZN if custom silicon displaces meaningful Nvidia GPU spend",
+      "beneficiaries": [
+        "AMZN"
+      ],
+      "losers": [
+        "NVDA"
+      ]
+    },
+    {
+      "event": "Memory cycle inflection (DRAM/HBM supply-demand turn)",
+      "timing": "near_term to medium_term",
+      "impact": "Baker views this as the most consequential judgment call of his career, implying a major directional move in memory stocks is approaching",
+      "beneficiaries": [
+        "MU",
+        "HXSCL",
+        "005930.KS"
+      ],
+      "losers": []
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "Source of edge in technology investing",
+      "view": "Baker's edge is rooted in a specific mental model framework developed over 25+ years",
+      "detail": "Khaira opened by asking where Baker's edge comes from, and Baker's answer 'shaped everything that followed' per the writeup \u2014 suggesting his structural supply chain and bottleneck frameworks are the foundation of all subsequent theses, not stock-picking intuition."
+    },
+    {
+      "topic": "AI infrastructure investment framework",
+      "view": "Infrastructure bottlenecks (memory, custom silicon, orbital compute) are the organizing lens for AI investing in 2026",
+      "detail": "The session was framed around 'mapping the infrastructure bottleneck' \u2014 Baker and Khaira's shared mental model prioritizes identifying constrained resources in the AI buildout stack rather than picking application-layer winners."
+    }
+  ]
+}

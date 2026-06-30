@@ -1,52 +1,12 @@
 {
   "model": "claude-sonnet-4-6",
   "transcripts_processed": 27,
-  "ok": 23,
-  "skipped": 1,
-  "errors": [
-    {
-      "label": "sohn_ny_2026_khaira_writeup",
-      "date": "2026-05-12",
-      "source": "HedgeFundAlpha (writeup)",
-      "filepath": "transcripts/web/2026-05-12_sohn_ny_2026_khaira_writeup.txt",
-      "output": "analysis/thesis_extractions/2026-05-12_sohn_ny_2026_khaira_writeup.json",
-      "status": "api_error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmSSDx6uNQu7kdzNJp2'}",
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "warnings": [
-        "retry after error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmQCozpSKYtUXsgbfzM'}"
-      ]
-    },
-    {
-      "label": "sohn_ny_2026_tech_investor",
-      "date": "2026-05-12",
-      "source": "Sohn NY 2026",
-      "filepath": "transcripts/youtube/2026-05-12_sohn_ny_2026_tech_investor_2Ryr95iiYNk.txt",
-      "output": "analysis/thesis_extractions/2026-05-12_sohn_ny_2026_tech_investor.json",
-      "status": "api_error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmhP6qkh35GYumu3k59'}",
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "warnings": [
-        "retry after error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmSbTpm7MYY2N2Xwr1c'}"
-      ]
-    },
-    {
-      "label": "iltb_watts_wafers_2026may_yt",
-      "date": "2026-05-20",
-      "source": "Invest Like the Best (YouTube)",
-      "filepath": "transcripts/youtube/2026-05-20_iltb_watts_wafers_2026may_yt_Mmj_G9RlW-I.txt",
-      "output": "analysis/thesis_extractions/2026-05-20_iltb_watts_wafers_2026may_yt.json",
-      "status": "api_error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmjn5241b4Ygip2FLt3'}",
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "warnings": [
-        "retry after error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmhYfKDw3z6dMHCbvM7'}"
-      ]
-    }
-  ],
-  "total_input_tokens": 498107,
-  "total_output_tokens": 97627,
-  "estimated_cost_usd": 2.9587,
+  "ok": 3,
+  "skipped": 24,
+  "errors": [],
+  "total_input_tokens": 49754,
+  "total_output_tokens": 16817,
+  "estimated_cost_usd": 0.4015,
   "rows": [
     {
       "label": "columbia_sima_investing_2020may",
@@ -54,10 +14,9 @@
       "source": "Columbia SIMA",
       "filepath": "transcripts/youtube/2020-05-07_columbia_sima_investing_2020may_kFY30zE9td0.txt",
       "output": "analysis/thesis_extractions/2020-05-07_columbia_sima_investing_2020may.json",
-      "status": "ok",
-      "input_tokens": 31278,
-      "output_tokens": 5232,
-      "counts": "11 theses, 3 recommendations, 6 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "koyfin_investing_wizards_ep6_2020jul",
@@ -65,10 +24,9 @@
       "source": "Koyfin Investing Wizards",
       "filepath": "transcripts/youtube/2020-07-27_koyfin_investing_wizards_ep6_2020jul_NlZhF_pULfo.txt",
       "output": "analysis/thesis_extractions/2020-07-27_koyfin_investing_wizards_ep6_2020jul.json",
-      "status": "ok",
-      "input_tokens": 33094,
-      "output_tokens": 5150,
-      "counts": "11 theses, 4 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "themarket_semiconductors_magic",
@@ -76,10 +34,9 @@
       "source": "The Market (themarket.ch)",
       "filepath": "transcripts/text/2020-09-25_themarket_semiconductors_magic.txt",
       "output": "analysis/thesis_extractions/2020-09-25_themarket_semiconductors_magic.json",
-      "status": "ok",
-      "input_tokens": 2274,
-      "output_tokens": 165,
-      "counts": "0 theses, 0 recommendations, 0 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "sohn_australia_2020_omnichannel",
@@ -87,10 +44,9 @@
       "source": "Sohn Australia 2020",
       "filepath": "transcripts/youtube/2020-11-15_sohn_australia_2020_omnichannel_dqYbDqz500c.txt",
       "output": "analysis/thesis_extractions/2020-11-15_sohn_australia_2020_omnichannel.json",
-      "status": "ok",
-      "input_tokens": 8346,
-      "output_tokens": 2564,
-      "counts": "7 theses, 1 recommendations, 3 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "themarket_inflation_matters",
@@ -98,10 +54,9 @@
       "source": "The Market (themarket.ch)",
       "filepath": "transcripts/text/2021-09-13_themarket_inflation_matters.txt",
       "output": "analysis/thesis_extractions/2021-09-13_themarket_inflation_matters.json",
-      "status": "ok",
-      "input_tokens": 2300,
-      "output_tokens": 954,
-      "counts": "3 theses, 0 recommendations, 1 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "graham_doddsville_issue43_2021",
@@ -109,10 +64,9 @@
       "source": "Graham & Doddsville (Columbia)",
       "filepath": "transcripts/text/2021-11-01_graham_doddsville_issue43_2021.txt",
       "output": "analysis/thesis_extractions/2021-11-01_graham_doddsville_issue43_2021.json",
-      "status": "ok",
-      "input_tokens": 15291,
-      "output_tokens": 4134,
-      "counts": "10 theses, 3 recommendations, 4 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "vspartners_global_tech_2021nov",
@@ -120,10 +74,9 @@
       "source": "VS Partners",
       "filepath": "transcripts/youtube/2021-11-30_vspartners_global_tech_2021nov_RKNTt-HZG2E.txt",
       "output": "analysis/thesis_extractions/2021-11-30_vspartners_global_tech_2021nov.json",
-      "status": "ok",
-      "input_tokens": 19824,
-      "output_tokens": 5302,
-      "counts": "15 theses, 3 recommendations, 4 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "onthetape_fear_market_killer_2022mar",
@@ -131,10 +84,9 @@
       "source": "On The Tape / RiskReversal",
       "filepath": "transcripts/youtube/2022-03-25_onthetape_fear_market_killer_2022mar_mgM-UWPlc3E.txt",
       "output": "analysis/thesis_extractions/2022-03-25_onthetape_fear_market_killer_2022mar.json",
-      "status": "ok",
-      "input_tokens": 39977,
-      "output_tokens": 7013,
-      "counts": "21 theses, 4 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "themarket_there_is_no_playbook",
@@ -142,10 +94,9 @@
       "source": "The Market (themarket.ch)",
       "filepath": "transcripts/text/2022-04-08_themarket_there_is_no_playbook.txt",
       "output": "analysis/thesis_extractions/2022-04-08_themarket_there_is_no_playbook.json",
-      "status": "ok",
-      "input_tokens": 2293,
-      "output_tokens": 1057,
-      "counts": "4 theses, 0 recommendations, 1 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "twist_ai_platform_shift_2023jun",
@@ -153,10 +104,9 @@
       "source": "This Week in Startups",
       "filepath": "transcripts/youtube/2023-06-19_twist_ai_platform_shift_2023jun_H_q0w2qSyGY.txt",
       "output": "analysis/thesis_extractions/2023-06-19_twist_ai_platform_shift_2023jun.json",
-      "status": "ok",
-      "input_tokens": 26396,
-      "output_tokens": 3920,
-      "counts": "10 theses, 2 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "iconn_globalalts_2024_gracias_gurley",
@@ -164,10 +114,9 @@
       "source": "iConnections Global Alts 2024",
       "filepath": "transcripts/youtube/2024-01-15_iconn_globalalts_2024_gracias_gurley_s4QVoht3YsI.txt",
       "output": "analysis/thesis_extractions/2024-01-15_iconn_globalalts_2024_gracias_gurley.json",
-      "status": "ok",
-      "input_tokens": 13167,
-      "output_tokens": 4240,
-      "counts": "12 theses, 3 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "aleph_semis_globalwarming_2024feb",
@@ -175,10 +124,9 @@
       "source": "Invested by Aleph",
       "filepath": "transcripts/youtube/2024-02-14_aleph_semis_globalwarming_2024feb_ugihLT9cFTE.txt",
       "output": "analysis/thesis_extractions/2024-02-14_aleph_semis_globalwarming_2024feb.json",
-      "status": "ok",
-      "input_tokens": 36720,
-      "output_tokens": 6027,
-      "counts": "15 theses, 6 recommendations, 6 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "allin_dram_bottleneck_2024mid",
@@ -186,10 +134,9 @@
       "source": "All-In Podcast",
       "filepath": "transcripts/youtube/2024-06-15_allin_dram_bottleneck_2024mid_w8ah_tA0yfg.txt",
       "output": "analysis/thesis_extractions/2024-06-15_allin_dram_bottleneck_2024mid.json",
-      "status": "ok",
-      "input_tokens": 41943,
-      "output_tokens": 5650,
-      "counts": "16 theses, 4 recommendations, 6 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "allin_secondary_markets_2024mid",
@@ -197,10 +144,9 @@
       "source": "All-In Podcast",
       "filepath": "transcripts/youtube/2024-06-15_allin_secondary_markets_2024mid_V0lFjTWx36I.txt",
       "output": "analysis/thesis_extractions/2024-06-15_allin_secondary_markets_2024mid.json",
-      "status": "ok",
-      "input_tokens": 18217,
-      "output_tokens": 4962,
-      "counts": "11 theses, 5 recommendations, 4 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "thematic_investors_scifi_history_2024jul",
@@ -208,10 +154,9 @@
       "source": "Thematic Investors",
       "filepath": "transcripts/youtube/2024-07-01_thematic_investors_scifi_history_2024jul_tIxEBEu2Kew.txt",
       "output": "analysis/thesis_extractions/2024-07-01_thematic_investors_scifi_history_2024jul.json",
-      "status": "ok",
-      "input_tokens": 19938,
-      "output_tokens": 4947,
-      "counts": "15 theses, 3 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "allin_sec_bitcoin_xai_2024dec",
@@ -219,10 +164,9 @@
       "source": "All-In Podcast",
       "filepath": "transcripts/youtube/2024-12-07_allin_sec_bitcoin_xai_2024dec_K2xfW3hgxb4.txt",
       "output": "analysis/thesis_extractions/2024-12-07_allin_sec_bitcoin_xai_2024dec.json",
-      "status": "ok",
-      "input_tokens": 33872,
-      "output_tokens": 6078,
-      "counts": "17 theses, 3 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "allin_2025_predictions_2025jan",
@@ -230,10 +174,9 @@
       "source": "All-In Podcast",
       "filepath": "transcripts/youtube/2025-01-04_allin_2025_predictions_2025jan_HxNUAwBWX4I.txt",
       "output": "analysis/thesis_extractions/2025-01-04_allin_2025_predictions_2025jan.json",
-      "status": "ok",
-      "input_tokens": 43674,
-      "output_tokens": 5404,
-      "counts": "15 theses, 5 recommendations, 7 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "sohn_montreal_2025_skhynix_writeup",
@@ -241,10 +184,9 @@
       "source": "HedgeFundAlpha (writeup)",
       "filepath": "transcripts/web/2025-05-28_sohn_montreal_2025_skhynix_writeup.txt",
       "output": "analysis/thesis_extractions/2025-05-28_sohn_montreal_2025_skhynix_writeup.json",
-      "status": "ok",
-      "input_tokens": 2620,
-      "output_tokens": 1169,
-      "counts": "3 theses, 1 recommendations, 2 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "a16z_ai_bubble_david_george_2025oct",
@@ -252,10 +194,9 @@
       "source": "a16z Podcast",
       "filepath": "transcripts/youtube/2025-10-30_a16z_ai_bubble_david_george_2025oct_5ze3ZNvOdRY.txt",
       "output": "analysis/thesis_extractions/2025-10-30_a16z_ai_bubble_david_george_2025oct.json",
-      "status": "ok",
-      "input_tokens": 14754,
-      "output_tokens": 4789,
-      "counts": "14 theses, 3 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "tbpn_token_factories_sovereign_ai_2025",
@@ -263,10 +204,9 @@
       "source": "TBPN",
       "filepath": "transcripts/youtube/2025-11-15_tbpn_token_factories_sovereign_ai_2025_PW5n3ZnEJN0.txt",
       "output": "analysis/thesis_extractions/2025-11-15_tbpn_token_factories_sovereign_ai_2025.json",
-      "status": "ok",
-      "input_tokens": 15541,
-      "output_tokens": 4741,
-      "counts": "13 theses, 2 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
@@ -274,10 +214,9 @@
       "source": "Invest Like the Best (YouTube)",
       "filepath": "transcripts/youtube/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_cmUo4841KQw.txt",
       "output": "analysis/thesis_extractions/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt.json",
-      "status": "ok",
-      "input_tokens": 39071,
-      "output_tokens": 9302,
-      "counts": "24 theses, 6 recommendations, 10 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "heller_house_spacex_cfo_2026",
@@ -285,10 +224,9 @@
       "source": "Heller House / Mission Control",
       "filepath": "transcripts/youtube/2026-02-15_heller_house_spacex_cfo_2026__Tua32QoR6w.txt",
       "output": "analysis/thesis_extractions/2026-02-15_heller_house_spacex_cfo_2026.json",
-      "status": "ok",
-      "input_tokens": 7708,
-      "output_tokens": 1657,
-      "counts": "3 theses, 0 recommendations, 3 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "capital_allocators_2026_crossover",
@@ -296,10 +234,9 @@
       "source": "Capital Allocators",
       "filepath": "transcripts/youtube/2026-03-02_capital_allocators_2026_crossover_CFtlGhmAeM0.txt",
       "output": "analysis/thesis_extractions/2026-03-02_capital_allocators_2026_crossover.json",
-      "status": "ok",
-      "input_tokens": 29809,
-      "output_tokens": 3170,
-      "counts": "9 theses, 0 recommendations, 2 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "sohn_ny_2026_khaira_writeup",
@@ -307,12 +244,10 @@
       "source": "HedgeFundAlpha (writeup)",
       "filepath": "transcripts/web/2026-05-12_sohn_ny_2026_khaira_writeup.txt",
       "output": "analysis/thesis_extractions/2026-05-12_sohn_ny_2026_khaira_writeup.json",
-      "status": "api_error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmSSDx6uNQu7kdzNJp2'}",
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "warnings": [
-        "retry after error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmQCozpSKYtUXsgbfzM'}"
-      ]
+      "status": "ok",
+      "input_tokens": 2636,
+      "output_tokens": 1487,
+      "counts": "4 theses, 2 recommendations, 2 catalysts"
     },
     {
       "label": "sohn_ny_2026_tech_investor",
@@ -320,12 +255,10 @@
       "source": "Sohn NY 2026",
       "filepath": "transcripts/youtube/2026-05-12_sohn_ny_2026_tech_investor_2Ryr95iiYNk.txt",
       "output": "analysis/thesis_extractions/2026-05-12_sohn_ny_2026_tech_investor.json",
-      "status": "api_error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmhP6qkh35GYumu3k59'}",
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "warnings": [
-        "retry after error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmSbTpm7MYY2N2Xwr1c'}"
-      ]
+      "status": "ok",
+      "input_tokens": 12125,
+      "output_tokens": 3423,
+      "counts": "8 theses, 4 recommendations, 4 catalysts"
     },
     {
       "label": "iltb_watts_wafers_2026may_yt",
@@ -333,12 +266,10 @@
       "source": "Invest Like the Best (YouTube)",
       "filepath": "transcripts/youtube/2026-05-20_iltb_watts_wafers_2026may_yt_Mmj_G9RlW-I.txt",
       "output": "analysis/thesis_extractions/2026-05-20_iltb_watts_wafers_2026may_yt.json",
-      "status": "api_error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmjn5241b4Ygip2FLt3'}",
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "warnings": [
-        "retry after error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXmhYfKDw3z6dMHCbvM7'}"
-      ]
+      "status": "ok",
+      "input_tokens": 34993,
+      "output_tokens": 11907,
+      "counts": "30 theses, 5 recommendations, 9 catalysts"
     },
     {
       "label": "bg2_spacex_ipo_2026jun",
