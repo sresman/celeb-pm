@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "source": "Heller House / Mission Control",
+    "date": "2026-02-15",
+    "host": "Heller House",
+    "topic": "SpaceX IPO Week \u2014 CFO Bret Johnson Profile",
+    "duration_estimate_min": 13
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "SpaceX IPO is imminent, pricing at ~$135/share under ticker SPCX, with final pricing Thursday and trading Friday",
+      "detail": "SpaceX is finalizing IPO pricing based on order demand. Indicative price is $135/share but subject to change. Stock expected to trade under ticker SPCX starting Friday. This is described as potentially the biggest IPO ever.",
+      "confidence": "passing_mention",
+      "confidence_evidence": "Reporter states facts about IPO mechanics without expressing a directional investment view or conviction level.",
+      "tickers_named": [
+        "SPCX"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "space/orbital compute",
+        "IPO event"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "pricing will be 135 bucks a share, but that could still change"
+    },
+    {
+      "id": "T2",
+      "summary": "SpaceX's xAI acquisition is generating massive compute rental revenue ($1.25B/month from Anthropic, $920M/month from Google) but this is datacenter rental revenue, not AI product revenue",
+      "detail": "xAI has been cutting costs and losing researchers post-acquisition. To monetize excess datacenter capacity, SpaceX/xAI signed compute rental deals: $1.25B/month with Anthropic and $920M/month with Google. Reporter flags this is fundamentally different from OpenAI or Anthropic's subscription/API revenue \u2014 it is capacity utilization revenue from overbuilt data centers, not organic AI product demand.",
+      "confidence": "moderate",
+      "confidence_evidence": "Reporter draws explicit distinction between compute rental revenue and AI product revenue, framing it as a quality-of-earnings concern for SpaceX's reported AI revenue growth.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "Anthropic (private)",
+        "Google (GOOGL)",
+        "xAI (private)",
+        "SpaceX (SPCX)"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "space/orbital compute",
+        "cloud/compute rental"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "totally different kind of AI revenue than OpenAI or Anthropic will be reporting"
+    },
+    {
+      "id": "T3",
+      "summary": "The 'SpaceX mafia' of alumni founders is attracting significant venture capital, creating a new investable ecosystem of space and deep-tech startups",
+      "detail": "Numerous billion-dollar-plus companies have been founded by SpaceX alumni. Investors are actively seeking out former SpaceX employees due to demonstrated ability to execute in space. Examples include Revolution (software for aerospace/energy, raised $1.25B) and K2 Space (satellite manufacturing). The SpaceX IPO liquidity event may further fuel this ecosystem by giving alumni capital to fund or found new ventures.",
+      "confidence": "moderate",
+      "confidence_evidence": "Reporter cites specific companies, fundraising amounts, and investor appetite as evidence of a structural trend, though no explicit investment recommendation is made.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "space/orbital compute",
+        "venture/private markets",
+        "deep tech"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "gigantic appetite among investors to invest in former SpaceX people"
+    }
+  ],
+  "explicit_recommendations": [],
+  "sector_rankings": [],
+  "risk_warnings": [
+    {
+      "target": "SpaceX (SPCX) AI revenue",
+      "nature": "overhyped",
+      "detail": "SpaceX will report large AI revenue growth in 2026, but this is driven by compute rental deals (Anthropic $1.25B/month, Google $920M/month) from excess xAI datacenter capacity \u2014 not from organic AI product demand like subscriptions or API usage. Investors should not conflate this with the AI revenue quality of OpenAI or Anthropic."
+    },
+    {
+      "target": "SpaceX CFO Bret Johnson",
+      "nature": "structural_risk",
+      "detail": "Being CFO of a private company is fundamentally different from a public company role. Johnson will face tightly choreographed earnings calls watched by millions and conference scrutiny. His ability to adapt to public company demands is an open question that could affect investor confidence post-IPO."
+    },
+    {
+      "target": "xAI (SpaceX subsidiary)",
+      "nature": "structural_risk",
+      "detail": "xAI's research lab is described as 'not going so great' with significant researcher attrition and layoffs post-SpaceX acquisition. The core AI research capability may be deteriorating even as revenue is being manufactured through compute rental deals."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "SpaceX IPO final pricing",
+      "timing": "Thursday 2026-02-19",
+      "impact": "Sets definitive share price for what is described as potentially the largest IPO ever; triggers institutional allocation and retail order finalization",
+      "beneficiaries": [
+        "SpaceX employees and alumni holding equity",
+        "SPCX early investors",
+        "SpaceX mafia startup ecosystem"
+      ],
+      "losers": []
+    },
+    {
+      "event": "SpaceX stock begins trading under SPCX",
+      "timing": "Friday 2026-02-20",
+      "impact": "Public market price discovery for SpaceX; potential liquidity event for thousands of employees and alumni; could catalyze further investment in SpaceX alumni-founded startups",
+      "beneficiaries": [
+        "SPCX shareholders",
+        "SpaceX alumni founders",
+        "Space sector ETFs and funds"
+      ],
+      "losers": []
+    },
+    {
+      "event": "SpaceX IPO liquidity event for alumni",
+      "timing": "2026 post-IPO",
+      "impact": "SpaceX mafia founders and employees become liquid, potentially funding or founding new deep-tech and space ventures with less need for external VC capital",
+      "beneficiaries": [
+        "Space/deep-tech startup ecosystem",
+        "Revolution (Scott Morton)",
+        "K2 Space",
+        "Base Power"
+      ],
+      "losers": [
+        "Traditional VC firms who may face more founder-friendly terms"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "Quality of SpaceX AI revenue",
+      "view": "Compute rental revenue is structurally inferior to AI product revenue and should not be valued equivalently",
+      "detail": "Reporter explicitly distinguishes SpaceX/xAI's $2.17B/month in compute rental deals (Anthropic + Google) from the subscription and API revenue that OpenAI and Anthropic generate. The implication is that SpaceX's AI revenue growth in 2026 will be a financial engineering artifact of excess datacenter monetization, not evidence of competitive AI product traction."
+    },
+    {
+      "topic": "SpaceX CFO transition risk",
+      "view": "Public company CFO demands are materially different from private company; Johnson's adaptability is unproven",
+      "detail": "Multiple sources noted to the reporter that the shift from private to public CFO involves earnings call choreography, conference scrutiny, and continuous investor relations demands that Johnson has never faced. This is a governance and execution risk for post-IPO SpaceX."
+    },
+    {
+      "topic": "SpaceX alumni ecosystem as investable theme",
+      "view": "SpaceX alumni are a credible signal for venture investment in space and deep tech",
+      "detail": "Investors are systematically seeking out former SpaceX employees as founders due to demonstrated execution culture. The IPO may accelerate this by giving alumni capital independence, potentially creating a self-reinforcing ecosystem of well-funded, mission-driven deep-tech companies."
+    }
+  ]
+}

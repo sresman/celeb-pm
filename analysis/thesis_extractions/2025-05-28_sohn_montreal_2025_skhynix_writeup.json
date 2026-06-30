@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "source": "HedgeFundAlpha (writeup)",
+    "date": "2025-05-28",
+    "host": "Sohn Montreal 2025",
+    "topic": "SK Hynix / HBM pitch",
+    "duration_estimate_min": null
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "AI's shift from training to inference is driving rapid and accelerating growth in memory demand, particularly HBM.",
+      "detail": "Baker's core thesis centers on the transition of AI workloads from training to inference (including reasoning models), which he argues structurally increases memory bandwidth and capacity requirements per unit of compute. This shift is a primary demand driver for high-bandwidth memory going forward.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "This is the central thesis of his Sohn Montreal pitch, framed as the primary investment rationale for a named position.",
+      "tickers_named": [
+        "000660.KS"
+      ],
+      "tickers_implied": [
+        "MU",
+        "SSNLF"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "HBM/memory"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "rapid growth in memory demand driven by AI's shift from training to inference"
+    },
+    {
+      "id": "T2",
+      "summary": "SK Hynix is the dominant HBM supplier and offers ~3x upside as the primary beneficiary of AI inference-driven memory demand.",
+      "detail": "Baker pitched SK Hynix as his primary long idea at Sohn Montreal 2025, citing its dominant market position in HBM supply and projecting approximately 3x upside. The firm's leadership in HBM technology positions it as the key beneficiary of the structural shift toward inference workloads in AI.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Explicitly named as the Sohn pitch with a specific 3x upside target; Baker's highest-conviction public idea at the conference.",
+      "tickers_named": [
+        "000660.KS"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "HBM/memory"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "3X Upside Riding the AI Inference Wave with a Dominant HBM Supplier"
+    },
+    {
+      "id": "T3",
+      "summary": "Reasoning models (advanced inference-time compute scaling) are a structural catalyst for HBM demand growth beyond what consensus expects.",
+      "detail": "Baker highlights advancements in reasoning models as a key driver reshaping the semiconductor landscape. Reasoning models require significantly more memory bandwidth per inference step than standard models, implying HBM demand could be materially underestimated by the market.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Explicitly cited as a reshaping force in the semiconductor landscape within the context of his primary pitch.",
+      "tickers_named": [
+        "000660.KS"
+      ],
+      "tickers_implied": [
+        "MU",
+        "SSNLF"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "HBM/memory",
+        "AI inference scaling"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "advancements in reasoning models and high-bandwidth memory are reshaping the semiconductor landscape"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "SK Hynix (000660.KS)",
+      "reasoning": "Dominant HBM supplier positioned to benefit from AI inference wave and reasoning model proliferation; Baker projects ~3x upside from current levels.",
+      "confidence": "high_conviction"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "HBM/memory semiconductors",
+      "over": "general semiconductors / training-focused compute",
+      "reasoning": "AI workload shift from training to inference disproportionately benefits memory bandwidth suppliers like HBM producers relative to pure compute plays."
+    }
+  ],
+  "risk_warnings": [],
+  "catalysts": [
+    {
+      "event": "Continued proliferation of reasoning models requiring high memory bandwidth per inference step",
+      "timing": "2025-2027",
+      "impact": "Structural step-up in HBM demand per AI accelerator deployed, potentially exceeding current market forecasts.",
+      "beneficiaries": [
+        "SK Hynix (000660.KS)",
+        "Micron (MU)",
+        "Samsung (SSNLF)"
+      ],
+      "losers": []
+    },
+    {
+      "event": "AI workload mix shift from training to inference at hyperscale",
+      "timing": "2025 onward",
+      "impact": "Inference workloads are more memory-bandwidth-bound than training, increasing HBM attach rate and volume per cluster.",
+      "beneficiaries": [
+        "SK Hynix (000660.KS)"
+      ],
+      "losers": []
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "Investment approach",
+      "view": "Contrarian, long-term technology crossover",
+      "detail": "Baker is described as having a contrarian investment approach combined with deep AI/technology understanding, running a crossover fund across public and private markets with a long-term outlook."
+    },
+    {
+      "topic": "Transcript completeness",
+      "view": "Partial \u2014 login-gated content",
+      "detail": "The public portion of this writeup is a summary/teaser only. The full thesis detail, financial modeling, and specific catalysts cited by Baker at Sohn Montreal are behind a paywall and were not available for extraction. All theses above are inferred from the public summary language only."
+    }
+  ]
+}

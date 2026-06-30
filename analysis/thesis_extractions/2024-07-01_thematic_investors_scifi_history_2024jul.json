@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "source": "Thematic Investors",
+    "date": "2024-07-01",
+    "host": "Thematic Investors",
+    "topic": "Blending sci-fi, history and literature",
+    "duration_estimate_min": 48
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "We are extremely early in the AI cycle \u2014 analogous to 1996 of the internet era \u2014 making high-confidence application-layer predictions premature",
+      "detail": "Baker cites Chase Coleman's stat that less than 2% of current internet market cap was founded in the two years post-Netscape Navigator. By analogy, we are ~2 years post-ChatGPT and Google, Facebook, Uber-equivalents haven't been founded yet. Application layer winners are unknowable at this stage.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states this explicitly and repeatedly, framing it as a foundational investment principle for the current moment",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI application layer",
+        "technology cycle timing",
+        "internet analogy"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "we're still two years post really kind of chat GPT taking the World by storm"
+    },
+    {
+      "id": "T2",
+      "summary": "AI infrastructure (picks and shovels) is the right place to invest at the beginning of a major technology wave",
+      "detail": "Baker references Carlota Perez's work on technology waves \u2014 at the start of each wave, infrastructure/picks-and-shovels investing outperforms. He explicitly says we are far from a bubble in AI on a valuation basis, making infrastructure investment attractive now.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker frames this as a structural principle backed by historical precedent and his own portfolio positioning in both public and private markets",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "AMD",
+        "ANET",
+        "MRVL",
+        "MU",
+        "WDC",
+        "STX"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "technology cycle timing"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "at the beginning of every massive new technology wave you do want to invest at the picks and shovels"
+    },
+    {
+      "id": "T3",
+      "summary": "GPU utilization is the single most important metric for AI model training competitiveness; storage, memory, and networking are the key bottlenecks",
+      "detail": "Baker uses a restaurant analogy: GPU is the head chef, but the head chef has gotten 50x faster over 4-5 years while the rest of the data center only got 4x faster. GPU sits idle most of the time, burning power and depreciating. Companies that solve storage, memory, and networking bottlenecks will drive GPU utilization and thus AI model quality, time-to-market, and cost.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker says GPU utilization is 'probably the number one metric I would focus on' and has positioned both public and private portfolios around this thesis",
+      "tickers_named": [],
+      "tickers_implied": [
+        "MU",
+        "WDC",
+        "STX",
+        "ANET",
+        "MRVL",
+        "NVDA"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "memory/storage bottleneck",
+        "networking"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "the number one probably metric I would focus on for any company is just GPU utilization"
+    },
+    {
+      "id": "T4",
+      "summary": "Optical networking is a critical and inevitable component of future AI data center architecture, both within and across data centers",
+      "detail": "There are only three sites in the US with nuclear reactors close enough together to power a 1-5 GW data center. Beyond those sites, stringing together discrete power plants requires coherent optical clusters across long distances. Even within data centers, as they scale to 5-6 GW and the size of 10 Pentagons, coherent optics will be required internally. This is a structural, not optional, upgrade.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker frames this as a hard engineering constraint with no alternative solution, not a speculative view",
+      "tickers_named": [],
+      "tickers_implied": [
+        "CIEN",
+        "COHR",
+        "LITE",
+        "IIVI",
+        "FNSR"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "optical networking",
+        "power/energy"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "the only way that will happen is with Optics"
+    },
+    {
+      "id": "T5",
+      "summary": "Power availability is the binding constraint on AI data center scaling; only three viable gigawatt-scale sites exist in the US",
+      "detail": "Baker states that everyone has moved beyond 100 MW data centers and is thinking about 1 GW and 5 GW data centers. There are only three sites in the US where nuclear reactors are close enough together to supply sufficient power. Beyond those, you must string together discrete power plants, which creates the optical networking requirement.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Stated as a hard physical/geographic constraint, not a forecast",
+      "tickers_named": [],
+      "tickers_implied": [
+        "VST",
+        "CEG",
+        "NRG",
+        "ETR"
+      ],
+      "themes": [
+        "power/energy",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "only three sites in the United States where there are these nuclear reactors that are close enough together"
+    },
+    {
+      "id": "T6",
+      "summary": "Only four foundation model companies have a realistic chance of winning: Google, Meta, xAI, and OpenAI/Microsoft \u2014 all others will fail or be acquired at preference",
+      "detail": "The winning ingredients are: (1) unique and proprietary data at scale, (2) massive compute, (3) internet-scale distribution for RLHF socialization. No startup outside these four has all three. Inflection AI \u2014 founded by a DeepMind co-founder \u2014 was sold at 1.1x preference to Microsoft as an acqui-hire. Baker expects brutal consolidation with most foundation model startups going to zero or being acquired.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker says 'I think they have zero chance' about non-big-four foundation model companies and cites Inflection as a concrete example",
+      "tickers_named": [],
+      "tickers_implied": [
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "themes": [
+        "AI foundation models",
+        "competitive moats",
+        "private market consolidation"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "those are the four winners no one else has access to unique data infinite amounts of compute"
+    },
+    {
+      "id": "T7",
+      "summary": "xAI is the most compelling private AI company due to unique data (X/Twitter), compute, and distribution",
+      "detail": "X's human debate data \u2014 including Community Notes as a crowdsourced truth mechanism \u2014 is uniquely valuable for training AI models. xAI has raised $6B, has access to this proprietary data, and has distribution through X's user base for RLHF. Baker views xAI as one of only four viable foundation model companies alongside Google, Meta, and OpenAI/Microsoft.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker expresses clear conviction but acknowledges xAI is private and the outcome is uncertain; he frames it as having the right ingredients rather than guaranteeing success",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI foundation models",
+        "private markets",
+        "competitive moats"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "xai is a private company and it has access to X's data which is really unique and valuable"
+    },
+    {
+      "id": "T8",
+      "summary": "OpenAI's governance structure is a structural risk that may prevent it from succeeding at scale",
+      "detail": "OpenAI's nonprofit board can dissolve all commercial agreements including the Microsoft deal. The conflict between for-profit and nonprofit structures creates uncertainty. Baker notes OpenAI's own website says investors should expect to lose all their money. Microsoft is hedging by training its own GPT-4/5-class models and acquired Inflection to reduce OpenAI dependence.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker raises this as a genuine structural concern but doesn't definitively predict OpenAI's failure",
+      "tickers_named": [],
+      "tickers_implied": [
+        "MSFT"
+      ],
+      "themes": [
+        "AI foundation models",
+        "governance risk",
+        "private markets"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "on their website it says you should expect to lose all your money if you invest in open AI"
+    },
+    {
+      "id": "T9",
+      "summary": "Most application software companies face existential risk from AI replacing the human workers who use their software",
+      "detail": "AI applications replace human labor directly and don't need the software licenses those humans used. A customer service AI doesn't need Salesforce, ServiceNow, or Zendesk. Baker compares the potential disruption to the Blackberry/flip phone after the iPhone \u2014 sometimes clearly superior technology causes rapid displacement. He acknowledges application software companies are aware and trying to integrate AI before being replaced.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker explicitly flags this as a 'very very common belief of most AI startups' but also says humility is required \u2014 he doesn't give a definitive timeline",
+      "tickers_named": [],
+      "tickers_implied": [
+        "CRM",
+        "NOW",
+        "ZEN",
+        "HUBS",
+        "WDAY"
+      ],
+      "themes": [
+        "AI disruption",
+        "application software",
+        "short thesis"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "most application software may just go away"
+    },
+    {
+      "id": "T10",
+      "summary": "Larger context windows have largely replaced enterprise fine-tuning, undermining the moat of open-source model companies",
+      "detail": "The thesis that enterprises would fine-tune their own models on proprietary data \u2014 creating lock-in for open-source model providers \u2014 has not played out. Instead, large context windows allow enterprises to load their data without fine-tuning. This eliminates the lock-in advantage and commoditizes models outside the big four labs.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states this as an observed fact about how the market has evolved, not a prediction",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI foundation models",
+        "enterprise software",
+        "competitive moats"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "larger context windows have largely replaced enterprise fine tuning"
+    },
+    {
+      "id": "T11",
+      "summary": "Scaling laws remain the dominant driver of AI quality improvement; compute is the key variable",
+      "detail": "Baker describes the 'iron law of AI' / scaling laws: AI quality doubles for every 10x increase in compute/data used for training. Recent discovery: training longer on the same data and compute also yields significant advances. This makes compute access the primary competitive moat for foundation model companies.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker has held this view since at least early 2021 (referenced in a letter) and frames it as the foundational principle of AI development",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "AMD",
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "themes": [
+        "AI scaling laws",
+        "semiconductor supply chain",
+        "AI foundation models"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "the quality of an AI algorithm doubles for every 10x increase in the Computing data"
+    },
+    {
+      "id": "T12",
+      "summary": "Humanoid robots will revolutionize blue-collar work once LLM reasoning capabilities are embedded",
+      "detail": "Baker believes transformer-based reasoning models can be embedded in humanoid robots to revolutionize blue-collar work. He also notes transformer elements may significantly improve FSD (full self-driving) algorithms. This is a near-to-medium term view given current model capabilities.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker says 'very soon you're going to be able to put these models into robots' but doesn't give a specific timeline",
+      "tickers_named": [],
+      "tickers_implied": [
+        "TSLA"
+      ],
+      "themes": [
+        "robotics",
+        "AI application layer",
+        "autonomous vehicles"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "put these models into robots and I think that's going to humanoid robots that's going to revolutionize the world of blue collar work"
+    },
+    {
+      "id": "T13",
+      "summary": "X (Twitter) and YouTube are the most valuable data assets for AI training; synthetic data reduces but doesn't eliminate data moats",
+      "detail": "Synthetic data is making data less of a competitive advantage broadly, but a few truly unique datasets remain valuable: X (human debate, Community Notes), YouTube (video data), and Facebook's video data. These are the datasets that will matter for training frontier models.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker states this as a considered view but acknowledges synthetic data is changing the landscape",
+      "tickers_named": [],
+      "tickers_implied": [
+        "META",
+        "GOOGL"
+      ],
+      "themes": [
+        "AI foundation models",
+        "data moats",
+        "competitive moats"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "X probably being the most valuable data set for training these models"
+    },
+    {
+      "id": "T14",
+      "summary": "Nvidia's GPU dominance is extremely difficult to displace; all frontier models trained almost exclusively on Nvidia GPUs",
+      "detail": "Baker states ~99% of frontier AI models have been trained on Nvidia GPUs (the remainder on Google TPUs and Cerebras wafer-scale chips). Despite massive efforts by hyperscalers to build their own ASICs (Google TPU model), Nvidia remains dominant. Baker has known Jensen Huang for 25 years and views him as one of three most exceptional CEOs alongside Elon Musk and Lisa Su.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker frames Nvidia's dominance as an observed fact and has deep long-term familiarity with the company",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [
+        "GOOGL",
+        "AMD"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure",
+        "competitive moats"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "these models have only been trained on Nvidia gpus that's like 99% of them"
+    },
+    {
+      "id": "T15",
+      "summary": "Brain-computer interfaces (BCI) are the likely long-term interface for the metaverse, not VR headsets",
+      "detail": "Baker believes VR headsets are too alienating for mass adoption (even Apple's headset). The metaverse will require either BCI (Neuralink, Facebook's CTRL-Labs acquisition, Precision Neuroscience) or AR glasses/contact lenses. Meta Ray-Ban glasses are a quiet early signal. Both paths require additional Moore's Law cycles.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker frames this as a revised view \u2014 he was wrong on metaverse timing but maintains the long-term thesis with a different mechanism",
+      "tickers_named": [],
+      "tickers_implied": [
+        "META",
+        "AAPL"
+      ],
+      "themes": [
+        "metaverse",
+        "brain-computer interface",
+        "AR/VR"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "I just don't think VR headsets are going to be the mechanism"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "AI infrastructure: storage, memory, networking, optics companies",
+      "reasoning": "GPU utilization is the binding constraint on AI model quality and cost. Companies that improve the feed of data to GPUs (storage, DRAM, networking, optics) are the picks-and-shovels of the AI wave. Baker has positioned both public and private portfolios here.",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "avoid",
+      "target": "Non-big-four foundation model startups (e.g. Anthropic, Mistral, Cohere, etc.)",
+      "reasoning": "Lack all three required ingredients: unique data, infinite compute, internet-scale distribution. Will be acquired at preference or go to zero. Context windows have eliminated the enterprise fine-tuning lock-in thesis.",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "sell",
+      "target": "Application software companies exposed to white-collar labor replacement",
+      "reasoning": "AI replaces the human workers who use application software; AI agents don't need software licenses. Risk of rapid displacement similar to Blackberry post-iPhone. Companies like Salesforce, ServiceNow, Zendesk are at structural risk.",
+      "confidence": "moderate"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "AI infrastructure (GPU, memory, networking, optics, storage)",
+      "over": "AI application software",
+      "reasoning": "Infrastructure benefits from scaling laws regardless of which application wins; application software faces existential displacement risk from AI agents replacing the human workers who use it"
+    },
+    {
+      "preferred": "Big-four foundation model companies (Google, Meta, Microsoft/OpenAI, xAI)",
+      "over": "All other foundation model startups",
+      "reasoning": "Only the big four have the trifecta of unique data, massive compute, and internet-scale distribution required to win the foundation model race"
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "OpenAI",
+      "nature": "structural_risk",
+      "detail": "Nonprofit board can dissolve all commercial agreements including Microsoft partnership at any time. Website explicitly warns investors to expect total loss. For-profit/nonprofit governance conflict may prevent scaling to stated AGI mission."
+    },
+    {
+      "target": "Application software sector (CRM, NOW, ZEN, HUBS, WDAY)",
+      "nature": "structural_risk",
+      "detail": "AI agents replace human workers who are the end-users of application software. AI applications don't require software licenses. Risk of rapid displacement \u2014 potentially as fast as Blackberry after iPhone."
+    },
+    {
+      "target": "Non-big-four foundation model startups",
+      "nature": "structural_risk",
+      "detail": "Zero chance of winning according to Baker. Will be acquired at or near liquidation preference. Inflection AI precedent: sold at 1.1x preference despite being founded by DeepMind co-founder."
+    },
+    {
+      "target": "AI sector broadly",
+      "nature": "overhyped",
+      "detail": "Baker notes that historically every world-changing technology (internet, steam engine, automobile) produces a bubble. We are not yet in a bubble on valuation metrics, but one may come."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Blackwell GPU launch by Nvidia",
+      "timing": "Near-term (2024)",
+      "impact": "Will make existing GPU utilization statistics obsolete \u2014 the gap between GPU speed and rest of data center infrastructure will widen further, accelerating demand for memory, networking, and storage solutions",
+      "beneficiaries": [
+        "NVDA",
+        "memory producers",
+        "networking companies",
+        "storage companies"
+      ],
+      "losers": []
+    },
+    {
+      "event": "GPT-5 release by OpenAI",
+      "timing": "Near-term (2024-2025)",
+      "impact": "Next step-change in model capability; will test whether scaling laws continue to hold and whether emergent reasoning properties appear",
+      "beneficiaries": [
+        "NVDA",
+        "hyperscale compute providers"
+      ],
+      "losers": [
+        "application software companies if capability jump enables more labor replacement"
+      ]
+    },
+    {
+      "event": "Consolidation/failure of non-big-four foundation model startups",
+      "timing": "Medium-term (1-3 years)",
+      "impact": "Brutal consolidation period; most foundation model companies fail or are acquired at preference; capital and talent concentrates at Google, Meta, Microsoft, xAI",
+      "beneficiaries": [
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "losers": [
+        "Anthropic",
+        "Cohere",
+        "Mistral",
+        "other foundation model startups"
+      ]
+    },
+    {
+      "event": "Coherent optical clustering across multiple data centers",
+      "timing": "Medium-term (2-4 years)",
+      "impact": "Enables gigawatt-scale AI training clusters beyond the three existing nuclear-adjacent US sites; unlocks next generation of model training",
+      "beneficiaries": [
+        "optical networking companies",
+        "power infrastructure companies"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Embedding transformer reasoning into humanoid robots",
+      "timing": "Medium-term (2-5 years)",
+      "impact": "Revolutionizes blue-collar labor markets; also improves FSD algorithms",
+      "beneficiaries": [
+        "TSLA",
+        "humanoid robot companies"
+      ],
+      "losers": [
+        "blue-collar labor-intensive industries"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "AI bubble risk",
+      "view": "We are quantitatively far from a bubble in AI on valuation metrics, but historical precedent suggests one may come",
+      "detail": "Baker explicitly says 'we are quantitatively far far away from a bubble in terms of valuation' but notes every major technology wave (internet, steam engine, automobile) has produced a bubble. He does not predict one is imminent."
+    },
+    {
+      "topic": "Public vs. private market investing in AI",
+      "view": "Doing both creates profound informational advantages in each direction",
+      "detail": "Private market visibility into semiconductor disruption attempts and infrastructure startups informs public equity investing. Public equity lens on Nvidia's dominance and competitive dynamics informs which private companies have real chances vs. zero."
+    },
+    {
+      "topic": "AGI timeline",
+      "view": "AGI may be 2-5 years away if scaling laws continue; 50% of AI scientists believe current transformer architecture will get there",
+      "detail": "Emergent properties (theory of mind, world models) in GPT-4 suggest scaling may produce AGI. Once achieved, recursive self-improvement leads to ASI. Baker frames this as a genuine religious debate among scientists, not a consensus view."
+    },
+    {
+      "topic": "Metaverse timing",
+      "view": "Was wrong on timing; maintains long-term thesis but has updated the mechanism away from VR headsets toward BCI or AR glasses",
+      "detail": "Baker acknowledges no companies have needed a chief metaverse officer yet. Revised view: VR headsets too alienating; metaverse requires BCI (Neuralink, CTRL-Labs) or AR glasses, both needing additional Moore's Law cycles."
+    },
+    {
+      "topic": "Investment philosophy",
+      "view": "Strong opinions loosely held; conviction-flexibility balance is central to investment success",
+      "detail": "Baker cites Michael Steinhardt: investing requires courage of convictions balanced with flexibility to admit when wrong. He applies this to his own metaverse call and to AI application layer predictions."
+    },
+    {
+      "topic": "Synthetic data",
+      "view": "Synthetic data is reducing but not eliminating data moats; only a few truly unique datasets remain valuable",
+      "detail": "X (human debate + Community Notes), YouTube, and Facebook video data are the truly unique training datasets. Synthetic data makes most other data less competitively differentiated."
+    }
+  ]
+}

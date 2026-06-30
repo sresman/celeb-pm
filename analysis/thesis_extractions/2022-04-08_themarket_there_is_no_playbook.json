@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "source": "The Market (themarket.ch)",
+    "date": "2022-04-08",
+    "host": "Christoph Gisiger",
+    "topic": "There is no playbook; inflation, tech earnings power",
+    "duration_estimate_min": null
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "Inflation is the single most important variable for financial markets in 2022",
+      "detail": "Baker frames inflation as the dominant macro driver \u2014 its trajectory determines the path for equities broadly and tech specifically. No prior playbook exists for the current inflationary environment combined with post-pandemic dynamics.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Headline framing of the interview; described as 'the one thing that matters'",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "macro/inflation",
+        "equity market structure"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "the one thing that matters is inflation"
+    },
+    {
+      "id": "T2",
+      "summary": "Technology sector earnings power remains durable even in an inflationary environment",
+      "detail": "Despite rising rates and inflation pressuring multiples, Baker argues that the fundamental earnings power of leading technology companies is intact, distinguishing between multiple compression (a rate/inflation phenomenon) and actual business deterioration.",
+      "confidence": "moderate",
+      "confidence_evidence": "Implied from topic description 'tech earnings power' but transcript body is paywalled \u2014 confidence limited to lede context",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "technology sector fundamentals",
+        "inflation impact on tech"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "rising prices would mean for the sector"
+    },
+    {
+      "id": "T3",
+      "summary": "Semiconductor super-cycle has further to run despite near-term macro headwinds",
+      "detail": "Baker references 'what's next for the super-cycle in the semiconductor industry,' implying he sees the structural demand drivers (AI, EVs, IoT, data centers) as sustaining the cycle beyond current cyclical concerns.",
+      "confidence": "moderate",
+      "confidence_evidence": "Explicitly named as a topic of discussion in the lede; consistent with Baker's known long-term semiconductor views",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain",
+        "semiconductor cycle"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "super-cycle in the semiconductor industry"
+    },
+    {
+      "id": "T4",
+      "summary": "Record new stock issuances (IPOs/SPACs) are creating attractive entry-point opportunities",
+      "detail": "Baker notes that the record number of new stock issues \u2014 many of which have sold off sharply from peak valuations \u2014 is generating a hunting ground for long-term investors to find mispriced assets at attractive prices.",
+      "confidence": "moderate",
+      "confidence_evidence": "Explicitly cited as a topic in the lede with the word 'attractive opportunities'",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "IPO/new issuance cycle",
+        "valuation reset",
+        "crossover investing"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "record number of new stock issues is creating attractive opportunities"
+    }
+  ],
+  "explicit_recommendations": [],
+  "sector_rankings": [],
+  "risk_warnings": [
+    {
+      "target": "Equity markets broadly",
+      "nature": "structural_risk",
+      "detail": "Inflation without a prior playbook creates an environment where historical valuation frameworks and rate-sensitivity models may not apply cleanly, elevating risk of mispricing across asset classes."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Inflation trajectory resolution (peak or persistence)",
+      "timing": "2022 near-term",
+      "impact": "Sets the tone for equity multiples and risk appetite across financial markets; a peak in inflation would be a significant positive catalyst for growth/tech equities",
+      "beneficiaries": [
+        "technology sector",
+        "growth equities"
+      ],
+      "losers": [
+        "inflation hedges",
+        "value/commodity plays if inflation peaks"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "Inflation as market regime",
+      "view": "There is no historical playbook for the current inflationary environment",
+      "detail": "Baker explicitly frames the current macro setup as unprecedented in terms of the combination of factors at play, suggesting investors cannot rely on prior cycles for guidance."
+    },
+    {
+      "topic": "New issuance cycle",
+      "view": "Post-bubble selloff in recent IPOs/SPACs creates opportunity",
+      "detail": "The large cohort of companies that went public at peak valuations in 2020-2021 and have since corrected sharply represents a fertile opportunity set for disciplined long-term investors like Atreides."
+    },
+    {
+      "topic": "Technology investing framework",
+      "view": "Distinguish multiple compression from earnings deterioration",
+      "detail": "Baker's framework separates the impact of rising rates on valuation multiples (a financial phenomenon) from actual degradation of business fundamentals \u2014 the latter being the true risk to avoid."
+    }
+  ]
+}

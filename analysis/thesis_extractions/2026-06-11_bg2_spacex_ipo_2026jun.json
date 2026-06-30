@@ -1,0 +1,575 @@
+{
+  "metadata": {
+    "source": "BG2 Pod",
+    "date": "2026-06-11",
+    "host": "Brad Gerstner, Bill Gurley",
+    "topic": "SpaceX IPO, AI capex, Cursor",
+    "duration_estimate_min": 80
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "SpaceX is a must-own for institutional investors as the best single bet on both the AI and space future",
+      "detail": "Baker frames SpaceX as uniquely positioned across launch, Starlink, terrestrial AI compute, and frontier model development. He calls it a 'set it and forget it' for institutional investors, arguing no other entrepreneur or business is a better bet on the future. The combination of AI-pilled compute demand and SpaceX's core business makes it compelling.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker uses 'must buy, must own, set it and forget it' language; he is an existing large shareholder; he frames it as the best single bet on the future with no hedging",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SPCE-IPO (SpaceX)"
+      ],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure",
+        "frontier AI models"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "must buy, a must own, a set it and forget it"
+    },
+    {
+      "id": "T2",
+      "summary": "SpaceX's terrestrial AI compute business is monetizing at dramatically higher rates than peers and is the most underappreciated near-term revenue driver",
+      "detail": "XAI/SpaceX signed Google at ~$50B/gigawatt/year and Anthropic at $22-23B/gigawatt/year, versus an implied $14B/gigawatt in bank models. This monetization rate makes the terrestrial compute business highly attractive even before orbital compute. SpaceX went from not being an AI hyperscaler to being #4 in ~30 days, passing Oracle and others.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Specific deal economics cited ($50B/GW Google, $22-23B/GW Anthropic vs $14B/GW implied); Baker states this explicitly and repeatedly; Clark Tang corroborates",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (private)",
+        "GOOGL",
+        "AMZN (Oracle comparison)",
+        "ORCL"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "power/energy"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "they just signed Google at 50 per gigawatt"
+    },
+    {
+      "id": "T3",
+      "summary": "Orbital/space compute represents a 5x CapEx cost reduction vs terrestrial and is a long-term call option on SpaceX",
+      "detail": "Fox calculates ~$5B/GW CapEx for orbital compute vs $20-25B/GW for terrestrial infrastructure (land, shell, power, cooling). With rapid two-stage Starship reusability, cost per kg drops from ~$1,500 (Falcon) to <$250, asymptoting toward fuel cost. Space eliminates land, cooling, and power costs. Baker frames this as not necessary for the IPO valuation but a significant upside option.",
+      "confidence": "moderate",
+      "confidence_evidence": "Detailed first-principles math presented but contingent on rapid two-stage Starship reusability which Baker acknowledges is 'really hard'; framed as call option not base case",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (private)"
+      ],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure",
+        "power/energy"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "$5 billion per gigawatt of CapEx to put these in space"
+    },
+    {
+      "id": "T4",
+      "summary": "Cursor acquisition dramatically advances XAI/SpaceX's frontier model capability and is the most underappreciated upside in the SpaceX IPO",
+      "detail": "Cursor has more proprietary coding tokens than exist on the public internet. Composer 2.5 (trained on Kimi K2.5 base + Cursor data + RL in 3 weeks on Colossus 2) was Pareto dominant 12 days prior. Grok 4.3 (1.5T parameter) is now training with Cursor data injected into pre-training, not just RL. Baker says this is 'the thing that's least talked about' and could be the biggest upside surprise.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker explicitly says this is the least-discussed and potentially biggest upside; specific technical details on training pipeline; Gerstner agrees it's the most overlooked element",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (private)",
+        "xAI (private)",
+        "Cursor (private, acquired)"
+      ],
+      "themes": [
+        "frontier AI models",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "the thing that's least talked about... could be the biggest upside surprise"
+    },
+    {
+      "id": "T5",
+      "summary": "Frontier AI models continue to capture ~90%+ of economic value despite open-source models consuming the majority of tokens",
+      "detail": "Baker argues two things can simultaneously be true: frontier models capture the vast majority of revenue (possibly 90%+) while open-source models handle the majority of token volume. This has been 'decisively wrong' for bears who predicted open-source would erode frontier economics. Harvey's use of open-source + routing still consumed significant Opus tokens. The frontier revenue thesis has been validated by Anthropic's revenue trajectory.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker says 'decisively wrong' about the bear case; cites empirical revenue data; uses 'probably more than 90%' language; consistent with Anthropic revenue data points discussed",
+      "tickers_named": [],
+      "tickers_implied": [
+        "Anthropic (private)",
+        "OpenAI (private)",
+        "GOOGL",
+        "META"
+      ],
+      "themes": [
+        "frontier AI models",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "frontier might be 90% of the economic value"
+    },
+    {
+      "id": "T6",
+      "summary": "Open-source AI success is bullish for compute/hardware providers, not bearish for the AI ecosystem",
+      "detail": "Baker argues that if frontier models capture less margin due to open-source competition, more spending flows to compute. The better open source does, the better it is for compute providers. This reframes the open-source bear case on AI as actually a compute bull case.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states this directly and clearly as a structural argument; no hedging language",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "AMD",
+        "AVGO"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "the better open source does, the better it is for compute providers"
+    },
+    {
+      "id": "T7",
+      "summary": "Nvidia is highly likely to become the world's dominant open-source AI provider and could rapidly enter frontier cloud computing if economics shift",
+      "detail": "Baker argues Jensen has a strategic choice: if all his customers are competing with him, he could compete with them. Nvidia has great models (Nematron 3.1), deliberately releases only small models to avoid treading on Anthropic/OpenAI/Google. If economics change, Nvidia could join the frontier and become one of the world's largest cloud computing companies faster than people think. Baker frames this as a deliberate strategic choice Nvidia is making.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker uses 'highly likely' for open-source dominance but frames the cloud entry as conditional ('if economics change'); presented as a strategic optionality argument",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "frontier AI models",
+        "semiconductor supply chain",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "Nvidia can join the frontier and become one of the world's largest cloud computing companies"
+    },
+    {
+      "id": "T8",
+      "summary": "Nvidia is maintaining and potentially gaining GPU market share despite ASIC competition, contrary to consensus expectations",
+      "detail": "Clark Tang reports from Computex/GTC that Nvidia has maintained share 'very handsomely' on revenue, gigawatt, and unit scales. If Anthropic's non-Nvidia usage is excluded, Nvidia may have actually gained share in 2025-26. The ASIC landscape is becoming more nuanced (MediaTek V8T vs Broadcom V8I for TPUs) but Nvidia remains dominant. Meta and Microsoft ASICs have been disappointing; OpenAI's Jalapeno chip was good but requires more cooling/power.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Clark Tang presents this as a direct takeaway from Computex; Baker corroborates with board meeting anecdote; specific chip names and share data cited",
+      "tickers_named": [
+        "NVDA",
+        "AMD",
+        "AVGO",
+        "MRVL"
+      ],
+      "tickers_implied": [
+        "META",
+        "MSFT",
+        "OpenAI (private)",
+        "MediaTek"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "Nvidia is accelerating and they just continue to out execute their competitors"
+    },
+    {
+      "id": "T9",
+      "summary": "In a power-constrained world, tokens-per-watt advantage makes Nvidia superior to alternatives even at higher cost",
+      "detail": "Baker argues that in a watt-constrained environment, more tokens per watt = more revenue. Building a factory with a cheaper chip saves money but generates less revenue with potentially lower margins. This is Jensen's core argument and Baker endorses it strongly. The implication is that Nvidia's premium is justified by revenue generation, not just performance specs.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker explicitly endorses Jensen's argument and calls it 'really important'; frames it as a structural advantage in a constrained environment",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain",
+        "power/energy",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "more tokens per watt, which is literally revenue with Nvidia"
+    },
+    {
+      "id": "T10",
+      "summary": "Long-running agentic AI models represent a step-change in intelligence utilization that makes current benchmarks obsolete and dramatically increases compute demand",
+      "detail": "Baker references Noam Brown's post arguing we don't know how smart current models are because no one has run them continuously for extended periods. The analogy: if Einstein could think about physics 24/7 without distraction, sleep, or aging, the output would be extraordinary. This framing made Baker 'a lot more bullish on compute' than before. Fable 5/Mythos capabilities in multi-agent orchestration and long-running tasks validate this thesis.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker says this made him 'a lot more bullish' on compute; uses strong language about the profundity of the insight; Gerstner corroborates with Anthropic revenue inflection",
+      "tickers_named": [],
+      "tickers_implied": [
+        "Anthropic (private)",
+        "OpenAI (private)",
+        "NVDA",
+        "SpaceX (private)"
+      ],
+      "themes": [
+        "frontier AI models",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "however bullish I was on compute before then, I'm just a lot more bullish"
+    },
+    {
+      "id": "T11",
+      "summary": "Global AI inference revenue will exceed $200B in 2026 and reach $300B+ by 2027, making the CapEx/revenue math work",
+      "detail": "Baker says $300B in 2027 AI lab revenue (from Morgan Stanley models) is 'low' and expects well over $200B by end of 2026. At 60-70% gross margins, the math on $1.1-1.5T CapEx works. Dario Amodei previously forecast low hundreds of billions by 2028 and trillions before 2030. Baker sees a path to $400-500B in 2027 and $1T+ by 2029.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker uses 'I just think it's low, man' and 'well over 200 billion' with no hedging; provides specific trajectory; calls Jensen's prior $1T forecast conservative in retrospect",
+      "tickers_named": [],
+      "tickers_implied": [
+        "Anthropic (private)",
+        "OpenAI (private)",
+        "GOOGL",
+        "MSFT",
+        "META"
+      ],
+      "themes": [
+        "frontier AI models",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "I think we end this year well over 200 billion in inference revenue"
+    },
+    {
+      "id": "T12",
+      "summary": "AI compute monetization rates per gigawatt are increasing, not deflating, contrary to consensus expectations entering 2026",
+      "detail": "Fox reports monetization rates rising from ~$20B/GW at start of year to $30-40B/GW now. Token pricing is going up, not down, as demand outstrips supply. Less than 0.2% of people use AI agentically; scaling to any meaningful percentage implies sustained shortage. Baker endorses owning asset-heavy businesses in inflationary token-pricing environments.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Specific data points on monetization rate increase cited; Fox presents as direct market observation; Baker explicitly endorses the inflationary framing",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (private)",
+        "Anthropic (private)",
+        "NVDA",
+        "CoreWeave (private)"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "power/energy"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "monetization rates per watt are increasing"
+    },
+    {
+      "id": "T13",
+      "summary": "Starlink direct-to-cell and broadband can 5x revenue to ~$50B by 2028, representing only 0.3% penetration of global telecom market",
+      "detail": "Current Starlink penetration is less than 1% of global households. Baker frames $50B as 0.3% of the global telecom market, making it achievable. Starlink is consistently the best connection (fastest, lowest latency) wherever Baker travels. Better/faster/cheaper has been a winning formula. Key dependency: rapid Starship reusability to drive down cost per gigabyte.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker endorses the 5x framing but qualifies it with rapid reusability dependency; uses 'better faster cheaper has been a winning formula' as conviction signal",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (private)"
+      ],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "50 billion, that's 0.3% penetration of the global telecom market"
+    },
+    {
+      "id": "T14",
+      "summary": "SpaceX's data center design is fundamentally differentiated from first principles, not a commodity, giving it durable competitive advantage",
+      "detail": "Baker argues Elon re-engineered data centers from first principles the same way he did rockets and EVs. The 122-day build time (vs industry standard of 3+ years) reflects genuine architectural innovation, not just execution speed. Baker privately advised the team to be less public about their innovations as they may not realize how differentiated they are. Only 2-3 players can reliably engineer behind-the-meter data centers.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker makes this argument directly and with conviction; Jensen's '19 days' vs '4 years' comparison corroborates; Baker's private advice to the team signals genuine belief",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (private)",
+        "GEV (Vernova)"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "power/energy"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "he designed something fundamentally different... 122 days"
+    },
+    {
+      "id": "T15",
+      "summary": "SpaceX has secured up to 20% of early Vera Rubin GPU allocation, giving it a compute lead into the next GPU generation",
+      "detail": "Clark Tang reports from conversations that SpaceX/xAI has secured approximately 20% of Vera Rubin capacity, especially in early scarce allocation periods. This compounds their ability to either train frontier models or monetize excess capacity at best-in-class margins.",
+      "confidence": "moderate",
+      "confidence_evidence": "Clark Tang presents as 'from a lot of my conversations' - channel checks, not confirmed; uses 'looks like' and 'maybe up to 20%' hedging language",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [
+        "SpaceX (private)",
+        "xAI (private)"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "secured maybe up to 20% of Vera Rubin capacity"
+    },
+    {
+      "id": "T16",
+      "summary": "The 'finding the next bottleneck' trade in semiconductors is over; many bottleneck stocks have gone 'straight up a cliff' and need to rest or correct",
+      "detail": "Baker says the bottleneck-finding game is 'the last game' and it's over. Many stocks have gone straight up a cliff rather than climbing a hill. He is running a 'medium-small' exposure vs prior 'large' positioning. Nvidia and Broadcom have actually been laggards in the recent run. Seasonal AI token consumption slowdown (college students) may add near-term pressure.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker uses definitive language ('that game is over'); has reduced his own exposure from large to medium-small; Gerstner corroborates with similar positioning",
+      "tickers_named": [
+        "NVDA",
+        "AVGO"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "finding the next bottleneck... that game is over"
+    },
+    {
+      "id": "T17",
+      "summary": "SpaceX IPO post-listing drawdown risk is real but the lock-up and employee liquidity history mitigate selling pressure",
+      "detail": "Historical data shows average max drawdown post-IPO for major tech IPOs (Facebook, Twitter, Alibaba, Shopify) exceeds 50%. However, SpaceX is unprecedented: employees have had liquidity every 6 months for 10 years (~20 chances to sell), Elon owns 50% and is locked up 365 days, and the IPO will enter indices quickly. Baker says the right answer is 'I don't know' on short-term but recommends set-it-and-forget-it with tactical sizing around it.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker explicitly says 'I don't know what's going to happen in the short term'; acknowledges the historical drawdown data as 'a bummer'; uncertainty is the honest framing",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (private/IPO)"
+      ],
+      "themes": [
+        "space/orbital compute"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "utterly unprecedented and we'll see"
+    },
+    {
+      "id": "T18",
+      "summary": "Coding is the fastest path to AGI/ASI and will continue to be the dominant high-value AI use case capturing frontier model revenue",
+      "detail": "Baker cites Replit founder Amjad Masad's 'bitter lesson adjacent' argument that coding may be the fastest path to AGI/ASI because a model good at coding can write code to do anything. Coding demand appears inexhaustible. Cursor/xAI's proprietary coding data advantage is structural. Enterprises will not accept second-tier code, keeping coding on frontier models.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker calls this 'a profound point'; corroborated by Anthropic revenue data and Cursor's growth trajectory; no hedging on the coding-as-frontier-revenue thesis",
+      "tickers_named": [],
+      "tickers_implied": [
+        "Anthropic (private)",
+        "xAI/SpaceX (private)",
+        "Cursor (private, acquired)"
+      ],
+      "themes": [
+        "frontier AI models"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "coding may be the fastest path to AGI and ASI"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "SpaceX IPO",
+      "reasoning": "Must-own for institutional investors as the best single bet on AI and space future; terrestrial compute monetizing at $50B/GW (Google deal) vs $14B/GW implied in models; Cursor acquisition adds underappreciated frontier model upside; set-it-and-forget-it with tactical sizing around post-IPO volatility",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "hold",
+      "target": "Semiconductor/AI infrastructure stocks broadly",
+      "reasoning": "Baker has reduced from 'large' to 'medium-small' exposure; many bottleneck stocks have gone 'straight up a cliff'; seasonal AI token slowdown risk; inflation/rates concerns; market needs consolidation before next leg higher",
+      "confidence": "moderate"
+    },
+    {
+      "direction": "buy",
+      "target": "Nvidia (NVDA)",
+      "reasoning": "Maintaining and gaining GPU market share contrary to consensus; tokens-per-watt advantage = revenue advantage in power-constrained world; strategic optionality to enter open-source frontier and cloud computing; Jensen's forecasts have consistently been conservative",
+      "confidence": "high_conviction"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Frontier AI model providers (Anthropic, OpenAI, xAI)",
+      "over": "Open-source AI model providers",
+      "reasoning": "Frontier captures ~90%+ of economic value despite open-source handling majority of token volume; every new frontier release unlocks new use cases that open-source cannot yet address; this pattern has persisted since the beginning and is likely to continue"
+    },
+    {
+      "preferred": "AI compute/infrastructure (Nvidia, SpaceX terrestrial)",
+      "over": "Open-source AI model providers",
+      "reasoning": "Open-source success is actually bullish for compute as it reduces frontier model margins and pushes more spending to hardware; better open source = better for compute providers"
+    },
+    {
+      "preferred": "Asset-heavy AI infrastructure businesses",
+      "over": "Software/internet",
+      "reasoning": "Token pricing is inflationary (monetization per GW rising from $20B to $30-40B); internet down 16%, software down 8% YTD; want to own asset-heavy businesses in inflationary environments"
+    },
+    {
+      "preferred": "SpaceX terrestrial AI compute",
+      "over": "Neo-cloud competitors (CoreWeave, Nebius, Iron, etc.)",
+      "reasoning": "SpaceX can stand up compute faster than anyone (122 days), has better supplier relationships, more attractive financing rates, and is monetizing at highest rates; only 2-3 players can reliably engineer behind-the-meter data centers"
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "AI bottleneck/semiconductor stocks broadly",
+      "nature": "timing",
+      "detail": "Baker explicitly says the 'finding the next bottleneck' trade is over; many stocks have gone 'straight up a cliff' and may need to correct or consolidate; he has reduced exposure from large to medium-small"
+    },
+    {
+      "target": "SpaceX IPO",
+      "nature": "timing",
+      "detail": "Historical average max drawdown post-IPO for comparable large tech IPOs exceeds 50%; unprecedented size and index inclusion dynamics create unknown selling pressure; Baker recommends tactical sizing rather than all-in at IPO price"
+    },
+    {
+      "target": "Open-source AI model investments",
+      "nature": "structural_risk",
+      "detail": "If Nvidia enters the open-source frontier (which Baker thinks is likely), it could undermine the economics of open-source AI labs by making their ASIC revenue insufficient to fund chip development"
+    },
+    {
+      "target": "Meta and Microsoft ASICs",
+      "nature": "structural_risk",
+      "detail": "Baker and Tang characterize Meta and Microsoft ASIC efforts as 'probably disappointing' relative to expectations; OpenAI's Jalapeno chip, while technically good, requires more cooling/power which offsets cost savings"
+    },
+    {
+      "target": "AI CapEx cycle broadly",
+      "nature": "structural_risk",
+      "detail": "$1.1-1.5T in 2027 CapEx vs ~$300B in inference revenue requires gross margins of 60-70%+ and continued rapid revenue growth to justify; if revenue growth disappoints or token pricing deflates, the entire semiconductor complex faces significant downside"
+    },
+    {
+      "target": "Starlink/SpaceX orbital compute",
+      "nature": "timing",
+      "detail": "Rapid two-stage Starship reusability is 'really hard'; orbital compute economics require first reusability then rapid reusability; Baker acknowledges this is a necessary condition for Starlink V3 and orbital data centers but timeline is uncertain"
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Grok 4.3 (1.5T parameter) model release with Cursor data in pre-training",
+      "timing": "Near-term (weeks to months)",
+      "impact": "Could establish xAI/SpaceX as a genuine frontier model competitor in coding; would validate Cursor acquisition thesis and potentially unlock significant model revenue",
+      "beneficiaries": [
+        "SpaceX/xAI (private)"
+      ],
+      "losers": [
+        "Anthropic (private)",
+        "OpenAI (private)"
+      ]
+    },
+    {
+      "event": "Starship second-stage recovery attempt",
+      "timing": "Later 2026",
+      "impact": "First step toward two-stage reusability; success would dramatically de-risk orbital compute economics and Starlink V3 deployment",
+      "beneficiaries": [
+        "SpaceX (private)"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Starship second-stage re-flight (rapid reusability)",
+      "timing": "2027",
+      "impact": "Unlocks Starlink V3, direct-to-cell at scale, and orbital compute economics; enables cost per kg to drop from $1,500 to <$250",
+      "beneficiaries": [
+        "SpaceX (private)"
+      ],
+      "losers": [
+        "Terrestrial telecom providers",
+        "Legacy satellite operators"
+      ]
+    },
+    {
+      "event": "SpaceX IPO index inclusion",
+      "timing": "Near-term (post-IPO, within months)",
+      "impact": "Forced buying from index funds; unprecedented for an IPO of this size; could support price but also creates unknown selling dynamics",
+      "beneficiaries": [
+        "SpaceX IPO shareholders"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Vera Rubin GPU ramp",
+      "timing": "2026-2027",
+      "impact": "SpaceX/xAI reportedly secured ~20% of early allocation; whoever secures scarce early supply gains training and monetization lead",
+      "beneficiaries": [
+        "SpaceX/xAI (private)",
+        "NVDA"
+      ],
+      "losers": [
+        "Neo-cloud competitors without early allocation"
+      ]
+    },
+    {
+      "event": "Nvidia potential open-source frontier model release",
+      "timing": "Not specified (strategic choice)",
+      "impact": "Would dramatically shift open-source vs closed-source economics; could undermine ASIC economics for frontier labs; would make Nvidia a major cloud computing competitor",
+      "beneficiaries": [
+        "NVDA",
+        "Open-source AI users"
+      ],
+      "losers": [
+        "Anthropic (private)",
+        "OpenAI (private)",
+        "GOOGL",
+        "Custom ASIC developers"
+      ]
+    },
+    {
+      "event": "AI token consumption seasonal slowdown (summer)",
+      "timing": "Summer 2026",
+      "impact": "AI has shown seasonal slowdown for last 3 summers as college students reduce usage; could create near-term headwind for AI infrastructure stocks",
+      "beneficiaries": [],
+      "losers": [
+        "NVDA",
+        "AI infrastructure stocks broadly"
+      ]
+    },
+    {
+      "event": "Anthropic/OpenAI additional capital raises (~$250B combined with SpaceX)",
+      "timing": "Near-term",
+      "impact": "Baker frames total as only 1% of Mag 7 market cap, suggesting capital absorption is manageable; validates AI investment thesis",
+      "beneficiaries": [
+        "Anthropic (private)",
+        "OpenAI (private)",
+        "SpaceX (private)",
+        "NVDA"
+      ],
+      "losers": []
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "AI CapEx ROI debate",
+      "view": "The math works and revenue is being underestimated",
+      "detail": "Baker argues inference revenue will be well over $200B by end of 2026 and $300B+ by 2027 is 'low'; at 60-70% gross margins the CapEx/revenue ratio is sustainable; the 'no ROI' bear case (Chamath et al.) is contradicted by millions of independent rational economic actors all choosing to pay for AI"
+    },
+    {
+      "topic": "Market positioning",
+      "view": "Reduced from large to medium-small AI exposure due to valuation and macro concerns",
+      "detail": "Baker and Gerstner both describe reducing exposure after the April-May run-up; concerns include inflation (CPI at 4.2%), geopolitics (war with Iran, oil at $100), seasonal AI slowdown, and need for market consolidation; but neither is bearish on the long-term thesis"
+    },
+    {
+      "topic": "IPO post-listing dynamics",
+      "view": "SpaceX IPO is unprecedented and historical drawdown data may not apply",
+      "detail": "Employees have had 20 liquidity events over 10 years, Elon owns 50% and is locked up 365 days, index inclusion will be rapid; the combination of factors makes historical 50%+ average drawdown data potentially inapplicable, though Baker honestly says 'I don't know'"
+    },
+    {
+      "topic": "Frontier vs open-source AI economics",
+      "view": "Frontier captures economic value; open-source captures token volume; both can be true simultaneously",
+      "detail": "This has been the consistent empirical outcome since the beginning of the LLM era; bears who predicted open-source would erode frontier economics have been 'decisively wrong'; Harvey's routing example shows even optimized open-source workflows still consume significant frontier tokens"
+    },
+    {
+      "topic": "AI revenue trajectory",
+      "view": "We are on a path to $1T+ in AI inference revenue before 2030",
+      "detail": "Baker endorses Dario Amodei's forecast of trillions before 2030; sees path of $200B+ in 2026, $400-500B in 2027, $1T+ by 2029; compares to Mag 7 adding $1T revenue in 7 years vs SpaceX/Anthropic/OpenAI potentially adding $1T in 3 companies over 4-5 years"
+    },
+    {
+      "topic": "Data center commoditization",
+      "view": "Data centers are not commodities; first-principles engineering creates durable competitive moats",
+      "detail": "Baker explicitly rejects the commodity view; argues Elon's data center design is as differentiated as his rocket and EV designs; only 2-3 players can reliably engineer behind-the-meter data centers; speed of deployment is itself a competitive advantage as every day of delay is cost"
+    },
+    {
+      "topic": "Scale of AI economic transformation",
+      "view": "AI will transform 5-15% of global GDP (~$10T+)",
+      "detail": "Baker expresses 'no doubt' that AI will transform 5-10-15% of global GDP; frames current investments as early-stage participation in the largest economic transformation in history; the steepening of creative destruction and scale advantages is happening faster than even bulls expected"
+    }
+  ]
+}

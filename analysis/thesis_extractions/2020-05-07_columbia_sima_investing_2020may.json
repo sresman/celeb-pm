@@ -1,0 +1,446 @@
+{
+  "metadata": {
+    "source": "Columbia SIMA",
+    "date": "2020-05-07",
+    "host": "Columbia Student Investment Management Association",
+    "topic": "COVID-19 market impact, technology investing, video games, venture capital",
+    "duration_estimate_min": 90
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "COVID-19 created a rare long/short opportunity set where obvious trades (long stay-at-home, short travel/leisure) were massively mispriced and generated outsized alpha",
+      "detail": "Baker observed that in early-to-mid March 2020, the most obvious trades \u2014 long Walmart, Kroger, Amazon, Netflix, Zoom, Clorox and short hotels, cruise lines, casinos, airlines \u2014 were still available at extreme mispricings. He draws a parallel to 2008/09 where simply selling financials was similarly obvious and similarly rewarding. He frames this as a lesson that obvious trades are not always discounted.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states this directly as his most surprising observation of the crisis and references the same pattern from 2008/09 as a repeated lesson",
+      "tickers_named": [
+        "AMZN",
+        "NFLX",
+        "WMT",
+        "KR",
+        "CLX"
+      ],
+      "tickers_implied": [
+        "ZM",
+        "MAR",
+        "CCL",
+        "LVS",
+        "DAL",
+        "UAL"
+      ],
+      "themes": [
+        "COVID-19 dislocation",
+        "long-short equity",
+        "consumer staples",
+        "travel & leisure"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "you could generate almost a lifetime's worth of alpha by doing the most obvious thing"
+    },
+    {
+      "id": "T2",
+      "summary": "Video games are social networks and will be the foundational platform layer for the personal Metaverse",
+      "detail": "Baker argues that video games are fundamentally social networks (you play with friends, switching costs are high) and that the Marshmallow concert in Fortnite was the inflection point that made clear games would be the platform for the personal Metaverse \u2014 not VR hardware like Oculus. He believes existing game IP owners (publishers) are the clearest first-order winners because they own the social graphs, the content, and the virtual economies that will underpin the Metaverse.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker describes this as a crystallizing insight, uses strong language ('everything really clicked'), and frames it as a structural multi-decade thesis he has high conviction on",
+      "tickers_named": [],
+      "tickers_implied": [
+        "ATVI",
+        "EA",
+        "TTWO",
+        "NTDOY",
+        "SNE",
+        "MSFT",
+        "EPIC"
+      ],
+      "themes": [
+        "metaverse",
+        "video games",
+        "social networks",
+        "virtual economies",
+        "augmented reality"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "video games are going to be the platform for the personal Metaverse"
+    },
+    {
+      "id": "T3",
+      "summary": "Video game content owners/publishers have more leverage than platforms as cloud gaming proliferates because the game content market lacks the long tail that made Spotify/Netflix models work",
+      "detail": "Baker explicitly argues that the conflation of streaming (delivery mechanism) with subscription (business model) is wrong for games. Unlike music or movies, the top 10 games dominate engagement overwhelmingly \u2014 there is no long tail. This means content owners have pricing power over any new distribution platform (cloud gaming, Xbox, Sony, Epic Store, Steam). Google Stadia scared Sony and Microsoft into running on Azure, which puts them at technical parity with Google while retaining existing content libraries and user relationships.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker makes a detailed structural argument distinguishing games from music/movies and explicitly states publishers are 'the simplest first-order winner'",
+      "tickers_named": [],
+      "tickers_implied": [
+        "ATVI",
+        "EA",
+        "TTWO",
+        "SNE",
+        "MSFT",
+        "GOOGL"
+      ],
+      "themes": [
+        "video games",
+        "cloud gaming",
+        "content vs. platform",
+        "metaverse",
+        "streaming"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "content is always king... the underlying content owners have way more leverage"
+    },
+    {
+      "id": "T4",
+      "summary": "Free-to-play is an inherently superior business model for video games because virtual good persistence drives higher monetization",
+      "detail": "Baker argues that annual release cycle games destroy the value of virtual goods (skins, emojis, weapons) because status value resets each year. Free-to-play games maintain virtual good value indefinitely, driving higher in-app purchase revenue. He cites Destiny as a hybrid model \u2014 persistent status/virtual goods with a new paid expansion every ~3 years \u2014 as a potential best-of-both-worlds approach. The implication is that publishers still selling $60 annual titles face structural pressure to migrate toward free-to-play.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker makes a detailed economic argument grounded in behavioral psychology (status-seeking) and cites specific game examples",
+      "tickers_named": [],
+      "tickers_implied": [
+        "ATVI",
+        "EA",
+        "TTWO",
+        "BUNGIEVG"
+      ],
+      "themes": [
+        "video games",
+        "free-to-play",
+        "virtual economies",
+        "business model transition"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "all the world's biggest video games are free to play... inherently superior business model"
+    },
+    {
+      "id": "T5",
+      "summary": "Edge computing will proliferate into retail stores and restaurants, driven by AI-powered in-store experiences requiring local compute that cannot be served from the cloud due to latency constraints",
+      "detail": "Baker argues that Amazon Go-style stores will become ubiquitous within 5-10 years (facial recognition, personalized ads, frictionless checkout). This requires significant local compute (e.g., NVIDIA GPU clusters in-store) because latency physics prevents cloud-only solutions. He envisions a tributary system: large core data centers \u2192 distributed regional compute \u2192 edge compute in every store. He also speculates that eventually all personal computing devices will be monetized by cloud providers during idle time, driving near-100% global compute utilization.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker frames this as something he is 'thinking a lot about' rather than a current investment position; speculative on timing",
+      "tickers_named": [
+        "AMZN"
+      ],
+      "tickers_implied": [
+        "NVDA",
+        "GOOGL",
+        "MSFT",
+        "AMZN"
+      ],
+      "themes": [
+        "edge computing",
+        "AI infrastructure",
+        "retail technology",
+        "cloud computing"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "there's going to be a lot of compute power in those stores"
+    },
+    {
+      "id": "T6",
+      "summary": "TikTok is a genuine structural threat to Instagram/Facebook, with measurable impact on Instagram engagement visible in February 2020 data",
+      "detail": "Baker argues TikTok is fundamentally different from prior social networks: purely algorithmic/meritocratic (not follower-count driven), no friction to consume content (no login required), and hides likes reducing social anxiety. He observed a significant slowdown in Instagram in February 2020 that he attributes to TikTok. He frames this as a classic 'wolf at the door' dynamic where the market worried about TikTok for years, stopped worrying, and then the impact actually materialized.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker cites specific February 2020 data on Instagram slowdown but acknowledges COVID noise in March data; frames as important but not a current position",
+      "tickers_named": [],
+      "tickers_implied": [
+        "FB",
+        "SNAP",
+        "TWTR"
+      ],
+      "themes": [
+        "social media disruption",
+        "TikTok",
+        "user engagement",
+        "platform competition"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "big impact in February in a lot of measurable ways on Instagram"
+    },
+    {
+      "id": "T7",
+      "summary": "Marketplace businesses (Uber, DoorDash, Airbnb) have low barriers to entry but high barriers to scale; once market structure stabilizes they will be great businesses",
+      "detail": "Baker argues internet marketplaces are near-natural monopolies where scale is the most durable competitive advantage. The problem has been excess venture funding creating too many competitors, justifying near-infinite cash burn to win winner-take-most markets. Once the competitive landscape settles, the survivors will be excellent businesses. He cites Bruce Greenwald's 'Competition Demystified' as empirical support for scale as the most durable moat.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker makes a structural argument but does not express a current buy recommendation on any specific marketplace stock",
+      "tickers_named": [],
+      "tickers_implied": [
+        "UBER",
+        "LYFT",
+        "ABNB",
+        "DASH",
+        "GRUB"
+      ],
+      "themes": [
+        "marketplace businesses",
+        "competitive moats",
+        "venture capital distortion",
+        "platform economics"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "scale is the most durable competitive advantage"
+    },
+    {
+      "id": "T8",
+      "summary": "The Vision Fund model of 'creating winners with capital' was fundamentally flawed; venture capital is returning to normal where top-decile VC returns are highly persistent",
+      "detail": "Baker argues the Vision Fund's core thesis \u2014 that capital alone can manufacture market winners \u2014 was wrong. Combined with non-traditional investors (hedge funds) bidding up late-stage rounds using public-equity-style DCF analysis on venture forecasts (which are systematically 40-50% too optimistic and carry 10-15% annual dilution vs. public comps), the ecosystem was severely distorted. He argues top-decile VC returns are more persistent than any other asset class due to path dependency (best entrepreneurs seek best VCs), and capital scarcity works to the advantage of the best VCs and entrepreneurs.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker speaks from direct experience making venture mistakes at Fidelity 2013-2017 and makes a detailed quantitative argument about forecast haircuts and dilution",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "venture capital",
+        "late-stage private markets",
+        "SoftBank Vision Fund",
+        "VC return persistence"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "you cannot create winners with capital... the fundamental underlying thesis of the vision fund"
+    },
+    {
+      "id": "T9",
+      "summary": "COVID-19 will separate 'winter CEOs' from 'summer CEOs' \u2014 companies run by decisive leaders who cut early will emerge structurally stronger",
+      "detail": "Baker argues that 10+ years of uninterrupted expansion produced a cohort of technology CEOs (running $30-60B market cap companies) who have never managed through a recession. Many are also 'post-economic' (having sold hundreds of millions in secondary) and prioritize reputation over company value. Companies with decisive CEOs who cut costs early will preserve more cash, cut less deeply, and emerge competitively stronger. This is a framework for identifying long-term winners among technology companies.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker uses strong language and frames this as a core investment framework, not a passing observation",
+      "tickers_named": [],
+      "tickers_implied": [
+        "EXPE",
+        "UBER",
+        "ABNB"
+      ],
+      "themes": [
+        "management quality",
+        "COVID-19 dislocation",
+        "technology sector",
+        "competitive dynamics"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "we're gonna see who is a summer CEO and who is a winter CEO"
+    },
+    {
+      "id": "T10",
+      "summary": "Jensen Huang and Nvidia represent a top-5 all-time technology CEO/company combination; semiconductor executives have historically compounded wealth by simply holding Nvidia stock",
+      "detail": "Baker notes that semiconductor industry CEOs, CFOs, and executives have historically gotten wealthy simply by holding Nvidia stock for 20 years, treating it as a bet on Jensen Huang's exceptional leadership. This is a passing but notable endorsement of Nvidia as a long-term compounder driven by management quality.",
+      "confidence": "passing_mention",
+      "confidence_evidence": "Mentioned as an aside in a story about Baker's early career; not developed as a current investment thesis",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor",
+        "management quality",
+        "long-term compounding"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "Jensen... absolutely top 5 technology CEO of all time"
+    },
+    {
+      "id": "T11",
+      "summary": "The market cannot find a true clearing price until companies provide forward guidance; quantitative strategies are sidelined without accurate forward numbers",
+      "detail": "Baker cites Rich Bernstein explicitly stating his quant models are on the sidelines until companies give guidance. Baker argues that sell-side estimates are also unreliable because analysts are unwilling to make virus/shutdown timing calls. This means the market is trading without accurate forward numbers, and a true price discovery process will only occur when Q2 guidance is provided.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker cites a specific named source (Rich Bernstein) and frames this as a near-term market structure observation",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "market structure",
+        "price discovery",
+        "quantitative investing",
+        "earnings estimates"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "we will get a true market price when companies begin reporting and guiding"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "Video game publishers / content IP owners (implied: Activision Blizzard, EA, Take-Two, Nintendo)",
+      "reasoning": "Publishers own the social graphs, virtual economies, and IP that will form the foundational layer of the personal Metaverse. Cloud gaming proliferation increases their leverage over platforms, not the reverse. Free-to-play transition further expands monetization.",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "avoid",
+      "target": "CDN pure-plays",
+      "reasoning": "Baker explicitly says COVID-19 data consumption surge is not a watershed moment for CDNs; major cloud providers have their own CDNs and the structural trend does not favor standalone CDN businesses.",
+      "confidence": "moderate"
+    },
+    {
+      "direction": "avoid",
+      "target": "Late-stage venture-backed SaaS companies at Vision Fund-era valuations",
+      "reasoning": "Venture forecasts are systematically 40-50% too optimistic vs. actuals, share counts grow 10-15% annually vs. public comps, and the Vision Fund distortion is unwinding. True EV/Sales on a risk-adjusted basis is often 3x worse than headline numbers suggest.",
+      "confidence": "high_conviction"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Video game publishers (content IP owners)",
+      "over": "Gaming platforms (Xbox, PlayStation, Steam, Epic Store)",
+      "reasoning": "Content owners have pricing power over all distribution channels; platforms are commoditizing as cloud gaming creates parity. Publishers own the social graphs and virtual economies that matter for the Metaverse."
+    },
+    {
+      "preferred": "Top-decile venture capital firms (Sequoia, General Catalyst, Valor)",
+      "over": "Non-traditional VC entrants (hedge funds doing late-stage venture, Vision Fund-style mega-funds)",
+      "reasoning": "Best VC returns are highly persistent due to path dependency; best entrepreneurs seek best VCs first. Capital abundance benefits bad entrepreneurs and non-traditional entrants, not established top-decile firms."
+    },
+    {
+      "preferred": "Stay-at-home / work-from-home beneficiaries (Amazon, Netflix, Walmart, Kroger, Clorox, Zoom)",
+      "over": "Travel, leisure, hospitality (hotels, cruise lines, casinos, airlines)",
+      "reasoning": "COVID-19 structural demand shift; obvious trade that was massively mispriced in early March 2020."
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "Technology companies run by 'post-economic' CEOs (unicorns where founders sold hundreds of millions in secondary)",
+      "nature": "structural_risk",
+      "detail": "These CEOs prioritize reputation over company value and are unwilling to make hard cost-cutting decisions. Combined with no recession experience, this creates a dangerous triangle for large unicorns that may fail to preserve cash adequately during the downturn."
+    },
+    {
+      "target": "Booking Holdings (BKNG) and travel sector broadly",
+      "nature": "structural_risk",
+      "detail": "Booking disclosed revenue down 85% and potential cash exhaustion in 2020. Baker cites this as an example of the severity of the travel sector downturn."
+    },
+    {
+      "target": "Late-stage venture-backed companies valued using public-equity DCF on venture forecasts",
+      "nature": "overvalued",
+      "detail": "Venture forecasts are systematically overstated; year-3 actuals are typically 40-50% of model. Share dilution of 10-15% annually compounds the error. True EV/Sales is often 3x worse than headline, making many late-stage rounds severely overvalued."
+    },
+    {
+      "target": "Oculus / Facebook VR hardware as Metaverse platform",
+      "nature": "overhyped",
+      "detail": "Baker argues Zuckerberg's focus on VR hardware (Oculus) missed the insight that video games \u2014 not VR headsets \u2014 will be the platform for the personal Metaverse. Oculus is unlikely to be the dominant Metaverse platform."
+    },
+    {
+      "target": "Google Stadia and cloud gaming as Netflix-for-games",
+      "nature": "overhyped",
+      "detail": "The conflation of streaming delivery with subscription business model is wrong for games. Top 10 games dominate engagement with no meaningful long tail, so the Spotify/Netflix model does not apply. Content owners retain leverage."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Companies begin providing forward guidance for Q2 2020 and beyond",
+      "timing": "Near-term (Q2 2020 earnings season)",
+      "impact": "Enables quantitative strategies to re-engage; allows true price discovery; sell-side estimates can be updated. Baker views this as the last missing ingredient for a true market bottom.",
+      "beneficiaries": [
+        "Broad equity market",
+        "quantitative hedge funds"
+      ],
+      "losers": [
+        "Companies with structurally impaired earnings that have not yet been reflected in consensus estimates"
+      ]
+    },
+    {
+      "event": "New COVID-19 cases durably peak nationally (not just Northeast/West Coast)",
+      "timing": "Near-term (weeks to months)",
+      "impact": "Reduces the 'two-body problem' to a one-body problem (market vs. economy only), enabling higher conviction on economic recovery scenarios and a potential significant market re-rating.",
+      "beneficiaries": [
+        "Travel & leisure",
+        "hospitality",
+        "airlines",
+        "broad cyclicals"
+      ],
+      "losers": [
+        "Stay-at-home beneficiaries on a relative basis"
+      ]
+    },
+    {
+      "event": "Positive clinical trial readouts for COVID-19 treatments",
+      "timing": "4-6 weeks from May 2020",
+      "impact": "If treatment regimens materially reduce mortality, new case counts matter less for economic reopening decisions, accelerating the path back to normal activity.",
+      "beneficiaries": [
+        "Travel & leisure",
+        "hospitality",
+        "airlines",
+        "broad economy"
+      ],
+      "losers": []
+    },
+    {
+      "event": "COVID-19 vaccine availability",
+      "timing": "15-21 months from May 2020 (i.e., late 2021)",
+      "impact": "Full return to pre-COVID normal; removes the tail risk of prolonged pandemic scenario. Baker treats this as the base case endpoint.",
+      "beneficiaries": [
+        "Travel & leisure",
+        "hospitality",
+        "experiential economy"
+      ],
+      "losers": [
+        "Stay-at-home pure-plays on a relative basis"
+      ]
+    },
+    {
+      "event": "Marshmallow concert in Fortnite (already occurred \u2014 cited as past inflection point)",
+      "timing": "Already occurred (2019)",
+      "impact": "Crystallized the thesis that video games are social networks and will be the platform for the personal Metaverse; validated the Metaverse investment framework.",
+      "beneficiaries": [
+        "Epic Games (private)",
+        "video game publishers broadly"
+      ],
+      "losers": [
+        "Facebook/Oculus as Metaverse platform thesis"
+      ]
+    },
+    {
+      "event": "Vision Fund distress / unwinding of excess late-stage venture capital",
+      "timing": "Ongoing (2020)",
+      "impact": "Returns venture capital to normal competitive dynamics where top-decile VCs have persistent return advantages. Capital scarcity benefits best entrepreneurs and established VCs; hurts marginal players.",
+      "beneficiaries": [
+        "Top-decile VC firms (Sequoia, General Catalyst, Valor)",
+        "best entrepreneurs"
+      ],
+      "losers": [
+        "Non-traditional VC entrants",
+        "Vision Fund portfolio companies",
+        "late-stage unicorns with post-economic CEOs"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "Market bottoming process",
+      "view": "Markets bottom through rebuilding loss aversion (prospect theory / regret minimization), not through a single event",
+      "detail": "Baker describes the bottoming process as professional investors feeling intense regret at missing the lows, which gradually shifts psychology from fear of loss to fear of missing out. He notes he was beginning to feel this shift personally at the time of the interview."
+    },
+    {
+      "topic": "Obvious trades in crises",
+      "view": "In extreme dislocations, obvious trades are often not discounted and generate outsized alpha",
+      "detail": "Baker identifies this as a repeated lesson from 2008/09 and 2020 \u2014 the most obvious long/short trades (sell financials in 08/09, buy stay-at-home/sell travel in 2020) were available at extreme mispricings despite being obvious. He frames this as a lesson he has had to learn more than once."
+    },
+    {
+      "topic": "COVID-19 uncertainty",
+      "view": "This is a low-conviction, wide-range-of-outcomes environment with no historical analogue",
+      "detail": "Baker explicitly refuses to have high conviction on macro outcomes, citing: no historical analogue (unlike 2008/09 or 2000 which had precedents), unknown virus biology, and the unprecedented nature of a complete economic stop. He advocates humility and flexibility over conviction."
+    },
+    {
+      "topic": "Twitter as information edge",
+      "view": "Twitter (tech/VC sub-communities) provided early warning on COVID-19 that was not reflected in markets",
+      "detail": "Baker credits technology Twitter and venture capital Twitter for being early to worry about COVID-19, and specifically cites epidemiologists (Marc Lipsitch at Harvard, Tom Inglesby at Johns Hopkins) whose February 21-22 weekend tweets about containment failure were a key signal."
+    },
+    {
+      "topic": "Investing philosophy",
+      "view": "Investment philosophy must match individual emotional makeup to enable rationality when wrong",
+      "detail": "Baker argues that intellect \u00d7 work ethic \u00d7 charisma is insufficient for investing success because the missing variable is the ability to be rational when wrong. He recommends finding a philosophy (value, growth, deep value, stop-loss-based) that helps manage ego, and cites Ursula Le Guin's 'A Wizard of Earthsea' as personally formative for ego management."
+    },
+    {
+      "topic": "Science fiction as investor edge",
+      "view": "Reading science fiction is critical for technology investors to understand the range of possible futures",
+      "detail": "Baker recommends Dune, Asimov's Foundation trilogy, Iain Banks' Culture series, and Hyperion as essential reading. He argues that much of what has happened in technology over the last 20-30 years was written about eloquently 40-50 years ago in science fiction."
+    },
+    {
+      "topic": "Cumulative knowledge advantage in tech investing",
+      "view": "20+ years of technology investing experience is a significant and hard-to-replicate edge",
+      "detail": "Baker argues tech is second only to biotech/therapeutics in the degree to which cumulative knowledge compounds as a competitive advantage. Many tech investors washed out in 2000 or 2008/09, meaning there are far fewer 20-year veterans than 10-year veterans, creating a structural advantage for those who have stayed."
+    }
+  ]
+}
