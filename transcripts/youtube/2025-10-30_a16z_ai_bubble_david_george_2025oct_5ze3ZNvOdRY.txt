@@ -1,0 +1,871 @@
+# label: a16z_ai_bubble_david_george_2025oct
+# source: a16z Podcast
+# date: 2025-10-30
+# url: https://www.youtube.com/watch?v=5ze3ZNvOdRY
+# youtube_id: 5ze3ZNvOdRY
+# sub_lang: en
+# actual_title: "Is there an AI bubble?” Gavin Baker and David George
+
+[00:00] Are we in an AI bubble?
+[00:01] >> Uh, I do not believe we're in an AI
+[00:02] bubble today. I was, depending on how
+[00:04] you look at it, the privilege and the
+[00:05] misfortune of being a tech investor
+[00:07] during the year 2000 bubble, which was
+[00:09] really a telecom bubble. And I think
+[00:10] it's really helpful to compare and
+[00:12] contrast today to the year 2000. The
+[00:14] year 2000 internet bubble or telecom
+[00:17] bubble was defined by something called
+[00:18] dark fiber. At the [laughter] peak, 97%
+[00:22] of the fiber that had been laid was
+[00:24] dark. Contrast that with today. There
+[00:27] are no dark GPUs.
+[00:31] And that brings us to our opening
+[00:33] fireside chat. We're going to start with
+[00:35] a taboo question right out of the gate.
+[00:37] Are you ready for it? If AI love it.
+[00:41] [laughter] If AI is the biggest trend in
+[00:43] the world right now, where is the
+[00:45] evidence for it? Why is it only just
+[00:47] beginning to show up in the economy? And
+[00:50] as Andre Carpathy asked, are agents
+[00:52] really just ghosts?
+[00:54] To kick this off and to help us answer
+[00:56] this question, please join us in
+[00:58] welcoming Gavin Baker, managing partner
+[01:00] and CIO of Atrades. Now, some of you may
+[01:03] know Gavin as that really thoughtful guy
+[01:05] on Twitter. Anytime some big piece of AI
+[01:08] news comes out, I know more than a few
+[01:10] people who count on Gavin to explain
+[01:12] what the f is really going on. So, a
+[01:14] huge thank you to Gavin for being with
+[01:16] us today. Joining him is our very own
+[01:18] David George, general partner at A16Z.
+[01:39] Who knows what that music was from?
+[01:42] >> Glad they got our pump up music right.
+[01:44] >> Yes.
+[01:45] Battlestar Galactica, the original 1977
+[01:48] one. in case we have to all fight Sylons
+[01:51] in a few years.
+[01:52] >> It's it's uh yeah, good good segue into
+[01:55] the topic, I guess. Um so, thank you for
+[01:58] being here. I always love talking to
+[02:00] you.
+[02:00] >> Same. Um really grateful to you for
+[02:02] inviting me, grateful to your colleagues
+[02:04] for having me here. I'm really look
+[02:06] forward to the next uh two days. I think
+[02:08] I'm going to learn a lot. So, thank you.
+[02:09] >> Yeah. Okay. All right. So, the big topic
+[02:11] is AI bubble kind of macro view of
+[02:14] things. Um, so maybe just to start with
+[02:17] a couple stats to set the stage and then
+[02:20] I want to get your take on on where
+[02:21] we're at. So we have about a trillion
+[02:23] dollars of data centers in the US. The
+[02:26] plan is to add 3 to4 trillion in the
+[02:29] next [clears throat] 5 years. Over the
+[02:31] past three years, we have already built
+[02:33] out in data center capacity a larger
+[02:36] amount of dollars than the entire US
+[02:38] interstate highway system, which took 40
+[02:40] years just in terms of dollars. And
+[02:42] that's a inflation adjusted.
+[02:45] Open AAI alone I think has more than a
+[02:48] trillion dollars of deals set up that
+[02:51] they've committed to and we can talk
+[02:52] about that. Um
+[02:55] but at the same time, so those are all
+[02:57] like big numbers on infrastructure and
+[02:58] they're scary and they say oh bubble and
+[03:01] Google uh released a stat recently that
+[03:04] they have seen a 150x increase in the
+[03:08] amount of tokens processed in the last
+[03:10] 17 months. So on the one hand you've got
+[03:12] this crazy scary sounding buildout. On
+[03:15] the other hand you actually have a bunch
+[03:17] of usage that's happening. So are we in
+[03:20] an AI bubble? Uh I do not believe we're
+[03:22] in an AI bubble today. Uh I was um I had
+[03:26] depending on how you look at it the
+[03:27] privilege and the misfortune of being a
+[03:30] tech investor during the um the year
+[03:32] 2000 bubble which was really a telecom
+[03:33] bubble. And I think it's really helpful
+[03:35] to compare and contrast today to the
+[03:38] year 2000. um you know first I think uh
+[03:41] Cisco peaked at 150 or 180 times
+[03:44] trailing earnings Nvidia is at more like
+[03:46] 40 times so valuations are very
+[03:48] differently very different most
+[03:50] important however is that the year 2000
+[03:53] internet bubble or telecom bubble was
+[03:55] defined by something called dark fiber
+[03:58] um and if you're a veteran of of the
+[04:01] year 2000 you'll know what that was but
+[04:04] dark fiber was literally fiber that was
+[04:06] laid down in the ground and not lit up.
+[04:10] Fiber is useless unless you have the
+[04:12] optics and switches and routers uh that
+[04:14] you need on either side. Um you so I
+[04:17] vividly remember, you know, companies
+[04:18] like Level 3 or Global Crossing or
+[04:20] WorldCom would come in and they say, "We
+[04:22] laid 200,000 miles of dark fiber this
+[04:25] quarter. This is so amazing. The
+[04:27] internet's going to be so big. Um you
+[04:29] know, we can't wait to light these up."
+[04:31] At the peak of the bubble, 97% of the
+[04:35] fiber that had been laid in America was
+[04:38] dark. Contrast that with today. There
+[04:42] are no dark GPUs. All you have to do is
+[04:45] read any technical paper. And that one
+[04:47] of the biggest problems in a training
+[04:49] run is that GPUs are melting. And
+[04:52] there's a very simple way to kind of cut
+[04:54] to the heart of all of this. It is the
+[04:56] return on invested capital of the
+[04:58] biggest spenders on GPUs who are all
+[05:00] public and those companies since they
+[05:04] ramped up capex have seen call it a
+[05:07] 10point increase in their ROIC's. So
+[05:09] thus far the ROI on all the spending has
+[05:12] been really positive. It's a really it's
+[05:14] an interesting and open debate about
+[05:15] whether or not it will continue to be
+[05:17] positive with the quantum of spend we're
+[05:19] going to have on Blackwell. I personally
+[05:21] think it will, but there's no debate
+[05:23] that thus far the ROI on AI has been
+[05:26] really positive and valuation wise.
+[05:30] We're just not in a bubble.
+[05:32] I couldn't agree more. The other thing
+[05:34] that I would say is you can contrast the
+[05:38] actual adoption and usage of the
+[05:40] technology from then, right? The
+[05:42] internet was actually really hard
+[05:43] because you had to build a two-sided
+[05:45] network. like you had to build websites
+[05:47] and then you had to get users and it's
+[05:49] much more difficult in the case of the
+[05:51] AI tools you know all you have to do is
+[05:53] kind of light them up via API or you
+[05:55] know turn on your website chatgpt and
+[05:57] everybody has access to them right built
+[05:59] on top of cloud computing on top of the
+[06:00] internet uh and you know you can get to
+[06:03] instant distribution a billion people
+[06:04] right away
+[06:05] >> absolutely so uh the other thing is the
+[06:08] counterparties so you mentioned this
+[06:10] they happen to be the best companies in
+[06:11] the history of the world right I think
+[06:13] collectively the people who are coming
+[06:15] out of pocket. They're writing checks uh
+[06:17] for this capex. I think they
+[06:20] collectively generate like $300 billion
+[06:22] of free cash flow a year. Is that right?
+[06:25] Some directionally
+[06:26] >> round numbers.
+[06:27] >> Yeah. And they have $500 billion of cash
+[06:29] on the balance sheet. So whenever people
+[06:31] are like, "Oh my god, it's a bubble. Is
+[06:32] it going to pop?" I'm like, I think it's
+[06:34] kind of fine. I mean, you know, it costs
+[06:36] like4 or 50 billion to light up one
+[06:39] gigawatt.
+[06:40] >> Yeah. If you're on Nvidia chips
+[06:42] >> on Nvidia chips.
+[06:43] >> Yeah.
+[06:44] >> Yeah. So, you know, there's kind of like
+[06:46] an $800 billion buffer growing $300
+[06:48] billion every year.
+[06:50] >> Yeah. I mean, um, free cash flow at some
+[06:53] of them has begun [laughter] to maybe
+[06:56] uh, you know,
+[06:56] >> well, this this goes to your point on
+[06:58] return on invested capital. It might
+[06:59] >> we should see that next down a little
+[07:01] bit. A little bit of a mismatch at the
+[07:03] buildout,
+[07:04] >> but you know, it's you know, Larry Page
+[07:05] apparently internally said, I'm happy to
+[07:07] go bankrupt rather than lose this race.
+[07:09] And I think that is the mentality for
+[07:11] sure at Google and perhaps Meta. um it's
+[07:14] just seen as existential and you have to
+[07:17] win.
+[07:18] >> Okay. So, uh lots has been written about
+[07:22] these roundtpping deals. So, give me the
+[07:25] because you know roundtpping is a very
+[07:26] scary concept from you know the internet
+[07:28] buildout that was a big problem.
+[07:30] >> What do you make of it here?
+[07:31] >> It is objectively happening. Um you know
+[07:34] money is fungeible. So Nvidia if they
+[07:36] sign a deal with OpenAI they can say hey
+[07:38] you can't use our money to buy our chips
+[07:41] but money is fungeible. But it's
+[07:42] happening at a very small scale.
+[07:45] [laughter]
+[07:45] Yes. Yeah. And I think um
+[07:48] >> I didn't know this was like a crypto or
+[07:49] blockchain.
+[07:50] >> Exactly. Good.
+[07:51] >> Yeah.
+[07:52] >> And I think what is driving um what is
+[07:55] driving this isn't the need to, you
+[07:58] know, finance GPU or data center
+[08:01] purchases, but it's actually com
+[08:04] competitive dynamics. So, Nvidia's
+[08:06] biggest competitor, it's not AMD, it's
+[08:09] not Broadcom,
+[08:10] um, you know, it's it's certainly not
+[08:12] Marll. Um, it's not it's not Intel, it's
+[08:16] Google. And more specifically, it is
+[08:19] Google because Google owns uh the TPU
+[08:22] chip. And this is by far maybe perhaps
+[08:26] today the only um alternative to NVIDIA
+[08:29] for training um and maybe the best uh
+[08:32] inference alternative. And what Google
+[08:35] and Google's a problematic competitor
+[08:37] because they also own a company called
+[08:38] DeepMind and they have a product called
+[08:41] Gemini. Um and I think you could argue
+[08:43] that they are the leading um AI company
+[08:47] today. I think they've taken 15 or 20
+[08:49] points of traffic share in the last two
+[08:51] or three months and that does not that's
+[08:53] just traffic to Gemini. It does not
+[08:55] include search overviews. I suspect on a
+[08:58] actual traffic basis, Google is bigger
+[09:01] than OpenAI, Enthropic, anyone today and
+[09:06] that that business is going to run on
+[09:08] TPUs. And then we have three other labs
+[09:10] that are relevant today. There's
+[09:11] Enthropic and that's an Amazon and T
+[09:14] that's an Amazon and Google captive. Uh,
+[09:16] trrenium is um, [clears throat]
+[09:19] you know, Enthropic is really going to
+[09:20] run on uh, TPUs and traniums. And so
+[09:23] you're left with XAI and OpenAI at the
+[09:25] forefront. And if Google is going to a
+[09:29] lab like Enthropic and saying, I'm going
+[09:31] to help you fund raise and give you
+[09:33] chips, I think for competitive reasons,
+[09:36] it's very hard for Nvidia not to
+[09:37] respond. And as Jensen said, he thinks
+[09:39] it's going to be a good investment. Um,
+[09:41] so I think the roundtpping concerns are
+[09:45] pretty overblown.
+[09:47] >> Yeah. And what I mean what Nvidia really
+[09:49] needs is they need you know Meta to get
+[09:51] their act together or another American
+[09:53] open source player to emerge or you know
+[09:56] maybe some sort of um dant with China
+[09:59] and AI.
+[10:00] >> Yeah. Yeah. I when people ask me about
+[10:02] Nvidia and all the moves and the
+[10:03] roundtpping my reaction is everything
+[10:06] they've done is completely rational.
+[10:08] >> 100% rational.
+[10:09] >> Yeah. Long term. Yeah. Sure.
+[10:11] things they do may not have as high of a
+[10:13] return on capital as other things, but
+[10:14] strategically I think they're all kind
+[10:16] of the right moves.
+[10:17] >> Jensen's one of the two best CEOs along
+[10:19] with Elon I have ever known. Um, and I
+[10:23] think he's he's playing a strong hand
+[10:25] really well.
+[10:26] >> Yeah. All right. So, you started getting
+[10:27] into the model companies. Let's just
+[10:30] talk about the model. So, we can come
+[10:32] back to chips and memory and networking
+[10:34] because I want to get your take on that,
+[10:36] but you know, since we're on the model
+[10:37] side, what do you think happens with
+[10:39] market structure? who wins where, you
+[10:42] know, who are you most optimistic about?
+[10:43] You know, where do you have concerns?
+[10:45] >> So, um I think humility is an important
+[10:48] virtue for an investor. And I'm just if
+[10:52] we're going to make an analogy and say
+[10:55] that chat GPT is to AI
+[10:58] has Netscape Navigator was to the
+[11:00] internet. At this point in the internet
+[11:02] boom, Google had not been founded. Mark
+[11:06] Zuckerberg was in middle school. um
+[11:09] Travis Kalanick was in was in
+[11:11] kindergarten. Um so it's just very
+[11:15] early. So I think it's important to be
+[11:17] humble um about making high confidence
+[11:20] predictions at the application layer.
+[11:22] It's one reason I think the the
+[11:24] infrastructure layer is often maybe a
+[11:26] safe place to be at the beginning of one
+[11:28] of these new technology waves. Well,
+[11:30] actually talk about the role they play
+[11:32] at the infrastructure layer because they
+[11:33] are there's a piece of them that like
+[11:35] obviously they they serve as an as an
+[11:37] infrastructure layer powering other
+[11:39] application providers and then they they
+[11:40] also have their own application. So I
+[11:42] think
+[11:43] >> I would draw the distinction.
+[11:44] >> Yeah, I mean that's most true of of
+[11:46] Google. Um
+[11:49] but I just um [clears throat and cough]
+[11:53] I think it's hard to have high
+[11:54] conviction other than to observe you
+[11:57] know the internet was a very disruptive
+[11:59] innovation. Um, I think there's
+[12:03] reasonable arguments that AI could be a
+[12:05] sustaining innovation because the raw
+[12:08] ingredients of kind of data, you know,
+[12:10] the capital to buy compute and
+[12:13] distribution, which is what you need.
+[12:15] All of the big um, you know, today's
+[12:18] biggest tech companies have all of those
+[12:19] in spades. So, as long as they execute
+[12:22] well, hire good people, um, and have a
+[12:25] sound strategy, like I think you could
+[12:28] see it be a sustaining innovation for a
+[12:30] lot of members of the Mag 7. On the
+[12:32] other hand, I do think it's existential
+[12:34] and if you don't execute, you know, IBM
+[12:37] might be a might be a good fate.
+[12:39] >> Yeah. Yeah. Yeah. That's uh that's
+[12:42] tough. Uh, yeah. Data, distribution,
+[12:44] compute,
+[12:46] dollars, talent.
+[12:47] >> Yeah.
+[12:48] >> And like
+[12:49] >> they have every right to win. Yeah, they
+[12:50] have every right to win. And it seems
+[12:52] now more than before, they're taking it
+[12:54] quite seriously.
+[12:55] >> Yeah, maybe Google in particular, but
+[12:58] obviously Meta [clears throat] Meta is
+[12:59] making the dramatic moves they're
+[13:00] making, too.
+[13:01] >> No, to me, Chat GPT was Pearl Harbor for
+[13:03] Google, and we're going to see how they
+[13:05] responded, and they're slowly starting
+[13:07] to respond.
+[13:08] >> Yeah. And then what do you think what's
+[13:10] your forecast for uh that sort of in the
+[13:13] platform piece of their business, the
+[13:14] infrastructure piece?
+[13:16] What do you think? How do you think it
+[13:18] shakes out in terms of like business
+[13:20] model market structure? So do you think
+[13:23] they end up as high margin businesses
+[13:25] like the clouds or like aircraft
+[13:27] manufacturers or do you think they end
+[13:30] up very competitive and low margin
+[13:32] businesses like airlines?
+[13:34] Um I don't think they will be airlines
+[13:36] [clears throat] but you can anybody can
+[13:38] just look at the P&L you know of a SAS
+[13:41] company circa 2021 and 2022 and you see
+[13:44] you know 80 90% gross margins and the
+[13:49] nature of AI because of scaling laws
+[13:51] Richard Sutton's the better the bitter
+[13:53] listen um they're just more compute
+[13:56] inensive so their gross margins are
+[13:59] structurally going to be lower but that
+[14:02] doesn't mean they can't be great
+[14:03] businesses is I just I think it's going
+[14:05] to be a long time before we see a truly
+[14:09] kind of you know an AI lab a frontier
+[14:11] lab with gross margins anywhere near SAS
+[14:15] or internet era margins now their opex
+[14:18] can be a lot lower um and you know maybe
+[14:21] that's how you square it but just the
+[14:24] gross margins are fundamentally
+[14:25] different and until scaling laws change
+[14:28] and the importance of test time compute
+[14:29] and things like that change which I
+[14:32] don't see happening they're they are
+[14:33] going to be lower margin.
+[14:34] >> Yeah. Okay. So, let's talk about uh
+[14:37] application layer. So, you just you just
+[14:40] kind of got into it a little bit with
+[14:41] the SAS businesses and uh I don't know
+[14:44] if you've waited into this fight on
+[14:46] Twitter, but it's sort of you know the
+[14:47] the like you know every few months it
+[14:49] comes up and it's like SAS is terrible
+[14:52] and it's dead and you know it's
+[14:53] [clears throat] all going to go away and
+[14:54] then you know with uh Andre's uh
+[14:58] Darkeesh interview he just did it's you
+[15:00] know like the market's reacting
+[15:01] positively to it. And it's like a
+[15:03] whipssaw reaction. So what do you think
+[15:06] happens with SAS and software?
+[15:07] >> You know, I think I, you know, first
+[15:09] said probably in early 24 that I thought
+[15:11] all of application SAS might be a zero
+[15:14] different than than um infrastructure
+[15:17] SAS. I I would say I have a more nuanced
+[15:20] view now and I think there could be some
+[15:24] really big application SAS winners,
+[15:26] especially if you serve like a more
+[15:28] fragmented SMB customer base. Um, you
+[15:32] know, Google has make it really easy if
+[15:33] you're a customer of theirs to use your
+[15:35] data and essentially make any SAS app
+[15:38] you want and then your data isn't shared
+[15:40] with anyone else. Um, but the critical
+[15:42] mistake that I think a lot of retailers
+[15:45] made um in dealing with Amazon is they
+[15:49] looked at Amazon's margins and they said
+[15:51] we don't want to be in that business.
+[15:54] And that was obviously a terrible
+[15:56] mistake. And here we are 25 years later
+[15:59] and you know Amazon has really healthy
+[16:01] uh retail margins. And I worry that
+[16:05] application SAS companies are trying to
+[16:07] preserve their existing gross margin
+[16:11] structures because they believe that if
+[16:14] their gross margins go down um their
+[16:16] stocks will go down. It is
+[16:18] definitionally impossible given what we
+[16:20] just discussed to succeed in AI without
+[16:22] gross margin pressure. And I do not know
+[16:26] why they have concerns because we have
+[16:28] an existence proof that a software
+[16:30] company can deal well with declining
+[16:32] margins in Microsoft in Adobe to the
+[16:35] whole AI thing came along. You know, it
+[16:37] used to be that companies were scared to
+[16:38] go from on premise to the cloud because
+[16:40] margins were lower. Cloud margins are
+[16:43] are are lower. They're still good. And
+[16:45] Microsoft, they transitioned, you know,
+[16:48] from, you know, on premise perpetual
+[16:50] licenses with maintenance uh to a cloud
+[16:52] model. and it was a pretty good stock
+[16:54] for 10 years. So I don't if you're an
+[16:57] application SAS company like I what I
+[16:59] would just say is don't be scared and
+[17:01] look at declining gross margins kind of
+[17:04] has a mark of success rather than you
+[17:06] know a badge of shame or something to be
+[17:08] feared. It's actually so funny you say
+[17:10] that because whenever we have these
+[17:11] discussions about companies, basically
+[17:14] every company that comes to present to
+[17:15] us is like we're an AI company and um we
+[17:18] always look at the gross margins and
+[17:19] it's become like a badge of honor for
+[17:21] them to actually have low gross margins
+[17:23] because like oh my god people are
+[17:24] actually using your AI stuff. Yeah.
+[17:25] >> But if you show up and you're like I'm
+[17:26] an AI company and it's like I got 82%
+[17:29] gross margins. You're like I don't think
+[17:30] anybody's really using it. Uh so yeah
+[17:32] it's uh it's interesting. Yeah. If
+[17:34] you're if you're one of these public
+[17:35] companies, would you rather have like 10
+[17:36] bucks of revenue with 90% gross margins
+[17:38] or 50 bucks of revenue with 60% gross
+[17:40] margins?
+[17:40] >> Not hard.
+[17:41] >> Like it's not that comp Yeah, not that
+[17:42] complicated. It's hard to do in the
+[17:43] public market.
+[17:44] >> It's hard to do in public, but if you
+[17:45] communicate it, you draw parallels to
+[17:47] the cloud transition. I mean, I'm an
+[17:49] investor and I would be excited about
+[17:51] it, you [laughter] know, and I don't
+[17:52] think I'm alone in the world. And then
+[17:54] the big advantage these legacy
+[17:56] application SAS companies have is they
+[17:59] do have these really profitable existing
+[18:01] businesses. And so you can run your new
+[18:04] AI products at break even um and you
+[18:08] know catch up to the leaders etc etc and
+[18:11] I'm just surprised more people have not
+[18:14] done that like why are none of the
+[18:15] public coding companies even trying to
+[18:17] compete with cursor and the reality is
+[18:20] cursor now they have a trillion trillion
+[18:22] tokens and you know there there will be
+[18:25] a point where they have enough coding
+[18:27] tokens that it's tough to catch them but
+[18:30] I think today if you're a public coding
+[18:32] and you said, "I'm going to lean in. I'm
+[18:34] going to run it break even. I have an
+[18:35] existing business. I'm going to attach
+[18:37] it to everything." Hey, you have a
+[18:39] chance. And you know, the prize is
+[18:42] clearly really big. I see Martin is
+[18:44] skeptical.
+[18:44] >> Martin's shaking his head. You have a
+[18:45] chance.
+[18:46] >> I said a chance. So, I said a chance.
+[18:48] >> That's like a dumb and dumber. You're
+[18:49] telling me there's a chance, not like a
+[18:50] real chance. You're telling me. You're
+[18:51] >> telling me there's a chance.
+[18:52] >> Yes. Exactly. [laughter]
+[18:54] >> It's like a
+[18:55] >> Yeah, exactly. I totally agree. Yeah, we
+[18:57] actually saw I mean you know we see it
+[18:59] uh you know we may if we if we you know
+[19:02] Figma for example like when they went
+[19:04] out they are extremely high gross margin
+[19:06] and they're like hey we're going to you
+[19:08] know pretty aggressively distribute our
+[19:09] AI tools and our gross margins are going
+[19:10] to go down and you know investors asked
+[19:12] a few clarifying questions and then they
+[19:14] were like oh that actually would be a
+[19:15] good thing and so surprised more people
+[19:17] in the public markets aren't doing it
+[19:18] worked out okay for them
+[19:20] >> it's working out well uh long game to
+[19:22] play what about on the consumer side at
+[19:24] the application layer so obviously ly
+[19:26] Google was the portal to the internet is
+[19:28] kind of still is the portal to the
+[19:30] internet and the whole business model
+[19:31] was predicated upon taking some intent
+[19:35] and directing you to someone else's
+[19:37] website where they would do stuff with
+[19:39] you. It's kind of not going to be that
+[19:42] way. It already is not that way uh with
+[19:45] uh with AI. Although I tried the browser
+[19:47] today and I tried to do some pretty
+[19:48] basic shopping stuff and it's [snorts]
+[19:50] you know it's still still some work to
+[19:52] do but I think it will get there. So
+[19:54] what do you actually think happens with
+[19:56] the sort of market structure of the
+[19:58] consumer internet companies? Do they get
+[20:01] subsumed into a component of a chatbot
+[20:04] interface or do you think it's something
+[20:06] else? Um so one humility hard to say. to
+[20:11] I would just say I think um the AI
+[20:15] companies that have launched these AI
+[20:17] browsers may come to regret it because
+[20:19] there's something called Chrome that has
+[20:22] whatever it is 5 billion users and if
+[20:25] you're Google um you know you can just
+[20:28] go look at what happened with Google
+[20:29] Buzz you they are very cautious you know
+[20:31] there's you know they're currently in in
+[20:33] litigation with the government um and
+[20:37] they could easily do this and probably
+[20:39] do it even better, but they didn't want
+[20:42] to be first. So now you have two AI
+[20:46] native companies with their own
+[20:47] browsers, let them run for 3 to 6
+[20:50] months, get a little head start, and
+[20:53] then wow, here we are. We had to do
+[20:55] this. And I don't know how that's going
+[20:57] to work. Um [laughter]
+[20:59] maybe for the companies other than
+[21:00] Google who don't own Chrome. Um
+[21:04] [clears throat]
+[21:04] [laughter]
+[21:05] >> yeah, I guess data and distribution is
+[21:06] pretty powerful in that.
+[21:07] >> Yeah, hindsight's 2020. Um,
+[21:10] and the one thing I would say is I do
+[21:12] think it's tough to bet against the
+[21:13] companies with large existing user bases
+[21:16] today. Um,
+[21:19] and I also think reasoning has
+[21:21] fundamentally changed the economics of
+[21:23] these frontier models. you know,
+[21:25] pre-reasoning. Um, I often said if you
+[21:28] are a frontier model without access to
+[21:32] unique, valuable data
+[21:35] and internet scale distribution, you're
+[21:37] the fastest depreciating asset in
+[21:39] history. I think reasoning really
+[21:41] changed that because the way RL works
+[21:42] during post training, having a big user
+[21:45] base now kind of unlocks that flywheel
+[21:48] that was at the center of every great
+[21:50] consumer internet company where um you
+[21:53] have a good product, you get a lot of
+[21:54] users, the users make the algorithm
+[21:57] better, um the algorithm makes the
+[21:59] product better and it just spins. And
+[22:02] that it's not quite spinning yet in AI,
+[22:05] but you can squint and see it. And so I
+[22:08] think that fundamentally changes
+[22:09] economics for anthropic, for XAI,
+[22:13] um, for OpenAI. Um, but I mean
+[22:18] Mark Zuckerberg's trying hard.
+[22:20] >> Yeah.
+[22:20] >> We'll see.
+[22:21] >> Yeah. Yeah.
+[22:22] >> Yeah. A lot of smart people in there
+[22:24] now.
+[22:25] >> Yeah, for sure. I I think the worry is
+[22:27] and I think this is another interesting
+[22:29] thing is if you don't like in a strange
+[22:32] way the Chinese open source model
+[22:34] ecosystem is a godsend to any American
+[22:38] company that's trying to catch those
+[22:40] four leading labs because the problem is
+[22:42] if you don't have Gemini 2.5 Pro or a
+[22:46] later checkpoint of it or a later
+[22:49] checkpoint of Grock that we don't see or
+[22:50] a later GPT checkmate uh checkpoint
+[22:54] training the next model you're at a
+[22:55] disadvantage. Oh, by the way, one thing
+[22:57] I just want to say that drives me crazy
+[22:59] is all these people who say that GPT5 is
+[23:01] the end of scaling loss. GPT5 is a
+[23:04] smaller model. It was not designed to be
+[23:07] better. It was designed to be more
+[23:09] economical for OpenAI and Microsoft to
+[23:11] run it. Any reference to GPT5 its
+[23:15] scaling laws is crazy. Um, yeah. Sorry.
+[23:19] Rant rant over.
+[23:20] >> We got the pedestal up here if you want.
+[23:22] >> Yeah, exactly.
+[23:23] >> Shaking your hand.
+[23:24] >> Yeah, we could. Yeah,
+[23:25] >> that'd be good. Uh, do you want to talk
+[23:27] about chips?
+[23:28] >> Sure.
+[23:29] >> So, okay. I know you love Nvidia.
+[23:31] Talk about, you know, your view of
+[23:33] Nvidia, AMD, TPUs, AS6, and how do you
+[23:37] think sort of market structure shakes
+[23:40] out there, you know, competitive
+[23:42] advantage that the various players have?
+[23:45] >> Yeah. Um I think it goes I think it is
+[23:48] really um it's a fight between Nvidia
+[23:53] and um the Google TPU and then something
+[23:56] that I don't think is broadly
+[23:57] appreciated is the extent to which
+[23:59] Broadcom and AMD are effectively going
+[24:02] to market together. Nvidia is no longer
+[24:04] just a a semiconductor company as I'm
+[24:06] sure you'll hear from Jensen tomorrow.
+[24:08] you know not it was a semiconductor
+[24:09] company then a software company with
+[24:11] CUDA now systems company with these rack
+[24:13] level solutions and now arguably you
+[24:15] know a data center level uh company with
+[24:18] the you know level of architecting
+[24:19] they're doing with scale up scale across
+[24:22] and um scale out scale across networking
+[24:26] um
+[24:27] so the [clears throat] networking the
+[24:29] fabric the software it's all important
+[24:31] and what Broadcom is saying to companies
+[24:32] like Meta is hey we will build you a
+[24:35] fabric that can theor theoretically
+[24:38] compete with Nvidia's fabric which is a
+[24:40] mixture of NVLink and either Infiniband
+[24:43] or Ethernet. Um it will build it on
+[24:45] Ethernet. It's going to be an open
+[24:47] standard. And hey, we'll we'll make you
+[24:49] your version of of TPU, which by the way
+[24:51] took Google three generations to get
+[24:53] working. And you know what? If your ASIC
+[24:55] isn't good, you can just plug AMD right
+[24:57] in. Um
+[25:00] but I personally believe most of those
+[25:02] AS6s are going to fail. um particularly
+[25:05] if it's
+[25:06] >> in the fullness of time like over a
+[25:07] period of time or in the fullness of
+[25:08] time
+[25:10] >> in the next 3 years I think you'll see a
+[25:12] bunch of high-profile um ASIC programs
+[25:15] canled especially if Google um starts
+[25:18] selling TPUs externally which has been
+[25:20] all over X and you know they you know
+[25:23] who knows exactly how that would work
+[25:25] because if you're anthropic you know
+[25:26] it's just rumored anthropic wants to buy
+[25:28] tens of billions of TPUs if you're
+[25:30] anthropic maybe you don't want Google
+[25:31] seeing your secret sauce but there's
+[25:33] ways around on that. So I think this is
+[25:35] really a battle between Google and its
+[25:38] TPU enabled by Broadcom for now and
+[25:41] Google can take the TPU away from
+[25:42] Broadcom whenever they want.
+[25:44] >> Yeah.
+[25:44] >> Now they can't do the Ethernet
+[25:46] networking that Broadcom is is doing uh
+[25:48] but they control the TPU. Um so it's
+[25:51] really Google and the TPU verse um
+[25:54] Nvidia you know with with you know
+[25:57] Amazon like that's a very talented team
+[26:00] arguably the most talented silicon
+[26:02] tumidity hyperscaler the anaperna team
+[26:04] like I think the tranium 3 will probably
+[26:06] be a much better chip than the tranium 2
+[26:08] it took three generations to get the TPU
+[26:11] right um and then AMD will you know will
+[26:14] always be kind of the second source and
+[26:15] you need a second source
+[26:18] all right exciting uh what do you think
+[26:20] happens Okay. So I want to go back um to
+[26:22] business models. So one of the big
+[26:24] things that is widely discussed is like
+[26:27] you know source of disruption and most
+[26:30] of the CEOs in this room are CEOs of
+[26:32] startups who are trying to go beat some
+[26:34] incumbent or find you know some new
+[26:36] market opportunity and the most ripe
+[26:39] opportunities tend to come when you have
+[26:41] a big platform shift that is also
+[26:43] accompanied with a business model shift.
+[26:45] Um and so there are a couple of areas
+[26:48] where I can see it. I feel like in an
+[26:50] obvious way. So, you know, we're
+[26:52] investors in decagon customer support
+[26:54] like you can pretty easily see a
+[26:56] business model that is priced on the
+[26:59] resolution of a task because it's so
+[27:00] measurable. Um you can see you know like
+[27:03] in coding like a lot of the business
+[27:05] model has now shifted to consumption and
+[27:08] you know obviously especially for
+[27:09] developer facing things like that's
+[27:11] comfortable um and pretty wellnown. What
+[27:14] about the rest of the industry? Cuz I
+[27:16] feel like there's sort of this handwave
+[27:18] thing that is going on which is like
+[27:21] we're going to go get all of services
+[27:23] but it's like okay so how do you
+[27:24] actually go do that? It's going to be
+[27:25] pretty hard. So do you have any
+[27:28] prediction on how that plays out?
+[27:30] >> Well I think what you're seeing in
+[27:31] customer service which is kind of like
+[27:33] an easy first example u where you have a
+[27:36] lot of textual data that LLMs are good
+[27:38] at text. you can kind of, you know,
+[27:41] probably really easily run some RL to
+[27:43] make sure that they, you know, get a
+[27:45] good verified reward. You know, verified
+[27:47] reward being a happy customer or first
+[27:49] call resolution or whatever it is.
+[27:51] >> Um,
+[27:53] and but I do think you will see that
+[27:55] played out like humans, we're
+[27:56] fundamentally paid for paid paid based
+[27:58] on outcomes and a lot of AI will be
+[28:01] augmenting humans, but probably also
+[28:03] replacing some humans and that will
+[28:05] involve being paid u paid for outcomes.
+[28:07] you know, going back to the consumer
+[28:09] business model, you know, everybody's
+[28:10] talking about affiliate fees. And for
+[28:11] sure, I'm going to have, you know, my
+[28:14] own AI. It will be a version of Grock,
+[28:17] um, because we're both XAI shareholders.
+[28:18] It will be a version of Grock that knows
+[28:20] me and it likes me. Um, and, you know,
+[28:23] when I when I want to, you know, the
+[28:25] next time I want to go on vacation, it
+[28:26] will know the hotels that I like to go
+[28:28] to and it'll say, "Hey, three hotels. I
+[28:31] have Gavin, you know, I have Gavin
+[28:34] coming. Who's got the best price and the
+[28:36] best room?" Um,
+[28:38] >> it's going to massively upgrade the
+[28:39] gifts that you give to Becky [laughter]
+[28:41] just in case as Becky Becky's in the
+[28:44] audience. She really appreciated your
+[28:45] Dumb and Dumber reference. I'll have you
+[28:46] know. [laughter] Um,
+[28:49] but um yeah, and then there will
+[28:51] probably be some sort of affiliate fee.
+[28:52] And again, that's just being paid for an
+[28:54] outcome and kind of closing that loop,
+[28:57] which will be probably a little bit of a
+[29:00] business model degradation because the
+[29:02] great why why did Google never start a
+[29:03] marketplace? because people overvalue
+[29:07] systematically their ability once
+[29:10] they've acquired a customer through
+[29:11] Google to keep it as an organic
+[29:13] customer. So they systematically overpay
+[29:16] and they continue doing that. That's why
+[29:18] Google never went to outcomes or
+[29:20] marketplace because advertising leads to
+[29:23] the advertisers systematically
+[29:25] overpaying. So that inefficiency will be
+[29:27] squeezed out but yeah we'll go to
+[29:29] outcomes and you know I think Elon
+[29:31] tweeted today that you know work would
+[29:33] become optional you know like instead of
+[29:35] buying your vegetables um you know at a
+[29:38] at a supermarket you can grow your own
+[29:39] garden if you want. Now, who knows how
+[29:42] long it takes us to get there, but I
+[29:45] that doesn't sound wildly implausible to
+[29:48] me for how powerful this technology is.
+[29:50] And I was just struck Karpathy, you
+[29:52] know, whatever two days ago, you know,
+[29:53] is being painted as like a skeptic for
+[29:55] saying AGI is 10 years away. Are you
+[29:58] kidding?
+[29:58] >> Insane. 10 years.
+[30:00] >> Yeah. Yeah. Sign me up. We have shorter
+[30:03] timelines, please.
+[30:04] >> Yeah. Well, so no, that's awesome. While
+[30:06] we're on the topic of very exciting
+[30:08] futuristic things, robotics, do you have
+[30:12] a view on
+[30:13] >> Yeah, very real. And it's going to be
+[30:14] Tesla versus the Chinese in the same way
+[30:16] it's Tesla versus the Chinese in in uh
+[30:19] cars.
+[30:20] >> Electric cars. Yeah.
+[30:21] >> Yeah.
+[30:21] >> I would just say cars, not electric
+[30:23] cars.
+[30:23] >> Yeah. Cars.
+[30:24] >> Yeah.
+[30:25] >> Do you have a sense of timeline?
+[30:27] >> I mean, you can you can all watch the
+[30:28] Optimus videos. Um,
+[30:31] every roboticist I know is extremely
+[30:33] impressed. Um, you know, there's there's
+[30:36] a giant debate. Is it going to be
+[30:37] humanoids or not humanoids? I think that
+[30:39] debate is over because humanoids can
+[30:40] kind of learn, you know, from watching
+[30:42] YouTube videos and then it's easier for
+[30:44] a human being um, you know, to put on a
+[30:47] suit and show the robot how to do it. I
+[30:49] mean, it's kind of crazy to watch the
+[30:50] video of all, you know, the 50 Optimus
+[30:53] robots doing 50 different tasks and then
+[30:56] it's very simple, you know, did you did
+[30:58] you put the glass in the dishwasher
+[31:00] correctly or not?
+[31:01] >> This is so fun, Gavin. I always love
+[31:03] chatting with you. Uh, let's give a hand
+[31:04] to Gavin.
+[31:05] >> Thank you, David. Thank you.
+[31:07] >> All right.
+[31:09] Next up, we have a very exciting panel
+[31:12] on building out real world
+[31:14] infrastructure. Uh, but first, give us a
+[31:16] few minutes. We got to do a quick uh sta
+[31:18] uh stage change here. So, thank you.
+[31:21] >> Thanks everybody.
+[31:24] Thank you, man. [music]
