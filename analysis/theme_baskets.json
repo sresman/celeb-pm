@@ -1,0 +1,271 @@
+{
+  "DRAM / HBM memory bottleneck": {
+    "tickers": [
+      "MU"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG"
+  },
+  "Optical networking / interconnect": {
+    "tickers": [
+      "CIEN",
+      "COHR",
+      "LITE"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "Custom ASIC failure thesis": {
+    "tickers": [
+      "NVDA"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG"
+  },
+  "Trainium / Amazon custom silicon": {
+    "tickers": [
+      "AMZN"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "Switched scaleup networks": {
+    "tickers": [
+      "NVDA",
+      "AMZN"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "TSMC capacity discipline": {
+    "tickers": [
+      "TSM"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "Power / watts as binding constraint": {
+    "tickers": [
+      "VST",
+      "CEG"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "Orbital / space-based compute": {
+    "date_segments": [
+      {
+        "before": "2021-08-20",
+        "tickers": [
+          "SPCE"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "before": "2024-01-01",
+        "tickers": [
+          "RKLB",
+          "SPCE",
+          "RDW"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "before": "2026-06-12",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "RDW"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "after": "2026-06-12",
+        "tickers": [
+          "SPCX"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      }
+    ],
+    "direction": "LONG",
+    "asterisk": true,
+    "asterisk_note": "Pre-SPCX baskets are retail proxies measuring space sentiment, not Baker thesis accuracy"
+  },
+  "SpaceX ecosystem / Starship economics": {
+    "date_segments": [
+      {
+        "before": "2021-08-20",
+        "tickers": [
+          "SPCE"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "before": "2024-01-01",
+        "tickers": [
+          "RKLB",
+          "SPCE",
+          "RDW"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "before": "2026-06-12",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "RDW"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "after": "2026-06-12",
+        "tickers": [
+          "SPCX"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      }
+    ],
+    "direction": "LONG",
+    "asterisk": true,
+    "asterisk_note": "Pre-SPCX baskets are retail proxies measuring space sentiment, not Baker thesis accuracy"
+  },
+  "Scaling laws intact": {
+    "tickers": [
+      "NVDA",
+      "MSFT"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG"
+  },
+  "Reasoning / inference-time compute": {
+    "tickers": [
+      "NVDA",
+      "AMD"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG"
+  },
+  "SaaS existential disruption": {
+    "tickers": [
+      "CRM",
+      "NOW",
+      "TEAM",
+      "SNOW"
+    ],
+    "source": "CONSTRUCTED",
+    "direction": "SHORT"
+  },
+  "Neoclouds as durable model": {
+    "date_segments": [
+      {
+        "before": "2025-03-28",
+        "tickers": [],
+        "source": "NO_BASKET"
+      },
+      {
+        "after": "2025-03-28",
+        "tickers": [
+          "CRWV"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      }
+    ],
+    "direction": "LONG"
+  },
+  "Edge AI as bear case for cloud": {
+    "tickers": [
+      "AAPL",
+      "QCOM"
+    ],
+    "source": "CONSTRUCTED",
+    "direction": "MIXED"
+  },
+  "AI in biotech / drug discovery": {
+    "tickers": [
+      "RXRX",
+      "SDGR",
+      "EXAI"
+    ],
+    "source": "CONSTRUCTED",
+    "direction": "LONG"
+  },
+  "Humanoid robotics / Tesla Optimus": {
+    "tickers": [
+      "TSLA"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "AI networking (Ethernet/InfiniBand)": {
+    "tickers": [
+      "ANET"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "Sovereign AI": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG"
+  },
+  "China AI distillation / export controls": {
+    "tickers": [
+      "NVDA",
+      "LRCX",
+      "AMAT",
+      "KLAC"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "MIXED"
+  },
+  "AI capex ROI positive": {
+    "tickers": [
+      "NVDA",
+      "AVGO",
+      "ANET"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG"
+  },
+  "Intel recovery / foundry failure": {
+    "tickers": [
+      "INTC"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "Google TPU competitive position": {
+    "tickers": [
+      "GOOGL"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "ALAB / copper vs fiber": {
+    "tickers": [
+      "ALAB"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG"
+  },
+  "Inference economics / token factories": {
+    "date_segments": [
+      {
+        "before": "2025-03-28",
+        "tickers": [],
+        "source": "NO_BASKET"
+      },
+      {
+        "after": "2025-03-28",
+        "tickers": [
+          "CRWV"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      }
+    ],
+    "direction": "LONG"
+  }
+}

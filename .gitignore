@@ -20,3 +20,6 @@ tools/qa-review/node_modules/
 # Generated caches directly under data/ (regenerable)
 data/*.json
 data/price_cache/
+
+# Regenerable EODHD price cache for transcripts return analysis
+analysis/eod_prices/
