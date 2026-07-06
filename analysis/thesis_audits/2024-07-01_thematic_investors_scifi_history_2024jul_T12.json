@@ -1,0 +1,34 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T12",
+  "summary": "Humanoid robots will revolutionize blue-collar work once LLM reasoning capabilities are embedded",
+  "summary_extended": "Baker argues that embedding transformer-based LLM reasoning models into humanoid robots will revolutionize blue-collar work in the near-to-medium term, given that current model capabilities are approaching the threshold required for practical deployment. He contends that the same transformer architecture driving LLM breakthroughs can be applied to robotic control systems, enabling humanoid robots to perform physical labor tasks that previously required human dexterity and judgment. Additionally, Baker notes that transformer elements may significantly improve full self-driving (FSD) algorithms, suggesting Tesla's autonomous driving stack could benefit from the same architectural advances. The investment implication is that companies developing humanoid robots and FSD technology stand to benefit, with Tesla being the most prominent US-listed company at the intersection of both themes. No specific revenue figures or timelines beyond 'very soon' were cited, keeping the thesis at moderate confidence.",
+  "detail": "Baker believes transformer-based reasoning models can be embedded in humanoid robots to revolutionize blue-collar work. He also notes transformer elements may significantly improve FSD (full self-driving) algorithms. This is a near-to-medium term view given current model capabilities.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says 'very soon you're going to be able to put these models into robots' but doesn't give a specific timeline",
+  "themes": [
+    "robotics",
+    "AI application layer",
+    "autonomous vehicles"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "put these models into robots and I think that's going to humanoid robots that's going to revolutionize the world of blue collar work",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "TSLA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "TSLA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "TSLA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly calls out FSD as a direct beneficiary of transformer-based reasoning improvements, and Tesla is the leading US-listed company in both FSD and humanoid robotics (Optimus), making it a direct beneficiary of this thesis rather than merely tangential."
+    }
+  ]
+}

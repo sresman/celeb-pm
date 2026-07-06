@@ -1,0 +1,43 @@
+{
+  "date": "2026-05-12",
+  "source": "Sohn NY 2026 \u2014 Tech investing fireside",
+  "thesis_id": "T2",
+  "summary": "TSMC's deliberate capacity restraint will prevent an AI bubble and sustain a prolonged upcycle in leading-edge wafer supply",
+  "summary_extended": "Baker argues that TSMC is deliberately constraining leading-edge wafer capacity expansion far below the pace that Nvidia's Jensen Huang demands, and that this intentional restraint is the key structural difference between the current AI upcycle and prior technology bubbles. He characterizes TSMC's leadership as stewards of Morris Chang's legacy \u2014 'flinty old men and women' \u2014 who expand capacity at roughly 5% when Huang visits every three months requesting doublings or triplings. Because physical wafer supply cannot be conjured quickly, Baker contends this bottleneck acts as a natural governor on speculative overinvestment, preventing the kind of bubble that unconstrained capital allocation would otherwise produce. The investment implication is that the AI infrastructure upcycle will be prolonged and structurally sound rather than bubble-prone, and that TSMC as the sole supplier of leading-edge capacity is the critical chokepoint \u2014 and thus a core long. Baker notes that Nvidia alone could sell $1\u20132 trillion of chips if TSMC capacity were available, underscoring the magnitude of suppressed demand flowing through TSM's fabs.",
+  "detail": "Baker argues TSMC leadership views themselves as guardians of Morris Chang's legacy and are deliberately not expanding capacity at the pace Jensen Huang demands. Jensen visits every 3 months wanting capacity to double or triple; TSMC expands ~5%. This physical constraint is structurally different from prior technology cycles and will prevent a bubble. Nvidia could sell $1\u20132 trillion of chips if capacity were available.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as a structural thesis with named actors, specific dynamics, and a direct causal mechanism \u2014 'flinty old men and women safeguarding Morris Chang's legacy are helping us all avoid a bubble'",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "they're simply not expanding capacity as fast as Jensen wants",
+  "tickers_named_original": [
+    "NVDA",
+    "TSM"
+  ],
+  "tickers_direct": [
+    "TSM",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "TSM"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is about TSMC's deliberate capacity restraint as a structural force \u2014 TSM is the direct subject and primary investment implication."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Nvidia as the demand side of the constraint, citing $1\u20132 trillion of potential chip sales if capacity were available. Nvidia is a direct beneficiary of a prolonged, non-bubble upcycle in AI chips enabled by TSMC's disciplined supply \u2014 it captures the demand that does get fulfilled at premium pricing without a bust."
+    }
+  ]
+}

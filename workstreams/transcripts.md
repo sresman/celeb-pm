@@ -16,7 +16,30 @@ Branch: **`gavin-baker-transcript-corpus`** (not yet merged to main).
 
 ---
 
-## Current State (as of 2026-07-01)
+## Current State (as of 2026-07-06)
+
+**Thesis audit + 13F AI-signal infrastructure COMPLETE.** A clean-separated analysis stack now
+sits on top of the 13F pipeline views (Atreides, CIK 0001777813). Pieces, in order built:
+- **Thesis audit** (`audit_theses.py` + `audit_prompt.py`, sonnet-4-6, ~$2.93): expanded every
+  summary (134→1029 chars), cleaned contaminated tickers, recovered dropped `detail`/etc. →
+  `analysis/thesis_timeline_v2.json` (+`_flat`) + per-thesis `analysis/thesis_audits/`.
+- **AI classification** is authoritative from `analysis/ai_basket_reclassification.json` (operator
+  file; per-ticker `{ai,bucket}`, NTNX date-segmented). `resolve_ai()` in `generate_13f_triggers.py`
+  (retries digit-stripped ticker → fixes the `1CFLT` variant that dodged CFLT's exclusion).
+- **Triggers** (`generate_13f_triggers.py` → `add_trigger_returns.py` → **`build_13f_analysis.py`**,
+  the current canonical builder): 3 clean layers — `analysis/filing_to_filing_returns_universal.csv`
+  (216 tickers × 24 filing-to-filing periods), `analysis/13f_signal_triggers_clean.csv` (102 events,
+  NO returns), `analysis/ai_basket_definition.json`. Trigger types: AI_BASKET_RAMP (narrow
+  picks-and-shovels basket, excl. AI/Hyperscaler+AI/EV), NEW_AI_SUBTHEME, AI_SUBTHEME_ACTIVE_CROSS_2/4PCT,
+  NEW_AI_POSITION_2PCT.
+- **Excel workbook** (`build_trigger_workbook.py`, openpyxl): `analysis/trigger_analysis.xlsx`, 6
+  sheets (Ramp/NewSubtheme/NewPosition/Cross4pct/Cross2pct/RampBasket), single-period returns, locked
+  baskets, EW/CW/SMH, green-red shading. All builders `mypy --strict` clean.
+- **Also in tree (operator/other-session):** `reaudit_tickers.py` + `recompute_returns_*.py` +
+  `step4_signal_events_v4/v5/v6*` outputs; `theme_returns_v2.py` was trimmed (14+/28-). Committed
+  together as the analysis layer. Full decision log: SD-TRIG-1…18 + SD-AUDIT-1…5 in the impl notes
+  (`docs/implementation_notes/13f_signal_triggers_implementation_notes.md`,
+  `.../thesis_audit_implementation_notes.md`).
 
 **Theme-basket return analysis COMPLETE (v3).** `tools/transcripts/theme_returns_v2.py` regenerates
 signal events from scratch and computes forward returns. It (1) clusters the 319 theses into 52 themes
@@ -54,13 +77,15 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 
 ## Immediate Next Steps
 
-1. **Second-pass analysis** — cross-reference `analysis/thesis_timeline.json` (each thesis tagged
-   with date/source/confidence/themes/tickers_named/tickers_implied) against the 13F position
-   data from `src/celebpm` (CIK 0001777813, Atreides). The timeline is the intended input shape.
-2. **(Optional) proper-noun cleanup pass** on the youtube_auto transcripts (TSMC→"TSM C",
-   Trainium→"training him") before any re-extraction — noted in `tools/transcripts/README.md`.
-3. **(Optional) close corpus gaps** — 4 older ILTB episodes (2019–2022) have no YouTube mirror and
-   Colossus is JS-gated; CNBC video has no captions. See README "Known gaps".
+1. **Cross-reference transcript theses ↔ 13F signals** — the two halves now exist
+   (`analysis/thesis_timeline_v2_flat.json` + `analysis/13f_signal_triggers_clean.csv` /
+   `filing_to_filing_returns_universal.csv`). Join Baker's stated theses to his actual
+   13F trigger events on ticker+date to see which stated views he backed with capital.
+2. **34 universal-returns tickers are all-`NO_DATA`** (CUSIP placeholders + foreign/odd EODHD
+   symbols, all non-AI) — if price coverage for those is wanted, add a CUSIP→ticker map. (Flag only.)
+3. **RampBasket CW missing-data** renormalizes among available names (parallels EW); switch to a
+   fixed denominator if dilution-on-dropout is preferred (SD-TRIG-18, one-line change).
+4. **(Optional)** proper-noun cleanup on youtube_auto transcripts; close 4 older ILTB corpus gaps.
 
 ---
 

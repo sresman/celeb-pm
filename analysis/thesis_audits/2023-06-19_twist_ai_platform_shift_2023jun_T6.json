@@ -1,0 +1,46 @@
+{
+  "date": "2023-06-19",
+  "source": "This Week in Startups \u2014 AI platform shift, Nvidia outlook, extinction risk",
+  "thesis_id": "T6",
+  "summary": "AI will enable recursive self-improvement (hard takeoff), with GPT-5 and beyond potentially improving themselves, dramatically accelerating capability gains beyond current trajectory.",
+  "summary_extended": "Baker argues that AI is approaching a potential 'hard takeoff' scenario in which AI systems begin to recursively self-improve, dramatically accelerating capability gains beyond the current trajectory. He cites the GPT-3 to GPT-4 progression as concrete evidence of the pace of improvement: GPT-3 (2020) was largely incapable of tasks that GPT-4 now performs, including passing the bar exam, medical licensing exams, top MBA exams, and scoring in the high 90s on college science olympiads. Baker contends that the next phase \u2014 recursive self-improvement \u2014 is the mechanism underlying the 5\u201320% extinction-level risk estimates cited by leading AI researchers, a range he takes seriously even if not as a certainty. The investment implication is not a specific buy or sell signal but rather a structural view that the AI capability curve may be far steeper than consensus assumes, with profound implications for any company at the frontier of AI development.",
+  "detail": "Baker points to the GPT-3 to GPT-4 progression as evidence: GPT-3 (2020) could do essentially nothing GPT-4 can do; GPT-4 passes bar exam, medical licensing, top MBA exams, scores high 90s on college science olympiads. He argues the next phase involves AI systems recursively improving themselves, which is the mechanism behind extinction-level risk concerns.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as a structural possibility he takes seriously, not a certainty. He notes 5-20% extinction risk estimates from top AI researchers as context.",
+  "themes": [
+    "AI platform shift",
+    "AGI risk",
+    "recursive self-improvement"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "AGI can begin to improve itself recursively",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "MSFT",
+    "GOOGL",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT is a major AI investor (OpenAI partnership) but this thesis is about the abstract structural risk/possibility of recursive self-improvement and AGI \u2014 not a specific investment thesis about MSFT. No specific claim is made about MSFT's business benefiting from or being subject to this dynamic in a way that distinguishes it from any other large tech company."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GOOGL is a frontier AI developer but the thesis makes no specific claim about GOOGL's competitive position or financial benefit from recursive self-improvement. Its inclusion appears to be bleed-over from adjacent AI platform theses rather than a direct implication of this specific thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META is tangential here; the thesis is about AGI risk and recursive self-improvement as a structural phenomenon, not about META's AI investments or business outcomes. No specific claim ties META to this thesis."
+    }
+  ]
+}

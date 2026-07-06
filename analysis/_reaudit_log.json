@@ -1,0 +1,644 @@
+{
+  "model": "claude-sonnet-4-6",
+  "theses_reaudited": 39,
+  "ok": 39,
+  "skipped": 0,
+  "errors": [],
+  "tickers_removed": 91,
+  "tickers_kept": 102,
+  "total_input_tokens": 60023,
+  "total_output_tokens": 13081,
+  "estimated_cost_usd": 0.3763,
+  "rows": [
+    {
+      "index": 0,
+      "date": "2020-05-07",
+      "thesis_id": "T1",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2020-05-07_columbia_sima_investing_2020may_T1.json",
+      "status": "ok",
+      "input_tokens": 1861,
+      "output_tokens": 590,
+      "n_before": 11,
+      "n_after": 6,
+      "removed": [
+        "MAR",
+        "CCL",
+        "LVS",
+        "DAL",
+        "UAL"
+      ]
+    },
+    {
+      "index": 1,
+      "date": "2020-05-07",
+      "thesis_id": "T2",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2020-05-07_columbia_sima_investing_2020may_T2.json",
+      "status": "ok",
+      "input_tokens": 1719,
+      "output_tokens": 514,
+      "n_before": 6,
+      "n_after": 4,
+      "removed": [
+        "NTDOY",
+        "MSFT"
+      ]
+    },
+    {
+      "index": 6,
+      "date": "2020-05-07",
+      "thesis_id": "T7",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2020-05-07_columbia_sima_investing_2020may_T7.json",
+      "status": "ok",
+      "input_tokens": 1510,
+      "output_tokens": 385,
+      "n_before": 5,
+      "n_after": 4,
+      "removed": [
+        "GRUB"
+      ]
+    },
+    {
+      "index": 17,
+      "date": "2020-07-27",
+      "thesis_id": "T7",
+      "criteria": "A+B",
+      "output": "analysis/thesis_reaudits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T7.json",
+      "status": "ok",
+      "input_tokens": 2052,
+      "output_tokens": 590,
+      "n_before": 10,
+      "n_after": 1,
+      "removed": [
+        "NVDA",
+        "INTC",
+        "AMD",
+        "MU",
+        "ASML",
+        "LRCX",
+        "TSM",
+        "AMAT",
+        "KLAC"
+      ]
+    },
+    {
+      "index": 19,
+      "date": "2020-07-27",
+      "thesis_id": "T9",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T9.json",
+      "status": "ok",
+      "input_tokens": 1465,
+      "output_tokens": 287,
+      "n_before": 4,
+      "n_after": 3,
+      "removed": [
+        "META"
+      ]
+    },
+    {
+      "index": 34,
+      "date": "2021-11-01",
+      "thesis_id": "T3",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2021-11-01_graham_doddsville_issue43_2021_T3.json",
+      "status": "ok",
+      "input_tokens": 1573,
+      "output_tokens": 338,
+      "n_before": 4,
+      "n_after": 2,
+      "removed": [
+        "SNAP",
+        "GOOGL"
+      ]
+    },
+    {
+      "index": 40,
+      "date": "2021-11-01",
+      "thesis_id": "T9",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2021-11-01_graham_doddsville_issue43_2021_T9.json",
+      "status": "ok",
+      "input_tokens": 1537,
+      "output_tokens": 280,
+      "n_before": 6,
+      "n_after": 6,
+      "removed": []
+    },
+    {
+      "index": 43,
+      "date": "2021-11-30",
+      "thesis_id": "T2",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2021-11-30_vspartners_global_tech_2021nov_T2.json",
+      "status": "ok",
+      "input_tokens": 1307,
+      "output_tokens": 233,
+      "n_before": 3,
+      "n_after": 0,
+      "removed": [
+        "GOOGL",
+        "META",
+        "MSFT"
+      ]
+    },
+    {
+      "index": 53,
+      "date": "2021-11-30",
+      "thesis_id": "T12",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2021-11-30_vspartners_global_tech_2021nov_T12.json",
+      "status": "ok",
+      "input_tokens": 1254,
+      "output_tokens": 212,
+      "n_before": 3,
+      "n_after": 0,
+      "removed": [
+        "GOOGL",
+        "META",
+        "AMZN"
+      ]
+    },
+    {
+      "index": 72,
+      "date": "2022-03-25",
+      "thesis_id": "T16",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2022-03-25_onthetape_fear_market_killer_2022mar_T16.json",
+      "status": "ok",
+      "input_tokens": 1539,
+      "output_tokens": 352,
+      "n_before": 6,
+      "n_after": 4,
+      "removed": [
+        "EA",
+        "TTWO"
+      ]
+    },
+    {
+      "index": 83,
+      "date": "2023-06-19",
+      "thesis_id": "T2",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2023-06-19_twist_ai_platform_shift_2023jun_T2.json",
+      "status": "ok",
+      "input_tokens": 1549,
+      "output_tokens": 264,
+      "n_before": 3,
+      "n_after": 1,
+      "removed": [
+        "AVGO",
+        "MRVL"
+      ]
+    },
+    {
+      "index": 110,
+      "date": "2024-02-14",
+      "thesis_id": "T7",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2024-02-14_aleph_semis_globalwarming_2024feb_T7.json",
+      "status": "ok",
+      "input_tokens": 1410,
+      "output_tokens": 258,
+      "n_before": 3,
+      "n_after": 1,
+      "removed": [
+        "MSFT",
+        "AMZN"
+      ]
+    },
+    {
+      "index": 111,
+      "date": "2024-02-14",
+      "thesis_id": "T8",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2024-02-14_aleph_semis_globalwarming_2024feb_T8.json",
+      "status": "ok",
+      "input_tokens": 1780,
+      "output_tokens": 199,
+      "n_before": 2,
+      "n_after": 0,
+      "removed": [
+        "NVDA",
+        "AVGO"
+      ]
+    },
+    {
+      "index": 125,
+      "date": "2024-06-15",
+      "thesis_id": "T7",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2024-06-15_allin_dram_bottleneck_2024mid_T7.json",
+      "status": "ok",
+      "input_tokens": 1383,
+      "output_tokens": 336,
+      "n_before": 3,
+      "n_after": 1,
+      "removed": [
+        "AMD",
+        "META"
+      ]
+    },
+    {
+      "index": 148,
+      "date": "2024-07-01",
+      "thesis_id": "T3",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2024-07-01_thematic_investors_scifi_history_2024jul_T3.json",
+      "status": "ok",
+      "input_tokens": 1549,
+      "output_tokens": 347,
+      "n_before": 5,
+      "n_after": 4,
+      "removed": [
+        "MRVL"
+      ]
+    },
+    {
+      "index": 154,
+      "date": "2024-07-01",
+      "thesis_id": "T9",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2024-07-01_thematic_investors_scifi_history_2024jul_T9.json",
+      "status": "ok",
+      "input_tokens": 1434,
+      "output_tokens": 287,
+      "n_before": 5,
+      "n_after": 3,
+      "removed": [
+        "HUBS",
+        "WDAY"
+      ]
+    },
+    {
+      "index": 156,
+      "date": "2024-07-01",
+      "thesis_id": "T11",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2024-07-01_thematic_investors_scifi_history_2024jul_T11.json",
+      "status": "ok",
+      "input_tokens": 1464,
+      "output_tokens": 321,
+      "n_before": 4,
+      "n_after": 4,
+      "removed": []
+    },
+    {
+      "index": 182,
+      "date": "2025-01-04",
+      "thesis_id": "T5",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2025-01-04_allin_2025_predictions_2025jan_T5.json",
+      "status": "ok",
+      "input_tokens": 1951,
+      "output_tokens": 596,
+      "n_before": 11,
+      "n_after": 3,
+      "removed": [
+        "LMT",
+        "RTX",
+        "BA",
+        "SAIC",
+        "LDOS",
+        "BAH",
+        "CACI",
+        "GD"
+      ]
+    },
+    {
+      "index": 183,
+      "date": "2025-01-04",
+      "thesis_id": "T6",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2025-01-04_allin_2025_predictions_2025jan_T6.json",
+      "status": "ok",
+      "input_tokens": 1562,
+      "output_tokens": 436,
+      "n_before": 7,
+      "n_after": 5,
+      "removed": [
+        "F",
+        "GM"
+      ]
+    },
+    {
+      "index": 196,
+      "date": "2025-10-30",
+      "thesis_id": "T1",
+      "criteria": "A+B",
+      "output": "analysis/thesis_reaudits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T1.json",
+      "status": "ok",
+      "input_tokens": 1574,
+      "output_tokens": 365,
+      "n_before": 6,
+      "n_after": 2,
+      "removed": [
+        "GOOGL",
+        "META",
+        "MSFT",
+        "AMZN"
+      ]
+    },
+    {
+      "index": 197,
+      "date": "2025-10-30",
+      "thesis_id": "T2",
+      "criteria": "A+B",
+      "output": "analysis/thesis_reaudits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T2.json",
+      "status": "ok",
+      "input_tokens": 1489,
+      "output_tokens": 335,
+      "n_before": 5,
+      "n_after": 4,
+      "removed": [
+        "NVDA"
+      ]
+    },
+    {
+      "index": 203,
+      "date": "2025-10-30",
+      "thesis_id": "T8",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T8.json",
+      "status": "ok",
+      "input_tokens": 1402,
+      "output_tokens": 230,
+      "n_before": 4,
+      "n_after": 4,
+      "removed": []
+    },
+    {
+      "index": 204,
+      "date": "2025-10-30",
+      "thesis_id": "T9",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T9.json",
+      "status": "ok",
+      "input_tokens": 1528,
+      "output_tokens": 301,
+      "n_before": 4,
+      "n_after": 1,
+      "removed": [
+        "META",
+        "MSFT",
+        "AMZN"
+      ]
+    },
+    {
+      "index": 212,
+      "date": "2025-11-15",
+      "thesis_id": "T3",
+      "criteria": "A+B",
+      "output": "analysis/thesis_reaudits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T3.json",
+      "status": "ok",
+      "input_tokens": 1572,
+      "output_tokens": 355,
+      "n_before": 6,
+      "n_after": 4,
+      "removed": [
+        "EQIX",
+        "DLR"
+      ]
+    },
+    {
+      "index": 234,
+      "date": "2025-12-09",
+      "thesis_id": "T12",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T12.json",
+      "status": "ok",
+      "input_tokens": 1585,
+      "output_tokens": 288,
+      "n_before": 6,
+      "n_after": 6,
+      "removed": []
+    },
+    {
+      "index": 238,
+      "date": "2025-12-09",
+      "thesis_id": "T16",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T16.json",
+      "status": "ok",
+      "input_tokens": 1363,
+      "output_tokens": 238,
+      "n_before": 3,
+      "n_after": 2,
+      "removed": [
+        "NVDA"
+      ]
+    },
+    {
+      "index": 241,
+      "date": "2025-12-09",
+      "thesis_id": "T19",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T19.json",
+      "status": "ok",
+      "input_tokens": 1533,
+      "output_tokens": 378,
+      "n_before": 5,
+      "n_after": 1,
+      "removed": [
+        "AVGO",
+        "MRVL",
+        "COHR",
+        "LITE"
+      ]
+    },
+    {
+      "index": 246,
+      "date": "2025-12-09",
+      "thesis_id": "T24",
+      "criteria": "A+B",
+      "output": "analysis/thesis_reaudits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T24.json",
+      "status": "ok",
+      "input_tokens": 1576,
+      "output_tokens": 380,
+      "n_before": 5,
+      "n_after": 2,
+      "removed": [
+        "AMZN",
+        "MSFT",
+        "NVDA"
+      ]
+    },
+    {
+      "index": 272,
+      "date": "2026-05-20",
+      "thesis_id": "T2",
+      "criteria": "C",
+      "output": "analysis/thesis_reaudits/2026-05-20_iltb_watts_wafers_2026may_yt_T2.json",
+      "status": "ok",
+      "input_tokens": 1312,
+      "output_tokens": 120,
+      "n_before": 1,
+      "n_after": 0,
+      "removed": [
+        "QQQ"
+      ]
+    },
+    {
+      "index": 274,
+      "date": "2026-05-20",
+      "thesis_id": "T4",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2026-05-20_iltb_watts_wafers_2026may_yt_T4.json",
+      "status": "ok",
+      "input_tokens": 1293,
+      "output_tokens": 177,
+      "n_before": 2,
+      "n_after": 0,
+      "removed": [
+        "NVDA",
+        "AMZN"
+      ]
+    },
+    {
+      "index": 276,
+      "date": "2026-05-20",
+      "thesis_id": "T6",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2026-05-20_iltb_watts_wafers_2026may_yt_T6.json",
+      "status": "ok",
+      "input_tokens": 1502,
+      "output_tokens": 351,
+      "n_before": 5,
+      "n_after": 1,
+      "removed": [
+        "VST",
+        "CEG",
+        "ETN",
+        "NRG"
+      ]
+    },
+    {
+      "index": 280,
+      "date": "2026-05-20",
+      "thesis_id": "T10",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2026-05-20_iltb_watts_wafers_2026may_yt_T10.json",
+      "status": "ok",
+      "input_tokens": 1639,
+      "output_tokens": 262,
+      "n_before": 5,
+      "n_after": 5,
+      "removed": []
+    },
+    {
+      "index": 285,
+      "date": "2026-05-20",
+      "thesis_id": "T15",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2026-05-20_iltb_watts_wafers_2026may_yt_T15.json",
+      "status": "ok",
+      "input_tokens": 1461,
+      "output_tokens": 232,
+      "n_before": 3,
+      "n_after": 3,
+      "removed": []
+    },
+    {
+      "index": 286,
+      "date": "2026-05-20",
+      "thesis_id": "T16",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2026-05-20_iltb_watts_wafers_2026may_yt_T16.json",
+      "status": "ok",
+      "input_tokens": 1709,
+      "output_tokens": 513,
+      "n_before": 7,
+      "n_after": 3,
+      "removed": [
+        "ASML",
+        "KLAC",
+        "LRCX",
+        "AMAT"
+      ]
+    },
+    {
+      "index": 287,
+      "date": "2026-05-20",
+      "thesis_id": "T17",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2026-05-20_iltb_watts_wafers_2026may_yt_T17.json",
+      "status": "ok",
+      "input_tokens": 1595,
+      "output_tokens": 391,
+      "n_before": 5,
+      "n_after": 2,
+      "removed": [
+        "KLAC",
+        "LRCX",
+        "AMAT"
+      ]
+    },
+    {
+      "index": 297,
+      "date": "2026-05-20",
+      "thesis_id": "T27",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2026-05-20_iltb_watts_wafers_2026may_yt_T27.json",
+      "status": "ok",
+      "input_tokens": 1559,
+      "output_tokens": 313,
+      "n_before": 7,
+      "n_after": 7,
+      "removed": []
+    },
+    {
+      "index": 306,
+      "date": "2026-06-11",
+      "thesis_id": "T6",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2026-06-11_bg2_spacex_ipo_2026jun_T6.json",
+      "status": "ok",
+      "input_tokens": 1320,
+      "output_tokens": 271,
+      "n_before": 3,
+      "n_after": 0,
+      "removed": [
+        "NVDA",
+        "AMD",
+        "AVGO"
+      ]
+    },
+    {
+      "index": 311,
+      "date": "2026-06-11",
+      "thesis_id": "T11",
+      "criteria": "A+B",
+      "output": "analysis/thesis_reaudits/2026-06-11_bg2_spacex_ipo_2026jun_T11.json",
+      "status": "ok",
+      "input_tokens": 1536,
+      "output_tokens": 334,
+      "n_before": 5,
+      "n_after": 3,
+      "removed": [
+        "AMZN",
+        "NVDA"
+      ]
+    },
+    {
+      "index": 312,
+      "date": "2026-06-11",
+      "thesis_id": "T12",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2026-06-11_bg2_spacex_ipo_2026jun_T12.json",
+      "status": "ok",
+      "input_tokens": 1576,
+      "output_tokens": 422,
+      "n_before": 5,
+      "n_after": 0,
+      "removed": [
+        "NVDA",
+        "EQIX",
+        "DLR",
+        "VST",
+        "CEG"
+      ]
+    }
+  ]
+}

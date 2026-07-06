@@ -1,0 +1,17 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) — Watts and wafers",
+  "thesis_id": "T2",
+  "summary": "The March/April 2026 NASDAQ selloff was a buying opportunity in AI — valuations reached historically cheap levels relative to the market while AI fundamentals were accelerating",
+  "criteria": "C",
+  "tickers_direct_before": [
+    "QQQ"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "QQQ",
+      "action": "REMOVE",
+      "reasoning": "QQQ is an ETF and per the rules, ETF tickers are never direct subjects or beneficiaries of a specific thesis — always tangential. Additionally, Baker's thesis is a broad sector-level valuation call about AI and technology equities as a category; he did not specifically name QQQ or any ETF as the vehicle for this opportunity. The thesis describes a general overweight to AI/tech, not a specific instrument."
+    }
+  ]
+}

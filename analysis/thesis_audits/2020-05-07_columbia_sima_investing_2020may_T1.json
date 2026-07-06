@@ -1,0 +1,111 @@
+{
+  "date": "2020-05-07",
+  "source": "Columbia SIMA \u2014 COVID-19 market impact, technology investing, video games, venture capital",
+  "thesis_id": "T1",
+  "summary": "COVID-19 created a rare long/short opportunity set where obvious trades (long stay-at-home, short travel/leisure) were massively mispriced and generated outsized alpha",
+  "summary_extended": "Baker argues that the COVID-19 market dislocation of early-to-mid March 2020 created one of the most obvious and yet massively mispriced long/short opportunities he had ever seen, where simply going long stay-at-home beneficiaries and short travel/leisure names generated extraordinary alpha. He notes that trades like long Walmart, Kroger, Amazon, Netflix, Zoom, and Clorox while shorting hotels, cruise lines, casinos, and airlines were still available at extreme mispricings weeks into the crisis \u2014 a phenomenon he found deeply surprising. Baker draws an explicit parallel to 2008/09, where simply selling financials was similarly obvious and similarly rewarding, framing both episodes as evidence that the most obvious trades are not always efficiently discounted by the market. The investment implication is a structural lesson: in periods of acute macro dislocation, consensus-obvious directional trades can remain available at extreme mispricings long enough to generate outsized returns, and investors should not assume the market has already priced in the obvious outcome.",
+  "detail": "Baker observed that in early-to-mid March 2020, the most obvious trades \u2014 long Walmart, Kroger, Amazon, Netflix, Zoom, Clorox and short hotels, cruise lines, casinos, airlines \u2014 were still available at extreme mispricings. He draws a parallel to 2008/09 where simply selling financials was similarly obvious and similarly rewarding. He frames this as a lesson that obvious trades are not always discounted.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this directly as his most surprising observation of the crisis and references the same pattern from 2008/09 as a repeated lesson",
+  "themes": [
+    "COVID-19 dislocation",
+    "long-short equity",
+    "consumer staples",
+    "travel & leisure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "you could generate almost a lifetime's worth of alpha by doing the most obvious thing",
+  "tickers_named_original": [
+    "AMZN",
+    "NFLX",
+    "WMT",
+    "KR",
+    "CLX"
+  ],
+  "tickers_direct": [
+    "AMZN",
+    "NFLX",
+    "WMT",
+    "KR",
+    "CLX",
+    "ZM"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "ZM",
+    "MAR",
+    "CCL",
+    "LVS",
+    "DAL",
+    "UAL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Amazon is explicitly named as a long stay-at-home beneficiary that was mispriced during the COVID dislocation \u2014 a direct subject of the thesis."
+    },
+    {
+      "ticker": "NFLX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Netflix is explicitly named as a long stay-at-home beneficiary that was mispriced during the COVID dislocation."
+    },
+    {
+      "ticker": "WMT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Walmart is explicitly named as a long stay-at-home/consumer staples beneficiary that was mispriced during the COVID dislocation."
+    },
+    {
+      "ticker": "KR",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Kroger is explicitly named as a long stay-at-home/consumer staples beneficiary that was mispriced during the COVID dislocation."
+    },
+    {
+      "ticker": "CLX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Clorox is explicitly named as a long stay-at-home/consumer staples beneficiary that was mispriced during the COVID dislocation."
+    },
+    {
+      "ticker": "ZM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Zoom is explicitly named as a long stay-at-home beneficiary that was mispriced during the COVID dislocation."
+    },
+    {
+      "ticker": "MAR",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Hotels are explicitly named as short targets in the thesis; Marriott is the most prominent US-listed hotel operator and a direct subject of the short side. [RE-AUDIT: Baker named 'hotels' as a category to short, not Marriott specifically. Assigning MAR as a direct subject requires inferring the representative ticker \u2014 Baker did not specifically name Marriott in connection with this thesis.]"
+    },
+    {
+      "ticker": "CCL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Cruise lines are explicitly named as short targets; Carnival is the largest US-listed cruise operator and a direct subject of the short side. [RE-AUDIT: Baker named 'cruise lines' as a category to short, not Carnival specifically. Assigning CCL requires inferring the representative ticker \u2014 Baker did not specifically name Carnival in connection with this thesis.]"
+    },
+    {
+      "ticker": "LVS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Casinos are explicitly named as short targets; Las Vegas Sands is a representative US-listed casino operator and a direct subject of the short side. [RE-AUDIT: Baker named 'casinos' as a category to short, not Las Vegas Sands specifically. Assigning LVS requires inferring the representative ticker \u2014 Baker did not specifically name LVS in connection with this thesis.]"
+    },
+    {
+      "ticker": "DAL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Airlines are explicitly named as short targets; Delta is a major US-listed airline and a direct subject of the short side. [RE-AUDIT: Baker named 'airlines' as a category to short, not Delta specifically. Assigning DAL requires inferring the representative ticker \u2014 Baker did not specifically name Delta in connection with this thesis.]"
+    },
+    {
+      "ticker": "UAL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Airlines are explicitly named as short targets; United is a major US-listed airline and a direct subject of the short side. [RE-AUDIT: Baker named 'airlines' as a category to short, not United specifically. Assigning UAL requires inferring the representative ticker \u2014 Baker did not specifically name United in connection with this thesis.]"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "date": "2020-05-07",
+  "source": "Columbia SIMA \u2014 COVID-19 market impact, technology investing, video games, venture capital",
+  "thesis_id": "T7",
+  "summary": "Marketplace businesses (Uber, DoorDash, Airbnb) have low barriers to entry but high barriers to scale; once market structure stabilizes they will be great businesses",
+  "summary_extended": "Baker argues that internet marketplace businesses \u2014 such as ride-sharing, food delivery, and home-sharing platforms \u2014 are near-natural monopolies where scale is the single most durable competitive advantage, drawing on Bruce Greenwald's 'Competition Demystified' as empirical support. The structural problem, he contends, has been excess venture capital funding that created too many well-capitalized competitors, each rationally burning near-infinite cash to win winner-take-most markets, which suppresses profitability for all participants during the competitive phase. Once the competitive landscape consolidates and market structure stabilizes \u2014 a process he expects to play out over the medium term \u2014 the surviving platforms will be excellent businesses with highly defensible positions. Baker does not issue a current buy recommendation on any specific name, framing this as a structural thesis about the eventual payoff to scale rather than an immediate trade, but the implication is that the ultimate winners in each vertical (ride-share, food delivery, home-sharing) will command significant pricing power and margins post-consolidation.",
+  "detail": "Baker argues internet marketplaces are near-natural monopolies where scale is the most durable competitive advantage. The problem has been excess venture funding creating too many competitors, justifying near-infinite cash burn to win winner-take-most markets. Once the competitive landscape settles, the survivors will be excellent businesses. He cites Bruce Greenwald's 'Competition Demystified' as empirical support for scale as the most durable moat.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker makes a structural argument but does not express a current buy recommendation on any specific marketplace stock",
+  "themes": [
+    "marketplace businesses",
+    "competitive moats",
+    "venture capital distortion",
+    "platform economics"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "scale is the most durable competitive advantage",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "UBER",
+    "LYFT",
+    "ABNB",
+    "DASH"
+  ],
+  "tickers_subject": [
+    "UBER",
+    "LYFT",
+    "ABNB",
+    "DASH"
+  ],
+  "tickers_implied_original": [
+    "UBER",
+    "LYFT",
+    "ABNB",
+    "DASH",
+    "GRUB"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "UBER",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Uber is the canonical example of a marketplace business Baker is describing \u2014 a ride-sharing platform burning cash in a winner-take-most competitive dynamic. It is a direct subject of the thesis."
+    },
+    {
+      "ticker": "LYFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Lyft is the primary US competitor to Uber in ride-sharing and is directly implicated in the excess-competition/cash-burn dynamic Baker describes. It is a direct subject of the thesis."
+    },
+    {
+      "ticker": "ABNB",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Airbnb is explicitly cited by Baker as an example marketplace business in this thesis and fits the near-natural monopoly / scale moat framework he describes."
+    },
+    {
+      "ticker": "DASH",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "DoorDash is explicitly cited by Baker as an example marketplace business in this thesis, operating in the food delivery vertical where the winner-take-most dynamic is highly relevant."
+    },
+    {
+      "ticker": "GRUB",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Grubhub is a direct participant in the food delivery marketplace vertical Baker describes, representing exactly the kind of excess-competition/cash-burn dynamic he is analyzing. [RE-AUDIT: Grubhub is not explicitly named by Baker in connection with this thesis per the transcript summary. Baker named Uber, DoorDash, and Airbnb as his examples. Grubhub is a food delivery competitor but was not specifically connected to this thesis by Baker \u2014 it is an inferred beneficiary/subject, not a directly named one.]"
+    }
+  ]
+}

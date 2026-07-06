@@ -1,0 +1,40 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T30",
+  "summary": "Violation of Richard Sutton's bitter lesson (more compute always beats human algorithmic ingenuity) is the single biggest risk to the entire AI trade, but is more likely to come from ASI than human engineers",
+  "summary_extended": "Baker identifies the violation of Richard Sutton's 'bitter lesson' \u2014 the empirical principle that scaling raw compute always outperforms human-engineered algorithmic shortcuts over time \u2014 as the single greatest risk to the entire AI investment thesis. He notes that the people closest to frontier AI development are the most skeptical this violation will occur, yet Baker himself is somewhat less dismissive of the risk than those model builders. His specific and notable view is that the violation is more likely to come from ASI itself than from human engineers: a 300-400+ IQ artificial superintelligence could temporarily make itself dramatically more efficient, causing algorithmic gains to outpace raw compute scaling for a period. The investment implication is that if this scenario materialized, demand for compute infrastructure \u2014 GPUs, HBM memory, data center buildout \u2014 could be temporarily or structurally impaired, representing a tail risk to the entire AI infrastructure trade. Baker frames this as a real but not fully priced-in risk, and does not advocate a specific position change, but flags it as the key variable to monitor for anyone long AI infrastructure.",
+  "detail": "Baker identifies bitter lesson violation as the top risk to AI investment theses. He notes that people closest to AI are most skeptical this will occur. His own view: we are close to ASI, and a 300-400+ IQ AI might temporarily violate the bitter lesson by making itself more efficient. This could create a temporary period where algorithmic efficiency gains outpace raw compute scaling.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker frames this as 'a real risk' and 'the biggest risk to this trade' but also says he is 'a little less skeptical' than the model builders, suggesting he has not fully priced it in",
+  "themes": [
+    "AI model layer",
+    "compute supply constraints",
+    "existential/ASI risk"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "violation of Richard Sutton's bitter lesson is the biggest risk to all of AI",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Nvidia (NVDA)",
+    "memory producers",
+    "AI infrastructure basket"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is a general AI infrastructure name that would be affected by a bitter lesson violation, but the thesis is a macro/philosophical risk framework with no specific claim about NVDA's business, valuation, or competitive position. The connection is too loose \u2014 this thesis does not make NVDA a direct subject or unambiguous direct beneficiary. It is contamination from the broader AI infrastructure theme."
+    },
+    {
+      "ticker": "MU",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Memory producers were implied in the original extraction, but the thesis is a risk/philosophical framework about compute scaling dynamics. No specific memory company is named or unambiguously implied as a direct subject or beneficiary of this specific thesis."
+    }
+  ]
+}

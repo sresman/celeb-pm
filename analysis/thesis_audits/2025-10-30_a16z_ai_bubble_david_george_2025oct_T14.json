@@ -1,0 +1,36 @@
+{
+  "date": "2025-10-30",
+  "source": "a16z Podcast \u2014 Is there an AI bubble?",
+  "thesis_id": "T14",
+  "summary": "Consumer AI business model will shift to outcome-based affiliate fees, squeezing out Google's advertising inefficiency premium",
+  "summary_extended": "Baker argues that the dominant business model for consumer AI assistants will shift from advertising to outcome-based affiliate fees, fundamentally disrupting Google's core search advertising franchise. His reasoning is that Google's advertising model generates excess returns precisely because advertisers systematically overpay for customer acquisition \u2014 a structural inefficiency that AI can eliminate by closing the loop between intent and transaction (e.g., an AI assistant that books a hotel on a user's behalf and earns a fee only upon completion). This shift would compress the 'inefficiency premium' embedded in Google's ad revenue, representing a meaningful degradation of its business model over time. Baker notes that his personal preferred AI assistant is XAI/Grok, which he discloses is influenced by his direct shareholding in XAI, though XAI is not publicly listed. The investment implication is bearish on GOOGL's long-term advertising revenue durability, though Baker hedges on timing.",
+  "detail": "Baker expects AI assistants to negotiate on behalf of users (e.g., hotel bookings) and earn affiliate fees for closed-loop outcomes. This is a business model degradation vs. Google's advertising model, which works because advertisers systematically overpay for customer acquisition. AI closing the loop will squeeze out that inefficiency. XAI/Grok is his personal preferred AI assistant given his XAI shareholding.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker frames this as directionally likely but uses hedged language about timing",
+  "themes": [
+    "consumer internet",
+    "AI application layer",
+    "business model disruption"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "affiliate fees... being paid for an outcome",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly about the disruption of Google's advertising business model by outcome-based AI affiliate fees. GOOGL is the direct subject of the structural threat Baker describes \u2014 its ad revenue depends on the inefficiency premium that AI closes out."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) — GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T16",
+  "summary": "Edge AI running pruned frontier models on-device is the primary bear case for cloud AI compute demand",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "AAPL",
+    "GOOGL",
+    "NVDA"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "AAPL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Apple's on-device AI strategy as the core mechanism of this bear case thesis — Apple is the direct subject, not merely mentioned in passing."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically referenced Gemini 5 as the model being pruned and run on-device, and Google's cloud inference infrastructure (TPUs) faces direct demand risk from this thesis. Google is both the model provider and the cloud compute operator threatened by this scenario."
+    },
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "While Nvidia's GPU datacenter business is a logical downstream casualty of reduced cloud inference demand, Baker did not specifically connect NVDA to this edge AI thesis in the way he did AAPL and GOOGL. The connection is inferential — Nvidia is a general cloud compute beneficiary whose risk is implied by the thesis, not explicitly named as a subject of this specific bear case argument. Under the strict test, this is tangential."
+    }
+  ]
+}

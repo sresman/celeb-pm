@@ -1,0 +1,51 @@
+{
+  "date": "2025-01-04",
+  "source": "All-In Podcast \u2014 2025 predictions (bestie guest Gavin Baker)",
+  "thesis_id": "T1",
+  "summary": "High bandwidth memory (HBM) producers are the best performing asset of 2025 due to persistent compute scarcity",
+  "summary_extended": "Baker argues that high bandwidth memory (HBM) producers represent his single best-performing asset pick for 2025, driven by a structural supply-demand imbalance that he expects to persist throughout the year. He contends that HBM constitutes a larger share of GPU cost-of-goods-sold than TSMC's wafer contribution, underscoring how critical and valuable this component has become in the AI compute stack. With only SK Hynix and Micron capable of producing HBM at scale \u2014 Samsung having struggled to qualify its product \u2014 the effective supply base is extremely narrow against surging demand from both training and inference workloads. Baker notes HBM has been sold out for two years and that the rise of test-time compute and inference scaling makes HBM even more critical going forward, reinforcing his view that pricing power and volume will remain favorable for qualified producers through at least 2025.",
+  "detail": "Baker argues HBM is a larger component of GPU COGS than TSMC, and with only SK Hynix and Micron able to produce it (Samsung struggling), demand will remain structurally undersupplied. Test-time compute and inference workloads make HBM more critical than ever. HBM has been sold out for two years.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly names this as his best performing asset pick, provides detailed supply chain rationale, and connects it to his broader inference compute thesis",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "HBM memory"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "high bandwidth memory is a bigger part of in cogs on gpus than Taiwan Semi",
+  "tickers_named_original": [
+    "MU"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [
+    "MU"
+  ],
+  "tickers_implied_original": [
+    "000660.KS",
+    "005930.KS"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is one of only two qualified HBM producers at scale (alongside SK Hynix) and is the sole US-listed equity directly exposed to this thesis. Baker's supply chain rationale centers on MU as a primary beneficiary."
+    },
+    {
+      "ticker": "000660.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SK Hynix (000660.KS) is the leading HBM producer and a direct subject of this thesis, but it is Korea-listed and not a US-listed equity. It should not be included in a US equity-focused ticker list; it is not actionable in the same context as MU."
+    },
+    {
+      "ticker": "005930.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Samsung (005930.KS) is explicitly cited by Baker as struggling to qualify its HBM, making it a laggard rather than a beneficiary of this thesis. It is also Korea-listed and not a US-listed equity, so it is removed."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2024-06-15",
+  "source": "All-In Podcast — DRAM bottleneck, AI infrastructure, Chinese open source models",
+  "thesis_id": "T7",
+  "summary": "The future of enterprise AI is composable models combining open-weight and frontier models, shifting economic value from frontier labs to infrastructure",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "AMD",
+    "META"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly states that open-source models are net positive for AI infrastructure because more model diversity requires more raw compute. NVDA as the dominant GPU supplier for AI inference infrastructure is the direct and specific beneficiary Baker is pointing to when he says value migrates to infrastructure providers. This is not a general sector association — Baker's investment conclusion is explicitly 'be long AI infrastructure compute,' and NVDA is the primary subject of that claim."
+    },
+    {
+      "ticker": "AMD",
+      "action": "REMOVE",
+      "reasoning": "AMD was not specifically named or connected to this thesis by Baker. While AMD is a GPU/accelerator competitor, Baker did not mention AMD in the context of this infrastructure thesis. Adding AMD as a direct beneficiary because it is 'the second major GPU supplier' is exactly the kind of sector-inference reasoning the audit rules prohibit. Baker must have specifically named it — he did not."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Baker referenced open-weight models generically (e.g., LLaMA family) as a structural force, but his investment implication was explicitly to be long AI infrastructure, not Meta. Meta is the producer of LLaMA but Baker did not specifically say 'buy Meta' or connect Meta's stock to this thesis as a beneficiary. The thesis is about value migrating TO infrastructure providers, AWAY from model companies — Meta as a model producer is arguably on the wrong side of this thesis, not a direct beneficiary of it."
+    }
+  ]
+}

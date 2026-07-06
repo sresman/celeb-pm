@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod — SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T11",
+  "summary": "Global AI inference revenue will exceed $200B in 2026 and reach $300B+ by 2027, making the CapEx/revenue math work",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "MSFT",
+    "META",
+    "AMZN",
+    "NVDA"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named hyperscalers as the investment implication of the inference revenue thesis, and Google is explicitly cited as one of the major AI infrastructure/inference players whose CapEx is validated by this revenue trajectory."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Microsoft is one of the hyperscalers Baker specifically references when arguing that AI CapEx is underpinned by real inference revenue, making it a direct subject of the thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Meta is explicitly named among the hyperscalers/AI CapEx deployers whose spending is validated by the inference revenue math Baker is making."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "While AWS is a major inference platform, Baker did not specifically name Amazon in connection with this thesis. The summary says 'hyperscalers' generically and names GOOGL/MSFT/META explicitly. AMZN was added by inference, not because Baker specifically connected it to this exact claim."
+    },
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Nvidia is a GPU supplier, not an inference revenue generator or hyperscaler CapEx deployer in the sense Baker is discussing. Even if mentioned elsewhere in the interview, Baker's thesis is about inference revenue justifying hyperscaler CapEx — Nvidia is tangential to that specific claim and was not specifically named in connection with it."
+    }
+  ]
+}

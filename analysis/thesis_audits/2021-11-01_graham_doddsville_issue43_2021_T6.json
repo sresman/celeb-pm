@@ -1,0 +1,69 @@
+{
+  "date": "2021-11-01",
+  "source": "Graham & Doddsville (Columbia Business School) \u2014 Investor interview with Gavin Baker, CIO of Atreides Management (Issue 43, Fall 2021)",
+  "thesis_id": "T6",
+  "summary": "Starlink is a significant disruptor to leveraged telecom and broadband companies globally",
+  "summary_extended": "Baker argues that Starlink represents a major structural disruption to telecom and broadband companies globally, particularly those carrying significant leverage on their balance sheets. His thesis is that low-earth-orbit satellite broadband fundamentally undermines the competitive moat of fixed-line and rural broadband providers who have historically faced little competition, and that companies with high debt loads will be least able to respond or adapt. He developed this view during his crossover investing work in 2019-2020, citing publicly available information from SpaceX's Twitter presence and the SpaceX subreddit as sufficient to form the thesis. The investment implication is bearish on leveraged fixed-line, rural broadband, and legacy satellite broadband incumbents \u2014 companies like ViaSat and Hughes Network Systems parent EchoStar face direct service substitution, while heavily indebted wireline carriers face long-term subscriber erosion. Baker does not name specific short targets but frames this as a global, long-duration disruption thesis with the most acute risk concentrated in high-leverage operators.",
+  "detail": "Baker highlights Starlink as a major disruptive force to companies with leverage across the world, particularly fixed-line and broadband providers. He notes that all necessary information about SpaceX/Starlink is publicly available via Twitter accounts and the SpaceX subreddit. This was a key insight from his crossover investing work in 2019-2020.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker calls it 'very disruptive to a lot of companies with a lot of leverage all over the world' but does not name specific short or long targets",
+  "themes": [
+    "space/orbital compute",
+    "satellite broadband",
+    "telecom disruption",
+    "Starlink"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "Starlink \u2013 which is going to be very disruptive to a lot of companies",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "VSAT",
+    "SATS",
+    "LUMN"
+  ],
+  "tickers_subject": [
+    "VSAT",
+    "SATS",
+    "LUMN"
+  ],
+  "tickers_implied_original": [
+    "SATS",
+    "VSAT",
+    "LUMN",
+    "T",
+    "VZ"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "VSAT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "ViaSat is a legacy geostationary satellite broadband provider directly threatened by Starlink's LEO service, which offers superior latency and speed at competitive pricing \u2014 a direct service substitution threat."
+    },
+    {
+      "ticker": "SATS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "EchoStar/Hughes Network Systems is a direct incumbent satellite broadband competitor to Starlink and faces the most acute substitution risk as Starlink scales rural broadband coverage."
+    },
+    {
+      "ticker": "LUMN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Lumen Technologies is a heavily leveraged fixed-line and broadband provider \u2014 exactly the profile Baker describes as most vulnerable: leverage plus competitive exposure to Starlink in rural and suburban markets."
+    },
+    {
+      "ticker": "T",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AT&T has wireline broadband exposure but is primarily a wireless carrier with scale, diversification, and the ability to invest in fiber; Baker's thesis targets leveraged companies with limited competitive response capacity, and T does not fit the most acute risk profile."
+    },
+    {
+      "ticker": "VZ",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Verizon is similarly a large diversified wireless carrier; while it has some fixed broadband exposure, it is not a leveraged rural broadband incumbent and does not fit the specific disruption profile Baker describes."
+    }
+  ]
+}

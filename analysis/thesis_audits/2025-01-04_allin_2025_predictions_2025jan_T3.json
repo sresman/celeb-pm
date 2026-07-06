@@ -1,0 +1,68 @@
+{
+  "date": "2025-01-04",
+  "source": "All-In Podcast \u2014 2025 predictions (bestie guest Gavin Baker)",
+  "thesis_id": "T3",
+  "summary": "Enterprise application software (SaaS) will be the worst performing asset class of 2025 as AI agents displace them",
+  "summary_extended": "Baker argues that enterprise application software (SaaS) will be the worst-performing asset class of 2025, explicitly naming it as his top bearish prediction for the year. His structural reasoning is that AI agents \u2014 models capable of taking any action a human can perform online \u2014 will displace the human workers that SaaS tools were designed to augment, rendering the productivity-enhancement value proposition of enterprise software obsolete. He contends that the winners in the AI agent era will be hyperscalers and frontier model labs that own proprietary compute and models, whereas SaaS incumbents possess neither, leaving them with no durable competitive moat against AI-native replacements. The investment implication is to be short or underweight enterprise SaaS broadly; Chamath Palihapitiya independently reached the identical conclusion during the same discussion, lending additional conviction to the bearish view. No specific price targets or revenue figures were cited, but the timeframe is 2025 and the claim is categorical \u2014 not a gradual headwind but a structural displacement.",
+  "detail": "Baker argues that AI agents \u2014 models that can take any action a human can take online \u2014 will be dominated by hyperscalers and frontier labs that own their own compute and models. Enterprise SaaS companies lack proprietary models and compute, have no durable moat, and are fundamentally built to make human workers more efficient rather than replace them. The AI companies will simply replace the worker.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker names this as his explicit worst-performing asset prediction and provides structural reasoning; Chamath independently agrees with identical conclusion",
+  "themes": [
+    "enterprise software disruption",
+    "AI agents",
+    "SaaS displacement"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "enterprise application software I think is going to be in a lot of pain",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRM",
+    "NOW",
+    "WDAY"
+  ],
+  "tickers_subject": [
+    "CRM",
+    "NOW",
+    "WDAY"
+  ],
+  "tickers_implied_original": [
+    "CRM",
+    "NOW",
+    "WDAY",
+    "ORCL",
+    "SAP"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Salesforce is the canonical enterprise SaaS CRM platform, directly in the category Baker identifies as facing existential displacement from AI agents replacing human workers."
+    },
+    {
+      "ticker": "NOW",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "ServiceNow is a leading enterprise workflow/automation SaaS platform squarely in the category Baker argues will be disrupted by AI agents."
+    },
+    {
+      "ticker": "WDAY",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Workday is a major enterprise HCM/ERP SaaS company directly in the category Baker identifies as lacking proprietary models and compute and facing AI agent displacement."
+    },
+    {
+      "ticker": "ORCL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Oracle has significant cloud infrastructure and database businesses that are not purely SaaS application software; it also benefits from AI infrastructure buildout, making it a poor fit for this specific bearish thesis. It should be removed."
+    },
+    {
+      "ticker": "SAP",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SAP is not US-listed (listed on NYSE as an ADR but primarily a German company); more importantly, SAP has deep ERP integration and is not a pure-play SaaS application company in the same mold. Its inclusion is too loose for this specific thesis."
+    }
+  ]
+}

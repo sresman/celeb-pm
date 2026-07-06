@@ -1,0 +1,57 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T15",
+  "summary": "Hyperscalers with large installed CPU fleets are underappreciated beneficiaries of the agentic AI world, where CPUs are more important than previously thought",
+  "summary_extended": "Baker argues that CPUs are significantly more important in an agentic AI world than in traditional inference workloads, because agentic systems require CPUs to handle orchestration, tool calls, and coordination tasks that were previously negligible. His reasoning is based on emerging industry observations ('we're hearing') rather than a fully developed research thesis, suggesting this is an early-stage structural insight. The investment implication is that hyperscalers \u2014 which own the world's largest installed CPU fleets \u2014 are underappreciated beneficiaries of the agentic AI transition, and may 'catch up a little bit' in perceived compute value relative to the 'sellers of shortage' (i.e., GPU/accelerator vendors). Baker frames this as a nuanced, contrarian positive for hyperscaler compute value, implying their existing infrastructure is more strategically valuable than the market currently prices in. No specific numbers or timeframes are cited, but the medium-term horizon aligns with the broader agentic AI adoption curve.",
+  "detail": "In an agentic world, CPUs handle orchestration, tool calls, and other tasks that are more important than in non-agentic inference. The largest CPU fleets sit at hyperscalers. Baker suggests hyperscalers may 'catch up a little bit' to the 'sellers of shortage' as a result. This is a nuanced positive for hyperscaler compute value.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as an emerging observation ('we're hearing') rather than a deeply researched thesis",
+  "themes": [
+    "AI datacenter infrastructure",
+    "agentic AI",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "CPUs are way more important than they were in an agentic world",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "AMZN",
+    "MSFT",
+    "GOOGL"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Amazon (AMZN)",
+    "Microsoft (MSFT)",
+    "Google (GOOGL)",
+    "Meta (META)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Amazon AWS operates one of the world's largest CPU fleets and is a direct beneficiary of CPUs becoming more valuable in agentic AI workloads. AWS also deploys custom ARM-based CPUs (Graviton), amplifying this benefit."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft Azure operates a massive CPU fleet and is a direct beneficiary of increased CPU utilization value in agentic AI orchestration workloads."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google Cloud and internal infrastructure operate enormous CPU fleets; Google is also a leader in agentic AI development, making it a direct beneficiary of this thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta operates large CPU fleets but is primarily an internal consumer of compute rather than a cloud provider monetizing CPU capacity. The thesis is specifically about hyperscaler compute value being underappreciated by the market, which applies more directly to cloud-selling hyperscalers. Meta's CPU fleet value is not externally monetized in the same way, making it tangential to this specific investment thesis."
+    }
+  ]
+}

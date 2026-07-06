@@ -1,0 +1,35 @@
+{
+  "date": "2024-12-07",
+  "source": "All-In Podcast \u2014 Trump transition, SEC/crypto regulation, xAI Colossus, AI scaling laws, MicroStrategy, defense tech",
+  "thesis_id": "T7",
+  "summary": "xAI's Colossus supercomputer (100,000+ coherent H100s) is the first real test of AI scaling laws since GPT-4 and Grok 3 should take the frontier model lead in Jan/Feb 2025 if scaling laws hold",
+  "summary_extended": "Baker argues that xAI's Colossus supercomputer \u2014 featuring 100,000+ coherent Nvidia H100 GPUs in a single training cluster \u2014 represents the first meaningful test of AI scaling laws since GPT-4, as no one previously believed it was possible to make more than ~30,000 Hoppers coherent in a training run. Elon Musk solved this from first principles with a novel datacenter design, and the resulting Grok 3 model is the first new empirical data point on whether scaling laws are holding or breaking down. Baker states that if scaling laws hold, Grok 3 should take the frontier model lead in January or February 2025, with Jensen Huang reportedly calling the achievement 'superhuman.' Baker also notes a secondary implication: the Colossus build likely saved Nvidia during the Blackwell delay by triggering competitors to rush-purchase Hopper GPUs, providing a demand bridge. Baker's firm, Atreides Management, is a disclosed investor in X/xAI.",
+  "detail": "Baker explains that no one believed it was possible to make more than ~30,000 Nvidia Hoppers coherent in a training cluster. Elon solved this from first principles with a novel datacenter design. Grok 3 trained on this cluster is the first new data point on whether scaling laws are breaking or holding. Jensen Huang called it 'superhuman.' Baker also notes this likely saved Nvidia during the Blackwell delay by causing competitors to rush-buy Hoppers.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states 'grock 3 should take the lead if scaling laws hold in January or February' and elaborates extensively on the technical achievement and competitive implications; discloses his firm is an investor in X/xAI",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "AI scaling",
+    "xAI"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "grock 3 should take the lead if scaling laws hold in January or February",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is a direct beneficiary of this thesis on two counts: Colossus used 100,000+ Nvidia H100 GPUs, and Baker explicitly argues the Colossus build saved Nvidia during the Blackwell delay by causing competitors to rush-buy Hoppers, creating a demand bridge. Nvidia is not the subject of the thesis but benefits materially and specifically from the described events."
+    }
+  ]
+}

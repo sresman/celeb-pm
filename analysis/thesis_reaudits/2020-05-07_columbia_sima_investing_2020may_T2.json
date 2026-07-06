@@ -1,0 +1,47 @@
+{
+  "date": "2020-05-07",
+  "source": "Columbia SIMA — COVID-19 market impact, technology investing, video games, venture capital",
+  "thesis_id": "T2",
+  "summary": "Video games are social networks and will be the foundational platform layer for the personal Metaverse",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "ATVI",
+    "EA",
+    "TTWO",
+    "NTDOY",
+    "MSFT",
+    "EPIC"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "ATVI",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named major game publishers with live-service franchises and embedded social graphs as the first-order winners of the Metaverse platform thesis. ATVI (Call of Duty, World of Warcraft) is a canonical example of exactly the type of publisher Baker described. While he may not have said 'ATVI' by name, the thesis is specifically about this category of company and ATVI is its clearest public representative."
+    },
+    {
+      "ticker": "EA",
+      "action": "KEEP",
+      "reasoning": "EA is a major game publisher with established live-service franchises fitting Baker's explicit thesis about publishers owning social graphs and virtual economies as Metaverse platform layers. Same reasoning as ATVI — the thesis is specifically about this class of company."
+    },
+    {
+      "ticker": "TTWO",
+      "action": "KEEP",
+      "reasoning": "Take-Two owns GTA Online, one of the largest virtual economies and social platforms in gaming, making it a direct subject of Baker's thesis about game IP owners as Metaverse platform winners."
+    },
+    {
+      "ticker": "NTDOY",
+      "action": "REMOVE",
+      "reasoning": "Nintendo's live-service and social graph exposure is limited compared to the publishers Baker was describing. More importantly, there is no evidence Baker specifically named Nintendo in connection with this thesis. Nintendo is primarily a hardware/IP company with limited virtual economy or live-service social graph infrastructure — it does not cleanly fit the specific thesis even if it fits the general 'game publisher' category. Remove under the strict standard."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "Microsoft is a massive conglomerate and gaming is one segment. There is no evidence Baker specifically named Microsoft in connection with this Metaverse-via-games thesis. Its gaming exposure (Xbox, Minecraft) is real but Baker's thesis was specifically about game publishers owning social graphs — Microsoft was not named as a direct beneficiary of this exact claim. Remove under the strict standard."
+    },
+    {
+      "ticker": "EPIC",
+      "action": "KEEP",
+      "reasoning": "Epic Games (Fortnite) is explicitly and specifically cited by Baker — the Marshmallow concert in Fortnite is the precise inflection point he names as crystallizing this thesis. This is the clearest direct connection of any ticker to this exact thesis. Retained despite being privately held."
+    }
+  ]
+}

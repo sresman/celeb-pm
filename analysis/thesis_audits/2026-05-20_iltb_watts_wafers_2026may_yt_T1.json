@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T1",
+  "summary": "Anthropic's ARR growth is the most extraordinary revenue ramp in the history of capitalism, adding the combined ARR of Palantir, Snowflake, and Databricks in one month",
+  "summary_extended": "Baker argues that Anthropic's revenue ramp is the most extraordinary in the history of capitalism, citing that the company added $11B of ARR in a single month \u2014 equivalent to the combined ARR of Palantir, Snowflake, and Databricks, three of the highest-profile SaaS companies of the last decade, each built over roughly ten years. He uses this data point as primary evidence that frontier AI demand is real, accelerating, and not slowing, which justified his decision to lean into AI positions rather than reduce exposure during the March/April 2026 market drawdown. The investment implication is that the AI model layer is experiencing demand that dwarfs prior software cycles, and that investors who sold during the drawdown were making a mistake. Baker's framing also implies that traditional SaaS companies like Palantir and Snowflake face existential disruption risk as AI-native platforms capture revenue at a pace legacy SaaS cannot match.",
+  "detail": "Anthropic added $11B of ARR in a single month. Baker frames this as unprecedented in business history, exceeding the combined 10-year revenue build of the three highest-profile SaaS companies of the last decade. This is used to justify staying long AI during the March/April 2026 drawdown.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls it 'the most extraordinary moment in the history of capitalism' and uses it as the primary justification for leaning into AI positions during the drawdown",
+  "themes": [
+    "AI model layer",
+    "frontier AI revenue",
+    "SaaS disruption"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "Anthropic added their combined businesses in 1 month",
+  "tickers_named_original": [
+    "PLTR",
+    "SNOW"
+  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Databricks (private)",
+    "Anthropic (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "PLTR",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Palantir is cited only as a benchmark for scale comparison \u2014 its ARR is used to illustrate how large Anthropic's monthly gain was. The thesis is not about Palantir's business prospects, and Palantir is neither the subject nor a direct beneficiary of Anthropic's ARR growth. If anything, the thesis implies SaaS disruption risk for PLTR, but that is a separate thesis not developed here."
+    },
+    {
+      "ticker": "SNOW",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Snowflake is cited only as a benchmark for scale comparison alongside Palantir and Databricks. The thesis is not about Snowflake's business, and Snowflake does not directly benefit from Anthropic's revenue ramp. Same disruption caveat applies but is not the focus of this thesis."
+    }
+  ]
+}

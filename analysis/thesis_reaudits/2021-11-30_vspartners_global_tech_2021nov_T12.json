@@ -1,0 +1,29 @@
+{
+  "date": "2021-11-30",
+  "source": "VS Partners / Financial Times Global Seattle Symposium — Global technology investment: hype, hope, reality",
+  "thesis_id": "T12",
+  "summary": "US-China tech rivalry is net positive for mega-cap internet companies in both countries",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "META",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "Baker made a general structural observation about 'mega-cap internet companies in both countries' without naming any specific companies. GOOGL was inferred as a representative example, not explicitly named in connection with this thesis. Per the strict test, Baker must have specifically connected this ticker to this exact claim."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Baker made a general structural observation about 'mega-cap internet companies in both countries' without naming Meta or any specific company. META was inferred as a beneficiary, not explicitly cited by Baker in connection with this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Baker made a general structural observation about 'mega-cap internet companies in both countries' without naming Amazon or any specific company. AMZN was inferred as a beneficiary, not explicitly cited by Baker in connection with this thesis."
+    }
+  ]
+}

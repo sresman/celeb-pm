@@ -1,0 +1,163 @@
+{
+  "ALAB": {
+    "ai": true,
+    "bucket": "AI/Datacenter Networking"
+  },
+  "AMD": {
+    "ai": true,
+    "bucket": "AI/Datacenter Chips"
+  },
+  "AVGO": {
+    "ai": true,
+    "bucket": "AI/Datacenter Chips"
+  },
+  "CIEN": {
+    "ai": true,
+    "bucket": "AI/Datacenter Optical"
+  },
+  "COHR": {
+    "ai": true,
+    "bucket": "AI/Datacenter Optical"
+  },
+  "CRWV": {
+    "ai": true,
+    "bucket": "AI/Datacenter Compute"
+  },
+  "LITE": {
+    "ai": true,
+    "bucket": "AI/Datacenter Optical"
+  },
+  "MRVL": {
+    "ai": true,
+    "bucket": "AI/Datacenter Chips"
+  },
+  "MU": {
+    "ai": true,
+    "bucket": "AI/Datacenter Memory"
+  },
+  "NVDA": {
+    "ai": true,
+    "bucket": "AI/Datacenter Chips"
+  },
+  "VST": {
+    "ai": true,
+    "bucket": "AI/Datacenter Power"
+  },
+  "AMZN": {
+    "ai": true,
+    "bucket": "AI/Hyperscaler"
+  },
+  "GOOGL": {
+    "ai": true,
+    "bucket": "AI/Hyperscaler"
+  },
+  "META": {
+    "ai": true,
+    "bucket": "AI/Hyperscaler"
+  },
+  "MSFT": {
+    "ai": true,
+    "bucket": "AI/Hyperscaler"
+  },
+  "ORCL": {
+    "ai": true,
+    "bucket": "AI/Hyperscaler"
+  },
+  "AMKR": {
+    "ai": true,
+    "bucket": "Semiconductor Supply Chain"
+  },
+  "INTC": {
+    "ai": true,
+    "bucket": "Semiconductor Manufacturing"
+  },
+  "LRCX": {
+    "ai": true,
+    "bucket": "Semiconductor Supply Chain"
+  },
+  "ROG": {
+    "ai": true,
+    "bucket": "Semiconductor Supply Chain"
+  },
+  "SNPS": {
+    "ai": true,
+    "bucket": "Semiconductor Supply Chain"
+  },
+  "VECO": {
+    "ai": true,
+    "bucket": "Semiconductor Supply Chain"
+  },
+  "HPE": {
+    "ai": true,
+    "bucket": "AI/Datacenter Infrastructure"
+  },
+  "P": {
+    "ai": true,
+    "bucket": "AI/Datacenter Storage"
+  },
+  "AKAM": {
+    "ai": true,
+    "bucket": "AI/Edge Computing"
+  },
+  "AMBQ": {
+    "ai": true,
+    "bucket": "AI/Edge Computing"
+  },
+  "LSCC": {
+    "ai": true,
+    "bucket": "AI/Edge Computing"
+  },
+  "SMTC": {
+    "ai": true,
+    "bucket": "AI/Edge Computing"
+  },
+  "XLNX": {
+    "ai": true,
+    "bucket": "AI/Edge Computing"
+  },
+  "TSLA": {
+    "ai": true,
+    "bucket": "AI/EV"
+  },
+  "MDB": {
+    "ai": true,
+    "bucket": "AI/Data Infrastructure",
+    "note": "AI database narrative dominant at May 2024 entry"
+  },
+  "SNOW": {
+    "ai": true,
+    "bucket": "AI/Data Infrastructure",
+    "note": "AI data platform narrative dominant at Feb 2025 entry"
+  },
+  "NTNX": {
+    "date_segments": [
+      {
+        "before": "2024-01-01",
+        "ai": false,
+        "bucket": "Enterprise SaaS",
+        "note": "2021 entry was enterprise cloud, not AI"
+      },
+      {
+        "after": "2024-01-01",
+        "ai": true,
+        "bucket": "AI/Datacenter Infrastructure",
+        "note": "2024 re-entry on GPU cluster management narrative"
+      }
+    ]
+  },
+  "CFLT": {
+    "ai": false,
+    "bucket": "Enterprise SaaS",
+    "note": "Data streaming (Kafka). Enterprise software."
+  },
+  "ADBE": {
+    "ai": false,
+    "bucket": "Enterprise SaaS",
+    "note": "Creative/marketing SaaS with AI features."
+  },
+  "NET": {
+    "ai": false,
+    "bucket": "Enterprise SaaS",
+    "note": "CDN/edge security. Nov 2020 entry was pre-AI narrative."
+  }
+}

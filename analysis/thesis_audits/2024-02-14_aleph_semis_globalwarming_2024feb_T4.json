@@ -1,0 +1,23 @@
+{
+  "date": "2024-02-14",
+  "source": "Invested by Aleph \u2014 Semiconductors, AI, global warming, geopolitics",
+  "thesis_id": "T4",
+  "summary": "Niche SRAM-architecture chip companies (Cerebras, Groq) can carve out viable positions by doing something fundamentally different from GPUs",
+  "summary_extended": "Baker argues that niche SRAM-architecture chip companies \u2014 specifically Cerebras and Groq \u2014 can carve out durable competitive positions in AI inference by doing something fundamentally different from GPU-based approaches rather than competing head-on with Nvidia. SRAM-based architectures enable extremely high token throughput (tokens per second), which Baker identifies as a critical metric for reasoning models where latency and throughput matter more than raw training compute. Cerebras uses a full-wafer SRAM approach (the largest chip ever made), while Groq uses a less radical but architecturally similar SRAM design; Baker notes both are seeing real commercial traction in the market. Baker discloses that Atreides Management is an investor in Cerebras, signaling high-conviction positioning. The investment implication is that niche accelerator companies with genuine architectural differentiation can build viable businesses in the shadow of Nvidia's GPU dominance by targeting specific workloads where GPUs are suboptimal.",
+  "detail": "SRAM-based architectures can generate extremely high token throughput (tokens per second), which matters for reasoning models. Cerebras uses a full-wafer approach; Groq uses a less radical but similar SRAM approach. Both are seeing real commercial traction. Atreides is an investor in Cerebras. The key insight is picking a niche rather than competing head-on with Nvidia.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker discloses Atreides is an investor, describes commercial traction, and articulates the specific technical differentiation in detail",
+  "themes": [
+    "semiconductor supply chain",
+    "AI inference",
+    "niche accelerators"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "Cerebras and Groq have an SRAM architecture that can do something fundamentally different",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2023-06-19",
+  "source": "This Week in Startups \u2014 AI platform shift, Nvidia outlook, extinction risk",
+  "thesis_id": "T10",
+  "summary": "Solar and battery storage compounding will solve climate change structurally; fossil fuels will phase out as photovoltaic efficiency compounds ~8%/year and battery efficiency ~6%/year.",
+  "summary_extended": "Baker argues that climate change has already been 'solved' at a technological level, with the remaining challenge being implementation rather than invention. He cites photovoltaic cell efficiency compounding at approximately 8% per year and battery storage efficiency compounding at approximately 6% per year as the structural drivers of this transition, noting that Tesla is likely compounding battery efficiency even faster than the industry average. His framing is philosophical as much as financial \u2014 he observes that the world already runs on sunlight stored in carbon, and the energy transition is simply a shift to capturing sunlight directly rather than via ancient biological intermediaries. The investment implication is broadly bullish on solar and battery storage as secular compounders, but Baker does not name specific stocks or catalysts beyond a passing reference to Tesla, making this a macro orientation rather than an actionable single-name thesis.",
+  "detail": "Baker states flatly 'we've already solved climate change, we just haven't implemented the solution fully.' He cites photovoltaic cell efficiency compounding at ~8%/year and battery efficiency at ~6%/year, with Tesla likely compounding faster. He frames the world as already running on sunlight stored in carbon \u2014 the transition is just to direct solar capture.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker states this with conviction but it is a passing macro view rather than a developed investment thesis with specific names or catalysts.",
+  "themes": [
+    "clean energy",
+    "solar",
+    "battery storage",
+    "climate"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "photovoltaic cell efficiency compounds at roughly eight percent a year",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "TSLA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "TSLA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "TSLA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly singles out Tesla as likely compounding battery efficiency faster than the industry average, making it a direct beneficiary of the battery storage secular trend he describes. However, this is a passing reference rather than a developed thesis about Tesla specifically."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T5",
+  "summary": "XAI will release the first Blackwell-trained model in early 2026, giving it a significant competitive advantage",
+  "summary_extended": "Baker argues that XAI will be the first AI lab to release a model trained on Nvidia's Blackwell GPU architecture, likely in early 2026, giving it a meaningful competitive advantage over rivals. His reasoning rests on Jensen Huang's public statement that no one builds data centers faster than Elon Musk, combined with XAI's demonstrated speed of infrastructure deployment at its Memphis 'Colossus' cluster. Baker emphasizes that receiving Blackwell hardware is only the beginning \u2014 it takes an additional 6-9 months to optimize performance on the new architecture, meaning XAI's head start compounds over time and is not easily replicated quickly by competitors. The investment implication is that XAI's frontier model position strengthens materially in 2026, though XAI is not publicly listed; the clearest public-market beneficiary is Nvidia (NVDA) as the supplier of the Blackwell GPUs central to this thesis. Baker calls this 'an important moment' for XAI's competitive standing among frontier AI labs.",
+  "detail": "Jensen Huang has publicly stated no one builds data centers faster than Elon. XAI's speed of deployment means they will be first to train on Blackwell and first to use Blackwell for inference at scale. Even after receiving Blackwells, it takes 6-9 months to optimize performance, so XAI's head start is meaningful.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites Jensen on record, provides specific timeline (early 2026), and calls it 'an important moment' for XAI",
+  "themes": [
+    "AI frontier models",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "I think the first Blackwell model will come from XAI",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Nvidia's Blackwell GPUs are the central hardware enabling this thesis \u2014 XAI's competitive advantage derives entirely from being first to train and deploy at scale on Blackwell. NVDA is the direct supplier and beneficiary of XAI's aggressive Blackwell procurement and deployment, making it a clear direct beneficiary even though the thesis is primarily about XAI's model competitiveness."
+    }
+  ]
+}

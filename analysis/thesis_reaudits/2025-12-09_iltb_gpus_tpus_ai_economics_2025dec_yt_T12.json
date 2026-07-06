@@ -1,0 +1,47 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) — GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T12",
+  "summary": "SaaS companies are making an existential mistake by refusing to embrace AI agent economics at lower gross margins",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "MSFT",
+    "CRM",
+    "NOW",
+    "HUBS",
+    "GTLB",
+    "TEAM"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Microsoft as the sole major SaaS incumbent executing the AI agent economics transition correctly, making it the direct positive subject of this thesis."
+    },
+    {
+      "ticker": "CRM",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Salesforce as a SaaS company failing to embrace AI agent economics at lower margins, directly connecting it to the disruption risk thesis."
+    },
+    {
+      "ticker": "NOW",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named ServiceNow as a SaaS incumbent failing to make the necessary strategic shift to AI agent economics, directly connecting it to the disruption risk thesis."
+    },
+    {
+      "ticker": "HUBS",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named HubSpot as a SaaS company failing to embrace AI agent economics at lower margins, directly connecting it to the disruption risk thesis."
+    },
+    {
+      "ticker": "GTLB",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named GitLab as a SaaS incumbent failing to make the necessary strategic shift, directly connecting it to the disruption risk thesis."
+    },
+    {
+      "ticker": "TEAM",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Atlassian as a SaaS company failing to embrace AI agent economics, directly connecting it to the disruption risk thesis."
+    }
+  ]
+}

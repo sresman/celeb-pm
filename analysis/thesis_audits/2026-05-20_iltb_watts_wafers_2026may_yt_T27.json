@@ -1,0 +1,90 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T27",
+  "summary": "Nvidia and Amazon are the most deeply engaged with AI startups, giving them a significant long-term competitive advantage over AMD, Microsoft, and Meta who show near-zero startup engagement",
+  "summary_extended": "Baker argues that Nvidia and Amazon are by far the most deeply engaged with AI startups across the ecosystem, followed by Google and then Broadcom (in a distinct role as an ASIC supplier), while AMD, Microsoft, and Meta show essentially zero startup engagement. His reasoning is based on direct observation from his own interactions across the AI ecosystem, and he believes this engagement gap matters because the best engineering talent is increasingly concentrated at startups rather than large public companies. Baker frames this as a 'pretty big advantage' for Nvidia and Amazon, suggesting that deep startup relationships translate into better product feedback loops, talent pipelines, and long-term ecosystem lock-in. The investment implication is that Nvidia and Amazon are structurally better positioned for long-term AI dominance, while AMD, Microsoft, and Meta face a meaningful but underappreciated competitive disadvantage stemming from their isolation from the startup innovation layer.",
+  "detail": "Baker ranks startup engagement: Amazon and Nvidia by far the most engaged, then Google, then Broadcom (in a different way as ASIC supplier). AMD, Microsoft, and Meta show essentially zero engagement. Baker argues the best engineering teams are increasingly at startups, not big public companies, making this engagement gap a significant long-term competitive advantage.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as an observation from his own interactions across the ecosystem, framed as a 'pretty big advantage'",
+  "themes": [
+    "competitive dynamics",
+    "venture/private markets",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "essentially zero engagement with startups from AMD, Microsoft, and Meta",
+  "tickers_named_original": [
+    "NVDA",
+    "AMZN",
+    "GOOGL",
+    "AVGO",
+    "AMD",
+    "MSFT",
+    "META"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "AMZN",
+    "GOOGL",
+    "AVGO",
+    "AMD",
+    "MSFT",
+    "META"
+  ],
+  "tickers_subject": [
+    "NVDA",
+    "AMZN",
+    "GOOGL",
+    "AVGO",
+    "AMD",
+    "MSFT",
+    "META"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nvidia is one of the two primary subjects of the thesis \u2014 identified as the most deeply engaged with AI startups, giving it a structural long-term competitive advantage."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon is the other primary subject \u2014 co-ranked with Nvidia as the most engaged with AI startups, making it a direct subject of the thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is explicitly ranked second tier in startup engagement, making it a direct subject of the comparative engagement framework Baker is presenting."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Broadcom is explicitly named as engaged with startups in a distinct way as an ASIC supplier, placing it directly within the thesis's engagement ranking framework."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "AMD is explicitly cited as showing essentially zero startup engagement, making it a direct subject of the thesis as a negative example of the competitive disadvantage."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Microsoft is explicitly cited as showing essentially zero startup engagement, making it a direct subject of the thesis as a negative example."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is explicitly cited as showing essentially zero startup engagement, making it a direct subject of the thesis as a negative example."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-12",
+  "source": "Sohn NY 2026 \u2014 Tech investing fireside",
+  "thesis_id": "T1",
+  "summary": "Current memory cycle is unlike prior cycles \u2014 may be the first true capacity cycle since the mid-1990s, making it too early to sell memory stocks",
+  "summary_extended": "Baker argues that the current memory cycle is structurally unlike any of the demand-driven cycles seen over the past 25 years, and may instead be the first true capacity cycle since the mid-1990s \u2014 a distinction that fundamentally changes the investment calculus. In every prior cycle he has observed, the current setup (elevated margins, extended upcycle) would be a clear sell signal, but Baker explicitly rejects that analog here, instead pointing to the mid-1990s capacity buildout as the correct historical comparison. He supports this view by taking the over on every bullish memory forecast presented by other speakers at the conference, and cites Micron's margins in the high 60s versus a historical average of roughly 16% as evidence of how unusual this cycle is. The investment implication is that it is too early to sell memory stocks, and that the structural nature of AI-driven datacenter demand may sustain this cycle far longer than typical pattern-matching would suggest. Baker frames this as a rare, high-conviction contrarian call given his own acknowledgment that historical precedent would dictate selling now.",
+  "detail": "Baker explicitly states that based on every prior memory cycle over 25 years, this is the time to sell. However, he argues the mid-1990s capacity cycle is the correct analog, not the typical demand cycles, and that we may still be very early. He takes the over on every bullish number presented by other speakers (Alex, Leon, Leslie). Micron margins cited at high 60s vs. historical average of ~16%.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'I take the over on every number' and frames this as a structural capacity cycle, not a demand cycle \u2014 a rare and emphatic call given his explicit acknowledgment that history says sell",
+  "themes": [
+    "semiconductor supply chain",
+    "memory cycle",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "this may be the first true capacity cycle",
+  "tickers_named_original": [
+    "MU"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [
+    "MU"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is explicitly named and its margin profile (high 60s vs. ~16% historical average) is cited as central evidence for the thesis. Micron is the primary US-listed pure-play memory stock and the direct subject of this call."
+    }
+  ]
+}

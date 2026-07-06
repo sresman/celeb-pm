@@ -1,0 +1,35 @@
+{
+  "date": "2025-10-30",
+  "source": "a16z Podcast — Is there an AI bubble?",
+  "thesis_id": "T8",
+  "summary": "AI frontier model gross margins will be structurally lower than SaaS/internet era margins indefinitely",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "MSFT",
+    "META",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Google/Gemini as a frontier AI lab whose margins are subject to this structural thesis, directly connecting GOOGL to the claim that frontier model gross margins will be permanently lower than SaaS margins."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker specifically referenced Microsoft and its OpenAI partnership in the context of frontier AI model economics, directly connecting MSFT to the structural gross margin thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Meta and its Llama frontier models in the context of this structural margin thesis, directly connecting META to the claim that frontier AI gross margins will be structurally lower than SaaS."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Baker specifically referenced Amazon and its frontier AI investments (Anthropic/AWS) in the context of this structural margin thesis, directly connecting AMZN to the claim about frontier model gross margin structure."
+    }
+  ]
+}

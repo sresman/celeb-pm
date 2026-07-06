@@ -1,0 +1,41 @@
+{
+  "date": "2024-01-15",
+  "source": "iConnections Global Alts 2024 \u2014 Markets panel",
+  "thesis_id": "T11",
+  "summary": "US uranium enrichment capacity is a critical national security gap; investing in domestic enrichment is a priority",
+  "summary_extended": "Gracias (not Baker) argues that the United States has a critical national security vulnerability in its nuclear fuel supply chain, specifically that America purchases all of its enriched uranium from Russia and has zero domestic enrichment capacity. He frames this gap as both a geopolitical risk and a reindustrialization investment opportunity, with his firm actively investing in a company that is building domestic US uranium enrichment capacity. The investment thesis is predicated on the inevitability of policy-driven demand for domestic enrichment as the US seeks to decouple from Russian nuclear fuel suppliers. No specific company name was disclosed in the excerpt, though the implication is a private or early-stage venture in the enrichment space. Baker does not independently corroborate this view, limiting confidence, but Gracias's active investment lends operational credibility to the thesis.",
+  "detail": "Gracias highlights that the US buys all nuclear fuel from Russia and has no domestic enrichment capacity. His firm is investing in a company building US enrichment capacity. This is framed as both a national security imperative and an investment opportunity in reindustrializing the nuclear fuel supply chain.",
+  "confidence": "moderate",
+  "confidence_evidence": "Gracias states active investment in this area, giving it operational credibility, but Baker does not independently corroborate",
+  "themes": [
+    "nuclear energy",
+    "defense tech",
+    "supply chain reindustrialization"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "we don't enrich fuel at all in America we buy from the Russians",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "UUUU",
+    "LEU"
+  ],
+  "tickers_subject": [
+    "LEU"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "UUUU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Energy Fuels (UUUU) is one of the few US-listed companies involved in domestic uranium processing and is a plausible beneficiary of US enrichment reindustrialization policy, though the specific company Gracias is investing in was not named. Added as a clearly implied beneficiary given the narrow universe of US-listed uranium/enrichment plays."
+    },
+    {
+      "ticker": "LEU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Centrus Energy (LEU) is the only US-listed company actively building domestic uranium enrichment capacity (HALEU enrichment at Piketon, Ohio), making it the most direct match for the unnamed company Gracias references as his firm's investment target. This is the unambiguous implied subject of the thesis."
+    }
+  ]
+}

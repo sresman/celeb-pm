@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T21",
+  "summary": "Cerebras has done something genuinely hard and different (wafer-scale computing) that gives it a defensible niche, and the Cerebras IPO will catalyze a wave of semiconductor startup funding",
+  "summary_extended": "Baker argues that Cerebras has built a genuinely defensible competitive position through wafer-scale computing, a technically difficult approach that took three chip generations to get right and enables capabilities no conventional chipmaker can replicate. The key remaining challenge \u2014 IO bandwidth at the wafer shoreline \u2014 is being addressed through optical wafer bonding, which Baker views as a credible technical path forward. As a direct venture investor in Cerebras, Baker has a disclosed conflict of interest, but he provides specific technical reasoning for why the moat is real and hard to replicate. He predicts that the Cerebras IPO will act as a catalyst for the broader chip startup ecosystem, causing a wave of venture funding to flow into semiconductor startups. The investment implication is primarily in private markets \u2014 Cerebras itself is pre-IPO \u2014 with a secondary implication that the IPO event could lift sentiment and funding availability across the AI chip startup landscape.",
+  "detail": "Baker's firm was a venture investor in Cerebras. He argues wafer-scale computing is genuinely hard to replicate and lets Cerebras do things no one else can. Cerebras is working on optical wafer bonding to solve its IO/shoreline problem. He notes it took three chip generations to get right. He predicts the Cerebras IPO will cause everyone to get funded in the chip startup space.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker is a direct investor (conflict of interest noted) but provides specific technical reasoning for why wafer-scale is defensible. He is careful to note the limitations and the difficulty.",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "venture/private markets"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Cerebras did something hard and fundamentally different \u2014 wafer scale computing",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CBRS"
+  ],
+  "tickers_subject": [
+    "CBRS"
+  ],
+  "tickers_implied_original": [
+    "Cerebras (pre-IPO)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CBRS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Cerebras is the direct subject of this thesis \u2014 Baker's entire argument is about Cerebras's wafer-scale computing moat and its upcoming IPO as a catalyst. Noted as pre-IPO so not currently a tradeable US-listed equity, but it is the central subject."
+    }
+  ]
+}

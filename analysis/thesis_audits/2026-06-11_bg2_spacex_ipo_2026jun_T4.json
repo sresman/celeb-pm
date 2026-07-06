@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T4",
+  "summary": "Cursor acquisition dramatically advances XAI/SpaceX's frontier model capability and is the most underappreciated upside in the SpaceX IPO",
+  "summary_extended": "Baker argues that the Cursor acquisition by xAI is the single most underappreciated element of the anticipated SpaceX IPO, and that its impact on frontier model capability is being systematically overlooked by the market. The core thesis is that Cursor possesses a proprietary dataset of coding tokens that exceeds what is available on the public internet, giving xAI a unique and non-replicable training advantage. Baker provides specific technical evidence: Composer 2.5, trained on a Kimi K2.5 base combined with Cursor data and reinforcement learning over just three weeks on Colossus 2, was already Pareto dominant; and Grok 4.3, a 1.5 trillion parameter model, is now incorporating Cursor data directly into pre-training rather than only RL fine-tuning, which is a qualitatively more powerful integration. The investment implication is that when SpaceX eventually IPOs, the xAI frontier model capability \u2014 supercharged by Cursor's proprietary data \u2014 represents a significant upside surprise that the market has not yet priced in, making it the most compelling hidden value driver in the anticipated offering.",
+  "detail": "Cursor has more proprietary coding tokens than exist on the public internet. Composer 2.5 (trained on Kimi K2.5 base + Cursor data + RL in 3 weeks on Colossus 2) was Pareto dominant 12 days prior. Grok 4.3 (1.5T parameter) is now training with Cursor data injected into pre-training, not just RL. Baker says this is 'the thing that's least talked about' and could be the biggest upside surprise.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly says this is the least-discussed and potentially biggest upside; specific technical details on training pipeline; Gerstner agrees it's the most overlooked element",
+  "themes": [
+    "frontier AI models",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "the thing that's least talked about... could be the biggest upside surprise",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SpaceX",
+    "xAI",
+    "Cursor"
+  ],
+  "tickers_subject": [
+    "SpaceX",
+    "xAI",
+    "Cursor"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "xAI (private)",
+    "Cursor (private, acquired)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SpaceX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly framed around the SpaceX IPO and the upside surprise embedded within it via xAI's Cursor-enhanced model capability; SpaceX is the direct subject of the investment thesis."
+    },
+    {
+      "ticker": "xAI",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "xAI is the entity that acquired Cursor and is training Grok 4.3 with the proprietary data; the frontier model capability improvement is central to the thesis and directly pertains to xAI."
+    },
+    {
+      "ticker": "Cursor",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Cursor's proprietary coding token dataset is the specific asset Baker identifies as the underappreciated value driver; it is the core subject of the thesis."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T17",
+  "summary": "DRAM companies are deeply undervalued relative to semi-cap equipment companies, and Baker knows of no one else who is bearish on DRAM \u2014 a sign of dangerous consensus on semi-cap",
+  "summary_extended": "Baker argues that DRAM companies are deeply undervalued relative to semi-cap equipment companies, and that the universal bullishness on DRAM represents a dangerous consensus that the market has not yet recognized as a risk. He explicitly states he knows of no one who shares his skepticism on DRAM, framing this near-unanimous bullishness as a contrarian signal that the DRAM trade is crowded and semi-cap equipment valuations may be stretched relative to the underlying memory producers. The investment implication is a relative value trade: DRAM producers offer better risk/reward than semi-cap equipment names, and the valuation gap between the two is extreme and unsustainable. Baker also separately highlights Astera Labs (ALAB) as a high-conviction long he has held since Series C, citing its quality and the presence of bears as characteristics he finds attractive in a position. The two ideas \u2014 DRAM vs. semi-cap and ALAB \u2014 appear in the same segment but represent distinct theses.",
+  "detail": "Baker explicitly states he knows of no one who is not bullish on DRAM. He frames the valuation gap between semi-cap equipment and DRAM as extreme and unsustainable. The implication is DRAM is the better risk/reward. He has been long Astera Labs for a long time (since Series C) and views it as a high-quality name with bears, which he loves.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states 'I don't know of anyone like me who's not really bullish on DRAM' and provides specific valuation comparisons to support the relative trade",
+  "themes": [
+    "DRAM/HBM",
+    "semiconductor supply chain",
+    "valuation"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "I don't know of anyone who's not really bullish on DRAM",
+  "tickers_named_original": [
+    "ALAB"
+  ],
+  "tickers_direct": [
+    "MU",
+    "ALAB"
+  ],
+  "tickers_subject": [
+    "MU",
+    "ALAB"
+  ],
+  "tickers_implied_original": [
+    "Micron (MU)",
+    "SK Hynix (KRX: 000660)",
+    "Samsung (KRX: 005930)",
+    "ASML",
+    "KLAC",
+    "LRCX",
+    "AMAT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is the primary US-listed DRAM producer and is the direct subject of the DRAM undervaluation thesis; Baker's relative value argument centers on DRAM companies like MU being cheap vs. semi-cap equipment."
+    },
+    {
+      "ticker": "ALAB",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Astera Labs as a long-held high-conviction position since Series C, making it a direct subject of a distinct sub-thesis within this segment."
+    },
+    {
+      "ticker": "KLAC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "KLA is a semi-cap equipment company that Baker uses as the expensive side of the relative value trade \u2014 it is directly referenced as part of the valuation comparison, making it a subject of the semi-cap-is-overvalued argument. [RE-AUDIT: While KLAC is a semi-cap equipment company that fits the general category Baker is bearish on, the transcript summary does not confirm Baker specifically named KLAC as the expensive side of the trade. The thesis references 'semi-cap equipment companies' generically. Without explicit mention of KLAC by name in connection with this thesis, it should be removed per the strict standard.]"
+    },
+    {
+      "ticker": "LRCX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Lam Research is a semi-cap equipment company directly implicated in Baker's argument that semi-cap is overvalued relative to DRAM producers. [RE-AUDIT: Same reasoning as KLAC \u2014 Lam Research is a semi-cap equipment company that fits the general category, but the summary does not confirm Baker specifically named LRCX in connection with this thesis. Generic sector-level bearishness does not qualify as a specific connection.]"
+    },
+    {
+      "ticker": "AMAT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Applied Materials is a semi-cap equipment company directly implicated in Baker's argument that semi-cap is overvalued relative to DRAM producers. [RE-AUDIT: Same reasoning as KLAC and LRCX \u2014 Applied Materials fits the semi-cap equipment category Baker is broadly skeptical of, but the summary does not confirm Baker specifically named AMAT in connection with this thesis. Sector-level implication is insufficient under the strict standard.]"
+    },
+    {
+      "ticker": "ASML",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "ASML is a Netherlands-listed company (not US-listed) and while it is a semi-cap equipment name, it is not a US equity and should be excluded; the thesis is actionable through US-listed semi-cap names."
+    }
+  ]
+}

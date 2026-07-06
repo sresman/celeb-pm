@@ -1,0 +1,35 @@
+{
+  "date": "2025-10-30",
+  "source": "a16z Podcast — Is there an AI bubble?",
+  "thesis_id": "T9",
+  "summary": "AI could be a sustaining innovation for Mag 7 incumbents rather than a disruptive one — they have data, compute, distribution, and capital",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "META",
+    "MSFT",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly singles out Google by name as a case study for this exact thesis, citing the 'Pearl Harbor moment' with ChatGPT and discussing its organizational response as evidence of incumbency durability. This is a direct, specific connection to the sustaining innovation thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name META in connection with this thesis. The first-pass reasoning admits it was not 'individually named' — it was inferred from the general Mag 7 framework. Per the strict test, inference from sector membership is insufficient; Baker must have specifically connected this ticker to this exact claim."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name MSFT in connection with this thesis. The first-pass reasoning acknowledges it 'fits squarely' within the framework but was not individually named. Fitting a framework is not the same as being specifically connected to the thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name AMZN in connection with this thesis. The first-pass reasoning is based on AMZN's general characteristics matching the framework, not on Baker explicitly citing AMZN as a beneficiary of this specific sustaining innovation argument."
+    }
+  ]
+}

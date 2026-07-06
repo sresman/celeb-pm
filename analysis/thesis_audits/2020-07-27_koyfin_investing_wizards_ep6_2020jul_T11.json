@@ -1,0 +1,39 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards \u2014 AI tailwind for semiconductors",
+  "thesis_id": "T11",
+  "summary": "Semiconductor investing is a 'lost art' among technology investors who have focused on software/internet for a decade, creating a potential mispricing opportunity in semis",
+  "summary_extended": "Baker argues that semiconductor investing has become 'a little bit of a lost art' among technology investors, who have spent the past decade focused almost exclusively on software and internet businesses, potentially creating a structural mispricing or under-coverage opportunity in the sector. He frames his own 20-year background in semiconductors as a competitive analytical advantage relative to generalist tech investors who have drifted away from the space. The implication is that semiconductor equities may be relatively undervalued or under-followed compared to software and internet peers, creating an opportunity for investors willing to do the work. Baker does not cite specific valuation metrics or name individual companies in this segment, keeping the thesis at a thematic, sector-wide level. The investment implication is broadly constructive on semiconductors as a category, though no specific single-stock conviction is expressed here.",
+  "detail": "Baker notes that most technology investors have been focused on software and internet for the last 10 years, making semiconductor investing 'a little bit of a lost art.' He frames his own 20-year semiconductor background as an advantage. This implies relative undervaluation or under-coverage of semiconductor names versus software/internet peers.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker makes this as an observation about investor behavior rather than a quantified valuation argument. It is a qualitative contrarian framing.",
+  "themes": [
+    "semiconductor supply chain",
+    "investor positioning",
+    "contrarian opportunity"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "semiconductor investing is a little bit of a lost art",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SMH",
+    "SOXX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SMH",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SMH is a semiconductor ETF and could loosely represent the sector Baker is discussing, but Baker makes no reference to ETFs or index-level vehicles. The thesis is a qualitative observation about investor behavior and analyst coverage gaps, not a recommendation to buy the sector index. Adding SMH implies a precision of investment recommendation that is not present in the thesis."
+    },
+    {
+      "ticker": "SOXX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Same reasoning as SMH \u2014 SOXX is a semiconductor ETF that was implied as a sector proxy, but Baker's thesis is a qualitative contrarian framing about coverage gaps and investor attention, not a buy recommendation on the semiconductor index. No specific vehicle or company is named or clearly implied."
+    }
+  ]
+}

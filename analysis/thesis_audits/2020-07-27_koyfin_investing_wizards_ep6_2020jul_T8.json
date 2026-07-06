@@ -1,0 +1,50 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards \u2014 AI tailwind for semiconductors",
+  "thesis_id": "T8",
+  "summary": "High-ROIC technology companies have stopped mean-reverting for ~15 years due to increasing returns to scale, network effects, and data-driven AI moats \u2014 making them structurally different from historical competitive dynamics",
+  "summary_extended": "Baker argues that high-ROIC technology companies have fundamentally broken the historical pattern of mean reversion, with top-decile ROIC firms sustaining their returns for approximately 15 years with no sign of decay \u2014 a structural shift he attributes to Brian Arthur's 1996 'increasing returns' framework. The core mechanism is a self-reinforcing loop: network effects and data-quantity-to-AI-quality relationships create natural monopolies that cannot be disrupted even with unlimited capital, because the incumbent's data advantage compounds faster than any challenger can close the gap. Baker cites Google's search business as the clearest illustration \u2014 more searches generate more data, which trains better AI, which produces better search results, which attracts more searches \u2014 making the moat effectively unassailable. He references research (possibly from Bain) showing this ROIC persistence is 'well established' and 'extensively replicated,' framing it not as a speculative view but as an empirically documented structural change in competitive dynamics. The investment implication is that investors should not fade high-ROIC platform companies on mean-reversion assumptions, as the traditional framework no longer applies to businesses with data-driven AI moats.",
+  "detail": "Baker cites research (attributed possibly to Bain) showing top-decile ROIC companies are no longer mean-reverting, a break from historical patterns that began ~15 years ago. He attributes this to Brian Arthur's 1996 'increasing returns' framework: network effects and data-quantity-to-AI-quality relationships create natural monopolies that cannot be overcome even with unlimited capital. Google's search moat is cited as the clearest example \u2014 more searches = more data = better AI = better product = more searches.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites specific academic work, names a specific timeframe (15 years), and provides a mechanistic explanation. He frames this as 'well established' and 'extensively replicated.'",
+  "themes": [
+    "platform monopoly dynamics",
+    "AI moat",
+    "data network effects"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "really high ROIC companies are maintaining those ROICs with no sign of those ROICs falling",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "AMZN",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly cites Google's search business as the clearest example of the data-flywheel moat thesis, making GOOGL the primary named subject of this structural argument."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon was not specifically cited in this thesis segment \u2014 it may have appeared elsewhere in the transcript but is not the subject of or a direct beneficiary of this specific ROIC mean-reversion argument as described. Removing as contamination."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft was not specifically cited in this thesis segment and its inclusion appears to be bleed-over from adjacent discussion. The thesis does not make a specific claim about MSFT's moat structure. Removing as contamination."
+    }
+  ]
+}

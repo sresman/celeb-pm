@@ -1,0 +1,61 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T6",
+  "summary": "Rubin (next Nvidia GPU after Blackwell) will significantly widen the gap between Nvidia GPUs and TPUs/other ASICs",
+  "summary_extended": "Baker argues that Nvidia's upcoming Rubin GPU architecture will significantly widen the performance gap versus Google's TPUs and other custom ASICs, making Nvidia's competitive position in AI accelerators even more dominant. His reasoning centers on Google's conservative design choices for TPU v8/v9, combined with friction in the Broadcom partnership and Google's introduction of MediaTek as a second TPU supplier \u2014 which Baker interprets as a warning shot to Broadcom rather than a genuine acceleration of TPU development. Baker views these dynamics as evidence that TPU progress is slowing relative to Nvidia's accelerating annual release cadence (Hopper \u2192 Blackwell \u2192 Rubin). The investment implication is straightforwardly bullish on Nvidia as the structural winner in AI accelerator silicon, while suggesting Google's internal silicon strategy is losing ground and Broadcom's TPU-related revenue opportunity may be more constrained than bulls assume.",
+  "detail": "Baker argues that conservative design choices by Google on TPU v8/v9, combined with the Broadcom partnership friction and MediaTek introduction as a warning shot, mean TPU development is slowing relative to Nvidia's accelerating annual cadence. Rubin will expand this gap significantly.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says 'the gap is going to expand significantly versus TPUs' when Rubin comes out, but acknowledges uncertainty about TPU v8/v9 specifics",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "when Rubin comes out, the gap is going to expand significantly versus TPUs",
+  "tickers_named_original": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "AVGO",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "NVDA",
+    "AVGO",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "AMD"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly about Nvidia's Rubin GPU widening the gap over TPUs \u2014 Nvidia is the primary subject and direct beneficiary of this competitive dynamic."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Broadcom is directly implicated as Google's TPU manufacturing partner experiencing friction, and the MediaTek introduction as a warning shot directly affects Broadcom's TPU revenue outlook \u2014 making it a direct subject of the thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google's TPU v8/v9 conservative design choices and its partnership dynamics with Broadcom and MediaTek are central to Baker's argument \u2014 Google is a direct subject as the entity losing ground in the accelerator race."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is not mentioned in the thesis details, quote, or reasoning \u2014 it appears to have bled in from an adjacent thesis. This thesis is specifically about Nvidia GPUs vs. Google TPUs; AMD is not a subject, beneficiary, or named participant here."
+    }
+  ]
+}

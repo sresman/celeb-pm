@@ -1,0 +1,61 @@
+{
+  "date": "2021-11-01",
+  "source": "Graham & Doddsville (Columbia Business School) \u2014 Investor interview with Gavin Baker, CIO of Atreides Management (Issue 43, Fall 2021)",
+  "thesis_id": "T8",
+  "summary": "Technology investing has a durable 10-20 year cycle structure; cloud/internet cycle still has legs",
+  "summary_extended": "Baker argues that technology investing is characterized by durable 10-to-20-year cycles in which old paradigms do not disappear but instead accrete in layers alongside new ones \u2014 he cites IBM still selling mainframes as evidence that prior cycles persist. He traces the pattern from the 1990s client-server cycle through the internet era, noting that the internet took nearly a decade to fully manifest in core enterprise technology via cloud adoption. His structural view is that the current cloud and AI infrastructure cycle is similarly long-duration, meaning investors who maintain sector exposure over multi-year horizons benefit from compounding advantages rather than needing to time rotations. The investment implication is a general long-term commitment to the cloud/AI theme rather than any specific near-term trade, with no precise price targets or timeframes cited beyond the broad 10-20 year historical analog.",
+  "detail": "Baker argues tech rarely disappears but accretes in layers (IBM still sells mainframes). The 1990s client-server cycle lasted a decade; the internet took nearly 10 years to affect core tech via cloud. These long-duration cycles create compounding advantages for investors who stay in the sector. The implication is that the current cloud/AI cycle is similarly durable.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as a historical structural observation used to frame his long-term sector commitment, not a specific near-term trade",
+  "themes": [
+    "cloud computing",
+    "technology cycles",
+    "secular growth",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "there do tend to be these very durable 10-to-20-year cycles in tech",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "AMZN",
+    "MSFT",
+    "GOOGL",
+    "SNOW",
+    "CRM"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker's thesis is a macro structural observation about tech cycle duration, not a specific claim about Amazon. AWS is a cloud leader but Baker does not name or specifically imply AMZN in this thesis; adding it is speculative extrapolation from the theme."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Same issue as AMZN \u2014 MSFT is a major cloud player but Baker makes no specific reference to Microsoft in this structural cycle thesis. Its inclusion is theme-bleed, not a direct implication."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GOOGL is tangential for the same reasons; Baker's historical cycle framing does not specifically implicate Google Cloud or Alphabet."
+    },
+    {
+      "ticker": "SNOW",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Snowflake is a cloud-era beneficiary but Baker does not reference it in this thesis. Its inclusion appears to be contamination from adjacent theses in the same transcript."
+    },
+    {
+      "ticker": "CRM",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Salesforce is a SaaS/cloud company but Baker's structural cycle observation does not specifically implicate CRM. This is theme-bleed from the broader cloud discussion."
+    }
+  ]
+}

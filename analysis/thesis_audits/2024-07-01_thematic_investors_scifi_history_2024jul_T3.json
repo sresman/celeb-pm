@@ -1,0 +1,73 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T3",
+  "summary": "GPU utilization is the single most important metric for AI model training competitiveness; storage, memory, and networking are the key bottlenecks",
+  "summary_extended": "Baker argues that GPU utilization is the single most important metric for evaluating AI model training competitiveness, and that it is currently severely constrained by mismatched infrastructure scaling. He uses a restaurant analogy to illustrate that GPUs (the 'head chef') have improved roughly 50x in performance over 4-5 years while the surrounding data center components \u2014 storage, memory, and networking \u2014 have only improved approximately 4x, causing GPUs to sit idle, wasting power and depreciating capital. The investment implication is that companies solving these bottlenecks in storage, memory, and networking will be the primary beneficiaries of the AI infrastructure buildout, as they directly enable higher GPU utilization, better model quality, faster time-to-market, and lower training costs. Baker states this is his 'number one metric' and has positioned both his public and private portfolios around it, indicating high conviction in this structural infrastructure thesis.",
+  "detail": "Baker uses a restaurant analogy: GPU is the head chef, but the head chef has gotten 50x faster over 4-5 years while the rest of the data center only got 4x faster. GPU sits idle most of the time, burning power and depreciating. Companies that solve storage, memory, and networking bottlenecks will drive GPU utilization and thus AI model quality, time-to-market, and cost.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says GPU utilization is 'probably the number one metric I would focus on' and has positioned both public and private portfolios around this thesis",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "memory/storage bottleneck",
+    "networking"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "the number one probably metric I would focus on for any company is just GPU utilization",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU",
+    "WDC",
+    "STX",
+    "ANET"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "MU",
+    "WDC",
+    "STX",
+    "ANET",
+    "MRVL",
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is a leading HBM and DRAM memory supplier; memory is explicitly named as one of the three key bottlenecks in this thesis, making MU a direct beneficiary."
+    },
+    {
+      "ticker": "WDC",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Western Digital is a major storage provider; storage is explicitly named as one of the three key bottlenecks, making WDC a direct beneficiary."
+    },
+    {
+      "ticker": "STX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Seagate is a major storage provider; storage is explicitly named as one of the three key bottlenecks, making STX a direct beneficiary."
+    },
+    {
+      "ticker": "ANET",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Arista Networks is a leading data center networking company; networking is explicitly named as one of the three key bottlenecks, making ANET a direct beneficiary."
+    },
+    {
+      "ticker": "MRVL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Marvell provides networking and storage semiconductor solutions directly relevant to the bottlenecks identified in this thesis. [RE-AUDIT: While Marvell operates in networking and storage semiconductors, Baker did not specifically name Marvell in connection with this thesis. The critical test requires Baker to have specifically connected this ticker to this exact claim \u2014 general industry relevance is insufficient. This appears to be an inference rather than a direct connection Baker made.]"
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is the GPU provider (the 'head chef' in Baker's analogy) and is the subject of the bottleneck problem, not a beneficiary of solving it. The thesis is about what constrains GPU utilization, not about GPU suppliers themselves. NVDA's inclusion here is contamination from adjacent context."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "ramp_basket": {
+    "description": "Picks-and-shovels AI infrastructure only. Used for Trigger 1 (AI basket weight ramp). Excludes hyperscalers and EV.",
+    "included_buckets": [
+      "AI/Datacenter Chips",
+      "AI/Datacenter Optical",
+      "AI/Datacenter Memory",
+      "AI/Datacenter Networking",
+      "AI/Datacenter Storage",
+      "AI/Datacenter Compute",
+      "AI/Datacenter Power",
+      "AI/Datacenter Infrastructure",
+      "AI/Edge Computing",
+      "AI/Data Infrastructure",
+      "Semiconductor Manufacturing",
+      "Semiconductor Supply Chain"
+    ],
+    "excluded_buckets": [
+      "AI/EV",
+      "AI/Hyperscaler"
+    ]
+  },
+  "thematic_basket": {
+    "description": "Full AI classification including hyperscalers and EV. Used for Triggers 2, 2b, 3 (sub-theme entries and individual positions).",
+    "included_buckets": [
+      "AI/Data Infrastructure",
+      "AI/Datacenter Chips",
+      "AI/Datacenter Compute",
+      "AI/Datacenter Infrastructure",
+      "AI/Datacenter Memory",
+      "AI/Datacenter Networking",
+      "AI/Datacenter Optical",
+      "AI/Datacenter Power",
+      "AI/Datacenter Storage",
+      "AI/EV",
+      "AI/Edge Computing",
+      "AI/Hyperscaler",
+      "Semiconductor Manufacturing",
+      "Semiconductor Supply Chain"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2024-06-15",
+  "source": "All-In Podcast \u2014 DRAM bottleneck, AI infrastructure, Chinese open source models",
+  "thesis_id": "T16",
+  "summary": "SpaceX IPO lockup short thesis is likely wrong due to prior liquidity access and employee buying at IPO",
+  "summary_extended": "Baker pushes back on a reported hedge fund short thesis that anticipated heavy selling pressure following a SpaceX IPO lockup expiration. He argues the short thesis is structurally flawed because SpaceX employees and investors have had semi-annual liquidity windows for approximately 10 years, meaning there is little pent-up selling pressure that would typically drive post-lockup declines. He further notes that nearly half of SpaceX employees purchased shares at the IPO price, signaling strong internal conviction rather than a desire to exit, and that large holders including Baker himself are not sellers. The investment implication is that the anticipated lockup-driven selloff is unlikely to materialize, making the short thesis a poor risk-reward trade for those betting on post-IPO price weakness.",
+  "detail": "Baker pushes back on a reported hedge fund short thesis predicated on lockup-driven selling. He notes SpaceX employees and investors have had semi-annual liquidity for 10 years, reducing pent-up selling pressure. Additionally, nearly half of SpaceX employees bought shares at IPO, and many large holders (including Baker) are not sellers.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker states this with personal conviction but acknowledges some selling is possible",
+  "themes": [
+    "space/orbital compute",
+    "IPO/capital markets"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "everybody who's a SpaceX investor or employee has had a chance to sell every 6 months for the last 10 years",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SPACEX"
+  ],
+  "tickers_subject": [
+    "SPACEX"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private/newly public)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPACEX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about SpaceX's IPO lockup dynamics and the short thesis predicated on post-lockup selling pressure. SpaceX is the direct subject, though it remains private/newly public and is not a US-listed equity with a standard ticker."
+    }
+  ]
+}

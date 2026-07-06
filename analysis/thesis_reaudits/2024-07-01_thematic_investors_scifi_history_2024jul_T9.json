@@ -1,0 +1,41 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors — Blending sci-fi, history and literature",
+  "thesis_id": "T9",
+  "summary": "Most application software companies face existential risk from AI replacing the human workers who use their software",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "CRM",
+    "NOW",
+    "ZEN",
+    "HUBS",
+    "WDAY"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "CRM",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Salesforce as an example of application software whose licenses become unnecessary when AI agents replace human customer service workers. This is a direct, specific connection to the thesis."
+    },
+    {
+      "ticker": "NOW",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named ServiceNow as a company whose software could be bypassed by AI agents replacing the human workers who use it. Direct, specific connection to the thesis."
+    },
+    {
+      "ticker": "ZEN",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Zendesk as an example of application software at risk of displacement by AI customer service agents. Direct, specific connection to the thesis."
+    },
+    {
+      "ticker": "HUBS",
+      "action": "REMOVE",
+      "reasoning": "The extended summary does not indicate Baker specifically named HubSpot in connection with this thesis. It was classified as a 'canonical example' by inference, not because Baker explicitly connected it. Under strict audit rules, inference-based inclusion must be removed."
+    },
+    {
+      "ticker": "WDAY",
+      "action": "REMOVE",
+      "reasoning": "The extended summary does not indicate Baker specifically named Workday in connection with this thesis. Like HubSpot, it was included as an inferred canonical example rather than because Baker explicitly named it. Under strict audit rules, this must be removed."
+    }
+  ]
+}

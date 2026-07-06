@@ -1,0 +1,53 @@
+{
+  "date": "2024-06-15",
+  "source": "All-In Podcast \u2014 Secondary markets",
+  "thesis_id": "T6",
+  "summary": "Sierra (Brett Taylor's company) is an attractive private investment in agent-native enterprise software \u2014 building Salesforce-equivalent sales, marketing, and customer service agents from the ground up.",
+  "summary_extended": "Gerstner (not Baker) names Sierra \u2014 the enterprise AI agent company co-founded by Brett Taylor \u2014 as a specific secondary market buy recommendation, describing it as building agent-native software for sales, marketing, and customer service from the ground up, analogous to a new Salesforce built for the agentic era. The core bull case is that Sierra is constructing a full-stack enterprise agent platform rather than layering AI onto legacy CRM architecture, giving it a structural advantage over incumbents retrofitting AI onto existing products. The key risk Gerstner identifies is commoditization from foundation model providers like OpenAI or Anthropic moving up the stack into enterprise applications. The key upside scenario is acquisition by a large platform company \u2014 Meta, Google, or others \u2014 seeking to rapidly acquire agentic enterprise capabilities; Baker neither endorses nor contradicts the view. Sierra is private and not directly investable on public markets, making CRM the closest publicly traded proxy given Sierra's direct competitive overlap with Salesforce's core product lines.",
+  "detail": "Gerstner names Sierra as a company he would buy in secondary markets. It is building agent-native enterprise software for sales, marketing, and customer service. Key risk: OpenAI/Anthropic could commoditize the layer. Key upside: acquisition target for Meta, Google, or others seeking to accelerate agentic capabilities. Baker does not explicitly endorse but does not contradict.",
+  "confidence": "moderate",
+  "confidence_evidence": "Named by Gerstner as a specific secondary buy recommendation with explicit upside/downside framing. Baker's endorsement is implicit only.",
+  "themes": [
+    "AI agents",
+    "enterprise software",
+    "agentic AI"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Sierra Brett Taylor's company agent native",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRM",
+    "META",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "CRM"
+  ],
+  "tickers_implied_original": [
+    "Sierra (private)",
+    "Salesforce (CRM)",
+    "OpenAI (private)",
+    "Anthropic (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Salesforce is the direct incumbent analog \u2014 Sierra is explicitly described as building a Salesforce-equivalent from scratch for the agentic era, making CRM a direct subject of competitive displacement risk in this thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Gerstner explicitly names Meta as a potential acquirer of Sierra to accelerate agentic capabilities, making it a direct beneficiary of the acquisition upside scenario described in the thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Gerstner explicitly names Google as a potential acquirer of Sierra, making it a direct beneficiary of the acquisition upside scenario described in the thesis."
+    }
+  ]
+}

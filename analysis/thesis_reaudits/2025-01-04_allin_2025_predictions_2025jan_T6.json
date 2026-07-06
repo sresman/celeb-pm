@@ -1,0 +1,53 @@
+{
+  "date": "2025-01-04",
+  "source": "All-In Podcast — 2025 predictions (bestie guest Gavin Baker)",
+  "thesis_id": "T6",
+  "summary": "Traditional auto OEMs are uninvestable and will be forced into mega-mergers as Tesla and Chinese EVs dominate",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "STLA",
+    "VWAGY",
+    "HMC",
+    "NSANY",
+    "F",
+    "GM",
+    "TSLA"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "STLA",
+      "action": "KEEP",
+      "reasoning": "Stellantis is a European/American OEM directly fitting Baker's thesis about traditional OEMs being uninvestable — caught between Tesla and Chinese EVs. While Baker may not have named Stellantis by name, it is a primary subject of the structural thesis about European OEMs."
+    },
+    {
+      "ticker": "VWAGY",
+      "action": "KEEP",
+      "reasoning": "Volkswagen is a leading European OEM and a canonical example of the melting iceberg thesis Baker endorses. European OEMs are explicitly called out as uninvestable in the thesis."
+    },
+    {
+      "ticker": "HMC",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named the Honda-Nissan merger as a leading indicator of forced OEM consolidation. Honda is directly and specifically named in connection with this thesis."
+    },
+    {
+      "ticker": "NSANY",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named the Honda-Nissan merger as a leading indicator of forced OEM consolidation. Nissan is directly and specifically named in connection with this thesis."
+    },
+    {
+      "ticker": "F",
+      "action": "REMOVE",
+      "reasoning": "Baker's thesis focuses on European and Japanese OEMs. Ford is a US OEM and there is no specific mention of Ford in connection with this thesis. The thesis summary notes Baker 'implies' a short on traditional OEMs broadly, but Ford was not specifically named or connected to this exact claim."
+    },
+    {
+      "ticker": "GM",
+      "action": "REMOVE",
+      "reasoning": "Same reasoning as Ford — Baker's thesis specifically calls out European and Japanese manufacturers. GM was not specifically named or connected to this exact thesis. Applying the thesis broadly to all legacy OEMs including US ones goes beyond what Baker specifically said."
+    },
+    {
+      "ticker": "TSLA",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly names Tesla as one of the two forces squeezing traditional OEMs via its software and autonomy advantage. Tesla is directly and specifically connected to this thesis as a named beneficiary."
+    }
+  ]
+}

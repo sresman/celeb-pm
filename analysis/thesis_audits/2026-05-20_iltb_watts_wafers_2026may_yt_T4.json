@@ -1,0 +1,38 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T4",
+  "summary": "Anthropic has deliberately deprecated Claude's intelligence due to compute constraints \u2014 it generates 70% fewer tokens for the same question than previously, masking true demand",
+  "summary_extended": "Baker argues that Anthropic has deliberately throttled Claude's output quality by forcing the model to generate 70% fewer tokens in response to identical questions, a move he interprets as a supply-side constraint rather than a demand-side signal. His evidence is a specific quantitative analysis showing Claude Opus producing dramatically shorter responses to the same prompts over time, which he treats as a proxy for compute rationing. Because token quantity correlates with reasoning depth and answer quality, Baker concludes that Anthropic is effectively suppressing latent demand \u2014 users would consume far more compute if it were available. This supports his broader 'unconstrained URR' (utilization rate of reasoning) thesis: true AI demand is massively understated by current usage metrics, and the binding constraint is compute supply, not user appetite. The investment implication is bullish for compute infrastructure providers \u2014 particularly those supplying the chips and data center capacity that frontier AI labs like Anthropic are starved of.",
+  "detail": "Baker cites analysis showing Claude Opus generates 70% fewer tokens for identical questions. Since token quantity correlates with answer quality, Anthropic is effectively supply-constrained, not demand-constrained. This supports the 'unconstrained URR' thesis and implies massive latent demand.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites specific quantitative analysis (70% token reduction) and frames it as a key investment insight about latent demand",
+  "themes": [
+    "AI model layer",
+    "compute supply constraints",
+    "frontier AI revenue"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "Claude is generating 70% less tokens for the exact same question",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Anthropic (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "If compute supply is the binding constraint on frontier AI demand, NVIDIA is the unambiguous primary beneficiary as the dominant supplier of GPU compute to hyperscalers and AI labs including Anthropic. Baker's thesis directly implies accelerating GPU demand. [RE-AUDIT: Baker did not specifically name NVIDIA in connection with this Anthropic token-throttling thesis. The investment implication pointing to compute infrastructure providers is a logical inference, not a direct statement by Baker linking NVDA to this specific claim. This is an analyst extrapolation, not a direct connection Baker made.]"
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Amazon Web Services is Anthropic's primary cloud partner and has committed billions in investment to Anthropic; if Anthropic's latent demand is as large as Baker implies, AWS is a direct beneficiary of incremental compute spend and workload growth. [RE-AUDIT: Baker did not specifically name Amazon or AWS in connection with this Anthropic token-throttling thesis. While AWS is Anthropic's cloud partner, Baker did not explicitly connect AMZN to this specific claim about Claude's deprecated intelligence and compute constraints. This is an inferred beneficiary, not one Baker named directly in this thesis.]"
+    }
+  ]
+}

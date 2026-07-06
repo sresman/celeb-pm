@@ -1,0 +1,77 @@
+{
+  "date": "2025-01-04",
+  "source": "All-In Podcast — 2025 predictions (bestie guest Gavin Baker)",
+  "thesis_id": "T5",
+  "summary": "Government service providers / federal contractors are the biggest business losers of 2025 due to DOGE scrutiny",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "LMT",
+    "RTX",
+    "BA",
+    "ACN",
+    "CTSH",
+    "INFY",
+    "SAIC",
+    "LDOS",
+    "BAH",
+    "CACI",
+    "GD"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "LMT",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Lockheed Martin in connection with this thesis. He named Accenture, Cognizant, Tata, HCL, and Infosys explicitly. LMT was inferred as a defense prime fitting the >35% threshold, but Baker did not specifically connect it to this thesis."
+    },
+    {
+      "ticker": "RTX",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name RTX/Raytheon in connection with this thesis. It was inferred as a defense prime fitting the >35% threshold, but Baker did not specifically call it out."
+    },
+    {
+      "ticker": "BA",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Boeing in connection with this thesis. It was inferred as fitting the >35% government revenue threshold, but Baker did not specifically connect it to this thesis."
+    },
+    {
+      "ticker": "ACN",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Accenture as facing existential pressure from DOGE scrutiny on federal IT consulting contracts. This is a direct, specific connection to this exact thesis."
+    },
+    {
+      "ticker": "CTSH",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Cognizant as a firm at risk from DOGE scrutiny. This is a direct, specific connection to this exact thesis."
+    },
+    {
+      "ticker": "INFY",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Infosys as facing pressure from DOGE scrutiny on federal IT consulting contracts. This is a direct, specific connection to this exact thesis."
+    },
+    {
+      "ticker": "SAIC",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name SAIC in connection with this thesis. It was added as an inferred beneficiary/subject based on its government revenue concentration, not because Baker specifically named it."
+    },
+    {
+      "ticker": "LDOS",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Leidos in connection with this thesis. It was added as an inferred subject based on its government revenue concentration, not because Baker specifically named it."
+    },
+    {
+      "ticker": "BAH",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Booz Allen Hamilton in connection with this thesis. It was added as an inferred subject, not because Baker specifically named it."
+    },
+    {
+      "ticker": "CACI",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name CACI International in connection with this thesis. It was added as an inferred subject, not because Baker specifically named it."
+    },
+    {
+      "ticker": "GD",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name General Dynamics in connection with this thesis. It was added as an inferred subject based on its government revenue concentration, not because Baker specifically named it."
+    }
+  ]
+}

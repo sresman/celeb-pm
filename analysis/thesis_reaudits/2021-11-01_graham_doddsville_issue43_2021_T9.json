@@ -1,0 +1,47 @@
+{
+  "date": "2021-11-01",
+  "source": "Graham & Doddsville (Columbia Business School) — Investor interview with Gavin Baker, CIO of Atreides Management (Issue 43, Fall 2021)",
+  "thesis_id": "T9",
+  "summary": "Consumer and technology sectors have fully merged and must be analyzed together",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "ABNB",
+    "MAR",
+    "NFLX",
+    "DIS",
+    "AMZN",
+    "WMT"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "ABNB",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Airbnb as one of three illustrative pairs for the consumer/tech convergence thesis — it is a direct subject of the analytical framework."
+    },
+    {
+      "ticker": "MAR",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Marriott as the legacy incumbent paired against Airbnb in the lodging example, making it a direct subject of this specific thesis."
+    },
+    {
+      "ticker": "NFLX",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Netflix as one of three illustrative pairs for the consumer/tech convergence thesis — it is a direct subject of the analytical framework."
+    },
+    {
+      "ticker": "DIS",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Disney as the legacy incumbent paired against Netflix in the entertainment example, making it a direct subject of this specific thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Amazon as one of three illustrative pairs for the consumer/tech convergence thesis — it is a direct subject of the analytical framework."
+    },
+    {
+      "ticker": "WMT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Walmart as the legacy incumbent paired against Amazon in the retail example, making it a direct subject of this specific thesis."
+    }
+  ]
+}

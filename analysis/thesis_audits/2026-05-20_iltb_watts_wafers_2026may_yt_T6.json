@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T6",
+  "summary": "Capitalism will solve the power/watts shortage for AI data centers by 2027-2028, with orbital compute as the longer-term solution",
+  "summary_extended": "Baker argues that the primary bottleneck for AI data center buildout has shifted from chips or energy supply to zoning and regulatory approvals, and that capitalism will resolve the watts shortage by 2027-2028 as turbine manufacturing capacity ramps and alternative energy sources come online. He bases this on direct time spent at SpaceX's Starbase facility with engineers who are highly confident in solving the technical challenges of orbital compute \u2014 racks in space cooled and connected by lasers \u2014 as the longer-term structural solution to power constraints. The investment implication is that power generation and grid infrastructure companies stand to benefit in the medium term as data center buildout accelerates once regulatory bottlenecks clear, while SpaceX (private) is the primary vehicle for the orbital compute thesis. Baker cites a specific timeline of 2027-2028 for the watts shortage to begin alleviating, suggesting near-term power scarcity remains a tailwind for existing clean power producers with contracted capacity.",
+  "detail": "Baker believes zoning and regulatory approval \u2014 not energy or chips \u2014 are now the primary gating factors for data center buildout. He expects the watts shortage to begin alleviating in 2027-2028 as turbine capacity ramps and alternative energy sources come online. Orbital compute (racks in space connected by lasers) is the longer-term solution, with SpaceX as the primary vehicle.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a structural view with specific timeline (27-28) and has spent significant time at Starbase with SpaceX engineers who are 'very confident' on the cooling/technical challenges",
+  "themes": [
+    "power/energy",
+    "space/orbital compute",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "watts shortage will probably begin to alleviate 27, 28",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GEV"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "GE Vernova",
+    "Vistra",
+    "Constellation Energy"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GEV",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "GE Vernova is a major turbine manufacturer; Baker specifically cites turbine capacity ramping as a key mechanism for alleviating the watts shortage, making GEV a direct beneficiary of this thesis."
+    },
+    {
+      "ticker": "VST",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Vistra is a power producer with significant capacity that benefits from sustained high power demand from AI data centers during the 2025-2027 scarcity window Baker describes. [RE-AUDIT: While VST is a power producer that would benefit from AI data center demand, Baker did not specifically name Vistra in connection with this thesis. The thesis summary references 'clean power producers with contracted capacity' generically, and VST was not explicitly called out by Baker in this context.]"
+    },
+    {
+      "ticker": "CEG",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Constellation Energy is a clean power producer with nuclear capacity contracted to data centers; it directly benefits from the power scarcity thesis Baker outlines prior to the 2027-2028 alleviation. [RE-AUDIT: Although CEG fits the profile of a clean power producer with nuclear capacity contracted to data centers, Baker did not specifically name Constellation Energy in connection with this watts/power thesis. It appears to be an inferred beneficiary rather than one Baker explicitly connected to this thesis.]"
+    },
+    {
+      "ticker": "ETN",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Eaton is a leading electrical infrastructure and power management company that directly benefits from accelerating data center buildout once regulatory bottlenecks clear, as Baker describes \u2014 an unambiguous implied beneficiary of the watts-shortage-then-resolution thesis. [RE-AUDIT: ETN was flagged as 'was_original: false' \u2014 it was added as an implied beneficiary, not because Baker specifically named Eaton in connection with this thesis. This is exactly the type of sector-inference addition that should be removed.]"
+    },
+    {
+      "ticker": "NRG",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "NRG Energy is a large independent power producer that benefits from elevated power demand from AI data centers during the scarcity period Baker identifies, similar to VST and CEG. [RE-AUDIT: NRG was flagged as 'was_original: false' and was added as an inferred beneficiary similar to VST and CEG. Baker did not specifically name NRG Energy in connection with this watts shortage thesis.]"
+    }
+  ]
+}

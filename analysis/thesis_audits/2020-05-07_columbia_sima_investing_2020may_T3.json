@@ -1,0 +1,73 @@
+{
+  "date": "2020-05-07",
+  "source": "Columbia SIMA \u2014 COVID-19 market impact, technology investing, video games, venture capital",
+  "thesis_id": "T3",
+  "summary": "Video game content owners/publishers have more leverage than platforms as cloud gaming proliferates because the game content market lacks the long tail that made Spotify/Netflix models work",
+  "summary_extended": "Baker argues that video game content publishers hold structural pricing power over cloud gaming platforms because the games market lacks the 'long tail' that enabled Spotify and Netflix to commoditize content in music and film. Unlike those media, the top 10 games capture an overwhelming share of total engagement, meaning no platform can build a viable subscription service without securing the marquee titles \u2014 giving publishers leverage to extract favorable economics from any distribution layer. Baker explicitly distinguishes streaming (a delivery mechanism) from subscription (a business model), warning that conflating the two leads to the mistaken conclusion that publishers will be disintermediated the way record labels were. He notes that Google Stadia's entry scared Sony and Microsoft into running their cloud infrastructure on Azure, achieving technical parity with Google while preserving their content libraries and user relationships, but the ultimate first-order winners remain the content owners. The investment implication is to own the major game publishers \u2014 ATVI, EA, and TTWO \u2014 as the clearest beneficiaries of cloud gaming proliferation, while platform operators like MSFT, GOOGL, and SNE are more competitively pressured and less clearly advantaged.",
+  "detail": "Baker explicitly argues that the conflation of streaming (delivery mechanism) with subscription (business model) is wrong for games. Unlike music or movies, the top 10 games dominate engagement overwhelmingly \u2014 there is no long tail. This means content owners have pricing power over any new distribution platform (cloud gaming, Xbox, Sony, Epic Store, Steam). Google Stadia scared Sony and Microsoft into running on Azure, which puts them at technical parity with Google while retaining existing content libraries and user relationships.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker makes a detailed structural argument distinguishing games from music/movies and explicitly states publishers are 'the simplest first-order winner'",
+  "themes": [
+    "video games",
+    "cloud gaming",
+    "content vs. platform",
+    "metaverse",
+    "streaming"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "content is always king... the underlying content owners have way more leverage",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "ATVI",
+    "EA",
+    "TTWO"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "ATVI",
+    "EA",
+    "TTWO",
+    "SNE",
+    "MSFT",
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "ATVI",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Activision Blizzard is one of the largest game publishers with dominant franchises (Call of Duty, WoW). Baker's thesis that content owners have pricing power over platforms makes major publishers like ATVI direct beneficiaries."
+    },
+    {
+      "ticker": "EA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "EA is a major game publisher with top franchises (FIFA, Madden, Apex). Directly benefits from Baker's argument that publishers hold leverage over cloud gaming platforms."
+    },
+    {
+      "ticker": "TTWO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Take-Two owns GTA and NBA 2K, marquee titles with massive engagement. As a top-tier publisher, it directly benefits from the structural leverage Baker describes."
+    },
+    {
+      "ticker": "SNE",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Sony is mentioned as a platform operator that was scared into running on Azure. Baker's thesis favors content owners over platforms; Sony as a platform is on the less-advantaged side of this dynamic, and while Sony has some publishing assets, the thesis does not identify it as a winner. Tangential to the core investment implication."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is cited as the cloud infrastructure provider (Azure) that Sony and Google competitors run on, and as a platform operator (Xbox). Baker's thesis explicitly positions platforms as having less leverage than publishers, making MSFT tangential rather than a direct beneficiary of this specific thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google Stadia is mentioned as the catalyst that prompted Sony and Microsoft to adopt Azure, but Baker's thesis frames platforms like Google as the entities that publishers extract value from, not as beneficiaries. Tangential to the investment thesis."
+    }
+  ]
+}

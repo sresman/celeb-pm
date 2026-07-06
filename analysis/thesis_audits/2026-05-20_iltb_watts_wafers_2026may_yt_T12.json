@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T12",
+  "summary": "Google has lost its per-cost-token leadership due to conservative TPU v8 design decisions, shifting the Pareto frontier to Anthropic, OpenAI, and xAI",
+  "summary_extended": "Baker argues that Google has lost its dominant position on the AI Pareto frontier (intelligence vs. cost-per-token) over the past nine months, with Anthropic, OpenAI, and xAI's Grok now leading while Google's Gemini 3.1 merely 'hangs on' to the frontier \u2014 and likely only through subsidization driven by competitive pride. The root cause, Baker contends, was a deliberate and conservative design decision on TPU v8 intended to reduce Google's dependence on Broadcom (for networking) and Nvidia (for GPUs), which resulted in a chip that underperforms on the cost-efficiency curve relative to competitors using more aggressive third-party silicon. The investment implication is negative for Google's AI monetization and cloud competitiveness, as losing cost-per-token leadership means Google cannot attract or retain the most cost-sensitive AI workloads. Baker frames this as a structural, self-inflicted competitive disadvantage rather than a temporary gap, suggesting the shift in frontier leadership may persist until TPU v9 or a course correction in chip design philosophy. All three frontier leaders \u2014 Anthropic, OpenAI, and xAI \u2014 remain private, limiting direct investable expression of the beneficiary side of this thesis.",
+  "detail": "Nine months ago Google dominated the Pareto frontier (intelligence vs. cost). Now Anthropic, OpenAI, and Grok 4.3 dominate it. Google's Gemini 3.1 is 'hanging onto' the frontier and Baker suspects they are subsidizing it out of pride. The cause was conservative design decisions on TPU v8 to reduce dependence on Broadcom and Nvidia. This is a significant competitive shift with implications for Google's AI positioning.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker makes a specific causal claim (TPU v8 design decisions) and provides specific current Pareto frontier rankings. He has clearly tracked this closely.",
+  "themes": [
+    "AI model layer",
+    "semiconductor supply chain",
+    "competitive dynamics"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "Google dominated the Pareto frontier 9 months ago \u2014 now it's Anthropic, OpenAI, xAI",
+  "tickers_named_original": [
+    "GOOGL",
+    "AVGO",
+    "NVDA",
+    "AMD"
+  ],
+  "tickers_direct": [
+    "GOOGL",
+    "AVGO"
+  ],
+  "tickers_subject": [
+    "GOOGL",
+    "AVGO"
+  ],
+  "tickers_implied_original": [
+    "Anthropic (private)",
+    "OpenAI (private)",
+    "xAI (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Google's loss of AI Pareto frontier leadership due to TPU v8 design decisions \u2014 GOOGL is the direct subject of the competitive deterioration claim."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly identifies Broadcom as the dependency Google was trying to reduce when making conservative TPU v8 design decisions. This makes AVGO a direct subject: Google's chip strategy was shaped around reducing reliance on Broadcom, and if Google reverses course or competitors continue using Broadcom networking, AVGO's role in AI infrastructure is implicated."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Nvidia is mentioned only as one of the vendors Google sought to reduce dependence on via TPU v8. The thesis is not about Nvidia's competitive position or Nvidia as a beneficiary \u2014 competitors like Anthropic and OpenAI using Nvidia GPUs is implied but not the focus of this thesis. Removing as tangential."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD does not appear in the thesis narrative at all \u2014 no causal role, no beneficiary role. Likely bled in from an adjacent thesis. Removing as tangential."
+    }
+  ]
+}

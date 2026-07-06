@@ -1,0 +1,50 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T2",
+  "summary": "SpaceX's terrestrial AI compute business is monetizing at dramatically higher rates than peers and is the most underappreciated near-term revenue driver",
+  "summary_extended": "Baker argues that SpaceX's terrestrial AI compute business is dramatically underappreciated because its monetization rates far exceed what Wall Street models imply. Specifically, SpaceX signed Google at approximately $50B per gigawatt per year and Anthropic at $22-23B per gigawatt per year, compared to only ~$14B per gigawatt implied in sell-side bank models \u2014 representing a 60-250% premium to consensus assumptions. Baker notes that SpaceX went from zero presence as an AI hyperscaler to being the #4 player in roughly 30 days, surpassing Oracle and others, which he views as a structural inflection point in the company's revenue profile. The investment implication is that SpaceX's terrestrial compute business alone justifies significant valuation upside even before any optionality from orbital compute, making any future public listing a high-conviction opportunity. Since SpaceX remains private, the thesis has limited direct public-market expression, though GOOGL is a confirmed customer at the cited deal economics.",
+  "detail": "XAI/SpaceX signed Google at ~$50B/gigawatt/year and Anthropic at $22-23B/gigawatt/year, versus an implied $14B/gigawatt in bank models. This monetization rate makes the terrestrial compute business highly attractive even before orbital compute. SpaceX went from not being an AI hyperscaler to being #4 in ~30 days, passing Oracle and others.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Specific deal economics cited ($50B/GW Google, $22-23B/GW Anthropic vs $14B/GW implied); Baker states this explicitly and repeatedly; Clark Tang corroborates",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "they just signed Google at 50 per gigawatt",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "GOOGL",
+    "AMZN (Oracle comparison)",
+    "ORCL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is explicitly named as a signed customer at $50B/gigawatt/year, making it a direct subject of the deal economics cited in the thesis \u2014 the deal validates SpaceX's monetization rate and is central to Baker's argument."
+    },
+    {
+      "ticker": "ORCL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Oracle is mentioned only as a benchmark that SpaceX surpassed in hyperscaler ranking within 30 days; the thesis is not about Oracle's business, and Oracle neither benefits from nor is harmed in a way that is the focus of this thesis. Remove."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMZN was listed parenthetically alongside the Oracle comparison but is not referenced in the thesis detail at all; no specific claim about Amazon is made. Remove."
+    }
+  ]
+}

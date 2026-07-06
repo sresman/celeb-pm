@@ -1,0 +1,62 @@
+{
+  "date": "2020-05-07",
+  "source": "Columbia SIMA \u2014 COVID-19 market impact, technology investing, video games, venture capital",
+  "thesis_id": "T4",
+  "summary": "Free-to-play is an inherently superior business model for video games because virtual good persistence drives higher monetization",
+  "summary_extended": "Baker argues that free-to-play is a structurally superior business model for video games because virtual goods (skins, emojis, weapons) derive their value from persistent status signaling \u2014 a value that is destroyed when annual release cycles reset the game world each year. In contrast, free-to-play titles maintain virtual good value indefinitely, which drives higher and more durable in-app purchase revenue over time. He cites Destiny as a promising hybrid model that preserves virtual good persistence while monetizing through paid expansions roughly every three years, suggesting this could be a best-of-both-worlds approach. The investment implication is that traditional publishers still reliant on $60 annual title releases \u2014 such as EA (FIFA/Madden), Activision Blizzard (Call of Duty), and Take-Two (NBA 2K) \u2014 face structural business model pressure and must migrate toward free-to-play or risk monetization erosion. Baker does not name a specific winner but implies that companies furthest along in the free-to-play transition are better positioned structurally.",
+  "detail": "Baker argues that annual release cycle games destroy the value of virtual goods (skins, emojis, weapons) because status value resets each year. Free-to-play games maintain virtual good value indefinitely, driving higher in-app purchase revenue. He cites Destiny as a hybrid model \u2014 persistent status/virtual goods with a new paid expansion every ~3 years \u2014 as a potential best-of-both-worlds approach. The implication is that publishers still selling $60 annual titles face structural pressure to migrate toward free-to-play.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker makes a detailed economic argument grounded in behavioral psychology (status-seeking) and cites specific game examples",
+  "themes": [
+    "video games",
+    "free-to-play",
+    "virtual economies",
+    "business model transition"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "all the world's biggest video games are free to play... inherently superior business model",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "ATVI",
+    "EA",
+    "TTWO"
+  ],
+  "tickers_subject": [
+    "ATVI",
+    "EA",
+    "TTWO"
+  ],
+  "tickers_implied_original": [
+    "ATVI",
+    "EA",
+    "TTWO",
+    "BUNGIEVG"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "ATVI",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Activision Blizzard publishes both annual-cycle titles (Call of Duty) and has free-to-play exposure (Warzone), making it a direct subject of this business model transition thesis \u2014 it faces the structural pressure Baker describes and is partially migrating toward free-to-play."
+    },
+    {
+      "ticker": "EA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "EA is a canonical example of the annual release cycle model (FIFA, Madden, Battlefield) that Baker argues is structurally inferior; it is a direct subject of the thesis as a company facing pressure to migrate away from $60 annual titles."
+    },
+    {
+      "ticker": "TTWO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Take-Two publishes annual sports titles (NBA 2K) and is a direct subject of the structural pressure Baker describes on publishers reliant on annual paid release cycles."
+    },
+    {
+      "ticker": "BUNGIEVG",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Bungie (maker of Destiny) was privately held at the time of this talk and is not a US-listed equity; it was cited as an illustrative example of a hybrid model rather than as an investable subject. It should be removed as it is not a tradeable ticker."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T16",
+  "summary": "Cross-sectional AI valuations are deeply inconsistent \u2014 semi-cap equipment at 40x annualized earnings vs. DRAM at mid-single digit P/E cannot both be correct",
+  "summary_extended": "Baker argues that current cross-sectional valuations across the semiconductor supply chain are deeply inconsistent and cannot simultaneously be correct. Specifically, he notes that semi-cap equipment stocks are trading at approximately 40x annualized earnings while DRAM stocks trade at mid-single-digit P/Es \u2014 a stark contrast to the prior cycle peak where semi-cap traded at ~5x and DRAM at ~12x, meaning the historical relationship has essentially inverted. He contends this gap is unjustifiable even after accounting for improved semi-cap business model quality and uncertainty around HBM demand, and that one or both asset classes must reprice. He further highlights a second internal inconsistency: Nvidia's valuation appears cheap relative to its own history, while GE Vernova's valuation implies power demand growth so extreme it would require an unfathomable loss of Nvidia GPU market share \u2014 these two valuations cannot coexist. The investment implication is to be long DRAM (particularly Micron as the US-listed pure play) and skeptical of semi-cap equipment multiples, while the Nvidia/GEV inconsistency suggests either GEV is overvalued or NVDA is undervalued.",
+  "detail": "Baker notes that at the peak of the last cycle, semi-cap equipment traded at ~5x earnings vs. DRAM at ~12x. Currently semi-cap is at ~40x vs. DRAM at mid-single digit. He argues this gap is unjustifiable even accounting for improved semi-cap business models and HBM uncertainty. He also flags the inconsistency between Nvidia's valuation (cheap relative to history) and GE Vernova's valuation (implying unfathomable Nvidia share loss).",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker provides specific valuation data points (40x vs. mid-single digit, historical 5x vs. 12x) and frames this as a clear mispricing he is acting on",
+  "themes": [
+    "semiconductor supply chain",
+    "valuation",
+    "DRAM/HBM"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "semi-cap at 40x next quarter's earnings and DRAM at mid-single digit \u2014 can't both be true",
+  "tickers_named_original": [
+    "NVDA",
+    "GEV"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "GEV",
+    "MU"
+  ],
+  "tickers_subject": [
+    "NVDA",
+    "GEV",
+    "MU"
+  ],
+  "tickers_implied_original": [
+    "ASML",
+    "KLAC",
+    "LRCX",
+    "AMAT",
+    "Micron (MU)",
+    "SK Hynix (KRX: 000660)",
+    "Samsung (KRX: 005930)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly uses Nvidia's valuation as one of the two legs of the GEV/NVDA inconsistency argument \u2014 it is a direct subject of this thesis, not tangential."
+    },
+    {
+      "ticker": "GEV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly flags GE Vernova's valuation as implying an unfathomable Nvidia share loss, making it a direct subject of the valuation inconsistency thesis."
+    },
+    {
+      "ticker": "ASML",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "ASML is the dominant semi-cap equipment company and is directly implicated in the 40x semi-cap equipment valuation argument \u2014 it is a subject of the overvaluation claim, not merely tangential. [RE-AUDIT: Baker made a general claim about semi-cap equipment trading at ~40x annualized earnings as a sector-level observation. He did not specifically name ASML as the subject of this claim. Inferring ASML because it is the dominant semi-cap company is exactly the kind of sector-level inference the audit rules prohibit.]"
+    },
+    {
+      "ticker": "KLAC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "KLAC is a major semi-cap equipment name directly implicated in the 40x earnings multiple argument Baker is making about the sector. [RE-AUDIT: Baker's semi-cap equipment valuation argument was made at the sector level (~40x annualized earnings for semi-cap equipment broadly). There is no evidence in the summary that Baker specifically named KLAC in connection with this thesis \u2014 it is a sector inference, not a specific connection.]"
+    },
+    {
+      "ticker": "LRCX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "LRCX is a major semi-cap equipment name directly implicated in the 40x earnings multiple argument Baker is making about the sector. [RE-AUDIT: Same reasoning as KLAC \u2014 Baker's semi-cap equipment overvaluation argument was sector-level. LRCX was not specifically named as a subject of this thesis; including it is a sector-level inference that the audit rules prohibit.]"
+    },
+    {
+      "ticker": "AMAT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMAT is a major semi-cap equipment name directly implicated in the 40x earnings multiple argument Baker is making about the sector. [RE-AUDIT: Same reasoning as KLAC and LRCX \u2014 Baker made a sector-level claim about semi-cap equipment multiples without specifically naming AMAT. Removing per the strict standard that sector-level inferences do not qualify as specific connections.]"
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Micron is the only US-listed pure-play DRAM company and is the primary investable expression of Baker's long DRAM thesis given mid-single-digit P/E; clearly implied as the actionable long."
+    }
+  ]
+}

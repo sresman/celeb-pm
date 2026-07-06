@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T20",
+  "summary": "Nvidia will keep open-source models a certain time frame behind the frontier as a strategic decision, and Jensen could reach near-frontier model quality with Nvidia's own model whenever he chooses",
+  "summary_extended": "Baker argues that Jensen Huang (Nvidia) is making a deliberate strategic decision to keep open-source AI models a certain time frame behind the frontier, and that Nvidia has the capability to release a near-frontier model whenever it chooses but refrains from doing so to preserve the broader AI ecosystem. The reasoning is that OpenAI and Anthropic are attempting to commoditize Nvidia's complement \u2014 i.e., make the model layer a commodity to reduce Nvidia's pricing power \u2014 and Nvidia's counter-move is to ensure open-source models remain competitive enough to fragment the closed-model market without fully displacing frontier models. Baker also notes that open-source tokens are not truly free, as they require energy and GPU compute, and that open-source model companies almost always pay Nvidia a revenue share through cloud or direct hardware purchases. The investment implication is that Nvidia retains structural leverage over the entire AI stack regardless of whether open-source or closed models win, because both paths run on Nvidia hardware, and Jensen's optionality to release a frontier model is itself a strategic deterrent that protects Nvidia's ecosystem position.",
+  "detail": "Baker believes Jensen has the capability to release a near-frontier model but strategically chooses not to, in order to preserve the ecosystem. He frames this as the logical counter-move to OpenAI/Anthropic trying to commoditize Nvidia's complement. He also notes that open-source tokens are not free \u2014 they cost energy and GPU time, and open-source model companies almost always get a revenue share.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as his belief/inference about Jensen's strategic thinking rather than confirmed information",
+  "themes": [
+    "AI model layer",
+    "competitive dynamics",
+    "open source AI"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "Jensen is going to keep open source a certain time frame behind the frontier",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "META"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "OpenAI (private)",
+    "Anthropic (private)",
+    "Meta (META)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Nvidia's strategic decision-making around open-source AI models and Jensen Huang's optionality to release a near-frontier model \u2014 Nvidia is the central subject."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Meta is the primary publisher of leading open-source models (Llama series) and is directly implicated in the open-source ecosystem dynamic Baker describes. If Nvidia strategically keeps open-source behind the frontier, Meta's open-source model strategy is directly affected, making Meta a direct beneficiary or subject of this competitive dynamic."
+    }
+  ]
+}

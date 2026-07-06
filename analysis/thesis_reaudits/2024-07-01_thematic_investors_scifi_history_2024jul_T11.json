@@ -1,0 +1,35 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors — Blending sci-fi, history and literature",
+  "thesis_id": "T11",
+  "summary": "Scaling laws remain the dominant driver of AI quality improvement; compute is the key variable",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly frames compute supply as the primary bottleneck and differentiator in AI, and NVDA is the dominant GPU supplier enabling compute scaling. The thesis directly implies NVDA as the key beneficiary — this is not a loose thematic association but the central investment implication Baker draws from the scaling laws thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically identifies hyperscalers and cloud providers with massive capital budgets as the primary beneficiaries of the compute-as-moat thesis. GOOGL is one of the named hyperscalers with both TPU infrastructure and foundation model development (Gemini), making it a direct subject of this thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker specifically identifies companies with the greatest access to compute as having the strongest competitive moat. META is a major foundation model developer (LLaMA) with massive compute investment, and Baker has discussed META's AI compute strategy in this context. It fits the explicit investment implication of the thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker specifically identifies hyperscalers and cloud providers as the primary beneficiaries of the compute-as-moat thesis. MSFT is a leading hyperscaler (Azure) with massive AI infrastructure spend and the OpenAI partnership, making it a direct subject of this thesis."
+    }
+  ]
+}

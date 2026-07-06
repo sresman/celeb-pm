@@ -1,0 +1,70 @@
+{
+  "date": "2025-11-15",
+  "source": "TBPN \u2014 Token factories, sovereign AI",
+  "thesis_id": "T3",
+  "summary": "EV/net PP&E is an increasingly important valuation metric; installed physical assets on Earth will appreciate in value",
+  "summary_extended": "Baker argues that EV/net PP&E is becoming an increasingly important valuation metric for the current investment environment, reflecting his structural view that installed physical assets on Earth will appreciate in value over time. He references Goldman Sachs's 'halo trade' concept, which identifies companies with high asset value and low obsolescence risk as particularly attractive. The investment implication is that asset-heavy AI infrastructure companies \u2014 including hyperscalers, data center REITs, and other capital-intensive operators \u2014 may be undervalued when assessed through this lens rather than traditional earnings-based multiples. Baker frames this as a contrarian, medium-term structural view: as AI buildout accelerates, the scarcity and replacement cost of installed physical infrastructure (servers, data centers, fiber, power) will drive asset revaluation. Investors should screen for companies with large net PP&E bases that trade at low EV/net PP&E multiples relative to the replacement cost and longevity of those assets.",
+  "detail": "Baker says he is 'increasingly looking at EV to net PP&E as a valuation metric' with the thesis that installed atoms on earth will appreciate. References Goldman Sachs 'halo trade' concept: high asset value, low obsolescence. Implies asset-heavy AI infrastructure companies are undervalued on this metric.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states he is 'increasingly' using this metric and frames it as a structural view, not a passing comment",
+  "themes": [
+    "AI datacenter infrastructure",
+    "valuation frameworks"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "EV to net PP&E as a valuation metric",
+  "tickers_named_original": [
+    "META"
+  ],
+  "tickers_direct": [
+    "META",
+    "MSFT",
+    "GOOGL",
+    "AMZN"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "hyperscalers broadly",
+    "data center REITs",
+    "AI infrastructure companies"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "META is one of the largest holders of AI infrastructure and physical assets (data centers, servers) among public companies, making it a plausible direct beneficiary of an EV/net PP&E revaluation thesis, though it was likely cited as an example rather than the sole subject."
+    },
+    {
+      "ticker": "EQIX",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Equinix is the largest publicly listed data center REIT and a canonical example of an asset-heavy AI infrastructure company with massive net PP&E, making it an unambiguous direct beneficiary of this valuation framework. [RE-AUDIT: EQIX was not specifically named by Baker in connection with this thesis. It was added by inference as a 'canonical example' \u2014 exactly the kind of analyst extrapolation the audit rules prohibit. Baker did not specifically connect Equinix to the EV/net PP&E thesis.]"
+    },
+    {
+      "ticker": "DLR",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Digital Realty is a major data center REIT with substantial net PP&E, directly fitting the 'installed atoms' thesis Baker describes. [RE-AUDIT: DLR was not specifically named by Baker in connection with this thesis. It was added by inference as a data center REIT that fits the thesis \u2014 not because Baker explicitly cited it.]"
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Microsoft is one of the largest hyperscaler capex spenders with enormous and growing net PP&E in AI infrastructure, making it a direct beneficiary of asset-based revaluation."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Alphabet is a leading hyperscaler with massive data center and infrastructure PP&E, directly fitting the thesis of installed physical assets appreciating in value."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Amazon/AWS is the largest cloud infrastructure operator by capex and net PP&E, making it a direct and unambiguous beneficiary of the EV/net PP&E revaluation thesis."
+    }
+  ]
+}

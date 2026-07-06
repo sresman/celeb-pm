@@ -1,0 +1,50 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards \u2014 AI tailwind for semiconductors",
+  "thesis_id": "T3",
+  "summary": "ASML is the single most critical company in the semiconductor supply chain; continued EUV progress is essential to sustaining Moore's Law and all downstream AI compute scaling",
+  "summary_extended": "Baker argues that ASML is the single most important company on the planet because its EUV lithography technology is the irreplaceable enabler of continued Moore's Law scaling \u2014 without it, semiconductor density improvements halt entirely. He contends that humanity requires another 5-7x turns of Moore's Law to unlock transformative breakthroughs in areas like healthcare and materials science, making ASML's continued EUV progress existential for technological advancement. As concrete evidence of ASML's leverage, Baker cites Intel's failure to adopt EUV early as the direct cause of Intel losing a 50-year semiconductor manufacturing leadership position, illustrating the catastrophic cost of being on the wrong side of ASML's technology roadmap. The investment implication is a high-conviction, long-term long in ASML as the single most critical chokepoint in the global semiconductor supply chain and, by extension, all AI compute scaling.",
+  "detail": "Baker says 'almost all human progress depends on this company' because ASML's EUV lithography is required to keep Moore's Law advancing. He estimates humanity needs another 5-7x turns of Moore's Law to unlock breakthroughs in healthcare and materials science. Intel's failure to adopt EUV early cost it a 50-year manufacturing leadership position, validating ASML's centrality.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker singles out ASML as the one company he would pick on the planet for this theme. He uses superlatives ('almost all human progress depends on this company') and provides the Intel EUV case study as concrete evidence of ASML's leverage.",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "Moore's Law sustainability"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "if you could pick one company on this planet... almost all human progress depends on this company",
+  "tickers_named_original": [
+    "ASML",
+    "INTC",
+    "TSM"
+  ],
+  "tickers_direct": [
+    "ASML"
+  ],
+  "tickers_subject": [
+    "ASML"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ASML",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about ASML as the irreplaceable EUV lithography monopolist and the single most critical company in the semiconductor supply chain."
+    },
+    {
+      "ticker": "INTC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Intel is cited only as a cautionary case study illustrating ASML's leverage \u2014 the thesis is not about Intel as an investment and Intel is not a beneficiary of this thesis. It is tangential evidence, not a subject or beneficiary."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "TSMC is not mentioned in the thesis detail or quote fragment and does not appear to be a direct subject or beneficiary of this specific thesis about ASML's EUV monopoly. Its inclusion appears to be bleed-in from adjacent semiconductor discussion."
+    }
+  ]
+}

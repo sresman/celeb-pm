@@ -1,0 +1,54 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T11",
+  "summary": "Economic returns at the AI model layer are overwhelmingly concentrated at the frontier, which is surprising and may continue \u2014 this is the most important question for AI investors",
+  "summary_extended": "Baker argues that economic returns at the AI model layer are overwhelmingly concentrated at the frontier \u2014 meaning the most capable, highest-cost models from providers like Anthropic, OpenAI, and xAI \u2014 rather than being distributed across cheaper or open-source alternatives, which he finds surprising given how rapidly older models have commoditized. His evidence includes his own direct experience observing model quality degradation when switching away from frontier models, suggesting enterprises and developers consistently return to paying premium prices for top-tier outputs. He frames this concentration as the single most important structural question for AI investors, because if frontier economics persist, the companies building and selling frontier tokens will capture disproportionate value even as the broader model market becomes crowded. He identifies two related open questions that compound this thesis: whether the 'bitter lesson' (that scale always wins) will be violated at the ASI threshold, and when continual/online learning will arrive to potentially reshape the competitive landscape. The investment implication is that investors should focus on who controls frontier model access, but all three named beneficiaries \u2014 Anthropic, OpenAI, and xAI \u2014 are private, leaving no directly actionable US-listed equity plays from this thesis alone.",
+  "detail": "Baker identifies that the vast majority of economic value at the model layer accrues to frontier tokens (Anthropic, OpenAI, xAI), not to cheaper/open-source alternatives. This is surprising given the rapid commoditization of older models. He frames this as one of three critical questions for AI investors: (1) Will frontier tokens continue to command premium economics? (2) Will the bitter lesson be violated by ASI? (3) When will continual learning arrive?",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as 'the most important question to have a hypothesis on as an investor' and provides his own experience with model quality degradation as evidence",
+  "themes": [
+    "AI model layer",
+    "frontier AI revenue",
+    "competitive dynamics"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "overwhelming majority of economic returns come from frontier tokens",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "Anthropic",
+    "OpenAI",
+    "xAI"
+  ],
+  "tickers_subject": [
+    "Anthropic",
+    "OpenAI",
+    "xAI"
+  ],
+  "tickers_implied_original": [
+    "Anthropic (private)",
+    "OpenAI (private)",
+    "xAI (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "Anthropic",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Anthropic is explicitly named as one of the frontier token providers capturing the concentrated economic returns that are the subject of this thesis, though it is private and not US-listed."
+    },
+    {
+      "ticker": "OpenAI",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "OpenAI is explicitly named as one of the frontier token providers at the center of this thesis, though it is private and not US-listed."
+    },
+    {
+      "ticker": "xAI",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "xAI is explicitly named as one of the frontier token providers capturing premium economics, though it is private and not US-listed."
+    }
+  ]
+}

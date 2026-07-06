@@ -1,0 +1,33 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T11",
+  "summary": "Natural gas and solar are the only realistic near-term power solutions for AI data centers; nuclear cannot be built fast enough in the US",
+  "summary_extended": "Baker argues that nuclear power cannot realistically solve the near-term energy demands of AI data centers in the United States due to structural regulatory barriers \u2014 specifically NEPA permitting requirements \u2014 that make new nuclear construction prohibitively slow regardless of political will or intent. He contends that natural gas and solar are the only practical near-term solutions, citing specific geographic evidence: activity in the Abilene, Texas basin as a sign that gas-powered generation is already ramping to meet data center demand. As supporting evidence of supply response, Baker notes that Caterpillar has already announced a 75% capacity increase in turbines, indicating that industrial equipment manufacturers serving the gas power buildout are already responding to demand signals. The investment implication is to favor companies directly enabling natural gas power generation and solar deployment for data centers, with Caterpillar as a named beneficiary given its turbine capacity expansion announcement.",
+  "detail": "Regulatory constraints (NEPA, permitting) make nuclear construction too slow regardless of political will. Natural gas (especially in basins like Abilene, TX) and solar are the practical solutions. Caterpillar has already announced 75% capacity increase in turbines. The power system is beginning to respond.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states definitively 'we just can't build nuclear fast enough in America' and points to specific geographic activity (Abilene) as evidence the gas/solar thesis is already playing out",
+  "themes": [
+    "power/energy",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "the solutions are natural gas and solar",
+  "tickers_named_original": [
+    "CAT"
+  ],
+  "tickers_direct": [
+    "CAT"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "CAT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly cited Caterpillar's 75% turbine capacity increase as evidence the natural gas power buildout is underway, making CAT a direct beneficiary of the gas-for-AI-datacenters thesis."
+    }
+  ]
+}

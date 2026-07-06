@@ -1,0 +1,34 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T15",
+  "summary": "SpaceX has secured up to 20% of early Vera Rubin GPU allocation, giving it a compute lead into the next GPU generation",
+  "summary_extended": "Baker (via Clark Tang's channel checks) argues that SpaceX and/or xAI has secured approximately 20% of early Vera Rubin GPU allocation from NVIDIA, giving the combined Musk entity a significant compute advantage during the scarcest part of the next GPU generation's ramp. Tang's evidence is based on industry conversations rather than confirmed disclosures, with hedging language ('looks like,' 'maybe up to 20%') indicating moderate confidence. The investment implication is that SpaceX/xAI could use this compute lead to either train frontier models ahead of competitors or monetize excess capacity at premium margins \u2014 but both entities are private, limiting direct investability. The primary public-market read-through is NVIDIA as the supplier of Vera Rubin GPUs, though the thesis is fundamentally about the private entities securing allocation rather than about NVIDIA's business prospects specifically.",
+  "detail": "Clark Tang reports from conversations that SpaceX/xAI has secured approximately 20% of Vera Rubin capacity, especially in early scarce allocation periods. This compounds their ability to either train frontier models or monetize excess capacity at best-in-class margins.",
+  "confidence": "moderate",
+  "confidence_evidence": "Clark Tang presents as 'from a lot of my conversations' - channel checks, not confirmed; uses 'looks like' and 'maybe up to 20%' hedging language",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "secured maybe up to 20% of Vera Rubin capacity",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "xAI (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVIDIA is the supplier of Vera Rubin GPUs, but this thesis is specifically about SpaceX/xAI's allocation advantage, not about NVIDIA's revenue or competitive position. NVIDIA's business is not the subject of the claim, and the thesis does not argue NVIDIA benefits in any differentiated way relative to its baseline. The mention of NVDA is incidental to identifying the GPU product in question."
+    }
+  ]
+}

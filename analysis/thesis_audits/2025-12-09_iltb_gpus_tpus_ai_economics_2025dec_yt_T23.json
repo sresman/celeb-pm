@@ -1,0 +1,34 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T23",
+  "summary": "China made a strategic error by restricting Blackwell access; the gap between American frontier labs and Chinese AI will widen significantly",
+  "summary_extended": "Baker argues that China made a strategic geopolitical error by restricting its AI labs' access to Nvidia Blackwell GPUs, forcing them to rely on inferior domestic alternatives like Huawei Ascend chips. He cites DeepSeek's v3.2 paper as implicit acknowledgment that compute scarcity is a meaningful competitive disadvantage for Chinese labs, suggesting the gap is already widening. As Blackwell deploys at scale across American frontier labs, Baker contends the capability differential will compound dramatically, with China likely recognizing the mistake only in late 2026 \u2014 by which point American labs will have built durable, compounding advantages. The investment implication is that Nvidia is the direct beneficiary, as American labs will continue to aggressively procure Blackwell GPUs while Chinese demand is structurally suppressed, concentrating the most advanced compute spending in the US. Baker also dismisses the rare earth leverage narrative, arguing alternatives are being developed rapidly, reducing China's retaliatory options.",
+  "detail": "DeepSeek's v3.2 paper implicitly acknowledged compute shortage as a key competitive disadvantage. China forced Chinese open source to use domestic chips (Huawei Ascend), which are inferior to Blackwell. As Blackwell deploys at American labs, the capability gap will widen. China will likely realize this mistake in late 2026 but by then American labs will have compounding advantages. Rare earth leverage is also overstated as alternatives are being developed rapidly.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says China 'made a terrible mistake' and provides DeepSeek paper as evidence, but acknowledges geopolitical uncertainty",
+  "themes": [
+    "geopolitics",
+    "AI frontier models",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "the gap between American frontier labs and Chinese open source is going to blow out because of Blackwell",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is the direct beneficiary of this thesis: American frontier labs will accelerate Blackwell GPU procurement while China is locked out, concentrating high-margin advanced GPU demand with Nvidia. The thesis explicitly names Blackwell as the capability wedge driving the gap."
+    }
+  ]
+}

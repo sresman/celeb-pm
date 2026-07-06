@@ -1,0 +1,51 @@
+{
+  "date": "2020-05-07",
+  "source": "Columbia SIMA \u2014 COVID-19 market impact, technology investing, video games, venture capital",
+  "thesis_id": "T6",
+  "summary": "TikTok is a genuine structural threat to Instagram/Facebook, with measurable impact on Instagram engagement visible in February 2020 data",
+  "summary_extended": "Baker argues that TikTok represents a genuine structural threat to Instagram specifically, citing measurable deterioration in Instagram engagement metrics visible in February 2020 data \u2014 before COVID noise contaminated March figures. He contends TikTok is fundamentally different from prior social media challengers because it is purely algorithmic and meritocratic (not follower-count driven), requires no login to consume content, and reduces social anxiety by hiding likes, making it stickier and more accessible than Instagram. Baker frames this as a classic 'wolf at the door' dynamic: the market worried about TikTok for years, then stopped worrying, and now the impact has actually materialized in hard data. The investment implication is bearish on Meta's Instagram property (FB), though Baker notes this is not a current position for him, suggesting he views it as a risk to monitor rather than an active short.",
+  "detail": "Baker argues TikTok is fundamentally different from prior social networks: purely algorithmic/meritocratic (not follower-count driven), no friction to consume content (no login required), and hides likes reducing social anxiety. He observed a significant slowdown in Instagram in February 2020 that he attributes to TikTok. He frames this as a classic 'wolf at the door' dynamic where the market worried about TikTok for years, stopped worrying, and then the impact actually materialized.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker cites specific February 2020 data on Instagram slowdown but acknowledges COVID noise in March data; frames as important but not a current position",
+  "themes": [
+    "social media disruption",
+    "TikTok",
+    "user engagement",
+    "platform competition"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "big impact in February in a lot of measurable ways on Instagram",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "FB"
+  ],
+  "tickers_subject": [
+    "FB"
+  ],
+  "tickers_implied_original": [
+    "FB",
+    "SNAP",
+    "TWTR"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "FB",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about TikTok's measurable negative impact on Instagram, which is a Facebook/Meta property. FB is the direct subject of the competitive threat."
+    },
+    {
+      "ticker": "SNAP",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Snap is not mentioned as a subject of or beneficiary of this specific thesis. While Snap competes in social media, Baker's thesis is narrowly about TikTok's impact on Instagram/Facebook. No specific claim about Snap is made."
+    },
+    {
+      "ticker": "TWTR",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Twitter is not mentioned in this thesis. Baker's argument is specifically about Instagram engagement deterioration. Twitter is a tangential social media name that does not belong in this thesis."
+    }
+  ]
+}

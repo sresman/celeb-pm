@@ -1,0 +1,43 @@
+{
+  "date": "2025-05-28",
+  "source": "HedgeFundAlpha (writeup) \u2014 SK Hynix / HBM pitch",
+  "thesis_id": "T2",
+  "summary": "SK Hynix is the dominant HBM supplier and offers ~3x upside as the primary beneficiary of AI inference-driven memory demand.",
+  "summary_extended": "Baker pitched SK Hynix (000660.KS) as his highest-conviction long idea at Sohn Montreal 2025, projecting approximately 3x upside driven by the company's dominant position in High Bandwidth Memory (HBM) supply. He argues that the structural shift in AI workloads from training toward inference is a powerful demand catalyst for HBM, as inference at scale requires massive memory bandwidth, and SK Hynix is the leading supplier of HBM to NVIDIA and other hyperscalers. Baker's thesis rests on SK Hynix's technological leadership and manufacturing scale in HBM giving it a durable competitive moat that competitors have struggled to replicate at volume. The investment implication is a direct long in SK Hynix, with the 3x upside target suggesting Baker sees the current valuation as significantly underpricing the company's earnings power as AI inference demand accelerates over the medium term. No US-listed equity is the direct subject of this thesis; the only unambiguously implied US-listed beneficiary would be Micron Technology (MU) as the sole US-listed HBM producer, though Baker's pitch was explicitly centered on SK Hynix.",
+  "detail": "Baker pitched SK Hynix as his primary long idea at Sohn Montreal 2025, citing its dominant market position in HBM supply and projecting approximately 3x upside. The firm's leadership in HBM technology positions it as the key beneficiary of the structural shift toward inference workloads in AI.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Explicitly named as the Sohn pitch with a specific 3x upside target; Baker's highest-conviction public idea at the conference.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "HBM/memory"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "3X Upside Riding the AI Inference Wave with a Dominant HBM Supplier",
+  "tickers_named_original": [
+    "000660.KS"
+  ],
+  "tickers_direct": [
+    "000660.KS",
+    "MU"
+  ],
+  "tickers_subject": [
+    "000660.KS"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "000660.KS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SK Hynix is the explicit and sole subject of Baker's Sohn Montreal 2025 pitch, with a specific 3x upside target and detailed thesis around HBM dominance."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Micron is the only US-listed HBM producer and directly benefits from the same structural AI inference-driven HBM demand thesis Baker articulates, even though his pitch was specifically about SK Hynix. Adding as a clearly implied beneficiary of the same demand dynamic."
+    }
+  ]
+}

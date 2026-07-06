@@ -1,0 +1,41 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) — GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T24",
+  "summary": "AI ROI is empirically positive and unambiguous based on ROIC data from public GPU spenders",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "META",
+    "GOOGL",
+    "AMZN",
+    "MSFT",
+    "NVDA"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Meta as the primary case study for this thesis — citing Meta's ROIC improvement from GPU-driven recommendation/advertising systems and specifically calling out the one quarter Meta's ROIC declined when it failed to produce a frontier model. This is a direct, named connection to the exact thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically identified the largest public GPU spenders with audited financials as the empirical basis for his ROI thesis. Google is one of the named hyperscalers whose ROIC improvement from CPU-to-GPU migration in advertising and cloud Baker explicitly discusses as evidence for the thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "While Amazon is a major hyperscaler and GPU spender, Baker did not specifically name Amazon in connection with this thesis about auditable ROIC improvement. The first-pass reasoning relies on implicit inclusion rather than explicit naming. Per the strict test, this is insufficient — remove."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "Microsoft was not specifically named by Baker in connection with this exact thesis about ROIC improvement from GPU spending. The first-pass reasoning is inferential ('fits squarely within Baker's thesis') rather than based on Baker explicitly connecting Microsoft to this claim. Remove."
+    },
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Nvidia was explicitly flagged as 'not named in this segment' in the first-pass audit. The connection is inferential — Nvidia benefits from continued GPU demand, but Baker did not specifically connect Nvidia to this ROIC thesis. This is a classic tangential inclusion. Remove."
+    }
+  ]
+}

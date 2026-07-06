@@ -1,0 +1,61 @@
+{
+  "date": "2020-05-07",
+  "source": "Columbia SIMA \u2014 COVID-19 market impact, technology investing, video games, venture capital",
+  "thesis_id": "T5",
+  "summary": "Edge computing will proliferate into retail stores and restaurants, driven by AI-powered in-store experiences requiring local compute that cannot be served from the cloud due to latency constraints",
+  "summary_extended": "Baker argues that Amazon Go-style frictionless retail stores \u2014 featuring facial recognition, personalized advertising, and automated checkout \u2014 will become ubiquitous within 5-10 years, creating massive demand for edge computing infrastructure. The core reasoning is that the physics of latency make cloud-only solutions unworkable for real-time in-store AI applications, necessitating significant local compute (he specifically cites NVIDIA GPU clusters deployed inside individual stores). He envisions a hierarchical compute architecture flowing from large core data centers to regional nodes to edge compute embedded in every retail location, representing a structural build-out of distributed AI infrastructure. The investment implication is that companies supplying the GPU hardware for these in-store deployments stand to benefit most directly, while the Amazon Go concept itself validates the demand thesis. Baker frames this as a speculative long-term view he is actively thinking through rather than a current portfolio position, so no near-term catalyst is identified.",
+  "detail": "Baker argues that Amazon Go-style stores will become ubiquitous within 5-10 years (facial recognition, personalized ads, frictionless checkout). This requires significant local compute (e.g., NVIDIA GPU clusters in-store) because latency physics prevents cloud-only solutions. He envisions a tributary system: large core data centers \u2192 distributed regional compute \u2192 edge compute in every store. He also speculates that eventually all personal computing devices will be monetized by cloud providers during idle time, driving near-100% global compute utilization.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker frames this as something he is 'thinking a lot about' rather than a current investment position; speculative on timing",
+  "themes": [
+    "edge computing",
+    "AI infrastructure",
+    "retail technology",
+    "cloud computing"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "there's going to be a lot of compute power in those stores",
+  "tickers_named_original": [
+    "AMZN"
+  ],
+  "tickers_direct": [
+    "AMZN",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "AMZN"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon Go is the explicit model Baker uses to describe the edge compute retail thesis; Amazon is the pioneer and primary subject of this structural trend."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly cites NVIDIA GPU clusters as the local compute hardware that will be deployed inside stores, making NVDA a direct and specific beneficiary of edge compute proliferation in retail."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google is not specifically named in this thesis as a subject or beneficiary; it may have appeared in adjacent transcript discussion but is not a direct subject or clear beneficiary of in-store edge compute build-out."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is not specifically implicated in this thesis about retail edge compute; its inclusion appears to be contamination from adjacent cloud computing discussion in the same transcript segment."
+    }
+  ]
+}

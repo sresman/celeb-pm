@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T3",
+  "summary": "Anthropic is structurally more capital-efficient than OpenAI, with dramatically lower cost per token and likely positive gross margins on inference today",
+  "summary_extended": "Baker argues that Anthropic is dramatically more capital-efficient than OpenAI, having burned approximately 80% less capital to reach a comparable revenue scale, and believes Anthropic is likely already generating positive gross margins on inference or will begin generating cash in 2025. He introduces a proprietary valuation framework called 'unconstrained run rate revenue' (URR), which estimates what a company's ARR would be if compute supply were not a bottleneck; by his estimate, Anthropic's URR is $100-200B, making its ~$900B valuation appear closer to 5x URR rather than an extreme multiple on current revenue. Baker's reasoning centers on Anthropic's lower cost per token and superior inference economics relative to OpenAI, suggesting structural advantages in the model layer that compound as compute costs decline. The investment implication is primarily relevant to private market investors or those tracking the frontier AI competitive landscape, as both Anthropic and OpenAI remain private; no directly tradeable public equity is the clear subject of this thesis.",
+  "detail": "Baker estimates Anthropic has burned ~80% less capital than OpenAI to reach a similar revenue scale. He believes Anthropic is probably already generating cash or will start this year. He introduces the concept of 'unconstrained run rate revenue' (URR), estimating Anthropic would be doing $100-200B ARR if compute-unconstrained, implying the $900B valuation is closer to 5x URR.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker provides specific burn comparison (80% less), specific revenue estimates ($100-150-200B unconstrained), and a specific valuation framework (5x URR). He has clearly done detailed work on this.",
+  "themes": [
+    "AI model layer",
+    "frontier AI revenue",
+    "capital efficiency"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "Anthropic probably starts generating cash this year",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "Anthropic",
+    "OpenAI"
+  ],
+  "tickers_subject": [
+    "Anthropic",
+    "OpenAI"
+  ],
+  "tickers_implied_original": [
+    "Anthropic (private)",
+    "OpenAI (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "Anthropic",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically and entirely about Anthropic's capital efficiency, burn rate, gross margins, and valuation framework \u2014 it is the direct subject."
+    },
+    {
+      "ticker": "OpenAI",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "OpenAI is the explicit benchmark comparison used throughout the thesis; the capital efficiency and burn rate claims are made relative to OpenAI, making it a co-subject of the comparative thesis rather than merely tangential."
+    }
+  ]
+}

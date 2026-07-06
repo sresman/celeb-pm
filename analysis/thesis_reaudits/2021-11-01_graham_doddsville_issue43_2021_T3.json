@@ -1,0 +1,35 @@
+{
+  "date": "2021-11-01",
+  "source": "Graham & Doddsville (Columbia Business School) — Investor interview with Gavin Baker, CIO of Atreides Management (Issue 43, Fall 2021)",
+  "thesis_id": "T3",
+  "summary": "Apple's IDFA change permanently expands Apple's advertising business at the expense of third-party ad platforms",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "AAPL",
+    "META",
+    "SNAP",
+    "GOOGL"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "AAPL",
+      "action": "KEEP",
+      "reasoning": "Apple is the direct and explicit subject of this thesis — Baker specifically argues that the IDFA change expands Apple's own advertising business, making AAPL the central subject of the claim."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named platforms heavily dependent on IDFA-based attribution as facing medium-term headwinds, and Meta (Facebook) is the canonical example of an IDFA-dependent platform that Baker would have specifically referenced in this context. The thesis explicitly discusses harm to third-party ad platforms with weaker first-party data, which directly describes Meta."
+    },
+    {
+      "ticker": "SNAP",
+      "action": "REMOVE",
+      "reasoning": "While Snap is a well-known IDFA casualty, the thesis summary does not indicate Baker specifically named Snap in connection with this thesis. The thesis references 'platforms heavily dependent on IDFA-based attribution' generically. Without evidence Baker specifically called out Snap by name in connection with this exact thesis (as opposed to mentioning it elsewhere in the interview), it should be removed per the strict test."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "Baker's thesis is primarily a bullish AAPL advertising thesis. Google is not specifically named as a beneficiary of the IDFA change in the thesis description — the structural winner identified is Apple. Google's inclusion appears to be an inference about walled garden beneficiaries rather than a specific connection Baker made to this thesis."
+    }
+  ]
+}

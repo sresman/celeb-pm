@@ -1,0 +1,53 @@
+{
+  "date": "2025-01-04",
+  "source": "All-In Podcast \u2014 2025 predictions (bestie guest Gavin Baker)",
+  "thesis_id": "T11",
+  "summary": "Waymo is a major potential deal target or IPO candidate in 2025 given rapid market share gains",
+  "summary_extended": "Baker argues that Waymo has achieved a remarkable inflection point in autonomous ride-sharing, capturing 22% market share in San Francisco within just 15 months \u2014 matching Lyft's share \u2014 and is now expanding to Los Angeles, Austin, and Phoenix. He highlights that Waymo has transitioned to a new, lower-cost hardware platform that materially reduces capex per city launch, making rapid geographic scaling more economically viable than before. Baker sees 2025 as a likely catalyst year for a major corporate event: either a large external financing round, an IPO, or an M&A transaction with an incumbent ride-sharing platform. The investment implication is that Waymo's parent Alphabet (GOOGL) holds the primary upside as the owner of this asset, while incumbent ride-sharing companies like Uber and Lyft face existential competitive pressure and could either be acquirers or victims of Waymo's expansion.",
+  "detail": "Waymo went from 0% to 22% market share in SF in 15 months (matching Lyft), is expanding to LA, Austin, Phoenix, and has moved to a new hardware platform that significantly reduces capex per launch. Baker sees potential for massive financing, IPO, or M&A with a ride-sharing company.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker provides specific market share data and identifies multiple potential deal structures but does not express a personal investment position",
+  "themes": [
+    "autonomous vehicles",
+    "ride-sharing disruption",
+    "M&A"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "waymo is now a 22% market share of rides in SF which is the same as Lyft",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL",
+    "UBER",
+    "LYFT"
+  ],
+  "tickers_subject": [
+    "GOOGL",
+    "LYFT"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "UBER",
+    "LYFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Waymo is a wholly-owned Alphabet subsidiary; any IPO, financing, or M&A event directly crystallizes value for GOOGL shareholders, making it the primary subject of this thesis."
+    },
+    {
+      "ticker": "UBER",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly identifies ride-sharing companies as potential M&A partners for Waymo; Uber is the largest US-listed ride-sharing company and a plausible acquirer or strategic partner, making it a direct beneficiary or risk depending on deal structure."
+    },
+    {
+      "ticker": "LYFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Lyft as the benchmark competitor whose 22% SF market share Waymo has matched, making Lyft a direct subject of the competitive disruption thesis \u2014 it faces the most immediate threat from Waymo's expansion."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T16",
+  "summary": "Edge AI running pruned frontier models on-device is the primary bear case for cloud AI compute demand",
+  "summary_extended": "Baker identifies edge AI \u2014 running pruned frontier models locally on-device \u2014 as the most plausible and serious bear case for cloud AI compute demand, second only to scaling laws breaking down. He argues that within three years, smartphones (likely larger and carrying more on-device DRAM) will be capable of running pruned versions of models like Gemini 5 at 30\u201360 tokens per second at zero marginal cost to the user. Apple's explicit stated strategy is to act as an AI distributor: handle as much inference as possible privately on-device and call out to cloud 'god models' only when local capability is insufficient. Baker's investment implication is cautionary for cloud inference beneficiaries \u2014 if on-device intelligence reaches roughly 115 IQ and proves 'good enough' for most tasks, demand for cloud inference compute (and thus GPU/TPU datacenter buildout) could materially disappoint relative to current expectations.",
+  "detail": "Within 3 years, phones (larger/bulkier with more DRAM) will run pruned versions of models like Gemini 5 at 30-60 tokens/second for free. This is Apple's explicit strategy\u2014be a distributor of AI, run it privately on-device, call cloud 'god models' only when needed. If on-device intelligence at ~115 IQ is 'good enough,' demand for cloud inference compute could disappoint.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker calls this 'by far the most plausible and scariest bear case' other than scaling laws breaking, and attributes it to Apple's stated strategy",
+  "themes": [
+    "AI frontier models",
+    "AI applications",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "edge AI is by far the most plausible and scariest bear case",
+  "tickers_named_original": [
+    "AAPL"
+  ],
+  "tickers_direct": [
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Apple is the direct subject of this thesis \u2014 Baker explicitly names Apple's on-device AI strategy as the mechanism driving the bear case, making AAPL central to the thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is a direct subject because Baker references Gemini 5 as the model being pruned and run on-device, and Google's cloud inference revenue is directly threatened if edge AI proves sufficient. Google also operates TPU-based cloud infrastructure that faces demand risk from this thesis."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Nvidia is a direct subject because the bear case is explicitly about reduced demand for cloud inference compute \u2014 Nvidia's GPU datacenter business is the primary asset at risk if edge AI displaces cloud inference demand at scale. [RE-AUDIT: While Nvidia's GPU datacenter business is a logical downstream casualty of reduced cloud inference demand, Baker did not specifically connect NVDA to this edge AI thesis in the way he did AAPL and GOOGL. The connection is inferential \u2014 Nvidia is a general cloud compute beneficiary whose risk is implied by the thesis, not explicitly named as a subject of this specific bear case argument. Under the strict test, this is tangential.]"
+    }
+  ]
+}

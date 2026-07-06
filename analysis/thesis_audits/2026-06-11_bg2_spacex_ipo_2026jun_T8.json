@@ -1,0 +1,74 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T8",
+  "summary": "Nvidia is maintaining and potentially gaining GPU market share despite ASIC competition, contrary to consensus expectations",
+  "summary_extended": "Baker and Clark Tang argue that Nvidia has maintained or even gained GPU market share in 2025-26 despite widespread expectations that custom ASICs would erode its dominance, with Tang reporting directly from Computex and GTC that Nvidia's share looks strong on revenue, gigawatt, and unit metrics. The key nuance is that if Anthropic's non-Nvidia usage is excluded from the analysis, Nvidia may have actually gained share \u2014 suggesting the ASIC threat is concentrated in one customer rather than being a broad industry trend. Baker notes that Meta and Microsoft's in-house ASIC efforts have been disappointing, and while OpenAI's Jalapeno chip showed promise, it requires excessive cooling and power, limiting its competitiveness. The investment implication is that the consensus bearish view on Nvidia's share trajectory is wrong, and Nvidia remains the dominant and accelerating supplier of AI compute infrastructure with no credible near-term challenger at scale. Broadcom and MediaTek are relevant as ASIC designers for hyperscaler TPUs but are not displacing Nvidia at the aggregate level.",
+  "detail": "Clark Tang reports from Computex/GTC that Nvidia has maintained share 'very handsomely' on revenue, gigawatt, and unit scales. If Anthropic's non-Nvidia usage is excluded, Nvidia may have actually gained share in 2025-26. The ASIC landscape is becoming more nuanced (MediaTek V8T vs Broadcom V8I for TPUs) but Nvidia remains dominant. Meta and Microsoft ASICs have been disappointing; OpenAI's Jalapeno chip was good but requires more cooling/power.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Clark Tang presents this as a direct takeaway from Computex; Baker corroborates with board meeting anecdote; specific chip names and share data cited",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "Nvidia is accelerating and they just continue to out execute their competitors",
+  "tickers_named_original": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "MRVL"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "META",
+    "MSFT",
+    "OpenAI (private)",
+    "MediaTek"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is about Nvidia maintaining and gaining GPU market share against ASIC competition \u2014 Nvidia is the direct subject."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Broadcom is specifically named as the designer of the V8I TPU ASIC for hyperscalers, making it a direct participant in the ASIC competitive landscape discussed. It benefits from ASIC spend even if Nvidia dominates overall."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is not mentioned in the thesis detail at all \u2014 it appears to be contamination from an adjacent semiconductor discussion. This thesis is about Nvidia vs ASICs, not Nvidia vs AMD GPUs."
+    },
+    {
+      "ticker": "MRVL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Marvell is not referenced in the thesis detail. The ASIC competitors named are Broadcom and MediaTek. Marvell may be a general AI semiconductor name but is not a subject or beneficiary of this specific thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Meta is mentioned only as an example of a company whose in-house ASIC effort has been disappointing \u2014 this actually reinforces Nvidia's dominance rather than making Meta a beneficiary. Meta is not an investable angle from this thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Microsoft is cited only as another example of a disappointing in-house ASIC effort, reinforcing Nvidia's position. Microsoft is not a beneficiary of this thesis and is tangential."
+    }
+  ]
+}

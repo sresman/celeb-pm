@@ -1,0 +1,45 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T13",
+  "summary": "X (Twitter) and YouTube are the most valuable data assets for AI training; synthetic data reduces but doesn't eliminate data moats",
+  "summary_extended": "Baker argues that while synthetic data is broadly eroding the competitive advantage of proprietary datasets, a small number of truly unique human-generated datasets retain durable moats for training frontier AI models. He specifically identifies X (Twitter) as likely the single most valuable training dataset due to its capture of authentic human debate and the Community Notes fact-checking corpus, followed by YouTube's video data and Facebook's video library as the other irreplaceable assets. The investment implication is that the owners of these platforms \u2014 Meta (Facebook/Instagram video), Alphabet (YouTube), and X (private) \u2014 hold structural advantages in AI model training that synthetic data cannot fully replicate. Baker acknowledges synthetic data is changing the landscape and tempers his conviction accordingly, but maintains these specific datasets will matter for training frontier models over the medium term. Notably, X is privately held, so the actionable public equity plays are META and GOOGL as the owners of the two remaining named datasets.",
+  "detail": "Synthetic data is making data less of a competitive advantage broadly, but a few truly unique datasets remain valuable: X (human debate, Community Notes), YouTube (video data), and Facebook's video data. These are the datasets that will matter for training frontier models.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker states this as a considered view but acknowledges synthetic data is changing the landscape",
+  "themes": [
+    "AI foundation models",
+    "data moats",
+    "competitive moats"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "X probably being the most valuable data set for training these models",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "META",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "META",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "META",
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta owns Facebook's video data, which Baker explicitly names as one of the three irreplaceable datasets for frontier AI training, making META a direct subject of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Alphabet owns YouTube, which Baker explicitly names as one of the three most valuable and irreplaceable datasets for frontier AI model training, making GOOGL a direct subject of this thesis."
+    }
+  ]
+}

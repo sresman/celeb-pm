@@ -1,0 +1,60 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T8",
+  "summary": "Most ASICs other than Trainium and TPU will fail; only those with multi-generation experience will be competitive",
+  "summary_extended": "Baker argues that the ASIC market for AI accelerators will consolidate to only two viable players \u2014 Google's TPU and Amazon's Trainium \u2014 because building a competitive ASIC requires at least three chip generations of accumulated learning, a bar that almost no other company can meet. He supports this with the historical example of Google's TPU, which was not competitive until v3/v4, and notes that Amazon's Trainium 3 is the first generation that is merely 'okay,' with Trainium 4 likely to be genuinely good. Baker explicitly states he will be surprised if any ASICs beyond Trainium and TPU succeed, implying that all other ASIC efforts \u2014 from startups and hyperscalers alike \u2014 will fail to achieve competitive scale. Compounding this, Nvidia's annual GPU cadence raises the full-stack competitive bar continuously, making it structurally harder for any new ASIC entrant to catch up. The investment implication is that Nvidia remains the dominant AI accelerator beneficiary by default, while Amazon and Google are the only credible internal ASIC challengers, and AMD and other GPU/ASIC competitors are unlikely to displace this dynamic.",
+  "detail": "Baker argues it takes at least three chip generations to make a competitive ASIC (TPU wasn't competitive until v3/v4). Amazon's ASIC team is the best non-Google/Nvidia team. Trainium 3 is the first time it's 'okay,' Trainium 4 will probably be good. Most other ASICs will not succeed. Nvidia's response\u2014annual GPU cadence\u2014makes it nearly impossible for ASICs to keep up across the full stack.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'I will be surprised if there are a lot of ASICs other than Trainium and TPU' and provides detailed generational analysis",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "I will be surprised if there are a lot of ASICs other than Trainium and TPU",
+  "tickers_named_original": [
+    "AMZN",
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "AMZN",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "AMZN",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "AMD"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly argues that Nvidia's annual GPU cadence makes it nearly impossible for ASICs to compete across the full stack, making Nvidia the structural winner as most ASIC challengers fail. Nvidia directly benefits from this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon's Trainium is one of only two ASICs Baker believes will succeed. The thesis is specifically about Trainium's generational trajectory and Amazon's ASIC team quality."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google's TPU is the other ASIC Baker believes will succeed, and it is used as the primary historical example of the multi-generation learning curve thesis. Google is a direct subject of this thesis."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is not mentioned in the thesis detail or quote, and Baker's argument is about ASICs vs. Nvidia GPUs \u2014 AMD's GPU efforts are not the subject of this thesis. AMD's inclusion appears to be bleed-over from adjacent discussion and should be removed."
+    }
+  ]
+}

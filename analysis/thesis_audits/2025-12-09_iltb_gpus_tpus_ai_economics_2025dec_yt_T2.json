@@ -1,0 +1,54 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T2",
+  "summary": "Reasoning models (RLVR + test-time compute) bridged an ~18-month gap in AI progress caused by Blackwell delays, and these two new scaling laws are still in early innings",
+  "summary_extended": "Baker argues that reasoning models \u2014 specifically reinforcement learning from verifiable rewards (RLVR) combined with test-time compute scaling \u2014 effectively 'saved AI' by bridging an approximately 18-month gap in frontier model progress that would otherwise have stalled due to Blackwell GPU delays and the physical ceiling on coherent Hopper clusters (~200K GPUs). Without this breakthrough, Baker contends there would have been essentially no meaningful AI progress from mid-2024 through the Gemini 3 generation, as pre-training scaling was bottlenecked by hardware availability. Reasoning introduced two new scaling laws \u2014 RLVR and test-time compute \u2014 that are multiplicative with pre-training scaling and, critically, are still in very early innings, meaning the compounding effect on AI capability has barely begun. The investment implication is that AI infrastructure demand remains structurally robust and that the frontier model race is far from over, sustaining demand for compute from both GPU providers and hyperscalers building proprietary AI accelerators. Baker frames this as foundational context for understanding the current AI landscape rather than a thesis tied to any single company's near-term earnings.",
+  "detail": "Baker argues that without reasoning, AI progress would have stalled from mid-2024 through Gemini 3 because Blackwell was delayed and Hopper clusters were maxed out at ~200K GPUs coherent. Reasoning 'saved AI' by enabling progress without new hardware. These two new scaling laws are multiplicative with pre-training and still very early.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses strong language: 'reasoning kind of saved AI,' 'there would have been none' (progress), and frames this as foundational to understanding the current AI landscape",
+  "themes": [
+    "AI frontier models",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "reasoning kind of bridged this 18-month gap, reasoning kind of saved AI",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "GOOGL",
+    "MSFT",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is the primary supplier of the GPU hardware (Hopper and Blackwell) that Baker explicitly references as the bottleneck and the subsequent demand driver. Sustained reasoning-model scaling sustains and grows GPU demand, making NVDA a direct beneficiary of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker mentions Gemini 3 as a reference point for the timeline of stalled progress, but the thesis is not specifically about Google's competitive position or its TPU business. The mention is illustrative of the timeline, not a claim about GOOGL as a subject or beneficiary."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT does not appear to be directly referenced in this specific thesis about reasoning models bridging the hardware gap. Its inclusion appears to be contamination from adjacent AI infrastructure themes in the same transcript."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META is not referenced in this specific thesis about RLVR and test-time compute bridging the Blackwell delay gap. Its inclusion appears to be contamination from adjacent discussions in the same transcript segment."
+    }
+  ]
+}

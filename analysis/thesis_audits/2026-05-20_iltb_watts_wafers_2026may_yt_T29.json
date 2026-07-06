@@ -1,0 +1,48 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T29",
+  "summary": "The 'turbo quad' Google memory optimization paper was a non-event for DRAM demand despite causing market volatility \u2014 Baker found no AI engineer who believed it would impact DRAM demand",
+  "summary_extended": "Baker argues that Google's publication of a memory optimization paper called 'turbo quad' on X was a deliberate or at minimum suspiciously timed non-event that caused an unwarranted sell-off in DRAM stocks. He investigated the paper's claims by canvassing AI engineers and found not a single one who believed turbo quad would have any meaningful impact on DRAM demand, suggesting the market reaction was driven entirely by noise rather than fundamental change. The timing is particularly notable because Google was simultaneously in long-term agreement (LTA) negotiations with Micron, Samsung, and SK Hynix, raising the possibility that the viral publication served as a negotiating tactic to pressure suppliers. Baker frames the resulting sell-off in DRAM names as a buying opportunity, with Micron being the primary US-listed beneficiary of this view given its direct exposure to AI-driven DRAM and HBM demand.",
+  "detail": "During Google's negotiations with Micron, Samsung, and SK Hynix on long-term agreements, Google publicized a memory optimization paper on X that went viral and caused DRAM stocks to sell off. Baker investigated and found zero AI engineers who believed it would have any impact on DRAM demand. He frames this as a buying opportunity created by noise, and notes the timing (during LTA negotiations) as suspicious.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states he 'was unable to find a single AI engineer on planet Earth who believed turbo quad would have any impact on DRAM demand'",
+  "themes": [
+    "DRAM/HBM",
+    "semiconductor supply chain",
+    "valuation"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "unable to find a single AI engineer who believed turbo quad would impact DRAM demand",
+  "tickers_named_original": [
+    "MU",
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "MU",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "MU",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "SK Hynix (KRX: 000660)",
+    "Samsung (KRX: 005930)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is a direct subject \u2014 it is one of the DRAM/HBM suppliers in LTA negotiations with Google and its stock was directly affected by the turbo quad sell-off. Baker's buying opportunity thesis centers on DRAM producers like MU."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is the direct subject of the thesis as the entity that published the turbo quad paper and is simultaneously negotiating LTAs with DRAM suppliers, making its role central to the thesis narrative."
+    }
+  ]
+}

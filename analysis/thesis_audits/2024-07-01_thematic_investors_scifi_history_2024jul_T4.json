@@ -1,0 +1,71 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T4",
+  "summary": "Optical networking is a critical and inevitable component of future AI data center architecture, both within and across data centers",
+  "summary_extended": "Baker argues that optical networking \u2014 specifically coherent optics \u2014 is a hard engineering necessity, not an optional upgrade, for the next generation of AI data centers. He grounds this in a concrete physical constraint: there are only three sites in the US where nuclear reactors are clustered closely enough to power a single 1\u20135 GW data center; everywhere else, power must be aggregated from discrete plants across long distances, which requires coherent optical interconnects. Furthermore, even within data centers themselves, as they scale to 5\u20136 GW and the footprint of roughly 10 Pentagons, coherent optics will be required for internal communication at those distances. The investment implication is that coherent optical networking companies face a structural, durable demand tailwind driven by physics and infrastructure scale, not by discretionary spending cycles. Baker frames this as a near-certain outcome with no engineering alternative, making optical networking suppliers direct beneficiaries of AI infrastructure buildout.",
+  "detail": "There are only three sites in the US with nuclear reactors close enough together to power a 1-5 GW data center. Beyond those sites, stringing together discrete power plants requires coherent optical clusters across long distances. Even within data centers, as they scale to 5-6 GW and the size of 10 Pentagons, coherent optics will be required internally. This is a structural, not optional, upgrade.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as a hard engineering constraint with no alternative solution, not a speculative view",
+  "themes": [
+    "AI datacenter infrastructure",
+    "optical networking",
+    "power/energy"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "the only way that will happen is with Optics",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CIEN",
+    "COHR",
+    "LITE",
+    "INFN"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "CIEN",
+    "COHR",
+    "LITE",
+    "IIVI",
+    "FNSR"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CIEN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Ciena is a leading coherent optical networking vendor; directly benefits from the structural demand for coherent optics in and across large-scale AI data centers that Baker describes."
+    },
+    {
+      "ticker": "COHR",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Coherent Corp. is a major producer of coherent optical components and transceivers; directly in the supply chain Baker identifies as structurally necessary."
+    },
+    {
+      "ticker": "LITE",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Lumentum (formerly LITE) produces optical components including coherent transceivers; directly benefits from the coherent optics demand thesis."
+    },
+    {
+      "ticker": "IIVI",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "II-VI was acquired by and merged into Coherent Corp. (COHR) in 2022; IIVI no longer trades as a separate entity and is therefore redundant/invalid as a distinct ticker."
+    },
+    {
+      "ticker": "FNSR",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Finisar (FNSR) was acquired by II-VI (now COHR) in 2019 and no longer trades independently; this ticker is obsolete and should be removed."
+    },
+    {
+      "ticker": "INFN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Infinera is a US-listed coherent optical networking company directly in the market Baker describes \u2014 long-haul and data center interconnect coherent optics \u2014 making it an unambiguous beneficiary of this structural thesis."
+    }
+  ]
+}

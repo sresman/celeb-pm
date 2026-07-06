@@ -1,0 +1,36 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T3",
+  "summary": "Google has a temporary but significant cost advantage as the lowest-cost token producer due to TPU v6/v7 while Blackwell was delayed",
+  "summary_extended": "Baker argues that Google gained a temporary but strategically significant cost advantage in AI inference by training Gemini 3 on TPU v6/v7 while Nvidia's Blackwell GPU generation suffered delays, making Google the lowest-cost token producer in the market during this window. He frames TPU v6/v7 as analogous to an 'F4 Phantom' \u2014 a highly capable, battle-tested platform \u2014 while Blackwell is the 'F-35,' more powerful but delayed, leaving Google with a meaningful head start. Baker contends this cost advantage is not accidental but reflects a deliberate Google strategy to 'suck the economic oxygen out of the AI ecosystem' by offering AI services at negative margins, thereby starving competitors and startups of the revenue needed to sustain their own model development and infrastructure investment. The investment implication is that Google's vertical integration via TPUs gives it a structural lever to compete on cost that pure-play model companies and cloud rivals relying on Nvidia hardware cannot easily replicate in the near term. Baker views this as a profound and underappreciated dynamic that could reshape competitive positioning across the AI stack.",
+  "detail": "Google trained Gemini 3 on TPU v6/v7 (described as 'F4 Phantoms') while Blackwell (the 'F-35') was delayed. This made Google the lowest-cost token producer, enabling a strategy of 'sucking the economic oxygen out of the AI ecosystem' by running AI at negative margins to starve competitors of funding.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'really important' and 'profound,' dedicates extended analysis to it, and frames it as a deliberate strategic choice by Google",
+  "themes": [
+    "AI frontier models",
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "Google has been sucking the economic oxygen out of the AI ecosystem",
+  "tickers_named_original": [
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Google's TPU-driven cost advantage and its deliberate strategy to undercut competitors on AI token pricing \u2014 GOOGL is the direct subject."
+    }
+  ]
+}

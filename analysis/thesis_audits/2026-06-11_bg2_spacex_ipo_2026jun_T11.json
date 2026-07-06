@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T11",
+  "summary": "Global AI inference revenue will exceed $200B in 2026 and reach $300B+ by 2027, making the CapEx/revenue math work",
+  "summary_extended": "Baker argues that global AI inference revenue will exceed $200B by end of 2026 and reach $400-500B in 2027, with a path to $1T+ by 2029 \u2014 figures he views as conservative relative to Morgan Stanley's $300B 2027 estimate. His reasoning is that at 60-70% gross margins, the revenue trajectory justifies the $1.1-1.5T in cumulative AI CapEx being deployed, making the capital spending math work rather than representing a bubble. He cites Dario Amodei's prior forecast of low hundreds of billions by 2028 and trillions before 2030 as corroborating evidence, and notes that Jensen Huang's earlier $1T inference revenue forecast \u2014 once considered aggressive \u2014 now looks conservative in retrospect. The investment implication is that AI infrastructure spending is underpinned by real and rapidly growing revenue, supporting continued investment in hyperscalers and AI infrastructure providers rather than treating CapEx as speculative overspend.",
+  "detail": "Baker says $300B in 2027 AI lab revenue (from Morgan Stanley models) is 'low' and expects well over $200B by end of 2026. At 60-70% gross margins, the math on $1.1-1.5T CapEx works. Dario Amodei previously forecast low hundreds of billions by 2028 and trillions before 2030. Baker sees a path to $400-500B in 2027 and $1T+ by 2029.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses 'I just think it's low, man' and 'well over 200 billion' with no hedging; provides specific trajectory; calls Jensen's prior $1T forecast conservative in retrospect",
+  "themes": [
+    "frontier AI models",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "I think we end this year well over 200 billion in inference revenue",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL",
+    "MSFT",
+    "META"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Anthropic (private)",
+    "OpenAI (private)",
+    "GOOGL",
+    "MSFT",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google is a major AI inference revenue generator (via Gemini API, Cloud AI services) and a top hyperscaler deploying the CapEx in question; directly benefits from the inference revenue thesis"
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft monetizes AI inference through Azure OpenAI and Copilot products and is one of the largest CapEx deployers; directly benefits from the inference revenue thesis validating its spending"
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Meta generates AI inference revenue through its Llama-based products and ad targeting AI, and is a major CapEx spender whose investment is validated by this revenue trajectory"
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "AWS is a leading AI inference platform (Bedrock, SageMaker) and one of the largest hyperscaler CapEx spenders; unambiguously implied as a direct beneficiary of the inference revenue thesis alongside GOOGL and MSFT [RE-AUDIT: While AWS is a major inference platform, Baker did not specifically name Amazon in connection with this thesis. The summary says 'hyperscalers' generically and names GOOGL/MSFT/META explicitly. AMZN was added by inference, not because Baker specifically connected it to this exact claim.]"
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "NVDA is the dominant supplier of GPU infrastructure enabling AI inference at scale; if inference revenue justifies $1.1-1.5T in CapEx, NVDA is the primary hardware beneficiary of that spend [RE-AUDIT: Nvidia is a GPU supplier, not an inference revenue generator or hyperscaler CapEx deployer in the sense Baker is discussing. Even if mentioned elsewhere in the interview, Baker's thesis is about inference revenue justifying hyperscaler CapEx \u2014 Nvidia is tangential to that specific claim and was not specifically named in connection with it.]"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2020-11-15",
+  "source": "Sohn Australia 2020 \u2014 Omnichannel / tech",
+  "thesis_id": "T3",
+  "summary": "Physical stores are a structural competitive advantage for omnichannel retailers, not a liability",
+  "summary_extended": "Baker argues that physical stores represent a structural competitive advantage for omnichannel retailers, not the liability that the market has historically priced them as. His evidence includes Amazon's Whole Foods acquisition, JD and Alibaba opening physical stores, and Target's own unit economics: store-based fulfillment is 40% cheaper than distribution-center shipping, click-and-collect is 90% cheaper, and omnichannel customers spend 4x more than store-only and 10x more than digital-only customers. The core mechanism is that stores lower customer acquisition costs (CAC) and improve LTV/CAC ratios while simultaneously serving as low-cost last-mile delivery hubs, making the physical footprint a logistics and marketing asset rather than a cost burden. The investment implication is to be long omnichannel retailers with large physical store networks, with Target cited as the clearest example of a retailer executing this model with measurable unit economics advantages over pure-play e-commerce fulfillment.",
+  "detail": "Amazon, JD, and Alibaba are all opening physical stores because they believe the future is omnichannel. Stores lower customer acquisition costs (CAC), improve LTV/CAC ratios, and serve as low-cost last-mile delivery hubs. Target's store-based fulfillment is 40% cheaper than DC-based shipping; click-and-collect is 90% cheaper. Omnichannel customers spend 4x store-only and 10x digital-only customers.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as a structural conviction built over years, validated by Amazon's Whole Foods acquisition, and supported by Target's own unit economics data",
+  "themes": [
+    "omnichannel retail",
+    "physical retail transformation",
+    "last-mile logistics"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "stores are valuable they create better unit economics",
+  "tickers_named_original": [
+    "TGT",
+    "AMZN"
+  ],
+  "tickers_direct": [
+    "TGT",
+    "AMZN"
+  ],
+  "tickers_subject": [
+    "TGT",
+    "AMZN"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TGT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Target is the primary case study for the thesis, with specific unit economics data cited (40% cheaper store fulfillment, 90% cheaper click-and-collect) and is the clearest long idea implied by the structural argument."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon's Whole Foods acquisition and physical store openings are cited as direct validation of the omnichannel thesis \u2014 Amazon's behavior is used as evidence that physical stores are valuable, making it a subject of the thesis rather than merely tangential."
+    }
+  ]
+}

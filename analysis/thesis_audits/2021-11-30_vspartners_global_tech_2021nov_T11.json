@@ -1,0 +1,64 @@
+{
+  "date": "2021-11-30",
+  "source": "VS Partners / Financial Times Global Seattle Symposium \u2014 Global technology investment: hype, hope, reality",
+  "thesis_id": "T11",
+  "summary": "Leading-edge semiconductor manufacturing is a critical geopolitical chokepoint \u2014 only 5 countries can do it",
+  "summary_extended": "Baker argues that leading-edge semiconductor manufacturing is a critical geopolitical chokepoint controlled by a small number of Western companies, making full US-China tech decoupling structurally very difficult. The thesis rests on the observation that advanced chip fabrication requires ASML's EUV lithography machines (the sole global supplier, based in the Netherlands) combined with process equipment from American firms Lam Research, KLA, and Applied Materials \u2014 without all of these, no country can manufacture leading-edge semiconductors. Baker emphasizes that even possessing the machines is insufficient; years of proprietary trial-and-error 'recipe' development are required to achieve viable yields, creating an additional non-replicable moat. The investment implication is that these four equipment companies occupy structurally irreplaceable positions in the global semiconductor supply chain, giving them durable pricing power and geopolitical insulation regardless of where fabs are built. No specific price targets or timeframes were cited, but Baker frames this as a long-term structural constraint on both geopolitics and competitive dynamics in semiconductors.",
+  "detail": "Baker identifies that leading-edge semiconductor manufacturing requires ASML EUV machines (Dutch) plus Lam Research, KLA, and Applied Materials equipment (all American). Without access to these machines, no country can make leading-edge chips. This creates a structural dependency that makes full US-China tech decoupling very difficult. Manufacturing know-how also requires years of trial-and-error recipe development beyond just having the machines.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker speaks with detailed specificity about the equipment supply chain and names specific companies. Frames this as a structural constraint on geopolitics.",
+  "themes": [
+    "semiconductor supply chain",
+    "geopolitics",
+    "US-China tech rivalry",
+    "semiconductor equipment"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "you need to buy these big machines from a dutch company called asml",
+  "tickers_named_original": [
+    "ASML",
+    "LRCX",
+    "KLAC",
+    "AMAT"
+  ],
+  "tickers_direct": [
+    "ASML",
+    "LRCX",
+    "KLAC",
+    "AMAT"
+  ],
+  "tickers_subject": [
+    "ASML",
+    "LRCX",
+    "KLAC",
+    "AMAT"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ASML",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "ASML is explicitly named as the sole supplier of EUV lithography machines, the single most critical chokepoint in leading-edge semiconductor manufacturing. The thesis is directly about ASML's irreplaceable role."
+    },
+    {
+      "ticker": "LRCX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Lam Research is specifically named as one of the American equipment suppliers whose machines are required for leading-edge chip manufacturing, making it a direct subject of the chokepoint thesis."
+    },
+    {
+      "ticker": "KLAC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "KLA is specifically named as one of the American equipment suppliers whose machines are required for leading-edge chip manufacturing, making it a direct subject of the chokepoint thesis."
+    },
+    {
+      "ticker": "AMAT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Applied Materials is specifically named as one of the American equipment suppliers whose machines are required for leading-edge chip manufacturing, making it a direct subject of the chokepoint thesis."
+    }
+  ]
+}

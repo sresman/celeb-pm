@@ -1,0 +1,59 @@
+{
+  "date": "2026-05-12",
+  "source": "Sohn NY 2026 \u2014 Tech investing fireside",
+  "thesis_id": "T4",
+  "summary": "Neo/specialist clouds (CoreWeave, Crusoe, Nebius, Lambda) represent a durable business model, not a transitional arbitrage",
+  "summary_extended": "Baker argues that neo/specialist cloud providers \u2014 companies like CoreWeave, Crusoe, Nebius, and Lambda \u2014 represent a structurally durable business model rather than a transitional arbitrage that will eventually be displaced by hyperscalers. His core reasoning is that running GPU clusters at high utilization is operationally extremely difficult, analogous to piloting a Formula 1 car, and that CoreWeave in particular achieves 2\u20133x higher GPU utilization per hour than lower-quality competitors, constituting a genuine and defensible operational moat. He contends that hyperscalers were historically locked in a cost-minimization mentality and are only now beginning the cultural shift required to compete effectively in this space, meaning the window for specialist operators remains open. Atreides holds a disclosed large position in Crusoe, and Baker notes he was conflicted out of CoreWeave at a $1.1B valuation, underscoring his long-term conviction in the category.",
+  "detail": "Baker argues running GPU clusters at high utilization is extremely difficult \u2014 analogous to driving a Formula 1 car. CoreWeave GPUs are utilized 2\u20133x more per hour than lower-quality providers. This operational excellence is a durable competitive advantage. Hyperscalers were historically in a cost mentality and are only now making the cultural shift. Atreides has a large position in Crusoe. Baker was conflicted out of CoreWeave at $1.1B valuation.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker has a disclosed large position in Crusoe, frames the category as structurally durable with a specific operational moat argument, and uses extended analogy to make the case",
+  "themes": [
+    "AI datacenter infrastructure",
+    "neo clouds",
+    "GPU compute"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "it is durable and the hyper scalers for a long time were stuck in a cost mentality",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRWV",
+    "NBIS"
+  ],
+  "tickers_subject": [
+    "CRWV",
+    "NBIS"
+  ],
+  "tickers_implied_original": [
+    "CoreWeave (CRWV)",
+    "Crusoe Energy",
+    "Nebius",
+    "Lambda Labs"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "CoreWeave is explicitly named as the primary example of operational excellence in GPU utilization, with specific 2-3x utilization data cited. It is a direct subject of the thesis."
+    },
+    {
+      "ticker": "CRUS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Crusoe Energy (CRUS) is a semiconductor company unrelated to Crusoe the cloud provider. The implied ticker for Crusoe cloud is not US-listed as a public equity under a clean ticker \u2014 removing to avoid misidentification."
+    },
+    {
+      "ticker": "NBIS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nebius (NBIS) is explicitly named as one of the neo/specialist cloud providers that constitute the durable category Baker is describing. It is a direct subject of the thesis and is US-listed on Nasdaq."
+    },
+    {
+      "ticker": "LMND",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Lambda Labs is not publicly listed; there is no US-listed equity ticker for Lambda Labs. Removing to avoid misidentification with unrelated tickers."
+    }
+  ]
+}

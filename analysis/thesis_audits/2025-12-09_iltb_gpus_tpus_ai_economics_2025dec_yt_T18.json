@@ -1,0 +1,47 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T18",
+  "summary": "A true DRAM capacity cycle (not seen since the late 1990s) could emerge as a natural governor and risk to AI buildout",
+  "summary_extended": "Baker raises the possibility that AI infrastructure buildout could trigger the first true DRAM capacity cycle since the late 1990s \u2014 a qualitatively different regime from normal memory market fluctuations. He argues that memory is a gating factor for AI compute, and if demand outstrips supply sufficiently, DRAM prices could rise by multiples rather than percentages, as occurred before TSMC's foundry model smoothed semiconductor supply cycles. Baker frames this not as a high-conviction call but as a structural risk and potential natural governor that could slow the AI buildout \u2014 a tail risk worth monitoring. He does not assign a specific probability or timing, but the implication is that US-listed DRAM producers like Micron would be the primary beneficiaries if such a cycle materializes.",
+  "detail": "Memory is a gating factor for AI. The last true DRAM capacity cycle was in the late 1990s before TSMC smoothed supply. If demand outstrips supply sufficiently, prices could go up by multiples rather than percentages\u2014a qualitatively different regime. Baker flags this as a potential natural governor/risk but doesn't assign high probability.",
+  "confidence": "speculative",
+  "confidence_evidence": "Baker raises this as a possibility ('something that could slow all this down') but doesn't commit to a view on probability or timing",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "if we get our first true DRAM cycle since the late 90s",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "MU",
+    "005930.KS",
+    "000660.KS"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is the only US-listed DRAM producer and would be a direct beneficiary of a DRAM capacity cycle driving prices up by multiples. This is the clearest implied equity play from the thesis."
+    },
+    {
+      "ticker": "005930.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Samsung is a major DRAM producer but is Korea-listed and not a US equity. Per audit rules, non-US-listed stocks should be removed."
+    },
+    {
+      "ticker": "000660.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SK Hynix is a major DRAM producer but is Korea-listed and not a US equity. Per audit rules, non-US-listed stocks should be removed."
+    }
+  ]
+}

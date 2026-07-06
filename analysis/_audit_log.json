@@ -1,0 +1,2888 @@
+{
+  "model": "claude-sonnet-4-6",
+  "theses_selected": 319,
+  "ok": 316,
+  "skipped": 3,
+  "errors": [],
+  "tickers_removed_tangential": 179,
+  "tickers_added": 79,
+  "avg_summary_len": 133.9,
+  "avg_summary_extended_len": 1029.0,
+  "timeline_v2_entries": 319,
+  "total_input_tokens": 398301,
+  "total_output_tokens": 115414,
+  "estimated_cost_usd": 2.9261,
+  "rows": [
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T1.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T2.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T3.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T4.json",
+      "status": "ok",
+      "input_tokens": 1295,
+      "output_tokens": 556
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T5.json",
+      "status": "ok",
+      "input_tokens": 1302,
+      "output_tokens": 452
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T6.json",
+      "status": "ok",
+      "input_tokens": 1292,
+      "output_tokens": 394
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T7.json",
+      "status": "ok",
+      "input_tokens": 1275,
+      "output_tokens": 541
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T8.json",
+      "status": "ok",
+      "input_tokens": 1326,
+      "output_tokens": 265
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T9.json",
+      "status": "ok",
+      "input_tokens": 1285,
+      "output_tokens": 485
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T10.json",
+      "status": "ok",
+      "input_tokens": 1234,
+      "output_tokens": 246
+    },
+    {
+      "date": "2020-05-07",
+      "source_label": "columbia_sima_investing_2020may",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2020-05-07_columbia_sima_investing_2020may_T11.json",
+      "status": "ok",
+      "input_tokens": 1240,
+      "output_tokens": 193
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T1.json",
+      "status": "ok",
+      "input_tokens": 1311,
+      "output_tokens": 883
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T2.json",
+      "status": "ok",
+      "input_tokens": 1332,
+      "output_tokens": 470
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T3.json",
+      "status": "ok",
+      "input_tokens": 1301,
+      "output_tokens": 419
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T4.json",
+      "status": "ok",
+      "input_tokens": 1348,
+      "output_tokens": 461
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T5.json",
+      "status": "ok",
+      "input_tokens": 1349,
+      "output_tokens": 559
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T6.json",
+      "status": "ok",
+      "input_tokens": 1300,
+      "output_tokens": 373
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T7.json",
+      "status": "ok",
+      "input_tokens": 1320,
+      "output_tokens": 1035
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T8.json",
+      "status": "ok",
+      "input_tokens": 1328,
+      "output_tokens": 474
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T9.json",
+      "status": "ok",
+      "input_tokens": 1290,
+      "output_tokens": 519
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T10.json",
+      "status": "ok",
+      "input_tokens": 1287,
+      "output_tokens": 481
+    },
+    {
+      "date": "2020-07-27",
+      "source_label": "koyfin_investing_wizards_ep6_2020jul",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2020-07-27_koyfin_investing_wizards_ep6_2020jul_T11.json",
+      "status": "ok",
+      "input_tokens": 1237,
+      "output_tokens": 370
+    },
+    {
+      "date": "2020-11-15",
+      "source_label": "sohn_australia_2020_omnichannel",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2020-11-15_sohn_australia_2020_omnichannel_T1.json",
+      "status": "ok",
+      "input_tokens": 1239,
+      "output_tokens": 283
+    },
+    {
+      "date": "2020-11-15",
+      "source_label": "sohn_australia_2020_omnichannel",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2020-11-15_sohn_australia_2020_omnichannel_T2.json",
+      "status": "ok",
+      "input_tokens": 1265,
+      "output_tokens": 316
+    },
+    {
+      "date": "2020-11-15",
+      "source_label": "sohn_australia_2020_omnichannel",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2020-11-15_sohn_australia_2020_omnichannel_T3.json",
+      "status": "ok",
+      "input_tokens": 1269,
+      "output_tokens": 379
+    },
+    {
+      "date": "2020-11-15",
+      "source_label": "sohn_australia_2020_omnichannel",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2020-11-15_sohn_australia_2020_omnichannel_T4.json",
+      "status": "ok",
+      "input_tokens": 1244,
+      "output_tokens": 312
+    },
+    {
+      "date": "2020-11-15",
+      "source_label": "sohn_australia_2020_omnichannel",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2020-11-15_sohn_australia_2020_omnichannel_T5.json",
+      "status": "ok",
+      "input_tokens": 1237,
+      "output_tokens": 299
+    },
+    {
+      "date": "2020-11-15",
+      "source_label": "sohn_australia_2020_omnichannel",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2020-11-15_sohn_australia_2020_omnichannel_T6.json",
+      "status": "ok",
+      "input_tokens": 1265,
+      "output_tokens": 320
+    },
+    {
+      "date": "2020-11-15",
+      "source_label": "sohn_australia_2020_omnichannel",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2020-11-15_sohn_australia_2020_omnichannel_T7.json",
+      "status": "ok",
+      "input_tokens": 1210,
+      "output_tokens": 238
+    },
+    {
+      "date": "2021-09-13",
+      "source_label": "themarket_inflation_matters",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2021-09-13_themarket_inflation_matters_T1.json",
+      "status": "ok",
+      "input_tokens": 1203,
+      "output_tokens": 152
+    },
+    {
+      "date": "2021-09-13",
+      "source_label": "themarket_inflation_matters",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2021-09-13_themarket_inflation_matters_T2.json",
+      "status": "ok",
+      "input_tokens": 1179,
+      "output_tokens": 153
+    },
+    {
+      "date": "2021-09-13",
+      "source_label": "themarket_inflation_matters",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2021-09-13_themarket_inflation_matters_T3.json",
+      "status": "ok",
+      "input_tokens": 1238,
+      "output_tokens": 206
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T1.json",
+      "status": "ok",
+      "input_tokens": 1274,
+      "output_tokens": 504
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T2.json",
+      "status": "ok",
+      "input_tokens": 1330,
+      "output_tokens": 590
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T3.json",
+      "status": "ok",
+      "input_tokens": 1294,
+      "output_tokens": 618
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T4.json",
+      "status": "ok",
+      "input_tokens": 1319,
+      "output_tokens": 569
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T5.json",
+      "status": "ok",
+      "input_tokens": 1352,
+      "output_tokens": 587
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T6.json",
+      "status": "ok",
+      "input_tokens": 1285,
+      "output_tokens": 573
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T7.json",
+      "status": "ok",
+      "input_tokens": 1260,
+      "output_tokens": 406
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T8.json",
+      "status": "ok",
+      "input_tokens": 1283,
+      "output_tokens": 508
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T9.json",
+      "status": "ok",
+      "input_tokens": 1234,
+      "output_tokens": 557
+    },
+    {
+      "date": "2021-11-01",
+      "source_label": "graham_doddsville_issue43_2021",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2021-11-01_graham_doddsville_issue43_2021_T10.json",
+      "status": "ok",
+      "input_tokens": 1247,
+      "output_tokens": 341
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T1.json",
+      "status": "ok",
+      "input_tokens": 1266,
+      "output_tokens": 225
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T2.json",
+      "status": "ok",
+      "input_tokens": 1233,
+      "output_tokens": 390
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T3.json",
+      "status": "ok",
+      "input_tokens": 1216,
+      "output_tokens": 212
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T4.json",
+      "status": "ok",
+      "input_tokens": 1236,
+      "output_tokens": 191
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T5.json",
+      "status": "ok",
+      "input_tokens": 1248,
+      "output_tokens": 210
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T6.json",
+      "status": "ok",
+      "input_tokens": 1301,
+      "output_tokens": 357
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T7.json",
+      "status": "ok",
+      "input_tokens": 1283,
+      "output_tokens": 298
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T8.json",
+      "status": "ok",
+      "input_tokens": 1243,
+      "output_tokens": 237
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T9.json",
+      "status": "ok",
+      "input_tokens": 1189,
+      "output_tokens": 160
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T10.json",
+      "status": "ok",
+      "input_tokens": 1297,
+      "output_tokens": 288
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T11.json",
+      "status": "ok",
+      "input_tokens": 1276,
+      "output_tokens": 498
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T12.json",
+      "status": "ok",
+      "input_tokens": 1208,
+      "output_tokens": 338
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T13.json",
+      "status": "ok",
+      "input_tokens": 1249,
+      "output_tokens": 203
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T14.json",
+      "status": "ok",
+      "input_tokens": 1268,
+      "output_tokens": 247
+    },
+    {
+      "date": "2021-11-30",
+      "source_label": "vspartners_global_tech_2021nov",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2021-11-30_vspartners_global_tech_2021nov_T15.json",
+      "status": "ok",
+      "input_tokens": 1241,
+      "output_tokens": 206
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T1.json",
+      "status": "ok",
+      "input_tokens": 1185,
+      "output_tokens": 180
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T2.json",
+      "status": "ok",
+      "input_tokens": 1250,
+      "output_tokens": 201
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T3.json",
+      "status": "ok",
+      "input_tokens": 1227,
+      "output_tokens": 200
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T4.json",
+      "status": "ok",
+      "input_tokens": 1224,
+      "output_tokens": 184
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T5.json",
+      "status": "ok",
+      "input_tokens": 1264,
+      "output_tokens": 206
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T6.json",
+      "status": "ok",
+      "input_tokens": 1249,
+      "output_tokens": 198
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T7.json",
+      "status": "ok",
+      "input_tokens": 1248,
+      "output_tokens": 253
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T8.json",
+      "status": "ok",
+      "input_tokens": 1235,
+      "output_tokens": 228
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T9.json",
+      "status": "ok",
+      "input_tokens": 1267,
+      "output_tokens": 207
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T10.json",
+      "status": "ok",
+      "input_tokens": 1242,
+      "output_tokens": 219
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T11.json",
+      "status": "ok",
+      "input_tokens": 1308,
+      "output_tokens": 247
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T12.json",
+      "status": "ok",
+      "input_tokens": 1297,
+      "output_tokens": 326
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T13.json",
+      "status": "ok",
+      "input_tokens": 1294,
+      "output_tokens": 247
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T14.json",
+      "status": "ok",
+      "input_tokens": 1301,
+      "output_tokens": 272
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T15.json",
+      "status": "ok",
+      "input_tokens": 1248,
+      "output_tokens": 384
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T16",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T16.json",
+      "status": "ok",
+      "input_tokens": 1291,
+      "output_tokens": 581
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T17",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T17.json",
+      "status": "ok",
+      "input_tokens": 1240,
+      "output_tokens": 174
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T18",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T18.json",
+      "status": "ok",
+      "input_tokens": 1278,
+      "output_tokens": 326
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T19",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T19.json",
+      "status": "ok",
+      "input_tokens": 1304,
+      "output_tokens": 211
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T20",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T20.json",
+      "status": "ok",
+      "input_tokens": 1218,
+      "output_tokens": 158
+    },
+    {
+      "date": "2022-03-25",
+      "source_label": "onthetape_fear_market_killer_2022mar",
+      "thesis_id": "T21",
+      "output": "analysis/thesis_audits/2022-03-25_onthetape_fear_market_killer_2022mar_T21.json",
+      "status": "ok",
+      "input_tokens": 1274,
+      "output_tokens": 253
+    },
+    {
+      "date": "2022-04-08",
+      "source_label": "themarket_there_is_no_playbook",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2022-04-08_themarket_there_is_no_playbook_T1.json",
+      "status": "ok",
+      "input_tokens": 1179,
+      "output_tokens": 164
+    },
+    {
+      "date": "2022-04-08",
+      "source_label": "themarket_there_is_no_playbook",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2022-04-08_themarket_there_is_no_playbook_T2.json",
+      "status": "ok",
+      "input_tokens": 1186,
+      "output_tokens": 167
+    },
+    {
+      "date": "2022-04-08",
+      "source_label": "themarket_there_is_no_playbook",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2022-04-08_themarket_there_is_no_playbook_T3.json",
+      "status": "ok",
+      "input_tokens": 1190,
+      "output_tokens": 195
+    },
+    {
+      "date": "2022-04-08",
+      "source_label": "themarket_there_is_no_playbook",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2022-04-08_themarket_there_is_no_playbook_T4.json",
+      "status": "ok",
+      "input_tokens": 1198,
+      "output_tokens": 209
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T1.json",
+      "status": "ok",
+      "input_tokens": 1249,
+      "output_tokens": 198
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T2.json",
+      "status": "ok",
+      "input_tokens": 1271,
+      "output_tokens": 602
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T3.json",
+      "status": "ok",
+      "input_tokens": 1264,
+      "output_tokens": 232
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T4.json",
+      "status": "ok",
+      "input_tokens": 1282,
+      "output_tokens": 417
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T5.json",
+      "status": "ok",
+      "input_tokens": 1265,
+      "output_tokens": 215
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T6.json",
+      "status": "ok",
+      "input_tokens": 1272,
+      "output_tokens": 467
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T7.json",
+      "status": "ok",
+      "input_tokens": 1263,
+      "output_tokens": 288
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T8.json",
+      "status": "ok",
+      "input_tokens": 1235,
+      "output_tokens": 398
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T9.json",
+      "status": "ok",
+      "input_tokens": 1274,
+      "output_tokens": 323
+    },
+    {
+      "date": "2023-06-19",
+      "source_label": "twist_ai_platform_shift_2023jun",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2023-06-19_twist_ai_platform_shift_2023jun_T10.json",
+      "status": "ok",
+      "input_tokens": 1253,
+      "output_tokens": 269
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T1.json",
+      "status": "ok",
+      "input_tokens": 1204,
+      "output_tokens": 191
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T2.json",
+      "status": "ok",
+      "input_tokens": 1214,
+      "output_tokens": 191
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T3.json",
+      "status": "ok",
+      "input_tokens": 1196,
+      "output_tokens": 204
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T4.json",
+      "status": "ok",
+      "input_tokens": 1297,
+      "output_tokens": 340
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T5.json",
+      "status": "ok",
+      "input_tokens": 1241,
+      "output_tokens": 228
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T6.json",
+      "status": "ok",
+      "input_tokens": 1219,
+      "output_tokens": 203
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T7.json",
+      "status": "ok",
+      "input_tokens": 1228,
+      "output_tokens": 261
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T8.json",
+      "status": "ok",
+      "input_tokens": 1234,
+      "output_tokens": 330
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T9.json",
+      "status": "ok",
+      "input_tokens": 1256,
+      "output_tokens": 362
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T10.json",
+      "status": "ok",
+      "input_tokens": 1256,
+      "output_tokens": 287
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T11.json",
+      "status": "ok",
+      "input_tokens": 1216,
+      "output_tokens": 385
+    },
+    {
+      "date": "2024-01-15",
+      "source_label": "iconn_globalalts_2024_gracias_gurley",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2024-01-15_iconn_globalalts_2024_gracias_gurley_T12.json",
+      "status": "ok",
+      "input_tokens": 1204,
+      "output_tokens": 182
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T1.json",
+      "status": "ok",
+      "input_tokens": 1262,
+      "output_tokens": 506
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T2.json",
+      "status": "ok",
+      "input_tokens": 1222,
+      "output_tokens": 294
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T3.json",
+      "status": "ok",
+      "input_tokens": 1268,
+      "output_tokens": 518
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T4.json",
+      "status": "ok",
+      "input_tokens": 1270,
+      "output_tokens": 232
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T5.json",
+      "status": "ok",
+      "input_tokens": 1218,
+      "output_tokens": 189
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T6.json",
+      "status": "ok",
+      "input_tokens": 1257,
+      "output_tokens": 214
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T7.json",
+      "status": "ok",
+      "input_tokens": 1259,
+      "output_tokens": 478
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T8.json",
+      "status": "ok",
+      "input_tokens": 1287,
+      "output_tokens": 830
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T9.json",
+      "status": "ok",
+      "input_tokens": 1289,
+      "output_tokens": 465
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T10.json",
+      "status": "ok",
+      "input_tokens": 1270,
+      "output_tokens": 590
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T11.json",
+      "status": "ok",
+      "input_tokens": 1257,
+      "output_tokens": 253
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T12.json",
+      "status": "ok",
+      "input_tokens": 1197,
+      "output_tokens": 253
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T13.json",
+      "status": "ok",
+      "input_tokens": 1273,
+      "output_tokens": 497
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T14.json",
+      "status": "ok",
+      "input_tokens": 1247,
+      "output_tokens": 573
+    },
+    {
+      "date": "2024-02-14",
+      "source_label": "aleph_semis_globalwarming_2024feb",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2024-02-14_aleph_semis_globalwarming_2024feb_T15.json",
+      "status": "ok",
+      "input_tokens": 1251,
+      "output_tokens": 194
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T1.json",
+      "status": "ok",
+      "input_tokens": 1251,
+      "output_tokens": 284
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T2.json",
+      "status": "ok",
+      "input_tokens": 1239,
+      "output_tokens": 440
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T3.json",
+      "status": "ok",
+      "input_tokens": 1269,
+      "output_tokens": 399
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T4.json",
+      "status": "ok",
+      "input_tokens": 1223,
+      "output_tokens": 261
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T5.json",
+      "status": "ok",
+      "input_tokens": 1278,
+      "output_tokens": 458
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T6.json",
+      "status": "ok",
+      "input_tokens": 1234,
+      "output_tokens": 365
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T7.json",
+      "status": "ok",
+      "input_tokens": 1248,
+      "output_tokens": 463
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T8.json",
+      "status": "ok",
+      "input_tokens": 1210,
+      "output_tokens": 304
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T9.json",
+      "status": "ok",
+      "input_tokens": 1215,
+      "output_tokens": 351
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T10.json",
+      "status": "ok",
+      "input_tokens": 1303,
+      "output_tokens": 330
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T11.json",
+      "status": "ok",
+      "input_tokens": 1255,
+      "output_tokens": 506
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T12.json",
+      "status": "ok",
+      "input_tokens": 1280,
+      "output_tokens": 439
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T13.json",
+      "status": "ok",
+      "input_tokens": 1222,
+      "output_tokens": 292
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T14.json",
+      "status": "ok",
+      "input_tokens": 1259,
+      "output_tokens": 338
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T15.json",
+      "status": "ok",
+      "input_tokens": 1282,
+      "output_tokens": 352
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_dram_bottleneck_2024mid",
+      "thesis_id": "T16",
+      "output": "analysis/thesis_audits/2024-06-15_allin_dram_bottleneck_2024mid_T16.json",
+      "status": "ok",
+      "input_tokens": 1246,
+      "output_tokens": 263
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T1.json",
+      "status": "ok",
+      "input_tokens": 1289,
+      "output_tokens": 336
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T2.json",
+      "status": "ok",
+      "input_tokens": 1251,
+      "output_tokens": 310
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T3.json",
+      "status": "ok",
+      "input_tokens": 1326,
+      "output_tokens": 483
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T4.json",
+      "status": "ok",
+      "input_tokens": 1294,
+      "output_tokens": 289
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T5.json",
+      "status": "ok",
+      "input_tokens": 1282,
+      "output_tokens": 307
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T6.json",
+      "status": "ok",
+      "input_tokens": 1266,
+      "output_tokens": 421
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T7.json",
+      "status": "ok",
+      "input_tokens": 1274,
+      "output_tokens": 296
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T8.json",
+      "status": "ok",
+      "input_tokens": 1240,
+      "output_tokens": 171
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T9.json",
+      "status": "ok",
+      "input_tokens": 1221,
+      "output_tokens": 188
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T10.json",
+      "status": "ok",
+      "input_tokens": 1284,
+      "output_tokens": 238
+    },
+    {
+      "date": "2024-06-15",
+      "source_label": "allin_secondary_markets_2024mid",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2024-06-15_allin_secondary_markets_2024mid_T11.json",
+      "status": "ok",
+      "input_tokens": 1299,
+      "output_tokens": 236
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T1.json",
+      "status": "ok",
+      "input_tokens": 1240,
+      "output_tokens": 269
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T2.json",
+      "status": "ok",
+      "input_tokens": 1245,
+      "output_tokens": 646
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T3.json",
+      "status": "ok",
+      "input_tokens": 1292,
+      "output_tokens": 599
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T4.json",
+      "status": "ok",
+      "input_tokens": 1258,
+      "output_tokens": 597
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T5.json",
+      "status": "ok",
+      "input_tokens": 1231,
+      "output_tokens": 515
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T6.json",
+      "status": "ok",
+      "input_tokens": 1287,
+      "output_tokens": 385
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T7.json",
+      "status": "ok",
+      "input_tokens": 1256,
+      "output_tokens": 463
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T8.json",
+      "status": "ok",
+      "input_tokens": 1228,
+      "output_tokens": 347
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T9.json",
+      "status": "ok",
+      "input_tokens": 1247,
+      "output_tokens": 493
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T10.json",
+      "status": "ok",
+      "input_tokens": 1216,
+      "output_tokens": 189
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T11.json",
+      "status": "ok",
+      "input_tokens": 1235,
+      "output_tokens": 538
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T12.json",
+      "status": "ok",
+      "input_tokens": 1224,
+      "output_tokens": 283
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T13.json",
+      "status": "ok",
+      "input_tokens": 1205,
+      "output_tokens": 333
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T14.json",
+      "status": "ok",
+      "input_tokens": 1260,
+      "output_tokens": 445
+    },
+    {
+      "date": "2024-07-01",
+      "source_label": "thematic_investors_scifi_history_2024jul",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2024-07-01_thematic_investors_scifi_history_2024jul_T15.json",
+      "status": "ok",
+      "input_tokens": 1247,
+      "output_tokens": 376
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T1.json",
+      "status": "ok",
+      "input_tokens": 1258,
+      "output_tokens": 238
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T2.json",
+      "status": "ok",
+      "input_tokens": 1263,
+      "output_tokens": 200
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T3.json",
+      "status": "ok",
+      "input_tokens": 1249,
+      "output_tokens": 230
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T4.json",
+      "status": "ok",
+      "input_tokens": 1264,
+      "output_tokens": 349
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T5.json",
+      "status": "ok",
+      "input_tokens": 1286,
+      "output_tokens": 300
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T6.json",
+      "status": "ok",
+      "input_tokens": 1244,
+      "output_tokens": 182
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T7.json",
+      "status": "ok",
+      "input_tokens": 1350,
+      "output_tokens": 358
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T8.json",
+      "status": "ok",
+      "input_tokens": 1293,
+      "output_tokens": 315
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T9.json",
+      "status": "ok",
+      "input_tokens": 1246,
+      "output_tokens": 220
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T10.json",
+      "status": "ok",
+      "input_tokens": 1331,
+      "output_tokens": 473
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T11.json",
+      "status": "ok",
+      "input_tokens": 1274,
+      "output_tokens": 224
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T12.json",
+      "status": "ok",
+      "input_tokens": 1272,
+      "output_tokens": 332
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T13.json",
+      "status": "ok",
+      "input_tokens": 1280,
+      "output_tokens": 451
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T14.json",
+      "status": "ok",
+      "input_tokens": 1261,
+      "output_tokens": 212
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T15.json",
+      "status": "ok",
+      "input_tokens": 1246,
+      "output_tokens": 182
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T16",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T16.json",
+      "status": "ok",
+      "input_tokens": 1280,
+      "output_tokens": 328
+    },
+    {
+      "date": "2024-12-07",
+      "source_label": "allin_sec_bitcoin_xai_2024dec",
+      "thesis_id": "T17",
+      "output": "analysis/thesis_audits/2024-12-07_allin_sec_bitcoin_xai_2024dec_T17.json",
+      "status": "ok",
+      "input_tokens": 1225,
+      "output_tokens": 203
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T1.json",
+      "status": "ok",
+      "input_tokens": 1262,
+      "output_tokens": 460
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T2.json",
+      "status": "ok",
+      "input_tokens": 1267,
+      "output_tokens": 656
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T3.json",
+      "status": "ok",
+      "input_tokens": 1261,
+      "output_tokens": 553
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T4.json",
+      "status": "ok",
+      "input_tokens": 1211,
+      "output_tokens": 207
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T5.json",
+      "status": "ok",
+      "input_tokens": 1276,
+      "output_tokens": 914
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T6.json",
+      "status": "ok",
+      "input_tokens": 1266,
+      "output_tokens": 583
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T7.json",
+      "status": "ok",
+      "input_tokens": 1232,
+      "output_tokens": 434
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T8.json",
+      "status": "ok",
+      "input_tokens": 1254,
+      "output_tokens": 451
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T9.json",
+      "status": "ok",
+      "input_tokens": 1216,
+      "output_tokens": 190
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T10.json",
+      "status": "ok",
+      "input_tokens": 1188,
+      "output_tokens": 236
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T11.json",
+      "status": "ok",
+      "input_tokens": 1246,
+      "output_tokens": 435
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T12.json",
+      "status": "ok",
+      "input_tokens": 1223,
+      "output_tokens": 260
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T13.json",
+      "status": "ok",
+      "input_tokens": 1239,
+      "output_tokens": 242
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T14.json",
+      "status": "ok",
+      "input_tokens": 1195,
+      "output_tokens": 210
+    },
+    {
+      "date": "2025-01-04",
+      "source_label": "allin_2025_predictions_2025jan",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2025-01-04_allin_2025_predictions_2025jan_T15.json",
+      "status": "ok",
+      "input_tokens": 1199,
+      "output_tokens": 276
+    },
+    {
+      "date": "2025-05-28",
+      "source_label": "sohn_montreal_2025_skhynix_writeup",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2025-05-28_sohn_montreal_2025_skhynix_writeup_T1.json",
+      "status": "ok",
+      "input_tokens": 1232,
+      "output_tokens": 459
+    },
+    {
+      "date": "2025-05-28",
+      "source_label": "sohn_montreal_2025_skhynix_writeup",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2025-05-28_sohn_montreal_2025_skhynix_writeup_T2.json",
+      "status": "ok",
+      "input_tokens": 1263,
+      "output_tokens": 434
+    },
+    {
+      "date": "2025-05-28",
+      "source_label": "sohn_montreal_2025_skhynix_writeup",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2025-05-28_sohn_montreal_2025_skhynix_writeup_T3.json",
+      "status": "ok",
+      "input_tokens": 1233,
+      "output_tokens": 463
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T1.json",
+      "status": "ok",
+      "input_tokens": 1280,
+      "output_tokens": 630
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T2.json",
+      "status": "ok",
+      "input_tokens": 1252,
+      "output_tokens": 544
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T3.json",
+      "status": "ok",
+      "input_tokens": 1270,
+      "output_tokens": 647
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T4.json",
+      "status": "ok",
+      "input_tokens": 1275,
+      "output_tokens": 774
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T5.json",
+      "status": "ok",
+      "input_tokens": 1232,
+      "output_tokens": 410
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T6.json",
+      "status": "ok",
+      "input_tokens": 1242,
+      "output_tokens": 355
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T7.json",
+      "status": "ok",
+      "input_tokens": 1236,
+      "output_tokens": 213
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T8.json",
+      "status": "ok",
+      "input_tokens": 1224,
+      "output_tokens": 470
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T9.json",
+      "status": "ok",
+      "input_tokens": 1258,
+      "output_tokens": 589
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T10.json",
+      "status": "ok",
+      "input_tokens": 1227,
+      "output_tokens": 301
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T11.json",
+      "status": "ok",
+      "input_tokens": 1207,
+      "output_tokens": 279
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T12.json",
+      "status": "ok",
+      "input_tokens": 1256,
+      "output_tokens": 514
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T13.json",
+      "status": "ok",
+      "input_tokens": 1199,
+      "output_tokens": 293
+    },
+    {
+      "date": "2025-10-30",
+      "source_label": "a16z_ai_bubble_david_george_2025oct",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2025-10-30_a16z_ai_bubble_david_george_2025oct_T14.json",
+      "status": "ok",
+      "input_tokens": 1227,
+      "output_tokens": 291
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T1.json",
+      "status": "ok",
+      "input_tokens": 1269,
+      "output_tokens": 307
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T2.json",
+      "status": "ok",
+      "input_tokens": 1249,
+      "output_tokens": 277
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T3.json",
+      "status": "ok",
+      "input_tokens": 1229,
+      "output_tokens": 629
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T4.json",
+      "status": "ok",
+      "input_tokens": 1285,
+      "output_tokens": 308
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T5.json",
+      "status": "ok",
+      "input_tokens": 1230,
+      "output_tokens": 332
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T6.json",
+      "status": "ok",
+      "input_tokens": 1236,
+      "output_tokens": 428
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T7.json",
+      "status": "ok",
+      "input_tokens": 1246,
+      "output_tokens": 292
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T8.json",
+      "status": "ok",
+      "input_tokens": 1286,
+      "output_tokens": 344
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T9.json",
+      "status": "ok",
+      "input_tokens": 1293,
+      "output_tokens": 236
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T10.json",
+      "status": "ok",
+      "input_tokens": 1258,
+      "output_tokens": 267
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T11.json",
+      "status": "ok",
+      "input_tokens": 1229,
+      "output_tokens": 215
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T12.json",
+      "status": "ok",
+      "input_tokens": 1228,
+      "output_tokens": 273
+    },
+    {
+      "date": "2025-11-15",
+      "source_label": "tbpn_token_factories_sovereign_ai_2025",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2025-11-15_tbpn_token_factories_sovereign_ai_2025_T13.json",
+      "status": "ok",
+      "input_tokens": 1255,
+      "output_tokens": 223
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T1.json",
+      "status": "ok",
+      "input_tokens": 1277,
+      "output_tokens": 344
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T2.json",
+      "status": "ok",
+      "input_tokens": 1290,
+      "output_tokens": 559
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T3.json",
+      "status": "ok",
+      "input_tokens": 1266,
+      "output_tokens": 323
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T4.json",
+      "status": "ok",
+      "input_tokens": 1250,
+      "output_tokens": 544
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T5.json",
+      "status": "ok",
+      "input_tokens": 1248,
+      "output_tokens": 353
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T6.json",
+      "status": "ok",
+      "input_tokens": 1255,
+      "output_tokens": 494
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T7.json",
+      "status": "ok",
+      "input_tokens": 1257,
+      "output_tokens": 388
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T8.json",
+      "status": "ok",
+      "input_tokens": 1296,
+      "output_tokens": 557
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T9.json",
+      "status": "ok",
+      "input_tokens": 1311,
+      "output_tokens": 362
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T10.json",
+      "status": "ok",
+      "input_tokens": 1253,
+      "output_tokens": 492
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T11.json",
+      "status": "ok",
+      "input_tokens": 1244,
+      "output_tokens": 278
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T12.json",
+      "status": "ok",
+      "input_tokens": 1298,
+      "output_tokens": 617
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T13.json",
+      "status": "ok",
+      "input_tokens": 1263,
+      "output_tokens": 328
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T14.json",
+      "status": "ok",
+      "input_tokens": 1246,
+      "output_tokens": 435
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T15.json",
+      "status": "ok",
+      "input_tokens": 1273,
+      "output_tokens": 490
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T16",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T16.json",
+      "status": "ok",
+      "input_tokens": 1278,
+      "output_tokens": 430
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T17",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T17.json",
+      "status": "ok",
+      "input_tokens": 1267,
+      "output_tokens": 453
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T18",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T18.json",
+      "status": "ok",
+      "input_tokens": 1265,
+      "output_tokens": 373
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T19",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T19.json",
+      "status": "ok",
+      "input_tokens": 1273,
+      "output_tokens": 581
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T20",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T20.json",
+      "status": "ok",
+      "input_tokens": 1250,
+      "output_tokens": 288
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T21",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T21.json",
+      "status": "ok",
+      "input_tokens": 1232,
+      "output_tokens": 332
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T22",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T22.json",
+      "status": "ok",
+      "input_tokens": 1259,
+      "output_tokens": 282
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T23",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T23.json",
+      "status": "ok",
+      "input_tokens": 1282,
+      "output_tokens": 314
+    },
+    {
+      "date": "2025-12-09",
+      "source_label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+      "thesis_id": "T24",
+      "output": "analysis/thesis_audits/2025-12-09_iltb_gpus_tpus_ai_economics_2025dec_yt_T24.json",
+      "status": "ok",
+      "input_tokens": 1266,
+      "output_tokens": 634
+    },
+    {
+      "date": "2026-02-15",
+      "source_label": "heller_house_spacex_cfo_2026",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-02-15_heller_house_spacex_cfo_2026_T1.json",
+      "status": "ok",
+      "input_tokens": 1218,
+      "output_tokens": 267
+    },
+    {
+      "date": "2026-02-15",
+      "source_label": "heller_house_spacex_cfo_2026",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-02-15_heller_house_spacex_cfo_2026_T2.json",
+      "status": "ok",
+      "input_tokens": 1320,
+      "output_tokens": 335
+    },
+    {
+      "date": "2026-02-15",
+      "source_label": "heller_house_spacex_cfo_2026",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-02-15_heller_house_spacex_cfo_2026_T3.json",
+      "status": "ok",
+      "input_tokens": 1265,
+      "output_tokens": 234
+    },
+    {
+      "date": "2026-03-02",
+      "source_label": "capital_allocators_2026_crossover",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-03-02_capital_allocators_2026_crossover_T1.json",
+      "status": "ok",
+      "input_tokens": 1218,
+      "output_tokens": 219
+    },
+    {
+      "date": "2026-03-02",
+      "source_label": "capital_allocators_2026_crossover",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-03-02_capital_allocators_2026_crossover_T2.json",
+      "status": "ok",
+      "input_tokens": 1248,
+      "output_tokens": 375
+    },
+    {
+      "date": "2026-03-02",
+      "source_label": "capital_allocators_2026_crossover",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-03-02_capital_allocators_2026_crossover_T3.json",
+      "status": "ok",
+      "input_tokens": 1202,
+      "output_tokens": 167
+    },
+    {
+      "date": "2026-03-02",
+      "source_label": "capital_allocators_2026_crossover",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-03-02_capital_allocators_2026_crossover_T4.json",
+      "status": "ok",
+      "input_tokens": 1229,
+      "output_tokens": 218
+    },
+    {
+      "date": "2026-03-02",
+      "source_label": "capital_allocators_2026_crossover",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2026-03-02_capital_allocators_2026_crossover_T5.json",
+      "status": "ok",
+      "input_tokens": 1183,
+      "output_tokens": 195
+    },
+    {
+      "date": "2026-03-02",
+      "source_label": "capital_allocators_2026_crossover",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2026-03-02_capital_allocators_2026_crossover_T6.json",
+      "status": "ok",
+      "input_tokens": 1246,
+      "output_tokens": 227
+    },
+    {
+      "date": "2026-03-02",
+      "source_label": "capital_allocators_2026_crossover",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2026-03-02_capital_allocators_2026_crossover_T7.json",
+      "status": "ok",
+      "input_tokens": 1212,
+      "output_tokens": 209
+    },
+    {
+      "date": "2026-03-02",
+      "source_label": "capital_allocators_2026_crossover",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2026-03-02_capital_allocators_2026_crossover_T8.json",
+      "status": "ok",
+      "input_tokens": 1213,
+      "output_tokens": 206
+    },
+    {
+      "date": "2026-03-02",
+      "source_label": "capital_allocators_2026_crossover",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2026-03-02_capital_allocators_2026_crossover_T9.json",
+      "status": "ok",
+      "input_tokens": 1229,
+      "output_tokens": 189
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_khaira_writeup",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_khaira_writeup_T1.json",
+      "status": "ok",
+      "input_tokens": 1240,
+      "output_tokens": 465
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_khaira_writeup",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_khaira_writeup_T2.json",
+      "status": "ok",
+      "input_tokens": 1228,
+      "output_tokens": 265
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_khaira_writeup",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_khaira_writeup_T3.json",
+      "status": "ok",
+      "input_tokens": 1257,
+      "output_tokens": 374
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_khaira_writeup",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_khaira_writeup_T4.json",
+      "status": "ok",
+      "input_tokens": 1189,
+      "output_tokens": 131
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_tech_investor",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_tech_investor_T1.json",
+      "status": "ok",
+      "input_tokens": 1267,
+      "output_tokens": 328
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_tech_investor",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_tech_investor_T2.json",
+      "status": "ok",
+      "input_tokens": 1268,
+      "output_tokens": 417
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_tech_investor",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_tech_investor_T3.json",
+      "status": "ok",
+      "input_tokens": 1305,
+      "output_tokens": 514
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_tech_investor",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_tech_investor_T4.json",
+      "status": "ok",
+      "input_tokens": 1308,
+      "output_tokens": 494
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_tech_investor",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_tech_investor_T5.json",
+      "status": "ok",
+      "input_tokens": 1267,
+      "output_tokens": 256
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_tech_investor",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_tech_investor_T6.json",
+      "status": "ok",
+      "input_tokens": 1264,
+      "output_tokens": 263
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_tech_investor",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_tech_investor_T7.json",
+      "status": "ok",
+      "input_tokens": 1284,
+      "output_tokens": 263
+    },
+    {
+      "date": "2026-05-12",
+      "source_label": "sohn_ny_2026_tech_investor",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2026-05-12_sohn_ny_2026_tech_investor_T8.json",
+      "status": "ok",
+      "input_tokens": 1233,
+      "output_tokens": 217
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T1.json",
+      "status": "ok",
+      "input_tokens": 1267,
+      "output_tokens": 432
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T2.json",
+      "status": "ok",
+      "input_tokens": 1262,
+      "output_tokens": 398
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T3.json",
+      "status": "ok",
+      "input_tokens": 1284,
+      "output_tokens": 363
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T4.json",
+      "status": "ok",
+      "input_tokens": 1231,
+      "output_tokens": 377
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T5.json",
+      "status": "ok",
+      "input_tokens": 1250,
+      "output_tokens": 493
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T6.json",
+      "status": "ok",
+      "input_tokens": 1286,
+      "output_tokens": 562
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T7.json",
+      "status": "ok",
+      "input_tokens": 1319,
+      "output_tokens": 389
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T8.json",
+      "status": "ok",
+      "input_tokens": 1244,
+      "output_tokens": 443
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T9.json",
+      "status": "ok",
+      "input_tokens": 1295,
+      "output_tokens": 433
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T10.json",
+      "status": "ok",
+      "input_tokens": 1353,
+      "output_tokens": 680
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T11.json",
+      "status": "ok",
+      "input_tokens": 1284,
+      "output_tokens": 437
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T12.json",
+      "status": "ok",
+      "input_tokens": 1326,
+      "output_tokens": 605
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T13.json",
+      "status": "ok",
+      "input_tokens": 1310,
+      "output_tokens": 229
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T14.json",
+      "status": "ok",
+      "input_tokens": 1335,
+      "output_tokens": 435
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T15.json",
+      "status": "ok",
+      "input_tokens": 1270,
+      "output_tokens": 525
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T16",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T16.json",
+      "status": "ok",
+      "input_tokens": 1370,
+      "output_tokens": 711
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T17",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T17.json",
+      "status": "ok",
+      "input_tokens": 1325,
+      "output_tokens": 631
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T18",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T18.json",
+      "status": "ok",
+      "input_tokens": 1294,
+      "output_tokens": 297
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T19",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T19.json",
+      "status": "ok",
+      "input_tokens": 1308,
+      "output_tokens": 499
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T20",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T20.json",
+      "status": "ok",
+      "input_tokens": 1263,
+      "output_tokens": 415
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T21",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T21.json",
+      "status": "ok",
+      "input_tokens": 1288,
+      "output_tokens": 298
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T22",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T22.json",
+      "status": "ok",
+      "input_tokens": 1293,
+      "output_tokens": 399
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T23",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T23.json",
+      "status": "ok",
+      "input_tokens": 1260,
+      "output_tokens": 331
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T24",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T24.json",
+      "status": "ok",
+      "input_tokens": 1260,
+      "output_tokens": 272
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T25",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T25.json",
+      "status": "ok",
+      "input_tokens": 1274,
+      "output_tokens": 279
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T26",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T26.json",
+      "status": "ok",
+      "input_tokens": 1305,
+      "output_tokens": 305
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T27",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T27.json",
+      "status": "ok",
+      "input_tokens": 1263,
+      "output_tokens": 571
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T28",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T28.json",
+      "status": "ok",
+      "input_tokens": 1246,
+      "output_tokens": 218
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T29",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T29.json",
+      "status": "ok",
+      "input_tokens": 1303,
+      "output_tokens": 361
+    },
+    {
+      "date": "2026-05-20",
+      "source_label": "iltb_watts_wafers_2026may_yt",
+      "thesis_id": "T30",
+      "output": "analysis/thesis_audits/2026-05-20_iltb_watts_wafers_2026may_yt_T30.json",
+      "status": "ok",
+      "input_tokens": 1298,
+      "output_tokens": 425
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T1.json",
+      "status": "ok",
+      "input_tokens": 1263,
+      "output_tokens": 299
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T2.json",
+      "status": "ok",
+      "input_tokens": 1301,
+      "output_tokens": 454
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T3.json",
+      "status": "ok",
+      "input_tokens": 1296,
+      "output_tokens": 311
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T4.json",
+      "status": "ok",
+      "input_tokens": 1317,
+      "output_tokens": 465
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T5.json",
+      "status": "ok",
+      "input_tokens": 1275,
+      "output_tokens": 429
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T6.json",
+      "status": "ok",
+      "input_tokens": 1206,
+      "output_tokens": 404
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T7.json",
+      "status": "ok",
+      "input_tokens": 1273,
+      "output_tokens": 279
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T8.json",
+      "status": "ok",
+      "input_tokens": 1312,
+      "output_tokens": 654
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T9.json",
+      "status": "ok",
+      "input_tokens": 1237,
+      "output_tokens": 326
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T10.json",
+      "status": "ok",
+      "input_tokens": 1308,
+      "output_tokens": 508
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T11.json",
+      "status": "ok",
+      "input_tokens": 1324,
+      "output_tokens": 582
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T12.json",
+      "status": "ok",
+      "input_tokens": 1263,
+      "output_tokens": 636
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T13.json",
+      "status": "ok",
+      "input_tokens": 1282,
+      "output_tokens": 222
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T14.json",
+      "status": "ok",
+      "input_tokens": 1276,
+      "output_tokens": 366
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T15.json",
+      "status": "ok",
+      "input_tokens": 1244,
+      "output_tokens": 320
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T16",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T16.json",
+      "status": "ok",
+      "input_tokens": 1267,
+      "output_tokens": 396
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T17",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T17.json",
+      "status": "ok",
+      "input_tokens": 1295,
+      "output_tokens": 346
+    },
+    {
+      "date": "2026-06-11",
+      "source_label": "bg2_spacex_ipo_2026jun",
+      "thesis_id": "T18",
+      "output": "analysis/thesis_audits/2026-06-11_bg2_spacex_ipo_2026jun_T18.json",
+      "status": "ok",
+      "input_tokens": 1280,
+      "output_tokens": 430
+    }
+  ]
+}

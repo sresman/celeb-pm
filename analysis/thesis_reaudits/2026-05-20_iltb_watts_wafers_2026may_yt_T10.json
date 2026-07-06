@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) — Watts and wafers",
+  "thesis_id": "T10",
+  "summary": "TerraFab (SpaceX/Tesla joint venture with Intel partnership) will succeed in building a leading US semiconductor fab, potentially disrupting the TSMC/Intel/Samsung dynamic",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "INTC",
+    "ASML",
+    "KLAC",
+    "LRCX",
+    "AMAT"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "INTC",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly names Intel as a direct partner in TerraFab, contributing institutional fab knowledge. Intel is a named subject of this specific thesis."
+    },
+    {
+      "ticker": "ASML",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly names ASML as one of the wafer fab equipment companies that will prioritize TerraFab with A-teams, directly connecting it to this thesis as a beneficiary of TerraFab's buildout."
+    },
+    {
+      "ticker": "KLAC",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly names KLA among the semi-cap equipment companies expected to send A-teams to TerraFab, directly connecting it to this thesis."
+    },
+    {
+      "ticker": "LRCX",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly names Lam Research among the wafer fab equipment companies expected to prioritize TerraFab, directly connecting it to this thesis."
+    },
+    {
+      "ticker": "AMAT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly names Applied Materials among the semi-cap equipment companies expected to support TerraFab with their best teams, directly connecting it to this thesis."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2025-11-15",
+  "source": "TBPN \u2014 Token factories, sovereign AI",
+  "thesis_id": "T2",
+  "summary": "SpaceX ordered 20% of Rubin GPUs; Rubin is a more drop-in replacement than Blackwell, enabling faster data center ramp",
+  "summary_extended": "Baker cites Altimeter research indicating that SpaceX has ordered approximately 20% of Nvidia's upcoming Rubin GPU allocation, signaling massive confidence in rapid data center buildout. He argues that Rubin represents a meaningfully easier deployment than Blackwell \u2014 described as a more 'drop-in replacement' \u2014 which should accelerate the pace at which hyperscalers and large buyers can energize new data center capacity. Baker also notes that Grok LPUs (from private company Groq) are expected to be integrated within 6-9 months, further underscoring SpaceX's aggressive AI infrastructure ambitions. The primary investment implication is bullish for Nvidia, as SpaceX's outsized Rubin order concentration suggests strong near-term GPU demand and validates Rubin's architectural advantages over Blackwell for rapid deployment.",
+  "detail": "Per Altimeter data, SpaceX has ordered 20% of Nvidia Rubin GPUs. Unlike Blackwell which was hard to bring online, Rubin is described as a more drop-in replacement. Grok LPUs will be integrated within 6-9 months. This signals SpaceX confidence in rapid data center energization.",
+  "confidence": "moderate",
+  "confidence_evidence": "Attributed to Altimeter research; Baker presents as fact but notes it as third-party sourced",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "ordered 20% of the Reubins and the Reubin is an epic chip",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "Groq (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about demand for Nvidia's Rubin GPU \u2014 SpaceX ordering 20% of Rubin supply is a direct bullish signal for Nvidia's GPU revenue and validates Rubin's product positioning over Blackwell."
+    }
+  ]
+}

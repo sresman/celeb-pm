@@ -1,0 +1,41 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors — Blending sci-fi, history and literature",
+  "thesis_id": "T3",
+  "summary": "GPU utilization is the single most important metric for AI model training competitiveness; storage, memory, and networking are the key bottlenecks",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "MU",
+    "WDC",
+    "STX",
+    "ANET",
+    "MRVL"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "MU",
+      "action": "KEEP",
+      "reasoning": "Memory (DRAM/HBM) is explicitly named as one of the three key bottlenecks in this thesis, and Micron is the primary US-listed HBM/DRAM supplier. Baker specifically named memory as a bottleneck constraining GPU utilization, making MU a direct beneficiary of solving that bottleneck."
+    },
+    {
+      "ticker": "WDC",
+      "action": "KEEP",
+      "reasoning": "Storage is explicitly named as one of the three key bottlenecks in this thesis. Western Digital is a major storage provider and a direct beneficiary of the storage bottleneck thesis Baker articulates."
+    },
+    {
+      "ticker": "STX",
+      "action": "KEEP",
+      "reasoning": "Storage is explicitly named as one of the three key bottlenecks. Seagate is a major storage provider and a direct beneficiary of the storage bottleneck thesis."
+    },
+    {
+      "ticker": "ANET",
+      "action": "KEEP",
+      "reasoning": "Networking is explicitly named as one of the three key bottlenecks. Arista Networks is a leading data center networking company and a direct beneficiary of the networking bottleneck thesis Baker articulates."
+    },
+    {
+      "ticker": "MRVL",
+      "action": "REMOVE",
+      "reasoning": "While Marvell operates in networking and storage semiconductors, Baker did not specifically name Marvell in connection with this thesis. The critical test requires Baker to have specifically connected this ticker to this exact claim — general industry relevance is insufficient. This appears to be an inference rather than a direct connection Baker made."
+    }
+  ]
+}

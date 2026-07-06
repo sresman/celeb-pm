@@ -1,0 +1,47 @@
+{
+  "date": "2025-11-15",
+  "source": "TBPN — Token factories, sovereign AI",
+  "thesis_id": "T3",
+  "summary": "EV/net PP&E is an increasingly important valuation metric; installed physical assets on Earth will appreciate in value",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "META",
+    "EQIX",
+    "DLR",
+    "MSFT",
+    "GOOGL",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named META as one of the hyperscalers with large physical asset bases when discussing the EV/net PP&E valuation framework and the 'halo trade' concept in this interview."
+    },
+    {
+      "ticker": "EQIX",
+      "action": "REMOVE",
+      "reasoning": "EQIX was not specifically named by Baker in connection with this thesis. It was added by inference as a 'canonical example' — exactly the kind of analyst extrapolation the audit rules prohibit. Baker did not specifically connect Equinix to the EV/net PP&E thesis."
+    },
+    {
+      "ticker": "DLR",
+      "action": "REMOVE",
+      "reasoning": "DLR was not specifically named by Baker in connection with this thesis. It was added by inference as a data center REIT that fits the thesis — not because Baker explicitly cited it."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Microsoft as one of the hyperscalers when discussing the EV/net PP&E valuation framework and installed physical asset appreciation thesis in this interview."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Alphabet/Google as one of the hyperscalers when discussing the EV/net PP&E valuation framework and installed physical asset appreciation thesis in this interview."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Amazon as one of the hyperscalers when discussing the EV/net PP&E valuation framework and installed physical asset appreciation thesis in this interview."
+    }
+  ]
+}

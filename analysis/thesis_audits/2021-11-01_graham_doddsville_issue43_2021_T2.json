@@ -1,0 +1,61 @@
+{
+  "date": "2021-11-01",
+  "source": "Graham & Doddsville (Columbia Business School) \u2014 Investor interview with Gavin Baker, CIO of Atreides Management (Issue 43, Fall 2021)",
+  "thesis_id": "T2",
+  "summary": "Dish Network is an interesting investment due to structural telecom pricing dynamics favoring new entrants",
+  "summary_extended": "Baker argues that Dish Network (DISH) is a compelling investment based on a structural, non-consensus framework for telecom pricing dynamics. His core insight is that pricing stability in telecom is determined by market share distribution rather than simple concentration metrics like HHI \u2014 a 70/20/10 split is far less stable than a 40/30/30 split because the dominant incumbent cannot reprice its entire installed base downward to match a new entrant's lower prices without destroying its own economics. Baker further argues that the newest network is structurally advantaged because it is both empty (no legacy congestion) and built on the latest technology, meaning a fourth entrant in a three-player market predictably takes share over time. He also cites high conviction in Open RAN (ORAN) as a powerful enabling technology, informed by his venture investing work, which he believes gives Dish a further structural edge in building its greenfield 5G network at lower cost. The investment implication is a long position in DISH as the new entrant most likely to disrupt the incumbent carriers (AT&T, Verizon, T-Mobile), with the incumbents facing asymmetric pricing pressure they cannot easily counter.",
+  "detail": "Baker held DISH in the Atreides 13F. His thesis rests on a non-consensus view of telecom pricing: pricing stability is driven by market share distribution, not just concentration (HHI). A market with 70/20/10 share split is far less stable than 40/30/30. Incumbents cannot reprice their installed base to respond to a new entrant's lower prices. The newest network is always the best network (empty + latest technology). Fourth entrants in 3-player markets predictably take share. Baker also cites conviction in ORAN as a powerful technology from his venture investing work.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Dish was an actual disclosed 13F holding; Baker provides a detailed structural framework for why new entrants win in telecom and explicitly mentions ORAN conviction",
+  "themes": [
+    "telecom disruption",
+    "network economics",
+    "ORAN",
+    "new entrant dynamics"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "newest network is always the best network because it is empty",
+  "tickers_named_original": [
+    "DISH"
+  ],
+  "tickers_direct": [
+    "DISH",
+    "T",
+    "VZ"
+  ],
+  "tickers_subject": [
+    "DISH"
+  ],
+  "tickers_implied_original": [
+    "T",
+    "VZ",
+    "TMUS"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "DISH",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Dish Network is the explicit subject of the thesis \u2014 it is the new entrant Baker holds in his 13F and around which the entire structural framework is constructed."
+    },
+    {
+      "ticker": "T",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "AT&T is one of the incumbent carriers directly threatened by Dish's entry; the thesis implies pricing pressure on incumbents, making T a subject of competitive harm. Classifying as DIRECT_BENEFICIARY (negative) since the thesis is about disruption of incumbents like T."
+    },
+    {
+      "ticker": "VZ",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Verizon is one of the incumbent carriers directly threatened by Dish's entry under Baker's framework; same logic as T \u2014 the thesis predicts incumbents face asymmetric pricing pressure they cannot counter."
+    },
+    {
+      "ticker": "TMUS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "T-Mobile is the most recent prior entrant and holds a more balanced share position; while it is part of the competitive landscape, Baker's thesis is specifically about Dish as a fourth entrant disrupting a three-player market, and TMUS is not specifically called out as a loser or winner in this thesis. Its inclusion is incidental to the competitive context rather than a direct subject or beneficiary."
+    }
+  ]
+}

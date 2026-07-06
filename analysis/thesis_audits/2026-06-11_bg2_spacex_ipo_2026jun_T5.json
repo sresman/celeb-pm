@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T5",
+  "summary": "Frontier AI models continue to capture ~90%+ of economic value despite open-source models consuming the majority of tokens",
+  "summary_extended": "Baker argues that the bear case for frontier AI models \u2014 that open-source would erode their economic value \u2014 has been 'decisively wrong,' with frontier models likely capturing 90%+ of AI revenue despite open-source models handling the majority of token volume by count. He presents these two facts as non-contradictory: token volume and economic value are decoupled, with frontier models commanding premium pricing that concentrates revenue even as open-source handles commodity workloads. As evidence, he cites Anthropic's strong revenue trajectory and the example of Harvey (an AI legal platform) which, despite routing some workloads to open-source models, still consumed significant Anthropic Opus tokens for high-value tasks. The investment implication is that frontier AI providers \u2014 primarily Anthropic and OpenAI, both private \u2014 are the primary beneficiaries, and the thesis validates continued aggressive capex spending by hyperscalers training and serving frontier models. Public market investors should watch GOOGL (Gemini) and META (open-source provider, somewhat contradicted by this thesis) as the closest listed proxies, though the direct beneficiaries remain private.",
+  "detail": "Baker argues two things can simultaneously be true: frontier models capture the vast majority of revenue (possibly 90%+) while open-source models handle the majority of token volume. This has been 'decisively wrong' for bears who predicted open-source would erode frontier economics. Harvey's use of open-source + routing still consumed significant Opus tokens. The frontier revenue thesis has been validated by Anthropic's revenue trajectory.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'decisively wrong' about the bear case; cites empirical revenue data; uses 'probably more than 90%' language; consistent with Anthropic revenue data points discussed",
+  "themes": [
+    "frontier AI models",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "frontier might be 90% of the economic value",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Anthropic (private)",
+    "OpenAI (private)",
+    "GOOGL",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google DeepMind produces Gemini, a frontier model competing directly in the space Baker describes as capturing 90%+ of economic value. GOOGL is a meaningful public-market proxy for the frontier model thesis, though it is a diversified business."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META is primarily an open-source model provider (Llama), which is the losing side of this thesis rather than a beneficiary. Its inclusion is not justified as a direct beneficiary of frontier model economics capturing 90%+ of revenue \u2014 if anything, this thesis is mildly bearish for META's AI strategy narrative."
+    }
+  ]
+}

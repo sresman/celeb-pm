@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T6",
+  "summary": "Open-source AI success is bullish for compute/hardware providers, not bearish for the AI ecosystem",
+  "summary_extended": "Baker argues that the rise of open-source AI models is structurally bullish for compute and hardware providers, not bearish for the AI ecosystem as commonly feared. His reasoning is that if frontier proprietary models face margin compression from open-source competition, AI spending does not disappear \u2014 it shifts toward compute infrastructure, since open-source models still require massive hardware to train and run at scale. The better open-source models perform, the more inference and training compute is demanded across a broader set of users and enterprises who would otherwise have paid for proprietary API access. This reframes the conventional open-source bear case (that it destroys AI monetization) into a compute bull case: commoditization of model intelligence accelerates hardware consumption. The investment implication is to be long compute and semiconductor infrastructure providers that supply the GPUs, networking, and accelerators powering this expanded workload.",
+  "detail": "Baker argues that if frontier models capture less margin due to open-source competition, more spending flows to compute. The better open source does, the better it is for compute providers. This reframes the open-source bear case on AI as actually a compute bull case.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this directly and clearly as a structural argument; no hedging language",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "the better open source does, the better it is for compute providers",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "AVGO"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVIDIA is the dominant supplier of GPUs used for both training and inference of open-source models; as open-source adoption expands compute demand, NVDA is the clearest and most direct beneficiary of this thesis. [RE-AUDIT: Baker's thesis is a general structural argument that open-source AI success is bullish for compute/hardware providers. While NVDA is the obvious inference, Baker did not specifically name NVDA in connection with this exact thesis about open-source AI being bullish for compute. The thesis summary describes a general structural view, and the critical test requires Baker to have specifically connected NVDA to this exact claim \u2014 not just that it is an obvious beneficiary.]"
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD competes in the AI accelerator market and benefits from increased compute demand driven by open-source model proliferation, though it is a secondary beneficiary relative to NVDA given its smaller market share in AI training. [RE-AUDIT: Same reasoning as NVDA. AMD was not specifically named by Baker in connection with this thesis about open-source AI driving compute demand. It may have been mentioned elsewhere in the interview, but the critical test requires a specific connection to this exact thesis, which is not evidenced.]"
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Broadcom supplies custom AI ASICs and networking silicon for hyperscale AI infrastructure; increased compute spending driven by open-source model adoption benefits AVGO's AI revenue stream directly. [RE-AUDIT: Same reasoning as NVDA and AMD. Broadcom was not specifically named by Baker in connection with this thesis about open-source AI being bullish for compute infrastructure. The thesis is a general structural view, and without Baker explicitly naming AVGO as a beneficiary of this specific argument, it must be removed.]"
+    }
+  ]
+}

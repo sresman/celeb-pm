@@ -1,0 +1,68 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T19",
+  "summary": "Semiconductor venture capital has returned with force and is necessary for Nvidia's annual GPU cadence to be achievable",
+  "summary_extended": "Baker argues that Nvidia's annual GPU cadence \u2014 exemplified by the Blackwell rack ecosystem \u2014 cannot be achieved by Nvidia alone, as it requires thousands of components across the stack (transceivers, lasers, back blades, memory, networking) that must all accelerate in lockstep. He presents this semiconductor venture capital renaissance as 'absolutely foundational and necessary for all of this to happen,' noting that his firm has completed more semiconductor VC deals in seven years than the top 10 VCs combined. The structural implication is that the entire AI datacenter supply chain \u2014 not just Nvidia \u2014 must scale simultaneously, creating investment opportunities across public and private companies throughout the stack. Baker sees this ecosystem pressure as a catalyst for public semiconductor companies in networking, optical components, and memory to keep pace with Nvidia's cadence, making the broader supply chain a long-term investment theme rather than a single-stock story.",
+  "detail": "The entire Blackwell rack ecosystem (thousands of parts, most not made by Nvidia) must accelerate in lockstep with Nvidia's annual cadence. This requires a healthy semiconductor venture ecosystem. Baker's firm has done more semi VC deals in 7 years than the top 10 VCs combined. This ecosystem also puts pressure on public companies to keep up, and creates investment opportunities across the stack (transceivers, lasers, back blades, memory, networking).",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'absolutely foundational and necessary for all of this to happen' and provides personal evidence of his firm's activity",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "not even Nvidia can do it alone",
+  "tickers_named_original": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "MRVL"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly about Nvidia's annual GPU cadence and the ecosystem required to support it; NVDA is the anchor of the entire argument."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Broadcom is a major supplier of networking ASICs and custom silicon that are core components of the Blackwell rack ecosystem Baker describes. [RE-AUDIT: Baker did not specifically name Broadcom in connection with this semiconductor VC / supply chain thesis. Broadcom may be an obvious beneficiary of AI networking demand, but the critical test is whether Baker explicitly named AVGO as part of this thesis \u2014 he did not. This appears to be an inferred addition, not a direct citation.]"
+    },
+    {
+      "ticker": "MRVL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Marvell supplies networking and interconnect components (e.g., PAM4 DSPs, custom AI silicon) that are directly part of the AI datacenter stack Baker references. [RE-AUDIT: Same issue as AVGO. Marvell is a plausible beneficiary of AI datacenter supply chain growth, but Baker did not specifically name Marvell in connection with this thesis about semiconductor VC and the Blackwell ecosystem supply chain. This is an inferred connection, not an explicit one.]"
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is a GPU competitor to Nvidia but is not a supplier into the Blackwell rack ecosystem and is not a beneficiary of the supply chain thesis Baker is making here; its presence appears to be bleed-over from adjacent discussion."
+    },
+    {
+      "ticker": "COHR",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Coherent is a leading US-listed supplier of transceivers and lasers \u2014 two components Baker explicitly names as part of the Blackwell rack ecosystem that must scale in lockstep. [RE-AUDIT: While Baker mentioned transceivers and lasers as components that must scale, he did not specifically name Coherent (COHR) by name in connection with this thesis. The component categories were named but not the specific public companies supplying them. This is an inferred beneficiary, not a directly cited one.]"
+    },
+    {
+      "ticker": "LITE",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Lumentum is a major US-listed supplier of lasers and optical components explicitly called out by Baker as part of the ecosystem that must accelerate alongside Nvidia's cadence. [RE-AUDIT: Same as COHR. Baker referenced lasers and optical components generically as part of the ecosystem, but did not specifically name Lumentum (LITE) in connection with this thesis. Removing as an inferred rather than explicitly cited beneficiary.]"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T21",
+  "summary": "Nuclear and quantum computing public equities are in bubble territory; the best players are not publicly investable",
+  "summary_extended": "Baker argues that publicly traded nuclear/SMR/fusion and quantum computing stocks are in clear bubble territory, with valuations disconnected from fundamentals. His core reasoning is that the actual leaders in quantum computing \u2014 Google, IBM, and Honeywell Quantum \u2014 are not pure-play public quantum equities but rather large diversified companies where quantum is a minor division, meaning retail investors cannot get clean exposure to the real leaders. Baker explicitly states that none of the public pure-play vehicles are good expressions of the quantum or nuclear theme, and that quantum supremacy is widely misunderstood: quantum computers can perform certain calculations classical computers cannot, but they do not broadly replace classical computing. The investment implication is to avoid the pure-play public quantum and nuclear/SMR stocks, which Baker calls 'really clear bubbles,' rather than to buy the large-cap companies that happen to have quantum programs.",
+  "detail": "Public nuclear/fusion/SMR and quantum companies are not the leaders and lack fundamental support. Quantum leaders are Google, IBM, and Honeywell Quantum\u2014not the pure-play public quantum stocks. Quantum supremacy is widely misunderstood (quantum does some calculations classical computers cannot, but does not replace classical computing broadly).",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'none of the public ways you can invest in this are really good expressions of this theme' and calls them 'really clear bubbles'",
+  "themes": [
+    "quantum computing",
+    "nuclear energy"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "two really clear bubbles in nuclear and quantum",
+  "tickers_named_original": [
+    "GOOGL"
+  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker mentions Google as one of the actual quantum leaders (alongside IBM and Honeywell), but the thesis is specifically about avoiding pure-play public quantum/nuclear stocks as bubbles. Google is not the subject of the thesis nor a direct beneficiary \u2014 it is cited as an example of where real quantum capability resides, but the actionable thesis is about avoiding bubble stocks, not buying GOOGL. Google's quantum work is a negligible part of its business and Baker does not recommend buying it on this basis."
+    }
+  ]
+}

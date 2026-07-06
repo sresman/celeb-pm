@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T17",
+  "summary": "SpaceX IPO post-listing drawdown risk is real but the lock-up and employee liquidity history mitigate selling pressure",
+  "summary_extended": "Baker argues that while historical data on major tech IPOs (Facebook, Twitter, Alibaba, Shopify) shows average maximum post-IPO drawdowns exceeding 50%, SpaceX's situation is structurally different in ways that may meaningfully reduce post-listing selling pressure. His reasoning centers on three mitigating factors: SpaceX employees have had liquidity events every six months for approximately ten years (~20 opportunities to sell), Elon Musk owns roughly 50% of the company and will be locked up for 365 days post-IPO, and the stock is expected to enter major indices quickly, creating sustained institutional buying demand. Baker acknowledges this is 'utterly unprecedented' territory and explicitly states he does not know what will happen in the short term, framing the honest investor posture as uncertainty. His practical recommendation is a 'set-it-and-forget-it' approach with tactical position sizing around volatility rather than attempting to time the post-IPO drawdown.",
+  "detail": "Historical data shows average max drawdown post-IPO for major tech IPOs (Facebook, Twitter, Alibaba, Shopify) exceeds 50%. However, SpaceX is unprecedented: employees have had liquidity every 6 months for 10 years (~20 chances to sell), Elon owns 50% and is locked up 365 days, and the IPO will enter indices quickly. Baker says the right answer is 'I don't know' on short-term but recommends set-it-and-forget-it with tactical sizing around it.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker explicitly says 'I don't know what's going to happen in the short term'; acknowledges the historical drawdown data as 'a bummer'; uncertainty is the honest framing",
+  "themes": [
+    "space/orbital compute"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "utterly unprecedented and we'll see",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private/IPO)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPCE",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Virgin Galactic (SPCE) is a US-listed space company but is not SpaceX, not a beneficiary of a SpaceX IPO, and was not implied by Baker. SpaceX remains private/pre-IPO and has no US-listed ticker to audit at this time. No US-listed equity is a direct subject or clear beneficiary of this specific thesis about SpaceX IPO drawdown dynamics."
+    }
+  ]
+}

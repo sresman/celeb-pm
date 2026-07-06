@@ -1,0 +1,41 @@
+{
+  "date": "2025-10-30",
+  "source": "a16z Podcast — Is there an AI bubble?",
+  "thesis_id": "T2",
+  "summary": "Hyperscaler capex ROI has been strongly positive; debate is whether it continues with Blackwell ramp",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "META",
+    "MSFT",
+    "AMZN",
+    "NVDA"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Alphabet is explicitly one of the major hyperscalers Baker describes as having seen ~10-point ROIC improvements from AI capex spending. It is a direct subject of this thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Meta is explicitly among the largest GPU spenders Baker references with demonstrated ROIC improvement. It is a direct subject of this thesis, not merely mentioned in passing."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Microsoft is one of the core hyperscalers Baker describes as having achieved ~10-point ROIC gains from AI capex. It is a direct subject of this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Amazon/AWS is a primary hyperscaler directly referenced in Baker's ROIC improvement and FCF/cash buffer thesis. It is a direct subject."
+    },
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "NVDA is a GPU supplier to the hyperscalers, not a hyperscaler itself. The thesis is specifically about hyperscaler capex ROI and ROIC improvement. Baker mentions Blackwell as a product cycle context, but the thesis subject is the buyers (hyperscalers), not the seller. NVDA's revenue may benefit from continued capex, but Baker did not specifically connect NVDA's stock or financials to this hyperscaler ROI thesis — it is tangential."
+    }
+  ]
+}

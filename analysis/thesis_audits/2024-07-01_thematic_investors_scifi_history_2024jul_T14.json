@@ -1,0 +1,51 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T14",
+  "summary": "Nvidia's GPU dominance is extremely difficult to displace; all frontier models trained almost exclusively on Nvidia GPUs",
+  "summary_extended": "Baker argues that Nvidia's dominance in AI training compute is essentially total, with approximately 99% of all frontier AI models trained on Nvidia GPUs, with the remaining sliver attributable to Google TPUs and Cerebras wafer-scale chips. He presents this not as a forecast but as an observed empirical fact, grounding his conviction in 25 years of familiarity with Jensen Huang, whom he ranks among the three most exceptional CEOs he has encountered alongside Elon Musk and Lisa Su. Baker acknowledges that hyperscalers have made massive efforts to develop proprietary ASICs \u2014 citing Google's TPU program as the most advanced alternative \u2014 yet these efforts have failed to meaningfully displace Nvidia at the frontier. The investment implication is a strong long conviction in NVDA, with the thesis resting on the structural difficulty of displacing an incumbent whose software ecosystem (CUDA) and hardware performance compound the switching costs for model developers. No specific price target or timeframe is cited, but the framing is medium-term and high-conviction.",
+  "detail": "Baker states ~99% of frontier AI models have been trained on Nvidia GPUs (the remainder on Google TPUs and Cerebras wafer-scale chips). Despite massive efforts by hyperscalers to build their own ASICs (Google TPU model), Nvidia remains dominant. Baker has known Jensen Huang for 25 years and views him as one of three most exceptional CEOs alongside Elon Musk and Lisa Su.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames Nvidia's dominance as an observed fact and has deep long-term familiarity with the company",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "competitive moats"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "these models have only been trained on Nvidia gpus that's like 99% of them",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "AMD"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is about Nvidia's GPU dominance in frontier AI training; NVDA is the direct subject."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google TPUs are mentioned only as the primary alternative that has failed to displace Nvidia; GOOGL is not a beneficiary of this thesis and the thesis is not about Google's competitive position \u2014 it is cited as evidence of how hard it is to challenge NVDA."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is not mentioned in the thesis detail at all; Lisa Su is referenced only as an example of an exceptional CEO in a personal aside, not in the context of AMD's competitive position in AI training. AMD is not a subject or beneficiary of this thesis."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) — Watts and wafers",
+  "thesis_id": "T4",
+  "summary": "Anthropic has deliberately deprecated Claude's intelligence due to compute constraints — it generates 70% fewer tokens for the same question than previously, masking true demand",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name NVIDIA in connection with this Anthropic token-throttling thesis. The investment implication pointing to compute infrastructure providers is a logical inference, not a direct statement by Baker linking NVDA to this specific claim. This is an analyst extrapolation, not a direct connection Baker made."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Amazon or AWS in connection with this Anthropic token-throttling thesis. While AWS is Anthropic's cloud partner, Baker did not explicitly connect AMZN to this specific claim about Claude's deprecated intelligence and compute constraints. This is an inferred beneficiary, not one Baker named directly in this thesis."
+    }
+  ]
+}

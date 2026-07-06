@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T7",
+  "summary": "Orbital compute (racks in space connected by lasers) is a real and near-term solution to terrestrial power/cooling constraints, not science fiction",
+  "summary_extended": "Baker argues that orbital compute \u2014 GPU racks deployed in space and interconnected via laser inter-satellite links \u2014 is a genuine near-term solution to terrestrial data center power and cooling constraints, not a speculative science fiction concept. He reframes the idea away from Pentagon-sized floating structures toward something concrete and already partially validated: a Blackwell rack weighs 3,000 lbs and stands 8 feet tall, making it physically compatible with heavy-lift launch vehicles, and SpaceX already operates 20kW Starlink satellites with high engineering confidence in scaling to 100-120kW per satellite. The laser inter-satellite link infrastructure needed to stitch orbital racks into a virtual data center already exists on every Starlink satellite, meaning the connectivity layer is not a future problem. Baker sees inference workloads \u2014 not training \u2014 as the natural fit for orbital compute, leaving terrestrial data centers intact for training, so this is not a bearish thesis on ground-based infrastructure within his investment horizon. The investment implication is that orbital compute is a structural shift worth pricing in now, with SpaceX (private) as the primary enabler, though no liquid US-listed equity is an unambiguous direct beneficiary based on the specifics he cited.",
+  "detail": "Baker reframes orbital compute as 'racks in space' rather than Pentagon-sized floating data centers. A Blackwell rack is 3,000 lbs, 8ft high \u2014 scalable to space. SpaceX already operates 20kW Starlink satellites and is confident in scaling to 100-120kW. Racks connect via laser inter-satellite links (already on every Starlink). Inference workloads are ideal for orbital compute; training stays on Earth. This is not bearish for terrestrial data centers in Baker's lifetime.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker has spent significant time at Starbase, spoken to SpaceX engineers who are 'very confident' on cooling solutions, and frames this as a near-term structural shift worth pricing into power/cooling infrastructure investments",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "racks in space connected with lasers into a virtual data center",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "Nvidia (NVDA)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker mentions Blackwell racks as a physical reference point for size and weight, but the thesis is about orbital compute infrastructure enabled by SpaceX, not about Nvidia's business prospects. Nvidia is not a direct subject or unambiguous beneficiary of this specific thesis \u2014 GPU demand from orbital compute would be marginal relative to Nvidia's total addressable market and is not the claim Baker is making."
+    }
+  ]
+}

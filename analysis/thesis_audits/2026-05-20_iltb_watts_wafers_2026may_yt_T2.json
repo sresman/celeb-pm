@@ -1,0 +1,39 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T2",
+  "summary": "The March/April 2026 NASDAQ selloff was a buying opportunity in AI \u2014 valuations reached historically cheap levels relative to the market while AI fundamentals were accelerating",
+  "summary_extended": "Baker argues that the March/April 2026 NASDAQ selloff created a historically attractive buying opportunity in AI and technology stocks, with tech valuations reaching their cheapest levels relative to the broader market in approximately 10 years. This extreme cheapness coincided with what Baker describes as the most extraordinary AI fundamental inflection he has ever witnessed, creating a rare setup where valuation and fundamental momentum aligned simultaneously. He explicitly compares this moment to prior buying opportunities he either missed or underweighted \u2014 COVID lows, Deep Seek Monday, and the 2022 drawdown \u2014 and states the setup was even clearer this time, prompting him to 'lean in' and build positions aggressively. The investment implication is a broad overweight to AI and technology equities as a category, rather than any single name, with the thesis resting on mean-reversion of relative valuations combined with accelerating AI adoption fundamentals. No specific price targets or timeframes beyond 'medium-term' were cited, and the call is framed as a sector-level opportunity rather than a single-stock thesis.",
+  "detail": "Baker argues tech got as cheap relative to the rest of the market as at any point in the last 10 years, coinciding with the most extraordinary AI fundamental inflection he has ever seen. He explicitly compares it to prior missed buying opportunities (COVID, Deep Seek Monday, 2022) and says the setup was even clearer this time.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says he 'leaned in' and built positions, framing it as pent-up alpha. He describes it as historically attractive valuation coinciding with historically strong fundamentals.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "valuation",
+    "market timing"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "tech essentially got as cheap as it's been versus the rest of the market",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "QQQ",
+    "AI infrastructure basket"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "QQQ",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "QQQ is the primary liquid proxy for NASDAQ/tech exposure and directly benefits from a broad tech re-rating thesis, though it is an ETF rather than a single stock. It is the closest instrument to what Baker is describing as the opportunity. [RE-AUDIT: QQQ is an ETF and per the rules, ETF tickers are never direct subjects or beneficiaries of a specific thesis \u2014 always tangential. Additionally, Baker's thesis is a broad sector-level valuation call about AI and technology equities as a category; he did not specifically name QQQ or any ETF as the vehicle for this opportunity. The thesis describes a general overweight to AI/tech, not a specific instrument.]"
+    },
+    {
+      "ticker": "AI infrastructure basket",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "'AI infrastructure basket' is not a ticker or a specific security \u2014 it is a thematic label. The thesis is a broad sector valuation call, not specifically about infrastructure names. Removing as it adds no auditable ticker-level information."
+    }
+  ]
+}

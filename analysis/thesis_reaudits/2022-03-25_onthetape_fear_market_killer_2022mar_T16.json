@@ -1,0 +1,47 @@
+{
+  "date": "2022-03-25",
+  "source": "On The Tape / RiskReversal — Fear is the market killer",
+  "thesis_id": "T16",
+  "summary": "Video game companies have strategic value exceeding financial value; consolidation in gaming will accelerate driven by subscription model dynamics",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "MSFT",
+    "ATVI",
+    "RBLX",
+    "SNE",
+    "EA",
+    "TTWO"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Microsoft as the acquirer in the Activision deal, which he uses as the central validation of his subscription-driven consolidation thesis. Microsoft's Xbox Game Pass is directly cited as a structural driver of the thesis."
+    },
+    {
+      "ticker": "ATVI",
+      "action": "KEEP",
+      "reasoning": "Activision Blizzard is the direct subject of the Microsoft acquisition that Baker explicitly uses as the thesis-validating example of strategic value exceeding financial value in gaming."
+    },
+    {
+      "ticker": "RBLX",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly tied Roblox to the metaverse positioning and social network effects argument within this thesis — it is specifically named as an example of a dominant multiplayer platform with strategic value."
+    },
+    {
+      "ticker": "SNE",
+      "action": "KEEP",
+      "reasoning": "Sony/PlayStation is explicitly named by Baker as one of the two platform owners shifting to subscription models, making it a direct subject of the consolidation thesis rather than a tangential mention."
+    },
+    {
+      "ticker": "EA",
+      "action": "REMOVE",
+      "reasoning": "EA was not specifically named by Baker in connection with this thesis. It was added as an inferred beneficiary based on industry logic (independent publisher = acquisition target), not because Baker explicitly connected EA to this consolidation thesis."
+    },
+    {
+      "ticker": "TTWO",
+      "action": "REMOVE",
+      "reasoning": "Take-Two was not specifically named by Baker in connection with this thesis. Like EA, it was added as an inferred consolidation target based on general industry reasoning, not a direct Baker statement linking TTWO to this exact thesis."
+    }
+  ]
+}

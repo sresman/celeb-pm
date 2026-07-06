@@ -1,0 +1,79 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T2",
+  "summary": "AI infrastructure (picks and shovels) is the right place to invest at the beginning of a major technology wave",
+  "summary_extended": "Baker argues that at the beginning of every major technology wave, the optimal investment strategy is to focus on infrastructure \u2014 the 'picks and shovels' \u2014 rather than application-layer companies, drawing explicitly on Carlota Perez's framework of technology deployment cycles. He contends that AI is currently in this early infrastructure phase, and that valuations in AI infrastructure are not yet at bubble levels, making the risk/reward particularly attractive at this stage. The investment implication is to overweight companies supplying the core compute, networking, and memory infrastructure that enables AI model training and inference at scale. Baker has positioned his portfolio accordingly in both public and private markets, treating this as a structural, high-conviction view rather than a tactical trade. No specific price targets or timeframes were cited, but the medium-term horizon implies this positioning is expected to persist through the current infrastructure buildout phase.",
+  "detail": "Baker references Carlota Perez's work on technology waves \u2014 at the start of each wave, infrastructure/picks-and-shovels investing outperforms. He explicitly says we are far from a bubble in AI on a valuation basis, making infrastructure investment attractive now.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as a structural principle backed by historical precedent and his own portfolio positioning in both public and private markets",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "technology cycle timing"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "at the beginning of every massive new technology wave you do want to invest at the picks and shovels",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "ANET",
+    "MRVL",
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "ANET",
+    "MRVL",
+    "MU",
+    "WDC",
+    "STX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of AI training and inference GPUs \u2014 the clearest single beneficiary of AI infrastructure spending. Directly fits the picks-and-shovels framing."
+    },
+    {
+      "ticker": "ANET",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Arista Networks is a leading supplier of networking infrastructure to AI datacenters, a direct picks-and-shovels beneficiary of AI infrastructure buildout."
+    },
+    {
+      "ticker": "MRVL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Marvell supplies custom AI ASICs and networking silicon for datacenter infrastructure, making it a direct beneficiary of AI infrastructure investment."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While AMD competes in AI accelerators, Baker's thesis is a broad infrastructure theme and AMD was not specifically called out. Its AI GPU share is marginal relative to NVDA and its inclusion here appears to be bleed from adjacent context rather than a clear implication of this thesis."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is a primary supplier of HBM and DRAM memory used in AI accelerators \u2014 a direct picks-and-shovels input to AI infrastructure."
+    },
+    {
+      "ticker": "WDC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Western Digital supplies HDDs and NAND flash, which are storage components but not the primary bottleneck or investment focus in AI infrastructure buildout. Its inclusion appears tangential to the core thesis."
+    },
+    {
+      "ticker": "STX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Seagate supplies HDD storage, which is peripheral to the AI compute and networking infrastructure Baker is describing. Not a clear picks-and-shovels beneficiary of the AI training/inference buildout."
+    }
+  ]
+}

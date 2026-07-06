@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T23",
+  "summary": "Google remains in a strong structural position despite losing Pareto frontier leadership, due to its massive installed compute base, YouTube data advantage for robotics, and GCP growth",
+  "summary_extended": "Baker argues that Google (GOOGL) occupies a structurally resilient position in the AI era despite having lost Pareto frontier model leadership to OpenAI and Anthropic, primarily because it possesses the largest installed compute base of any company \u2014 an asset that becomes increasingly valuable in a world of persistent hardware shortages. He reasons that Google's YouTube data trove provides a unique and genuine advantage for robotics training, and that GCP's strong growth trajectory further reinforces the company's durable competitive positioning. However, Baker flags a critical near-term test: if Google IO (occurring at the time of the interview) fails to produce a model that leapfrogs OpenAI or Claude, it would confirm that the 'Nvidia effect' \u2014 the thesis that raw compute advantage does not automatically translate into model quality leadership \u2014 is more powerful than previously assumed. The investment implication is a moderate-conviction long on GOOGL, with the Google IO event serving as a key catalyst to either validate or undermine the compute-advantage thesis; Baker describes Google as 'never not going to be in a good position' but acknowledges meaningful uncertainty around whether its resources will convert to frontier model performance.",
+  "detail": "Google has the most compute of any company. In a world of shortages, installed compute bases are more valuable. YouTube data is genuinely valuable for robotics training. GCP is growing strongly. Baker is watching Google IO (this week) closely \u2014 if they don't release something that leapfrogs OpenAI/Claude, it confirms the 'Nvidia effect' (compute advantage doesn't translate to model quality) is more powerful than expected.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents Google as 'never not going to be in a good position' but expresses surprise at their inability to maintain Pareto frontier leadership",
+  "themes": [
+    "AI model layer",
+    "competitive dynamics",
+    "cloud infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Google has the most compute of everyone \u2014 biggest installed base",
+  "tickers_named_original": [
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about Google's structural position, compute base, YouTube data advantage, GCP growth, and model competitiveness \u2014 GOOGL is unambiguously the direct subject."
+    }
+  ]
+}

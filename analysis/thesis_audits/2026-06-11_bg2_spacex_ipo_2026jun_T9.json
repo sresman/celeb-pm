@@ -1,0 +1,36 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T9",
+  "summary": "In a power-constrained world, tokens-per-watt advantage makes Nvidia superior to alternatives even at higher cost",
+  "summary_extended": "Baker argues that in a power-constrained AI infrastructure environment, Nvidia's superior tokens-per-watt efficiency translates directly into higher revenue generation for datacenter operators, making Nvidia's premium pricing structurally justified rather than merely a performance luxury. His core reasoning is that when power (watts) is the binding constraint on compute capacity, the chip that produces more tokens per watt effectively produces more billable output per unit of scarce resource \u2014 meaning more revenue per rack. Baker explicitly endorses Jensen Huang's framing that 'more tokens per watt is literally revenue,' and argues that a hyperscaler or cloud operator choosing a cheaper but less efficient alternative saves on capex but sacrifices top-line revenue and potentially margin. The investment implication is that Nvidia's pricing power is durable and structurally anchored to the economics of power-constrained datacenters, not just benchmark superiority, and that competitors offering lower-cost alternatives face a fundamental revenue-generation disadvantage in this environment. No specific numerical targets or timeframes are cited, but Baker frames this as a medium-term structural dynamic tied to ongoing power scarcity in AI infrastructure build-outs.",
+  "detail": "Baker argues that in a watt-constrained environment, more tokens per watt = more revenue. Building a factory with a cheaper chip saves money but generates less revenue with potentially lower margins. This is Jensen's core argument and Baker endorses it strongly. The implication is that Nvidia's premium is justified by revenue generation, not just performance specs.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly endorses Jensen's argument and calls it 'really important'; frames it as a structural advantage in a constrained environment",
+  "themes": [
+    "semiconductor supply chain",
+    "power/energy",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "more tokens per watt, which is literally revenue with Nvidia",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about Nvidia's tokens-per-watt advantage and why its premium pricing is justified; Nvidia is the direct subject of the structural argument Baker endorses."
+    }
+  ]
+}

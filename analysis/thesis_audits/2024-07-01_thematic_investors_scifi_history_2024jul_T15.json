@@ -1,0 +1,43 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T15",
+  "summary": "Brain-computer interfaces (BCI) are the likely long-term interface for the metaverse, not VR headsets",
+  "summary_extended": "Baker argues that VR headsets will not be the primary interface for the metaverse due to their alienating form factor, citing even Apple's Vision Pro as too socially isolating for mass adoption. Instead, he believes the metaverse will ultimately be accessed through either brain-computer interfaces (BCIs) \u2014 referencing Neuralink, Meta's CTRL-Labs acquisition, and Precision Neuroscience \u2014 or AR glasses and eventually contact lenses. He points to Meta's Ray-Ban smart glasses as a quiet but meaningful early signal of the AR path gaining traction. Baker frames this as a revised view, acknowledging he was wrong on metaverse timing but maintaining the long-term structural thesis with a different delivery mechanism. Both BCI and AR paths require additional Moore's Law cycles, implying this is a multi-decade thesis with no near-term investment catalyst.",
+  "detail": "Baker believes VR headsets are too alienating for mass adoption (even Apple's headset). The metaverse will require either BCI (Neuralink, Facebook's CTRL-Labs acquisition, Precision Neuroscience) or AR glasses/contact lenses. Meta Ray-Ban glasses are a quiet early signal. Both paths require additional Moore's Law cycles.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker frames this as a revised view \u2014 he was wrong on metaverse timing but maintains the long-term thesis with a different mechanism",
+  "themes": [
+    "metaverse",
+    "brain-computer interface",
+    "AR/VR"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "I just don't think VR headsets are going to be the mechanism",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "META"
+  ],
+  "tickers_subject": [
+    "META"
+  ],
+  "tickers_implied_original": [
+    "META",
+    "AAPL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is directly central to this thesis on multiple dimensions: its CTRL-Labs BCI acquisition, its Ray-Ban AR glasses as an early signal, and its broader metaverse ambitions make it the primary publicly-listed vehicle for this thesis."
+    },
+    {
+      "ticker": "AAPL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Apple's Vision Pro is cited only as an example of why VR headsets will fail to achieve mass adoption \u2014 it is used as a negative illustration, not as a beneficiary or subject of the thesis. Baker is not making a bullish or bearish call on AAPL specifically, and AAPL has no meaningful BCI or AR glasses exposure relevant to this thesis."
+    }
+  ]
+}

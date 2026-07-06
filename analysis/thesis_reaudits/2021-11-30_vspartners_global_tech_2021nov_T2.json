@@ -1,0 +1,29 @@
+{
+  "date": "2021-11-30",
+  "source": "VS Partners / Financial Times Global Seattle Symposium — Global technology investment: hype, hope, reality",
+  "thesis_id": "T2",
+  "summary": "AI is the dominant structural force in technology — scale of training data is the only thing that matters",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Google in connection with this AI scaling laws / data moat thesis. The thesis is a general structural view about data-rich incumbents. GOOGL was inferred as an obvious beneficiary, not explicitly named by Baker in connection with this specific claim. Per the strict test, implied beneficiaries do not qualify."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Meta/Facebook in connection with this AI scaling laws / data moat thesis. Like GOOGL, Meta was inferred as a plausible beneficiary of the general structural claim, not explicitly connected by Baker to this exact thesis in the transcript."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Microsoft in connection with this AI scaling laws / data moat thesis. Microsoft was added as an implied beneficiary, not because Baker explicitly linked it to this specific scaling law / training data claim. Must be removed under the strict test."
+    }
+  ]
+}

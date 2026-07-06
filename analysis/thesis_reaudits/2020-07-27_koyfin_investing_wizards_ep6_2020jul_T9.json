@@ -1,0 +1,35 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards — AI tailwind for semiconductors",
+  "thesis_id": "T9",
+  "summary": "Internet platform businesses are natural monopolies of a historically unprecedented kind — data-driven AI quality moats mean even unlimited capital cannot replicate their competitive position",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "AMZN",
+    "MSFT",
+    "META"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Google Search is explicitly cited by Baker as the canonical example of an unassailable data-AI moat. Bing's failure to compete with Google is directly used as evidence for this thesis. GOOGL is the primary subject of the thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Amazon is explicitly named by Baker — its failed search engine is cited as concrete evidence that even the most well-capitalized companies cannot break into entrenched data-AI moats. Amazon is a direct subject of the thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Microsoft's Bing is explicitly cited by Baker as a case study of a well-capitalized company failing to replicate a data-AI moat. MSFT is directly named in connection with this exact thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "While Facebook/Meta is an archetypal data-driven platform, Baker did not specifically name or cite Meta/Facebook in connection with this thesis based on the transcript summary. The thesis examples given are Google Search, Amazon's failed search, and Bing. Adding META is an inference about an obvious beneficiary, not a specific connection Baker made to this thesis."
+    }
+  ]
+}

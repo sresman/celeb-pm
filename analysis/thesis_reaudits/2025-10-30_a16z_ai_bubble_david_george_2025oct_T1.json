@@ -1,0 +1,47 @@
+{
+  "date": "2025-10-30",
+  "source": "a16z Podcast — Is there an AI bubble?",
+  "thesis_id": "T1",
+  "summary": "No AI bubble today — GPU utilization vs. dark fiber is the key contrast to 2000",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "NVDA",
+    "CSCO",
+    "GOOGL",
+    "META",
+    "MSFT",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly cited Nvidia's ~40x trailing earnings as the central valuation data point in his anti-bubble argument. This ticker is the direct subject of the thesis."
+    },
+    {
+      "ticker": "CSCO",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly cited Cisco's 150-180x earnings at the 2000 bubble peak as the historical analog benchmark. This ticker is the direct comparative subject of the thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "Baker referenced hyperscaler ROIC improvement as a group-level data point to support the no-bubble thesis, but did not specifically name Google in connection with this ROIC claim. The hyperscaler ROIC argument is a structural supporting point, not a company-specific claim about GOOGL."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Meta in connection with the hyperscaler ROIC improvement argument. Meta was likely mentioned elsewhere in the interview but was not specifically tied to this thesis's ROIC or valuation claims."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Microsoft in connection with the hyperscaler ROIC improvement argument. The ROIC point was made at the sector/group level without naming MSFT as a specific subject."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Amazon in connection with the hyperscaler ROIC improvement argument. The group-level ROIC claim does not constitute a specific connection to AMZN for this thesis."
+    }
+  ]
+}

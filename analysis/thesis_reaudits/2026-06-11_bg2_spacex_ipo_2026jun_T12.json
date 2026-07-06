@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod — SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T12",
+  "summary": "AI compute monetization rates per gigawatt are increasing, not deflating, contrary to consensus expectations entering 2026",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "NVDA",
+    "EQIX",
+    "DLR",
+    "VST",
+    "CEG"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker's thesis is about AI compute monetization rates per gigawatt rising for asset-heavy infrastructure owners. NVDA is a GPU supplier — it is tangential to this specific thesis about revenue-per-GW for infrastructure operators. Baker did not specifically name NVDA as a beneficiary of rising monetization rates per GW in this thesis. The supply constraint dynamic benefits infrastructure owners, not necessarily the chip vendor. Remove per the rule: if Baker said 'Nvidia' in a different context in the same interview, it does not belong here."
+    },
+    {
+      "ticker": "EQIX",
+      "action": "REMOVE",
+      "reasoning": "EQIX was not specifically named by Baker in connection with this thesis. The first-pass audit inferred EQIX as a beneficiary from Baker's general statement about owning asset-heavy businesses, but Baker did not specifically mention Equinix. Inference-based additions do not meet the strict standard required."
+    },
+    {
+      "ticker": "DLR",
+      "action": "REMOVE",
+      "reasoning": "DLR was not specifically named by Baker in connection with this thesis. Same issue as EQIX — it was inferred as a data center REIT beneficiary, but Baker did not specifically call out Digital Realty. Remove per strict standard."
+    },
+    {
+      "ticker": "VST",
+      "action": "REMOVE",
+      "reasoning": "VST was not specifically named by Baker in this thesis. While power infrastructure is mentioned as a category Baker endorses, Vistra was not specifically cited by Baker in connection with rising AI compute monetization rates per GW."
+    },
+    {
+      "ticker": "CEG",
+      "action": "REMOVE",
+      "reasoning": "CEG was not specifically named by Baker in connection with this thesis. Constellation Energy is an inferred beneficiary of the power demand theme, but Baker did not specifically mention CEG in the context of this exact thesis about rising monetization rates per GW."
+    }
+  ]
+}

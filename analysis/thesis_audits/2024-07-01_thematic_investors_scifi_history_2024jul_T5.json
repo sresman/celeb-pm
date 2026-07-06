@@ -1,0 +1,55 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T5",
+  "summary": "Power availability is the binding constraint on AI data center scaling; only three viable gigawatt-scale sites exist in the US",
+  "summary_extended": "Baker argues that power availability has become the single binding constraint on AI data center scaling, with the industry having moved well beyond 100 MW facilities and now planning 1 GW and 5 GW campuses. He identifies a hard geographic constraint: there are only three sites in the entire United States where nuclear reactors are clustered closely enough together to supply the power loads required for these hyperscale facilities. Beyond those three nuclear-adjacent sites, operators must aggregate power from multiple discrete plants, which in turn creates a derived demand for high-capacity optical networking infrastructure to connect them. The investment implication is that the owners of those nuclear-adjacent sites hold scarce, nearly irreplaceable assets, making the nuclear power operators with large multi-reactor campuses direct beneficiaries of hyperscale AI buildout demand. Baker does not name specific companies, but the US-listed nuclear-heavy utilities \u2014 particularly Constellation Energy (CEG) and Vistra (VST) \u2014 are the clearest implied beneficiaries given their large nuclear fleets and existing data center power deal activity.",
+  "detail": "Baker states that everyone has moved beyond 100 MW data centers and is thinking about 1 GW and 5 GW data centers. There are only three sites in the US where nuclear reactors are close enough together to supply sufficient power. Beyond those, you must string together discrete power plants, which creates the optical networking requirement.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Stated as a hard physical/geographic constraint, not a forecast",
+  "themes": [
+    "power/energy",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "only three sites in the United States where there are these nuclear reactors that are close enough together",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CEG",
+    "VST"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "VST",
+    "CEG",
+    "NRG",
+    "ETR"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CEG",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Constellation Energy is the largest US nuclear operator and owns multi-reactor sites that match Baker's description of the three viable gigawatt-scale nuclear-adjacent locations; it is a direct beneficiary of this scarcity thesis."
+    },
+    {
+      "ticker": "VST",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Vistra owns nuclear assets including multi-unit sites and has been actively pursuing data center power agreements, making it a direct beneficiary of the nuclear-adjacent site scarcity Baker describes."
+    },
+    {
+      "ticker": "NRG",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NRG's power portfolio is predominantly natural gas and does not own the clustered nuclear reactor sites that are the specific subject of Baker's constraint thesis; its inclusion is not clearly supported by this specific argument."
+    },
+    {
+      "ticker": "ETR",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Entergy operates some nuclear plants but they are not clustered in the multi-reactor gigawatt-scale configurations Baker describes, and Entergy has not been a prominent participant in hyperscale data center power deals; tangential to this specific thesis."
+    }
+  ]
+}

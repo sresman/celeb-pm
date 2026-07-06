@@ -1,0 +1,40 @@
+{
+  "date": "2026-03-02",
+  "source": "Capital Allocators \u2014 Crossover investing",
+  "thesis_id": "T2",
+  "summary": "Crossover investing (public + private) is a structural advantage in AI because competitors exist at every stack layer in both public and private markets simultaneously",
+  "summary_extended": "Baker argues that crossover investing \u2014 holding both public and private equities simultaneously \u2014 is a structural necessity in AI, unlike prior technology waves such as smartphones or SaaS where competition was predominantly among public companies. In AI, every layer of the stack features both public and private competitors: frontier models pit OpenAI, Anthropic, and xAI against Google; semiconductors and applications show the same pattern. Because of this, Baker contends that an investor cannot properly underwrite a public AI company without understanding its private competitors, and cannot underwrite a private AI company without understanding the public landscape \u2014 making the crossover lens 'paramount' in AI. The investment implication is structural and process-oriented rather than stock-specific: firms with crossover capabilities have an analytical edge in AI investing that pure public or pure private investors lack. No specific price targets, timeframes, or financial metrics are cited; the thesis is about investor positioning and analytical framework rather than a directional bet on any single company.",
+  "detail": "Unlike prior technology waves (smartphones, SaaS) where competition was predominantly among public companies, AI features public and private competitors at every layer: frontier models (OpenAI, Anthropic, xAI vs. Google), semiconductors, and applications. Baker argues you cannot properly underwrite public AI companies without understanding private ones and vice versa.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'paramount in AI' and says he doesn't know how to underwrite either public or private AI companies without both lenses \u2014 his strongest language in the transcript.",
+  "themes": [
+    "AI infrastructure",
+    "crossover investing",
+    "private market access",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "at every level of the stack, the competitors are both public and private",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "GOOGL",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GOOGL is mentioned only as an example of a public competitor in frontier models to illustrate the public-vs-private dynamic. The thesis is about the crossover investing framework itself, not a directional view on Google. GOOGL is not a subject of or beneficiary of this structural thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META does not appear in the quote fragment or detail of this thesis at all. It appears to have bled in from an adjacent thesis. This thesis is about the crossover investing framework and META is neither a subject nor a beneficiary here."
+    }
+  ]
+}

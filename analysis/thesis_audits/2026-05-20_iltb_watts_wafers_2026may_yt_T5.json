@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T5",
+  "summary": "The Strait of Hormuz closure is net positive for America's relative manufacturing competitiveness, particularly for AI infrastructure, due to natural gas price dynamics",
+  "summary_extended": "Baker argues that the Strait of Hormuz closure created an asymmetric and widely misread benefit for US competitiveness in AI infrastructure by dramatically widening the natural gas price differential between the US and the rest of the world. Specifically, US natural gas prices fell approximately 20% on Bloomberg while Asian and European natural gas prices doubled or tripled, meaning US electricity costs \u2014 a critical input to AI datacenter operations \u2014 became significantly cheaper relative to global peers overnight. Baker frames this as a structural tailwind for US-based AI infrastructure buildout that aligned with the current administration's manufacturing competitiveness goals, and used this insight to justify staying long AI-related equities during the tariff and geopolitical-driven market selloff. He developed this view in consultation with national security experts, though he acknowledges it is a macro/geopolitical read rather than a bottoms-up company thesis. The investment implication is to remain long US AI infrastructure and datacenter-exposed equities, as the energy cost advantage reinforces the US as the preferred geography for AI compute buildout.",
+  "detail": "US natural gas (key input to electricity/AI) fell 20% on Bloomberg while Asian/European gas doubled or tripled. This improves US relative manufacturing competitiveness overnight, which aligns with current administration goals. Baker frames this as a misread risk that actually helped him stay long AI during the tariff/geopolitical selloff.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as a view he formed with help from national security experts, but acknowledges it is a macro/geopolitical read rather than a fundamental company thesis",
+  "themes": [
+    "power/energy",
+    "geopolitics",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "natural gas in Asia, Europe, everywhere else doubled or tripled",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "EQT"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "US natural gas producers",
+    "US AI infrastructure companies"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "EQT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "EQT is the largest US natural gas producer and a direct beneficiary of the thesis: US natural gas prices falling while global prices spike is a nuanced dynamic, but the broader theme of US natural gas as a competitive input advantage supports US gas producers who supply the domestic market at lower cost. However, the thesis is more about AI infrastructure benefiting from cheap US gas than about gas producers per se \u2014 EQT is only a marginal add and the link is not unambiguous enough to include."
+    },
+    {
+      "ticker": "EQIX",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "While Equinix operates datacenters and would benefit from lower US electricity costs, Baker does not name or clearly imply any specific datacenter REIT or operator, making this too loosely connected to add."
+    },
+    {
+      "ticker": "VST",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Vistra is a US power generator that could benefit from AI datacenter demand, but Baker does not name or clearly imply any specific power company in this thesis."
+    }
+  ]
+}

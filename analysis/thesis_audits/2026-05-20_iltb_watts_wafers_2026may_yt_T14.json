@@ -1,0 +1,46 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T14",
+  "summary": "The disaggregation of prefill and inference extends GPU useful lives to 10-15 years, which is structurally positive for private credit GPU financing and lowers the cost of the AI buildout",
+  "summary_extended": "Baker argues that the architectural disaggregation of AI inference into separate prefill and decode stages structurally extends the useful life of older GPUs (Hopper, Ampere-generation) to 10-15 years, far beyond the 1-4 year useful life assumed by AI skeptics and embedded in current financing structures. His reasoning is that older chips can handle the compute-intensive prefill workload while newer chips handle latency-sensitive decode, meaning older hardware retains genuine economic utility rather than becoming obsolete. The investment implication is that GPU-backed private credit financing rates, currently in the low-7% range (citing CoreWeave as the benchmark), could compress to 5-6% as lenders recognize longer asset lives, materially reducing the total cost of the AI infrastructure buildout. Baker frames this as a structural positive for GPU financing vehicles and cloud/hyperscale operators who lease GPU capacity, and suggests it could offset losses private credit lenders face from deteriorating SaaS loan books. He cites no specific timeframe for the rate compression but treats the useful-life extension as an already-emerging structural reality rather than a speculative future outcome.",
+  "detail": "Baker argues that older GPUs (Hopper, Ampere) can be repurposed for prefill workloads while newer chips handle decode, extending useful lives far beyond the 1-4 years AI skeptics assume. This could lower GPU financing rates from ~7% (CoreWeave's lowest) to 5-6%, materially reducing the cost of the AI buildout. He also notes this could 'save private credit' from SaaS loan losses.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker makes specific claims about useful life extension (10-15 years), specific financing rate comparisons (CoreWeave low-7s vs. potential 5-6%), and frames this as a structural insight",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "private credit"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "GPUs are going to have 10 or 15-year lives",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRWV"
+  ],
+  "tickers_subject": [
+    "CRWV"
+  ],
+  "tickers_implied_original": [
+    "CoreWeave (CRWV)",
+    "Nvidia (NVDA)",
+    "Cerebras (private)",
+    "Groq (private, acquired by Nvidia)",
+    "private credit lenders with GPU exposure"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "CoreWeave is the explicit benchmark Baker uses for current GPU financing rates (low-7%) and is the primary publicly-listed entity whose business model \u2014 GPU-backed private credit financing and cloud leasing \u2014 is directly affected by longer GPU useful lives and potential rate compression."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Nvidia is the manufacturer of the Hopper and Ampere GPUs referenced, but this thesis is about the financing economics and useful-life extension of existing installed GPUs, not about Nvidia's future chip sales or revenue. Nvidia's inclusion is incidental to the structural argument about asset longevity and credit rates."
+    }
+  ]
+}

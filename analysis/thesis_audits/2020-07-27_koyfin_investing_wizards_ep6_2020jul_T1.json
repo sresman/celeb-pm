@@ -1,0 +1,102 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards \u2014 AI tailwind for semiconductors",
+  "thesis_id": "T1",
+  "summary": "AI has dramatically higher semiconductor intensity than human-written software, driving a multi-decade structural demand uplift for the entire semiconductor industry",
+  "summary_extended": "Baker argues that AI software has dramatically higher semiconductor intensity than human-written software \u2014 approximately 6x more memory consumption and significantly more compute, networking, and storage requirements per unit of workload. As AI progressively displaces human-written software over a 10-30 year horizon, he believes the semiconductor industry's share of global GDP should rise by 4-6x, representing one of the most important structural investment themes of the coming decades. The investment implication is broad and sector-wide: virtually every segment of the semiconductor supply chain \u2014 logic, memory, networking, capital equipment \u2014 stands to benefit from this secular demand uplift. Baker frames this not as a cyclical trade but as a foundational structural view underpinning all of his semiconductor investments, with the magnitude of uplift (4-6x semiconductor intensity) providing a quantitative anchor for long-duration positioning across the space.",
+  "detail": "Baker argues AI consumes ~6x the memory and significantly more compute, networking, and processing than traditional software. As AI displaces human-written software over 10-20-30 years, semiconductor share of global GDP should rise by 4-6x. This is framed as one of the most important investment themes of the next 10-30 years.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls it 'one of the most important investment themes over the next 10, 20, 30 years' and quantifies the uplift at 4-6x semiconductor intensity. He returns to this thesis multiple times and frames it as the structural foundation for all his semiconductor views.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "AI software displacement"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "semiconductor intensity of software is going to go up significantly, by 4 to 6x",
+  "tickers_named_original": [
+    "NVDA",
+    "INTC",
+    "AMD",
+    "XLNX",
+    "MU",
+    "ASML",
+    "LRCX",
+    "TSM"
+  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SMH",
+    "SOXX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of AI compute (GPUs), making it a direct and primary beneficiary of the secular increase in AI-driven semiconductor intensity Baker describes. [RE-AUDIT: Baker's thesis is a broad structural view about AI semiconductor intensity uplifting the entire sector. While NVDA is an obvious beneficiary, Baker did not specifically name NVDA in connection with this exact structural claim \u2014 the thesis is sector-wide and general, not company-specific. NVDA appears to be an inferred beneficiary rather than one Baker explicitly connected to this thesis.]"
+    },
+    {
+      "ticker": "MU",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker specifically cites ~6x higher memory consumption as a key driver of AI semiconductor intensity; MU as the primary US-listed DRAM/HBM producer is a direct beneficiary. [RE-AUDIT: Baker cited ~6x higher memory consumption as a quantitative anchor for the thesis, but this is a general structural data point about AI vs. human-written software, not a specific call-out of MU as a named beneficiary. MU is an inferred beneficiary of the memory intensity claim, not explicitly named in connection with this thesis.]"
+    },
+    {
+      "ticker": "ASML",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "ASML is the sole supplier of EUV lithography equipment required to manufacture advanced semiconductors; a 4-6x rise in semiconductor intensity drives sustained capital equipment demand directly to ASML. [RE-AUDIT: ASML is a capital equipment company that would benefit from secular semiconductor demand growth, but Baker did not specifically name ASML in connection with this structural AI intensity thesis. It is an inferred beneficiary of the general sector uplift narrative.]"
+    },
+    {
+      "ticker": "LRCX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Lam Research is a major semiconductor capital equipment supplier; secular demand growth across logic and memory directly benefits LRCX as fabs expand capacity. [RE-AUDIT: Lam Research is a capital equipment supplier that would benefit from secular demand growth, but Baker did not specifically name LRCX in connection with this exact thesis. It is an inferred beneficiary, not an explicitly named one.]"
+    },
+    {
+      "ticker": "INTC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Intel is a semiconductor company but the thesis is a broad structural sector view, not specifically about Intel; Intel's competitive struggles in AI make it a weak beneficiary and its inclusion appears to be contamination from adjacent transcript discussion."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is a semiconductor company but the thesis is a broad structural sector view; AMD's inclusion appears to be contamination from adjacent discussion rather than a specific implication of this thesis."
+    },
+    {
+      "ticker": "XLNX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Xilinx (FPGAs) is a semiconductor company but is not specifically called out as a beneficiary of AI semiconductor intensity in this thesis; inclusion appears tangential."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "TSMC is the world's leading contract semiconductor manufacturer; a structural 4-6x rise in semiconductor intensity across AI workloads directly drives sustained wafer demand to TSM. [RE-AUDIT: TSMC would benefit from higher wafer demand driven by AI semiconductor intensity, but Baker did not specifically name TSM in connection with this structural thesis. It is an inferred beneficiary of the general sector uplift view.]"
+    },
+    {
+      "ticker": "SMH",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "SMH is the VanEck Semiconductor ETF; as a broad semiconductor sector vehicle it is a direct expression of Baker's thesis that the entire semiconductor industry benefits from AI-driven intensity uplift. [RE-AUDIT: ETF tickers are never direct subjects or beneficiaries of a specific thesis per the audit rules. SMH should always be removed.]"
+    },
+    {
+      "ticker": "SOXX",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "SOXX is the iShares Semiconductor ETF; similarly a direct broad-sector expression of the structural semiconductor demand thesis Baker articulates. [RE-AUDIT: ETF tickers are never direct subjects or beneficiaries of a specific thesis per the audit rules. SOXX should always be removed.]"
+    },
+    {
+      "ticker": "AMAT",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Applied Materials is the largest semiconductor capital equipment company by revenue; a secular multi-decade increase in semiconductor manufacturing intensity unambiguously benefits AMAT as fabs invest in capacity and advanced process nodes. [RE-AUDIT: Applied Materials is a capital equipment company that would benefit from secular semiconductor demand growth, but Baker did not specifically name AMAT in connection with this exact structural AI intensity thesis. It is an inferred beneficiary, not an explicitly named one.]"
+    }
+  ]
+}

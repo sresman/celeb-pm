@@ -1,0 +1,46 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T22",
+  "summary": "For AI chip startups, the only viable path is to make different AND hard tradeoffs \u2014 trying to make a better GPU is a losing strategy against Nvidia",
+  "summary_extended": "Baker argues that AI chip startups cannot win by building a better general-purpose GPU \u2014 competing head-on with Nvidia on the same design tradeoffs is a losing strategy because Nvidia will simply copy any easily replicable innovation while leveraging superior TSMC pricing and relationships with model companies. His framework holds that 1% of the AI chip market is worth approximately $100B in valuation, making niche dominance a viable venture outcome without needing to displace Nvidia broadly. The key insight is that the disaggregation of inference into prefill (memory capacity bound) and decode (memory bandwidth bound) stages creates distinct design canvases where startups can make aggressive, hard-to-replicate architectural tradeoffs optimized for one workload. Baker cites Cerebras as an example of a startup doing this correctly \u2014 making extreme tradeoffs (wafer-scale integration) that Nvidia structurally cannot replicate \u2014 while generic GPU competitors are doing it wrong. The investment implication is to back chip startups that make differentiated, structurally irreplicable bets on prefill or decode optimization rather than general-purpose accelerators.",
+  "detail": "Baker's framework: 1% market share = $100B valuation (good venture outcome). But if you make different tradeoffs that are easy to replicate, Nvidia will copy them (with better TSMC pricing and model company relationships). The disaggregation of prefill and decode opens new design canvases. Startups should optimize aggressively for prefill (memory capacity bound) or decode (memory bandwidth bound) but the tradeoffs must be hard to replicate.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker presents this as a clear framework he applies to all chip startup investments, with specific examples (Cerebras as doing it right, generic GPU competitors as doing it wrong)",
+  "themes": [
+    "semiconductor supply chain",
+    "venture/private markets",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "1% market share is going to be worth 100 billion",
+  "tickers_named_original": [
+    "NVDA",
+    "AMD"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "Cerebras (private)",
+    "various chip startups"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nvidia is the central competitive reference point of the entire thesis \u2014 Baker's framework is explicitly about whether startups can compete with or differentiate from Nvidia, making it a direct subject of the thesis rather than merely tangential."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is not mentioned in the thesis detail or quote fragment and does not appear to be a subject of or beneficiary of this specific thesis about chip startup strategy. Its presence appears to be contamination from an adjacent segment about GPU competitors."
+    }
+  ]
+}

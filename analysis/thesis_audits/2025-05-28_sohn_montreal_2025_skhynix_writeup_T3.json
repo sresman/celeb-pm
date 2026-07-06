@@ -1,0 +1,53 @@
+{
+  "date": "2025-05-28",
+  "source": "HedgeFundAlpha (writeup) \u2014 SK Hynix / HBM pitch",
+  "thesis_id": "T3",
+  "summary": "Reasoning models (advanced inference-time compute scaling) are a structural catalyst for HBM demand growth beyond what consensus expects.",
+  "summary_extended": "Baker argues that the emergence of reasoning models \u2014 which scale compute at inference time rather than only at training time \u2014 represents a structural catalyst for HBM demand that the market is materially underestimating. Reasoning models require significantly more memory bandwidth per inference step compared to standard forward-pass models, meaning each inference job consumes far more HBM capacity, driving a step-change in memory intensity per GPU cluster. This implies that consensus HBM demand forecasts, which may be anchored to training-era assumptions, are too low, and that HBM suppliers stand to benefit disproportionately as inference workloads scale. Baker frames this as a reshaping force across the semiconductor landscape, with SK Hynix (the dominant HBM supplier) as the primary beneficiary, and Micron as the only US-listed HBM producer also positioned to capture incremental demand. The investment implication is to be long HBM-exposed memory producers, particularly those with leading HBM3e and HBM4 capacity, as reasoning model adoption accelerates through the medium term.",
+  "detail": "Baker highlights advancements in reasoning models as a key driver reshaping the semiconductor landscape. Reasoning models require significantly more memory bandwidth per inference step than standard models, implying HBM demand could be materially underestimated by the market.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Explicitly cited as a reshaping force in the semiconductor landscape within the context of his primary pitch.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "HBM/memory",
+    "AI inference scaling"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "advancements in reasoning models and high-bandwidth memory are reshaping the semiconductor landscape",
+  "tickers_named_original": [
+    "000660.KS"
+  ],
+  "tickers_direct": [
+    "000660.KS",
+    "MU"
+  ],
+  "tickers_subject": [
+    "000660.KS"
+  ],
+  "tickers_implied_original": [
+    "MU",
+    "SSNLF"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "000660.KS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SK Hynix is the primary subject of the pitch and the dominant HBM supplier; reasoning model demand growth directly benefits its core HBM franchise."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is the only US-listed HBM producer and directly benefits from structural HBM demand upside driven by reasoning model inference scaling."
+    },
+    {
+      "ticker": "SSNLF",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Samsung is a Korean-listed company (OTC pink sheet in the US) and while it produces HBM, it has struggled with HBM qualification; more importantly it is not a US-listed equity and the thesis does not unambiguously imply it as a clear beneficiary over SK Hynix and Micron. Remove as tangential."
+    }
+  ]
+}

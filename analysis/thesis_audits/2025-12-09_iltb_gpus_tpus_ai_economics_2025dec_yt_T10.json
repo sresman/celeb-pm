@@ -1,0 +1,51 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T10",
+  "summary": "Power scarcity is structurally bullish for the most compute-efficient chips (Nvidia GPUs), making price irrelevant when watts are the binding constraint",
+  "summary_extended": "Baker argues that power scarcity fundamentally changes the economics of AI compute procurement, making tokens-per-watt the only metric that matters rather than total cost of ownership or upfront capex. When a data center is power-constrained, the operator should deploy the most compute-efficient chip available regardless of price, because a superior chip generating $25B in revenue from a fixed power envelope beats a cheaper ASIC generating only $8B from the same envelope. This structural dynamic gives maximum pricing power to whoever produces the most advanced, compute-efficient chips \u2014 which Baker identifies as Nvidia \u2014 for as long as power remains scarce. Baker calls this insight 'really important to me as an investor,' signaling high conviction, and the investment implication is that Nvidia's pricing power is durable and structurally protected by the power constraint rather than being vulnerable to cheaper ASIC alternatives. The thesis implicitly argues against the bear case that custom ASICs from hyperscalers will erode Nvidia's margins, because efficiency-per-watt, not cost-per-chip, is the binding competitive dimension.",
+  "detail": "When power is the constraint, tokens-per-watt is the only metric that matters. A data center with superior chips generating 25B in revenue beats a cheaper ASIC data center generating 8B, regardless of capex cost. This gives maximum pricing power to the most advanced compute technologies as long as power remains scarce.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'really important to me as an investor' and provides a specific numerical example to illustrate the point",
+  "themes": [
+    "power/energy",
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "if watts are the constraint, the TCO of your compute is absolutely irrelevant",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "AMD",
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Nvidia GPUs being the most compute-efficient chips and therefore commanding durable pricing power under power scarcity \u2014 Nvidia is the direct subject."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is not mentioned in the thesis reasoning or evidence; it likely bled in from an adjacent segment. The thesis does not make a specific claim about AMD's competitive position relative to tokens-per-watt, so it is tangential and should be removed."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While the thesis implicitly contrasts Nvidia GPUs against custom ASICs (like Google TPUs), the thesis is about Nvidia's structural advantage, not about Google as a beneficiary or subject. Google is the ASIC counterexample in Baker's numerical illustration but is not a beneficiary of this thesis \u2014 if anything, the thesis argues against the ASIC value proposition. Removing as tangential."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2021-11-01",
+  "source": "Graham & Doddsville (Columbia Business School) \u2014 Investor interview with Gavin Baker, CIO of Atreides Management (Issue 43, Fall 2021)",
+  "thesis_id": "T7",
+  "summary": "AI/ML accelerator startups in 2019-2020 were not close to disrupting incumbent GPU providers",
+  "summary_extended": "Baker argues that the wave of AI/ML accelerator startups that emerged in 2019-2020 \u2014 which caused significant anxiety in public markets about incumbent GPU providers \u2014 were nowhere near capable of actually disrupting the dominant GPU architecture at that time. His conviction came from direct, privileged access to these startups through Atreides' crossover investing strategy, which allowed him to evaluate their technology and go-to-market readiness firsthand rather than relying on public market narratives. He concluded that the disruption risk was vastly overstated, and this insight served as a key conviction-builder for maintaining or initiating a bullish position in the incumbent GPU provider. The investment implication is a long position in the dominant GPU provider for AI/ML workloads, with the startup threat dismissed as a near-term catalyst for concern. Baker does not name a specific current position, but the thesis unambiguously points to NVDA as the incumbent beneficiary, while AMD was a secondary GPU player with far less exposure to AI datacenter workloads at this time.",
+  "detail": "Baker monitored a large wave of AI accelerator startups in 2019-2020 that caused significant worry in public markets about incumbent GPU providers. His crossover investing work gave him access to these startups and he concluded they were far from actually disrupting GPUs \u2014 which was conviction-building for the incumbent GPU provider thesis.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker describes this as 'conviction building' from direct access to startups, implying a bullish view on incumbent GPU providers, but does not state a current position",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor",
+    "GPU",
+    "AI accelerators"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "how far away they were from actually disrupting GPUs",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant incumbent GPU provider for AI/ML workloads and is the unambiguous subject of this thesis \u2014 Baker's entire argument is that startups could not disrupt the incumbent GPU leader, which is NVIDIA."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is a GPU producer but was not a meaningful incumbent in AI/ML datacenter workloads in 2019-2020; the thesis is specifically about the dominant incumbent GPU provider that startups were trying to disrupt, which points to NVDA, not AMD. AMD's inclusion appears to be contamination from adjacent semiconductor context."
+    }
+  ]
+}

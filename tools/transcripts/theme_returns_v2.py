@@ -1,17 +1,17 @@
 """Regenerate Gavin Baker signal events from scratch and compute theme-basket returns.
 
-Clean v3 regeneration. Reads two source-of-truth files:
-  - ``analysis/thesis_timeline.json``    (319 theses)
-  - ``analysis/theme_baskets_v2.json``   (52 themes, regex ``keys``/``exclude`` + baskets)
+Clean v5 regeneration. Reads two source-of-truth files:
+  - ``analysis/thesis_timeline_v2_flat.json``  (319 theses)
+  - ``analysis/theme_baskets_v3.json``         (52 themes, regex ``keys``/``exclude`` + baskets)
 
 Pipeline:
   1. Cluster each thesis into themes via the regex ``keys``/``exclude`` patterns (multi-assign).
   2. Generate signal events per theme via a state machine (first mention, first HC, third within
-     1yr, first-with-tickers, first SMID ticker, HC at high-profile venue, thesis reversal).
-  3. Resolve each event's basket (date-aware) from ``theme_baskets_v2.json``.
+     1yr, first-with-tickers, HC at high-profile venue, thesis reversal).
+  3. Resolve each event's basket (date-aware) from ``theme_baskets_v3.json``.
   4. Pull/cache adjusted daily closes from EODHD for the 46-ticker universe.
   5. Compute equal-weight basket return + SMH benchmark + excess at 1m/1q/1y/2y.
-  6. Write ``analysis/step4_signal_events_v3.csv`` + print summary stats.
+  6. Write ``analysis/step4_signal_events_v5.csv`` + print summary stats.
 
 Standalone of ``src/celebpm`` (imports nothing from it).
 
@@ -39,9 +39,9 @@ from . import targets
 
 # --- Paths ------------------------------------------------------------------
 ANALYSIS_DIR = targets.REPO_ROOT / "analysis"
-TIMELINE_JSON = ANALYSIS_DIR / "thesis_timeline.json"
-BASKETS_JSON = ANALYSIS_DIR / "theme_baskets_v2.json"
-OUTPUT_CSV = ANALYSIS_DIR / "step4_signal_events_v3.csv"
+TIMELINE_JSON = ANALYSIS_DIR / "thesis_timeline_v2_flat.json"
+BASKETS_JSON = ANALYSIS_DIR / "theme_baskets_v3.json"
+OUTPUT_CSV = ANALYSIS_DIR / "step4_signal_events_v5.csv"
 PRICE_CACHE_DIR = ANALYSIS_DIR / "eod_prices"
 
 # --- EODHD -------------------------------------------------------------------
@@ -70,10 +70,6 @@ UNIVERSE: list[str] = [
 
 # --- Event-generation config -------------------------------------------------
 HIGH_CONVICTION = "high_conviction"
-MEGA_CAPS: frozenset[str] = frozenset({
-    "NVDA", "AMD", "INTC", "GOOGL", "AMZN", "MSFT", "META", "AAPL", "TSM",
-    "ASML", "AVGO", "TSLA", "NFLX", "CRM", "ORCL",
-})
 HIGH_PROFILE_VENUES: list[str] = [
     "sohn", "iconn", "iconnections", "boston investment conference", "hedgefundalpha",
 ]
@@ -189,10 +185,6 @@ def _venue_match(source: str) -> bool:
     return any(v in src for v in HIGH_PROFILE_VENUES)
 
 
-def _has_smid(tickers: list[str]) -> bool:
-    return any(t.upper() not in MEGA_CAPS for t in tickers)
-
-
 def _days_between(d1: str, d2: str) -> int:
     a = dt.date.fromisoformat(d1)
     b = dt.date.fromisoformat(d2)
@@ -226,7 +218,8 @@ def generate_events(
             "total_theme_mentions": total_mentions,
             "source": thesis.get("source", ""),
             "summary": thesis.get("summary", ""),
-            "tickers_named": ", ".join(thesis.get("tickers_named", []) or []),
+            "summary_extended": thesis.get("summary_extended", ""),
+            "tickers_direct": ", ".join(thesis.get("tickers_direct", []) or []),
         })
 
     first_date = unique_dates[0]
@@ -251,17 +244,10 @@ def generate_events(
     if total_mentions >= 3 and _days_between(unique_dates[0], unique_dates[2]) <= 365:
         emit("THIRD_MENTION_WITHIN_1YR", by_date[unique_dates[2]][0])
 
-    # FIRST_MENTION_WITH_TICKERS (earliest thesis with named tickers)
-    with_tickers = next((t for t in theses if t.get("tickers_named")), None)
+    # FIRST_MENTION_WITH_TICKERS (earliest thesis with direct tickers)
+    with_tickers = next((t for t in theses if t.get("tickers_direct")), None)
     if with_tickers is not None:
         emit("FIRST_MENTION_WITH_TICKERS", with_tickers)
-
-    # FIRST_SMID_TICKER (earliest thesis with a non-mega-cap named ticker)
-    with_smid = next(
-        (t for t in theses if t.get("tickers_named") and _has_smid(t["tickers_named"])), None
-    )
-    if with_smid is not None:
-        emit("FIRST_SMID_TICKER", with_smid)
 
     # HC_HIGH_PROFILE_VENUE (every HC thesis at a high-profile venue)
     for t in theses:
@@ -384,7 +370,7 @@ def compute_returns(
 # ---------------------------------------------------------------------------
 OUTPUT_FIELDS = [
     "date", "theme", "event_type", "confidence", "mention_number", "total_theme_mentions",
-    "source", "summary", "tickers_named",
+    "source", "summary", "summary_extended", "tickers_direct",
     "resolved_basket", "basket_source", "basket_direction", "basket_asterisk",
     *(f"ret_{l}" for l in INTERVALS),
     *(f"smh_{l}" for l in INTERVALS),

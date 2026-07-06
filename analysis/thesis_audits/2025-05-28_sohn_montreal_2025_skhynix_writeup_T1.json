@@ -1,0 +1,52 @@
+{
+  "date": "2025-05-28",
+  "source": "HedgeFundAlpha (writeup) \u2014 SK Hynix / HBM pitch",
+  "thesis_id": "T1",
+  "summary": "AI's shift from training to inference is driving rapid and accelerating growth in memory demand, particularly HBM.",
+  "summary_extended": "Baker argues that the AI industry's structural shift from training-dominated workloads to inference (including reasoning models) is the primary driver of accelerating demand for high-bandwidth memory. His reasoning is that inference workloads \u2014 especially those involving large reasoning models \u2014 require substantially more memory bandwidth and capacity per unit of compute than training, meaning that as inference scales, memory demand grows disproportionately. This makes HBM the critical bottleneck and investment opportunity in the AI infrastructure stack. The investment implication is a long position in HBM producers, with SK Hynix (000660.KS) named explicitly as the core position in his Sohn Montreal pitch, and Micron (MU) as the only US-listed HBM producer that directly benefits from the same structural demand tailwind. Samsung (SSNLF) is the third major HBM producer but is OTC-listed and has faced HBM qualification challenges, making it a weaker implied beneficiary.",
+  "detail": "Baker's core thesis centers on the transition of AI workloads from training to inference (including reasoning models), which he argues structurally increases memory bandwidth and capacity requirements per unit of compute. This shift is a primary demand driver for high-bandwidth memory going forward.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "This is the central thesis of his Sohn Montreal pitch, framed as the primary investment rationale for a named position.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "HBM/memory"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "rapid growth in memory demand driven by AI's shift from training to inference",
+  "tickers_named_original": [
+    "000660.KS"
+  ],
+  "tickers_direct": [
+    "000660.KS",
+    "MU"
+  ],
+  "tickers_subject": [
+    "000660.KS"
+  ],
+  "tickers_implied_original": [
+    "MU",
+    "SSNLF"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "000660.KS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SK Hynix is the named position in Baker's Sohn Montreal pitch and the explicit subject of this thesis as the leading HBM producer benefiting from AI inference-driven memory demand."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is the only US-listed HBM producer and directly benefits from the same structural demand thesis driving SK Hynix; it is a clear and unambiguous beneficiary of accelerating HBM demand from AI inference workloads."
+    },
+    {
+      "ticker": "SSNLF",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Samsung is the third HBM producer but has faced significant HBM qualification issues with major customers and is OTC-listed with limited US investor relevance; its inclusion as a direct beneficiary is not unambiguous given its competitive struggles in HBM, making it tangential to this specific thesis."
+    }
+  ]
+}

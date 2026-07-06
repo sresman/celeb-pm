@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) — Watts and wafers",
+  "thesis_id": "T15",
+  "summary": "Hyperscalers with large installed CPU fleets are underappreciated beneficiaries of the agentic AI world, where CPUs are more important than previously thought",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "AMZN",
+    "MSFT",
+    "GOOGL"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named hyperscalers with large installed CPU fleets as the underappreciated beneficiaries of agentic AI, and Amazon AWS is one of the canonical hyperscalers he would have been referencing. The thesis is explicitly about cloud-selling hyperscalers whose CPU fleet value is underappreciated — AMZN fits this precisely."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Microsoft Azure is a canonical hyperscaler with a massive CPU fleet. Baker's thesis is specifically about hyperscalers being underappreciated beneficiaries of agentic AI due to their CPU fleets, and MSFT is a direct subject of that claim."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Google Cloud is a canonical hyperscaler with enormous CPU infrastructure. Baker's thesis explicitly targets hyperscalers with large installed CPU fleets, and GOOGL is a direct subject of that claim."
+    }
+  ]
+}

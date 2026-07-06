@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) — Watts and wafers",
+  "thesis_id": "T16",
+  "summary": "Cross-sectional AI valuations are deeply inconsistent — semi-cap equipment at 40x annualized earnings vs. DRAM at mid-single digit P/E cannot both be correct",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "NVDA",
+    "GEV",
+    "ASML",
+    "KLAC",
+    "LRCX",
+    "AMAT",
+    "MU"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly uses Nvidia's valuation as one of the two legs of the NVDA/GEV inconsistency argument — he specifically states NVDA appears cheap relative to its own history, making it a direct subject of this valuation inconsistency thesis."
+    },
+    {
+      "ticker": "GEV",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly flags GE Vernova's valuation as implying power demand growth so extreme it would require an unfathomable loss of Nvidia GPU market share — it is a named, specific subject of the cross-sectional valuation inconsistency thesis."
+    },
+    {
+      "ticker": "ASML",
+      "action": "REMOVE",
+      "reasoning": "Baker made a general claim about semi-cap equipment trading at ~40x annualized earnings as a sector-level observation. He did not specifically name ASML as the subject of this claim. Inferring ASML because it is the dominant semi-cap company is exactly the kind of sector-level inference the audit rules prohibit."
+    },
+    {
+      "ticker": "KLAC",
+      "action": "REMOVE",
+      "reasoning": "Baker's semi-cap equipment valuation argument was made at the sector level (~40x annualized earnings for semi-cap equipment broadly). There is no evidence in the summary that Baker specifically named KLAC in connection with this thesis — it is a sector inference, not a specific connection."
+    },
+    {
+      "ticker": "LRCX",
+      "action": "REMOVE",
+      "reasoning": "Same reasoning as KLAC — Baker's semi-cap equipment overvaluation argument was sector-level. LRCX was not specifically named as a subject of this thesis; including it is a sector-level inference that the audit rules prohibit."
+    },
+    {
+      "ticker": "AMAT",
+      "action": "REMOVE",
+      "reasoning": "Same reasoning as KLAC and LRCX — Baker made a sector-level claim about semi-cap equipment multiples without specifically naming AMAT. Removing per the strict standard that sector-level inferences do not qualify as specific connections."
+    },
+    {
+      "ticker": "MU",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly identifies Micron as the US-listed pure-play DRAM company and the actionable long expression of his DRAM thesis. This is a specific, named connection to the exact thesis — not a sector-level inference."
+    }
+  ]
+}

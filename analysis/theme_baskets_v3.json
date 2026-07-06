@@ -1,0 +1,987 @@
+{
+  "DRAM / HBM memory bottleneck": {
+    "tickers": [
+      "MU"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "Only US-listed pure-play HBM/DRAM. Includes memory cycle hold-signal theses.",
+    "keys": [
+      "dram",
+      "hbm",
+      "high bandwidth memory",
+      "memory bottleneck",
+      "memory is the bottleneck",
+      "memory capacity",
+      "memory bandwidth",
+      "sk hynix",
+      "micron",
+      "samsung.*memory",
+      "memory cycle",
+      "memory.*most important.*judgment",
+      "capacity cycle.*1990",
+      "too early to sell memory"
+    ]
+  },
+  "Optical networking / interconnect": {
+    "tickers": [
+      "CIEN",
+      "COHR",
+      "LITE"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named CIEN, COHR, LITE explicitly.",
+    "keys": [
+      "optical",
+      "coherent",
+      "transceiver",
+      "photonic",
+      "fiber optic",
+      "cien",
+      "cohr",
+      "lite",
+      "lumentum",
+      "ciena",
+      "coherent corp"
+    ]
+  },
+  "Custom ASIC failure thesis": {
+    "tickers": [
+      "GOOGL",
+      "AMZN"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "CORRECTED: Baker says only TPU (Google) and Trainium (Amazon) survive. They are the beneficiaries.",
+    "keys": [
+      "asic.*fail",
+      "custom silicon.*fail",
+      "custom chip.*fail",
+      "most asics",
+      "tpu.*only.*surviv",
+      "trainium.*only.*surviv"
+    ]
+  },
+  "Trainium / Amazon custom silicon": {
+    "tickers": [
+      "AMZN"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named AMZN explicitly.",
+    "keys": [
+      "trainium",
+      "amazon.*chip",
+      "amazon.*custom",
+      "amazon.*silicon",
+      "underestimated.*nvidia alternative",
+      "underestimated.*ai play"
+    ]
+  },
+  "Switched scaleup networks": {
+    "tickers": [
+      "NVDA",
+      "AMZN"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker explicitly said only NVDA and AMZN operate switched scaleup networks.",
+    "keys": [
+      "scaleup network",
+      "switched scaleup",
+      "scale-up network",
+      "scaleup"
+    ]
+  },
+  "TSMC capacity discipline": {
+    "tickers": [
+      "NVDA",
+      "AVGO",
+      "MU"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "CORRECTED: Thesis = TSMC restraint prevents overbuild, protecting pricing for NVDA/AVGO/MU. Not a buy-TSM thesis.",
+    "keys": [
+      "tsmc.*capacity",
+      "tsmc.*discipline",
+      "tsmc.*restraint",
+      "tsmc.*conservative",
+      "tsmc.*5%",
+      "flinty old men",
+      "morris chang",
+      "tsmc.*prevent.*bubble",
+      "tsmc.*governor"
+    ]
+  },
+  "Power / watts as binding constraint": {
+    "tickers": [
+      "VST",
+      "CEG"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named VST and CEG in Jul 2024.",
+    "keys": [
+      "power.*constraint",
+      "power.*binding",
+      "power.*scarc",
+      "watts.*wafer",
+      "gigawatt",
+      "grid.*constraint",
+      "power.*bottleneck",
+      "energy.*constraint",
+      "power.*limit"
+    ],
+    "exclude": [
+      "global warming",
+      "solar.*battery.*displace"
+    ]
+  },
+  "Orbital / space-based compute": {
+    "date_segments": [
+      {
+        "before": "2021-08-20",
+        "tickers": [
+          "SPCE"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "before": "2024-01-01",
+        "tickers": [
+          "RKLB",
+          "SPCE",
+          "RDW"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "before": "2026-06-12",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "RDW"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "after": "2026-06-12",
+        "tickers": [
+          "SPCX"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      }
+    ],
+    "direction": "LONG",
+    "asterisk": true,
+    "asterisk_note": "Pre-SPCX baskets are retail proxies measuring space sentiment, not Baker thesis accuracy",
+    "keys": [
+      "orbital compute",
+      "space.*compute",
+      "racks in space",
+      "server.*orbit",
+      "data center.*space",
+      "orbital data center"
+    ]
+  },
+  "SpaceX ecosystem / Starship economics": {
+    "date_segments": [
+      {
+        "before": "2021-08-20",
+        "tickers": [
+          "SPCE"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "before": "2024-01-01",
+        "tickers": [
+          "RKLB",
+          "SPCE",
+          "RDW"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "before": "2026-06-12",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "RDW"
+        ],
+        "source": "RETAIL_PROXY"
+      },
+      {
+        "after": "2026-06-12",
+        "tickers": [
+          "SPCX"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      }
+    ],
+    "direction": "LONG",
+    "asterisk": true,
+    "asterisk_note": "Pre-SPCX baskets are retail proxies measuring space sentiment, not Baker thesis accuracy",
+    "keys": [
+      "spacex",
+      "starship",
+      "starlink",
+      "terafab",
+      "falcon.*reuse",
+      "launch.*cost",
+      "cost.*orbit"
+    ],
+    "exclude": [
+      "orbital compute"
+    ]
+  },
+  "Scaling laws intact": {
+    "tickers": [
+      "SMH"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "CORRECTED: Broad AI bullish thesis in 2021. SMH is the right basket \u2014 no specific beneficiary named.",
+    "keys": [
+      "scaling law",
+      "pre-training.*scale",
+      "scale.*intact",
+      "chinchilla",
+      "compute.*scale",
+      "scaling.*confirmed"
+    ]
+  },
+  "Reasoning / inference-time compute": {
+    "tickers": [
+      "NVDA",
+      "AMD"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "CORRECTED: Added AMD \u2014 MI300X positioned as inference alternative through 2024-2025.",
+    "keys": [
+      "reasoning model",
+      "test-time compute",
+      "inference.*compute.*scale",
+      "chain of thought",
+      "o1",
+      "inference scaling",
+      "reasoning.*data flywheel"
+    ]
+  },
+  "SaaS existential disruption": {
+    "tickers": [
+      "CRM",
+      "NOW",
+      "TEAM",
+      "SNOW"
+    ],
+    "source": "CONSTRUCTED",
+    "direction": "SHORT",
+    "note": "CORRECTED: HUBS excluded \u2014 Baker was long it. Broader keywords to capture SaaS variants.",
+    "keys": [
+      "saas.*disrupt",
+      "saas.*obsolete",
+      "saas.*die",
+      "saas.*threat",
+      "saas.*replace",
+      "fmaas",
+      "hubspot.*obsolete",
+      "vibe coding",
+      "software.*obsolete",
+      "crm.*two hours",
+      "ai agent.*saas",
+      "saas.*worst performing",
+      "saas.*existential",
+      "saas.*gross margin compression",
+      "saas.*accept.*lower",
+      "lbo.*debt.*software.*risk",
+      "leveraged.*software.*risk",
+      "saas.*making.*existential mistake"
+    ]
+  },
+  "Neoclouds as durable model": {
+    "date_segments": [
+      {
+        "before": "2025-03-28",
+        "tickers": [],
+        "source": "NO_BASKET"
+      },
+      {
+        "before": "2026-06-12",
+        "tickers": [
+          "CRWV"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      },
+      {
+        "after": "2026-06-12",
+        "tickers": [
+          "CRWV",
+          "SPCX",
+          "ORCL"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      }
+    ],
+    "direction": "LONG",
+    "note": "CORRECTED: Added SPCX post-IPO (SpaceX compute business) and ORCL (GPU cloud rental positioning).",
+    "keys": [
+      "neocloud",
+      "coreweave",
+      "crusoe",
+      "lambda.*cloud",
+      "nebius",
+      "specialist cloud",
+      "neo.*cloud"
+    ]
+  },
+  "Edge AI as bear case for cloud": {
+    "tickers": [
+      "AAPL",
+      "QCOM"
+    ],
+    "source": "CONSTRUCTED",
+    "direction": "MIXED",
+    "note": "Constructed. Baker did not name beneficiaries.",
+    "keys": [
+      "edge ai",
+      "on-device",
+      "on device",
+      "pruned.*model",
+      "edge.*bear case",
+      "edge.*inference"
+    ]
+  },
+  "AI in biotech / drug discovery": {
+    "tickers": [
+      "RXRX",
+      "SDGR",
+      "EXAI"
+    ],
+    "source": "CONSTRUCTED",
+    "direction": "LONG",
+    "note": "Constructed. Baker never named specific biotech tickers.",
+    "keys": [
+      "biotech",
+      "drug discover",
+      "gene therapy",
+      "protein fold",
+      "rare disease",
+      "rare genetic",
+      "life science",
+      "ai.*medicine",
+      "ai.*pharma"
+    ]
+  },
+  "Humanoid robotics / Tesla Optimus": {
+    "tickers": [
+      "TSLA"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named Tesla/Optimus explicitly.",
+    "keys": [
+      "humanoid",
+      "optimus",
+      "robot.*weapon",
+      "humanoid.*race",
+      "robot.*brain",
+      "factory robot",
+      "humanoid robot"
+    ]
+  },
+  "AI networking (Ethernet/InfiniBand)": {
+    "tickers": [
+      "ANET"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "CORRECTED: ANET only per Steve. Baker named ANET explicitly.",
+    "keys": [
+      "infiniband",
+      "ethernet.*ai",
+      "rdma",
+      "arista",
+      "anet",
+      "networking.*gpu",
+      "gpu.*network",
+      "ai.*networking",
+      "network.*topology"
+    ],
+    "exclude": [
+      "optical"
+    ]
+  },
+  "Sovereign AI": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG",
+    "note": "No clear US equity basket.",
+    "keys": [
+      "sovereign ai",
+      "sovereign cloud",
+      "nation.*ai strategy",
+      "government.*ai compute",
+      "sovereign.*open source"
+    ]
+  },
+  "China AI distillation / export controls": {
+    "tickers": [
+      "NVDA"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "MIXED",
+    "note": "CORRECTED: Primary impact is NVDA China revenue risk. Semcap equipment names dropped \u2014 they are victims, not a clean long or short.",
+    "keys": [
+      "distill",
+      "china.*ai",
+      "export control",
+      "china.*catch",
+      "sophon",
+      "china.*frontier",
+      "china.*model"
+    ]
+  },
+  "AI capex ROI positive": {
+    "tickers": [
+      "AMZN",
+      "MSFT",
+      "GOOGL",
+      "META"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "CORRECTED: If capex ROI is positive, the hyperscalers keep spending and their P&L is validated. They are the direct beneficiaries.",
+    "keys": [
+      "capex.*roi",
+      "capex.*return",
+      "ai.*roi",
+      "gpu.*roi",
+      "return.*invested",
+      "ai.*payback",
+      "capex.*justify",
+      "monetiz.*rate.*increas"
+    ]
+  },
+  "Intel recovery / foundry failure": {
+    "tickers": [
+      "INTC"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named Intel explicitly.",
+    "keys": [
+      "intel.*foundry",
+      "intel.*error",
+      "intel.*fail",
+      "intel.*recover",
+      "intel.*manufacturing",
+      "chocolate cake",
+      "greybeard",
+      "lip-bu",
+      "pat gelsinger"
+    ]
+  },
+  "Google TPU competitive position": {
+    "tickers": [
+      "GOOGL"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Direction shifts over time (TPU bull 2024 \u2192 TPU losing ground 2026).",
+    "keys": [
+      "tpu",
+      "google.*cost leader",
+      "google.*chip",
+      "google.*custom",
+      "tensor processing",
+      "tpu.*v8",
+      "tpu.*cost"
+    ],
+    "exclude": [
+      "trainium"
+    ]
+  },
+  "ALAB / copper vs fiber": {
+    "tickers": [
+      "ALAB"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named ALAB explicitly at Sohn 2026.",
+    "keys": [
+      "astera",
+      "alab",
+      "copper.*loser",
+      "copper.*fiber"
+    ]
+  },
+  "Inference economics / token factories": {
+    "date_segments": [
+      {
+        "before": "2025-03-28",
+        "tickers": [],
+        "source": "NO_BASKET"
+      },
+      {
+        "before": "2026-06-12",
+        "tickers": [
+          "CRWV"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      },
+      {
+        "after": "2026-06-12",
+        "tickers": [
+          "CRWV",
+          "SPCX",
+          "ORCL"
+        ],
+        "source": "OBVIOUS_UNIVERSE"
+      }
+    ],
+    "direction": "LONG",
+    "note": "CORRECTED: Added SPCX (post-IPO) and ORCL.",
+    "keys": [
+      "token factor",
+      "cost per token",
+      "token production",
+      "inference econom",
+      "token econom"
+    ]
+  },
+  "Nvidia GPU moat / CUDA ecosystem": {
+    "tickers": [
+      "NVDA"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named NVDA explicitly and repeatedly.",
+    "keys": [
+      "nvidia.*durable",
+      "nvidia.*leadership",
+      "nvidia.*dominat",
+      "nvidia.*difficult to displace",
+      "nvidia.*moat",
+      "cuda",
+      "out-gpu",
+      "tokens.*per.*watt",
+      "nvidia.*extremely difficult",
+      "nvidia.*dominant.*open.*source",
+      "nvidia.*frontier.*cloud"
+    ]
+  },
+  "Target / omnichannel retail": {
+    "tickers": [
+      "TGT"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker pitched TGT at Sohn Australia 2020.",
+    "keys": [
+      "target.*e-commerce",
+      "target.*undervalue",
+      "target.*cohort",
+      "target.*drive-up",
+      "target.*click",
+      "target.*earn",
+      "target.*store",
+      "omnichannel",
+      "omni-channel",
+      "target.*fastest.*growing"
+    ]
+  },
+  "ASML / semcap equipment criticality": {
+    "tickers": [
+      "ASML"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named ASML explicitly as the most critical semi company.",
+    "keys": [
+      "asml.*critical",
+      "asml.*single most",
+      "euv.*progress",
+      "leading.*edge.*manufacturing.*chokepoint",
+      "asml.*most critical"
+    ]
+  },
+  "Tesla / EV / FSD": {
+    "tickers": [
+      "TSLA"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named Tesla explicitly. Separate from humanoid/Optimus thesis.",
+    "keys": [
+      "tesla.*dominant",
+      "tesla.*best.*ceo",
+      "fsd.*crossing",
+      "ev spac.*worthless",
+      "autonomous driving.*compound",
+      "tesla.*ev.*incumbent"
+    ]
+  },
+  "xAI competitive position": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG",
+    "note": "xAI is private. No public equity expression.",
+    "keys": [
+      "xai.*compelling",
+      "xai.*lowest cost",
+      "grok.*durable",
+      "grok.*advantage",
+      "colossus.*build",
+      "xai.*data",
+      "xai.*release.*blackwell",
+      "xai.*frontier"
+    ]
+  },
+  "Anthropic valuation / efficiency": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG",
+    "note": "Anthropic is private. No public equity expression.",
+    "keys": [
+      "anthropic.*worth",
+      "anthropic.*efficient",
+      "anthropic.*arr",
+      "anthropic.*deprecated",
+      "anthropic.*capital.*efficient",
+      "anthropic.*4x",
+      "anthropic.*burning",
+      "anthropic.*extraordinary"
+    ]
+  },
+  "Broad AI bullish / early innings": {
+    "tickers": [
+      "SMH"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "Broad \"be long AI\" thesis. SMH as basket. Includes early internet analogies, picks-and-shovels framing, AI acceleration predictions.",
+    "keys": [
+      "analogous to 1996",
+      "early.*ai cycle",
+      "year three.*20",
+      "picks.*shovels.*beginning",
+      "extremely early.*ai",
+      "ai.*dominant structural force",
+      "semiconductor.*foundational",
+      "ai.*more progress per quarter",
+      "ai.*make more progress",
+      "semiconductor.*uniquely transformative",
+      "ai.*drive.*significant.*surge.*semiconductor",
+      "semiconductor.*secular demand",
+      "semiconductor.*positive demand supercycle",
+      "silicon.*intensive",
+      "semiconductor.*intensity"
+    ]
+  },
+  "AI bubble not happening": {
+    "tickers": [
+      "SMH"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "Anti-bubble thesis = stay long. SMH as basket.",
+    "keys": [
+      "no.*ai.*bubble",
+      "not.*bubble",
+      "gpu utilization.*dark fiber",
+      "fundamentally different from 2000",
+      "not.*1999",
+      "power.*wafer.*prevent.*overbuild"
+    ]
+  },
+  "Frontier model concentration": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG",
+    "note": "Frontier labs are private (OpenAI, Anthropic, xAI, Google DeepMind). GOOGL is partial but not a clean play.",
+    "keys": [
+      "frontier.*model.*win",
+      "four foundation",
+      "frontier.*90%",
+      "frontier.*capture",
+      "only.*foundation.*model",
+      "frontier.*concentrated",
+      "economic return.*concentrated.*frontier"
+    ]
+  },
+  "Usage-based AI pricing shift": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG",
+    "note": "Bullish for private frontier labs (OpenAI, Anthropic). No clean public basket.",
+    "keys": [
+      "usage.*based.*pricing",
+      "flat.*rate.*subscription.*usage",
+      "overage.*bullish",
+      "subscription.*usage"
+    ]
+  },
+  "Nuclear / clean energy for AI": {
+    "tickers": [
+      "CCJ",
+      "VST",
+      "CEG"
+    ],
+    "source": "CONSTRUCTED",
+    "direction": "LONG",
+    "note": "Constructed. CCJ (uranium), VST/CEG (nuclear power operators). Baker discussed nuclear as near-term AI power solution.",
+    "keys": [
+      "nuclear.*near.*term",
+      "nuclear.*solution",
+      "nuclear.*electricity",
+      "nuclear.*best.*near.*term"
+    ],
+    "exclude": [
+      "nuclear.*bubble"
+    ]
+  },
+  "Nuclear/quantum bubble warning": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "SHORT",
+    "note": "Baker said nuclear and quantum public equities are in bubble territory. Best players are private.",
+    "keys": [
+      "nuclear.*quantum.*bubble",
+      "nuclear.*bubble.*territory",
+      "quantum.*bubble"
+    ]
+  },
+  "Private market structural shift": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG",
+    "note": "Meta/structural thesis. No clean equity basket.",
+    "keys": [
+      "secondary market.*structural",
+      "staying private.*longer",
+      "private.*allocation.*cap",
+      "private.*permanent.*feature",
+      "crossover.*future.*tech"
+    ]
+  },
+  "Bottleneck trade ending": {
+    "tickers": [
+      "SMH"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "SHORT",
+    "note": "Bearish signal for bottleneck semi names. SMH as proxy since specific names not given.",
+    "keys": [
+      "bottleneck.*end",
+      "bottleneck.*over",
+      "finding.*next.*bottleneck",
+      "bottleneck.*nearing",
+      "bottleneck.*straight up.*cliff"
+    ]
+  },
+  "Metaverse / gaming as platform": {
+    "tickers": [
+      "RBLX",
+      "EA",
+      "TTWO"
+    ],
+    "source": "CONSTRUCTED",
+    "direction": "LONG",
+    "note": "Constructed from gaming platform names. Baker discussed games as social networks.",
+    "keys": [
+      "metaverse.*real",
+      "video game.*social",
+      "virtual.*world.*majority",
+      "gaming.*platform",
+      "free.*to.*play.*superior",
+      "video game content.*leverage"
+    ]
+  },
+  "MSTR / Bitcoin strategy risk": {
+    "tickers": [
+      "MSTR"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "SHORT",
+    "note": "Baker named MSTR explicitly. Bearish \u2014 debt-funded BTC accumulation has structural ceiling.",
+    "keys": [
+      "microstrategy.*debt",
+      "microstrategy.*ceiling",
+      "microstrategy.*break down",
+      "mstr"
+    ]
+  },
+  "DISH / 5G bearish": {
+    "tickers": [
+      "DISH"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "SHORT",
+    "note": "CORRECTED direction: Baker was bearish on 5G/DISH. DISH decline = thesis working. Direction SHORT means positive returns indicate the thesis was correct.",
+    "keys": [
+      "dish network",
+      "5g.*overhyped",
+      "5g.*not.*meaningful",
+      "5g.*cost treadmill"
+    ]
+  },
+  "Disaggregation prefill/decode": {
+    "tickers": [
+      "NVDA"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "Extends GPU useful life 7-15 years. Bullish NVDA installed base value.",
+    "keys": [
+      "disaggregat",
+      "prefill.*decode",
+      "prefill.*inference",
+      "gpu.*useful life.*7",
+      "gpu.*useful life.*10",
+      "gpu.*useful life.*15"
+    ]
+  },
+  "Meta AI transformation": {
+    "tickers": [
+      "META"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Baker named META explicitly. Views evolved from skeptical to constructive.",
+    "keys": [
+      "meta.*ai.*first",
+      "zuckerberg.*ai",
+      "meta.*pp&e",
+      "muse model",
+      "meta.*better.*position",
+      "meta.*ev.*net pp"
+    ]
+  },
+  "Microsoft AI position": {
+    "tickers": [
+      "MSFT"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "SHORT",
+    "note": "CORRECTED direction: Baker was bearish MSFT \u2014 cluster smaller than xAI, capex flinch, OpenAI talent loss. Direction SHORT so MSFT decline = thesis working.",
+    "keys": [
+      "microsoft.*flinch",
+      "microsoft.*cluster.*smaller",
+      "microsoft.*internal.*products",
+      "microsoft.*risky decision"
+    ]
+  },
+  "Coding as killer AI app": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG",
+    "note": "Bullish for private companies (Cursor acquired by OpenAI per BG2). No clean public basket.",
+    "keys": [
+      "coding.*killer",
+      "coding.*fastest path",
+      "coding.*ultimate",
+      "human language.*programming",
+      "code generation.*killer",
+      "coding.*dominant.*high.*value"
+    ]
+  },
+  "Inflation macro framework": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "MIXED",
+    "note": "Macro view without clean equity expression.",
+    "keys": [
+      "inflation.*single.*most",
+      "wage.*inflation.*dangerous",
+      "supply chain.*inflation.*over",
+      "disinflat.*force",
+      "inflation.*environment"
+    ]
+  },
+  "Crossover investing philosophy": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG",
+    "note": "Meta/philosophy about investing approach. Not tradeable.",
+    "keys": [
+      "crossover.*invest",
+      "crossover.*advantage",
+      "crossover.*informational",
+      "crossover.*behavioral",
+      "crossover.*future"
+    ]
+  },
+  "Defense tech consolidation": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "LONG",
+    "note": "Anduril, Shield AI are private. No clean public basket for new-gen defense primes.",
+    "keys": [
+      "defense.*tech.*consolidat",
+      "prime contractor",
+      "anduril.*winner",
+      "shield ai"
+    ]
+  },
+  "Open source AI bullish for hardware": {
+    "tickers": [
+      "NVDA"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "Open source success = more compute demand = bullish NVDA.",
+    "keys": [
+      "open.*source.*bullish.*compute",
+      "open.*source.*bullish.*hardware",
+      "open.*source.*not bearish"
+    ]
+  },
+  "AI destroying application layer value": {
+    "tickers": [
+      "SMH"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "If AI destroys app value but creates infra value, be long infra (SMH).",
+    "keys": [
+      "destroyed.*value.*application",
+      "net destroyed.*trillion",
+      "value.*destruction.*app",
+      "ai.*destroyed.*application"
+    ]
+  },
+  "Stablecoin / Visa-MC disruption": {
+    "tickers": [
+      "V",
+      "MA"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "SHORT",
+    "note": "Bearish V/MA. Baker predicted stablecoins will attack their duopoly.",
+    "keys": [
+      "stablecoin",
+      "visa.*master.*disrupt",
+      "payment.*duopoly"
+    ]
+  },
+  "SPAC structural analysis": {
+    "tickers": [],
+    "source": "NO_BASKET",
+    "direction": "MIXED",
+    "note": "Historical thesis (2021). No ongoing basket.",
+    "keys": [
+      "spac.*pipe",
+      "spac.*serious",
+      "spac.*sponsor",
+      "spac.*promote",
+      "pipe.*2.*3.*times",
+      "spac.*structural"
+    ]
+  }
+}

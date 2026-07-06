@@ -5,6 +5,35 @@
 
 ---
 
+## 2026-07-06 — Thesis audit + 13F AI-signal infrastructure + Excel workbook
+
+Full per-decision detail lives in `docs/implementation_notes/13f_signal_triggers_implementation_notes.md`
+(SD-TRIG-1…18) and `docs/implementation_notes/thesis_audit_implementation_notes.md` (SD-AUDIT-1…5).
+Key decisions, condensed:
+
+- **AI classification source of truth** = `analysis/ai_basket_reclassification.json` (operator-authored,
+  per-ticker `{ai, bucket}`; NTNX date-segmented at 2024-01-01 → not-AI before, AI after). Supersedes the
+  hardcoded theme lists. `resolve_ai(reclass, ticker, filing_date, theme_col)` in `generate_13f_triggers.py`;
+  fallback for tickers absent from the file = theme column startswith `AI/`/`Semiconductor`.
+- **Digit-prefixed ticker fix:** the pipeline emits variants like `1CFLT`/`0JPHL`; `resolve_ai` retries the
+  lookup with leading digits stripped, so Confluent's explicit `ai:false` exclusion isn't dodged. Removed a
+  phantom AI/Data-Infrastructure sub-theme and shrank two ramp events.
+- **Narrow ramp basket (Trigger 1 only):** AI *and* bucket ∉ {AI/Hyperscaler, AI/EV}. Feb-2022 ramp fell
+  ~+20pt→+9.7pt once AMZN/TSLA excluded. Triggers 2/2b/3 use the full AI classification.
+- **Clean separation:** triggers file carries NO returns; returns live in
+  `filing_to_filing_returns_universal.csv` (every COMMON ticker + SMH + SPY × 24 filing-to-filing periods).
+  `build_13f_analysis.py` is the canonical builder (default builds all 3 layers; `--skip-universal` for
+  fast trigger-only reruns). `generate_13f_triggers.py` + `add_trigger_returns.py` retained but superseded.
+- **Locked baskets, single-period, filing-anchored:** basket returns are equal-weight of constituents locked
+  at the signal date (drop NO_DATA/PRE_IPO for a period); never rebalanced; never compounded in the workbook.
+- **Excel workbook:** cells are numeric fractions with percent number-formats (not text), so they stay
+  sortable/colorable. RampBasket CW renormalizes among names with data that period (parallels EW);
+  fixed-denominator dilution is the rejected alternative (easy switch).
+- **Env:** installed `openpyxl` into `.venv` (mandated, was absent); openpyxl imports carry
+  `# type: ignore[import-untyped]` (no stubs). All new builders `mypy --strict` clean.
+
+---
+
 ## 2026-07-01 — Theme-basket return analysis (theme_returns.py / theme_returns_v2.py)
 
 **Context:** Two one-shot enrichment tasks. v1 (`theme_returns.py`) filled return columns on a

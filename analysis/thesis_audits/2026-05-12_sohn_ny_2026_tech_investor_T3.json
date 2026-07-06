@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-12",
+  "source": "Sohn NY 2026 \u2014 Tech investing fireside",
+  "thesis_id": "T3",
+  "summary": "Trainium is the most underestimated Nvidia alternative in 2026, analogous to what TPUs were in 2025",
+  "summary_extended": "Baker argues that Amazon's Trainium is by far the most underestimated Nvidia alternative heading into H2 2026, drawing an explicit parallel to how Google's TPUs were the most underestimated alternative in 2025. His core technical thesis is that all frontier models have converged on mixture-of-experts (MoE) architectures, which require a 'switched scale-up network' for efficient inference \u2014 and that today only Nvidia GPUs and Amazon Trainium possess functioning switched scale-up networks, making Trainium uniquely positioned among non-Nvidia alternatives. Baker contrasts Amazon's aggressive design choices on Trainium against Google's more conservative TPU V8 design, and notes that Google's refusal to submit TPUs to the MLPerf benchmark is a telling signal of competitive weakness. The key near-term catalyst is the Trainium 3 ramp in H2 2026, which Baker believes will validate Trainium's competitive positioning and drive meaningful adoption. The investment implication is bullish on AMZN as a custom silicon beneficiary and implicitly bearish or cautious on GOOGL's ability to compete in the custom AI accelerator space.",
+  "detail": "Baker says Trainium (Amazon) made aggressive design choices vs. Google's conservative TPU V8 design. Critically, all frontier models are mixture-of-experts (MoE) architectures requiring a 'switched scale-up network' for inference \u2014 only Nvidia GPUs and Amazon Trainium have functioning switched scale-up networks today. Trainium 3 ramp in H2 2026 is the key catalyst. Google will not submit TPUs to their own MLPerf benchmark, which Baker says is telling.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'Trainium by far' when asked which alternative is most underestimated, provides specific technical reasoning (switched scale-up networks), and draws an explicit historical parallel to TPU in 2025",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "custom silicon"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "Trainium is for sure the most underestimated",
+  "tickers_named_original": [
+    "AMZN",
+    "GOOGL",
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "AMZN",
+    "GOOGL",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "AMZN",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Trainium is Amazon's custom AI accelerator \u2014 this thesis is directly and specifically about Amazon's competitive positioning in AI silicon, making AMZN the primary subject."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google's TPU is the explicit foil in this thesis \u2014 Baker makes specific claims about TPU V8's conservative design, Google's refusal to submit to MLPerf, and GOOGL's relative weakness versus Trainium. GOOGL is a direct subject as the competitive comparison, with a bearish implication."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Nvidia GPUs as one of only two platforms with functioning switched scale-up networks today, which validates Nvidia's continued dominance in MoE inference. NVDA is a direct beneficiary of the technical framing even though the thesis is primarily about Trainium as an alternative."
+    }
+  ]
+}

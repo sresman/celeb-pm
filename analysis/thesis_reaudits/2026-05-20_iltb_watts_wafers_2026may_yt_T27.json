@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) — Watts and wafers",
+  "thesis_id": "T27",
+  "summary": "Nvidia and Amazon are the most deeply engaged with AI startups, giving them a significant long-term competitive advantage over AMD, Microsoft, and Meta who show near-zero startup engagement",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "NVDA",
+    "AMZN",
+    "GOOGL",
+    "AVGO",
+    "AMD",
+    "MSFT",
+    "META"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Nvidia is explicitly named as one of the two most deeply engaged companies with AI startups, making it a primary subject of this exact thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Amazon is explicitly named as co-equal with Nvidia as the most deeply engaged with AI startups, making it a primary subject of this exact thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Google is explicitly named as the second-tier company in startup engagement within this specific comparative framework Baker is presenting."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "KEEP",
+      "reasoning": "Broadcom is explicitly named within this thesis as engaged with startups in a distinct role as an ASIC supplier, placing it directly within Baker's engagement ranking framework."
+    },
+    {
+      "ticker": "AMD",
+      "action": "KEEP",
+      "reasoning": "AMD is explicitly cited by Baker as showing near-zero startup engagement, making it a direct negative example within this specific thesis about competitive disadvantage from startup isolation."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Microsoft is explicitly cited by Baker as showing near-zero startup engagement, making it a direct negative example within this specific thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Meta is explicitly cited by Baker as showing near-zero startup engagement, making it a direct negative example within this specific thesis."
+    }
+  ]
+}

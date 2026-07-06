@@ -1,0 +1,59 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards — AI tailwind for semiconductors",
+  "thesis_id": "T1",
+  "summary": "AI has dramatically higher semiconductor intensity than human-written software, driving a multi-decade structural demand uplift for the entire semiconductor industry",
+  "criteria": "A+B+C",
+  "tickers_direct_before": [
+    "NVDA",
+    "MU",
+    "ASML",
+    "LRCX",
+    "TSM",
+    "SMH",
+    "SOXX",
+    "AMAT"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker's thesis is a broad structural view about AI semiconductor intensity uplifting the entire sector. While NVDA is an obvious beneficiary, Baker did not specifically name NVDA in connection with this exact structural claim — the thesis is sector-wide and general, not company-specific. NVDA appears to be an inferred beneficiary rather than one Baker explicitly connected to this thesis."
+    },
+    {
+      "ticker": "MU",
+      "action": "REMOVE",
+      "reasoning": "Baker cited ~6x higher memory consumption as a quantitative anchor for the thesis, but this is a general structural data point about AI vs. human-written software, not a specific call-out of MU as a named beneficiary. MU is an inferred beneficiary of the memory intensity claim, not explicitly named in connection with this thesis."
+    },
+    {
+      "ticker": "ASML",
+      "action": "REMOVE",
+      "reasoning": "ASML is a capital equipment company that would benefit from secular semiconductor demand growth, but Baker did not specifically name ASML in connection with this structural AI intensity thesis. It is an inferred beneficiary of the general sector uplift narrative."
+    },
+    {
+      "ticker": "LRCX",
+      "action": "REMOVE",
+      "reasoning": "Lam Research is a capital equipment supplier that would benefit from secular demand growth, but Baker did not specifically name LRCX in connection with this exact thesis. It is an inferred beneficiary, not an explicitly named one."
+    },
+    {
+      "ticker": "TSM",
+      "action": "REMOVE",
+      "reasoning": "TSMC would benefit from higher wafer demand driven by AI semiconductor intensity, but Baker did not specifically name TSM in connection with this structural thesis. It is an inferred beneficiary of the general sector uplift view."
+    },
+    {
+      "ticker": "SMH",
+      "action": "REMOVE",
+      "reasoning": "ETF tickers are never direct subjects or beneficiaries of a specific thesis per the audit rules. SMH should always be removed."
+    },
+    {
+      "ticker": "SOXX",
+      "action": "REMOVE",
+      "reasoning": "ETF tickers are never direct subjects or beneficiaries of a specific thesis per the audit rules. SOXX should always be removed."
+    },
+    {
+      "ticker": "AMAT",
+      "action": "REMOVE",
+      "reasoning": "Applied Materials is a capital equipment company that would benefit from secular semiconductor demand growth, but Baker did not specifically name AMAT in connection with this exact structural AI intensity thesis. It is an inferred beneficiary, not an explicitly named one."
+    }
+  ]
+}

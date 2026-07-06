@@ -1,0 +1,29 @@
+{
+  "date": "2023-06-19",
+  "source": "This Week in Startups — AI platform shift, Nvidia outlook, extinction risk",
+  "thesis_id": "T2",
+  "summary": "At the beginning of a new technology platform, the only certain winners are picks-and-shovels: semiconductors and deep tech. Application layer winners are unknowable this early.",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "AVGO",
+    "MRVL"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Nvidia multiple times in this interview as the clearest picks-and-shovels beneficiary of the AI platform shift, directly connecting it to his thesis that semiconductors are the only sure winners at this stage of the cycle."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "REMOVE",
+      "reasoning": "While Broadcom is a plausible picks-and-shovels beneficiary, the audit must apply the critical test: did Baker specifically name AVGO in connection with this exact thesis? There is no evidence in the transcript summary that Baker explicitly called out Broadcom as a named beneficiary of his picks-and-shovels framing. It is an inferred beneficiary based on sector logic, not a specifically named one."
+    },
+    {
+      "ticker": "MRVL",
+      "action": "REMOVE",
+      "reasoning": "Similarly, Marvell is not specifically named by Baker in connection with this thesis per the transcript summary. Including MRVL relies on sector inference rather than Baker explicitly connecting Marvell to his picks-and-shovels investment principle. Per the strict audit rules, when in doubt, remove."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T14",
+  "summary": "SpaceX's data center design is fundamentally differentiated from first principles, not a commodity, giving it durable competitive advantage",
+  "summary_extended": "Baker argues that SpaceX's data center division has engineered a fundamentally differentiated product by rebuilding data center architecture from first principles \u2014 the same methodology Elon Musk applied to rockets and EVs \u2014 rather than iterating on commodity designs. The 122-day build time (versus an industry standard of 3+ years, with Jensen Huang citing a comparable '19 days vs. 4 years' contrast) is evidence of genuine architectural innovation, not merely superior execution speed. Baker notes that only 2-3 players in the world can reliably engineer behind-the-meter data centers, placing SpaceX in an extremely narrow competitive set. Baker was sufficiently convinced of the differentiation that he privately advised the SpaceX team to be less public about their innovations, believing they may not fully appreciate how wide their moat is. The investment implication is that SpaceX's data center infrastructure business represents a durable, hard-to-replicate competitive advantage \u2014 but the primary beneficiary remains private, limiting direct public equity expression.",
+  "detail": "Baker argues Elon re-engineered data centers from first principles the same way he did rockets and EVs. The 122-day build time (vs industry standard of 3+ years) reflects genuine architectural innovation, not just execution speed. Baker privately advised the team to be less public about their innovations as they may not realize how differentiated they are. Only 2-3 players can reliably engineer behind-the-meter data centers.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker makes this argument directly and with conviction; Jensen's '19 days' vs '4 years' comparison corroborates; Baker's private advice to the team signals genuine belief",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "he designed something fundamentally different... 122 days",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "GEV (Vernova)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GEV",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GE Vernova is a power/energy infrastructure supplier that may broadly benefit from AI data center buildout, but Baker's thesis is specifically about SpaceX's architectural differentiation and behind-the-meter design innovation. GEV is not named as a subject or direct beneficiary of this specific thesis \u2014 it appears to have bled in from an adjacent energy/power theme in the same transcript. No direct causal link is established between SpaceX's data center design advantage and GEV's business."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T11",
+  "summary": "Scaling laws remain the dominant driver of AI quality improvement; compute is the key variable",
+  "summary_extended": "Baker argues that scaling laws \u2014 what he calls the 'iron law of AI' \u2014 remain the dominant driver of AI quality improvement, with AI model quality doubling for every 10x increase in compute and data used during training. He further notes a recent discovery that training longer on the same data and compute budget also yields significant quality advances, reinforcing the centrality of compute access. The investment implication is that companies with the greatest access to compute have the strongest competitive moat in foundation model development, making compute supply the primary bottleneck and differentiator. Baker has held this view since at least early 2021, framing it as the foundational structural principle underlying all AI investment decisions. This thesis favors hyperscalers and cloud providers with massive capital budgets for AI infrastructure, as well as the dominant GPU supplier enabling that compute scaling.",
+  "detail": "Baker describes the 'iron law of AI' / scaling laws: AI quality doubles for every 10x increase in compute/data used for training. Recent discovery: training longer on the same data and compute also yields significant advances. This makes compute access the primary competitive moat for foundation model companies.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker has held this view since at least early 2021 (referenced in a letter) and frames it as the foundational principle of AI development",
+  "themes": [
+    "AI scaling laws",
+    "semiconductor supply chain",
+    "AI foundation models"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "the quality of an AI algorithm doubles for every 10x increase in the Computing data",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of GPUs used for AI training compute. Since the thesis argues compute is the primary competitive moat and scaling driver, NVDA directly benefits as the bottleneck provider of that compute."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD competes in AI accelerators but is not a clear or unambiguous beneficiary of this specific thesis \u2014 NVDA dominates AI training compute. AMD's inclusion appears to be loose thematic association rather than a direct implication of the scaling laws thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google is one of the largest foundation model developers (Gemini) and hyperscalers with massive compute infrastructure. The thesis that compute access is the primary moat directly benefits GOOGL, which has both TPU infrastructure and cloud scale."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Meta is a major foundation model developer (LLaMA) investing heavily in compute infrastructure. The thesis that scaling compute drives AI quality directly benefits Meta's AI competitive position."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft is a major hyperscaler and AI infrastructure investor (Azure, OpenAI partnership) with massive compute spend. The thesis that compute access is the primary moat directly benefits MSFT's AI positioning."
+    }
+  ]
+}

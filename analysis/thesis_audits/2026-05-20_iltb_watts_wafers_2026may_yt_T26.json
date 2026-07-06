@@ -1,0 +1,38 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T26",
+  "summary": "Microsoft flinched on AI capex in early 2025 and is now making the right but risky decision to use compute for internal products rather than selling to OpenAI \u2014 this is underappreciated by the market",
+  "summary_extended": "Baker argues that Microsoft made a critical strategic error in early 2025 by briefly pulling back on AI capex, causing it to lose compute allocations that are difficult to recover \u2014 a mistake he summarizes as 'if you flinch, you lose position.' Satya Nadella is now pivoting to use that compute internally to improve Copilot and train Microsoft's own frontier models rather than selling capacity to OpenAI, which Baker views as the right long-term strategic bet but a risky one given his skepticism about Microsoft's ability to compete at the frontier model level. Baker provides a specific counterfactual: if Microsoft had simply continued serving OpenAI and Anthropic with its GPU capacity as a pure infrastructure play, the stock would be worth $800 today, implying the market is not fully pricing in the execution risk of the internal AI product strategy. The investment implication is nuanced \u2014 Baker gives Satya credit for strategic courage but is not unambiguously bullish, flagging team capability as the key risk to watch on the internal model training ambition.",
+  "detail": "Microsoft's capex algorithm broke down in early 2025 and they briefly pulled back, losing allocations that are hard to recover. Now Satya is using compute to improve internal products (Copilot) and train own models rather than selling to OpenAI. Baker believes Microsoft would be an $800 stock if they were solely serving OpenAI/Anthropic with their GPUs. He is skeptical Microsoft has the right team to succeed at frontier model training but gives Satya credit for making the right strategic bet.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker provides a specific counterfactual stock price ($800) and frames this as a courageous but risky decision he gives credit for",
+  "themes": [
+    "AI model layer",
+    "cloud infrastructure",
+    "competitive dynamics"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "Microsoft flinched for a moment in early 25 \u2014 if you flinch, you lose position",
+  "tickers_named_original": [
+    "MSFT"
+  ],
+  "tickers_direct": [
+    "MSFT"
+  ],
+  "tickers_subject": [
+    "MSFT"
+  ],
+  "tickers_implied_original": [
+    "OpenAI (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Microsoft's capex strategy, its relationship with OpenAI, and its internal AI product pivot \u2014 MSFT is the direct subject throughout."
+    }
+  ]
+}

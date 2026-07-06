@@ -1,0 +1,58 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T17",
+  "summary": "TSMC is being too conservative in capacity expansion, acting as a governor on the AI buildout but potentially making a strategic mistake",
+  "summary_extended": "Baker argues that TSMC is making a strategic mistake by expanding semiconductor manufacturing capacity too conservatively, acting as a bottleneck on the broader AI infrastructure buildout. He cites TSMC's dismissal of Sam Altman's compute demand projections as evidence of their overly cautious stance, driven by fear of a repeat overbuild cycle. The investment implication is twofold: TSMC's restraint creates an opening for Intel under new CEO Lip-Bu Tan, whose empty fabs could eventually be filled as compute shortages persist and customers seek alternative foundry capacity. Baker acknowledges the tension in his view \u2014 TSMC's caution may also serve as a 'natural governor' preventing a speculative bubble \u2014 but his base case is that demand will prove TSMC's conservatism wrong over the medium term, making Intel a potential beneficiary of the supply gap.",
+  "detail": "TSMC is not expanding capacity as fast as customers want due to fear of overbuild (they dismissed Sam Altman's compute demand projections). This is creating a bottleneck. Intel's empty fabs (under new CEO Lip-Bu Tan) will eventually be filled given compute shortages. Baker thinks TSMC is 'in the process of making a mistake' but acknowledges their caution may prevent a bubble.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says TSMC is 'in the process of making a mistake' but also frames their caution as a 'natural governor' that may be beneficial",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "Taiwan Semi is in the process of making a mistake",
+  "tickers_named_original": [
+    "INTC"
+  ],
+  "tickers_direct": [
+    "TSM",
+    "INTC"
+  ],
+  "tickers_subject": [
+    "TSM"
+  ],
+  "tickers_implied_original": [
+    "TSM",
+    "AMD",
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly about TSMC's capacity expansion decisions and the strategic mistake Baker believes they are making \u2014 TSMC is the central subject."
+    },
+    {
+      "ticker": "INTC",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker specifically calls out Intel's empty fabs under Lip-Bu Tan as a direct beneficiary of TSMC's restraint, as compute shortages could drive customers to fill Intel's foundry capacity."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is not mentioned in the context of this thesis about foundry capacity constraints; it likely bled in from adjacent AI chip discussion in the same transcript segment."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While Nvidia is a major TSMC customer and benefits from AI buildout broadly, this thesis is specifically about foundry capacity strategy and Intel as an alternative \u2014 Nvidia is not a direct subject or unambiguous beneficiary of this specific argument."
+    }
+  ]
+}

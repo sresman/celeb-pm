@@ -1,0 +1,36 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T3",
+  "summary": "Orbital/space compute represents a 5x CapEx cost reduction vs terrestrial and is a long-term call option on SpaceX",
+  "summary_extended": "Baker discusses a first-principles cost analysis, attributed to Fox, suggesting that orbital compute infrastructure could be built at approximately $5B per gigawatt of CapEx, compared to $20-25B per gigawatt for terrestrial datacenters when accounting for land, shell, power, and cooling costs \u2014 a roughly 5x cost advantage. The key enabling technology is rapid two-stage Starship reusability, which would reduce cost per kilogram to orbit from roughly $1,500 (Falcon 9) to below $250, asymptoting toward the marginal cost of fuel. Baker acknowledges this is contingent on achieving full rapid reusability, which he describes as 'really hard,' and frames orbital compute not as a base-case assumption for SpaceX's IPO valuation but as a significant long-term upside call option. The investment implication is that SpaceX equity (currently private) embeds this optionality, and any public listing would offer exposure to this potential structural disruption of terrestrial AI datacenter infrastructure.",
+  "detail": "Fox calculates ~$5B/GW CapEx for orbital compute vs $20-25B/GW for terrestrial infrastructure (land, shell, power, cooling). With rapid two-stage Starship reusability, cost per kg drops from ~$1,500 (Falcon) to <$250, asymptoting toward fuel cost. Space eliminates land, cooling, and power costs. Baker frames this as not necessary for the IPO valuation but a significant upside option.",
+  "confidence": "moderate",
+  "confidence_evidence": "Detailed first-principles math presented but contingent on rapid two-stage Starship reusability which Baker acknowledges is 'really hard'; framed as call option not base case",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "$5 billion per gigawatt of CapEx to put these in space",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SpaceX"
+  ],
+  "tickers_subject": [
+    "SpaceX"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SpaceX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is about SpaceX's Starship reusability enabling orbital compute as a long-term upside option on SpaceX equity; SpaceX is the direct and only subject of this thesis."
+    }
+  ]
+}

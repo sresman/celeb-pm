@@ -1,0 +1,30 @@
+{
+  "date": "2024-01-15",
+  "source": "iConnections Global Alts 2024 \u2014 Markets panel",
+  "thesis_id": "T10",
+  "summary": "Space-based compute (racks in space connected by laser) is a viable and strategically important architecture",
+  "summary_extended": "Baker outlines a specific technical vision for space-based compute in which scaled Starlink V3 satellites (cited at approximately 100kW each, compared to a 130kW Blackwell GPU rack) are connected by laser inter-satellite links to form a distributed orbital data center. He argues that lasers operating in vacuum propagate faster than signals through terrestrial fiber, meaning space-based compute could offer lower latency than any ground-based cloud infrastructure. Baker draws an analogy to the existing 70% pricing premium that cloud providers charge for proximity-based or low-latency compute, suggesting space-based compute could command similar or greater premiums given its unique latency and coverage advantages. He frames this architecture as strategically important for US competitiveness, implying government or defense demand could be a meaningful demand driver alongside commercial cloud. The investment implication is long-term and speculative, centered on SpaceX (private) as the primary enabler, with no clear publicly traded pure-play beneficiary identified.",
+  "detail": "Baker outlines a specific technical vision: scaled Starlink V3 satellites (~100kW each) connected by laser links forming a distributed data center in orbit. He notes lasers in vacuum are faster than fiber, enabling lower latency than terrestrial cloud. Cloud providers already earn a 70% premium for proximity; space-based compute could command similar or greater premiums. He frames this as important for US competitiveness.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents specific technical specs (20kW Starlink V3, 130kW Blackwell rack) suggesting deep research, but this is a forward-looking architectural thesis",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "racks in space connected by lasers that's your data center",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "SPCE",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Virgin Galactic is a suborbital tourism company with no satellite constellation or compute infrastructure; it is not a beneficiary of this thesis and should not be added."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2021-11-30",
+  "source": "VS Partners / Financial Times Global Seattle Symposium \u2014 Global technology investment: hype, hope, reality",
+  "thesis_id": "T6",
+  "summary": "SpaceX / Starlink is the only investable space company \u2014 dramatically lower launch costs will reshape the world",
+  "summary_extended": "Baker argues that SpaceX is so dominant in rocket technology that it represents the only credible investable space company, with no meaningful second option \u2014 a view he states explicitly as 'there is SpaceX and then there's really no one else.' His reasoning centers on SpaceX's dramatic reduction in launch costs, which he sees as the foundational enabler for a cascade of downstream applications: Starlink's low-earth-orbit satellite broadband bringing high-quality internet to billions of underserved people globally, and longer-term applications like point-to-point hypersonic cargo and passenger travel (e.g., New York to Shanghai in approximately 30 minutes). Baker frames the space sector as a 100-150 year civilizational journey toward a multi-planetary species, with profound economic implications including asteroid mining and resource extraction. The critical investment constraint he acknowledges is that SpaceX and Starlink are both private companies, meaning there is no direct public equity expression of this thesis available to most investors.",
+  "detail": "Baker argues SpaceX is so far ahead of everyone else in rocket technology that there is effectively no second option. Starlink's low-cost satellite broadband will bring high-quality internet to billions currently underserved. Point-to-point hypersonic cargo/passenger travel (NY to Shanghai in 30 min) is a future application. He frames space as a 100-150 year journey toward multi-planetary civilization with profound economic implications including asteroid mining.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'there is SpaceX and then there's really no one else' and calls it 'very exciting.' He expresses personal desire to go to Mars. However, SpaceX is private, limiting direct investment expression.",
+  "themes": [
+    "space/orbital compute",
+    "satellite broadband",
+    "launch cost deflation",
+    "hypersonic transport"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "there is spacex and then there's really no one else",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SpaceX",
+    "Starlink"
+  ],
+  "tickers_subject": [
+    "SpaceX",
+    "Starlink"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "Starlink (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SpaceX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX is the explicit and sole subject of this thesis \u2014 Baker's entire argument is built around SpaceX's technological dominance and cost leadership in launch."
+    },
+    {
+      "ticker": "Starlink",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Starlink is the primary commercial application Baker highlights as a transformative beneficiary of SpaceX's launch cost deflation, specifically for global broadband access. Both entities are private and not US-listed equities."
+    }
+  ]
+}

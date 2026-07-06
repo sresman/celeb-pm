@@ -1,0 +1,44 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T1",
+  "summary": "Gemini 3 confirmed pre-training scaling laws remain intact, which is bullish for next-generation model quality on Blackwell hardware",
+  "summary_extended": "Baker argues that Gemini 3 served as the first meaningful validation of pre-training scaling laws since the Hopper generation, and the fact that those laws held is a foundational confirmation for the entire AI capital expenditure bull case. He contends this is not merely additive but multiplicative in effect, because it compounds with two newly established post-training scaling laws \u2014 RLVR and test-time compute \u2014 meaning models trained on Blackwell hardware will be dramatically more capable than those trained on Hopper. The investment implication is straightforwardly bullish for Nvidia, as sustained pre-training scaling laws justify continued and accelerating demand for the most advanced GPU clusters, with Blackwell being the direct beneficiary of this validation. Baker frames Gemini 3's confirmation as removing a key uncertainty that had hung over the AI infrastructure thesis, making the case for sustained hyperscaler GPU procurement significantly stronger.",
+  "detail": "Baker argues Gemini 3 was the first real test of pre-training scaling laws since Hopper, and it held. This is multiplicative with the two new post-training scaling laws (RLVR and test-time compute), meaning Blackwell-trained models will be dramatically better than Hopper-trained ones.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states 'scaling laws for pre-training are intact' and calls Gemini 3 'very important' for confirming this; frames it as foundational to the entire bull case for AI capex",
+  "themes": [
+    "AI frontier models",
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "Gemini 3 was very important because it showed scaling laws for pre-training are intact",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Sustained pre-training scaling laws directly justify continued large-scale GPU procurement; Blackwell is Nvidia's current flagship training hardware, making Nvidia the primary commercial beneficiary of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Gemini 3 is Google's model and is the specific empirical evidence Baker cites to make this claim; Google is the direct subject of the scaling law validation, though the implication extends beyond Google."
+    }
+  ]
+}

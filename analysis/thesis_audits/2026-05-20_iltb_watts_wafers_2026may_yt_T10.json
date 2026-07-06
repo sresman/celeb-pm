@@ -1,0 +1,78 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T10",
+  "summary": "TerraFab (SpaceX/Tesla joint venture with Intel partnership) will succeed in building a leading US semiconductor fab, potentially disrupting the TSMC/Intel/Samsung dynamic",
+  "summary_extended": "Baker argues that TerraFab \u2014 a reported SpaceX/Tesla joint venture partnered with Intel \u2014 has a credible path to becoming a leading US semiconductor fab, potentially disrupting the current TSMC/Samsung/Intel hierarchy. His core reasoning draws on a structural analogy: just as TSMC rose to dominance partly because wafer fab equipment companies (ASML, KLA, Lam, Applied Materials) prioritized it with their best engineering teams, TerraFab will receive similar A-team support because those same equipment vendors want to avoid a TSMC monopsony and will back a credible challenger. Baker adds that Elon Musk's global reputation will attract elite semiconductor engineering talent, and that he will build cultural infrastructure \u2014 Taiwan towns, Japan towns, Korea towns \u2014 to recruit diaspora engineers who built TSMC and Samsung. Baker believes Elon will compress traditional fab development timelines significantly, making TerraFab a long-term structural threat to incumbent fabs and a long-term beneficiary thesis for the semi-cap equipment suppliers who will be deeply embedded in its buildout.",
+  "detail": "Baker is bullish on TerraFab succeeding because: (1) Intel partnership provides 50 years of institutional knowledge; (2) semi-cap equipment A-teams (ASML, KLA, Lam, Applied Materials) will prioritize it because they don't want a monopsony; (3) Elon's reputation will attract the best global engineering talent; (4) Elon will build cultural infrastructure (Taiwan town, Japan town, Korea town) to recruit top engineers. He believes Elon will move faster than traditional fab timelines.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker makes specific structural arguments for why TerraFab will succeed and draws on his knowledge of how TSMC caught Intel (semi-cap equipment company support). He frames Elon's approach as fundamentally different from how Intel/Samsung think.",
+  "themes": [
+    "semiconductor supply chain",
+    "US manufacturing",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "A teams at the wafer fab equipment companies will be here",
+  "tickers_named_original": [
+    "INTC",
+    "TSLA",
+    "ASML",
+    "KLAC",
+    "LRCX",
+    "AMAT"
+  ],
+  "tickers_direct": [
+    "INTC",
+    "ASML",
+    "KLAC",
+    "LRCX",
+    "AMAT"
+  ],
+  "tickers_subject": [
+    "INTC"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "TerraFab (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "INTC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Intel is named as a direct partner in TerraFab, contributing 50 years of institutional fab knowledge; the thesis is partly about Intel's role and how this partnership changes Intel's strategic position."
+    },
+    {
+      "ticker": "TSLA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Tesla is cited as a co-founder of TerraFab but the thesis is about TerraFab the fab entity and the semi-cap equipment ecosystem, not about Tesla's business or financials. Tesla equity is not a direct subject or beneficiary of a semiconductor fab thesis in any unambiguous way."
+    },
+    {
+      "ticker": "ASML",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly argues that ASML and peer semi-cap equipment companies will prioritize TerraFab with their A-teams, making them direct and early embedded beneficiaries of TerraFab's buildout \u2014 mirroring how they benefited from TSMC's rise."
+    },
+    {
+      "ticker": "KLAC",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "KLA is one of the semi-cap equipment companies Baker explicitly names as likely to send A-teams to TerraFab, making it a direct beneficiary of the fab's construction and ramp."
+    },
+    {
+      "ticker": "LRCX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Lam Research is explicitly named among the wafer fab equipment companies Baker expects to prioritize TerraFab, making it a direct beneficiary."
+    },
+    {
+      "ticker": "AMAT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Applied Materials is explicitly named among the semi-cap equipment companies Baker expects to support TerraFab with their best teams, making it a direct beneficiary."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "date": "2020-05-07",
+  "source": "Columbia SIMA — COVID-19 market impact, technology investing, video games, venture capital",
+  "thesis_id": "T1",
+  "summary": "COVID-19 created a rare long/short opportunity set where obvious trades (long stay-at-home, short travel/leisure) were massively mispriced and generated outsized alpha",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "AMZN",
+    "NFLX",
+    "WMT",
+    "KR",
+    "CLX",
+    "ZM",
+    "MAR",
+    "CCL",
+    "LVS",
+    "DAL",
+    "UAL"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Amazon as a long stay-at-home beneficiary that was mispriced during the COVID dislocation — directly connected to this thesis."
+    },
+    {
+      "ticker": "NFLX",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Netflix as a long stay-at-home beneficiary that was mispriced during the COVID dislocation — directly connected to this thesis."
+    },
+    {
+      "ticker": "WMT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Walmart as a long stay-at-home beneficiary that was mispriced during the COVID dislocation — directly connected to this thesis."
+    },
+    {
+      "ticker": "KR",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Kroger as a long stay-at-home beneficiary that was mispriced during the COVID dislocation — directly connected to this thesis."
+    },
+    {
+      "ticker": "CLX",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Clorox as a long stay-at-home beneficiary that was mispriced during the COVID dislocation — directly connected to this thesis."
+    },
+    {
+      "ticker": "ZM",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Zoom as a long stay-at-home beneficiary that was mispriced during the COVID dislocation — directly connected to this thesis."
+    },
+    {
+      "ticker": "MAR",
+      "action": "REMOVE",
+      "reasoning": "Baker named 'hotels' as a category to short, not Marriott specifically. Assigning MAR as a direct subject requires inferring the representative ticker — Baker did not specifically name Marriott in connection with this thesis."
+    },
+    {
+      "ticker": "CCL",
+      "action": "REMOVE",
+      "reasoning": "Baker named 'cruise lines' as a category to short, not Carnival specifically. Assigning CCL requires inferring the representative ticker — Baker did not specifically name Carnival in connection with this thesis."
+    },
+    {
+      "ticker": "LVS",
+      "action": "REMOVE",
+      "reasoning": "Baker named 'casinos' as a category to short, not Las Vegas Sands specifically. Assigning LVS requires inferring the representative ticker — Baker did not specifically name LVS in connection with this thesis."
+    },
+    {
+      "ticker": "DAL",
+      "action": "REMOVE",
+      "reasoning": "Baker named 'airlines' as a category to short, not Delta specifically. Assigning DAL requires inferring the representative ticker — Baker did not specifically name Delta in connection with this thesis."
+    },
+    {
+      "ticker": "UAL",
+      "action": "REMOVE",
+      "reasoning": "Baker named 'airlines' as a category to short, not United specifically. Assigning UAL requires inferring the representative ticker — Baker did not specifically name United in connection with this thesis."
+    }
+  ]
+}

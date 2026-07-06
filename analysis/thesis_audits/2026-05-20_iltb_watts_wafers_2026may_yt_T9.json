@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T9",
+  "summary": "TSMC's capacity discipline is the single most important variable in preventing an AI infrastructure bubble",
+  "summary_extended": "Baker argues that TSMC's capacity discipline is the single most important variable determining whether AI infrastructure investment tips into an overbuild bubble. His core claim is that if TSMC were to fulfill Jensen Huang's full demand ambitions, Nvidia could theoretically sell $2\u20133 trillion worth of GPUs in 2026\u201327, a pace that would almost certainly result in massive overcapacity and a bubble. Baker identifies a 'Goldilocks zone' for TSMC: expand capacity enough to prevent Intel or Samsung from capturing more than roughly 30% market share as a second-source foundry (which would undermine TSMC's pricing discipline), but constrain supply enough to prevent runaway GPU shipments. He concludes that TSMC's capacity announcements and expansion decisions are the single best leading indicator an investor can monitor to assess AI infrastructure bubble risk, making TSM the central analytical lens for this thesis.",
+  "detail": "Baker argues that if TSMC did what Jensen wanted, Nvidia could sell $2-3T of GPUs in 2026-27, which would likely cause an overbuild. TSMC's supply constraint is the primary bubble-prevention mechanism. He identifies a 'Goldilocks zone' where TSMC expands enough to prevent Intel/Samsung from gaining >30% market share as a second source, while maintaining enough constraint to prevent a bubble. He says to watch TSMC's capacity decisions as the single best bubble indicator.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as his primary analytical framework for bubble risk and says 'if I were to watch one thing to understand where there's a bubble, it's Taiwan Semi's capacity decisions'",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "bubble risk"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Taiwan Semi's capacity decisions \u2014 the single thing to watch for a bubble",
+  "tickers_named_original": [
+    "TSM",
+    "INTC",
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "TSM",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "TSM"
+  ],
+  "tickers_implied_original": [
+    "Samsung (KRX: 005930)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is explicitly about TSMC's capacity decisions as the primary bubble-prevention mechanism and the key variable to monitor; TSM is the direct subject."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker specifically quantifies Nvidia's potential GPU sales at $2\u20133T if TSMC expanded unconstrained, making NVDA a direct beneficiary of TSMC capacity decisions and central to the thesis logic \u2014 not merely tangential."
+    },
+    {
+      "ticker": "INTC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Intel is mentioned only as a potential second-source foundry competitor that TSMC must prevent from gaining >30% share; Intel's foundry prospects are not the subject of this thesis and Intel does not directly benefit from the thesis conclusion. Its role is illustrative of the constraint dynamic, not a standalone investment implication."
+    }
+  ]
+}

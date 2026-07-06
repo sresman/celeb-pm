@@ -1,0 +1,71 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards — AI tailwind for semiconductors",
+  "thesis_id": "T7",
+  "summary": "The semiconductor industry is entering a positive demand supercycle from AI intensity, following two prior negative demand shocks (smartphone replacing PC; cloud/virtualization increasing utilization), in a now highly consolidated market structure",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "NVDA",
+    "INTC",
+    "AMD",
+    "XLNX",
+    "MU",
+    "ASML",
+    "LRCX",
+    "TSM",
+    "AMAT",
+    "KLAC"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker described a broad structural thesis about the semiconductor industry entering an AI demand supercycle. He did not specifically name NVDA as a beneficiary of this exact thesis in the transcript — the thesis is a general structural view about the industry. NVDA is an obvious beneficiary but was inferred, not specifically connected by Baker to this claim."
+    },
+    {
+      "ticker": "INTC",
+      "action": "REMOVE",
+      "reasoning": "Same reasoning as NVDA. Baker's thesis is a general structural view about semiconductor industry consolidation and AI demand. INTC was not specifically named in connection with this exact thesis — it is an inferred beneficiary."
+    },
+    {
+      "ticker": "AMD",
+      "action": "REMOVE",
+      "reasoning": "AMD was not specifically named by Baker in connection with this AI supercycle thesis. It is an inferred beneficiary based on sector membership, not a specific connection Baker made."
+    },
+    {
+      "ticker": "XLNX",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named FPGAs as one of the semiconductor markets benefiting from AI intensity in this thesis. XLNX (Xilinx) is the dominant FPGA supplier, making this a specific enough connection — Baker named the product category that XLNX essentially monopolizes."
+    },
+    {
+      "ticker": "MU",
+      "action": "REMOVE",
+      "reasoning": "While Baker named memory as a market in the supercycle, he did not specifically name MU. Memory is a category mention; MU is an inferred beneficiary. Per strict rules, this is not a specific enough connection."
+    },
+    {
+      "ticker": "ASML",
+      "action": "REMOVE",
+      "reasoning": "Baker named semiconductor equipment as a consolidated market benefiting from AI demand, but did not specifically name ASML. Equipment is a category mention; ASML is an inferred beneficiary."
+    },
+    {
+      "ticker": "LRCX",
+      "action": "REMOVE",
+      "reasoning": "Same as ASML — Baker named equipment as a category but did not specifically name LRCX. Inferred beneficiary, not specifically connected."
+    },
+    {
+      "ticker": "TSM",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name TSMC in connection with this AI supercycle thesis. It is an inferred beneficiary based on its role as the leading foundry."
+    },
+    {
+      "ticker": "AMAT",
+      "action": "REMOVE",
+      "reasoning": "AMAT was added as an inferred beneficiary of Baker's equipment category mention. Baker did not specifically name Applied Materials in connection with this thesis."
+    },
+    {
+      "ticker": "KLAC",
+      "action": "REMOVE",
+      "reasoning": "KLAC was added as an inferred beneficiary of Baker's equipment category mention. Baker did not specifically name KLA in connection with this thesis."
+    }
+  ]
+}

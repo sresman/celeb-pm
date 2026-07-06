@@ -1,0 +1,50 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T10",
+  "summary": "Long-running agentic AI models represent a step-change in intelligence utilization that makes current benchmarks obsolete and dramatically increases compute demand",
+  "summary_extended": "Baker argues that long-running agentic AI models represent a fundamental step-change in intelligence utilization that renders current benchmarks meaningless and dramatically expands compute demand. He references Noam Brown's insight that no one truly knows how capable current frontier models are because they have never been run continuously for extended periods \u2014 the analogy being that Einstein thinking about physics 24/7 without sleep, distraction, or aging would produce extraordinary output far beyond what episodic use suggests. This framing caused Baker to become significantly more bullish on compute than he already was, implying that the market is underestimating the long-run infrastructure buildout required to support persistent, multi-agent AI workloads. Fable 5/Mythos capabilities in multi-agent orchestration and long-running tasks are cited as early validation of this thesis, and Gerstner corroborates with Anthropic revenue inflection as evidence the demand signal is already materializing. The investment implication is to be long compute infrastructure \u2014 particularly GPU and datacenter capacity providers \u2014 as the true ceiling of model utilization has not yet been approached.",
+  "detail": "Baker references Noam Brown's post arguing we don't know how smart current models are because no one has run them continuously for extended periods. The analogy: if Einstein could think about physics 24/7 without distraction, sleep, or aging, the output would be extraordinary. This framing made Baker 'a lot more bullish on compute' than before. Fable 5/Mythos capabilities in multi-agent orchestration and long-running tasks validate this thesis.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says this made him 'a lot more bullish' on compute; uses strong language about the profundity of the insight; Gerstner corroborates with Anthropic revenue inflection",
+  "themes": [
+    "frontier AI models",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "however bullish I was on compute before then, I'm just a lot more bullish",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "SMCI",
+    "ANET"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Anthropic (private)",
+    "OpenAI (private)",
+    "NVDA",
+    "SpaceX (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of GPUs used to run large-scale AI compute workloads. If Baker's thesis is correct that long-running agentic models will dramatically increase compute demand, NVDA is the clearest and most direct public-market beneficiary of that incremental infrastructure spend."
+    },
+    {
+      "ticker": "SMCI",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Super Micro Computer is a major supplier of AI server infrastructure and GPU-dense rack systems. A sustained increase in compute demand for long-running agentic workloads directly benefits SMCI as a datacenter infrastructure provider, making it an unambiguous public-market beneficiary."
+    },
+    {
+      "ticker": "ANET",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Arista Networks is the leading provider of networking infrastructure for AI datacenters. A step-change increase in compute demand for persistent agentic workloads requires commensurate scaling of datacenter networking, making ANET a direct beneficiary of the thesis."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T18",
+  "summary": "Coding is the fastest path to AGI/ASI and will continue to be the dominant high-value AI use case capturing frontier model revenue",
+  "summary_extended": "Baker argues that coding is the dominant high-value AI use case and will remain so for the foreseeable future, citing Replit founder Amjad Masad's 'bitter lesson adjacent' insight that a model capable of coding can write code to do virtually anything, making coding the fastest path to AGI and ASI. The reasoning is structural: coding demand appears inexhaustible, enterprises will not tolerate second-tier code quality and therefore will not trade down from frontier models, and proprietary coding data accumulated by players like Cursor and xAI creates durable competitive moats. The investment implication is that frontier model providers capturing coding revenue \u2014 particularly those with coding-specific data advantages \u2014 are best positioned, and that coding will continue to concentrate AI revenue at the frontier rather than commoditizing to cheaper models. Baker corroborates this view with Anthropic revenue data and Cursor's growth trajectory, expressing high conviction with no hedging on the thesis.",
+  "detail": "Baker cites Replit founder Amjad Masad's 'bitter lesson adjacent' argument that coding may be the fastest path to AGI/ASI because a model good at coding can write code to do anything. Coding demand appears inexhaustible. Cursor/xAI's proprietary coding data advantage is structural. Enterprises will not accept second-tier code, keeping coding on frontier models.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'a profound point'; corroborated by Anthropic revenue data and Cursor's growth trajectory; no hedging on the coding-as-frontier-revenue thesis",
+  "themes": [
+    "frontier AI models"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "coding may be the fastest path to AGI and ASI",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "ANTH",
+    "XAI"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Anthropic (private)",
+    "xAI/SpaceX (private)",
+    "Cursor (private, acquired)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "ANTH",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Anthropic is cited as evidence for the thesis via its revenue data, and as a frontier model provider capturing coding revenue it is a direct beneficiary \u2014 however it is private and not US-listed, so no actionable ticker exists"
+    },
+    {
+      "ticker": "XAI",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "xAI is cited as having a proprietary coding data advantage, making it a direct beneficiary of the coding-as-frontier-revenue thesis \u2014 but it is private and not US-listed"
+    },
+    {
+      "ticker": "CRSR",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Cursor (the AI coding tool, not CRSR the peripherals company) is private and has been acquired; the implied reference is to the private Cursor entity, not any public ticker \u2014 no public US-listed equity maps cleanly to this"
+    }
+  ]
+}

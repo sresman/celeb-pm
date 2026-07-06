@@ -1,0 +1,64 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T8",
+  "summary": "Companies in the power production and cooling ecosystem that are massively ramping capacity face risk from orbital compute becoming real just as that capacity hits",
+  "summary_extended": "Baker warns that companies in the terrestrial power production and cooling ecosystem that are currently ramping significant new capacity face a specific timing risk: orbital compute could become understood and priced by the market precisely as that new capacity comes online, potentially stranding or devaluing those investments. His reasoning is that if orbital compute eliminates or dramatically reduces the need for earth-based data center power and cooling infrastructure, the massive capital expenditures being made today by power and cooling companies could become impaired assets. The investment implication is a cautionary one \u2014 Baker is not explicitly shorting these names but urges investors in power/cooling infrastructure plays to think carefully about whether the timeline of their capacity additions aligns dangerously with the timeline of orbital compute becoming a credible market narrative. He stops short of naming specific companies, framing this as a structural risk warning rather than a specific sell recommendation, and the thesis is explicitly contrarian relative to the consensus bullish view on AI power infrastructure buildout.",
+  "detail": "Baker explicitly warns that if you are in the power/cooling ecosystem and ramping capacity, you should think hard about the timing risk of orbital compute becoming understood by the market just as your new capacity comes online. This is a structural risk warning for terrestrial power/cooling infrastructure plays.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker frames this as a specific risk to think 'long and hard about' for companies in the ecosystem, but stops short of naming specific companies to avoid",
+  "themes": [
+    "power/energy",
+    "space/orbital compute",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "massively ramping capacity just as orbital compute is very real",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GEV",
+    "ETN",
+    "VRT",
+    "PWR"
+  ],
+  "tickers_subject": [
+    "GEV",
+    "ETN",
+    "VRT",
+    "PWR"
+  ],
+  "tickers_implied_original": [
+    "GE Vernova",
+    "Eaton",
+    "Vertiv",
+    "Quanta Services",
+    "power/cooling infrastructure companies"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GEV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "GE Vernova is a major power generation infrastructure company ramping capacity for AI datacenter demand \u2014 precisely the profile Baker describes as facing orbital compute timing risk."
+    },
+    {
+      "ticker": "ETN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Eaton is a leading power management and electrical infrastructure company heavily exposed to datacenter power buildout, fitting Baker's description of companies ramping capacity at risk."
+    },
+    {
+      "ticker": "VRT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Vertiv is a direct play on datacenter cooling and power infrastructure, massively ramping capacity for AI demand \u2014 the exact profile Baker flags as facing orbital compute timing risk."
+    },
+    {
+      "ticker": "PWR",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Quanta Services is ramping electrical grid and power infrastructure capacity tied to AI datacenter demand, fitting the profile of companies Baker warns about."
+    }
+  ]
+}

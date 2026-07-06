@@ -1,0 +1,52 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards \u2014 AI tailwind for semiconductors",
+  "thesis_id": "T10",
+  "summary": "ARM-based server CPU startups represent a credible threat to both Intel and AMD in the data center, with some having 'truly great design teams'",
+  "summary_extended": "Baker argues that ARM-based server CPU startups represent a credible and underappreciated threat to x86 incumbents in the data center, citing what he describes as 'truly great design teams' at some of these unnamed companies. He uses Apple's decision to switch MacBooks from Intel x86 to ARM-based chips as a leading indicator that ARM architecture is now genuinely competitive with x86 at the high end, suggesting the same dynamic could play out in servers. Baker is more bullish on certain ARM server CPU startups than on Marvell's own ARM CPU efforts, implying he sees differentiated upside in the startup space rather than in established semiconductor players pivoting to ARM. The thesis is directional rather than actionable in public markets, as the most compelling opportunities Baker identifies are in unnamed private startups; among public companies, Marvell is the primary named ARM server CPU play, while Intel and AMD are the incumbents facing disruption. Baker frames this as a medium-term crosscurrent rather than an immediate catalyst, qualifying his view with 'we'll see.'",
+  "detail": "Baker notes ARM is coming to the data center and flags both established players (Marvell) and unnamed startups with strong design teams as potentially disruptive to x86 incumbents. Apple's switch from Intel x86 to ARM-based chips in MacBooks is cited as a leading indicator of ARM's architectural competitiveness. Baker says he is 'more bullish on some of these startups' than on Marvell's ARM CPU efforts.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker expresses a directional view but does not name specific startups or provide a timeline. He qualifies with 'we'll see' and frames it as a crosscurrent rather than a primary thesis.",
+  "themes": [
+    "semiconductor supply chain",
+    "CPU competitive dynamics",
+    "ARM architecture"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "some of these ARM server CPU startups have truly great design teams",
+  "tickers_named_original": [
+    "INTC",
+    "AMD",
+    "MRVL"
+  ],
+  "tickers_direct": [
+    "MRVL",
+    "INTC"
+  ],
+  "tickers_subject": [
+    "MRVL",
+    "INTC"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "MRVL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Marvell is explicitly named as a public company pursuing ARM server CPU development, making it a direct subject of the ARM data center disruption thesis, though Baker is less bullish on MRVL than on unnamed startups."
+    },
+    {
+      "ticker": "INTC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Intel is the primary x86 incumbent in the data center being disrupted by ARM-based server CPUs, and Apple's switch away from Intel x86 is cited as the leading indicator. Intel is directly threatened by this thesis."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is an x86 incumbent in the data center but Baker's thesis focuses on Intel as the disruption target and ARM startups/Marvell as the challengers. AMD is not specifically named as a subject of disruption or a beneficiary in this thesis segment and appears to be incidental context rather than a direct subject."
+    }
+  ]
+}

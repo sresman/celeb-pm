@@ -1,0 +1,48 @@
+{
+  "date": "2024-06-15",
+  "source": "All-In Podcast \u2014 DRAM bottleneck, AI infrastructure, Chinese open source models",
+  "thesis_id": "T2",
+  "summary": "DRAM will represent 30-40% of all hyperscaler capex next year",
+  "summary_extended": "Baker makes a striking structural claim that DRAM will represent 30-40% of the hundreds of billions in annual hyperscaler capital expenditure in the near term, driven by the explosive memory demands of AI infrastructure buildout. He frames this as a 'wild' but factually grounded forecast, arguing that the AI capex cycle is fundamentally a memory story as much as a compute story, with HBM and high-capacity DRAM becoming critical bottlenecks in GPU-based systems. The investment implication is that DRAM producers are disproportionate beneficiaries of the AI infrastructure wave, capturing a far larger share of datacenter spending than is widely appreciated by the market. Baker's view is explicitly contrarian in that the market tends to focus AI capex narratives on GPU and networking vendors rather than memory, making DRAM producers potentially underappreciated relative to the magnitude of spend flowing their way.",
+  "detail": "Baker projects that of the hundreds of billions in hyperscaler capex, 30-40% will flow directly to DRAM. This is a structural shift that makes DRAM producers disproportionate beneficiaries of AI capex cycles.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a specific numerical forecast with high confidence, framing it as 'wild' but factual",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "DRAM is probably going to be 30 to 40% of all hyperscaler capex next year",
+  "tickers_named_original": [
+    "MU"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SK Hynix (implied: 000660.KS)",
+    "Samsung (implied: 005930.KS)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is the primary US-listed DRAM and HBM producer and is the most direct investable beneficiary of a thesis projecting 30-40% of hyperscaler capex flowing to DRAM. It is the only major DRAM producer listed on a US exchange."
+    },
+    {
+      "ticker": "000660.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SK Hynix is a major HBM/DRAM producer and would benefit from this thesis, but it is listed on the Korean exchange and is not a US-listed equity. It should be excluded per the rules for implied tickers."
+    },
+    {
+      "ticker": "005930.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Samsung is a major DRAM producer and would benefit, but it is listed on the Korean exchange and is not a US-listed equity. It should be excluded per the rules for implied tickers."
+    }
+  ]
+}

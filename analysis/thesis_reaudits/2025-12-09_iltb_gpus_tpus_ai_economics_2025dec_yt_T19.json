@@ -1,0 +1,41 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) — GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T19",
+  "summary": "Semiconductor venture capital has returned with force and is necessary for Nvidia's annual GPU cadence to be achievable",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "NVDA",
+    "AVGO",
+    "MRVL",
+    "COHR",
+    "LITE"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "NVDA is the explicit anchor of the thesis — Baker's entire argument is built around Nvidia's annual GPU cadence and the Blackwell rack ecosystem. Directly connected."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Broadcom in connection with this semiconductor VC / supply chain thesis. Broadcom may be an obvious beneficiary of AI networking demand, but the critical test is whether Baker explicitly named AVGO as part of this thesis — he did not. This appears to be an inferred addition, not a direct citation."
+    },
+    {
+      "ticker": "MRVL",
+      "action": "REMOVE",
+      "reasoning": "Same issue as AVGO. Marvell is a plausible beneficiary of AI datacenter supply chain growth, but Baker did not specifically name Marvell in connection with this thesis about semiconductor VC and the Blackwell ecosystem supply chain. This is an inferred connection, not an explicit one."
+    },
+    {
+      "ticker": "COHR",
+      "action": "REMOVE",
+      "reasoning": "While Baker mentioned transceivers and lasers as components that must scale, he did not specifically name Coherent (COHR) by name in connection with this thesis. The component categories were named but not the specific public companies supplying them. This is an inferred beneficiary, not a directly cited one."
+    },
+    {
+      "ticker": "LITE",
+      "action": "REMOVE",
+      "reasoning": "Same as COHR. Baker referenced lasers and optical components generically as part of the ecosystem, but did not specifically name Lumentum (LITE) in connection with this thesis. Removing as an inferred rather than explicitly cited beneficiary."
+    }
+  ]
+}

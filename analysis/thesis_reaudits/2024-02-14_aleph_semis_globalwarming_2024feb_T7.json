@@ -1,0 +1,29 @@
+{
+  "date": "2024-02-14",
+  "source": "Invested by Aleph — Semiconductors, AI, global warming, geopolitics",
+  "thesis_id": "T7",
+  "summary": "Exposure to frontier AI labs (OpenAI, Anthropic, XAI, Google DeepMind) is a must-have in a portfolio",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Google DeepMind is explicitly named by Baker as one of the frontier AI labs that must be in a portfolio. GOOGL is the only public-market vehicle to access Google DeepMind, making it a direct subject of this thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically connect MSFT to this thesis in the transcript. While MSFT has a well-known OpenAI partnership, Baker named OpenAI as a frontier lab to own — he did not specifically say MSFT is the way to get that exposure or mention MSFT in connection with this thesis. The connection is an inference, not a direct statement by Baker."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically connect AMZN to this thesis in the transcript. While AMZN has invested in Anthropic, Baker cited Anthropic's revenue growth as evidence of frontier lab value without specifically naming AMZN as a proxy or beneficiary. The connection is an inference, not a direct statement by Baker."
+    }
+  ]
+}

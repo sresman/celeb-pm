@@ -1,0 +1,23 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T10",
+  "summary": "Larger context windows have largely replaced enterprise fine-tuning, undermining the moat of open-source model companies",
+  "summary_extended": "Baker argues that the original investment thesis around open-source model companies \u2014 that enterprises would fine-tune models on proprietary data, creating durable lock-in for those providers \u2014 has largely failed to materialize. Instead, the emergence of large context windows has allowed enterprises to simply load their proprietary data directly into prompts at inference time, bypassing the need for fine-tuning altogether. This development commoditizes open-source and smaller model providers outside the 'big four' frontier labs, as their primary moat (fine-tuning lock-in) has been neutralized. The implication is that enterprise AI value is concentrating further toward the top-tier frontier model providers who can deliver the largest and most capable context windows, while standalone open-source model companies face a structurally weaker competitive position than previously anticipated.",
+  "detail": "The thesis that enterprises would fine-tune their own models on proprietary data \u2014 creating lock-in for open-source model providers \u2014 has not played out. Instead, large context windows allow enterprises to load their data without fine-tuning. This eliminates the lock-in advantage and commoditizes models outside the big four labs.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as an observed fact about how the market has evolved, not a prediction",
+  "themes": [
+    "AI foundation models",
+    "enterprise software",
+    "competitive moats"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "larger context windows have largely replaced enterprise fine tuning",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

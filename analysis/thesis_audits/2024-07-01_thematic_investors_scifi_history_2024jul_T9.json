@@ -1,0 +1,68 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T9",
+  "summary": "Most application software companies face existential risk from AI replacing the human workers who use their software",
+  "summary_extended": "Baker argues that most application software companies face existential risk from AI agents that replace human workers entirely, eliminating the need for the software licenses those humans previously used. His core logic is that AI applications operate as autonomous agents performing tasks directly \u2014 a customer service AI, for example, does not require Salesforce, ServiceNow, or Zendesk licenses because it bypasses the human layer those tools were built to serve. He draws an analogy to the iPhone's displacement of BlackBerry and flip phones, suggesting that when a technology is sufficiently superior, disruption can be rapid and near-total rather than gradual. Baker notes this view is widely held among AI startup founders and acknowledges that incumbent application software vendors are aware of the threat and attempting to integrate AI, but implies this may be insufficient. The investment implication is a structural short thesis on application software companies whose revenue depends on per-seat or usage-based licensing tied to human workers.",
+  "detail": "AI applications replace human labor directly and don't need the software licenses those humans used. A customer service AI doesn't need Salesforce, ServiceNow, or Zendesk. Baker compares the potential disruption to the Blackberry/flip phone after the iPhone \u2014 sometimes clearly superior technology causes rapid displacement. He acknowledges application software companies are aware and trying to integrate AI before being replaced.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker explicitly flags this as a 'very very common belief of most AI startups' but also says humility is required \u2014 he doesn't give a definitive timeline",
+  "themes": [
+    "AI disruption",
+    "application software",
+    "short thesis"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "most application software may just go away",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRM",
+    "NOW",
+    "ZEN"
+  ],
+  "tickers_subject": [
+    "CRM",
+    "NOW",
+    "ZEN"
+  ],
+  "tickers_implied_original": [
+    "CRM",
+    "NOW",
+    "ZEN",
+    "HUBS",
+    "WDAY"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Salesforce is explicitly named by Baker as an example of a software company whose licenses become unnecessary when AI agents replace human customer service workers."
+    },
+    {
+      "ticker": "NOW",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "ServiceNow is explicitly named by Baker as a company whose software could be bypassed by AI agents replacing the human workers who use it."
+    },
+    {
+      "ticker": "ZEN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Zendesk is explicitly named by Baker as an example of application software at risk of displacement by AI customer service agents."
+    },
+    {
+      "ticker": "HUBS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "HubSpot is a canonical application software company with per-seat licensing tied to human marketing and sales workers, fitting squarely within Baker's thesis about AI displacing the humans who use such software. [RE-AUDIT: The extended summary does not indicate Baker specifically named HubSpot in connection with this thesis. It was classified as a 'canonical example' by inference, not because Baker explicitly connected it. Under strict audit rules, inference-based inclusion must be removed.]"
+    },
+    {
+      "ticker": "WDAY",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Workday is a canonical application software company with per-seat licensing tied to human HR and finance workers, fitting squarely within Baker's thesis about AI displacing the humans who use such software. [RE-AUDIT: The extended summary does not indicate Baker specifically named Workday in connection with this thesis. Like HubSpot, it was included as an inferred canonical example rather than because Baker explicitly named it. Under strict audit rules, this must be removed.]"
+    }
+  ]
+}

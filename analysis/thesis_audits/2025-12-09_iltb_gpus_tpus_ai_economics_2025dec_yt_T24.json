@@ -1,0 +1,64 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T24",
+  "summary": "AI ROI is empirically positive and unambiguous based on ROIC data from public GPU spenders",
+  "summary_extended": "Baker argues that the ROI debate around AI spending is empirically settled and 'strange' given publicly available data: the largest GPU buyers are public companies with audited financials, and their ROIC is measurably higher now than before they ramped GPU capex. He identifies two primary drivers of this ROIC improvement \u2014 opex savings from AI automation and the migration of recommendation and advertising systems from CPUs to GPUs, which has driven both efficiency gains and revenue acceleration. As a cautionary counterpoint, Baker notes that Meta's ROIC declined in the one quarter it failed to produce a frontier model, underscoring that continued AI investment and capability advancement is necessary to sustain these returns. The investment implication is that the largest hyperscaler GPU spenders \u2014 companies with the scale to deploy AI across advertising, cloud, and consumer products \u2014 are generating real, auditable returns, making the bear case on AI capex ROI empirically weak. Baker frames this as a structural, ongoing dynamic rather than a one-time event, suggesting continued GPU spending by these companies is justified and likely.",
+  "detail": "The largest GPU buyers are public companies with audited financials. Their ROIC is higher now than before they ramped GPU spending. Key drivers: opex savings, and moving recommendation/advertising systems from CPUs to GPUs driving massive efficiency gains and revenue acceleration. Meta's ROIC declined in one quarter when it couldn't make a frontier model\u2014a cautionary data point.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls the ROI debate 'strange' given publicly available ROIC data and frames it as 'empirically, factually, unambiguously positive'",
+  "themes": [
+    "AI applications",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "the ROIC of the big public spenders on GPUs is higher than before they ramped spending",
+  "tickers_named_original": [
+    "META"
+  ],
+  "tickers_direct": [
+    "META",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "META"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "AMZN",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is explicitly named as the primary case study \u2014 Baker cites Meta's ROIC improvement from GPU spending on recommendation/advertising systems and specifically calls out the one quarter where Meta's ROIC declined when it failed to produce a frontier model."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google is one of the largest public GPU spenders with audited financials and benefits directly from the thesis \u2014 its advertising and cloud businesses are prime examples of the CPU-to-GPU migration Baker describes driving ROIC improvement."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon is a major public GPU spender whose AWS cloud and advertising businesses fit Baker's framework of AI-driven ROIC improvement; its financials are auditable and it is among the companies Baker's thesis implicitly covers. [RE-AUDIT: While Amazon is a major hyperscaler and GPU spender, Baker did not specifically name Amazon in connection with this thesis about auditable ROIC improvement. The first-pass reasoning relies on implicit inclusion rather than explicit naming. Per the strict test, this is insufficient \u2014 remove.]"
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is one of the largest public GPU spenders with audited financials, deploying AI across Azure and Copilot products; it fits squarely within Baker's thesis about hyperscalers generating measurable ROIC improvements from GPU investment. [RE-AUDIT: Microsoft was not specifically named by Baker in connection with this exact thesis about ROIC improvement from GPU spending. The first-pass reasoning is inferential ('fits squarely within Baker's thesis') rather than based on Baker explicitly connecting Microsoft to this claim. Remove.]"
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Baker's thesis that GPU ROI is empirically positive and that hyperscalers will continue ramping GPU spend directly benefits Nvidia as the dominant GPU supplier; while not named in this segment, the implication for continued GPU demand is unambiguous and Nvidia is the primary US-listed beneficiary of sustained hyperscaler GPU capex. [RE-AUDIT: Nvidia was explicitly flagged as 'not named in this segment' in the first-pass audit. The connection is inferential \u2014 Nvidia benefits from continued GPU demand, but Baker did not specifically connect Nvidia to this ROIC thesis. This is a classic tangential inclusion. Remove.]"
+    }
+  ]
+}

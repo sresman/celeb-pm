@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-12",
+  "source": "Sohn NY 2026 \u2014 Tech investing fireside",
+  "thesis_id": "T5",
+  "summary": "Orbital/space-based compute will become commercially viable within 2 years and take meaningful market share by end of decade",
+  "summary_extended": "Baker argues that orbital/space-based compute will become commercially viable within approximately two years and will capture meaningful market share in AI inference workloads by the end of the decade. The proposed architecture involves sun-synchronous orbit satellites functioning as compute racks (roughly 8ft x 2.5ft x 4ft), interconnected via laser links into virtual data centers, powered by solar energy, and cooled passively via radiative cooling \u2014 eliminating two of the largest cost drivers of terrestrial data centers (power and cooling). Baker distinguishes workload suitability carefully: training and reinforcement learning workloads will remain terrestrial due to latency and coordination requirements, while inference and other workloads are candidates for orbital offload. He gives a specific two-year window for commercial viability to become clear, and an end-of-decade timeframe for share gains to become meaningful, though he acknowledges uncertainty and notably cannot name the specific provider that will deliver this. The investment implication is to monitor emerging private or public orbital compute providers, but no specific publicly traded equity is unambiguously identified as the primary beneficiary at this time.",
+  "detail": "Baker believes it becomes clear orbital compute is possible, workable, and economical within 2 years, with meaningful share gains toward end of decade. Architecture: sun-synchronous orbit satellites acting as racks (8ft x 2.5ft x 4ft), stitched via laser into virtual data centers, with solar power and passive radiative cooling. Training and RL workloads will remain terrestrial; inference and other workloads may shift to orbital.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker gives a specific 2-year timeline for commercial viability and end-of-decade for share gains, but acknowledges uncertainty and cannot name the provider",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "it becomes clear that it is possible going to work and economical in the next 2 years",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

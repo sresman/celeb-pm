@@ -1,0 +1,46 @@
+{
+  "date": "2025-01-04",
+  "source": "All-In Podcast \u2014 2025 predictions (bestie guest Gavin Baker)",
+  "thesis_id": "T8",
+  "summary": "AI will make more progress per quarter in 2025 than it did per year in 2023-2024 due to three multiplicative scaling axes",
+  "summary_extended": "Baker argues that AI will make more progress per quarter in 2025 than it did in all of 2023 and 2024 combined, driven by three now-multiplicative scaling axes: pre-training compute, inference-time compute, and reasoning via synthetic reasoning trace data combined with reinforcement learning. The key mechanism is a self-reinforcing loop where models generate synthetic data with reasoning traces, feed that data back into training, and apply RL \u2014 creating compounding acceleration rather than linear improvement. Baker frames this as his highest-conviction trend prediction for 2025 and references a Google researcher tweeting 'straight shot to ASI' as corroborating sentiment from inside the frontier labs. The investment implication is broad exposure to frontier AI model developers and the infrastructure enabling this scaling, though Baker does not name specific stocks in this thesis \u2014 the acceleration benefits any company at the frontier of model development. No specific price targets, revenue figures, or company-level comparisons are cited; this is a macro capability thesis rather than a single-stock call.",
+  "detail": "Baker identifies three now-multiplicative scaling axes: pre-training compute, inference-time compute, and reasoning (via synthetic reasoning trace data + RL). Models are generating synthetic data with reasoning traces, feeding them back, and applying reinforcement learning. This creates compounding acceleration. He references a Google researcher tweeting 'straight shot to ASI.'",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker provides detailed technical mechanism and frames this as his most anticipated trend prediction",
+  "themes": [
+    "AI capability acceleration",
+    "reasoning models",
+    "AGI trajectory"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "AI is going to make more progress per quarter in 2025 than it did per year in 23 and 24",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker references a Google researcher's tweet as color, but this thesis is a broad AI capability acceleration argument with no specific claim about Alphabet's competitive position, revenue, or stock. GOOGL is not a direct subject or unambiguous direct beneficiary relative to any other frontier AI company."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is not mentioned or specifically implied in this thesis. It may benefit from AI acceleration generally, but so would dozens of companies \u2014 it is not an unambiguous direct beneficiary of this specific structural claim about scaling axes."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon is not mentioned or specifically implied in this thesis. General AI acceleration does not unambiguously single out AMZN over other hyperscalers or frontier model developers, so it should be removed."
+    }
+  ]
+}

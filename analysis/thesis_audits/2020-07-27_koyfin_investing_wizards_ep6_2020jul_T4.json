@@ -1,0 +1,53 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards \u2014 AI tailwind for semiconductors",
+  "thesis_id": "T4",
+  "summary": "AMD has a rare simultaneous architectural and manufacturing process advantage over Intel in server CPUs, with better supply capacity than during its last advantage cycle (~2003-2005)",
+  "summary_extended": "Baker argues that AMD holds a rare dual advantage over Intel in server CPUs \u2014 both an architectural edge from Jim Keller's chiplet design and a manufacturing process lead via TSMC's 7nm node, while Intel remains 3-4 years behind on 10nm. He draws a direct parallel to the 2003-2005 Opteron era when AMD last had an architectural edge, but notes the critical difference this time is TSMC's abundant capacity, which allows AMD to actually fulfill server CPU demand \u2014 something it could not do in the prior cycle when Intel used manufacturing scale and supply threats to suppress AMD's gains. The near-term binary catalyst Baker identifies is Intel's attempt to run 10nm on server CPUs (larger dies with inherently lower yields) expected by end of 2020, which will determine whether Intel can close the gap. The investment implication is long AMD, with the thesis contingent on Intel failing to execute its 10nm server ramp; TSMC is an indirect enabler of AMD's advantage but is not the primary investment subject. Baker frames this as a high-conviction, near-term resolvable thesis with specific technical and timeline evidence supporting AMD share gains in the server CPU market.",
+  "detail": "AMD's chiplet architecture (from Jim Keller) gives it an architectural edge over Intel in server CPUs for the first time since the Opteron era. Crucially, AMD now uses TSMC's 7nm process while Intel is 3-4 years late on 10nm. TSMC's abundant capacity means AMD can fulfill demand this time, unlike 2003-2005 when Intel used manufacturing muscle and supply threats to fight back. The real test is Intel's ability to run 10nm on server CPUs (larger dies, lower yields) expected end of 2020.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker provides specific technical detail (chiplet architecture, node comparisons, yield dynamics, historical parallel), identifies a specific near-term catalyst (Intel server CPU launch on 10nm, end of 2020), and frames the outcome as binary and knowable within 6-9 months.",
+  "themes": [
+    "semiconductor supply chain",
+    "CPU competitive dynamics",
+    "fabless vs IDM"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "AMD has an architectural advantage, but because of Taiwan Semi, they also have a manufacturing process technology advantage",
+  "tickers_named_original": [
+    "AMD",
+    "INTC",
+    "TSM"
+  ],
+  "tickers_direct": [
+    "AMD",
+    "INTC",
+    "TSM"
+  ],
+  "tickers_subject": [
+    "AMD",
+    "INTC"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AMD",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "AMD is the primary subject of the thesis \u2014 the company with the architectural and manufacturing process advantage in server CPUs that Baker is making a bullish case for."
+    },
+    {
+      "ticker": "INTC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Intel is the direct competitive foil in this thesis; its ability or failure to execute 10nm server CPUs is the binary catalyst Baker identifies, making it a direct subject (bearish side of the trade)."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "TSMC is the foundry enabling AMD's manufacturing advantage via 7nm capacity; it directly benefits from AMD's server CPU volume ramp, though it is not the primary investment thesis subject."
+    }
+  ]
+}

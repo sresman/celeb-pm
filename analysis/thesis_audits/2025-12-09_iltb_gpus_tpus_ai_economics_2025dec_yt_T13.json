@@ -1,0 +1,35 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T13",
+  "summary": "Reasoning models have created a data flywheel for frontier AI labs that is beginning to generate increasing returns to scale, widening the moat of the top 4 labs",
+  "summary_extended": "Baker argues that reasoning models have fundamentally transformed the competitive dynamics of frontier AI labs by creating a data flywheel that generates increasing returns to scale. Prior to reasoning models, AI development had no feedback loop \u2014 models were static after pre-training and could not improve from user interactions. With reasoning, verifiable outcomes enable Reinforcement Learning from Verifiable Rewards (RLVR), meaning each user interaction generates training signal, and each lab's most advanced internal checkpoint is used to train the next generation model, compounding separation between leaders and followers. Baker believes this dynamic is widening the moat of the top four frontier labs (implicitly OpenAI, Google DeepMind, Anthropic, and Meta) and that Blackwell-era compute will further entrench American frontier labs by making it harder for Chinese open-source models to serve as bootstrapping tools for challengers. The investment implication is to be long the top frontier labs with access to this flywheel, with Meta being the only publicly traded pure-play among the four.",
+  "detail": "Pre-reasoning AI had no flywheel\u2014models were static after pre-training. With reasoning, verifiable outcomes allow RLVR feedback loops from user interactions. Each lab also has a more advanced internal checkpoint used to train the next model. This creates compounding separation. Chinese open source was a gift to Meta as a bootstrap, but Blackwell will widen the gap between American frontier labs and Chinese open source, making bootstrapping harder.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'really profound' and frames it as a fundamental change in industry dynamics; uses strong language about separation growing",
+  "themes": [
+    "AI frontier models",
+    "AI applications"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "reasoning fundamentally changed the industry dynamics of frontier labs",
+  "tickers_named_original": [
+    "META"
+  ],
+  "tickers_direct": [
+    "META"
+  ],
+  "tickers_subject": [
+    "META"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is explicitly named as one of the top frontier labs benefiting from the reasoning flywheel dynamic, and is the only publicly traded pure-play frontier lab among the top four Baker references. Baker specifically notes Chinese open source was a gift to Meta as a bootstrap, and that Blackwell will widen the gap favoring Meta and peers."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2024-01-15",
+  "source": "iConnections Global Alts 2024 \u2014 Markets panel",
+  "thesis_id": "T4",
+  "summary": "SaaS/software companies face existential risk from AI-enabled vibe coding and autonomous software development",
+  "summary_extended": "Baker argues that AI-enabled 'vibe coding' and autonomous software development tools represent an existential threat to traditional SaaS and pure-play software companies, as non-developers can now build functional software (e.g., a full CRM system) in just 2-3 hours without writing code. He cites HubSpot's stock decline from roughly $850 to the low $200s as early evidence of the market beginning to price in this disruption, and notes he has personally avoided investing in any pure software company for 6-7 years based on this structural view. Baker frames the threat as urgent, suggesting software CEOs have a 2-3 month window to respond before the disruption becomes irreversible. He also identifies a secondary opportunity: AI labs could acquire small-cap software companies cheaply \u2014 gutting headcount and using them as distribution channels \u2014 analogous to Larry Ellison's post-dot-com bubble acquisition playbook, suggesting the bear case for software incumbents is compounded by potential acqui-hire dynamics that would not reward equity holders at premium valuations.",
+  "detail": "Baker argues that AI tools now allow non-developers to build functional software (e.g., a CRM in 2-3 hours), directly threatening traditional SaaS vendors. He notes HubSpot has already fallen from ~$850 to the low $200s. He has not invested in a pure software company in 6-7 years. He also sees an opportunity for AI labs to acquire small-cap software companies cheaply, gut headcount, and use them as distribution channels \u2014 analogous to Larry Ellison's post-bubble acquisition playbook.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states he hasn't invested in a pure software company in 6-7 years, and frames the risk as existential with a 2-3 month decision window for software CEOs",
+  "themes": [
+    "SaaS disruption",
+    "AI software",
+    "enterprise software"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "we have not invested in a pure software company in like 6 or 7 years",
+  "tickers_named_original": [
+    "HUBS"
+  ],
+  "tickers_direct": [
+    "HUBS"
+  ],
+  "tickers_subject": [
+    "HUBS"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "HUBS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "HubSpot is explicitly cited by Baker as a casualty of this disruption, with its stock decline from ~$850 to the low $200s used as direct evidence of the thesis playing out. It is a canonical pure-play SaaS CRM vendor directly threatened by AI-enabled software development."
+    }
+  ]
+}

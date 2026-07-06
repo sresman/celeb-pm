@@ -1,0 +1,59 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards \u2014 AI tailwind for semiconductors",
+  "thesis_id": "T5",
+  "summary": "Intel faces a structural competitive crisis having lost its 50-year manufacturing lead due to the EUV bet and process execution failures; recovery depends on 10nm server CPU execution in late 2020",
+  "summary_extended": "Baker argues that Intel has suffered a structural, potentially irreversible loss of its 50-year manufacturing leadership due to two compounding failures: its decision not to adopt ASML's EUV lithography tools and its over-targeting of transistor density at the 10nm node, which caused severe yield problems. Historically, Intel maintained a 9-18 month process node lead over all competitors \u2014 a massive embedded competitive moat \u2014 but TSMC has now surpassed it, with Intel's 10nm roughly equivalent to TSMC's 7nm in real-world performance. Baker frames the near-term binary test as whether Intel can successfully yield large server CPU dies on its 10nm process by end of 2020; failure would further cement AMD's data center CPU advantage and accelerate ARM-based competition in the server market. The investment implication is bearish on Intel and bullish on AMD as the primary x86 beneficiary of Intel's execution failures, with TSMC as the foundry winner capturing share Intel cannot manufacture itself. Baker uses Arnold Toynbee's framing \u2014 'empires are hard won and easily lost' \u2014 to underscore that Intel's structural disadvantage may not be recoverable on a short timeline.",
+  "detail": "Intel was historically 9-18 months ahead of competitors at each process node, a massive embedded advantage. By not adopting ASML's EUV tool and over-targeting transistor density, Intel lost this lead to TSMC. Intel's 10nm is roughly equivalent to TSMC's 7nm. The near-term test is whether Intel can yield large server CPU dies on 10nm (expected end of 2020). Failure would further entrench AMD's advantage. Intel also faces ARM-based competition in the data center.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker provides specific technical reasoning (EUV decision, die size yield dynamics), a precise timeline (end of 2020 for server CPU launch), and frames it as a binary outcome. He uses the Toynbee 'empires are hard won and easily lost' framing to underscore the severity.",
+  "themes": [
+    "semiconductor supply chain",
+    "CPU competitive dynamics",
+    "Moore's Law sustainability"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "Intel lost a 50-year leadership position... because of a bet around EUV",
+  "tickers_named_original": [
+    "INTC",
+    "AMD",
+    "TSM",
+    "ASML"
+  ],
+  "tickers_direct": [
+    "INTC",
+    "AMD",
+    "TSM"
+  ],
+  "tickers_subject": [
+    "INTC"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "INTC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically and centrally about Intel's manufacturing failures, loss of process leadership, and the binary near-term test of its 10nm server CPU execution."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly states that failure by Intel on 10nm server CPUs would further entrench AMD's advantage in the data center, making AMD the direct x86 beneficiary of Intel's competitive decline."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "TSMC is the foundry that surpassed Intel and is now manufacturing chips for Intel's competitors (including AMD); it directly benefits from Intel's manufacturing failures as the leading-edge process winner."
+    },
+    {
+      "ticker": "ASML",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "ASML is mentioned only as the maker of the EUV tool that Intel chose not to adopt \u2014 it is context for explaining Intel's mistake, not a subject of or beneficiary of this specific thesis. ASML's business is not materially impacted by Intel's internal process decisions in the framing of this thesis."
+    }
+  ]
+}

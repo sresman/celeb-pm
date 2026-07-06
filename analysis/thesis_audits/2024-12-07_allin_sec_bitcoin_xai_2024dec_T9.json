@@ -1,0 +1,23 @@
+{
+  "date": "2024-12-07",
+  "source": "All-In Podcast \u2014 Trump transition, SEC/crypto regulation, xAI Colossus, AI scaling laws, MicroStrategy, defense tech",
+  "thesis_id": "T9",
+  "summary": "Test-time compute (inference scaling) is a new and underappreciated axis of AI capability improvement that extends the AI investment thesis even if training scaling plateaus",
+  "summary_extended": "Baker argues that test-time compute \u2014 allowing AI models to 'think longer' on harder problems rather than applying uniform inference time regardless of complexity \u2014 represents a new and underappreciated scaling law dimension that extends the AI investment thesis beyond training-side improvements. He explains that models like OpenAI's o1 demonstrate that reasoning time can dramatically improve output quality, effectively increasing model 'IQ' on complex tasks without requiring larger training runs. This matters because it means AI capability improvements are not solely dependent on ever-larger training clusters, and the investment thesis for AI infrastructure remains intact even if training scaling laws plateau. Baker states 'we're just at the beginning of this new scaling law,' implying that inference compute demand will grow substantially as o1-style reasoning models proliferate. The implication is that inference-side infrastructure \u2014 chips, servers, and data centers optimized for sustained compute \u2014 will see rising demand, though Baker does not name specific beneficiaries in this segment.",
+  "detail": "Baker explains that models have been given the same 'think time' regardless of question complexity. Allowing models to reason longer on hard problems (as in o1-style models) dramatically improves output quality. This is a new scaling law dimension alongside context window expansion and model chaining/routing.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explains the concept in detail and says 'we're just at the beginning of this new scaling law'",
+  "themes": [
+    "AI scaling",
+    "AI inference",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "if you let them think for longer about more complex questions you can dramatically improve their IQ",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

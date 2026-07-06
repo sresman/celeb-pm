@@ -1,0 +1,49 @@
+{
+  "date": "2024-02-14",
+  "source": "Invested by Aleph \u2014 Semiconductors, AI, global warming, geopolitics",
+  "thesis_id": "T7",
+  "summary": "Exposure to frontier AI labs (OpenAI, Anthropic, XAI, Google DeepMind) is a must-have in a portfolio",
+  "summary_extended": "Baker argues that having exposure to frontier AI labs \u2014 specifically OpenAI, Anthropic, xAI, and Google DeepMind \u2014 is a portfolio necessity, not an option. He bases this on three structural factors: the post-reasoning model flywheel (where better models attract more users and data, compounding their lead), oligopoly dynamics that make it extremely difficult for new entrants to compete, and a credible path toward artificial superintelligence (ASI) that would make these labs extraordinarily valuable. As evidence of the commercial traction already materializing, Baker cites Anthropic growing from $1B to $6B in annualized revenue in roughly six months, and OpenAI surpassing $10B in revenue. He does flag a structural risk at OpenAI specifically \u2014 an AGI clause in its corporate charter that could transfer future transformative technology to its nonprofit parent \u2014 but views the category as a whole as a must-own despite idiosyncratic governance risks.",
+  "detail": "Baker recommends having exposure to frontier labs as a category, citing the post-reasoning flywheel, oligopoly dynamics, and the path to ASI. He notes Anthropic went from $1B to $6B revenue in ~6 months and OpenAI has $10B+ revenue. Corporate structure risks at OpenAI (AGI clause sending future tech to nonprofit) are noted as a concern.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly says 'you want to have exposure to the frontier labs' as a forward-looking capital deployment priority",
+  "themes": [
+    "AI foundation models",
+    "software/AI platforms"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "you want to have exposure to the frontier labs",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google DeepMind is explicitly named as one of the frontier labs Baker recommends exposure to, and GOOGL is the only US-listed equity through which public market investors can access it. This is a direct subject of the thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT has a deep commercial partnership and significant equity stake in OpenAI, making it a primary public-market proxy for OpenAI exposure. Baker explicitly names OpenAI as a frontier lab to own, and MSFT is the clearest listed beneficiary of OpenAI's commercial success. [RE-AUDIT: Baker did not specifically connect MSFT to this thesis in the transcript. While MSFT has a well-known OpenAI partnership, Baker named OpenAI as a frontier lab to own \u2014 he did not specifically say MSFT is the way to get that exposure or mention MSFT in connection with this thesis. The connection is an inference, not a direct statement by Baker.]"
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon has made a major strategic investment in Anthropic (up to $4B), and Baker explicitly highlights Anthropic's explosive revenue growth as evidence of frontier lab value. AMZN is a meaningful public-market proxy for Anthropic exposure, making it a direct beneficiary of this thesis. [RE-AUDIT: Baker did not specifically connect AMZN to this thesis in the transcript. While AMZN has invested in Anthropic, Baker cited Anthropic's revenue growth as evidence of frontier lab value without specifically naming AMZN as a proxy or beneficiary. The connection is an inference, not a direct statement by Baker.]"
+    }
+  ]
+}

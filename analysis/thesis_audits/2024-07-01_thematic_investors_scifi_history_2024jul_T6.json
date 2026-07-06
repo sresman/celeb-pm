@@ -1,0 +1,54 @@
+{
+  "date": "2024-07-01",
+  "source": "Thematic Investors \u2014 Blending sci-fi, history and literature",
+  "thesis_id": "T6",
+  "summary": "Only four foundation model companies have a realistic chance of winning: Google, Meta, xAI, and OpenAI/Microsoft \u2014 all others will fail or be acquired at preference",
+  "summary_extended": "Baker argues that the foundation model layer of AI will consolidate to exactly four winners \u2014 Google, Meta, xAI, and OpenAI/Microsoft \u2014 and that all other foundation model startups have zero chance of succeeding independently. His reasoning centers on three compounding moats that only these four possess simultaneously: (1) unique and proprietary data at scale, (2) effectively unlimited compute resources, and (3) internet-scale distribution enabling RLHF-based model socialization that smaller players cannot replicate. As concrete evidence, he cites Inflection AI \u2014 co-founded by a DeepMind co-founder \u2014 which was sold to Microsoft at only 1.1x preference in what amounted to an acqui-hire, illustrating that even pedigreed startups with top talent cannot compete. The investment implication is to concentrate exposure in the four named incumbents and expect brutal consolidation in the private foundation model space, with most startups going to zero or being acquired at distressed valuations.",
+  "detail": "The winning ingredients are: (1) unique and proprietary data at scale, (2) massive compute, (3) internet-scale distribution for RLHF socialization. No startup outside these four has all three. Inflection AI \u2014 founded by a DeepMind co-founder \u2014 was sold at 1.1x preference to Microsoft as an acqui-hire. Baker expects brutal consolidation with most foundation model startups going to zero or being acquired.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'I think they have zero chance' about non-big-four foundation model companies and cites Inflection as a concrete example",
+  "themes": [
+    "AI foundation models",
+    "competitive moats",
+    "private market consolidation"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "those are the four winners no one else has access to unique data infinite amounts of compute",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "tickers_subject": [
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is explicitly named as one of the four foundation model winners; the thesis is directly about its competitive position in this layer."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is explicitly named as one of the four foundation model winners with the required moats of data, compute, and distribution."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Microsoft is explicitly named as a winner via its OpenAI partnership and is cited as the acquirer of Inflection AI, directly central to this thesis."
+    }
+  ]
+}

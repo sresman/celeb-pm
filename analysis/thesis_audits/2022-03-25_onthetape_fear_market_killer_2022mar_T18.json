@@ -1,0 +1,45 @@
+{
+  "date": "2022-03-25",
+  "source": "On The Tape / RiskReversal \u2014 Fear is the market killer",
+  "thesis_id": "T18",
+  "summary": "Bitcoin/crypto acted as digital gold and wealth preservation for Russians during the ruble crisis \u2014 validates store-of-value thesis in crisis scenarios",
+  "summary_extended": "Baker argues that the ruble crisis triggered by Russia's invasion of Ukraine validated crypto's store-of-value thesis in a real-world stress scenario, noting that Russians holding Bitcoin or crypto preserved their wealth as the ruble collapsed. He is careful to distinguish this from the claim that crypto is an inflation hedge in USD terms \u2014 which he does not assert \u2014 instead arguing that the relevant benchmark for billions of people globally is their local currency, not the dollar. His structural view is that war, hyperinflation, and currency collapse are far more common experiences for the majority of the world's population, and crypto's utility should be evaluated in that context. The investment implication is a nuanced, conviction-level bullish view on crypto as a censorship-resistant, borderless store of value for non-USD populations, though Baker frames this as an observation about demonstrated utility rather than a specific near-term trade recommendation.",
+  "detail": "Baker notes that Russians with crypto holdings saw their wealth preserved as the ruble collapsed, even though Bitcoin has not been an inflation hedge in USD terms. He argues billions of people globally live in countries where war and hyperinflation are more common, and for them, crypto's store-of-value function should be evaluated against their local currency, not the USD. This is a nuanced bullish view on crypto's utility in non-USD contexts.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says 'Crypto did its job' and 'it preserved wealth. It did act as digital gold.' \u2014 stated with conviction but framed as an observation rather than a forward investment recommendation.",
+  "themes": [
+    "crypto",
+    "Bitcoin",
+    "store of value",
+    "geopolitics",
+    "digital gold"
+  ],
+  "time_horizon": "not_specified",
+  "contrarian": true,
+  "quote_fragment": "Crypto did its job...it preserved wealth. It did act as digital gold",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "BTC"
+  ],
+  "tickers_subject": [
+    "BTC"
+  ],
+  "tickers_implied_original": [
+    "BTC",
+    "ETH"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "BTC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Bitcoin is the primary asset Baker is discussing as digital gold and a store of value during the ruble crisis \u2014 it is the direct subject of the thesis."
+    },
+    {
+      "ticker": "ETH",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker's comments are specifically about Bitcoin as digital gold and store of value; Ethereum is not mentioned in the quote or thesis detail and is not a clear beneficiary of this specific store-of-value argument in a crisis context."
+    }
+  ]
+}

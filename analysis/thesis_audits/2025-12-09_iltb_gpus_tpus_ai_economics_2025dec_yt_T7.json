@@ -1,0 +1,44 @@
+{
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "thesis_id": "T7",
+  "summary": "Google will eventually bring TPU design fully in-house (eliminating Broadcom), making this inevitable on economic grounds",
+  "summary_extended": "Baker argues that Google will inevitably bring its TPU chip design fully in-house, eliminating Broadcom as its ASIC design partner on purely economic grounds. He calculates that if Google's TPU revenue reaches $30B by 2027, Google is effectively paying Broadcom approximately $15B annually (assuming 50-55% gross margins on that revenue), while Broadcom's entire semiconductor R&D opex is only around $5B \u2014 meaning Google could hire every Broadcom semiconductor engineer at double their current salary and still save over $5B per year. Baker notes Google is already sending warning shots by bringing MediaTek into the TPU supply chain as an alternative design partner, signaling the transition has begun. The investment implication is bearish for Broadcom, which faces the loss of what would be its largest and most profitable customer relationship, and the thesis is contrarian in that both companies publicly deny any such plans. Baker frames the timing as uncertain but the outcome as structurally inevitable from first principles.",
+  "detail": "Baker calculates that if TPU revenue reaches $30B by 2027, Google pays Broadcom ~$15B at 50-55% gross margins. Broadcom's entire semiconductor opex is ~$5B, so Google could hire all of Broadcom's semiconductor team at double pay and still save $5B+. Google is already sending warning shots by bringing in MediaTek. This is economically inevitable regardless of what companies say publicly.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says it's 'absolutely inevitable' from first principles and economics, but frames it as a future event with uncertain timing",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "the economics make it absolutely inevitable",
+  "tickers_named_original": [
+    "AVGO",
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "AVGO",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "AVGO",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Broadcom is the direct subject of this thesis \u2014 it is the company at risk of losing Google's TPU design business, which Baker calculates could represent ~$15B in revenue by 2027. The thesis is explicitly bearish on AVGO."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is the other direct subject \u2014 it is the company Baker argues will bring TPU design in-house, capturing the economics currently flowing to Broadcom. The thesis is implicitly bullish on GOOGL's long-term AI infrastructure cost structure."
+    }
+  ]
+}

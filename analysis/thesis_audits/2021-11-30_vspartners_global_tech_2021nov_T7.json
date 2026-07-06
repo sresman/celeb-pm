@@ -1,0 +1,36 @@
+{
+  "date": "2021-11-30",
+  "source": "VS Partners / Financial Times Global Seattle Symposium \u2014 Global technology investment: hype, hope, reality",
+  "thesis_id": "T7",
+  "summary": "EV SPACs are worthless \u2014 no hope of competing against Tesla, Chinese EV leaders, or legacy OEM incumbents",
+  "summary_extended": "Baker argues that EV SPACs are fundamentally worthless businesses with no realistic path to competing in the electric vehicle market, dismissing them as 'silly companies' and 'not real companies.' His core reasoning is that the competitive landscape is already locked up by three dominant forces: Tesla in the US and globally, strong Chinese EV manufacturers, and legacy OEM incumbents who are rapidly electrifying their fleets. He emphasizes that manufacturing EVs at scale is extraordinarily difficult \u2014 designing a prototype is easy, but achieving production scale is a different problem entirely \u2014 meaning that capital infusions from SPAC deals cannot solve the underlying operational complexity. The investment implication is to avoid EV SPAC names entirely, as meme-stock reflexivity that might prop up other speculative names is insufficient to rescue companies facing insurmountable manufacturing and competitive barriers. Baker notes he has stated this view publicly many times, suggesting high conviction and a durable short or avoid thesis rather than a tactical call.",
+  "detail": "Baker is highly dismissive of EV SPACs, calling them 'silly companies' and 'not real companies.' He argues the competitive landscape \u2014 Tesla (dominant US/global), strong Chinese EV companies, and legacy OEM incumbents \u2014 leaves no room for SPAC-born EV startups. Manufacturing EVs at scale is extremely hard; designing one or making prototypes is easy. Meme-stock reflexivity is less effective for EVs because capital alone cannot solve manufacturing complexity.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses emphatic language ('silly companies,' 'no hope,' repeated twice). States he has said this 'publicly many times.' Provides detailed competitive logic.",
+  "themes": [
+    "electric vehicles",
+    "SPAC",
+    "competitive dynamics"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "almost every ev spec these are silly companies these are not real companies",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "TSLA"
+  ],
+  "tickers_subject": [
+    "TSLA"
+  ],
+  "tickers_implied_original": [
+    "Tesla (TSLA)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "TSLA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Tesla is explicitly named as one of the dominant incumbents that makes EV SPAC competition impossible, making it a direct subject of the competitive dynamic thesis \u2014 it is the benchmark against which EV SPACs are measured and found wanting."
+    }
+  ]
+}

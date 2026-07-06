@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T16",
+  "summary": "The 'finding the next bottleneck' trade in semiconductors is over; many bottleneck stocks have gone 'straight up a cliff' and need to rest or correct",
+  "summary_extended": "Baker argues that the 'finding the next bottleneck' trade in semiconductors \u2014 where investors rotated into whichever component or subsystem was the next supply constraint in the AI infrastructure buildout \u2014 is now exhausted. He contends that many of the stocks that benefited from this rotation have gone 'straight up a cliff' rather than climbing gradually, leaving them technically extended and vulnerable to consolidation or correction. As evidence of his conviction, Baker has reduced his own semiconductor exposure from 'large' to 'medium-small,' and notes that even Nvidia and Broadcom, the two most prominent AI semiconductor names, have been laggards in the most recent leg of the rally \u2014 suggesting the easy money has already been made across the board. He also flags a seasonal near-term headwind: AI token consumption tends to slow in summer as college students (a major usage cohort) are less active, which could add incremental selling pressure. The investment implication is to reduce or avoid overweight positions in extended semiconductor bottleneck plays in the near term, with Baker himself having already acted on this view.",
+  "detail": "Baker says the bottleneck-finding game is 'the last game' and it's over. Many stocks have gone straight up a cliff rather than climbing a hill. He is running a 'medium-small' exposure vs prior 'large' positioning. Nvidia and Broadcom have actually been laggards in the recent run. Seasonal AI token consumption slowdown (college students) may add near-term pressure.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses definitive language ('that game is over'); has reduced his own exposure from large to medium-small; Gerstner corroborates with similar positioning",
+  "themes": [
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "finding the next bottleneck... that game is over",
+  "tickers_named_original": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_subject": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Nvidia as one of the laggards in the recent run and it is the central AI semiconductor name directly implicated in the bottleneck trade thesis \u2014 it is a direct subject of the view that these stocks are extended and need to rest."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Broadcom alongside Nvidia as a laggard in the recent rally, making it a direct subject of the thesis that major AI semiconductor bottleneck beneficiaries are now extended and at risk of correction."
+    }
+  ]
+}

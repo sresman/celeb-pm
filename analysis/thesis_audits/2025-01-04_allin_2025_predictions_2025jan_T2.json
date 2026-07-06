@@ -1,0 +1,69 @@
+{
+  "date": "2025-01-04",
+  "source": "All-In Podcast \u2014 2025 predictions (bestie guest Gavin Baker)",
+  "thesis_id": "T2",
+  "summary": "Inference compute and test-time compute will cause a second GPU/accelerator shortage in 2025 analogous to 2023",
+  "summary_extended": "Baker argues that the emergence of reasoning models (specifically citing o3) has introduced a third scaling axis \u2014 test-time/reasoning compute \u2014 on top of pre-training and inference-time compute, creating a multiplicative demand shock for GPUs and accelerators. He predicts this will exhaust available GPU and accelerator supply in 2025 in the same way that training demand caused a shortage in 2023, and he makes this claim twice unprompted, signaling high conviction. The primary investment implication is that GPU and accelerator suppliers \u2014 most directly NVIDIA as the dominant provider \u2014 will see sustained or accelerating demand, and that HBM memory suppliers will face similar supply pressure. Baker also notes that large enterprises capable of funding extended inference runs will gain structural competitive advantages, though no specific enterprise names are the subject of this particular thesis.",
+  "detail": "Baker states that o3 and reasoning models have added a third scaling axis (reasoning) on top of pre-training and inference-time compute. This multiplicative scaling will exhaust available GPU/accelerator supply in 2025 the same way training demand did in 2023. Large enterprises that can afford extended AI inference runs will gain structural advantages.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker makes this claim twice unprompted, connects it directly to his HBM thesis and his enterprise AI winner thesis",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "inference compute"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "we are going to run out of gpus accelerators compute in 2025 the same way we did in 23",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "AMZN",
+    "GOOGL",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVIDIA is the dominant GPU/accelerator supplier and the most direct beneficiary of a GPU shortage driven by inference and reasoning compute demand. Baker's quote explicitly references GPU/accelerator shortages, making NVDA the clearest implied winner."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD makes competing GPUs/accelerators but Baker does not reference AMD specifically, and AMD's share of AI accelerator supply is marginal relative to NVIDIA. Adding AMD as a beneficiary would be speculative extrapolation, not a clear implication of this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMZN is a hyperscaler that consumes GPUs but is not a supplier of the constrained resource. The thesis is about supply exhaustion benefiting accelerator makers, not cloud providers who are buyers of constrained supply. This is a different thesis (enterprise AI winners) that Baker holds separately."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GOOGL is a hyperscaler and GPU consumer, not a supplier. Same reasoning as AMZN \u2014 the supply shortage thesis benefits accelerator makers, not buyers. GOOGL's TPU production is internal and not a public market play on this thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT is a hyperscaler and GPU consumer. Same reasoning as AMZN and GOOGL \u2014 it is a buyer of constrained supply, not a beneficiary of the shortage dynamic this thesis describes."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Baker explicitly connects this GPU shortage thesis to his HBM thesis. Micron is the only US-listed HBM producer and directly benefits from accelerated HBM demand driven by inference compute scaling. Baker's own linkage makes this an unambiguous implied beneficiary."
+    }
+  ]
+}

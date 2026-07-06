@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T25",
+  "summary": "Amazon is in a strong position due to Trainium, real P&L efficiencies from robotics in retail over the next 18 months, and underappreciated Nova models",
+  "summary_extended": "Baker argues that Amazon is in a stronger competitive position than the market appreciates across three distinct vectors: its proprietary Trainium AI chip, robotics-driven retail efficiency, and undervalued Nova foundation models. On the chip side, Baker highlights Trainium 3's technical architecture \u2014 specifically its switch scale-up network \u2014 as enabling economical Mixture-of-Experts (MoE) model inference, positioning Amazon to reduce dependence on NVIDIA and lower AI infrastructure costs. Baker expects robotics deployments in Amazon's retail and fulfillment operations to produce visible, measurable P&L improvements within 18 months, a catalyst he believes is underappreciated by the market. He also contends that Amazon's Nova models are better than their public reputation suggests, though he stops short of claiming they rival top-tier frontier models. The combined implication is that AMZN is a buy with multiple underappreciated near-to-medium-term earnings catalysts.",
+  "detail": "Trainium is Amazon's key AI chip advantage. Baker expects visible robotics-driven P&L improvements in Amazon's retail business within 18 months. Nova (Amazon's internal models) are better than they get credit for, though not at Muse's level. Trainium 3 needs to ramp into production \u2014 it has a switch scale-up network needed for economical MoE model inference.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker makes specific claims about Trainium 3's technical capabilities and 18-month robotics P&L timeline, suggesting detailed research",
+  "themes": [
+    "AI datacenter infrastructure",
+    "robotics",
+    "semiconductor supply chain",
+    "cloud infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "real P&L efficiencies from robotics over the next 18 months in their retail business",
+  "tickers_named_original": [
+    "AMZN"
+  ],
+  "tickers_direct": [
+    "AMZN"
+  ],
+  "tickers_subject": [
+    "AMZN"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about Amazon's competitive advantages across AI chips, robotics, and foundation models \u2014 AMZN is the direct subject."
+    }
+  ]
+}

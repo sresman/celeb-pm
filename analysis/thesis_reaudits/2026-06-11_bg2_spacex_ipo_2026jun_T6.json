@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod — SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T6",
+  "summary": "Open-source AI success is bullish for compute/hardware providers, not bearish for the AI ecosystem",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "AMD",
+    "AVGO"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker's thesis is a general structural argument that open-source AI success is bullish for compute/hardware providers. While NVDA is the obvious inference, Baker did not specifically name NVDA in connection with this exact thesis about open-source AI being bullish for compute. The thesis summary describes a general structural view, and the critical test requires Baker to have specifically connected NVDA to this exact claim — not just that it is an obvious beneficiary."
+    },
+    {
+      "ticker": "AMD",
+      "action": "REMOVE",
+      "reasoning": "Same reasoning as NVDA. AMD was not specifically named by Baker in connection with this thesis about open-source AI driving compute demand. It may have been mentioned elsewhere in the interview, but the critical test requires a specific connection to this exact thesis, which is not evidenced."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "REMOVE",
+      "reasoning": "Same reasoning as NVDA and AMD. Broadcom was not specifically named by Baker in connection with this thesis about open-source AI being bullish for compute infrastructure. The thesis is a general structural view, and without Baker explicitly naming AVGO as a beneficiary of this specific argument, it must be removed."
+    }
+  ]
+}

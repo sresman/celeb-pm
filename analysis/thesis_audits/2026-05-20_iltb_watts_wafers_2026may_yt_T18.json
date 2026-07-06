@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T18",
+  "summary": "Astera Labs is a high-conviction long that has been miscategorized as a 'copper loser' in market baskets, when it is structurally a beneficiary of both copper and optical connectivity",
+  "summary_extended": "Baker argues that Astera Labs (ALAB) has been systematically miscategorized in market 'copper loser' baskets, creating a significant mispricing opportunity. His structural argument is that Astera's primary product is a switch, and switches by definition connect to accelerators using both copper and optical connectivity \u2014 meaning Astera cannot be a copper loser regardless of how the market has labeled it. Baker has high conviction rooted in a long relationship with the company dating back to a Series C investment, giving him deep fundamental knowledge of the business. The miscategorization in leveraged short baskets has artificially depressed the stock, and Baker frames this as one of the largest opportunities he sees, contrasting ALAB with low-quality names that have already run 10x in 3-6 months and are likely to revert. The investment implication is a long position in ALAB, which benefits structurally from both copper and optical connectivity adoption in AI datacenter infrastructure.",
+  "detail": "Baker has been invested since Series C. Astera's biggest product is a switch \u2014 switches connect to accelerators using both copper and optics, so definitionally a switch company cannot be a copper loser. The miscategorization in leverage baskets creates a buying opportunity. Baker contrasts this with low-quality names that have moved 10x in 3-6 months and will revert.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly names Astera as a stock he's been close to for a long time (Series C investor), provides a specific structural argument for why the basket miscategorization is wrong, and frames it as one of the biggest opportunities",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "valuation",
+    "networking"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "Astera was in a lot of copper loser baskets \u2014 definitionally cannot be a copper loser",
+  "tickers_named_original": [
+    "ALAB"
+  ],
+  "tickers_direct": [
+    "ALAB"
+  ],
+  "tickers_subject": [
+    "ALAB"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ALAB",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about Astera Labs \u2014 its miscategorization in copper loser baskets, its switch product architecture, and Baker's long conviction since Series C. This is unambiguously the direct subject."
+    }
+  ]
+}

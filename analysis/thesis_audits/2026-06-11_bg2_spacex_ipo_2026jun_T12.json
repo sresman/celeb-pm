@@ -1,0 +1,58 @@
+{
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "thesis_id": "T12",
+  "summary": "AI compute monetization rates per gigawatt are increasing, not deflating, contrary to consensus expectations entering 2026",
+  "summary_extended": "Baker endorses a structural view that AI compute monetization rates per gigawatt are rising sharply, not deflating as consensus expected entering 2026, with Fox citing an increase from roughly $20B/GW at the start of the year to $30\u201340B/GW currently. The core reasoning is that token pricing is moving up, not down, because demand is outstripping supply \u2014 a dynamic Baker attributes in part to the extremely low current penetration of agentic AI use (less than 0.2% of people use AI agentically), meaning any meaningful scaling of that use case implies a sustained and prolonged compute shortage. Baker explicitly endorses owning asset-heavy businesses \u2014 hyperscalers, power infrastructure, and data center operators \u2014 in this inflationary token-pricing environment, arguing that the scarcity dynamic rewards capital-intensive incumbents. The investment implication is to be long the physical infrastructure stack (power, data centers, networking) that benefits from rising revenue-per-watt, rather than assuming commoditization of AI compute.",
+  "detail": "Fox reports monetization rates rising from ~$20B/GW at start of year to $30-40B/GW now. Token pricing is going up, not down, as demand outstrips supply. Less than 0.2% of people use AI agentically; scaling to any meaningful percentage implies sustained shortage. Baker endorses owning asset-heavy businesses in inflationary token-pricing environments.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Specific data points on monetization rate increase cited; Fox presents as direct market observation; Baker explicitly endorses the inflationary framing",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "monetization rates per watt are increasing",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "Anthropic (private)",
+    "NVDA",
+    "CoreWeave (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of GPU compute that underpins the constrained supply side of this thesis. Rising monetization rates per GW and sustained compute shortage directly benefit NVDA as the primary hardware vendor capturing pricing power in a supply-constrained market. [RE-AUDIT: Baker's thesis is about AI compute monetization rates per gigawatt rising for asset-heavy infrastructure owners. NVDA is a GPU supplier \u2014 it is tangential to this specific thesis about revenue-per-GW for infrastructure operators. Baker did not specifically name NVDA as a beneficiary of rising monetization rates per GW in this thesis. The supply constraint dynamic benefits infrastructure owners, not necessarily the chip vendor. Remove per the rule: if Baker said 'Nvidia' in a different context in the same interview, it does not belong here.]"
+    },
+    {
+      "ticker": "EQIX",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Equinix is a major data center REIT and a clear asset-heavy beneficiary of rising monetization rates per GW; Baker's explicit call to own asset-heavy infrastructure businesses in an inflationary token-pricing environment directly implies colocation and data center operators like EQIX. [RE-AUDIT: EQIX was not specifically named by Baker in connection with this thesis. The first-pass audit inferred EQIX as a beneficiary from Baker's general statement about owning asset-heavy businesses, but Baker did not specifically mention Equinix. Inference-based additions do not meet the strict standard required.]"
+    },
+    {
+      "ticker": "DLR",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Digital Realty is another major data center REIT that is a direct asset-heavy beneficiary of rising revenue-per-GW dynamics Baker describes; fits his explicit framing of owning capital-intensive infrastructure in a compute-scarce environment. [RE-AUDIT: DLR was not specifically named by Baker in connection with this thesis. Same issue as EQIX \u2014 it was inferred as a data center REIT beneficiary, but Baker did not specifically call out Digital Realty. Remove per strict standard.]"
+    },
+    {
+      "ticker": "VST",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Vistra is a power generator that directly benefits from rising demand for electricity driven by AI data center buildout; Baker's thesis on rising monetization per GW and sustained compute shortage implies sustained power demand growth, making power generators a clear asset-heavy beneficiary. [RE-AUDIT: VST was not specifically named by Baker in this thesis. While power infrastructure is mentioned as a category Baker endorses, Vistra was not specifically cited by Baker in connection with rising AI compute monetization rates per GW.]"
+    },
+    {
+      "ticker": "CEG",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Constellation Energy is a leading nuclear power provider supplying data centers and a direct asset-heavy beneficiary of the sustained AI power demand Baker's thesis implies; fits the inflationary, supply-constrained framing. [RE-AUDIT: CEG was not specifically named by Baker in connection with this thesis. Constellation Energy is an inferred beneficiary of the power demand theme, but Baker did not specifically mention CEG in the context of this exact thesis about rising monetization rates per GW.]"
+    }
+  ]
+}

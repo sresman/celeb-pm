@@ -1,0 +1,52 @@
+{
+  "date": "2026-05-12",
+  "source": "HedgeFundAlpha (writeup) \u2014 Baker & Khaira fireside writeup",
+  "thesis_id": "T1",
+  "summary": "Memory cycle dynamics represent the most important investment judgment call Baker has faced in his career",
+  "summary_extended": "Baker explicitly described the memory cycle thesis as the most important investment judgment call of his entire 25+ year career as a technology investor, signaling extraordinarily high conviction that a major inflection point in DRAM and HBM supply-demand dynamics is imminent or underway. While the public writeup does not disclose his directional view (bullish or bearish), the framing implies he sees a structural shift \u2014 likely related to the intersection of AI datacenter HBM demand and traditional DRAM cycle dynamics \u2014 that is not yet fully priced into markets. The investment implication is that memory-exposed equities, particularly those with significant HBM or DRAM exposure, represent a high-stakes positioning opportunity. Baker's career context as a long-tenured technology investor makes this framing unusually significant, as such superlatives are rarely deployed and suggest he believes consensus is materially wrong on the direction or magnitude of the memory cycle turn.",
+  "detail": "Baker explicitly framed the memory cycle thesis as the most consequential judgment call of his career, suggesting high conviction and structural significance. The public writeup does not reveal the directional view (bull or bear on memory), but the framing implies a major inflection point in DRAM/HBM supply-demand dynamics is at hand.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker described it as 'the most important judgment call of his career' \u2014 the strongest possible personal conviction signal from a 25+ year technology investor.",
+  "themes": [
+    "semiconductor supply chain",
+    "memory cycle",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "most important judgment call of his career",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU",
+    "HXSCL"
+  ],
+  "tickers_subject": [
+    "MU",
+    "HXSCL"
+  ],
+  "tickers_implied_original": [
+    "MU",
+    "HXSCL",
+    "005930.KS"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is the primary US-listed pure-play DRAM and HBM producer and is the direct subject of any memory cycle thesis from a US equity investor. It is the most actionable expression of this thesis in US markets."
+    },
+    {
+      "ticker": "HXSCL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SK Hynix is a leading HBM and DRAM producer and a direct subject of the memory cycle thesis, though it is not US-listed. Retaining for completeness but noting it is not a US-listed equity."
+    },
+    {
+      "ticker": "005930.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Samsung (005930.KS) is Korea-listed and while it is a major DRAM producer, it is a diversified conglomerate and not a clean expression of the memory cycle thesis. It is not US-listed and is tangential relative to the more focused HBM/DRAM plays like MU and Hynix."
+    }
+  ]
+}

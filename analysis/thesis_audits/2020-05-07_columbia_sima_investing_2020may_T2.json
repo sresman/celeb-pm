@@ -1,0 +1,86 @@
+{
+  "date": "2020-05-07",
+  "source": "Columbia SIMA \u2014 COVID-19 market impact, technology investing, video games, venture capital",
+  "thesis_id": "T2",
+  "summary": "Video games are social networks and will be the foundational platform layer for the personal Metaverse",
+  "summary_extended": "Baker argues that video games are fundamentally social networks \u2014 not merely entertainment \u2014 because players engage with friends, switching costs are high, and the social graph is embedded in the platform itself. He identifies the Marshmallow concert in Fortnite as the inflection point that crystallized his view that games, not VR hardware like Oculus, will be the foundational platform layer for the personal Metaverse. The investment implication is that existing game IP owners and publishers are the clearest first-order winners because they already own the social graphs, content libraries, and virtual economies that will underpin the Metaverse. Baker frames this as a structural, multi-decade thesis with high conviction, suggesting long positions in major game publishers with established live-service franchises and large player bases. No specific valuation targets or timeframes were cited, but the thesis is explicitly long-term and contrarian relative to the VR-hardware-centric Metaverse narrative dominant at the time.",
+  "detail": "Baker argues that video games are fundamentally social networks (you play with friends, switching costs are high) and that the Marshmallow concert in Fortnite was the inflection point that made clear games would be the platform for the personal Metaverse \u2014 not VR hardware like Oculus. He believes existing game IP owners (publishers) are the clearest first-order winners because they own the social graphs, the content, and the virtual economies that will underpin the Metaverse.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker describes this as a crystallizing insight, uses strong language ('everything really clicked'), and frames it as a structural multi-decade thesis he has high conviction on",
+  "themes": [
+    "metaverse",
+    "video games",
+    "social networks",
+    "virtual economies",
+    "augmented reality"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "video games are going to be the platform for the personal Metaverse",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "ATVI",
+    "EA",
+    "TTWO",
+    "EPIC"
+  ],
+  "tickers_subject": [
+    "ATVI",
+    "EA",
+    "TTWO",
+    "EPIC"
+  ],
+  "tickers_implied_original": [
+    "ATVI",
+    "EA",
+    "TTWO",
+    "NTDOY",
+    "SNE",
+    "MSFT",
+    "EPIC"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "ATVI",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Activision Blizzard is a major game publisher with large live-service franchises (Call of Duty, World of Warcraft) and embedded social graphs \u2014 a direct subject of the thesis about game IP owners as Metaverse platform winners."
+    },
+    {
+      "ticker": "EA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Electronic Arts is a major game publisher with established franchises and live-service games, directly fitting Baker's thesis about publishers owning social graphs and virtual economies."
+    },
+    {
+      "ticker": "TTWO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Take-Two Interactive owns major franchises including GTA Online, a large virtual economy and social platform, making it a direct subject of the publisher-as-Metaverse-platform thesis."
+    },
+    {
+      "ticker": "NTDOY",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Nintendo is a major game IP owner with iconic franchises and a large installed base; fits the thesis about publishers owning content and social graphs, though its live-service exposure is more limited. [RE-AUDIT: Nintendo's live-service and social graph exposure is limited compared to the publishers Baker was describing. More importantly, there is no evidence Baker specifically named Nintendo in connection with this thesis. Nintendo is primarily a hardware/IP company with limited virtual economy or live-service social graph infrastructure \u2014 it does not cleanly fit the specific thesis even if it fits the general 'game publisher' category. Remove under the strict standard.]"
+    },
+    {
+      "ticker": "SNE",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Sony is primarily a hardware and content platform company; while it owns PlayStation and some game IP, the thesis is specifically about game publishers owning social graphs and virtual economies, not console hardware makers. Sony's gaming exposure is real but its classification here is too broad to be a direct subject or clear beneficiary of this specific thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft owns Xbox and acquired major game studios; it benefits from the thesis as a platform and publisher hybrid, though it is a large conglomerate and gaming is one of many segments. Retained as a direct beneficiary given its significant game IP and live-service exposure (Xbox Game Pass, Minecraft). [RE-AUDIT: Microsoft is a massive conglomerate and gaming is one segment. There is no evidence Baker specifically named Microsoft in connection with this Metaverse-via-games thesis. Its gaming exposure (Xbox, Minecraft) is real but Baker's thesis was specifically about game publishers owning social graphs \u2014 Microsoft was not named as a direct beneficiary of this exact claim. Remove under the strict standard.]"
+    },
+    {
+      "ticker": "EPIC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Epic Games (Fortnite) is explicitly cited by Baker \u2014 the Marshmallow concert in Fortnite is the specific inflection point he references. However, Epic is privately held and not US-listed, so it cannot be acted upon as a public equity. Retained for completeness but noted as non-investable."
+    }
+  ]
+}

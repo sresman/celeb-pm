@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) — Watts and wafers",
+  "thesis_id": "T6",
+  "summary": "Capitalism will solve the power/watts shortage for AI data centers by 2027-2028, with orbital compute as the longer-term solution",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "GEV",
+    "VST",
+    "CEG",
+    "ETN",
+    "NRG"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GEV",
+      "action": "KEEP",
+      "reasoning": "Baker specifically cited turbine manufacturing capacity ramping as the mechanism for resolving the watts shortage by 2027-2028. GEV as a major turbine manufacturer is directly named in the thesis mechanism, not just a general sector play."
+    },
+    {
+      "ticker": "VST",
+      "action": "REMOVE",
+      "reasoning": "While VST is a power producer that would benefit from AI data center demand, Baker did not specifically name Vistra in connection with this thesis. The thesis summary references 'clean power producers with contracted capacity' generically, and VST was not explicitly called out by Baker in this context."
+    },
+    {
+      "ticker": "CEG",
+      "action": "REMOVE",
+      "reasoning": "Although CEG fits the profile of a clean power producer with nuclear capacity contracted to data centers, Baker did not specifically name Constellation Energy in connection with this watts/power thesis. It appears to be an inferred beneficiary rather than one Baker explicitly connected to this thesis."
+    },
+    {
+      "ticker": "ETN",
+      "action": "REMOVE",
+      "reasoning": "ETN was flagged as 'was_original: false' — it was added as an implied beneficiary, not because Baker specifically named Eaton in connection with this thesis. This is exactly the type of sector-inference addition that should be removed."
+    },
+    {
+      "ticker": "NRG",
+      "action": "REMOVE",
+      "reasoning": "NRG was flagged as 'was_original: false' and was added as an inferred beneficiary similar to VST and CEG. Baker did not specifically name NRG Energy in connection with this watts shortage thesis."
+    }
+  ]
+}

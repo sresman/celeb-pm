@@ -1,0 +1,58 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "thesis_id": "T19",
+  "summary": "The AI trade's internal cross-sectional correlations broke down in January 2026, requiring much more fine-grained factor analysis \u2014 you can no longer hedge memory with semi-cap or NAND",
+  "summary_extended": "Baker argues that the internal cross-sectional correlations within AI-related equities broke down sharply in January 2026, marking a structural shift in how these subsectors trade relative to one another. Whereas in 2024\u20132025, AI subsectors \u2014 GPU compute, scale-up networking, optical scale-across, and power \u2014 moved largely in tandem, January 2026 saw meaningful divergence: scale-up networking rallied while scale-out declined, and DRAM massively underperformed both NAND and HDDs within the storage/memory complex. Baker attributes this breakdown partly to AI-enabled research tools lowering the barrier for investors to rapidly develop subsector-level expertise, leading to more precise and differentiated basket trading rather than broad AI thematic exposure. The investment implication is that portfolio managers can no longer use cross-subsector hedges (e.g., hedging memory with semi-cap equipment or NAND) and must instead conduct much more granular factor analysis at the individual subsector level. Baker frames this as an adaptation he was forced to make in his own portfolio management, suggesting the regime change is durable rather than transient.",
+  "detail": "In 2024-2025, AI subsectors (GPU compute, scale-up networking, optical scale-across, power) traded together. In January 2026, these correlations fell apart \u2014 scale-up networking went up while scale-out went down; DRAM massively underperformed NAND and HDDs. Baker attributes this partly to AI-enabled analysis making it easier for more investors to get smart on subsectors quickly, leading to more precise basket trading.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker describes this as something he observed and had to adapt to in his own portfolio management, with specific examples of the correlation breakdown",
+  "themes": [
+    "semiconductor supply chain",
+    "DRAM/HBM",
+    "factor investing",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "cross-sectional correlations within AI really fell apart in January",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU",
+    "WDC",
+    "STX"
+  ],
+  "tickers_subject": [
+    "MU",
+    "WDC",
+    "STX"
+  ],
+  "tickers_implied_original": [
+    "Micron (MU)",
+    "SK Hynix",
+    "Samsung",
+    "NAND producers",
+    "HDD companies",
+    "networking companies"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is the primary US-listed DRAM/HBM producer and is directly implicated in the thesis that DRAM massively underperformed NAND and HDDs in January 2026 \u2014 MU is the canonical DRAM trade for US investors."
+    },
+    {
+      "ticker": "WDC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Western Digital is a major US-listed NAND and HDD producer, directly relevant to the thesis that NAND and HDDs outperformed DRAM in January 2026, making it a direct subject of the correlation breakdown described."
+    },
+    {
+      "ticker": "STX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Seagate is the leading US-listed HDD company and is directly implicated in the thesis that HDDs outperformed DRAM in January 2026 \u2014 a clear and unambiguous implied beneficiary of the divergence Baker describes."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2024-02-14",
+  "source": "Invested by Aleph — Semiconductors, AI, global warming, geopolitics",
+  "thesis_id": "T8",
+  "summary": "Semiconductors (public and private) are structurally advantaged because AI makes global GDP inexorably more silicon-intensive",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker's thesis is an explicit sector-level structural call — he says it is 'hard to bet against semiconductors public and private' as a category. He does not specifically name NVDA as a beneficiary of this particular thesis. The summary explicitly states 'No specific public company is singled out as the primary beneficiary.' Including NVDA is an inference about an obvious beneficiary, not a direct connection Baker made in this thesis."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "REMOVE",
+      "reasoning": "Same reasoning as NVDA. Baker's thesis is a broad sector-level structural argument about silicon-intensity of GDP driven by AI. AVGO is not specifically named or connected to this exact thesis. Its inclusion reflects thematic inference, not a direct statement Baker made linking AVGO to this specific structural claim."
+    }
+  ]
+}

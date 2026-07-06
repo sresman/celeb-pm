@@ -1,0 +1,82 @@
+{
+  "date": "2021-11-01",
+  "source": "Graham & Doddsville (Columbia Business School) \u2014 Investor interview with Gavin Baker, CIO of Atreides Management (Issue 43, Fall 2021)",
+  "thesis_id": "T9",
+  "summary": "Consumer and technology sectors have fully merged and must be analyzed together",
+  "summary_extended": "Baker argues that consumer and technology sectors have fully converged and can no longer be analyzed in isolation from one another, making traditional sector-siloed investment analysis structurally incomplete and misleading. He illustrates this with three specific competitive pairs: Airbnb vs. Marriott in lodging, Netflix vs. Disney in entertainment, and Amazon vs. Walmart in retail \u2014 each representing a tech-native challenger competing directly with a legacy consumer incumbent in the same market. The investment implication is that understanding any one of these companies requires understanding its cross-sector competitor, and that funds or analysts restricted to either 'consumer' or 'technology' mandates will systematically miss the full competitive picture. This principle underpins Baker's own crossover consumer/tech investment mandate at Atreides, which he positions as a structural advantage over siloed generalist or sector-specialist funds. No specific price targets or timeframes are cited; this is a foundational analytical framework rather than a near-term trade.",
+  "detail": "Baker argues you cannot analyze Airbnb without Marriott, Netflix without Disney, or Amazon without Walmart. The convergence of consumer and tech means sector-siloed analysis is structurally incomplete. This underpins his crossover consumer/tech investment mandate.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a foundational principle of his investment approach with no hedging",
+  "themes": [
+    "consumer/tech convergence",
+    "e-commerce",
+    "streaming",
+    "platform economics"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "consumer and tech have fully merged",
+  "tickers_named_original": [
+    "ABNB",
+    "MAR",
+    "NFLX",
+    "DIS",
+    "AMZN",
+    "WMT"
+  ],
+  "tickers_direct": [
+    "ABNB",
+    "MAR",
+    "NFLX",
+    "DIS",
+    "AMZN",
+    "WMT"
+  ],
+  "tickers_subject": [
+    "ABNB",
+    "MAR",
+    "NFLX",
+    "DIS",
+    "AMZN",
+    "WMT"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ABNB",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Airbnb is one of the three explicitly named examples illustrating the consumer/tech convergence thesis \u2014 it is a direct subject of the analytical framework Baker is describing."
+    },
+    {
+      "ticker": "MAR",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Marriott is explicitly named as the legacy consumer incumbent paired against Airbnb, making it a direct subject of the convergence thesis and necessary for the competitive analysis Baker describes."
+    },
+    {
+      "ticker": "NFLX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Netflix is one of the three explicitly named examples \u2014 a tech-native streaming company whose analysis Baker says requires understanding its consumer-sector competitor Disney."
+    },
+    {
+      "ticker": "DIS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Disney is explicitly named as the legacy consumer incumbent paired against Netflix in the streaming convergence example, making it a direct subject of the thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon is one of the three explicitly named examples \u2014 a tech-native e-commerce and retail platform whose analysis Baker says requires understanding Walmart."
+    },
+    {
+      "ticker": "WMT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Walmart is explicitly named as the legacy consumer incumbent paired against Amazon in the retail convergence example, making it a direct subject of the thesis."
+    }
+  ]
+}

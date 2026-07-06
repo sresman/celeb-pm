@@ -1,0 +1,84 @@
+{
+  "date": "2025-10-30",
+  "source": "a16z Podcast \u2014 Is there an AI bubble?",
+  "thesis_id": "T4",
+  "summary": "Most custom ASIC programs will fail within 3 years; Google TPU external sales could be the catalyst",
+  "summary_extended": "Baker argues that the vast majority of custom ASIC programs being pursued by hyperscalers will fail within three years, making this a high-conviction contrarian call against the prevailing narrative that in-house silicon will displace Nvidia. His reasoning is that custom silicon is extraordinarily difficult to execute \u2014 Google itself required three full generations of iteration before its TPU became viable \u2014 and most hyperscalers lack the institutional knowledge and engineering depth to replicate that journey. Baker specifically singles out Broadcom's go-to-market strategy of pairing custom ASICs with an Ethernet fabric as an alternative to Nvidia's NVLink/InfiniBand stack, expressing skepticism that this approach will succeed at scale. The investment implication is that Nvidia remains the dominant AI accelerator vendor by default, while AMD persists only as a necessary second-source; Google's potential external TPU sales could be the key catalyst that exposes the weakness of competing ASIC programs by offering a credible third option that most hyperscalers still cannot match internally. Broadcom is identified as the primary company whose ASIC business faces execution risk, while Nvidia is the structural beneficiary if custom ASIC programs broadly fail.",
+  "detail": "Baker believes most hyperscaler ASIC programs will be cancelled, especially if Google begins selling TPUs externally (widely rumored). It took Google three generations to get the TPU working \u2014 replicating that is extremely difficult. Broadcom is going to market with Meta and others offering custom ASICs plus Ethernet fabric as an alternative to Nvidia's NVLink/InfiniBand stack, but Baker is skeptical of success. AMD will persist as a necessary second-source.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'I personally believe most of those ASICs are going to fail' and gives a specific 3-year timeframe",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "competitive dynamics"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "most of those ASICs are going to fail",
+  "tickers_named_original": [
+    "AVGO",
+    "AMD",
+    "NVDA",
+    "GOOGL",
+    "META"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "AVGO",
+    "AMD",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "AVGO",
+    "AMD",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "AMZN",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is the direct structural beneficiary of this thesis \u2014 if most custom ASIC programs fail, AI accelerator demand consolidates back to Nvidia's GPU/NVLink stack, making NVDA a clear direct beneficiary."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Broadcom is specifically named as the company going to market with Meta and others offering custom ASICs plus Ethernet fabric as an alternative to Nvidia; Baker is explicitly skeptical of Broadcom's success, making it a direct subject of the thesis."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly states AMD will persist as a necessary second-source, directly addressing AMD's role in the AI accelerator competitive landscape as part of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google's TPU is the central case study Baker uses \u2014 its three-generation development arc illustrates the difficulty of custom silicon, and potential external TPU sales are cited as the key catalyst for this thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta is mentioned only as a customer of Broadcom's ASIC program, not as a subject or beneficiary of the thesis about ASIC program failure. Meta's own ASIC efforts are not the focus, and Meta does not directly benefit or suffer from the thesis outcome in a way that is unambiguous."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Amazon (Trainium/Inferentia) is a hyperscaler with its own ASIC program and could be implied as a subject, but Baker does not specifically name Amazon and the thesis does not make Amazon's outcome unambiguous enough to add with confidence."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Microsoft is not specifically named in this thesis and its ASIC program (Maia) is not singled out; adding MSFT would be speculative extrapolation rather than a clearly implied connection."
+    }
+  ]
+}
