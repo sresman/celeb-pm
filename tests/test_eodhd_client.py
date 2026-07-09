@@ -375,3 +375,42 @@ class TestWindowExtremaNotPersisted:
     def test_no_to_from_dict(self) -> None:
         assert not hasattr(WindowExtrema, "to_dict")
         assert not hasattr(WindowExtrema, "from_dict")
+
+
+class TestFetchFundamentals:
+    def test_returns_object_and_hits_fundamentals_endpoint(self) -> None:
+        body = {"General": {"Sector": "Technology", "Industry": "Software", "Type": "Common Stock"}}
+        client, session = _client(responses=[_FakeResponse(json_body=body)])
+        out = client.fetch_fundamentals("AAPL.US")
+        assert out == body
+        got = session.gets[0]
+        assert got["url"] == constants.EODHD_FUNDAMENTALS_URL_TEMPLATE.format(symbol="AAPL.US")
+        assert got["params"][constants.EODHD_PARAM_FMT] == constants.EODHD_PARAM_FMT_JSON
+        assert got["params"][constants.EODHD_PARAM_API_TOKEN] == "TOKEN"
+
+    def test_etf_type_passes_through_raw(self) -> None:
+        body = {"General": {"Type": "ETF"}}
+        client, _ = _client(responses=[_FakeResponse(json_body=body)])
+        assert client.fetch_fundamentals("SPY.US") == body
+
+    def test_404_returns_none(self) -> None:
+        client, _ = _client(responses=[_FakeResponse(status_code=404)])
+        assert client.fetch_fundamentals("AAPL.US") is None
+
+    def test_non_object_body_raises(self) -> None:
+        client, _ = _client(responses=[_FakeResponse(json_body=["not", "an", "object"])])
+        with pytest.raises(EodhdError):
+            client.fetch_fundamentals("AAPL.US")
+
+    def test_invalid_symbol_raises_without_http(self) -> None:
+        client, session = _client(responses=[])
+        with pytest.raises(EodhdError):
+            client.fetch_fundamentals("bad symbol!")
+        assert session.gets == []
+
+    def test_token_omitted_when_none(self) -> None:
+        client, session = _client(
+            responses=[_FakeResponse(json_body={"General": {}})], api_token=None
+        )
+        client.fetch_fundamentals("AAPL.US")
+        assert constants.EODHD_PARAM_API_TOKEN not in session.gets[0]["params"]

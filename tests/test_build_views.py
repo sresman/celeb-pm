@@ -1,4 +1,7 @@
-"""Runner tests for build_views: rebuild BOTH views from persisted JSON (no network)."""
+"""Runner tests for build_views: rebuild all three views from persisted JSON.
+
+View 3 needs an EODHD fundamentals fetch; tests stay offline by pre-seeding the fundamentals
+cache (cache hit) or injecting a FakeFundamentalsClient. No real HTTP."""
 
 from __future__ import annotations
 
@@ -14,10 +17,12 @@ from celebpm.build_views import RebuildResult, main, rebuild_views
 from celebpm.errors import ConfigError, DiscoveryError
 from celebpm.models import (
     ChangeType,
+    FundamentalsEntry,
     PositionChange,
     PositionRecord,
     ReturnRecord,
 )
+from tests.conftest import FakeFundamentalsClient, general_fundamentals
 
 CIK = "0001777813"
 SLUG = "test_inv"
@@ -143,6 +148,9 @@ def _return_rec(
         spy_filing_to_filing_return_pct=4.0,
         spy_next_period_high_pct=6.0,
         spy_next_period_low_pct=-2.0,
+        smh_filing_to_filing_return_pct=5.0,
+        smh_next_period_high_pct=7.0,
+        smh_next_period_low_pct=-3.0,
     )
 
 
@@ -165,7 +173,25 @@ def _write_config(tmp_path: Path) -> Path:
     return cfg
 
 
+def _seed_fundamentals_cache(tmp_path: Path) -> None:
+    """Pre-seed the shared fundamentals cache so the default-client runner is OFFLINE (cache hit)."""
+    storage.write_fundamentals_cache(
+        {
+            "ALPHA.US": FundamentalsEntry(
+                eodhd_symbol="ALPHA.US",
+                sector="Technology",
+                industry="Software",
+                instrument_type="Common Stock",
+                resolved=True,
+                fetched_at="2024-01-01T00:00:00+00:00",
+            )
+        },
+        data_root=tmp_path,
+    )
+
+
 def _seed_full(tmp_path: Path) -> None:
+    _seed_fundamentals_cache(tmp_path)
     storage.write_positions(
         SLUG,
         [
@@ -205,9 +231,9 @@ def _header(csv_path: Path) -> list[str]:
 # --------------------------------------------------------------------------------------
 # tests
 # --------------------------------------------------------------------------------------
-def test_rebuild_views_writes_all_four_artifacts(tmp_path: Path) -> None:
+def test_rebuild_views_writes_all_artifacts(tmp_path: Path) -> None:
     cfg = _write_config(tmp_path)
-    _seed_full(tmp_path)
+    _seed_full(tmp_path)  # pre-seeds the fundamentals cache -> default client is offline (hit)
 
     result = rebuild_views(CIK, data_root=tmp_path, config_path=cfg)
     assert isinstance(result, RebuildResult)
@@ -216,19 +242,86 @@ def test_rebuild_views_writes_all_four_artifacts(tmp_path: Path) -> None:
     assert result.new_ideas_summary_path.exists()
     assert result.conviction_csv_path.exists()
     assert result.conviction_summary_path.exists()
+    assert result.lifecycle_csv_path.exists()
 
     assert result.n_new_ideas >= 1
     assert result.n_conviction_adds >= 1
+    assert result.n_lifecycle_rows == 2  # NEW + ACTIVE_ADD, one cycle
     assert len(_data_rows(result.new_ideas_csv_path)) >= 1
     assert len(_data_rows(result.conviction_csv_path)) >= 1
+    assert len(_data_rows(result.lifecycle_csv_path)) == 2
 
     assert _header(result.new_ideas_csv_path) == list(constants.NEW_IDEAS_COLUMNS)
     assert _header(result.conviction_csv_path) == list(constants.CONVICTION_ADDS_COLUMNS)
+    assert _header(result.lifecycle_csv_path) == list(constants.LIFECYCLE_COLUMNS)
 
     ni_sum = json.loads(result.new_ideas_summary_path.read_text())
     cv_sum = json.loads(result.conviction_summary_path.read_text())
     assert constants.SUMMARY_KEY_TOTAL_NEW in ni_sum
     assert constants.CONVICTION_KEY_TOTAL_ADDS in cv_sum
+
+    # View 3: NO classifications file -> sector falls back to the fundamentals cache; theme blank.
+    lc_rows = _data_rows(result.lifecycle_csv_path)
+    assert {r["sector"] for r in lc_rows} == {"Technology"}
+    assert {r["theme"] for r in lc_rows} == {""}
+    assert {r["cycle_id"] for r in lc_rows} == {"ALPHA_COMMON_1"}
+    assert sorted(r["quarters_since_entry"] for r in lc_rows) == ["0", "1"]
+
+
+def test_rebuild_views_classifications_win_over_fundamentals(tmp_path: Path) -> None:
+    cfg = _write_config(tmp_path)
+    _seed_full(tmp_path)  # fundamentals cache has ALPHA.US -> "Technology"
+    # A manual classification for ALPHA must override the fundamentals sector + supply a theme.
+    (tmp_path / constants.TICKER_CLASSIFICATIONS_FILE).write_text(
+        json.dumps(
+            {"ALPHA": {"sector": "Semiconductors", "industry": "Chip Design", "theme": "AI Chips"}}
+        ),
+        encoding="utf-8",
+    )
+    result = rebuild_views(CIK, data_root=tmp_path, config_path=cfg)
+    lc_rows = _data_rows(result.lifecycle_csv_path)
+    assert {r["sector"] for r in lc_rows} == {"Semiconductors"}
+    assert {r["industry"] for r in lc_rows} == {"Chip Design"}
+    assert {r["theme"] for r in lc_rows} == {"AI Chips"}
+
+
+def test_rebuild_views_fetches_fundamentals_when_uncached(tmp_path: Path) -> None:
+    # No pre-seeded cache -> the runner FETCHES via the injected client, then writes the cache.
+    cfg = _write_config(tmp_path)
+    storage.write_positions(
+        SLUG,
+        [
+            _position(period=Q1, filing_date=Q1F, weight=4.0),
+            _position(period=Q2, filing_date=Q2F, weight=6.0),
+        ],
+        data_root=tmp_path,
+    )
+    storage.write_changes(SLUG, [_new_change(), _active_add_change()], data_root=tmp_path)
+    storage.write_returns(
+        SLUG,
+        [
+            _return_rec(
+                filing_date=Q1F, period=Q1, next_filing_date=Q2F, change_type=ChangeType.NEW
+            ),
+            _return_rec(
+                filing_date=Q2F, period=Q2, next_filing_date=Q3F,
+                change_type=ChangeType.ACTIVE_ADD,
+            ),
+        ],
+        data_root=tmp_path,
+    )
+    fund = FakeFundamentalsClient(
+        {"ALPHA.US": general_fundamentals(sector="Energy", instrument_type="Common Stock")}
+    )
+    result = rebuild_views(
+        CIK, data_root=tmp_path, config_path=cfg, fundamentals_client=fund
+    )
+    assert fund.fetched == ["ALPHA.US"]  # one network call
+    assert (tmp_path / constants.FUNDAMENTALS_CACHE_FILE).exists()
+    cache = storage.read_fundamentals_cache(tmp_path)
+    assert cache["ALPHA.US"].sector == "Energy"
+    lc_rows = _data_rows(result.lifecycle_csv_path)
+    assert {r["sector"] for r in lc_rows} == {"Energy"}
 
 
 def test_rebuild_views_no_pandas_import() -> None:
@@ -286,8 +379,11 @@ def test_rebuild_views_empty_state(tmp_path: Path) -> None:
     result = rebuild_views(CIK, data_root=tmp_path, config_path=cfg)
     assert _header(result.new_ideas_csv_path) == list(constants.NEW_IDEAS_COLUMNS)
     assert _header(result.conviction_csv_path) == list(constants.CONVICTION_ADDS_COLUMNS)
+    assert _header(result.lifecycle_csv_path) == list(constants.LIFECYCLE_COLUMNS)
     assert len(_data_rows(result.new_ideas_csv_path)) == 0
     assert len(_data_rows(result.conviction_csv_path)) == 0
+    assert result.n_lifecycle_rows == 0
+    assert len(_data_rows(result.lifecycle_csv_path)) == 0
 
     assert main([CIK, "--data-root", str(tmp_path), "--config", str(cfg)]) == 0
 
@@ -309,12 +405,14 @@ def test_main_smoke_exit_zero(tmp_path: Path, capsys: pytest.CaptureFixture[str]
     out = capsys.readouterr().out
     assert "new_ideas" in out
     assert "conviction_adds" in out
+    assert "position_lifecycles" in out
     assert SLUG in out
     views_dir = tmp_path / SLUG / constants.VIEWS_DIR
     assert (views_dir / constants.NEW_IDEAS_FILE).exists()
     assert (views_dir / constants.NEW_IDEAS_SUMMARY_FILE).exists()
     assert (views_dir / constants.CONVICTION_ADDS_FILE).exists()
     assert (views_dir / constants.CONVICTION_ADDS_SUMMARY_FILE).exists()
+    assert (views_dir / constants.LIFECYCLE_FILE).exists()
 
 
 def test_main_missing_file_exit_one(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:

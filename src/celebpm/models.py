@@ -516,6 +516,62 @@ class CusipMapEntry:
         )
 
 
+@dataclass(frozen=True, kw_only=True)
+class FundamentalsEntry:
+    """One symbol's sector/industry from EODHD fundamentals (persisted unit of
+    eodhd_fundamentals_cache.json).
+
+    Keyed by `eodhd_symbol` — the actual EODHD fetch unit (e.g. 'GOOGL.US'), robust to ticker
+    churn / null tickers (SD-V3-3). `resolved=False` caches a MISS (sector/industry None) so an
+    unfundamentaled symbol is not re-fetched every run. `instrument_type` carries EODHD's
+    General.Type for audit (e.g. 'Common Stock' / 'ETF'). `fetched_at` is an ISO-8601 UTC str.
+    """
+
+    eodhd_symbol: str
+    sector: str | None
+    industry: str | None
+    instrument_type: str | None
+    resolved: bool
+    fetched_at: str | None = None
+
+    def to_dict(self) -> dict[str, _Scalar]:
+        """Serialize to a JSON-ready dict (all scalars; nothing to coerce)."""
+        return {
+            "eodhd_symbol": self.eodhd_symbol,
+            "sector": self.sector,
+            "industry": self.industry,
+            "instrument_type": self.instrument_type,
+            "resolved": self.resolved,
+            "fetched_at": self.fetched_at,
+        }
+
+    @classmethod
+    def from_dict(cls, raw: dict[str, object]) -> FundamentalsEntry:
+        """Parse raw values THEN construct. Raises DiscoveryError on bad input.
+
+        Forward-compat: `resolved` defaults to False when absent; optional fields load via
+        _optional_str and default None.
+        """
+        try:
+            eodhd_symbol = _require_str(raw, "eodhd_symbol")
+            sector = _optional_str(raw, "sector")
+            industry = _optional_str(raw, "industry")
+            instrument_type = _optional_str(raw, "instrument_type")
+            resolved = _require_bool(raw, "resolved") if "resolved" in raw else False
+            fetched_at = _optional_str(raw, "fetched_at")
+        except (KeyError, TypeError, ValueError) as exc:
+            raise DiscoveryError(f"cannot parse FundamentalsEntry from dict: {exc}") from exc
+
+        return cls(
+            eodhd_symbol=eodhd_symbol,
+            sector=sector,
+            industry=industry,
+            instrument_type=instrument_type,
+            resolved=resolved,
+            fetched_at=fetched_at,
+        )
+
+
 # --- ReturnRecord lives at the END of this module (it depends on ChangeType, defined below). ---
 # Fields per spec §1.5 + 3 SPY fields + cumulative + entry + priced + is_underlying_price.
 # One schema home; gets to_dict/from_dict/__post_init__.
@@ -897,6 +953,11 @@ class ReturnRecord:
     spy_next_period_high_pct: float | None
     spy_next_period_low_pct: float | None
 
+    # --- SMH benchmark (VanEck Semiconductor ETF) over the SAME window; secondary benchmark ---
+    smh_filing_to_filing_return_pct: float | None
+    smh_next_period_high_pct: float | None
+    smh_next_period_low_pct: float | None
+
     def __post_init__(self) -> None:
         """Authoritative invariants. Reads only (frozen). Raises DiscoveryError on violation."""
         # 1. cik non-empty + numeric (mirror PositionRecord shape via cik_to_padded).
@@ -959,6 +1020,9 @@ class ReturnRecord:
             ("spy_filing_to_filing_return_pct", self.spy_filing_to_filing_return_pct),
             ("spy_next_period_high_pct", self.spy_next_period_high_pct),
             ("spy_next_period_low_pct", self.spy_next_period_low_pct),
+            ("smh_filing_to_filing_return_pct", self.smh_filing_to_filing_return_pct),
+            ("smh_next_period_high_pct", self.smh_next_period_high_pct),
+            ("smh_next_period_low_pct", self.smh_next_period_low_pct),
         )
         _date_derived_fields = (
             ("next_period_high_date", self.next_period_high_date),
@@ -1018,6 +1082,16 @@ class ReturnRecord:
         )
         if any(v is not None for v in spy) and any(v is None for v in spy):
             raise DiscoveryError("SPY trio must be set together or all None")
+
+        # 6b. SMH trio set-together-or-all-None (mirrors SPY; SMH is a secondary benchmark so it
+        #     may be all-None even when SPY is set — the two trios are independent).
+        smh = (
+            self.smh_filing_to_filing_return_pct,
+            self.smh_next_period_high_pct,
+            self.smh_next_period_low_pct,
+        )
+        if any(v is not None for v in smh) and any(v is None for v in smh):
+            raise DiscoveryError("SMH trio must be set together or all None")
 
         # 7. Entry one-directional: any entry field non-None => change_type == NEW; a NEW's entry
         #    fields are EITHER all-set OR all-None (never partial).
@@ -1127,6 +1201,9 @@ class ReturnRecord:
             "spy_filing_to_filing_return_pct": self.spy_filing_to_filing_return_pct,
             "spy_next_period_high_pct": self.spy_next_period_high_pct,
             "spy_next_period_low_pct": self.spy_next_period_low_pct,
+            "smh_filing_to_filing_return_pct": self.smh_filing_to_filing_return_pct,
+            "smh_next_period_high_pct": self.smh_next_period_high_pct,
+            "smh_next_period_low_pct": self.smh_next_period_low_pct,
         }
 
     @classmethod
@@ -1180,6 +1257,11 @@ class ReturnRecord:
                 ),
                 spy_next_period_high_pct=_optional_float(raw, "spy_next_period_high_pct"),
                 spy_next_period_low_pct=_optional_float(raw, "spy_next_period_low_pct"),
+                smh_filing_to_filing_return_pct=_optional_float(
+                    raw, "smh_filing_to_filing_return_pct"
+                ),
+                smh_next_period_high_pct=_optional_float(raw, "smh_next_period_high_pct"),
+                smh_next_period_low_pct=_optional_float(raw, "smh_next_period_low_pct"),
             )
         except (KeyError, TypeError, ValueError) as exc:
             raise DiscoveryError(f"cannot parse ReturnRecord from dict: {exc}") from exc

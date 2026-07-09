@@ -627,6 +627,9 @@ def _priced_common(**over: Any) -> ReturnRecord:  # noqa: ANN401
         spy_filing_to_filing_return_pct=5.0,
         spy_next_period_high_pct=8.0,
         spy_next_period_low_pct=-2.0,
+        smh_filing_to_filing_return_pct=6.0,
+        smh_next_period_high_pct=9.0,
+        smh_next_period_low_pct=-3.0,
     )
     base.update(over)
     return ReturnRecord(**base)
@@ -666,6 +669,9 @@ def _unpriced(**over: Any) -> ReturnRecord:  # noqa: ANN401
         spy_filing_to_filing_return_pct=None,
         spy_next_period_high_pct=None,
         spy_next_period_low_pct=None,
+        smh_filing_to_filing_return_pct=None,
+        smh_next_period_high_pct=None,
+        smh_next_period_low_pct=None,
     )
     base.update(over)
     return ReturnRecord(**base)

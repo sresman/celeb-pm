@@ -14,6 +14,7 @@ from celebpm.models import (
     ChangeType,
     CusipMapEntry,
     FilingRecord,
+    FundamentalsEntry,
     PositionChange,
     PositionRecord,
     ReturnRecord,
@@ -483,6 +484,9 @@ def _return(
         spy_filing_to_filing_return_pct=5.0,
         spy_next_period_high_pct=8.0,
         spy_next_period_low_pct=-2.0,
+        smh_filing_to_filing_return_pct=6.0,
+        smh_next_period_high_pct=9.0,
+        smh_next_period_low_pct=-3.0,
     )
 
 
@@ -543,3 +547,117 @@ class TestReturns:
     def test_path_safety(self, tmp_path: Path) -> None:
         with pytest.raises(DiscoveryError):
             storage.write_returns("../escape", [_return()], data_root=tmp_path)
+
+
+def _fund(symbol: str, *, sector: str | None, resolved: bool) -> FundamentalsEntry:
+    return FundamentalsEntry(
+        eodhd_symbol=symbol,
+        sector=sector,
+        industry=None,
+        instrument_type=None,
+        resolved=resolved,
+        fetched_at="2024-01-01T00:00:00+00:00",
+    )
+
+
+class TestFundamentalsCache:
+    def test_round_trip(self, tmp_path: Path) -> None:
+        cache = {
+            "AAA.US": _fund("AAA.US", sector="Technology", resolved=True),
+            "GONE.US": _fund("GONE.US", sector=None, resolved=False),
+        }
+        storage.write_fundamentals_cache(cache, data_root=tmp_path)
+        loaded = storage.read_fundamentals_cache(tmp_path)
+        assert loaded == cache
+
+    def test_missing_file_returns_empty(self, tmp_path: Path) -> None:
+        assert storage.read_fundamentals_cache(tmp_path) == {}
+
+    def test_bare_list_sorted_by_symbol(self, tmp_path: Path) -> None:
+        cache = {
+            "ZZZ.US": _fund("ZZZ.US", sector="X", resolved=True),
+            "AAA.US": _fund("AAA.US", sector="Y", resolved=True),
+        }
+        path = storage.write_fundamentals_cache(cache, data_root=tmp_path)
+        data = json.loads(path.read_text(encoding="utf-8"))
+        assert isinstance(data, list)
+        assert [d["eodhd_symbol"] for d in data] == ["AAA.US", "ZZZ.US"]
+
+    def test_mis_keyed_dict_rejected(self, tmp_path: Path) -> None:
+        bad = {"WRONG.US": _fund("AAA.US", sector="X", resolved=True)}
+        with pytest.raises(DiscoveryError):
+            storage.write_fundamentals_cache(bad, data_root=tmp_path)
+
+    def test_duplicate_symbol_on_read_rejected(self, tmp_path: Path) -> None:
+        path = constants.fundamentals_cache_path(tmp_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            json.dumps(
+                [
+                    {"eodhd_symbol": "AAA.US", "sector": "X", "industry": None,
+                     "instrument_type": None, "resolved": True, "fetched_at": None},
+                    {"eodhd_symbol": "AAA.US", "sector": "Y", "industry": None,
+                     "instrument_type": None, "resolved": True, "fetched_at": None},
+                ]
+            ),
+            encoding="utf-8",
+        )
+        with pytest.raises(DiscoveryError):
+            storage.read_fundamentals_cache(tmp_path)
+
+    def test_non_list_root_rejected(self, tmp_path: Path) -> None:
+        path = constants.fundamentals_cache_path(tmp_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({"not": "a list"}), encoding="utf-8")
+        with pytest.raises(DiscoveryError):
+            storage.read_fundamentals_cache(tmp_path)
+
+
+class TestTickerClassifications:
+    def _write(self, tmp_path: Path, obj: object) -> None:
+        path = constants.ticker_classifications_path(tmp_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(obj), encoding="utf-8")
+
+    def test_round_trip(self, tmp_path: Path) -> None:
+        self._write(
+            tmp_path,
+            {
+                "AMD": {"sector": "Semiconductors", "industry": "Chip Design", "theme": "AI"},
+                "CIEN": {"sector": "Networking", "industry": "Optical", "theme": "AI Optical"},
+            },
+        )
+        out = storage.read_ticker_classifications(tmp_path)
+        assert out["AMD"] == {
+            "sector": "Semiconductors", "industry": "Chip Design", "theme": "AI"
+        }
+        assert out["CIEN"]["theme"] == "AI Optical"
+
+    def test_missing_file_returns_empty(self, tmp_path: Path) -> None:
+        assert storage.read_ticker_classifications(tmp_path) == {}
+
+    def test_missing_fields_become_none(self, tmp_path: Path) -> None:
+        self._write(tmp_path, {"X": {"sector": "Tech"}})  # industry/theme absent
+        out = storage.read_ticker_classifications(tmp_path)
+        assert out["X"] == {"sector": "Tech", "industry": None, "theme": None}
+
+    def test_explicit_null_field(self, tmp_path: Path) -> None:
+        self._write(tmp_path, {"X": {"sector": None, "industry": None, "theme": "Macro"}})
+        out = storage.read_ticker_classifications(tmp_path)
+        assert out["X"]["sector"] is None
+        assert out["X"]["theme"] == "Macro"
+
+    def test_non_object_root_rejected(self, tmp_path: Path) -> None:
+        self._write(tmp_path, [{"AMD": "x"}])
+        with pytest.raises(DiscoveryError):
+            storage.read_ticker_classifications(tmp_path)
+
+    def test_non_object_value_rejected(self, tmp_path: Path) -> None:
+        self._write(tmp_path, {"AMD": "Semiconductors"})
+        with pytest.raises(DiscoveryError):
+            storage.read_ticker_classifications(tmp_path)
+
+    def test_non_string_field_rejected(self, tmp_path: Path) -> None:
+        self._write(tmp_path, {"AMD": {"sector": 123}})
+        with pytest.raises(DiscoveryError):
+            storage.read_ticker_classifications(tmp_path)

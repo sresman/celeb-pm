@@ -190,6 +190,48 @@ class FakePriceClient:
         )
 
 
+class FakeFundamentalsClient:
+    """Typed fake satisfying the FundamentalsClient Protocol. Method-level mock — no HTTP.
+
+    Constructed with `data: dict[symbol, raw-fundamentals-object]`. fetch_fundamentals returns the
+    canned object, or None (a 404 / no-fundamentals) for any symbol not in `data`. Records fetched
+    symbols; can RAISE EodhdError for a given symbol (transport-isolation tests). Structurally
+    conforms to FundamentalsClient (asserted statically in test_fundamentals)."""
+
+    def __init__(
+        self,
+        data: dict[str, dict[str, object]] | None = None,
+        *,
+        raise_for: set[str] | None = None,
+    ) -> None:
+        self._data = data if data is not None else {}
+        self._raise_for = raise_for if raise_for is not None else set()
+        self.fetched: list[str] = []
+
+    def fetch_fundamentals(self, symbol: str) -> dict[str, object] | None:
+        self.fetched.append(symbol)
+        if symbol in self._raise_for:
+            raise EodhdError(f"FakeFundamentalsClient: forced failure for {symbol}")
+        return self._data.get(symbol)
+
+
+def general_fundamentals(
+    *,
+    sector: str | None = None,
+    industry: str | None = None,
+    instrument_type: str | None = None,
+) -> dict[str, object]:
+    """A raw EODHD fundamentals object with only the General fields the resolver reads."""
+    general: dict[str, object] = {}
+    if sector is not None:
+        general[constants.EODHD_FUND_SECTOR_KEY] = sector
+    if industry is not None:
+        general[constants.EODHD_FUND_INDUSTRY_KEY] = industry
+    if instrument_type is not None:
+        general[constants.EODHD_FUND_TYPE_KEY] = instrument_type
+    return {constants.EODHD_FUND_GENERAL_KEY: general}
+
+
 class FakePriceProvider:
     """Typed fake satisfying the authoritative PriceProvider Protocol. Keyed by TICKER.
 

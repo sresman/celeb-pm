@@ -19,6 +19,7 @@ from tests.conftest import FakePriceClient, FakePriceProvider, build_series
 CIK = "0001234567"
 CUSIP = "037833100"  # AAPL
 SPY = constants.SPY_BENCHMARK_SYMBOL
+SMH = constants.SMH_BENCHMARK_SYMBOL
 TODAY = date(2026, 6, 12)
 
 
@@ -427,6 +428,41 @@ class TestSpy:
         rec = compute_returns([ch], _provider(prices))[0]
         # SPY 400 -> (today carries forward to 420) -> filing_to_filing = +5%.
         assert rec.spy_filing_to_filing_return_pct == pytest.approx((420.0 / 400.0 - 1) * 100)
+
+
+class TestSmh:
+    def _change_q1(self) -> PositionChange:
+        return _change(
+            change_type=ChangeType.HOLD,
+            period=date(2024, 3, 31),
+            filing_date=date(2024, 1, 2),
+            prior_period=date(2023, 12, 31),
+            prior_filing_date=date(2023, 11, 14),
+        )
+
+    def test_smh_fields_same_window(self) -> None:
+        ch = self._change_q1()
+        prices = {
+            "AAPL": {date(2024, 1, 2): 100.0, date(2024, 6, 3): 200.0},
+            SMH: {date(2018, 1, 2): 100.0, date(2024, 1, 2): 200.0, date(2024, 6, 3): 240.0},
+        }
+        rec = compute_returns([ch], _provider(prices))[0]
+        # SMH 200 -> 240 over the filing-to-filing (today-carry) window = +20%.
+        assert rec.smh_filing_to_filing_return_pct == pytest.approx((240.0 / 200.0 - 1) * 100)
+        assert rec.smh_next_period_high_pct is not None
+        assert rec.smh_next_period_low_pct is not None
+        # SPY still computed independently.
+        assert rec.spy_filing_to_filing_return_pct is not None
+
+    def test_smh_absent_is_null_not_fatal(self) -> None:
+        # SPY present (preflight passes), SMH entirely absent -> SMH trio all-None, NO raise.
+        ch = self._change_q1()
+        prices = {"AAPL": {date(2024, 1, 2): 100.0, date(2024, 6, 3): 200.0}}
+        rec = compute_returns([ch], _provider(prices))[0]  # _provider seeds SPY, not SMH
+        assert rec.smh_filing_to_filing_return_pct is None
+        assert rec.smh_next_period_high_pct is None
+        assert rec.smh_next_period_low_pct is None
+        assert rec.spy_filing_to_filing_return_pct is not None  # SPY unaffected
 
 
 class TestPerSymbolIsolation:

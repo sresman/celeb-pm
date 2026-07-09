@@ -16,7 +16,14 @@ from pathlib import Path
 import pandas as pd  # pandas boundary: untyped (the single justified Any edge — plan §3.2)
 
 from celebpm import constants, storage
-from celebpm.views import ConvictionAddRow, ConvictionAddsView, NewIdeaRow, NewIdeasView
+from celebpm.views import (
+    ConvictionAddRow,
+    ConvictionAddsView,
+    NewIdeaRow,
+    NewIdeasView,
+    PositionLifecycleRow,
+    PositionLifecycleView,
+)
 
 
 def _fmt_date(value: date) -> str:
@@ -54,6 +61,9 @@ def row_to_dict(row: NewIdeaRow) -> dict[str, object]:
         "excess_filing_to_filing_pct": row.excess_filing_to_filing_pct,
         "excess_next_period_high_pct": row.excess_next_period_high_pct,
         "excess_next_period_low_pct": row.excess_next_period_low_pct,
+        "smh_excess_filing_to_filing_pct": row.smh_excess_filing_to_filing_pct,
+        "smh_excess_next_period_high_pct": row.smh_excess_next_period_high_pct,
+        "smh_excess_next_period_low_pct": row.smh_excess_next_period_low_pct,
         "cumulative_return_pct": row.cumulative_return_pct,
         "quarters_held": row.quarters_held,
         "max_weight_pct": row.max_weight_pct,
@@ -161,6 +171,9 @@ def conviction_add_row_to_dict(row: ConvictionAddRow) -> dict[str, object]:
         "excess_filing_to_filing_pct": row.excess_filing_to_filing_pct,
         "excess_next_period_high_pct": row.excess_next_period_high_pct,
         "excess_next_period_low_pct": row.excess_next_period_low_pct,
+        "smh_excess_filing_to_filing_pct": row.smh_excess_filing_to_filing_pct,
+        "smh_excess_next_period_high_pct": row.smh_excess_next_period_high_pct,
+        "smh_excess_next_period_low_pct": row.smh_excess_next_period_low_pct,
         "followed_by_exit": str(row.followed_by_exit),
         "followed_by_another_add": str(row.followed_by_another_add),
         "still_held": str(row.still_held),
@@ -207,3 +220,64 @@ def write_conviction_adds_view(
         summary_path.parent, summary_path, summary_text, prefix=constants.CONVICTION_TMP_PREFIX
     )
     return csv_path, summary_path
+
+
+def lifecycle_row_to_dict(row: PositionLifecycleRow) -> dict[str, object]:
+    """One CSV row as a dict keyed by LIFECYCLE_COLUMNS.
+
+    Dates -> ISO strings; change_type is already a string; priced bool -> "True"/"False";
+    sector/industry and None numerics pass through (rendered as the NA rep by to_csv).
+    """
+    return {
+        "cycle_id": row.cycle_id,
+        "ticker": row.ticker_display,
+        "company": row.company,
+        "cusip": row.cusip,
+        "security_type": row.security_type,
+        "sector": row.sector,
+        "industry": row.industry,
+        "theme": row.theme,
+        "period": _fmt_date(row.period),
+        "filing_date": _fmt_date(row.filing_date),
+        "change_type": row.change_type,
+        "quarters_since_entry": row.quarters_since_entry,
+        "weight_pct": row.weight_pct,
+        "weight_delta_bps": row.weight_delta_bps,
+        "shares_delta_pct": row.shares_delta_pct,
+        "period_return_pct": row.period_return_pct,
+        "period_high_pct": row.period_high_pct,
+        "period_low_pct": row.period_low_pct,
+        "cum_return_from_entry_pct": row.cum_return_from_entry_pct,
+        "spy_period_return_pct": row.spy_period_return_pct,
+        "excess_period_return_pct": row.excess_period_return_pct,
+        "smh_period_return_pct": row.smh_period_return_pct,
+        "excess_vs_smh_pct": row.excess_vs_smh_pct,
+        "price_on_filing_date": row.price_on_filing_date,
+        "entry_price": row.entry_price,
+        "priced": str(row.priced),
+    }
+
+
+def _build_lifecycle_dataframe(view: PositionLifecycleView) -> "pd.DataFrame":
+    records = [lifecycle_row_to_dict(r) for r in view.rows]
+    if not records:
+        # Empty feed: explicit columns so the header-only CSV is still well-formed.
+        return pd.DataFrame(data=[], columns=list(constants.LIFECYCLE_COLUMNS))
+    return pd.DataFrame.from_records(records, columns=list(constants.LIFECYCLE_COLUMNS))
+
+
+def write_position_lifecycle_view(
+    view: PositionLifecycleView,
+    data_root: Path | str | None = None,
+) -> Path:
+    """Write <data_root>/<slug>/views/position_lifecycles.csv (CSV ONLY — no summary).
+
+    Returns the csv_path. Staged to a temp file (LIFECYCLE_TMP_PREFIX) then atomically replaced
+    (a crash mid-write leaves the prior CSV intact). Path-safety via storage.safe_data_path.
+    """
+    csv_path = storage.safe_data_path(
+        view.slug, f"{constants.VIEWS_DIR}/{constants.LIFECYCLE_FILE}", data_root
+    )
+    df = _build_lifecycle_dataframe(view)
+    _write_csv_atomic(df, csv_path, prefix=constants.LIFECYCLE_TMP_PREFIX)
+    return csv_path

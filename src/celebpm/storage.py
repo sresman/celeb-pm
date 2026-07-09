@@ -16,6 +16,7 @@ from celebpm.errors import DiscoveryError
 from celebpm.models import (
     CusipMapEntry,
     FilingRecord,
+    FundamentalsEntry,
     PositionChange,
     PositionRecord,
     ReturnRecord,
@@ -435,3 +436,144 @@ def write_cusip_map(
     _atomic_write_json(target_dir, target_file, text, prefix=".cusipmap-")
     logger.info("wrote %d cusip map entr(ies) to %s", len(ordered), target_file)
     return target_file
+
+
+def read_fundamentals_cache(
+    data_root: Path | str | None = None,
+) -> dict[str, FundamentalsEntry]:
+    """Read the SHARED <data_root>/eodhd_fundamentals_cache.json (bare list) -> dict keyed by
+    eodhd_symbol.
+
+    MISSING FILE -> {} (legitimately empty on first run; mirrors read_cusip_map). A DUPLICATE
+    symbol -> DiscoveryError. Non-list top-level / non-dict element / bad entry -> DiscoveryError.
+    """
+    root = _resolved_root(data_root)
+    target_file = constants.fundamentals_cache_path(data_root).resolve()
+    _assert_under_root(root, target_file)
+    if not target_file.exists():
+        return {}
+
+    text = target_file.read_text(encoding="utf-8")
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError as exc:
+        raise DiscoveryError(
+            f"fundamentals cache file is not valid JSON ({target_file}): {exc}"
+        ) from exc
+
+    if not isinstance(data, list):
+        raise DiscoveryError(
+            f"fundamentals cache file must contain a JSON list, got {type(data).__name__} "
+            f"({target_file})"
+        )
+
+    entries: dict[str, FundamentalsEntry] = {}
+    for item in data:
+        if not isinstance(item, dict):
+            raise DiscoveryError(
+                f"each fundamentals cache entry must be an object ({target_file})"
+            )
+        entry = FundamentalsEntry.from_dict(item)
+        if entry.eodhd_symbol in entries:
+            raise DiscoveryError(
+                f"duplicate symbol {entry.eodhd_symbol!r} in fundamentals cache ({target_file})"
+            )
+        entries[entry.eodhd_symbol] = entry
+    return entries
+
+
+def write_fundamentals_cache(
+    entries: dict[str, FundamentalsEntry],
+    data_root: Path | str | None = None,
+) -> Path:
+    """Serialize the SHARED fundamentals cache as a BARE JSON LIST, SORTED by eodhd_symbol.
+
+    Each dict key MUST equal entry.eodhd_symbol (else DiscoveryError — catches a mis-keyed cache
+    before it hits disk). OVERWRITES wholesale (the resolver owns the in-place merge). ATOMIC +
+    PATH-SAFE (mirrors write_cusip_map).
+    """
+    records: list[FundamentalsEntry] = []
+    for key, entry in entries.items():
+        if key != entry.eodhd_symbol:
+            raise DiscoveryError(
+                f"fundamentals cache dict key {key!r} != entry.eodhd_symbol "
+                f"{entry.eodhd_symbol!r}"
+            )
+        records.append(entry)
+
+    root = _resolved_root(data_root)
+    target_file = constants.fundamentals_cache_path(data_root).resolve()
+    _assert_under_root(root, target_file)
+    target_dir = target_file.parent
+
+    ordered = sorted(records, key=lambda e: e.eodhd_symbol)
+    payload = [entry.to_dict() for entry in ordered]
+    text = json.dumps(payload, indent=2)
+    _atomic_write_json(
+        target_dir, target_file, text, prefix=constants.FUNDAMENTALS_TMP_PREFIX
+    )
+    logger.info("wrote %d fundamentals cache entr(ies) to %s", len(ordered), target_file)
+    return target_file
+
+
+def _classification_field(
+    value: dict[str, object], key: str, ticker: str, path: Path
+) -> str | None:
+    """Read one classification field: missing/null -> None; str -> str; other -> DiscoveryError."""
+    field = value.get(key)
+    if field is None:
+        return None
+    if not isinstance(field, str):
+        raise DiscoveryError(
+            f"classification field {key!r} for {ticker!r} must be a string or null ({path})"
+        )
+    return field
+
+
+def read_ticker_classifications(
+    data_root: Path | str | None = None,
+) -> dict[str, dict[str, str | None]]:
+    """Read the SHARED <data_root>/ticker_classifications.json -> {ticker: {sector/industry/theme}}.
+
+    The file is a hand-maintained JSON OBJECT keyed by ticker. READ-ONLY (never written here).
+    MISSING FILE -> {} (the file is optional). Non-object top-level / non-object value /
+    non-string field -> DiscoveryError. Only the three known keys are kept; unknown keys ignored.
+    """
+    root = _resolved_root(data_root)
+    target_file = constants.ticker_classifications_path(data_root).resolve()
+    _assert_under_root(root, target_file)
+    if not target_file.exists():
+        return {}
+
+    text = target_file.read_text(encoding="utf-8")
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError as exc:
+        raise DiscoveryError(
+            f"ticker classifications file is not valid JSON ({target_file}): {exc}"
+        ) from exc
+
+    if not isinstance(data, dict):
+        raise DiscoveryError(
+            f"ticker classifications file must contain a JSON object, got "
+            f"{type(data).__name__} ({target_file})"
+        )
+
+    out: dict[str, dict[str, str | None]] = {}
+    for ticker, value in data.items():
+        if not isinstance(value, dict):
+            raise DiscoveryError(
+                f"classification for {ticker!r} must be an object ({target_file})"
+            )
+        out[ticker] = {
+            constants.CLASSIFICATION_SECTOR_KEY: _classification_field(
+                value, constants.CLASSIFICATION_SECTOR_KEY, ticker, target_file
+            ),
+            constants.CLASSIFICATION_INDUSTRY_KEY: _classification_field(
+                value, constants.CLASSIFICATION_INDUSTRY_KEY, ticker, target_file
+            ),
+            constants.CLASSIFICATION_THEME_KEY: _classification_field(
+                value, constants.CLASSIFICATION_THEME_KEY, ticker, target_file
+            ),
+        }
+    return out

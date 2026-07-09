@@ -1,5 +1,6 @@
 """Thin end-to-end orchestrator: load_investor -> EDGAR -> parse -> OpenFIGI -> diff ->
-returns -> View 1 + View 2 CSVs. COMPOSE-ONLY — no business logic lives here (plan §4).
+returns -> EODHD fundamentals -> View 1 + View 2 + View 3 CSVs. COMPOSE-ONLY — no business
+logic lives here (plan §4).
 
 Also exposes a minimal `python -m celebpm.pipeline <cik>` runner (a runner, NOT a UI).
 """
@@ -21,6 +22,7 @@ from celebpm.discovery import discover_filings, latest_filing_per_period
 from celebpm.edgar_client import EdgarClient, HttpClient
 from celebpm.eodhd_client import EodhdClient
 from celebpm.errors import DiscoveryError, EdgarError
+from celebpm.fundamentals import resolve_fundamentals
 from celebpm.models import FilingRecord, PositionRecord
 from celebpm.openfigi_client import MappingClient, OpenFigiClient
 from celebpm.parser import (
@@ -29,15 +31,20 @@ from celebpm.parser import (
     refine_amendment_type,
 )
 from celebpm.price_cache import CachingPriceProvider
-from celebpm.price_types import PriceClient
+from celebpm.price_types import FundamentalsClient, PriceClient
 from celebpm.returns import compute_returns
 from celebpm.views import (
     ConvictionAddsSummary,
     NewIdeasSummary,
     build_conviction_adds_view,
     build_new_ideas_view,
+    build_position_lifecycle_view,
 )
-from celebpm.view_io import write_conviction_adds_view, write_new_ideas_view
+from celebpm.view_io import (
+    write_conviction_adds_view,
+    write_new_ideas_view,
+    write_position_lifecycle_view,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -63,6 +70,8 @@ class PipelineResult:
     conviction_csv_path: Path
     conviction_summary_path: Path
     conviction_summary: ConvictionAddsSummary
+    n_lifecycle_rows: int
+    lifecycle_csv_path: Path
 
 
 def run_pipeline(
@@ -73,18 +82,26 @@ def run_pipeline(
     edgar: HttpClient | None = None,
     figi: MappingClient | None = None,
     price_client: PriceClient | None = None,
+    fundamentals_client: FundamentalsClient | None = None,
     config_path: Path | str | None = None,
 ) -> PipelineResult:
-    """Run the full Phase-1 pipeline for one investor (CIK), writing all 6 artifacts.
+    """Run the full Phase-1 pipeline for one investor (CIK), writing all 7 artifacts.
 
     Clients are injected for testing; defaults construct one real client each. The price
-    provider (CachingPriceProvider) is built ONCE internally from the raw price_client. A
-    single bad filing is skipped-and-warned (timeline_degraded). The SPY preflight (non-empty
-    changes) is fatal; resolve_tickers partial is non-fatal.
+    provider (CachingPriceProvider) is built ONCE internally from the raw price_client. The
+    fundamentals_client defaults to REUSING the price_client when it is an EodhdClient (one
+    shared rate-limit bucket), else a fresh EodhdClient. A single bad filing is
+    skipped-and-warned (timeline_degraded). The SPY preflight (non-empty changes) is fatal;
+    resolve_tickers / resolve_fundamentals partials are non-fatal.
     """
     edgar = edgar if edgar is not None else EdgarClient()
     figi = figi if figi is not None else OpenFigiClient.from_env()
     price_client = price_client if price_client is not None else EodhdClient.from_env()
+    fundamentals_client = (
+        fundamentals_client
+        if fundamentals_client is not None
+        else (price_client if isinstance(price_client, EodhdClient) else EodhdClient.from_env())
+    )
     provider = CachingPriceProvider(price_client, data_root=data_root, today=today)
 
     config = load_investor(cik, config_path)
@@ -145,6 +162,23 @@ def run_pipeline(
         conv_view, data_root
     )
 
+    # View 3 — Position Lifecycle. Fundamentals (sector/industry) are a SEPARATE cacheable
+    # network step over the EODHD symbols already priced; misses are cached (no re-fetch).
+    fund_symbols = {r.eodhd_symbol for r in returns if r.eodhd_symbol is not None}
+    fund_cache = storage.read_fundamentals_cache(data_root)
+    resolve_fundamentals(fund_symbols, fundamentals_client, fund_cache)
+    storage.write_fundamentals_cache(fund_cache, data_root)
+    classifications = storage.read_ticker_classifications(data_root)
+    lifecycle_view = build_position_lifecycle_view(
+        config=config,
+        positions=resolve.positions,
+        changes=changes,
+        returns=returns,
+        fundamentals=fund_cache,
+        classifications=classifications,
+    )
+    lifecycle_csv_path = write_position_lifecycle_view(lifecycle_view, data_root)
+
     n_skipped = len(skipped_periods)
     return PipelineResult(
         slug=slug,
@@ -166,6 +200,8 @@ def run_pipeline(
         conviction_csv_path=conviction_csv_path,
         conviction_summary_path=conviction_summary_path,
         conviction_summary=conv_view.summary,
+        n_lifecycle_rows=len(lifecycle_view.rows),
+        lifecycle_csv_path=lifecycle_csv_path,
     )
 
 
@@ -188,12 +224,14 @@ def main(argv: list[str] | None = None) -> int:
     print(
         f"positions={result.n_positions} changes={result.n_changes} "
         f"returns={result.n_returns} new_ideas={result.n_new_ideas} "
-        f"conviction_adds={result.n_conviction_adds}"
+        f"conviction_adds={result.n_conviction_adds} "
+        f"lifecycle_rows={result.n_lifecycle_rows}"
     )
     print(f"csv={result.csv_path}")
     print(f"summary={result.summary_path}")
     print(f"conviction_csv={result.conviction_csv_path}")
     print(f"conviction_summary={result.conviction_summary_path}")
+    print(f"lifecycle_csv={result.lifecycle_csv_path}")
     return 0
 
 

@@ -173,6 +173,17 @@ class PriceClient(Protocol):
     def fetch_eod(self, symbol: str, *, from_date: date, to_date: date) -> SymbolSeries: ...
 
 
+class FundamentalsClient(Protocol):
+    """Structural seam for EODHD fundamentals fetch (sector/industry; View 3).
+
+    Like PriceClient, a thin HTTP fetcher that takes a NORMALIZED EODHD symbol. Returns the raw
+    parsed JSON object, or None when the symbol has no fundamentals (HTTP 404). NOT
+    @runtime_checkable — conformance asserted statically in tests (mirrors PriceClient).
+    """
+
+    def fetch_fundamentals(self, symbol: str) -> dict[str, object] | None: ...
+
+
 class PriceProvider(Protocol):
     """The cache-first seam the engine depends on. Takes RAW tickers; OWNS normalization
     (to_eodhd_symbol + overrides), the cache, the price-field selection, and `today`.

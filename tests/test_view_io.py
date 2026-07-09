@@ -16,6 +16,7 @@ from celebpm.view_io import (
     conviction_add_row_to_dict,
     write_conviction_adds_view,
     write_new_ideas_view,
+    write_position_lifecycle_view,
 )
 from celebpm.views import (
     ConvictionAddRow,
@@ -25,6 +26,8 @@ from celebpm.views import (
     NewIdeaRow,
     NewIdeasSummary,
     NewIdeasView,
+    PositionLifecycleRow,
+    PositionLifecycleView,
 )
 
 Q1F = date(2024, 5, 15)
@@ -60,6 +63,9 @@ def _row(
         excess_filing_to_filing_pct=6.0 if priced else None,
         excess_next_period_high_pct=9.0 if priced else None,
         excess_next_period_low_pct=-3.0 if priced else None,
+        smh_excess_filing_to_filing_pct=5.0 if priced else None,
+        smh_excess_next_period_high_pct=8.0 if priced else None,
+        smh_excess_next_period_low_pct=-4.0 if priced else None,
         cumulative_return_pct=20.0 if priced else None,
         quarters_held=2,
         max_weight_pct=weight,
@@ -214,6 +220,9 @@ def _conv_row(
         excess_filing_to_filing_pct=6.0 if priced else None,
         excess_next_period_high_pct=9.0 if priced else None,
         excess_next_period_low_pct=-3.0 if priced else None,
+        smh_excess_filing_to_filing_pct=5.0 if priced else None,
+        smh_excess_next_period_high_pct=8.0 if priced else None,
+        smh_excess_next_period_low_pct=-4.0 if priced else None,
         followed_by_exit=followed_by_exit,
         followed_by_another_add=followed_by_another_add,
         still_held=still_held,
@@ -258,7 +267,7 @@ def _conv_view(rows: tuple[ConvictionAddRow, ...]) -> ConvictionAddsView:
 def test_conviction_row_to_dict_keys_match_columns() -> None:
     d = conviction_add_row_to_dict(_conv_row())
     assert set(d) == set(constants.CONVICTION_ADDS_COLUMNS)
-    assert len(d) == 27
+    assert len(d) == len(constants.CONVICTION_ADDS_COLUMNS)
 
 
 def test_conviction_row_to_dict_ticker_header_and_dates() -> None:
@@ -385,3 +394,104 @@ def test_write_conviction_adds_view_path_safety(tmp_path: Path) -> None:
     )
     with pytest.raises(DiscoveryError):
         write_conviction_adds_view(view, tmp_path)
+
+
+# ======================================================================================
+# View 3 — Position Lifecycle writer (CSV only; no summary).
+# ======================================================================================
+def _lrow(
+    *,
+    cycle_id: str,
+    quarters_since_entry: int,
+    period: date = Q1,
+    change_type: str = "NEW",
+    priced: bool = True,
+    sector: str | None = "Technology",
+    theme: str | None = "AI/Datacenter",
+    weight_pct: float | None = 5.0,
+) -> PositionLifecycleRow:
+    return PositionLifecycleRow(
+        cycle_id=cycle_id,
+        ticker_display="ALPHA",
+        company="ALPHA CORP",
+        cusip="00846U101",
+        security_type="COMMON",
+        sector=sector,
+        industry="Software" if sector not in (None, "ETF") else None,
+        theme=theme,
+        period=period,
+        filing_date=Q1F,
+        change_type=change_type,
+        quarters_since_entry=quarters_since_entry,
+        weight_pct=weight_pct,
+        weight_delta_bps=100.0 if quarters_since_entry else None,
+        shares_delta_pct=20.0 if quarters_since_entry else None,
+        period_return_pct=10.0 if priced else None,
+        period_high_pct=15.0 if priced else None,
+        period_low_pct=-5.0 if priced else None,
+        cum_return_from_entry_pct=0.0 if quarters_since_entry == 0 else (10.0 if priced else None),
+        spy_period_return_pct=4.0 if priced else None,
+        excess_period_return_pct=6.0 if priced else None,
+        smh_period_return_pct=5.0 if priced else None,
+        excess_vs_smh_pct=5.0 if priced else None,
+        price_on_filing_date=100.0 if priced else None,
+        entry_price=100.0 if priced else None,
+        priced=priced,
+    )
+
+
+def _lview(rows: tuple[PositionLifecycleRow, ...]) -> PositionLifecycleView:
+    return PositionLifecycleView(cik="0001777813", slug="test_slug", rows=rows)
+
+
+def test_lifecycle_writer_header_and_rows(tmp_path: Path) -> None:
+    rows = (
+        _lrow(cycle_id="ALPHA_COMMON_1", quarters_since_entry=0),
+        _lrow(cycle_id="ALPHA_COMMON_1", quarters_since_entry=1, period=Q3,
+              change_type="ACTIVE_ADD"),
+    )
+    csv_path = write_position_lifecycle_view(_lview(rows), data_root=tmp_path)
+    assert csv_path == tmp_path / "test_slug" / constants.VIEWS_DIR / constants.LIFECYCLE_FILE
+
+    with csv_path.open(encoding="utf-8", newline="") as fh:
+        reader = list(csv.reader(fh))
+    assert reader[0] == list(constants.LIFECYCLE_COLUMNS)
+    assert len(reader) == 3  # header + 2 rows
+
+    df = pd.read_csv(csv_path, keep_default_na=False, dtype=str)
+    assert list(df["cycle_id"]) == ["ALPHA_COMMON_1", "ALPHA_COMMON_1"]
+    assert list(df["change_type"]) == ["NEW", "ACTIVE_ADD"]
+    assert list(df["sector"]) == ["Technology", "Technology"]
+    assert list(df["theme"]) == ["AI/Datacenter", "AI/Datacenter"]
+    assert df.loc[0, "cum_return_from_entry_pct"] == "0.0"
+    assert df.loc[0, "priced"] == "True"
+    assert df.loc[0, "smh_period_return_pct"] == "5.0"
+    assert df.loc[0, "excess_vs_smh_pct"] == "5.0"
+
+
+def test_lifecycle_writer_empty_header_only(tmp_path: Path) -> None:
+    csv_path = write_position_lifecycle_view(_lview(()), data_root=tmp_path)
+    df = pd.read_csv(csv_path, keep_default_na=False, dtype=str)
+    assert list(df.columns) == list(constants.LIFECYCLE_COLUMNS)
+    assert len(df) == 0
+
+
+def test_lifecycle_writer_none_and_etf_rendering(tmp_path: Path) -> None:
+    rows = (
+        _lrow(cycle_id="ALPHA_COMMON_1", quarters_since_entry=0, priced=False,
+              sector="ETF", theme=None, weight_pct=None),
+    )
+    csv_path = write_position_lifecycle_view(_lview(rows), data_root=tmp_path)
+    df = pd.read_csv(csv_path, keep_default_na=False, dtype=str)
+    assert df.loc[0, "sector"] == "ETF"
+    assert df.loc[0, "industry"] == ""  # None -> NA rep
+    assert df.loc[0, "theme"] == ""  # None -> NA rep
+    assert df.loc[0, "weight_pct"] == ""
+    assert df.loc[0, "period_return_pct"] == ""
+    assert df.loc[0, "priced"] == "False"
+
+
+def test_lifecycle_writer_path_safety(tmp_path: Path) -> None:
+    bad = PositionLifecycleView(cik="0001777813", slug="../escape", rows=())
+    with pytest.raises(DiscoveryError):
+        write_position_lifecycle_view(bad, data_root=tmp_path)

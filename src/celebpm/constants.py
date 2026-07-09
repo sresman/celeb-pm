@@ -92,6 +92,9 @@ NEW_IDEAS_COLUMNS: Final[tuple[str, ...]] = (
     "excess_filing_to_filing_pct",
     "excess_next_period_high_pct",
     "excess_next_period_low_pct",
+    "smh_excess_filing_to_filing_pct",
+    "smh_excess_next_period_high_pct",
+    "smh_excess_next_period_low_pct",
     "cumulative_return_pct",
     "quarters_held",
     "max_weight_pct",
@@ -152,6 +155,9 @@ CONVICTION_ADDS_COLUMNS: Final[tuple[str, ...]] = (
     "excess_filing_to_filing_pct",
     "excess_next_period_high_pct",
     "excess_next_period_low_pct",
+    "smh_excess_filing_to_filing_pct",
+    "smh_excess_next_period_high_pct",
+    "smh_excess_next_period_low_pct",
     "followed_by_exit",
     "followed_by_another_add",
     "still_held",
@@ -190,6 +196,40 @@ CONVICTION_SUMMARY_NOTES: Final[str] = (
     "heuristic vs SPY, not date-matched alpha; option returns are the underlying's directional "
     "move (long-only, not inverted for written options). This measures the signal value of "
     "public 13F disclosures, not investor P&L."
+)
+
+# --- View 3 (Position Lifecycle) output file (CSV ONLY; no summary — see impl notes SD-V3-5) ---
+LIFECYCLE_FILE: Final[str] = "position_lifecycles.csv"
+LIFECYCLE_TMP_PREFIX: Final[str] = ".lifecycle-"
+
+# --- View 3 column order (single source of truth for the CSV header) ---
+LIFECYCLE_COLUMNS: Final[tuple[str, ...]] = (
+    "cycle_id",
+    "ticker",
+    "company",
+    "cusip",
+    "security_type",
+    "sector",
+    "industry",
+    "theme",
+    "period",
+    "filing_date",
+    "change_type",
+    "quarters_since_entry",
+    "weight_pct",
+    "weight_delta_bps",
+    "shares_delta_pct",
+    "period_return_pct",
+    "period_high_pct",
+    "period_low_pct",
+    "cum_return_from_entry_pct",
+    "spy_period_return_pct",
+    "excess_period_return_pct",
+    "smh_period_return_pct",
+    "excess_vs_smh_pct",
+    "price_on_filing_date",
+    "entry_price",
+    "priced",
 )
 
 # --- Validation patterns (v3 path-safety) ---
@@ -381,7 +421,8 @@ EODHD_US_EXCHANGE_SUFFIX: Final[str] = ".US"  # default exchange for US equities
 EODHD_CLASS_SHARE_SEPARATOR: Final[str] = "-"  # EODHD class-share form: BRK-B.US
 # Chars in an OpenFIGI ticker that denote a share class and map to the EODHD separator:
 EODHD_CLASS_SEPARATORS_IN: Final[tuple[str, ...]] = ("/", ".", " ")  # BRK/B, BRK.B, "BRK B"
-SPY_BENCHMARK_SYMBOL: Final[str] = "SPY.US"  # benchmark symbol constant (operator-confirmed)
+SPY_BENCHMARK_SYMBOL: Final[str] = "SPY.US"  # primary benchmark (REQUIRED; fatal preflight)
+SMH_BENCHMARK_SYMBOL: Final[str] = "SMH.US"  # secondary benchmark (VanEck Semiconductor ETF)
 SYMBOL_OVERRIDES_FILE: Final[str] = "symbol_overrides.json"  # under price_cache dir; optional
 # Already-suffixed passthrough: a ticker ALREADY ending in '.XX' where XX is EXACTLY two
 # uppercase letters is treated as a pre-formed EODHD exchange suffix and passed through.
@@ -398,6 +439,29 @@ PRICE_CACHE_WRAPPER_SERIES_KEY: Final[str] = "series"
 # require at least ONE alphanumeric BEFORE any separator — rejects degenerate '.', '..', '.US'.
 # A symbol becomes a filename, so this is ALSO the path-safety guard. Total length 1..32.
 EODHD_SYMBOL_PATTERN: Final[re.Pattern[str]] = re.compile(r"^[A-Z0-9][A-Z0-9._-]{0,31}$")
+
+# --- EODHD fundamentals API (sector/industry enrichment; View 3). Same host/auth as the EOD
+#     endpoint; auth is the api_token query param, fmt=json. A 404 -> unfundamentaled (None). ---
+EODHD_FUNDAMENTALS_URL_TEMPLATE: Final[str] = "https://eodhd.com/api/fundamentals/{symbol}"
+EODHD_FUND_GENERAL_KEY: Final[str] = "General"  # top-level object holding Sector/Industry/Type
+EODHD_FUND_SECTOR_KEY: Final[str] = "Sector"  # standard sector (NOT the GicSector taxonomy; SD-V3-2)
+EODHD_FUND_INDUSTRY_KEY: Final[str] = "Industry"
+EODHD_FUND_TYPE_KEY: Final[str] = "Type"  # "ETF" identifies a fund -> sector := ETF
+EODHD_FUND_TYPE_ETF: Final[str] = "ETF"
+SECTOR_ETF_LABEL: Final[str] = "ETF"  # sector value assigned to ETFs (spec)
+
+# --- EODHD fundamentals cache (SHARED single file, keyed by eodhd_symbol; mirrors cusip map).
+#     Unresolved misses are cached (resolved=False) so we do NOT re-fetch them every run. ---
+FUNDAMENTALS_CACHE_FILE: Final[str] = "eodhd_fundamentals_cache.json"  # under DATA_ROOT; bare list
+FUNDAMENTALS_TMP_PREFIX: Final[str] = ".fundamentals-"
+
+# --- Manual ticker classifications (PRIMARY sector/industry/theme source; View 3). A SHARED,
+#     hand-maintained JSON object keyed by ticker -> {sector, industry, theme}. Takes precedence
+#     over the EODHD fundamentals cache; read-only (never written by the pipeline). ---
+TICKER_CLASSIFICATIONS_FILE: Final[str] = "ticker_classifications.json"  # under DATA_ROOT; object
+CLASSIFICATION_SECTOR_KEY: Final[str] = "sector"
+CLASSIFICATION_INDUSTRY_KEY: Final[str] = "industry"
+CLASSIFICATION_THEME_KEY: Final[str] = "theme"
 
 # --- EODHD price source / alignment policy ---
 EODHD_USE_ADJUSTED_CLOSE: Final[bool] = True  # DECISION: returns use adjusted_close (D5.5)
@@ -507,6 +571,18 @@ def cusip_map_path(data_root: Path | str | None = None) -> Path:
     """<data_root>/cusip_ticker_map.json — SHARED across investors (CUSIP->ticker is global)."""
     root = Path(data_root) if data_root is not None else _default_data_root()
     return root / CUSIP_MAP_FILE
+
+
+def fundamentals_cache_path(data_root: Path | str | None = None) -> Path:
+    """<data_root>/eodhd_fundamentals_cache.json — SHARED across investors (fundamentals global)."""
+    root = Path(data_root) if data_root is not None else _default_data_root()
+    return root / FUNDAMENTALS_CACHE_FILE
+
+
+def ticker_classifications_path(data_root: Path | str | None = None) -> Path:
+    """<data_root>/ticker_classifications.json — SHARED, hand-maintained ticker->classification map."""
+    root = Path(data_root) if data_root is not None else _default_data_root()
+    return root / TICKER_CLASSIFICATIONS_FILE
 
 
 def price_cache_dir(data_root: Path | str | None = None) -> Path:

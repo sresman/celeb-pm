@@ -8,9 +8,11 @@ constants, errors} (errors for the SPY raise).
 Cross-cutting rules: filing date is the anchor for FORWARD returns; the entry window is the
 CALENDAR QUARTER of `period`; equity and options are chained SEPARATELY; options are priced on the
 UNDERLYING (directional signal, never option P&L); returns come from EODHD prices ONLY. SPY is the
-benchmark: the engine passes the literal SPY_BENCHMARK_SYMBOL as the ticker (no sentinel). A missing
-SPY benchmark (has_series_data False or a transport error in the preflight) is fatal; a NON-SPY
-symbol's transport EodhdError is isolated per-record (priced=False + log + continue).
+PRIMARY benchmark: the engine passes the literal SPY_BENCHMARK_SYMBOL as the ticker (no sentinel).
+A missing SPY benchmark (has_series_data False or a transport error in the preflight) is fatal.
+SMH (VanEck Semiconductor ETF) is a SECONDARY benchmark computed the same way per-window, but with
+NO fatal preflight — a fully-absent SMH simply yields all-None SMH trios. A NON-benchmark symbol's
+transport EodhdError is isolated per-record (priced=False + log + continue).
 """
 
 from __future__ import annotations
@@ -142,6 +144,9 @@ def _unpriced_record(change: PositionChange, next_filing: date) -> ReturnRecord:
         spy_filing_to_filing_return_pct=None,
         spy_next_period_high_pct=None,
         spy_next_period_low_pct=None,
+        smh_filing_to_filing_return_pct=None,
+        smh_next_period_high_pct=None,
+        smh_next_period_low_pct=None,
     )
 
 
@@ -208,8 +213,13 @@ def _compute_one(
         worst_ret,
     ) = _entry_estimate(change, provider, price_next)
 
-    # SPY over the same forward window (same coverage + denominator-> 0 formula).
-    spy_f2f, spy_high, spy_low = _spy_window(provider, filing_date, next_filing)
+    # SPY + SMH over the same forward window (same coverage + denominator-> 0 formula).
+    spy_f2f, spy_high, spy_low = _benchmark_window(
+        provider, constants.SPY_BENCHMARK_SYMBOL, filing_date, next_filing
+    )
+    smh_f2f, smh_high, smh_low = _benchmark_window(
+        provider, constants.SMH_BENCHMARK_SYMBOL, filing_date, next_filing
+    )
 
     cum_pct, cum_from, cum_to = (cumulative if cumulative is not None else (None, None, None))
 
@@ -246,6 +256,9 @@ def _compute_one(
         spy_filing_to_filing_return_pct=spy_f2f,
         spy_next_period_high_pct=spy_high,
         spy_next_period_low_pct=spy_low,
+        smh_filing_to_filing_return_pct=smh_f2f,
+        smh_next_period_high_pct=smh_high,
+        smh_next_period_low_pct=smh_low,
     )
 
 
@@ -286,33 +299,33 @@ def _entry_estimate(
     return entry_high, entry_low, best_price, worst_price, best_ret, worst_ret
 
 
-def _spy_window(
-    provider: PriceProvider, filing_date: date, next_filing: date
+def _benchmark_window(
+    provider: PriceProvider, symbol: str, filing_date: date, next_filing: date
 ) -> tuple[float | None, float | None, float | None]:
-    """SPY return trio over [filing_date, next_filing]. A per-window gap (endpoint None / filing
-    denominator <= 0) -> all-None + WARN (the overall preflight already passed). Mirrors the
-    position path including endpoint-derived extrema."""
-    spy_filing = provider.price_asof(constants.SPY_BENCHMARK_SYMBOL, filing_date)
-    spy_next = provider.price_asof(constants.SPY_BENCHMARK_SYMBOL, next_filing)
-    if spy_filing is None or spy_filing <= 0 or spy_next is None:
+    """Benchmark return trio for `symbol` over [filing_date, next_filing]. A per-window gap
+    (endpoint None / filing denominator <= 0) -> all-None + WARN. Mirrors the position path
+    including endpoint-derived extrema. Used for both SPY (after its fatal preflight) and SMH
+    (no preflight: a fully-absent SMH simply yields all-None windows — task spec)."""
+    bench_filing = provider.price_asof(symbol, filing_date)
+    bench_next = provider.price_asof(symbol, next_filing)
+    if bench_filing is None or bench_filing <= 0 or bench_next is None:
         logger.warning(
-            "SPY per-window gap over [%s, %s]; benchmark trio N/A for this window",
+            "%s per-window gap over [%s, %s]; benchmark trio N/A for this window",
+            symbol,
             filing_date,
             next_filing,
         )
         return None, None, None
-    extrema = provider.window_extrema(
-        constants.SPY_BENCHMARK_SYMBOL, filing_date, next_filing
-    )
+    extrema = provider.window_extrema(symbol, filing_date, next_filing)
     if extrema is not None:
-        spy_high_price, spy_low_price = extrema.high, extrema.low
+        bench_high_price, bench_low_price = extrema.high, extrema.low
     else:
-        spy_high_price = max(spy_filing, spy_next)
-        spy_low_price = min(spy_filing, spy_next)
+        bench_high_price = max(bench_filing, bench_next)
+        bench_low_price = min(bench_filing, bench_next)
     return (
-        _pct(spy_filing, spy_next),
-        _pct(spy_filing, spy_high_price),
-        _pct(spy_filing, spy_low_price),
+        _pct(bench_filing, bench_next),
+        _pct(bench_filing, bench_high_price),
+        _pct(bench_filing, bench_low_price),
     )
 
 

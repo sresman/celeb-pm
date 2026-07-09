@@ -40,3 +40,38 @@ Full per-decision detail (SD-V2-1…SD-V2-8) lives in `docs/implementation_notes
 - **⚠️ SD-V2-1 OPEN (operator to confirm):** `still_held` is per security-CHAIN (chain's last entry at the dataset's `latest_period` and non-EXIT), NOT per add-cycle. Literal-spec reading; 2/3 QA reviewers preferred per-cycle. Locked by a test; flipping is a one-function change.
 - Mechanical deviations: `is_underlying_price` column omitted (SD-V2-2), sort tiebreak cusip/security_type (SD-V2-3), `quarters_held_before_add` counts observed not calendar quarters (SD-V2-4), "next quarter" = next chain entry (SD-V2-5), held-before-dataset = first entry of current cycle (SD-V2-6), `add_type` boundary 0.0 → AVERAGING_DOWN (SD-V2-7), `return_rec` test factory gained `price_on_filing` (SD-V2-8).
 - **Verification:** `mypy --strict` clean; `pytest` 567 passing (526 → +41 View-2 tests); offline rebuild vs Situational Awareness → 16 conviction adds.
+
+---
+
+## 2026-07-09 — View 3 (Position Lifecycle) + ticker classifications + SMH benchmark
+
+Full per-decision detail in `docs/implementation_notes/view_position_lifecycle_implementation_notes.md`
+(SD-V3-1…11, SD-SMH-1). Key points:
+
+- **View 3 = one row per `(cusip, security_type)` per quarter held**, grouped into entry→exit CYCLES.
+  `build_position_lifecycle_view` in `views.py` + `write_position_lifecycle_view` (CSV-only) in
+  `view_io.py`; wired into `run_pipeline` AND `build_views`. `cycle_id = {entry_ticker}_{security_type}_{n}`
+  (ticker with CUSIP fallback; n increments per re-entry). EXIT closes a cycle; NEW / first-appearance
+  opens one. changes↔returns joined by `(cusip, security_type, period)`, not list index.
+- **Sector/industry/theme: manual `data/ticker_classifications.json` is PRIMARY** (shared, keyed by
+  ticker → {sector, industry, theme}; `storage.read_ticker_classifications`), EODHD fundamentals cache
+  is the FALLBACK (sector/industry only; theme has no EODHD equivalent). Precedence is BINARY — if a
+  ticker is in the file its values win outright (fundamentals not consulted, even for null fields).
+- **FLAG-V3-A:** the EODHD fundamentals endpoint returns HTTP 403 on the current key (fundamentals is a
+  separate EODHD plan tier). Handled gracefully (per-symbol skip → blank) and now MITIGATED for classified
+  tickers via the manual file. The `build_views` runner may now perform ONE network step (the fundamentals
+  fetch) — a deliberate relaxation of its prior no-network contract; it still degrades gracefully without a key.
+- **SMH (VanEck Semiconductor ETF) added as a SECOND benchmark** alongside SPY on every `ReturnRecord`
+  (`smh_filing_to_filing_return_pct` + high/low). `returns.py` generalized `_spy_window` → `_benchmark_window`
+  called for both. Views: lifecycle gained `smh_period_return_pct` + `excess_vs_smh_pct`; View 1 + View 2
+  gained `smh_excess_*` columns mirroring the SPY-excess block.
+- **SD-SMH-1 (deviation from the SPY pattern):** SMH has NO fatal preflight. SPY's `has_series_data`
+  preflight is fatal because it is THE required benchmark; SMH is secondary, so a fully-absent SMH (or any
+  per-window gap) yields an all-None SMH trio and never aborts (task spec: missing SMH → null fields). The
+  two benchmark trios are independent (model invariant allows SMH all-None while SPY is set).
+- **Verification:** `mypy --strict` clean; `pytest` **615 passing** (567 → +48). Real-data offline checks
+  (atreides): View 3 reshape → 1321 rows / 365 cycles / 77 re-entries, 1179 rows sector+theme from the
+  211-ticker file; SMH recompute over live prices → 847/847 priced records carry SMH. No committed-data writes.
+- **⚠️ TO PERSIST SMH into stored `returns.json` + view CSVs, re-run the full pipeline:**
+  `.venv/bin/python -m celebpm.pipeline 0001777813 --data-root data` (SMH.US already price-cached). This
+  change adds only the computation; stored per-investor artifacts are not auto-refreshed.

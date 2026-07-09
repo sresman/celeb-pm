@@ -10,13 +10,16 @@ from celebpm.config_loader import InvestorConfig
 from celebpm.errors import DiscoveryError
 from celebpm.models import (
     ChangeType,
+    FundamentalsEntry,
     PositionChange,
     PositionRecord,
     ReturnRecord,
 )
 from celebpm.views import (
+    PositionLifecycleRow,
     build_conviction_adds_view,
     build_new_ideas_view,
+    build_position_lifecycle_view,
 )
 
 CIK = "0001777813"
@@ -188,6 +191,9 @@ def return_rec(
     spy_f2f: float | None = 4.0,
     spy_h: float | None = 6.0,
     spy_l: float | None = -2.0,
+    smh_f2f: float | None = 5.0,
+    smh_h: float | None = 7.0,
+    smh_l: float | None = -3.0,
     best_entry: float | None = 12.0,
     worst_entry: float | None = 8.0,
     cumulative: float | None = 20.0,
@@ -234,6 +240,9 @@ def return_rec(
             spy_filing_to_filing_return_pct=None,
             spy_next_period_high_pct=None,
             spy_next_period_low_pct=None,
+            smh_filing_to_filing_return_pct=None,
+            smh_next_period_high_pct=None,
+            smh_next_period_low_pct=None,
         )
     entry_set = best_entry is not None and worst_entry is not None
     return ReturnRecord(
@@ -269,6 +278,9 @@ def return_rec(
         spy_filing_to_filing_return_pct=spy_f2f,
         spy_next_period_high_pct=spy_h,
         spy_next_period_low_pct=spy_l,
+        smh_filing_to_filing_return_pct=smh_f2f,
+        smh_next_period_high_pct=smh_h,
+        smh_next_period_low_pct=smh_l,
     )
 
 
@@ -305,6 +317,10 @@ def test_priced_new_equity_full_returns_and_excess() -> None:
     assert row.excess_filing_to_filing_pct == pytest.approx(10.0 - 4.0)
     assert row.excess_next_period_high_pct == pytest.approx(15.0 - 6.0)
     assert row.excess_next_period_low_pct == pytest.approx(-5.0 - (-2.0))
+    # SMH-excess mirrors SPY-excess against the SMH benchmark (smh_f2f=5/h=7/l=-3).
+    assert row.smh_excess_filing_to_filing_pct == pytest.approx(10.0 - 5.0)
+    assert row.smh_excess_next_period_high_pct == pytest.approx(15.0 - 7.0)
+    assert row.smh_excess_next_period_low_pct == pytest.approx(-5.0 - (-3.0))
     assert row.best_case_entry_return_pct == 12.0
     assert row.worst_case_entry_return_pct == 8.0
     assert row.cumulative_return_pct == 20.0
@@ -773,6 +789,10 @@ def test_conviction_basic_add_row() -> None:
     assert row.excess_filing_to_filing_pct == pytest.approx(10.0 - 4.0)
     assert row.excess_next_period_high_pct == pytest.approx(15.0 - 6.0)
     assert row.excess_next_period_low_pct == pytest.approx(-5.0 - (-2.0))
+    # SMH-excess mirrors SPY-excess against the SMH benchmark (smh_f2f=5/h=7/l=-3).
+    assert row.smh_excess_filing_to_filing_pct == pytest.approx(10.0 - 5.0)
+    assert row.smh_excess_next_period_high_pct == pytest.approx(15.0 - 7.0)
+    assert row.smh_excess_next_period_low_pct == pytest.approx(-5.0 - (-3.0))
 
 
 # 2
@@ -1382,3 +1402,268 @@ def test_conviction_wrong_cik_raises() -> None:
         build_conviction_adds_view(
             config=other_config, positions=[], changes=[c_add], returns=[]
         )
+
+
+# ======================================================================================
+# View 3 — Position Lifecycle builder tests.
+# ======================================================================================
+def _fund(symbol: str, *, sector: str | None, industry: str | None = None) -> FundamentalsEntry:
+    return FundamentalsEntry(
+        eodhd_symbol=symbol,
+        sector=sector,
+        industry=industry,
+        instrument_type=None,
+        resolved=True,
+        fetched_at=None,
+    )
+
+
+def _lc(
+    changes: list[PositionChange],
+    returns: list[ReturnRecord],
+    *,
+    positions: list[PositionRecord] | None = None,
+    fundamentals: dict[str, FundamentalsEntry] | None = None,
+    classifications: dict[str, dict[str, str | None]] | None = None,
+) -> tuple[PositionLifecycleRow, ...]:
+    view = build_position_lifecycle_view(
+        config=CONFIG,
+        positions=positions if positions is not None else [],
+        changes=changes,
+        returns=returns,
+        fundamentals=fundamentals if fundamentals is not None else {},
+        classifications=classifications,
+    )
+    return view.rows
+
+
+def test_lifecycle_single_cycle_new_add_exit() -> None:
+    changes = [
+        new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F),
+        matched_change(
+            change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+            prior_period=Q1, prior_filing_date=Q1F,
+        ),
+        exit_change(period=Q3, filing_date=Q3F, prior_period=Q2, prior_filing_date=Q2F),
+    ]
+    returns = [
+        return_rec(period=Q1, filing_date=Q1F, next_filing_date=Q2F,
+                   change_type=ChangeType.NEW, price_on_filing=100.0),
+        return_rec(period=Q2, filing_date=Q2F, next_filing_date=Q3F,
+                   change_type=ChangeType.ACTIVE_ADD, price_on_filing=110.0),
+        return_rec(period=Q3, filing_date=Q3F, next_filing_date=Q4F,
+                   change_type=ChangeType.EXIT, price_on_filing=120.0),
+    ]
+    rows = _lc(changes, returns)
+    assert [r.cycle_id for r in rows] == ["ALPHA_COMMON_1"] * 3
+    assert [r.quarters_since_entry for r in rows] == [0, 1, 2]
+    assert [r.change_type for r in rows] == ["NEW", "ACTIVE_ADD", "EXIT"]
+    # entry_price is the cycle's first-record price; constant across the cycle
+    assert {r.entry_price for r in rows} == {100.0}
+    # cum_return_from_entry: 0.0 at entry, then (price/entry - 1)*100
+    assert rows[0].cum_return_from_entry_pct == 0.0
+    assert rows[1].cum_return_from_entry_pct == pytest.approx(10.0)
+    assert rows[2].cum_return_from_entry_pct == pytest.approx(20.0)
+    # SMH benchmark: smh_period_return + excess_vs_smh (period_return 10.0 - smh 5.0 = 5.0).
+    assert rows[0].smh_period_return_pct == pytest.approx(5.0)
+    assert rows[0].excess_vs_smh_pct == pytest.approx(5.0)
+    # EXIT row carries no current weight; the ADD row carries the change deltas
+    assert rows[2].weight_pct is None
+    assert rows[1].weight_delta_bps == pytest.approx(100.0)
+    assert rows[1].shares_delta_pct == pytest.approx(20.0)
+
+
+def test_lifecycle_reentry_opens_new_cycle() -> None:
+    changes = [
+        new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F),
+        exit_change(period=Q2, filing_date=Q2F, prior_period=Q1, prior_filing_date=Q1F),
+        new_change(period=Q3, filing_date=Q3F, prior_period=Q2, prior_filing_date=Q2F),
+    ]
+    returns = [
+        return_rec(period=Q1, filing_date=Q1F, next_filing_date=Q2F, change_type=ChangeType.NEW),
+        return_rec(period=Q2, filing_date=Q2F, next_filing_date=Q3F, change_type=ChangeType.EXIT),
+        return_rec(period=Q3, filing_date=Q3F, next_filing_date=Q4F, change_type=ChangeType.NEW),
+    ]
+    rows = _lc(changes, returns)
+    by_period = {r.period: r for r in rows}
+    # EXIT belongs to the FIRST cycle; the re-entry NEW opens a SECOND cycle.
+    assert by_period[Q1].cycle_id == "ALPHA_COMMON_1"
+    assert by_period[Q2].cycle_id == "ALPHA_COMMON_1"
+    assert by_period[Q2].change_type == "EXIT"
+    assert by_period[Q3].cycle_id == "ALPHA_COMMON_2"
+    assert by_period[Q3].quarters_since_entry == 0
+
+
+def test_lifecycle_first_appearance_pre_data_is_a_cycle() -> None:
+    # Chain starts with a non-NEW (held before our data begins) -> still a cycle at qse 0.
+    changes = [
+        matched_change(change_type=ChangeType.HOLD, period=Q1, filing_date=Q1F,
+                       prior_period=Q0, prior_filing_date=Q0F),
+        matched_change(change_type=ChangeType.ACTIVE_ADD, period=Q2, filing_date=Q2F,
+                       prior_period=Q1, prior_filing_date=Q1F),
+    ]
+    returns = [
+        return_rec(period=Q1, filing_date=Q1F, next_filing_date=Q2F, change_type=ChangeType.HOLD),
+        return_rec(period=Q2, filing_date=Q2F, next_filing_date=Q3F,
+                   change_type=ChangeType.ACTIVE_ADD),
+    ]
+    rows = _lc(changes, returns)
+    assert [r.cycle_id for r in rows] == ["ALPHA_COMMON_1", "ALPHA_COMMON_1"]
+    assert [r.quarters_since_entry for r in rows] == [0, 1]
+    assert rows[0].cum_return_from_entry_pct == 0.0
+
+
+def test_lifecycle_unpriced_quarter() -> None:
+    changes = [
+        new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F),
+        matched_change(change_type=ChangeType.HOLD, period=Q2, filing_date=Q2F,
+                       prior_period=Q1, prior_filing_date=Q1F),
+    ]
+    returns = [
+        return_rec(period=Q1, filing_date=Q1F, next_filing_date=Q2F,
+                   change_type=ChangeType.NEW, price_on_filing=100.0),
+        return_rec(period=Q2, filing_date=Q2F, next_filing_date=Q3F,
+                   change_type=ChangeType.HOLD, priced=False),
+    ]
+    rows = _lc(changes, returns)
+    held = rows[1]
+    assert held.priced is False
+    assert held.period_return_pct is None
+    assert held.cum_return_from_entry_pct is None  # unpriced -> no ratio
+    assert held.excess_period_return_pct is None
+
+
+def test_lifecycle_excess_none_when_spy_none() -> None:
+    changes = [new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F)]
+    returns = [
+        return_rec(period=Q1, filing_date=Q1F, next_filing_date=Q2F,
+                   change_type=ChangeType.NEW, f2f=10.0,
+                   spy_f2f=None, spy_h=None, spy_l=None),
+    ]
+    rows = _lc(changes, returns)
+    assert rows[0].period_return_pct == pytest.approx(10.0)
+    assert rows[0].excess_period_return_pct is None
+
+
+def test_lifecycle_sector_industry_and_etf_and_missing() -> None:
+    changes = [new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F)]
+    returns = [
+        return_rec(period=Q1, filing_date=Q1F, next_filing_date=Q2F, change_type=ChangeType.NEW),
+    ]
+    # return_rec sets eodhd_symbol = "ALPHA.US"
+    funds_equity = {"ALPHA.US": _fund("ALPHA.US", sector="Technology", industry="Software")}
+    rows = _lc(changes, returns, fundamentals=funds_equity)
+    assert rows[0].sector == "Technology"
+    assert rows[0].industry == "Software"
+
+    funds_etf = {"ALPHA.US": _fund("ALPHA.US", sector="ETF")}
+    rows_etf = _lc(changes, returns, fundamentals=funds_etf)
+    assert rows_etf[0].sector == "ETF"
+
+    rows_missing = _lc(changes, returns, fundamentals={})
+    assert rows_missing[0].sector is None
+    assert rows_missing[0].industry is None
+
+
+def test_lifecycle_company_from_positions() -> None:
+    changes = [new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F)]
+    returns = [
+        return_rec(period=Q1, filing_date=Q1F, next_filing_date=Q2F, change_type=ChangeType.NEW),
+    ]
+    positions = [position(period=Q1, filing_date=Q1F, company_name="ALPHA CORP")]
+    rows = _lc(changes, returns, positions=positions)
+    assert rows[0].company == "ALPHA CORP"
+    assert rows[0].ticker_display == "ALPHA"
+
+
+def test_lifecycle_sorted_by_cycle_then_quarters() -> None:
+    # Two securities, B re-enters -> verify global sort cycle_id ASC, quarters_since_entry ASC.
+    a = [
+        new_change(cusip=CUSIP_A, ticker="AAA", period=Q1, filing_date=Q1F,
+                   prior_period=Q0, prior_filing_date=Q0F),
+        matched_change(change_type=ChangeType.HOLD, cusip=CUSIP_A, ticker="AAA",
+                       period=Q2, filing_date=Q2F, prior_period=Q1, prior_filing_date=Q1F),
+    ]
+    b = [new_change(cusip=CUSIP_B, ticker="BBB", period=Q1, filing_date=Q1F,
+                    prior_period=Q0, prior_filing_date=Q0F)]
+    rets = [
+        return_rec(cusip=CUSIP_A, ticker="AAA", period=Q1, filing_date=Q1F,
+                   next_filing_date=Q2F, change_type=ChangeType.NEW),
+        return_rec(cusip=CUSIP_A, ticker="AAA", period=Q2, filing_date=Q2F,
+                   next_filing_date=Q3F, change_type=ChangeType.HOLD),
+        return_rec(cusip=CUSIP_B, ticker="BBB", period=Q1, filing_date=Q1F,
+                   next_filing_date=Q2F, change_type=ChangeType.NEW),
+    ]
+    rows = _lc(a + b, rets)
+    keys = [(r.cycle_id, r.quarters_since_entry) for r in rows]
+    assert keys == sorted(keys)
+    assert keys[0][0] == "AAA_COMMON_1"
+    assert keys[-1][0] == "BBB_COMMON_1"
+
+
+def test_lifecycle_cik_mismatch_raises() -> None:
+    other = InvestorConfig(
+        cik="0000000000", name="X", fund="X", slug="x", notes="", is_known=True
+    )
+    changes = [new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F)]
+    with pytest.raises(DiscoveryError):
+        build_position_lifecycle_view(
+            config=other, positions=[], changes=changes, returns=[], fundamentals={}
+        )
+
+
+# --- View 3 sector/industry/theme classification precedence ---
+def _classif_changes_returns() -> tuple[list[PositionChange], list[ReturnRecord]]:
+    changes = [new_change(period=Q1, filing_date=Q1F, prior_period=Q0, prior_filing_date=Q0F)]
+    returns = [
+        return_rec(period=Q1, filing_date=Q1F, next_filing_date=Q2F, change_type=ChangeType.NEW),
+    ]
+    return changes, returns
+
+
+def test_lifecycle_classifications_are_primary_over_fundamentals() -> None:
+    changes, returns = _classif_changes_returns()
+    # ticker_display == "ALPHA"; classifications win even though fundamentals also has data.
+    classifications: dict[str, dict[str, str | None]] = {
+        "ALPHA": {"sector": "Semiconductors", "industry": "Chip Design", "theme": "AI Chips"}
+    }
+    funds = {"ALPHA.US": _fund("ALPHA.US", sector="Technology", industry="Software")}
+    rows = _lc(changes, returns, fundamentals=funds, classifications=classifications)
+    assert rows[0].sector == "Semiconductors"
+    assert rows[0].industry == "Chip Design"
+    assert rows[0].theme == "AI Chips"
+
+
+def test_lifecycle_falls_back_to_fundamentals_when_ticker_unclassified() -> None:
+    changes, returns = _classif_changes_returns()
+    funds = {"ALPHA.US": _fund("ALPHA.US", sector="Technology", industry="Software")}
+    # classifications present but for a DIFFERENT ticker -> fall back to fundamentals; theme None.
+    other: dict[str, dict[str, str | None]] = {
+        "OTHER": {"sector": "X", "industry": "Y", "theme": "Z"}
+    }
+    rows = _lc(changes, returns, fundamentals=funds, classifications=other)
+    assert rows[0].sector == "Technology"
+    assert rows[0].industry == "Software"
+    assert rows[0].theme is None
+
+
+def test_lifecycle_classification_present_wins_even_with_null_fields() -> None:
+    changes, returns = _classif_changes_returns()
+    funds = {"ALPHA.US": _fund("ALPHA.US", sector="Technology", industry="Software")}
+    # ticker IS classified but only theme is set -> classification wins outright; fundamentals
+    # are NOT consulted, so sector/industry stay None.
+    classifications: dict[str, dict[str, str | None]] = {
+        "ALPHA": {"sector": None, "industry": None, "theme": "Special Situations"}
+    }
+    rows = _lc(changes, returns, fundamentals=funds, classifications=classifications)
+    assert rows[0].sector is None
+    assert rows[0].industry is None
+    assert rows[0].theme == "Special Situations"
+
+
+def test_lifecycle_blank_when_neither_source_has_ticker() -> None:
+    changes, returns = _classif_changes_returns()
+    rows = _lc(changes, returns, fundamentals={}, classifications={})
+    assert rows[0].sector is None
+    assert rows[0].industry is None
+    assert rows[0].theme is None

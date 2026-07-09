@@ -137,8 +137,9 @@ class EodhdClient:
         if self._api_token is not None:
             params[constants.EODHD_PARAM_API_TOKEN] = self._api_token
 
+        url = constants.EODHD_EOD_URL_TEMPLATE.format(symbol=symbol)
         try:
-            raw = self._get(symbol, params)
+            raw = self._get(symbol, params, url=url)
         except _NotFound:
             return SymbolSeries(
                 symbol=symbol,
@@ -151,15 +152,42 @@ class EodhdClient:
             raw, symbol, requested_from=from_date, requested_to=to_date
         )
 
-    def _get(self, symbol: str, params: dict[str, str]) -> object:
+    def fetch_fundamentals(self, symbol: str) -> dict[str, object] | None:
+        """Fetch EODHD fundamentals for `symbol`; return the raw parsed JSON object or None.
+
+        A 404 -> None (the symbol has no fundamentals). Validates the symbol vs
+        EODHD_SYMBOL_PATTERN (EodhdError). Reuses the same throttle/retry/backoff as fetch_eod.
+        A 200 body that is not a JSON OBJECT -> EodhdError. Parsing of General.Sector/Industry/
+        Type is the RESOLVER's job (fundamentals.py) — the client stays transport-only.
+        """
+        if constants.EODHD_SYMBOL_PATTERN.fullmatch(symbol) is None:
+            raise EodhdError(f"invalid EODHD symbol: {symbol!r}")
+
+        params = {constants.EODHD_PARAM_FMT: constants.EODHD_PARAM_FMT_JSON}
+        # OMIT the token param entirely when None (do NOT put None into a dict[str, str]).
+        if self._api_token is not None:
+            params[constants.EODHD_PARAM_API_TOKEN] = self._api_token
+
+        url = constants.EODHD_FUNDAMENTALS_URL_TEMPLATE.format(symbol=symbol)
+        try:
+            raw = self._get(symbol, params, url=url)
+        except _NotFound:
+            return None
+        if not isinstance(raw, dict):
+            raise EodhdError(
+                f"EODHD fundamentals for {symbol} is not a JSON object: {type(raw).__name__}"
+            )
+        return raw
+
+    def _get(self, symbol: str, params: dict[str, str], *, url: str) -> object:
         """Throttled GET with retry/backoff. Returns parsed JSON or raises EodhdError/_NotFound.
 
         SINGLE throttle owner: acquires ONE token before EACH HTTP attempt (incl. retries).
         429 honors Retry-After else the per-minute window; other retryable statuses use
-        exponential backoff. A 404 raises _NotFound (fetch_eod converts to an empty series).
-        The token value is NEVER logged (we log the symbol only, never the params).
+        exponential backoff. A 404 raises _NotFound (the caller converts: empty series / None).
+        The token value is NEVER logged (we log the symbol only, never the params). `url` is
+        built by the caller (the EOD or fundamentals endpoint) so the throttle is shared.
         """
-        url = constants.EODHD_EOD_URL_TEMPLATE.format(symbol=symbol)
         total_attempts = 1 + self._max_retries
         last_error = "no attempts made"
 

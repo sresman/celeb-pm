@@ -17,6 +17,7 @@ from celebpm.config_loader import InvestorConfig
 from celebpm.errors import DiscoveryError
 from celebpm.models import (
     ChangeType,
+    FundamentalsEntry,
     PositionChange,
     PositionRecord,
     ReturnRecord,
@@ -51,6 +52,10 @@ class NewIdeaRow:
     excess_filing_to_filing_pct: float | None
     excess_next_period_high_pct: float | None
     excess_next_period_low_pct: float | None
+    # --- SMH-excess (position - SMH) for the three forward measures ---
+    smh_excess_filing_to_filing_pct: float | None
+    smh_excess_next_period_high_pct: float | None
+    smh_excess_next_period_low_pct: float | None
     # --- cumulative (first->last filing if held multi-Q) ---
     cumulative_return_pct: float | None
     # --- hold-chain analytics ---
@@ -274,10 +279,14 @@ def _build_row(
         spy_f2f = ret.spy_filing_to_filing_return_pct
         spy_h = ret.spy_next_period_high_pct
         spy_l = ret.spy_next_period_low_pct
+        smh_f2f = ret.smh_filing_to_filing_return_pct
+        smh_h = ret.smh_next_period_high_pct
+        smh_l = ret.smh_next_period_low_pct
     else:
         best_entry = worst_entry = None
         f2f = f2h = f2l = cumulative = None
         spy_f2f = spy_h = spy_l = None
+        smh_f2f = smh_h = smh_l = None
 
     chain_result = _walk_hold_chain(new_change, chain)
 
@@ -299,6 +308,9 @@ def _build_row(
         excess_filing_to_filing_pct=_excess(f2f, spy_f2f),
         excess_next_period_high_pct=_excess(f2h, spy_h),
         excess_next_period_low_pct=_excess(f2l, spy_l),
+        smh_excess_filing_to_filing_pct=_excess(f2f, smh_f2f),
+        smh_excess_next_period_high_pct=_excess(f2h, smh_h),
+        smh_excess_next_period_low_pct=_excess(f2l, smh_l),
         cumulative_return_pct=cumulative,
         quarters_held=chain_result.quarters_held,
         max_weight_pct=chain_result.max_weight_pct,
@@ -439,6 +451,10 @@ class ConvictionAddRow:
     excess_filing_to_filing_pct: float | None
     excess_next_period_high_pct: float | None
     excess_next_period_low_pct: float | None
+    # --- SMH-excess (position - SMH) ---
+    smh_excess_filing_to_filing_pct: float | None
+    smh_excess_next_period_high_pct: float | None
+    smh_excess_next_period_low_pct: float | None
     # --- derived lookahead / hold state ---
     followed_by_exit: bool
     followed_by_another_add: bool
@@ -629,9 +645,13 @@ def _build_conviction_row(
         spy_f2f = add_ret.spy_filing_to_filing_return_pct
         spy_h = add_ret.spy_next_period_high_pct
         spy_l = add_ret.spy_next_period_low_pct
+        smh_f2f = add_ret.smh_filing_to_filing_return_pct
+        smh_h = add_ret.smh_next_period_high_pct
+        smh_l = add_ret.smh_next_period_low_pct
     else:
         f2f = f2h = f2l = None
         spy_f2f = spy_h = spy_l = None
+        smh_f2f = smh_h = smh_l = None
 
     # --- lookahead: followed_by_exit / followed_by_another_add (next chain entry) ---
     followed_by_exit = False
@@ -673,6 +693,9 @@ def _build_conviction_row(
         excess_filing_to_filing_pct=_excess(f2f, spy_f2f),
         excess_next_period_high_pct=_excess(f2h, spy_h),
         excess_next_period_low_pct=_excess(f2l, spy_l),
+        smh_excess_filing_to_filing_pct=_excess(f2f, smh_f2f),
+        smh_excess_next_period_high_pct=_excess(f2h, smh_h),
+        smh_excess_next_period_low_pct=_excess(f2l, smh_l),
         followed_by_exit=followed_by_exit,
         followed_by_another_add=followed_by_another_add,
         still_held=still_held,
@@ -835,4 +858,258 @@ def build_conviction_adds_view(
         slug=config.slug,
         rows=rows_tuple,
         summary=_build_conviction_summary(rows_tuple),
+    )
+
+
+# ======================================================================================
+# View 3 — Position Lifecycle (one row per (cusip, security_type) per quarter held).
+# PURE / DISK-FREE (no disk, network, or pandas; MAY log WARN). Reshapes changes+returns into
+# entry->exit cycles. sector/industry come from a PRE-RESOLVED fundamentals map (the network
+# fetch is a separate cacheable step — NOT embedded here). CSV-only (no summary). See plan.
+# ======================================================================================
+
+
+@dataclass(frozen=True, kw_only=True)
+class PositionLifecycleRow:
+    """One (cusip, security_type) in one quarter held, inside its entry->exit cycle."""
+
+    cycle_id: str  # f"{entry_ticker}_{security_type}_{n}" (n increments per re-entry)
+    ticker_display: str  # this row's ticker fallback chain; CSV header "ticker"
+    company: str  # positions lookup; fallback ticker_display->cusip
+    cusip: str
+    security_type: str  # COMMON / PUT / CALL
+    sector: str | None  # manual classification, else EODHD General.Sector ("ETF" for funds)
+    industry: str | None  # manual classification, else EODHD General.Industry
+    theme: str | None  # manual classification only (no EODHD equivalent); None if uncovered
+    period: date  # quarter-end
+    filing_date: date  # this quarter's 13F filing date (the anchor)
+    change_type: str  # ChangeType.value (NEW / EXIT / ACTIVE_ADD / ... / HOLD)
+    quarters_since_entry: int  # 0 at the cycle's entry quarter, +1 each subsequent quarter
+    weight_pct: float | None  # current_weight_pct (None for EXIT)
+    weight_delta_bps: float | None  # weight change from prior quarter, bps
+    shares_delta_pct: float | None  # share-count change from prior quarter
+    period_return_pct: float | None  # filing-date -> next filing-date return
+    period_high_pct: float | None  # best price next period vs this filing date
+    period_low_pct: float | None  # worst price next period vs this filing date
+    cum_return_from_entry_pct: float | None  # entry-price -> this-quarter price; 0.0 at entry
+    spy_period_return_pct: float | None  # SPY return over the same window
+    excess_period_return_pct: float | None  # period_return - spy_period_return (both non-None)
+    smh_period_return_pct: float | None  # SMH return over the same window
+    excess_vs_smh_pct: float | None  # period_return - smh_period_return (both non-None)
+    price_on_filing_date: float | None  # close on this filing date
+    entry_price: float | None  # price_on_filing_date of the cycle's first record
+    priced: bool  # whether returns could be computed for this quarter
+
+
+@dataclass(frozen=True, kw_only=True)
+class PositionLifecycleView:
+    cik: str
+    slug: str
+    rows: tuple[PositionLifecycleRow, ...]  # sorted cycle_id ASC, quarters_since_entry ASC
+
+
+def _return_by_period_key(
+    returns: list[ReturnRecord],
+) -> dict[tuple[str, str, date], ReturnRecord]:
+    """{(cusip, security_type, period): ReturnRecord}. Unique per change (changes<->returns 1:1).
+
+    Keyed on `period` (not filing_date+change_type) so a lifecycle row joins its return by the
+    same total key the change is identified by. Keep-first + WARN on a duplicate key."""
+    out: dict[tuple[str, str, date], ReturnRecord] = {}
+    for rec in returns:
+        key = (rec.cusip, rec.security_type, rec.period)
+        if key in out:
+            logger.warning(
+                "duplicate ReturnRecord period-key %s; keeping first, ignoring later", key
+            )
+            continue
+        out[key] = rec
+    return out
+
+
+def _lookup_sector_industry(
+    ret: ReturnRecord | None,
+    fundamentals: dict[str, FundamentalsEntry],
+) -> tuple[str | None, str | None]:
+    """(sector, industry) via the row's eodhd_symbol; (None, None) if unpriced/unmapped/uncached."""
+    if ret is None or ret.eodhd_symbol is None:
+        return None, None
+    entry = fundamentals.get(ret.eodhd_symbol)
+    if entry is None:
+        return None, None
+    return entry.sector, entry.industry
+
+
+def _lookup_classification(
+    ticker_display: str,
+    classifications: dict[str, dict[str, str | None]],
+    ret: ReturnRecord | None,
+    fundamentals: dict[str, FundamentalsEntry],
+) -> tuple[str | None, str | None, str | None]:
+    """(sector, industry, theme) with the manual classifications file as the PRIMARY source.
+
+    PRIMARY: the hand-maintained classifications map keyed by ticker — if the ticker is present,
+    its sector/industry/theme win outright (the EODHD cache is NOT consulted, even for fields the
+    manual entry left null). FALLBACK: the EODHD fundamentals cache (sector/industry only; theme
+    has no EODHD equivalent so it stays None). Blank on all three if neither source covers it.
+    """
+    manual = classifications.get(ticker_display)
+    if manual is not None:
+        return (
+            manual.get(constants.CLASSIFICATION_SECTOR_KEY),
+            manual.get(constants.CLASSIFICATION_INDUSTRY_KEY),
+            manual.get(constants.CLASSIFICATION_THEME_KEY),
+        )
+    sector, industry = _lookup_sector_industry(ret, fundamentals)
+    return sector, industry, None
+
+
+def _build_lifecycle_row(
+    change: PositionChange,
+    *,
+    ret: ReturnRecord | None,
+    pos: PositionRecord | None,
+    fundamentals: dict[str, FundamentalsEntry],
+    classifications: dict[str, dict[str, str | None]],
+    cycle_id: str,
+    quarters_since_entry: int,
+    entry_price: float | None,
+) -> PositionLifecycleRow:
+    cusip = change.cusip
+    security_type = change.security_type
+
+    ticker_display = _ticker_display(
+        change.ticker, pos.ticker if pos is not None else None, cusip
+    )
+    company = (_nonblank(pos.company_name) if pos is not None else None) or ticker_display
+    sector, industry, theme = _lookup_classification(
+        ticker_display, classifications, ret, fundamentals
+    )
+
+    priced = ret is not None and ret.priced
+    if ret is not None:
+        period_return = ret.filing_to_filing_return_pct
+        period_high = ret.filing_to_next_period_high_pct
+        period_low = ret.filing_to_next_period_low_pct
+        spy_period = ret.spy_filing_to_filing_return_pct
+        smh_period = ret.smh_filing_to_filing_return_pct
+        price_on_filing_date = ret.price_on_filing_date
+    else:
+        period_return = period_high = period_low = None
+        spy_period = None
+        smh_period = None
+        price_on_filing_date = None
+
+    # cum_return_from_entry_pct: 0.0 at the entry quarter (spec); else entry-price -> this price.
+    if quarters_since_entry == 0:
+        cum_return_from_entry_pct: float | None = 0.0
+    elif entry_price is not None and price_on_filing_date is not None:
+        cum_return_from_entry_pct = (price_on_filing_date / entry_price - 1.0) * 100.0
+    else:
+        cum_return_from_entry_pct = None
+
+    return PositionLifecycleRow(
+        cycle_id=cycle_id,
+        ticker_display=ticker_display,
+        company=company,
+        cusip=cusip,
+        security_type=security_type,
+        sector=sector,
+        industry=industry,
+        theme=theme,
+        period=change.period,
+        filing_date=change.filing_date,
+        change_type=change.change_type.value,
+        quarters_since_entry=quarters_since_entry,
+        weight_pct=change.current_weight_pct,
+        weight_delta_bps=change.weight_delta_bps,
+        shares_delta_pct=change.shares_delta_pct,
+        period_return_pct=period_return,
+        period_high_pct=period_high,
+        period_low_pct=period_low,
+        cum_return_from_entry_pct=cum_return_from_entry_pct,
+        spy_period_return_pct=spy_period,
+        excess_period_return_pct=_excess(period_return, spy_period),
+        smh_period_return_pct=smh_period,
+        excess_vs_smh_pct=_excess(period_return, smh_period),
+        price_on_filing_date=price_on_filing_date,
+        entry_price=entry_price,
+        priced=priced,
+    )
+
+
+def build_position_lifecycle_view(
+    *,
+    config: InvestorConfig,
+    positions: list[PositionRecord],
+    changes: list[PositionChange],
+    returns: list[ReturnRecord],
+    fundamentals: dict[str, FundamentalsEntry],
+    classifications: dict[str, dict[str, str | None]] | None = None,
+) -> PositionLifecycleView:
+    """Build View 3 (Position Lifecycle) from positions/changes/returns + sector/industry sources.
+
+    Disk-free; may WARN. Groups changes by (cusip, security_type) ascending by period, segments
+    each group into entry->exit CYCLES, and emits one row per (cycle, quarter). A cycle starts at
+    the group's first record (first appearance / pre-data) and at every NEW (re-entry); an EXIT
+    closes the current cycle (the EXIT row belongs to it) and forces the next record to open a new
+    cycle. cycle_id = f"{entry_ticker}_{security_type}_{n}" using the cycle entry record's ticker
+    (CUSIP fallback). entry_price = the cycle's first record's price_on_filing_date.
+    quarters_since_entry counts 0,1,2,... within the cycle. sector/industry/theme come from the
+    manual `classifications` map (keyed by ticker) first, then the EODHD `fundamentals` cache as a
+    fallback (sector/industry only). Rows sorted cycle_id ASC, quarters_since_entry ASC. Raises
+    DiscoveryError on any cik mismatch with config.cik.
+    """
+    classifications = classifications if classifications is not None else {}
+    _validate_cik(config, positions, changes, returns)
+
+    pos_by_key = _position_by_key(positions)
+    ret_by_period = _return_by_period_key(returns)
+    chains = _chain_by_key(changes)  # grouped by (cusip, security_type), sorted by period
+
+    rows: list[PositionLifecycleRow] = []
+    for (cusip, security_type), chain in chains.items():
+        cycle_seq = 0
+        cycle_id = ""
+        entry_price: float | None = None
+        quarters_since_entry = 0
+        prev_was_exit = False
+        for i, change in enumerate(chain):
+            ret = ret_by_period.get((cusip, security_type, change.period))
+            starts_cycle = i == 0 or change.change_type == ChangeType.NEW or prev_was_exit
+            if starts_cycle:
+                cycle_seq += 1
+                quarters_since_entry = 0
+                entry_pos = pos_by_key.get((cusip, security_type, change.period))
+                entry_ticker = _ticker_display(
+                    change.ticker, entry_pos.ticker if entry_pos is not None else None, cusip
+                )
+                cycle_id = f"{entry_ticker}_{security_type}_{cycle_seq}"
+                entry_price = (
+                    ret.price_on_filing_date
+                    if ret is not None and ret.price_on_filing_date is not None
+                    else None
+                )
+            else:
+                quarters_since_entry += 1
+            pos = pos_by_key.get((cusip, security_type, change.period))
+            rows.append(
+                _build_lifecycle_row(
+                    change,
+                    ret=ret,
+                    pos=pos,
+                    fundamentals=fundamentals,
+                    classifications=classifications,
+                    cycle_id=cycle_id,
+                    quarters_since_entry=quarters_since_entry,
+                    entry_price=entry_price,
+                )
+            )
+            prev_was_exit = change.change_type == ChangeType.EXIT
+
+    rows.sort(key=lambda r: (r.cycle_id, r.quarters_since_entry))
+    return PositionLifecycleView(
+        cik=config.cik,
+        slug=config.slug,
+        rows=tuple(rows),
     )
