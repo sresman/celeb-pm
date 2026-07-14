@@ -1,0 +1,84 @@
+{
+  "date": "2025-10-22",
+  "source": "Invested by Aleph \u2014 Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "thesis_id": "T8",
+  "summary": "Semiconductors (public and private) are structurally advantaged because AI makes global GDP inexorably more silicon-intensive",
+  "summary_extended": "Baker argues that semiconductors represent a structurally advantaged investment category because AI fundamentally and permanently increases the silicon intensity of global GDP. His core evidence is a margin/compute-spend comparison: AI companies operate at roughly 40% gross margins with approximately 50% of revenue flowing to compute, versus traditional SaaS businesses at 85% gross margins with only ~5% going to compute \u2014 meaning the shift from SaaS to AI-native business models dramatically expands the total addressable market for silicon. This structural dynamic makes it difficult to bet against semiconductors as a category, and Baker expresses conviction across both public and private semiconductor investments. He is particularly enthusiastic about venture-stage semiconductor companies, noting that founders in this space are often experienced operators in their 50s with proven track records, which he views as a quality signal. The investment implication is a broad long bias on the semiconductor sector, with no single company singled out as the primary beneficiary.",
+  "detail": "AI companies have best-case ~40% gross margins with ~50% of revenue going to compute, vs. SaaS at 85% gross margins with ~5% going to compute. This structural shift means AI makes the global economy permanently more silicon-intensive. Baker is bullish on both public and private semis, with particular enthusiasm for venture semis where founders are often experienced 50-year-olds with proven track records.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker provides specific margin/compute-spend data points and explicitly states 'it's hard to bet against semiconductors public and private' as a capital deployment priority",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "venture semis"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "AI makes global GDP inexorably more silicon intensive",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "MU",
+    "AMAT",
+    "KLAC",
+    "LRCX",
+    "ASML"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of compute infrastructure that AI companies spend ~50% of revenue on; as the largest direct beneficiary of AI-driven silicon intensity, it qualifies as a direct beneficiary of this structural thesis, though it is not the singular subject."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is a semiconductor company but Baker makes no specific claim about AMD in this thesis; the thesis is a broad sector call and AMD's inclusion appears to be contamination from adjacent semiconductor discussion rather than a specific implication of this thesis."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "AVGO is a major supplier of custom AI silicon (XPUs) and networking for AI datacenters, directly benefiting from the structural increase in compute spend that Baker describes; its exposure to hyperscaler AI infrastructure makes it a genuine direct beneficiary."
+    },
+    {
+      "ticker": "MU",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker's thesis is about AI driving silicon intensity broadly, not specifically about memory; MU's inclusion appears to be bleed-in from adjacent memory/HBM discussion rather than a specific implication of this thesis."
+    },
+    {
+      "ticker": "AMAT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker does not discuss semiconductor equipment in this thesis; AMAT's inclusion appears to be contamination from the broader semiconductor theme rather than a direct implication of the AI compute-spend structural argument."
+    },
+    {
+      "ticker": "KLAC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Same as AMAT \u2014 semiconductor equipment companies are not specifically implicated by the AI gross-margin/compute-spend structural argument Baker is making here."
+    },
+    {
+      "ticker": "LRCX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Same as AMAT and KLAC \u2014 no specific mention or implication of semiconductor equipment in this thesis; tangential bleed-in from the broader semiconductor sector context."
+    },
+    {
+      "ticker": "ASML",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "ASML is not US-listed and is not specifically implicated by this thesis; its inclusion appears to be contamination from the broader semiconductor supply chain theme discussed elsewhere in the transcript."
+    }
+  ]
+}

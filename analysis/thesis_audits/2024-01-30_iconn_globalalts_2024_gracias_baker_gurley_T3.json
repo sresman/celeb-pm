@@ -1,0 +1,46 @@
+{
+  "date": "2024-01-30",
+  "source": "iConnections Global Alts 2024 \u2014 Industry titans panel: AI, growth/crossover investing",
+  "thesis_id": "T3",
+  "summary": "Coherent optics must move inside the data center by 2025-2026, representing a transformational architectural shift",
+  "summary_extended": "Baker argues that coherent optics technology, which currently sits outside data centers, will be required inside data centers by 2025 and no later than 2026, representing what he calls an 'unimaginable change to the architecture of a data center.' He frames this as a structural, near-inevitable architectural shift driven by the bandwidth demands of AI infrastructure scaling, not a speculative outcome. The investment implication is direct: companies that design and manufacture coherent optical components and systems stand to benefit enormously from this new inside-the-datacenter deployment wave. Baker explicitly names Ciena (CIEN) as a current public holding in his portfolio, and Coherent Corp (COHR), as the other major publicly listed coherent optics pure-play, is a clear implied beneficiary given its dominant position in coherent optical components and transceivers.",
+  "detail": "Baker states coherent optics currently sit outside data centers but will be required inside by 2025, no later than 2026. He describes this as an 'unimaginable change to the architecture of a data center' and names Ciena as a public holding.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Specific timeline given (2025, no later than 2026), named as a current public holding, described with strong conviction language",
+  "themes": [
+    "AI datacenter infrastructure",
+    "coherent optics",
+    "networking"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "coherent Optics are going to have to come inside the data center in 2025",
+  "tickers_named_original": [
+    "CIEN"
+  ],
+  "tickers_direct": [
+    "CIEN",
+    "COHR"
+  ],
+  "tickers_subject": [
+    "CIEN"
+  ],
+  "tickers_implied_original": [
+    "COHR",
+    "IIVI/II-VI (now Coherent Corp)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CIEN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Ciena as a current public holding in the context of this coherent optics thesis. Ciena is a leading coherent optical networking company and is the direct subject of his investment call."
+    },
+    {
+      "ticker": "COHR",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Coherent Corp (formerly II-VI, which acquired the original Coherent) is the other major US-listed coherent optics company and a direct beneficiary of inside-datacenter coherent optics adoption. Its inclusion as an implied ticker is well-supported given its dominant role in coherent optical components and transceivers."
+    }
+  ]
+}

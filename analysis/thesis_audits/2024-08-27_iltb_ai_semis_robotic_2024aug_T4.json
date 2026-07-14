@@ -1,0 +1,46 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best \u2014 AI, semiconductors, and the robotic frontier (EP.385)",
+  "thesis_id": "T4",
+  "summary": "Networking, storage, and memory are the most underinvested and highest-opportunity layers in AI infrastructure because GPU speed has outpaced the rest of the data center 50x vs 4-5x",
+  "summary_extended": "Baker argues that networking, storage, and memory represent the most underinvested and highest-opportunity layers in AI infrastructure, driven by a severe capability mismatch: GPUs have improved roughly 50x in speed over the past five years while networking, storage, and memory have only improved 4-5x. This imbalance manifests in poor cluster efficiency \u2014 model flop utilization (MFU) sits at only 35-40% despite per-GPU theoretical utilization (MAMF) of ~83%, meaning the bottleneck is not the GPU itself but the surrounding infrastructure. Baker explicitly states he is 'targeting his dollars' at next-generation networking, storage, and memory technologies, calling networking in particular 'the choke point' with the 'highest likelihood of success' as an investment. The implication is that companies supplying high-speed networking fabrics, storage solutions, and memory bandwidth for AI clusters are structurally undervalued relative to GPU-centric plays, and represent a higher-conviction infrastructure opportunity as clusters scale.",
+  "detail": "Over the last five years, GPUs have gotten ~50x faster while networking, storage, and memory have only improved 4-5x. This mismatch is why MFU sits at 35-40% despite per-GPU MAMF of ~83%. Investing in next-generation networking, storage, and memory technologies\u2014particularly networking\u2014is the highest-conviction infrastructure opportunity because these are the binding constraints on cluster efficiency.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states this is where he is 'targeting my dollars' and calls it 'the choke point' and 'highest likelihood of success'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "networking"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "SFU is at 30 percent. Wow, that's a great place to invest",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "ANET",
+    "MU",
+    "PSTG"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ANET",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Arista Networks is the dominant supplier of high-speed Ethernet networking for AI data centers and is a direct beneficiary of Baker's thesis that networking is the binding constraint and highest-conviction infrastructure opportunity in AI clusters."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Micron is the primary US-listed producer of HBM and advanced DRAM memory, directly benefiting from Baker's thesis that memory is one of the most underinvested and highest-opportunity layers in AI infrastructure."
+    },
+    {
+      "ticker": "PSTG",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Pure Storage is a leading provider of high-performance storage solutions for AI workloads and directly benefits from Baker's thesis that storage is a binding constraint and underinvested layer in AI infrastructure."
+    }
+  ]
+}

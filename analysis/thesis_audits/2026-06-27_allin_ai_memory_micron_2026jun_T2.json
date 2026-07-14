@@ -1,0 +1,36 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T2",
+  "summary": "DRAM will represent 30-40% of all hyperscaler capex next year",
+  "summary_extended": "Baker makes a striking structural claim that DRAM will represent 30-40% of the hundreds of billions in annual hyperscaler capital expenditure in the coming year, which he himself characterizes as a 'wild' but factual projection. The thesis rests on the explosive growth of HBM (High Bandwidth Memory) demand driven by AI accelerator buildouts, where memory has become a primary bottleneck and cost center rather than a commodity afterthought. This represents a fundamental shift in the semiconductor supply chain, elevating DRAM producers to disproportionate beneficiaries of the AI capex supercycle \u2014 comparable in scale to the hyperscalers' own infrastructure spending. The investment implication is a strong buy on US-listed DRAM producers, particularly Micron, as the primary publicly accessible equity play on this structural demand shift; Korean producers SK Hynix and Samsung are the other major beneficiaries but are not US-listed equities.",
+  "detail": "Baker projects that of the hundreds of billions in hyperscaler capex, 30-40% will flow directly to DRAM. This is a structural shift that makes DRAM producers disproportionate beneficiaries of AI capex cycles.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a specific numerical forecast with high confidence, framing it as 'wild' but factual",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "DRAM is probably going to be 30 to 40% of all hyperscaler capex next year",
+  "tickers_named_original": [
+    "MU"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SK Hynix (implied: 000660.KS)",
+    "Samsung (implied: 005930.KS)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is the primary US-listed DRAM and HBM producer and is the direct equity beneficiary of a thesis projecting 30-40% of hyperscaler capex flowing to DRAM. This is the core investable name for this thesis."
+    }
+  ]
+}

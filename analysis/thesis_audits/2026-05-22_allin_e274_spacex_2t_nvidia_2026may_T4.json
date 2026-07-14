@@ -1,0 +1,32 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T4",
+  "summary": "SpaceX's Elon Web Services (EWS) data center business can grow dramatically faster than previously contemplated, with the Anthropic $15B/year contract as proof of concept",
+  "summary_extended": "Baker argues that SpaceX's Elon Web Services (EWS) data center business has a dramatically larger growth trajectory than previously understood, with Anthropic's $15B/year compute contract ($1.25B/month for Colossus 1 and parts of Colossus 2) serving as the proof-of-concept anchor tenant that de-risks rapid capacity expansion. He highlights SpaceX's extraordinary construction velocity \u2014 compressing build times from 122 days to 91 days to 66 days per data center \u2014 and lower costs relative to hyperscalers, arguing these operational advantages make SpaceX the fastest GPU deployment platform in the industry. Baker notes that Jensen Huang allocates GPUs to whoever can plug them in fastest, meaning SpaceX's construction speed creates a self-reinforcing advantage in securing Nvidia GPU supply. The investment implication is that SpaceX (private) is the primary beneficiary, and the thesis does not cleanly translate to any publicly listed equity; NVDA is a loose downstream beneficiary only insofar as faster SpaceX buildout accelerates GPU consumption, but this is not a thesis specifically about Nvidia. Baker frames this as a medium-term structural re-rating of EWS's addressable market, not a near-term trade on any listed stock.",
+  "detail": "Anthropic is paying SpaceX $1.25B/month ($15B/year) for Colossus 1 and parts of Colossus 2 compute. Baker notes SpaceX builds data centers dramatically faster (122 days \u2192 91 days \u2192 66 days) and at lower cost than anyone else. With a clear off-take partner, he expects SpaceX to stamp out data centers rapidly. Jensen allocates GPUs to whoever can plug them in fastest, further advantaging SpaceX.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls the $15B Anthropic contract 'extraordinary' and says the business 'can grow dramatically faster than anyone could have contemplated three months ago'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "space/orbital compute",
+    "EWS/xAI compute"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "15 billion dollars from Anthropic is extraordinary",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker mentions Jensen Huang's GPU allocation decisions as context for why SpaceX benefits, but the thesis is specifically about SpaceX/EWS as a private company. NVDA is not the subject of the thesis nor a direct, unambiguous beneficiary in a way that distinguishes it from any other GPU consumer story. Its inclusion is incidental to explaining SpaceX's competitive advantage, not a standalone investment implication."
+    }
+  ]
+}

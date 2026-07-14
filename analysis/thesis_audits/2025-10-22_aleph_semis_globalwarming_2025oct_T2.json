@@ -1,0 +1,35 @@
+{
+  "date": "2025-10-22",
+  "source": "Invested by Aleph \u2014 Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "thesis_id": "T2",
+  "summary": "XAI and Google have the most unique data among frontier labs, giving them structural training advantages",
+  "summary_extended": "Baker argues that among frontier AI labs, xAI and Google possess the most structurally defensible data moats, giving them durable training advantages over competitors. His reasoning is that xAI has exclusive access to the X platform's real-time social data stream, while Google benefits from its unmatched search index and knowledge graph \u2014 both representing data assets that cannot be replicated by rivals. This view represents a refinement of his prior thesis that foundation models lacking unique proprietary data are the fastest-depreciating assets in technology. Baker notes that Anthropic made a smart early bet on code-focused training data, and OpenAI secured internet-scale distribution by being first to market, but neither has the same quality of unique, ongoing data generation as xAI or Google. The investment implication is that GOOGL is the primary publicly-listed beneficiary of this structural data moat thesis, as xAI remains private.",
+  "detail": "Baker modified his prior thesis that foundation models without unique data are the fastest-depreciating assets. He now sees XAI (via X platform data) and Google (via search/knowledge graph) as having the most defensible data moats among frontier labs. Anthropic smartly focused on code early; OpenAI won internet-scale distribution by being first.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker names specific companies and data advantages explicitly, framing it as a refined view from a prior position",
+  "themes": [
+    "AI foundation models",
+    "data moats"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "Google and XAI having the most unique data",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is explicitly named as one of the two companies with the most unique data moats (search index and knowledge graph), making it a direct subject of this thesis and the only publicly-listed pure-play on this specific structural advantage Baker identifies."
+    }
+  ]
+}

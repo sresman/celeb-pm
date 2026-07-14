@@ -1,0 +1,64 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best \u2014 AI, semiconductors, and the robotic frontier (EP.385)",
+  "thesis_id": "T14",
+  "summary": "Hyperscaler ROIC has increased despite rising capex, disproving the AI ROI skeptic narrative",
+  "summary_extended": "Baker argues that the AI ROI debate is empirically settled by pointing to observable ROIC data: every major hyperscaler and AI spender has seen return on invested capital rise even as capex has surged dramatically, which he calls definitive evidence against the skeptic narrative. The core mechanism he identifies is GPU-hour substitution for human labor \u2014 AI is replacing expensive headcount with cheaper compute, directly expanding margins and returns. Baker uses Meta as his primary case study, arguing that Meta's revenue re-acceleration following the IDFA-driven targeting collapse was driven specifically by AI-powered ad targeting (Meta Advantage), demonstrating a concrete, measurable ROI from AI investment. He states that until ROIC at major AI spenders actually declines, ROI skepticism is 'the height of intellectual ridiculousness,' framing this as a high-conviction, data-driven view rather than a speculative one. The investment implication is to remain long the major hyperscalers and AI-heavy platform companies, as their rising ROIC justifies continued elevated capex and validates the AI investment cycle.",
+  "detail": "Baker argues the AI ROI debate is empirically settled by observing that ROIC has risen at all major AI spenders even as capex has surged. The mechanism is substitution of GPU hours for human labor. Meta's revenue re-acceleration after IDFA loss is attributed to AI-driven targeting (Meta Advantage). Until ROIC at major AI spenders declines, ROI skepticism is 'the height of intellectual ridiculousness.'",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls ROI skepticism 'intellectually ridiculous' given observable ROIC data; uses Meta as a specific case study",
+  "themes": [
+    "AI ROI",
+    "hyperscaler capex",
+    "AI monetization"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "ROIC has gone up for all of these companies since they ramped CapEx",
+  "tickers_named_original": [
+    "META",
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "META",
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "tickers_subject": [
+    "META",
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "tickers_implied_original": [
+    "MSFT",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is the primary case study Baker uses \u2014 he specifically cites Meta Advantage and the post-IDFA revenue re-acceleration as direct evidence of AI ROI, making Meta a direct subject of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker references all major AI spenders seeing ROIC increases; Alphabet/Google is one of the named hyperscalers whose ROIC data he cites as evidence, making it a direct subject."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Microsoft is a core hyperscaler and major AI spender whose rising ROIC is part of the empirical claim Baker is making; clearly implied as one of 'all of these companies' in the thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Amazon/AWS is a major AI capex spender and hyperscaler; clearly implied as one of 'all of these companies' whose ROIC Baker references as having risen alongside capex."
+    }
+  ]
+}

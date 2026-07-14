@@ -1,0 +1,62 @@
+{
+  "date": "2019-11-26",
+  "source": "Invest Like the Best \u2014 Tech and consumer growth investing (EP.149)",
+  "thesis_id": "T7",
+  "summary": "Data quantity is the single most predictive variable of AI quality, creating compounding moats for dominant-scale internet platforms.",
+  "summary_extended": "Baker argues that data quantity is the single most predictive variable of AI quality, citing multiple Google and Microsoft Research papers showing that every order-of-magnitude increase in training data doubles AI quality (measured as halving error rates). This creates a powerful self-reinforcing feedback loop: dominant market share generates the most users, who generate the most data, which produces the fastest-improving AI algorithms, which in turn attracts more users \u2014 compounding the moat over time. Baker presents this as a core structural view on why mean reversion is unlikely for dominant-scale internet platforms, as the data advantage of incumbents is nearly impossible for challengers to replicate. The investment implication is to own the largest-scale internet platforms with the most user-generated data, as their AI quality advantage will widen structurally over the long term.",
+  "detail": "Per multiple Google and Microsoft Research papers, every order of magnitude increase in training data doubles AI quality (measured as halving error rate). This means dominant market share \u2192 most users \u2192 most data \u2192 fastest-improving algorithms, creating a self-reinforcing feedback loop that entrenches incumbents and reduces mean reversion.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Backed by specific academic citations; Baker presents this as a core structural view on competitive dynamics.",
+  "themes": [
+    "artificial intelligence",
+    "platform economics",
+    "competitive moats",
+    "big data"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "for every order of magnitude increase in data, the quality of the AI doubles",
+  "tickers_named_original": [
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "GOOGL",
+    "META",
+    "AMZN",
+    "MSFT"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "META",
+    "AMZN",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is the canonical example Baker cites \u2014 its research papers are the source of the data-scaling law, and it is the dominant-scale internet platform with the largest data moat across Search, YouTube, Maps, and Android."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Meta operates at massive scale with billions of users generating social and behavioral data across Facebook, Instagram, and WhatsApp, making it a direct beneficiary of the data-quantity-drives-AI-quality thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Amazon operates dominant-scale platforms in e-commerce and cloud (AWS), generating enormous quantities of behavioral and transactional data that directly benefit from the data-scaling dynamic Baker describes."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft Research is explicitly cited as a source of the scaling papers, and Microsoft operates large-scale platforms (LinkedIn, Bing, Azure, Office 365) generating substantial user data, making it a direct beneficiary of this structural thesis."
+    }
+  ]
+}

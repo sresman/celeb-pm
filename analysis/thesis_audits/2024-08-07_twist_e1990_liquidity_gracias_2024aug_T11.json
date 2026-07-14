@@ -1,0 +1,63 @@
+{
+  "date": "2024-08-07",
+  "source": "This Week in Startups \u2014 E1990: Liquidity Summit fireside with Antonio Gracias and Gavin Baker",
+  "thesis_id": "T11",
+  "summary": "Power and physical location for data centers \u2014 not GPUs \u2014 are now the primary rate-limiting factors for AI scaling.",
+  "summary_extended": "Baker argues that the primary bottlenecks for AI scaling have shifted away from GPUs and compute toward two physical constraints: power availability and geographic location suitable for next-generation data centers. He specifies that there are only three viable locations in the United States for these facilities, defined by the requirement to have multiple unregulated nuclear reactors within a 50-mile radius, making nuclear proximity a hard site-selection criterion. Baker projects that data centers will scale from current sizes to 1GW and eventually 5GW facilities, and that in our lifetimes the 100 largest buildings in the world will be data centers \u2014 implying an unprecedented buildout of power-intensive infrastructure. The investment implication is that companies controlling nuclear power generation near these constrained geographic nodes are structurally advantaged, as they sit at the intersection of two scarce resources: reliable carbon-free baseload power and proximity to the only viable hyperscale data center sites. Investors should focus on nuclear-capable power generators with assets near these three US locations rather than GPU or semiconductor supply chain plays.",
+  "detail": "Baker states the two rate-limiting factors for AI are no longer compute/GPUs but (1) power and (2) finding places to plug GPUs in. There are only three viable locations in the US for next-generation data centers, requiring multiple unregulated nuclear reactors within 50 miles. In our lifetimes, the 100 largest buildings in the world will be data centers; there will be 1GW then 5GW data centers.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a definitive structural view with specific technical parameters (nuclear proximity, 1GW/5GW scale); no hedging language.",
+  "themes": [
+    "power/energy",
+    "AI datacenter infrastructure",
+    "nuclear energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "only three places in the United States... near nuclear reactors... unregulated within 50 miles",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CEG",
+    "VST",
+    "TLN"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Constellation Energy (CEG)",
+    "Vistra (VST)",
+    "NRG Energy (NRG)",
+    "Talen Energy (TLN)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CEG",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Constellation Energy is the largest US nuclear operator and a direct beneficiary of the thesis that nuclear proximity to data center sites is the primary rate-limiting factor; CEG has existing nuclear assets near likely candidate locations and has already signed power agreements with hyperscalers."
+    },
+    {
+      "ticker": "VST",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Vistra operates nuclear assets in the US and benefits directly from the structural demand for nuclear-proximate power for next-generation data centers, making it a clear beneficiary of this thesis."
+    },
+    {
+      "ticker": "TLN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Talen Energy owns the Susquehanna nuclear plant and has already executed a data center co-location deal with Amazon, making it a direct and unambiguous beneficiary of Baker's nuclear-proximity thesis."
+    },
+    {
+      "ticker": "NRG",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NRG Energy is primarily a natural gas and retail power company with minimal nuclear exposure; it does not fit Baker's specific thesis about nuclear reactor proximity as the rate-limiting constraint for data center siting and should be removed."
+    },
+    {
+      "ticker": "VST",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Already captured above."
+    }
+  ]
+}

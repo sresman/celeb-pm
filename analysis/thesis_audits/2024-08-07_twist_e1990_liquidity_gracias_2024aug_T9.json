@@ -1,0 +1,37 @@
+{
+  "date": "2024-08-07",
+  "source": "This Week in Startups \u2014 E1990: Liquidity Summit fireside with Antonio Gracias and Gavin Baker",
+  "thesis_id": "T9",
+  "summary": "HBM (High Bandwidth Memory) is the primary axis of competition and constraint for AI compute; SK Hynix and Micron are the winners, Samsung has lost its way.",
+  "summary_extended": "Baker argues that High Bandwidth Memory (HBM) is the primary bottleneck constraining AI compute scaling, alongside power, and that this supply constraint is structural and will persist over the medium term. His key technical evidence is that producing HBM requires approximately 4x more wafer capacity than standard DRAM, meaning supply cannot be rapidly expanded even if demand surges. Within HBM, Baker identifies SK Hynix and Micron as the clear winners, while Samsung has 'lost its way' and is not competitive in this critical product category. The investment implication is to be long Micron (the only US-listed HBM winner) as a structural beneficiary of AI infrastructure buildout, with SK Hynix and Samsung being non-US-listed and therefore outside the actionable US equity universe. Baker frames this as a durable competitive dynamic, not a cyclical one, making Micron a high-conviction long.",
+  "detail": "Baker identifies HBM as the key bottleneck for AI infrastructure alongside power. To make HBM you need 4x more wafer space than standard DRAM. SK Hynix and Micron are the leaders; Samsung has lost its way in HBM. This is a structural supply constraint that will persist.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker speaks with specificity about wafer requirements and names specific companies as winners/losers; this is a core structural view on AI infrastructure.",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "HBM memory"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Micron and SK Hynix... Samsung has lost their way",
+  "tickers_named_original": [
+    "MU"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SK Hynix (KRX: 000660)",
+    "Samsung (KRX: 005930)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is explicitly named by Baker as one of the two winners in HBM, the structural bottleneck for AI compute. It is the only US-listed equity among the HBM leaders and is a direct beneficiary of this supply-constrained market."
+    }
+  ]
+}

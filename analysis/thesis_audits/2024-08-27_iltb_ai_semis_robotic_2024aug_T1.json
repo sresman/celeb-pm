@@ -1,0 +1,34 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best \u2014 AI, semiconductors, and the robotic frontier (EP.385)",
+  "thesis_id": "T1",
+  "summary": "Scaling laws will continue until disproven by a new GPU generation that fails to produce commensurate model quality improvements",
+  "summary_extended": "Baker argues that scaling laws \u2014 the empirical relationship between compute investment and model quality improvement \u2014 will continue to hold until definitively disproven by a specific experiment: deploying a new GPU generation with the traditional 3-5x per-chip performance improvement combined with better networking that enables 3-5x more GPUs per cluster (yielding roughly 10x total compute), and then observing no meaningful improvement in model quality. He contends this experiment has not yet been run, meaning there is currently no empirical basis to conclude scaling laws are breaking down. Because hyperscaler founders genuinely believe they are in a race to create AGI/ASI, they will continue spending on AI infrastructure without traditional ROI constraints until this disconfirming evidence emerges. The investment implication is that AI capex spending remains structurally unconstrained in the medium term, directly benefiting the dominant GPU supplier. Baker frames this as the foundational lens through which he evaluates the entire AI infrastructure capex cycle.",
+  "detail": "Baker argues the only way to disprove scaling laws is to deploy a new GPU generation with the traditional 3-5x performance improvement plus better networking enabling 3-5x more GPUs in a cluster (10x total compute), and then observe no meaningful model quality improvement. Until that experiment runs, the hyperscalers will spend without ROI constraint because founders believe they are racing to create AGI/ASI.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a structural framework he uses to evaluate the entire AI capex cycle; frames it as the foundational belief driving all hyperscaler spending decisions",
+  "themes": [
+    "AI scaling laws",
+    "AI datacenter infrastructure",
+    "foundation models"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "the only way you get irrefutable evidence scaling laws are slowing",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of the GPUs at the center of this thesis. Unconstrained hyperscaler AI capex driven by belief in scaling laws directly and primarily benefits NVDA as the GPU vendor enabling each new generation of compute clusters. It is not the subject of the thesis (which is about scaling laws as a framework) but is the clearest direct beneficiary of the spending dynamic Baker describes."
+    }
+  ]
+}

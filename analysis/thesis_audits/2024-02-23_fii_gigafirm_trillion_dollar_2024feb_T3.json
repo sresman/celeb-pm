@@ -1,0 +1,22 @@
+{
+  "date": "2024-02-23",
+  "source": "FII Institute \u2014 Rise of the Gigafirm: next trillion-dollar tech company (panel)",
+  "thesis_id": "T3",
+  "summary": "Power availability will become the binding constraint for AI infrastructure, replacing GPU availability",
+  "summary_extended": "Baker argues that the primary bottleneck for AI infrastructure is in the process of shifting from GPU availability to power availability, representing a structural transition in what constrains AI buildout. He contends that AI's rapidly growing power demands could produce a global power shortage within a few years, making energy access \u2014 not compute access \u2014 the defining limit on AI scaling. The investment implication is that companies providing power generation, transmission, or energy efficiency solutions for datacenters stand to benefit, while GPU-centric narratives may be overstated as the binding constraint. Baker also highlights improving GPU utilization as a key mitigation strategy, suggesting that software and systems optimizing compute efficiency could partially offset power constraints. No specific numeric power figures or named companies were cited in this thesis segment.",
+  "detail": "Baker explicitly states the bottleneck is shifting from GPU availability to power availability, and warns of a potential global power shortage within a few years due to AI's growing power demands. Improving GPU utilization is a key mitigation strategy.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a near-certainty transition ('is about to shift') with a specific multi-year timeline",
+  "themes": [
+    "power/energy",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "bottleneck is about to shift from GPU availability to power availability",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

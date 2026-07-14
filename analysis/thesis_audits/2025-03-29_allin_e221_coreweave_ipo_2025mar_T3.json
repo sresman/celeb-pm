@@ -1,0 +1,44 @@
+{
+  "date": "2025-03-29",
+  "source": "All-In Podcast \u2014 E221: AI cold war, Signalgate, CoreWeave IPO, tariffs",
+  "thesis_id": "T3",
+  "summary": "We are not overbuilt in AI compute today; demand continues to outstrip supply",
+  "summary_extended": "Baker argues that as of late March 2025, the AI compute market is definitively not overbuilt, directly contradicting the post-DeepSeek narrative that demand for AI infrastructure had peaked or that a supply glut was forming. He cites four real-time data points as evidence: China is purchasing every GPU it can acquire, a major Chinese server manufacturer has warned of an imminent GPU shortage in China, HBM memory prices are rising daily, and OpenAI has been forced to gate its new image generation service due to GPU scarcity. The investment implication is that fears of AI infrastructure overbuilding are premature, and companies supplying GPUs and HBM memory into this constrained market remain in a favorable demand environment. Baker's view is explicitly contrarian to the post-DeepSeek consensus and is grounded in near-term supply-demand signals rather than long-term projections.",
+  "detail": "Baker cites: (1) China buying every GPU it can get, (2) a major Chinese server manufacturer warning of imminent GPU shortage in China, (3) rising HBM memory prices daily, and (4) OpenAI gating its new image generation service due to GPU scarcity. He concludes the market is not overbuilt as of late March 2025.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses the phrase 'we're not overbuilt today' twice and provides four distinct real-time data points as evidence.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "we're definitely not overbuilt yet since deep seek came out",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "MU",
+    "HXSL",
+    "Samsung (005930.KS)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant GPU supplier; a thesis about GPU scarcity and unmet AI compute demand directly benefits NVDA as the primary supplier of those constrained GPUs."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is the only US-listed HBM producer; rising HBM prices cited as a key data point directly benefits MU as a major HBM supplier."
+    }
+  ]
+}

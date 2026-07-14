@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha \u2014 Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T14",
+  "summary": "The most AI-exposed mega-caps are at attractive valuations despite market simultaneously fearing AI job displacement",
+  "summary_extended": "Baker observes a striking market paradox: investors simultaneously fear that AI will cause widespread unemployment and depress consumer spending, yet the mega-cap stocks most directly exposed to AI monetization are trading at what he characterizes as 'pretty attractive valuations.' He argues this disconnect represents a mispricing \u2014 if AI is truly transformative enough to threaten mass employment, the companies leading and monetizing that transformation should command premium multiples, not discounted ones. The implied investment thesis is that the most AI-exposed mega-caps are a buying opportunity precisely because the market is pricing in macro fear without crediting the earnings power of the AI enablers. Baker does not cite specific P/E multiples or price targets, but frames this as a medium-term contrarian opportunity in names like the hyperscalers and AI platform leaders.",
+  "detail": "Baker notes a paradox: markets fear AI-driven unemployment (potentially depressing consumer spending/economy) while the most AI-exposed mega-caps trade at 'pretty attractive valuations.' He implies this is a buying opportunity.",
+  "confidence": "moderate",
+  "confidence_evidence": "Stated as an observation of paradox with implied bullish conclusion; not an explicit buy call",
+  "themes": [
+    "AI software",
+    "tech valuation",
+    "mega-cap tech"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "most AI exposed mega caps at pretty attractive valuations",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AMZN"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AMZN",
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft is one of the most AI-exposed mega-caps via Copilot, Azure AI, and OpenAI partnership \u2014 directly fits Baker's characterization of attractively valued AI mega-caps."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google/Alphabet is a core AI mega-cap with Gemini, Search AI integration, and Google Cloud \u2014 squarely in the set Baker is describing."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Meta is heavily AI-exposed via ad targeting, Llama models, and AI-driven engagement \u2014 fits the AI mega-cap characterization."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Amazon via AWS and Bedrock is a major AI infrastructure and platform player and qualifies as an AI-exposed mega-cap."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is the AI infrastructure hardware leader but is not typically described as an 'AI-exposed mega-cap at attractive valuations' in the same sense as the hyperscalers/software platforms; Baker's paradox is about companies whose earnings are threatened by the same AI that makes them valuable, which fits software/platform companies better. NVDA's valuation debate is a separate thesis in this transcript."
+    }
+  ]
+}

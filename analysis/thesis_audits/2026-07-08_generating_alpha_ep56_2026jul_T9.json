@@ -1,0 +1,56 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha \u2014 Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T9",
+  "summary": "AI rendering of video games on-device (replacing local GPU) is not viable in the next 5-7 years",
+  "summary_extended": "Baker explicitly dismisses as 'ridiculous' the thesis that AI cloud rendering will replace local GPU rendering on smartphones, iPads, and PCs within the next 5-7 years. His core argument is economic: using a cloud AI model like VO3 to render a game such as Monopoly Go at current list prices would cost more than two orders of magnitude more than the game's entire revenue, making the unit economics completely unworkable at any realistic scale. The implication is that local GPU silicon \u2014 the chips inside phones, tablets, and PCs that handle graphics rendering today \u2014 will not be displaced by AI inference in the near-to-medium term. This is a bearish view on a speculative AI disruption thesis rather than a bullish call on any specific company, though it implicitly supports the continued relevance of on-device GPU vendors. Investors should be skeptical of any narrative claiming AI cloud rendering will cannibalize local GPU demand within this timeframe.",
+  "detail": "Baker explicitly dismisses the thesis that AI will replace local GPU rendering on phones, iPads, and PCs within 5-7 years as 'ridiculous,' citing cost math: rendering Monopoly Go via cloud AI at list prices would cost more than two orders of magnitude more than the game's revenue.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Stated as 'ridiculous' with specific quantitative example (Monopoly Go / VO3 cost vs. revenue)",
+  "themes": [
+    "gaming",
+    "GPU/compute",
+    "AI software"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "render a video game on the phone instead of the GPU...in the next 5 to 7 years is ridiculous",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "QCOM",
+    "AAPL"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "QCOM",
+    "AAPL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA makes data center GPUs used in cloud AI, but this thesis is specifically about on-device/local GPU rendering not being displaced \u2014 NVDA is not the subject of the thesis and does not clearly benefit or lose from it in a direct, unambiguous way relative to this specific claim."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD supplies GPUs for PCs and some mobile-adjacent markets, but the thesis does not specifically name AMD as a beneficiary of continued local rendering demand in an unambiguous way; the connection is too loose to classify as direct."
+    },
+    {
+      "ticker": "QCOM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Qualcomm supplies the Snapdragon SoCs with integrated Adreno GPUs that handle local rendering on Android smartphones and some PCs \u2014 if cloud AI rendering is not viable for 5-7 years, Qualcomm's on-device GPU business faces no near-term disruption, making it a direct beneficiary of this thesis."
+    },
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Apple designs the Apple Silicon (A-series and M-series) chips with integrated GPUs used in iPhones, iPads, and Macs \u2014 Baker specifically mentions phones and iPads as the devices in question, and Apple's continued dominance in on-device rendering is directly supported by this thesis."
+    }
+  ]
+}

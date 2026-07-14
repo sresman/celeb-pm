@@ -1,13 +1,35 @@
 {
   "model": "claude-sonnet-4-6",
-  "transcripts_processed": 27,
-  "ok": 3,
-  "skipped": 24,
+  "transcripts_processed": 39,
+  "ok": 4,
+  "skipped": 35,
   "errors": [],
-  "total_input_tokens": 49754,
-  "total_output_tokens": 16817,
-  "estimated_cost_usd": 0.4015,
+  "total_input_tokens": 79359,
+  "total_output_tokens": 25862,
+  "estimated_cost_usd": 0.626,
   "rows": [
+    {
+      "label": "iltb_tech_consumer_2019nov",
+      "date": "2019-11-26",
+      "source": "Invest Like the Best",
+      "filepath": "transcripts/whisper/2019-11-26_iltb_tech_consumer_2019nov.txt",
+      "output": "analysis/thesis_extractions/2019-11-26_iltb_tech_consumer_2019nov.json",
+      "status": "ok",
+      "input_tokens": 18498,
+      "output_tokens": 6445,
+      "counts": "20 theses, 4 recommendations, 6 catalysts"
+    },
+    {
+      "label": "iltb_bear_market_2020apr",
+      "date": "2020-04-02",
+      "source": "Invest Like the Best",
+      "filepath": "transcripts/whisper/2020-04-02_iltb_bear_market_2020apr.txt",
+      "output": "analysis/thesis_extractions/2020-04-02_iltb_bear_market_2020apr.json",
+      "status": "ok",
+      "input_tokens": 14409,
+      "output_tokens": 5426,
+      "counts": "15 theses, 5 recommendations, 5 catalysts"
+    },
     {
       "label": "columbia_sima_investing_2020may",
       "date": "2020-05-07",
@@ -79,6 +101,17 @@
       "output_tokens": 0
     },
     {
+      "label": "iltb_cyclone_surface_2022jan",
+      "date": "2022-01-25",
+      "source": "Invest Like the Best",
+      "filepath": "transcripts/whisper/2022-01-25_iltb_cyclone_surface_2022jan.txt",
+      "output": "analysis/thesis_extractions/2022-01-25_iltb_cyclone_surface_2022jan.json",
+      "status": "ok",
+      "input_tokens": 22286,
+      "output_tokens": 6323,
+      "counts": "17 theses, 5 recommendations, 6 catalysts"
+    },
+    {
       "label": "onthetape_fear_market_killer_2022mar",
       "date": "2022-03-25",
       "source": "On The Tape / RiskReversal",
@@ -109,41 +142,21 @@
       "output_tokens": 0
     },
     {
-      "label": "iconn_globalalts_2024_gracias_gurley",
-      "date": "2024-01-15",
+      "label": "iconn_globalalts_2024_gracias_baker_gurley",
+      "date": "2024-01-30",
       "source": "iConnections Global Alts 2024",
-      "filepath": "transcripts/youtube/2024-01-15_iconn_globalalts_2024_gracias_gurley_s4QVoht3YsI.txt",
-      "output": "analysis/thesis_extractions/2024-01-15_iconn_globalalts_2024_gracias_gurley.json",
+      "filepath": "transcripts/youtube/2024-01-30_iconn_globalalts_2024_gracias_baker_gurley_MWE5LsO62wA.txt",
+      "output": "analysis/thesis_extractions/2024-01-30_iconn_globalalts_2024_gracias_baker_gurley.json",
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
     },
     {
-      "label": "aleph_semis_globalwarming_2024feb",
-      "date": "2024-02-14",
-      "source": "Invested by Aleph",
-      "filepath": "transcripts/youtube/2024-02-14_aleph_semis_globalwarming_2024feb_ugihLT9cFTE.txt",
-      "output": "analysis/thesis_extractions/2024-02-14_aleph_semis_globalwarming_2024feb.json",
-      "status": "skipped_exists",
-      "input_tokens": 0,
-      "output_tokens": 0
-    },
-    {
-      "label": "allin_dram_bottleneck_2024mid",
-      "date": "2024-06-15",
-      "source": "All-In Podcast",
-      "filepath": "transcripts/youtube/2024-06-15_allin_dram_bottleneck_2024mid_w8ah_tA0yfg.txt",
-      "output": "analysis/thesis_extractions/2024-06-15_allin_dram_bottleneck_2024mid.json",
-      "status": "skipped_exists",
-      "input_tokens": 0,
-      "output_tokens": 0
-    },
-    {
-      "label": "allin_secondary_markets_2024mid",
-      "date": "2024-06-15",
-      "source": "All-In Podcast",
-      "filepath": "transcripts/youtube/2024-06-15_allin_secondary_markets_2024mid_V0lFjTWx36I.txt",
-      "output": "analysis/thesis_extractions/2024-06-15_allin_secondary_markets_2024mid.json",
+      "label": "fii_gigafirm_trillion_dollar_2024feb",
+      "date": "2024-02-23",
+      "source": "FII Institute",
+      "filepath": "transcripts/youtube/2024-02-23_fii_gigafirm_trillion_dollar_2024feb_esWMssGq-G0.txt",
+      "output": "analysis/thesis_extractions/2024-02-23_fii_gigafirm_trillion_dollar_2024feb.json",
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
@@ -157,6 +170,27 @@
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
+    },
+    {
+      "label": "twist_e1990_liquidity_gracias_2024aug",
+      "date": "2024-08-07",
+      "source": "This Week in Startups",
+      "filepath": "transcripts/youtube/2024-08-07_twist_e1990_liquidity_gracias_2024aug_4YXMZhsVClI.txt",
+      "output": "analysis/thesis_extractions/2024-08-07_twist_e1990_liquidity_gracias_2024aug.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "iltb_ai_semis_robotic_2024aug",
+      "date": "2024-08-27",
+      "source": "Invest Like the Best",
+      "filepath": "transcripts/whisper/2024-08-27_iltb_ai_semis_robotic_2024aug.txt",
+      "output": "analysis/thesis_extractions/2024-08-27_iltb_ai_semis_robotic_2024aug.json",
+      "status": "ok",
+      "input_tokens": 24166,
+      "output_tokens": 7668,
+      "counts": "20 theses, 5 recommendations, 5 catalysts"
     },
     {
       "label": "allin_sec_bitcoin_xai_2024dec",
@@ -179,11 +213,41 @@
       "output_tokens": 0
     },
     {
+      "label": "iconn_globalalts_2025_future_of_ai",
+      "date": "2025-01-28",
+      "source": "iConnections Global Alts 2025",
+      "filepath": "transcripts/youtube/2025-01-28_iconn_globalalts_2025_future_of_ai_UJ3pNPFwAeM.txt",
+      "output": "analysis/thesis_extractions/2025-01-28_iconn_globalalts_2025_future_of_ai.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "allin_e221_coreweave_ipo_2025mar",
+      "date": "2025-03-29",
+      "source": "All-In Podcast",
+      "filepath": "transcripts/youtube/2025-03-29_allin_e221_coreweave_ipo_2025mar_Iazo7g40VbQ.txt",
+      "output": "analysis/thesis_extractions/2025-03-29_allin_e221_coreweave_ipo_2025mar.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
       "label": "sohn_montreal_2025_skhynix_writeup",
       "date": "2025-05-28",
       "source": "HedgeFundAlpha (writeup)",
       "filepath": "transcripts/web/2025-05-28_sohn_montreal_2025_skhynix_writeup.txt",
       "output": "analysis/thesis_extractions/2025-05-28_sohn_montreal_2025_skhynix_writeup.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "aleph_semis_globalwarming_2025oct",
+      "date": "2025-10-22",
+      "source": "Invested by Aleph",
+      "filepath": "transcripts/youtube/2025-10-22_aleph_semis_globalwarming_2025oct_ugihLT9cFTE.txt",
+      "output": "analysis/thesis_extractions/2025-10-22_aleph_semis_globalwarming_2025oct.json",
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
@@ -199,16 +263,6 @@
       "output_tokens": 0
     },
     {
-      "label": "tbpn_token_factories_sovereign_ai_2025",
-      "date": "2025-11-15",
-      "source": "TBPN",
-      "filepath": "transcripts/youtube/2025-11-15_tbpn_token_factories_sovereign_ai_2025_PW5n3ZnEJN0.txt",
-      "output": "analysis/thesis_extractions/2025-11-15_tbpn_token_factories_sovereign_ai_2025.json",
-      "status": "skipped_exists",
-      "input_tokens": 0,
-      "output_tokens": 0
-    },
-    {
       "label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
       "date": "2025-12-09",
       "source": "Invest Like the Best (YouTube)",
@@ -219,11 +273,11 @@
       "output_tokens": 0
     },
     {
-      "label": "heller_house_spacex_cfo_2026",
-      "date": "2026-02-15",
-      "source": "Heller House / Mission Control",
-      "filepath": "transcripts/youtube/2026-02-15_heller_house_spacex_cfo_2026__Tua32QoR6w.txt",
-      "output": "analysis/thesis_extractions/2026-02-15_heller_house_spacex_cfo_2026.json",
+      "label": "iconn_globalalts_2026_gracias_baker",
+      "date": "2026-02-24",
+      "source": "iConnections Global Alts 2026",
+      "filepath": "transcripts/youtube/2026-02-24_iconn_globalalts_2026_gracias_baker_s4QVoht3YsI.txt",
+      "output": "analysis/thesis_extractions/2026-02-24_iconn_globalalts_2026_gracias_baker.json",
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
@@ -244,10 +298,9 @@
       "source": "HedgeFundAlpha (writeup)",
       "filepath": "transcripts/web/2026-05-12_sohn_ny_2026_khaira_writeup.txt",
       "output": "analysis/thesis_extractions/2026-05-12_sohn_ny_2026_khaira_writeup.json",
-      "status": "ok",
-      "input_tokens": 2636,
-      "output_tokens": 1487,
-      "counts": "4 theses, 2 recommendations, 2 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "sohn_ny_2026_tech_investor",
@@ -255,10 +308,9 @@
       "source": "Sohn NY 2026",
       "filepath": "transcripts/youtube/2026-05-12_sohn_ny_2026_tech_investor_2Ryr95iiYNk.txt",
       "output": "analysis/thesis_extractions/2026-05-12_sohn_ny_2026_tech_investor.json",
-      "status": "ok",
-      "input_tokens": 12125,
-      "output_tokens": 3423,
-      "counts": "8 theses, 4 recommendations, 4 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "iltb_watts_wafers_2026may_yt",
@@ -266,10 +318,39 @@
       "source": "Invest Like the Best (YouTube)",
       "filepath": "transcripts/youtube/2026-05-20_iltb_watts_wafers_2026may_yt_Mmj_G9RlW-I.txt",
       "output": "analysis/thesis_extractions/2026-05-20_iltb_watts_wafers_2026may_yt.json",
-      "status": "ok",
-      "input_tokens": 34993,
-      "output_tokens": 11907,
-      "counts": "30 theses, 5 recommendations, 9 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "allin_e274_spacex_2t_nvidia_2026may",
+      "date": "2026-05-22",
+      "source": "All-In Podcast",
+      "filepath": "transcripts/youtube/2026-05-22_allin_e274_spacex_2t_nvidia_2026may_HGbA6ze0_3M.txt",
+      "output": "analysis/thesis_extractions/2026-05-22_allin_e274_spacex_2t_nvidia_2026may.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "limitless_unity_world_models_2026may",
+      "date": "2026-05-28",
+      "source": "Limitless (Bankless)",
+      "filepath": "transcripts/youtube/2026-05-28_limitless_unity_world_models_2026may_yosv2UDCm9M.txt",
+      "output": "analysis/thesis_extractions/2026-05-28_limitless_unity_world_models_2026may.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "allin_liquidity_secondaries_2026jun",
+      "date": "2026-06-07",
+      "source": "All-In Podcast",
+      "filepath": "transcripts/youtube/2026-06-07_allin_liquidity_secondaries_2026jun_V0lFjTWx36I.txt",
+      "output": "analysis/thesis_extractions/2026-06-07_allin_liquidity_secondaries_2026jun.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "bg2_spacex_ipo_2026jun",
@@ -277,6 +358,46 @@
       "source": "BG2 Pod",
       "filepath": "transcripts/youtube/2026-06-11_bg2_spacex_ipo_2026jun_Tx9jT2c6e3U.txt",
       "output": "analysis/thesis_extractions/2026-06-11_bg2_spacex_ipo_2026jun.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "cnbc_squawk_spacex_debut_2026jun",
+      "date": "2026-06-12",
+      "source": "CNBC Squawk on the Street",
+      "filepath": "transcripts/whisper/2026-06-12_cnbc_squawk_spacex_debut_2026jun.txt",
+      "output": "analysis/thesis_extractions/2026-06-12_cnbc_squawk_spacex_debut_2026jun.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "tbpn_spacex_sovereign_ai_2026jun",
+      "date": "2026-06-15",
+      "source": "TBPN",
+      "filepath": "transcripts/youtube/2026-06-15_tbpn_spacex_sovereign_ai_2026jun_PW5n3ZnEJN0.txt",
+      "output": "analysis/thesis_extractions/2026-06-15_tbpn_spacex_sovereign_ai_2026jun.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "allin_ai_memory_micron_2026jun",
+      "date": "2026-06-27",
+      "source": "All-In Podcast",
+      "filepath": "transcripts/youtube/2026-06-27_allin_ai_memory_micron_2026jun_w8ah_tA0yfg.txt",
+      "output": "analysis/thesis_extractions/2026-06-27_allin_ai_memory_micron_2026jun.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "generating_alpha_ep56_2026jul",
+      "date": "2026-07-08",
+      "source": "Generating Alpha",
+      "filepath": "transcripts/youtube/2026-07-08_generating_alpha_ep56_2026jul_FmLGYLQ6DFY.txt",
+      "output": "analysis/thesis_extractions/2026-07-08_generating_alpha_ep56_2026jul.json",
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0

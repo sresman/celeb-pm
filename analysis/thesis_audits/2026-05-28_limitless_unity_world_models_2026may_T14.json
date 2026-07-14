@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T14",
+  "summary": "Baker holds a large QQQ put as a broad market hedge while remaining long AI infrastructure",
+  "summary_extended": "Baker reveals that his largest single disclosed position is a put on QQQ (the Nasdaq 100 ETF), reflecting a structurally bearish view on the broad equity market even as he remains bullish on AI infrastructure specifically. He describes this as a barbell strategy: concentrated long exposure to AI infrastructure names paired with a macro hedge via QQQ puts, designed to profit if the broader market sells off while his AI longs outperform. The reasoning appears to be that general market valuations are stretched or vulnerable to macro shocks, while AI infrastructure represents a differentiated, secular growth pocket that can decouple from the index. Baker implies that even in a broad drawdown scenario, AI infrastructure names would hold up better than the Nasdaq 100 as a whole, making the QQQ put an asymmetric hedge rather than a directional short on tech broadly. No specific strike, expiry, or notional size was disclosed beyond its prominence in the 13F filing.",
+  "detail": "Baker's largest single position is a put on QQQ (Nasdaq 100 ETF), expressing general bearishness on the broad market while maintaining concentrated longs in AI infrastructure names. This barbell structure suggests he believes AI infrastructure will outperform even in a broad market drawdown.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Described as largest position in 13F; explicitly discussed as a hedge against broad market weakness",
+  "themes": [
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "largest position ironically is that QQQ put position, generally bearish on the market",
+  "tickers_named_original": [
+    "QQQ"
+  ],
+  "tickers_direct": [
+    "QQQ"
+  ],
+  "tickers_subject": [
+    "QQQ"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "QQQ",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "QQQ is the direct instrument of the thesis \u2014 Baker holds a put on QQQ as his largest position, making it the explicit subject of this macro hedge trade."
+    }
+  ]
+}

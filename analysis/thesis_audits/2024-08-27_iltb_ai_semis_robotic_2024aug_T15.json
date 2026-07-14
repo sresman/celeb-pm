@@ -1,0 +1,23 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best \u2014 AI, semiconductors, and the robotic frontier (EP.385)",
+  "thesis_id": "T15",
+  "summary": "Power/energy infrastructure near shale gas fields will be an intermediate-term solution to AI data center power constraints",
+  "summary_extended": "Baker argues that the power constraints facing AI data centers will force hyperscalers to build massive compute facilities directly in shale gas fields, co-located with on-site natural gas power plants, as an intermediate-term solution before nuclear or grid upgrades can scale. He identifies only approximately three locations in the entire US where a gigawatt of reliable power can currently be delivered to a single data center site, making conventional data center siting increasingly untenable for the largest AI workloads. The economics of these remote shale-field data centers will be significantly worse than traditional sites, with power costs running approximately 10x the US average of roughly 8 cents/kWh (~80 cents/kWh), but Baker implies hyperscalers will accept this premium given the absence of alternatives. The investment implication is diffuse \u2014 this thesis points to structural demand for natural gas infrastructure, modular/on-site power generation, and potentially gas-fired turbine manufacturers \u2014 but Baker does not name specific companies or projects, making direct equity implications ambiguous. No specific tickers are clearly and unambiguously implied by this thesis without additional inference steps.",
+  "detail": "Baker identifies only ~3 locations in the US where a gigawatt of reliable power can be delivered to a single data center (implying nuclear). He predicts giant data centers will be built in shale gas fields with on-site power plants as an intermediate solution, far from population centers. Power cost at these sites will be ~10x the US average of ~8 cents/kWh.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as a logical prediction based on power constraints but does not cite specific projects or investments",
+  "themes": [
+    "power/energy",
+    "AI datacenter infrastructure",
+    "natural gas"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "giant data centers in shale gas fields with power plants on those fields",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

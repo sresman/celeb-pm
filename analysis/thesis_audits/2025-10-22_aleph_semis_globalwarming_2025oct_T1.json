@@ -1,0 +1,51 @@
+{
+  "date": "2025-10-22",
+  "source": "Invested by Aleph \u2014 Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "thesis_id": "T1",
+  "summary": "Scaled foundation model companies are dramatically better investments post-reasoning models due to emergence of data flywheel",
+  "summary_extended": "Baker argues that the emergence of reasoning models (via RLVF and test-time compute) has fundamentally changed the investment case for scaled foundation model companies by creating a user-data-product flywheel that did not previously exist in standard LLMs. Specifically, he contends that a large user base now directly feeds back into model quality improvement, giving companies with massive user bases a compounding structural advantage that smaller or newer entrants cannot easily replicate. Baker identifies OpenAI, Anthropic, XAI, and Google DeepMind as the primary beneficiaries of this dynamic, viewing them as a durable oligopoly that can now be valued on revenue multiples rather than speculative metrics. The investment implication is that scaled foundation model companies are dramatically better investments post-reasoning than they were before, and that this structural moat makes them long-term holds. Notably, most of the named beneficiaries (OpenAI, Anthropic, XAI) are private, limiting direct public equity expression of this thesis.",
+  "detail": "Reasoning models (RLVF, test-time compute) created a user-data-product flywheel that previously did not exist in LLMs. Now having a large user base feeds back into product quality, making OpenAI, Anthropic, XAI, and Google DeepMind structurally advantaged. Baker views these as now-valueable on revenue multiples and likely to form a durable oligopoly.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states 'these scaled foundation model companies are much better investments post-reasoning' and elaborates the structural mechanism at length",
+  "themes": [
+    "AI foundation models",
+    "AI datacenter infrastructure",
+    "software/AI platforms"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "scaled foundation model companies are much better investments post-reasoning",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL",
+    "MSFT"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google DeepMind is explicitly named by Baker as one of the four scaled foundation model companies forming the durable oligopoly, and GOOGL is the publicly listed vehicle for that exposure."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META was implied but Baker's named oligopoly is OpenAI, Anthropic, XAI, and Google DeepMind \u2014 Meta's Llama is open-source and does not benefit from the closed user-data-product flywheel mechanism Baker describes. META is not a direct subject or beneficiary of this specific thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "MSFT is the primary public-market vehicle for OpenAI exposure through its deep partnership and equity stake, and benefits directly from OpenAI's flywheel advantage as the exclusive cloud and product distribution partner, making it a legitimate direct beneficiary of this thesis."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2025-01-28",
+  "source": "iConnections Global Alts 2025 \u2014 The Future of AI",
+  "thesis_id": "T2",
+  "summary": "DeepSeek R1 de-risks AI by revealing two new scaling laws beyond pre-training, extending the AI investment runway 5-10 years",
+  "summary_extended": "Baker argues that DeepSeek R1 was a major de-risking event for AI investment theses, not a threat, because it empirically revealed two new scaling laws beyond pre-training: reinforcement learning during post-training and test-time compute scaling. Prior to OpenAI's O1/O3 and DeepSeek R1, the AI investment community only had pre-training scaling laws as a mechanistically understood growth driver, and there was meaningful risk that scaling laws were breaking down. By demonstrating that RL post-training and test-time compute are additional, independently scalable dimensions, Baker contends the AI buildout cycle is extended materially \u2014 explicitly stating it is 'not ending anytime in the next 5 to 10 years.' The investment implication is that the AI infrastructure and foundation model buildout remains a durable multi-year theme, and the key bear case (scaling exhaustion) has been substantially invalidated.",
+  "detail": "Prior to O1/O3 and DeepSeek R1, only pre-training scaling laws were understood empirically. R1 revealed reinforcement learning during post-training and test-time compute as two additional scaling laws that are mechanistically understood. This eliminates the key risk that scaling laws were breaking down and extends the AI buildout cycle materially.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states 'this is not ending anytime in the next 5 to 10 years because of these two new scaling laws' and frames it as a major de-risking event for his portfolio thesis.",
+  "themes": [
+    "AI scaling laws",
+    "AI datacenter infrastructure",
+    "AI foundation models"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "this is not ending anytime in the next 5 to 10 years because of these two new scaling laws",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the primary beneficiary of an extended AI compute buildout cycle driven by new scaling laws \u2014 both RL post-training and test-time compute require substantially more GPU compute, directly expanding NVDA's addressable market over the 5-10 year horizon Baker describes."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While MSFT is a major AI investor and cloud provider, this thesis is specifically about scaling laws extending the AI buildout runway, not about any specific hyperscaler's positioning. MSFT's benefit is too indirect and generic to classify as a direct beneficiary of this specific structural claim."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GOOGL is a major AI player but is not the specific subject or a uniquely identifiable direct beneficiary of this thesis about scaling law discovery. The thesis does not make a specific claim about GOOGL's advantage."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META is a large AI spender but is not specifically implicated as a direct beneficiary of this scaling law thesis. The thesis is about the structural durability of AI compute demand, not about any specific hyperscaler."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMZN is a hyperscaler and AI investor but is not specifically identified as a direct beneficiary of this thesis. The scaling law argument does not uniquely implicate AMZN over any other cloud provider."
+    }
+  ]
+}

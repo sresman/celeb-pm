@@ -1,0 +1,45 @@
+{
+  "date": "2025-03-29",
+  "source": "All-In Podcast \u2014 E221: AI cold war, Signalgate, CoreWeave IPO, tariffs",
+  "thesis_id": "T7",
+  "summary": "Anthropic's Model Context Protocol (MCP) will become an industry standard, significantly accelerating agent adoption",
+  "summary_extended": "Baker argues that Anthropic's Model Context Protocol (MCP) will become the dominant industry standard for connecting LLMs to external services, analogous to how HTTP standardized web communication. His key evidence is that OpenAI \u2014 Anthropic's primary competitor \u2014 has already adopted MCP, signaling cross-industry convergence on the protocol. Baker explains that MCP solves a critical bottleneck for AI agents by standardizing LLM-to-service integration, citing Stripe as an example of a service that can integrate once with MCP and then be accessible to any compatible LLM. The investment implication is that MCP standardization accelerates the broader AI agent adoption curve, benefiting platforms and companies that are positioned to deploy or monetize agents at scale, though Baker does not name specific equity beneficiaries beyond the protocol itself.",
+  "detail": "Baker notes that OpenAI has already adopted MCP, which Anthropic developed. He argues MCP solves a major problem for agents by making LLM-to-service integration standardized and easy (e.g., Stripe integrating with MCP so any MCP-compatible LLM can interact with it).",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says 'I think it will become a standard' \u2014 forward-looking but stated with reasonable conviction.",
+  "themes": [
+    "AI agents",
+    "software/SaaS"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "model context protocol that openai just adopted I think it will become a standard",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "AMZN",
+    "MSFT",
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMZN was implied as a cloud/AI platform that might benefit from agent adoption, but Baker makes no specific claim about Amazon in this thesis. The MCP thesis does not unambiguously single out AMZN as a direct beneficiary over any other cloud or AI platform."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT is a major AI platform and OpenAI partner, but Baker does not specifically name Microsoft as a beneficiary of MCP standardization. The connection is too loose to classify as a direct beneficiary of this specific thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GOOGL is a large AI player but Baker does not specifically implicate Google as a direct subject or beneficiary of MCP adoption in this thesis. Its inclusion appears to be bleed-over from adjacent AI themes rather than a direct implication of this thesis."
+    }
+  ]
+}

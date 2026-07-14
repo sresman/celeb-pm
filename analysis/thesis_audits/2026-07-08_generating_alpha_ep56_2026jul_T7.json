@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha \u2014 Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T7",
+  "summary": "As AI eats the world, silicon eats the world \u2014 semiconductor intensity of AI is structurally higher than deterministic software",
+  "summary_extended": "Baker argues that the shift from deterministic software to probabilistic AI represents a structural and permanent increase in semiconductor intensity across the economy. Unlike traditional software, which executes fixed logic, AI models recompute probabilistic answers each time they run, making them orders of magnitude more computationally expensive per task. This creates a durable, secular tailwind for the semiconductor industry broadly \u2014 not a cyclical upturn \u2014 and Baker frames this as his foundational investment thesis and 'first love' as an investor. The implication is that semiconductor exposure should be treated as a long-term structural position, not a trade, as AI adoption compounds the demand for compute across every sector of the economy. He does not cite specific numbers but emphasizes the permanence and breadth of the trend using the phrase 'as AI eats the world, silicon is going to eat the world.'",
+  "detail": "Baker argues AI is probabilistic and recomputes answers each time (vs. deterministic software), making it far more computationally expensive. This is a structural, permanent tailwind for semiconductors. He frames this as his core investment thesis and first love.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Described as core personal thesis, repeated emphatically, framed as structural not cyclical",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "GPU/compute"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "as AI eats the world, silicon is going to eat the world",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "TSM",
+    "MRVL",
+    "ARM"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "TSM"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVIDIA is the dominant supplier of AI compute (GPUs/accelerators) and is the clearest direct beneficiary of structurally higher semiconductor intensity from AI workloads."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "AMD competes in AI accelerators and data center GPUs, making it a direct beneficiary of rising AI compute demand, though secondary to NVDA."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Broadcom supplies custom AI ASICs (XPUs) to hyperscalers and networking silicon critical to AI infrastructure, making it a direct beneficiary of AI-driven semiconductor intensity."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "TSMC manufactures the leading-edge chips for NVDA, AMD, and AVGO, making it a direct beneficiary of structurally higher AI semiconductor demand. US-listed via ADR."
+    },
+    {
+      "ticker": "MRVL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Marvell is a clear implied beneficiary \u2014 it designs custom AI ASICs and networking silicon for hyperscalers, directly participating in the AI semiconductor intensity theme alongside AVGO."
+    },
+    {
+      "ticker": "ARM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Arm Holdings licenses CPU/NPU IP that underlies virtually all AI inference chips including custom ASICs and mobile AI, making it a direct beneficiary of structurally higher silicon intensity from AI."
+    }
+  ]
+}

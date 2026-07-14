@@ -1,0 +1,88 @@
+{
+  "_README": "Durable manual-override layer for the Baker thesis-scoring pipeline. Applied AFTER clustering + basket resolution, immediately BEFORE returns, by theme_returns_v2.py and build_repeat_mention_events.py. Survives rebuilds; overrides win over clustering. Match keys: theme, date, mention_number, summary_contains (str|list, all substrings, case-insensitive). Thesis/date-specific entries are listed before theme-level catch-alls so the specific one wins (first match).",
+  "cluster_overrides": [
+    {
+      "from_theme": "Google TPU competitive position",
+      "to_theme": "China AI distillation / export controls",
+      "match": {"date": "2026-06-27", "summary_contains": "GLM 5.2"},
+      "note": "TPU mention 5 (GLM 5.2 distillation) is misclustered — it is a China-distillation thesis, not a TPU-competitiveness thesis. Move to China theme (already double-clustered there)."
+    }
+  ],
+  "event_overrides": [
+    {
+      "match": {"theme": "SpaceX ecosystem / Starship economics", "date": "2021-11-01", "summary_contains": "disruptor to leveraged telecom"},
+      "apply": {"resolved_basket": ["VSAT", "SATS", "LUMN"], "basket_source": "BAKER_NAMED", "basket_direction": "SHORT"},
+      "note": "Nov-2021 Starlink-disruption thesis names VSAT/SATS/LUMN as victims. Only this SpaceX row; others keep retail proxy / NO_BASKET."
+    },
+    {
+      "match": {"theme": "Reasoning / inference-time compute", "date": "2025-05-28"},
+      "apply": {"resolved_basket": ["MU"], "basket_source": "OBVIOUS_UNIVERSE", "basket_direction": "LONG"},
+      "note": "Sohn Montreal 2025-05-28: 'reasoning drives HBM demand' -> MU."
+    },
+    {
+      "match": {"theme": "Reasoning / inference-time compute", "summary_contains": "flywheel"},
+      "apply": {"resolved_basket": ["GOOGL"], "basket_source": "BAKER_NAMED", "basket_direction": "LONG"},
+      "note": "Flywheel theses (reasoning creates a data flywheel for scaled model cos; beneficiaries OpenAI/Anthropic/xAI/Google) -> GOOGL (public proxy)."
+    },
+    {
+      "match": {"theme": "Power / watts as binding constraint", "date": "2020-05-07"},
+      "apply": {"resolved_basket": [], "basket_source": "NO_BASKET"},
+      "note": "2020-05-07 edge-computing-in-retail thesis is misclustered into power -> NO_BASKET. Only that row."
+    },
+    {
+      "match": {"theme": "Intel recovery / foundry failure", "date": "2019-11-26"},
+      "apply": {"resolved_basket": [], "basket_source": "NO_BASKET"},
+      "note": "Intel mention 1 (2019-11-26) is a TSMC-beat-Intel structural observation, not an Intel long -> NO_BASKET. Mentions 2/3 keep INTC LONG (default)."
+    },
+    {
+      "match": {"theme": "Google TPU competitive position", "date": "2026-05-20"},
+      "apply": {"is_thesis_reversal": true, "is_thesis_close": true, "exclude_from_long_stats": true},
+      "note": "TPU mention 4 (2026-05-20): genuine reversal — Google lost per-cost-token leadership. Tag thesis-close, exclude from long-mention scoring. Mentions 1-3 keep GOOGL LONG."
+    },
+    {
+      "match": {"theme": "China AI distillation / export controls"},
+      "apply": {"resolved_basket": ["ASML", "LRCX", "AMAT", "KLAC"], "basket_source": "OBVIOUS_UNIVERSE", "basket_direction": "LONG"},
+      "note": "All mentions. NVDA/MIXED was wrong (NVDA loses China revenue). Thesis = Western semicap-equipment monopolies protected by export controls."
+    },
+    {
+      "match": {"theme": "Custom ASIC failure thesis"},
+      "apply": {"resolved_basket": ["NVDA", "GOOGL", "AVGO(short)"], "basket_source": "PAIR_TRADE", "basket_direction": "PAIR_TRADE"},
+      "note": "All mentions. PAIR_TRADE: long NVDA+GOOGL / short AVGO. No returns computed."
+    },
+    {
+      "match": {"theme": "DISH / 5G bearish"},
+      "apply": {"resolved_basket": ["T", "VZ", "TMUS"], "basket_source": "OBVIOUS_UNIVERSE", "basket_direction": "SHORT"},
+      "note": "All mentions. He named the incumbents (T/VZ/TMUS) as 5G cost-treadmill victims -> SHORT."
+    },
+    {
+      "match": {"theme": "SaaS existential disruption"},
+      "apply": {"resolved_basket": ["CRM", "NOW", "TEAM", "SNOW", "HUBS"], "basket_source": "OBVIOUS_UNIVERSE", "basket_direction": "SHORT"},
+      "note": "All mentions. HUBS restored."
+    },
+    {
+      "match": {"theme": "Metaverse / gaming as platform"},
+      "apply": {"resolved_basket": ["ATVI", "EA", "TTWO"], "basket_source": "BAKER_NAMED", "basket_direction": "LONG"},
+      "note": "All mentions. RBLX removed — not public until 2021-03-10, cannot anchor 2020 returns."
+    },
+    {
+      "match": {"theme": "Neoclouds as durable model"},
+      "apply": {"resolved_basket": ["CRWV", "NBIS"], "basket_source": "BAKER_NAMED", "basket_direction": "LONG"},
+      "note": "All mentions. He named both CoreWeave and Nebius at Sohn NY 2026."
+    },
+    {
+      "match": {"theme": "Inference economics / token factories"},
+      "apply": {"resolved_basket": ["CRWV"], "basket_source": "BAKER_NAMED", "basket_direction": "LONG"},
+      "note": "Source -> BAKER_NAMED; basket CRWV stays."
+    },
+    {
+      "match": {"theme": "Microsoft AI position"},
+      "apply": {"resolved_basket": [], "basket_source": "NO_BASKET"},
+      "note": "Both mentions -> NO_BASKET. Neither is a trade rec; the Dec-2024 row is really an xAI thesis."
+    },
+    {
+      "match": {"theme": "Bottleneck trade ending"},
+      "apply": {"resolved_basket": [], "basket_source": "NO_BASKET", "is_derisk_signal": true},
+      "note": "Both mentions (2026-06-11, 2026-06-15) -> NO_BASKET + is_derisk_signal. Verbal exposure-reduction signal front-running the Q2 2026 filing."
+    }
+  ]
+}

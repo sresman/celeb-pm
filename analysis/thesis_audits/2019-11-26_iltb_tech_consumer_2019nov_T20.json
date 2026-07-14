@@ -1,0 +1,51 @@
+{
+  "date": "2019-11-26",
+  "source": "Invest Like the Best \u2014 Tech and consumer growth investing (EP.149)",
+  "thesis_id": "T20",
+  "summary": "Netflix faces structural headwinds from rising competitive intensity increasing customer acquisition costs and eliminating pricing power.",
+  "summary_extended": "Baker argues that Netflix faces a structural deterioration in its unit economics driven by the entry of well-funded streaming competitors (Disney+, Apple TV+, HBO Max, etc.) into the digital advertising auction market. Specifically, Netflix had benefited from Vickrey auction dynamics on Google and Facebook ad platforms \u2014 as the near-sole bidder on streaming-related keywords, it acquired subscribers at abnormally low cost; new entrants bidding on the same keywords will drive up auction clearing prices and blow out Netflix's CAC in ways consensus models have not accounted for. Simultaneously, Baker highlights the underappreciated value of licensed content like The Office and Friends, which Netflix is losing to competing platforms, and argues that competitive pressure eliminates Netflix's ability to raise prices to offset rising costs. Baker was actively short Netflix at the time of recording, viewing the combination of rising CAC, content loss, and pricing power erosion as a meaningful compression of the bull case on a medium-term horizon.",
+  "detail": "Netflix benefited from being the near-sole bidder on many Google/Facebook ad keywords (Vickrey auction dynamics), giving it exceptional CAC efficiency. New streaming entrants will increase auction competition, blowing out CAC in ways not modeled by consensus. Simultaneously, loss of licensed content (The Office, Friends) whose value is underappreciated, and elimination of pricing power in a competitive environment, compress the bull case. Baker was short Netflix at time of recording.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker held an active short position; presented with specific auction mechanics and content valuation arguments.",
+  "themes": [
+    "streaming media",
+    "digital advertising",
+    "competitive intensity",
+    "customer acquisition cost"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "we were short Netflix",
+  "tickers_named_original": [
+    "NFLX",
+    "GOOGL",
+    "FB"
+  ],
+  "tickers_direct": [
+    "NFLX"
+  ],
+  "tickers_subject": [
+    "NFLX"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NFLX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Netflix is the explicit short thesis subject \u2014 Baker was short NFLX and the entire thesis is about its structural headwinds."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google's ad auction platform is cited as the mechanism through which CAC dynamics play out, but GOOGL is not the subject of the thesis nor a direct beneficiary of Netflix's competitive pressure. It is infrastructure context, not an investment implication."
+    },
+    {
+      "ticker": "FB",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Facebook's ad platform is similarly cited as a venue for streaming keyword auctions, but FB is not the subject of or a direct beneficiary of this specific thesis. It is mechanistic context only."
+    }
+  ]
+}

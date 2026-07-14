@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha \u2014 Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T5",
+  "summary": "ROI on Blackwell will be very high; current ROI 'divot' is temporary and training-driven",
+  "summary_extended": "Baker argues that the return on investment for NVIDIA's Blackwell GPU architecture will be very high, and that the current apparent 'divot' or dip in AI infrastructure ROI is temporary and specifically driven by the fact that Blackwell spend is currently being allocated to model training rather than inference or revenue-generating workloads. He points to early checkpoint models \u2014 specifically GPT-5.2, Grok 4, and Codex \u2014 as concrete evidence that agentic AI capabilities are arriving imminently, which will unlock the inference-side ROI that justifies the massive Blackwell capital expenditure. Baker frames this as 'pretty clear' rather than speculative, suggesting high conviction that the ROI inflection is a matter of timing rather than thesis validity. The investment implication is that NVIDIA remains a strong hold or buy through the current ROI trough, as the Blackwell cycle's payoff is structurally intact and near-term.",
+  "detail": "Baker acknowledges a current dip in AI infrastructure ROI because Blackwell spend is being used for training (which doesn't generate direct ROI), but argues early checkpoint models (GPT-5.2, Grok 4, Codex) demonstrate agentic AI is arriving and Blackwell ROI will be very high.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Stated directly with specific model examples as evidence; framed as 'pretty clear'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "GPU/compute",
+    "agentic AI"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "the ROI on Blackwell is going to be very high",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly about the ROI profile of NVIDIA's Blackwell GPU architecture \u2014 NVDA is the direct subject of this investment thesis."
+    }
+  ]
+}

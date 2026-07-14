@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha \u2014 Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T6",
+  "summary": "Agentic AI has arrived; early model checkpoints confirm the transition",
+  "summary_extended": "Baker argues that agentic AI has definitively arrived, citing ChatGPT 5.2, Grok 4, and Codex 5.3 as concrete early-stage frontier model checkpoints that confirm the transition from conversational to agentic AI systems. His reasoning is that these specific named models represent empirical validation \u2014 not speculation \u2014 that AI agents capable of autonomous multi-step task execution are now real and deployable. The investment implication is that this transition justifies continued and accelerating massive infrastructure investment in AI, as agentic workloads are expected to be significantly more compute-intensive than prior generative AI use cases. Baker frames this as a 'pretty clear' structural shift, suggesting investors should maintain or increase exposure to companies building and enabling agentic AI infrastructure and software layers.",
+  "detail": "Baker cites ChatGPT 5.2, Grok 4, and Codex 5.3 as 'very early checkpoints' of frontier models that confirm agentic AI is here, validating continued massive infrastructure investment.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Stated as 'pretty clear' with specific named model examples",
+  "themes": [
+    "agentic AI",
+    "large language models",
+    "AI software"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "agentic AI's here",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MSFT"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "MSFT",
+    "META",
+    "GOOGL",
+    "TSLA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft owns OpenAI's ChatGPT (including 5.2) and Codex products, making it a direct beneficiary of the agentic AI transition Baker is describing \u2014 these are literally Microsoft-affiliated models he named."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta is not associated with any of the three named models (ChatGPT 5.2, Grok 4, Codex 5.3) and is not specifically identified as a subject or beneficiary of this thesis. Its inclusion appears to be bleed-over from adjacent AI infrastructure discussion."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google is not associated with any of the three named models Baker cited and is not specifically identified as a beneficiary of this thesis. Tangential bleed from broader AI discussion."
+    },
+    {
+      "ticker": "TSLA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Tesla is not connected to ChatGPT 5.2, Grok 4, or Codex 5.3, and while xAI (Grok's creator) has Elon Musk ties, Tesla is a separate public company not directly implicated in this agentic AI model checkpoint thesis."
+    }
+  ]
+}

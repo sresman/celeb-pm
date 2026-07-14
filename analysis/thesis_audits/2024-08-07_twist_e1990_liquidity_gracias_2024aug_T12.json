@@ -1,0 +1,61 @@
+{
+  "date": "2024-08-07",
+  "source": "This Week in Startups \u2014 E1990: Liquidity Summit fireside with Antonio Gracias and Gavin Baker",
+  "thesis_id": "T12",
+  "summary": "Large language models have only ever been trained on three chip architectures: Nvidia GPUs, Cerebras, and Google TPUs \u2014 giving these three a structural moat in foundation model training.",
+  "summary_extended": "Baker makes a specific factual claim that all large language model training to date has occurred on only three chip architectures: Nvidia GPUs, Cerebras chips, and Google TPUs \u2014 and that no other silicon has been used for frontier model training. His reasoning is structural: the extreme difficulty of building the software stack, compiler toolchains, and distributed training frameworks required to run LLMs means that only these three have achieved the necessary ecosystem maturity. The investment implication is that Nvidia and Google (via TPUs embedded in its cloud and used for its own models) hold a durable structural moat in foundation model training, while competitors like AMD and Intel have failed to break into this workload despite years of effort. Baker implicitly dismisses AMD and Intel as viable training alternatives, and notes that AWS Trainium and other custom silicon have similarly not been used for frontier model training, though this claim may be slightly overstated given emerging Trainium usage.",
+  "detail": "Baker makes a specific factual claim that to date all LLM training has occurred on Nvidia, Cerebras, or Google TPU silicon. This implies AMD, Intel, and custom silicon from hyperscalers (AWS Trainium, etc.) have not been used for frontier model training, giving these three a durable advantage in the training market.",
+  "confidence": "moderate",
+  "confidence_evidence": "Stated as a factual observation rather than a forward-looking thesis; Baker presents it matter-of-factly but it may be slightly overstated given AWS Trainium usage.",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "AI foundational models"
+  ],
+  "time_horizon": "not_specified",
+  "contrarian": false,
+  "quote_fragment": "only been trained on three kinds of chips: Nvidia, Cerebras, and Google's TPUs",
+  "tickers_named_original": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "Cerebras (private)",
+    "AMD",
+    "INTC"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nvidia is one of the three chip architectures Baker explicitly names as having a structural moat in LLM training \u2014 the thesis is directly about Nvidia's dominant position."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google TPUs are one of the three architectures named as having been used for all LLM training, giving Alphabet a structural moat both in its own model training and in TPU-based cloud offerings."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is implied only as a company that has failed to break into frontier model training \u2014 it is not a subject or beneficiary of this thesis, and including it would misrepresent the thesis as bullish on AMD."
+    },
+    {
+      "ticker": "INTC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Intel is similarly implied only as a company excluded from frontier model training. The thesis is not about Intel and Intel does not benefit \u2014 it is a loser in this framing, not a subject or beneficiary worth flagging."
+    }
+  ]
+}

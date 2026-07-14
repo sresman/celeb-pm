@@ -983,5 +983,104 @@
       "pipe.*2.*3.*times",
       "spac.*structural"
     ]
+  },
+  "Unity / world models": {
+    "tickers": [
+      "U"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Unity as world-model builder for robotics/AGI training (Limitless 2026-05-28). Keys avoid bare 'world model' to not collide with gaming world-models theme.",
+    "keys": [
+      "unity software",
+      "world-model builder",
+      "unity.*world model"
+    ]
+  },
+  "AI world models for gaming": {
+    "tickers": [
+      "SONY",
+      "NTDOY"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "AI world models cut AAA game dev cost ~90%, benefiting platform holders. Must not match 2020-era metaverse theses (no 'aaa game'/'game development cost' there).",
+    "keys": [
+      "game development cost",
+      "aaa game",
+      "world model.*gaming",
+      "world models.*game"
+    ]
+  },
+  "Datacenter physical assets": {
+    "tickers": [
+      "EQIX",
+      "DLR"
+    ],
+    "source": "OBVIOUS_UNIVERSE",
+    "direction": "LONG",
+    "note": "Installed terrestrial datacenters appreciate ('hope diamonds', never decommissioned). Specific phrases avoid orbital-short and Meta EV/PP&E collisions.",
+    "keys": [
+      "never be decommissioned",
+      "installed physical asset",
+      "hope diamond"
+    ]
+  },
+  "Power / cooling equipment suppliers": {
+    "tickers": [
+      "VRT",
+      "ETN",
+      "PWR"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Power production + cooling equipment ecosystem (Vertiv/Eaton/Quanta). Distinct from power-constraint theme (VST/CEG generators).",
+    "keys": [
+      "cooling ecosystem",
+      "power production and cooling",
+      "power production.*cooling"
+    ]
+  },
+  "CDN / token delivery path": {
+    "tickers": [
+      "NET",
+      "FSLY",
+      "AKAM"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "CDNs partially in the token-delivery path (Cloudflare/Fastly/Akamai). 'token path' distinct from token-factories theme keys.",
+    "keys": [
+      "\\bcdn\\b",
+      "cloudflare",
+      "token path",
+      "content delivery network"
+    ]
+  },
+  "Uranium enrichment / national security": {
+    "tickers": [
+      "LEU"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Domestic uranium enrichment as national-security priority (Centrus/LEU).",
+    "keys": [
+      "uranium enrichment",
+      "centrus",
+      "uranium.*national security"
+    ]
+  },
+  "Stranded / behind-the-meter power": {
+    "tickers": [
+      "CRSO"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Stranded / behind-the-meter power for AI datacenters. CRSO may be private (NO_DATA ok).",
+    "keys": [
+      "stranded.*power",
+      "behind.the.meter",
+      "behind-the-meter"
+    ]
   }
 }

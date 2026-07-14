@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T5",
+  "summary": "Cursor's Composer 2.5 being Pareto dominant after only 3-4 weeks of RL on Colossus 2 is an existence proof that proprietary coding data + massive compute = decisive model quality advantage",
+  "summary_extended": "Baker argues that Cursor's Composer 2.5 represents an 'existence proof' of a decisive competitive moat formula: proprietary coding data combined with massive compute yields model quality that is Pareto dominant over all frontier models. Critically, Composer 2.5 uses the same base model (Kimi K.25) as its predecessor but achieved this leap after only 3-4 weeks of reinforcement learning on xAI's Colossus 2 supercomputer, using Cursor's proprietary coding dataset which Baker claims contains more tokens than exist on the public internet. Baker contends the next step \u2014 baking Cursor's data into pre-training of a new base model and then applying RL on Colossus \u2014 will be even more significant, suggesting the quality gap will widen further. The investment implication is bullish for xAI (which owns Colossus 2 and provides the compute infrastructure) and Cursor (which owns the proprietary data moat), though neither is currently publicly listed.",
+  "detail": "Composer 2.5 uses the same base model (Kimi K.25) as Composer 2 but after 3-4 weeks of reinforcement learning on Colossus 2 using Cursor's proprietary coding data (allegedly more tokens than exist on the public internet), it is Pareto dominant across all frontier models. Baker says the next step\u2014a new base model with Cursor data baked into pre-training, then RL'd on Colossus\u2014will be even more significant. This is bullish for both xAI and Cursor.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls it 'really powerful' and 'extremely significant' multiple times; describes it as an 'existence proof'",
+  "themes": [
+    "AI model quality",
+    "coding AI",
+    "proprietary data moats",
+    "xAI/Cursor"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "Composer 2.5 is literally well outside the Pareto frontier after three weeks",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

@@ -1,0 +1,40 @@
+{
+  "date": "2019-11-26",
+  "source": "Invest Like the Best \u2014 Tech and consumer growth investing (EP.149)",
+  "thesis_id": "T10",
+  "summary": "Dominant video game franchises will become the platform layer of the metaverse, analogous to operating systems.",
+  "summary_extended": "Baker argues that dominant video game franchises will serve as the foundational platform layer of the metaverse, analogous to how operating systems function in computing today. His reasoning is that when people enter virtual worlds, they will naturally do so through familiar, established game universes \u2014 he cites Assassin's Creed for historical settings and Call of Duty or Fortnite for combat environments \u2014 rather than through entirely new, unfamiliar platforms. He points to Fortnite as an early proto-metaverse already exhibiting this behavior, with its concerts, social events, and cross-IP collaborations. The investment implication is that companies owning the most dominant franchises today are best positioned to own the platform layer of the metaverse, though Baker qualifies this as a 'semi-realistic outcome' at the 'hazy edge of intuition' rather than a high-conviction near-term call. No specific timeframe is given, but the thesis is explicitly long-term and speculative in nature.",
+  "detail": "When people enter virtual worlds, they will enter through existing game universes (Assassin's Creed for historical settings, Call of Duty/Fortnite for combat). This is already beginning with Fortnite functioning as a proto-metaverse. The dominant franchises today are likely to be the platforms of the metaverse.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker qualifies with 'semi-realistic outcome' and 'hazy edge of intuition'; not presented as certain.",
+  "themes": [
+    "metaverse",
+    "video games",
+    "platform economics",
+    "virtual reality"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "dominant video game franchises today become the platforms within the metaverse",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "ATVI",
+    "EA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ATVI",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Activision Blizzard owns Call of Duty, one of the two franchises Baker explicitly names as a likely metaverse platform entry point. It is an unambiguous implied beneficiary of this thesis."
+    },
+    {
+      "ticker": "EA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Electronic Arts owns major dominant franchises (Battlefield, FIFA, Apex Legends) that fit Baker's framework of established game universes becoming metaverse platforms, though Baker does not name EA explicitly \u2014 this is a borderline add. However, Baker's thesis is specifically about named franchises (Fortnite, CoD, Assassin's Creed), and EA's inclusion is not unambiguous enough to warrant adding."
+    }
+  ]
+}

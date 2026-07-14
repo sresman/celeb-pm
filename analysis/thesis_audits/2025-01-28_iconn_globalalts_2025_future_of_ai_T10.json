@@ -1,0 +1,59 @@
+{
+  "date": "2025-01-28",
+  "source": "iConnections Global Alts 2025 \u2014 The Future of AI",
+  "thesis_id": "T10",
+  "summary": "2025 is the year of AI applications \u2014 software and internet companies will be primary beneficiaries of higher AI ROI",
+  "summary_extended": "Baker argues that 2025 marks the inflection point where AI value creation shifts from infrastructure buildout to the application layer, meaning software and internet companies become the primary beneficiaries of AI ROI. His reasoning is that as inference costs fall dramatically \u2014 validated by the DeepSeek news \u2014 the marginal dollar of AI spend increasingly flows to companies deploying AI in products rather than those building training infrastructure. He cites the market reaction on 'DeepSeek bounce day,' where software and internet stocks outperformed, as real-time confirmation of this thesis. The investment implication is to overweight application-layer software and internet platforms that can monetize cheaper AI inference through improved products and higher user engagement, rather than semiconductor or infrastructure names. Baker's view is independently corroborated by collaborator Gracias, who also characterized 2025 as 'the year of the application.'",
+  "detail": "As AI inference becomes cheaper and deployment accelerates, the ROI accrues to application-layer companies rather than infrastructure. Baker notes software and internet stocks did 'really really well' on the DeepSeek bounce day, validating this thesis. The shift from training to inference capex benefits application companies.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states software and internet did well on the DeepSeek bounce and frames this as validation of the application layer thesis. Gracias independently confirms 'year of the application.'",
+  "themes": [
+    "AI applications",
+    "software",
+    "AI ROI",
+    "internet platforms"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "software and internet did really really well... higher AI ROI",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "META",
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "META",
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Meta is a large-cap internet platform that directly benefits from cheaper AI inference enabling better ad targeting, recommendation systems, and AI-powered products \u2014 a canonical application-layer beneficiary."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google is a core internet platform whose search, advertising, and consumer AI products (Gemini) directly benefit from lower inference costs and higher AI ROI at the application layer."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft is a primary application-layer software company monetizing AI through Copilot across Office, Azure AI services, and GitHub \u2014 directly benefits from the shift to inference and application ROI."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Amazon benefits as both an internet platform (advertising, e-commerce AI) and through AWS application-layer AI services; fits the software/internet application thesis directly."
+    }
+  ]
+}

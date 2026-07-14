@@ -1,0 +1,33 @@
+{
+  "date": "2026-02-24",
+  "source": "iConnections Global Alts 2026 \u2014 AI, Tesla, defense, energy \u2014 what comes next",
+  "thesis_id": "T12",
+  "summary": "Stranded/behind-the-meter power capacity in the US is an underappreciated resource for AI data centers",
+  "summary_extended": "Baker (via Gracias, a collaborator or interviewee in this segment) argues that stranded and behind-the-meter industrial power capacity scattered across the United States represents a significantly underappreciated near-term solution to the AI data center energy bottleneck. The thesis holds that rather than waiting years for new power generation capacity to come online, companies can identify and repurpose existing but underutilized industrial power infrastructure \u2014 such as idle factories or shuttered industrial sites \u2014 to host AI compute workloads. Crusoe Energy is cited as a specific example of a company actively executing this strategy, lending credibility to the thesis as an actionable investment theme rather than a speculative concept. The investment implication is that companies capable of aggregating and monetizing stranded power assets will benefit disproportionately as AI infrastructure demand accelerates, without the long lead times associated with new grid-scale generation. No specific financial metrics or capacity figures were cited, but the framing is near-term and practical.",
+  "detail": "Gracias references companies (including Crusoe) finding stranded industrial power capacity across the US and repurposing it for AI compute. He frames this as a near-term solution to the energy bottleneck that doesn't require new generation capacity.",
+  "confidence": "moderate",
+  "confidence_evidence": "Gracias cites specific companies (Crusoe) as examples, suggesting active investment thesis",
+  "themes": [
+    "power/energy",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "stranded capacity in America industrial facilities not being utilized that we can repurpose",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRSO"
+  ],
+  "tickers_subject": [
+    "CRSO"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "CRSO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Crusoe Energy (CRSO) is explicitly named as a company executing the stranded power repurposing strategy that is the direct subject of this thesis. It is the primary actionable beneficiary identified in the transcript."
+    }
+  ]
+}

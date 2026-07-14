@@ -1,0 +1,23 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best \u2014 AI, semiconductors, and the robotic frontier (EP.385)",
+  "thesis_id": "T3",
+  "summary": "Model Flops Utilization (MFU) decomposed into MAMF \u00d7 SFU \u00d7 checkpoint frequency \u00d7 PUE is the key efficiency equation determining which AI labs win",
+  "summary_extended": "Baker presents a unified analytical framework he calls the MFU (Model Flops Utilization) equation, decomposed as MFU = MAMF (model-aware memory footprint, capturing software and CUDA efficiency per GPU) \u00d7 SFU (system flops utilization, capturing networking, storage, and memory bandwidth efficiency) \u00d7 (1 - checkpoint frequency) \u00d7 PUE (power utilization efficiency). He argues that AI labs with superior scores across all four components can achieve a 100%+ advantage in exaflops per capex dollar per watt of electricity, which directly determines model quality, time-to-market speed, and inference cost competitiveness. Baker developed this framework the morning of the interview and presents it as his primary lens for evaluating which AI labs will win the scaling race. Critically, he argues the equation also maps directly to investment opportunities: each inefficient layer (networking, storage, memory, power) represents a product category where vendors who improve SFU or PUE capture outsized value. No specific timeframe is given, but the implication is medium-term as labs compete on infrastructure efficiency during the current scaling buildout.",
+  "detail": "Baker proposes a unified AI efficiency equation: MFU = MAMF (software/CUDA efficiency per GPU) \u00d7 SFU (system flops efficiency capturing networking, storage, memory) \u00d7 (1 - checkpoint frequency) \u00d7 PUE (power utilization efficiency). Labs with superior scores on this equation can achieve 100%+ advantage in exaflops per capex dollar per watt, determining model quality, time-to-market, and inference cost. This equation also maps directly to investment opportunities at each inefficient layer.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states this is his primary analytical framework for evaluating labs and identifying investment opportunities; developed the morning of the interview",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "AI compute efficiency"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "exoflops per second per dollar of capex per watt of electricity",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

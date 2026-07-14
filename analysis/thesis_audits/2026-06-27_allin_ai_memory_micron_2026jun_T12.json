@@ -1,0 +1,44 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T12",
+  "summary": "Disaggregation of inference into prefill and decode phases will extend the useful life of older Nvidia GPUs (H100s, A100s) by 7-12 years",
+  "summary_extended": "Baker argues that the disaggregation of inference workloads into two distinct phases \u2014 prefill (memory-capacity-bound) and decode (memory-bandwidth-bound) \u2014 fundamentally changes how AI infrastructure should be architected and valued. By placing specialized decode-optimized chips such as those from Groq and Cerebras in front of older Nvidia H100 and A100 GPUs, operators can build competitive inference stacks without requiring the latest-generation hardware, effectively extending the useful economic life of existing GPU assets by 7 to 12 years. This is a contrarian view relative to the prevailing assumption that AI capex cycles are short and that older GPUs become obsolete quickly; Baker contends the opposite, that H100s and A100s remain highly relevant for prefill tasks. The investment implication is that AI capex becomes more financeable and that companies holding large inventories of older Nvidia GPUs retain significant asset value, while specialized inference chip vendors like Cerebras (CBRS) become critical infrastructure components rather than niche players.",
+  "detail": "Baker explains that prefill is memory-capacity-bound and decode is memory-bandwidth-bound. Chips like Groq and Cerebras optimized for decode can be placed in front of older H100/A100 GPUs to create competitive inference solutions, extending GPU asset lives and making AI capex more financeable.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states 'we're going to be using GPUs for seven years, 10 years, 12 years' with conviction and provides specific technical reasoning",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "we're going to be using GPUs for seven years, 10 years, 12 years",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "CBRS"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "Groq (acquired by NVDA)",
+    "Cerebras (CBRS)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is directly about the extended useful life of Nvidia's H100 and A100 GPUs; NVDA is the subject insofar as its older hardware is central to the argument, and the thesis implies sustained demand for Nvidia's installed base."
+    },
+    {
+      "ticker": "CBRS",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Cerebras is explicitly named as a decode-optimized chip vendor that slots in front of older GPUs to create competitive inference solutions; it is a direct beneficiary of this architectural disaggregation thesis."
+    }
+  ]
+}

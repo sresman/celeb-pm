@@ -1,0 +1,51 @@
+{
+  "date": "2025-10-22",
+  "source": "Invested by Aleph \u2014 Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "thesis_id": "T9",
+  "summary": "Intel has a real path to recovery under Lip-Bu Tan with US government support, and American-made wafers could command ~100% price premium",
+  "summary_extended": "Baker argues that Intel has a credible path to recovery under new CEO Lip-Bu Tan, whom he describes as a legendary semiconductor investor and executive who genuinely understands what needs to be done \u2014 contrasting him favorably with Pat Gelsinger, whom Baker believes was unfairly maligned despite pursuing the only viable strategy. The US government taking an equity stake in Intel signals that it is viewed as a national strategic asset, providing both financial support and political cover for the turnaround. Baker points to TSMC's Arizona fab as proof of concept for the geopolitical premium thesis: Arizona capacity sold out instantly and prices were raised 20% \u2014 and it still sold out \u2014 suggesting demand for American-made wafers is inelastic at current price levels. Baker believes geopolitical fears around Taiwan are real enough that American-fabricated wafers could command close to a 100% price premium over equivalent offshore production, making Intel's domestic foundry ambitions potentially very valuable if execution improves.",
+  "detail": "Baker argues Pat Gelsinger was unfairly treated by press and embarked on the only viable strategy. Lip-Bu Tan is a legendary semiconductor investor/executive who understands what needs to be done. The US government taking a stake signals Intel is a national asset. TSMC Arizona sold out instantly and raised prices 20% \u2014 still sold out. Baker believes geopolitical fears are real enough that American wafers could command close to 100% premium.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker frames Intel recovery as possible but conditional ('if Intel can just get its act together'), and the 100% wafer premium is stated as a belief rather than a certainty",
+  "themes": [
+    "semiconductor supply chain",
+    "geopolitics/national security",
+    "reshoring"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "you could probably charge close to a 100% premium for American wafers",
+  "tickers_named_original": [
+    "INTC",
+    "TSM",
+    "ASML"
+  ],
+  "tickers_direct": [
+    "INTC",
+    "TSM"
+  ],
+  "tickers_subject": [
+    "INTC"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "INTC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is centrally about Intel's recovery path, its foundry strategy, US government support, and the potential value of American-made wafers \u2014 Intel is the primary subject."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "TSMC Arizona is cited as direct evidence for the American-wafer premium thesis \u2014 its instant sellout and 20% price increase validate the geopolitical demand dynamic that underpins the Intel bull case. TSMC is a direct beneficiary of the same reshoring/geopolitical premium trend."
+    },
+    {
+      "ticker": "ASML",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "ASML is not mentioned in the thesis reasoning, pricing evidence, or investment implication. It likely bled in from an adjacent semiconductor discussion in the same transcript and has no direct role in this specific thesis about Intel's recovery or American wafer premiums."
+    }
+  ]
+}

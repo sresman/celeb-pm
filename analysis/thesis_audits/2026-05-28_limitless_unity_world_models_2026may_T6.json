@@ -1,0 +1,43 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T6",
+  "summary": "The AI compute stack is shifting from pre-training to post-training and inference, creating a large new investment opportunity",
+  "summary_extended": "Baker argues that the AI compute stack is undergoing a fundamental shift from pre-training to post-training and inference, and that this transition represents a dramatically larger revenue opportunity than the pre-training phase itself \u2014 he estimates inference revenue will be 5-10x the compute spend on pre-training. His reasoning is that inference runs continuously at scale across millions of end-users and applications, whereas pre-training is a one-time or periodic capital expenditure by a small number of frontier labs. This thesis drives Baker to invest in inference-optimized chips (Cerebras and Positron, both private) and high-speed connectivity solutions like Astera Labs, which benefit from the bandwidth demands of inference clusters. Nvidia is also noted as pivoting its GPU product lines toward inference and agentic workloads, making it a beneficiary of this shift as well. Investors should focus on the inference layer of the stack \u2014 chips, memory, and interconnects optimized for inference throughput \u2014 rather than solely on pre-training infrastructure.",
+  "detail": "Baker estimates the revenue opportunity from inference is 5-10x the compute spend on pre-training. This shift drives investments in inference-optimized chips (Cerebras, Positron) and connectivity (Astera Labs). Nvidia is also pivoting GPU product lines toward inference and agentic workloads.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Multiple portfolio positions (Cerebras, Positron, Astera Labs) directly express this thesis; explicitly stated 5-10x inference revenue estimate",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "inference revenue opportunity is worth 5 to 10x pre-training compute",
+  "tickers_named_original": [
+    "NVDA",
+    "ALAB"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "ALAB"
+  ],
+  "tickers_subject": [
+    "ALAB"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly notes Nvidia is pivoting GPU product lines toward inference and agentic workloads, making it a direct beneficiary of the shift to inference compute \u2014 not merely tangential."
+    },
+    {
+      "ticker": "ALAB",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Astera Labs is explicitly named as a portfolio position expressing this thesis, providing high-speed connectivity solutions that benefit directly from the bandwidth demands of inference-scale deployments."
+    }
+  ]
+}

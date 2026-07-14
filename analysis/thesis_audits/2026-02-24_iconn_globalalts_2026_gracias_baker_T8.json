@@ -1,0 +1,36 @@
+{
+  "date": "2026-02-24",
+  "source": "iConnections Global Alts 2026 \u2014 AI, Tesla, defense, energy \u2014 what comes next",
+  "thesis_id": "T8",
+  "summary": "Tesla's Autopilot AI is the most token-efficient AI in the world, running superhuman tasks at near-human power consumption",
+  "summary_extended": "Baker corroborates Antonio Gracias's claim that Tesla is today the most advanced real-world AI deployment in the world, arguing that Tesla's Autopilot running on the in-house A4 chip \u2014 with zero cloud connectivity \u2014 executes the most cognitively complex task humans perform (driving) at only 20\u201350 watts, roughly equivalent to human brain power consumption. This extreme token and power efficiency makes Tesla's edge AI architecture categorically superior to cloud-dependent AI systems in terms of real-world deployment at scale. Baker and Gracias argue this hardware-software integration advantage is not widely appreciated by the market, which tends to focus on data center AI rather than edge inference. The investment implication is that Tesla's AI capability advantage is a durable moat that extends naturally into Optimus humanoid robotics, where the same edge inference architecture can be redeployed, making Tesla a serious robotics contender rather than merely an automaker. No specific financial targets or timeframes are cited, but the thesis is framed as a medium-term structural rerating opportunity as the market recognizes Tesla's AI and robotics positioning.",
+  "detail": "Antonio Gracias (corroborated by Baker) argues Tesla Autopilot running on an A4 chip with no cloud access performs the most complex task humans do (driving) at ~20-50W \u2014 comparable to the human brain. This makes Tesla the most advanced edge AI deployment and positions Optimus as a natural extension of this capability advantage.",
+  "confidence": "moderate",
+  "confidence_evidence": "Stated as a strong claim by Gracias with Baker's agreement, but relies on internal analysis; specific wattage figures are approximate",
+  "themes": [
+    "robotics",
+    "AI model efficiency",
+    "edge computing"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "Tesla actually is today the most advanced AI in the world",
+  "tickers_named_original": [
+    "TSLA"
+  ],
+  "tickers_direct": [
+    "TSLA"
+  ],
+  "tickers_subject": [
+    "TSLA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TSLA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about Tesla's Autopilot AI architecture, its A4 chip, edge inference efficiency, and the implication for Optimus robotics \u2014 Tesla is unambiguously the direct subject."
+    }
+  ]
+}

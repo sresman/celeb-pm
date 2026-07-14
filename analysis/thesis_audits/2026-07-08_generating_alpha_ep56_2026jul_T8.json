@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha \u2014 Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T8",
+  "summary": "AI world models will reduce AAA game development costs by ~90%, benefiting platform holders and harming game developers",
+  "summary_extended": "Baker argues that AI world models will reduce the cost of developing AAA video games by approximately 90%, collapsing per-title budgets from the current $200-300M range and triggering a massive explosion in content supply. The core reasoning is that AI-generated world models will automate much of the labor-intensive asset creation, environment design, and testing that currently drives development costs, making it feasible for smaller teams to produce high-quality titles. This dynamic is structurally negative for incumbent AAA game studios, which will face intensified competition from a flood of lower-cost entrants, compressing margins and eroding pricing power. Conversely, Baker views video game platform holders as the primary beneficiaries, since content abundance increases the value proposition of their platforms and drives engagement and subscriber growth. No specific timeline was given, but the implication is a medium-term structural shift that favors platform economics over content creator economics.",
+  "detail": "Baker argues AI world models will collapse game development costs from ~$200-300M per AAA title by 90%, creating a content explosion. This is bad for game studios (more competition) but very good for video game platforms due to content abundance.",
+  "confidence": "moderate",
+  "confidence_evidence": "Stated with a specific percentage estimate but acknowledged as forward-looking; no specific timeline given",
+  "themes": [
+    "AI software",
+    "gaming",
+    "platform economics"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "AI world models are going to lower the cost of developing a game by 90%",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MSFT",
+    "SONY",
+    "NTDOY",
+    "RBLX"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "MSFT",
+    "SONY",
+    "NTDOY",
+    "RBLX",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft owns Xbox and Game Pass, a major gaming platform that directly benefits from content abundance driven by lower development costs; platform economics improve with more content supply."
+    },
+    {
+      "ticker": "SONY",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Sony's PlayStation platform is a direct beneficiary of content abundance; more games at lower cost increases the value of the PlayStation ecosystem and subscription services like PS Plus."
+    },
+    {
+      "ticker": "NTDOY",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nintendo is a platform holder (Switch) that benefits from content abundance, though its first-party focus and unique IP model make it a somewhat weaker beneficiary than pure platform plays; still classifiable as a direct beneficiary."
+    },
+    {
+      "ticker": "RBLX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Roblox is a user-generated content platform that directly benefits from AI-driven reduction in game creation costs, as cheaper and easier content creation accelerates the supply of experiences on its platform."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta is not a primary gaming platform holder in the traditional sense; its VR/metaverse ambitions are loosely related but the thesis specifically concerns AAA game development costs and platform holders like Xbox, PlayStation, and Nintendo. Meta's connection is too indirect to classify as a direct beneficiary of this specific thesis."
+    }
+  ]
+}

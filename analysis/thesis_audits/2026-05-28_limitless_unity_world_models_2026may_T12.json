@@ -1,0 +1,52 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T12",
+  "summary": "TSMC supply constraint is the primary governor preventing the AI buildout from becoming a debt-fueled bubble",
+  "summary_extended": "Baker argues that TSMC's manufacturing capacity is the single binding constraint preventing the AI infrastructure buildout from becoming an unsustainable, debt-fueled bubble. He contends that Nvidia could sell $2\u20133 trillion worth of GPUs annually if TSMC could supply the necessary silicon, meaning demand is effectively uncapped but supply is rationed by TSMC's inability to scale rapidly. This supply constraint imposes a natural, sustainable pace on AI capital expenditure, which Baker views as a structural safeguard rather than a problem. ASML's monopoly on EUV lithography machines \u2014 with a five-year backlog, ~$400M per unit, and a single production team \u2014 further entrenches TSMC's bottleneck and makes any rapid capacity expansion by competitors essentially impossible in the near term. Baker dismisses Samsung as a credible near-term threat to TSMC's leading-edge dominance, reinforcing the view that this constraint is durable and investable.",
+  "detail": "Baker argues Nvidia could sell $2-3T of GPUs annually if TSMC could supply them. TSMC's inability to scale rapidly forces a sustainable pace of buildout. ASML's monopoly on EUV lithography machines (5-year backlog, $400M per unit, single production team) further entrenches this constraint. Samsung overtaking TSMC is seen as improbable near-term.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Central to Baker's anti-bubble thesis; specific $2-3T demand figure cited; ASML constraint independently corroborated",
+  "themes": [
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Nvidia could sell two to three trillion of GPUs if only TSMC could supply them",
+  "tickers_named_original": [
+    "TSM"
+  ],
+  "tickers_direct": [
+    "TSM",
+    "ASML",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "TSM",
+    "ASML"
+  ],
+  "tickers_implied_original": [
+    "ASML",
+    "005930.KS"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "TSMC is the central subject of this thesis \u2014 its supply constraint is the primary mechanism Baker identifies as governing the pace of AI buildout."
+    },
+    {
+      "ticker": "ASML",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "ASML's EUV monopoly is explicitly cited as the upstream constraint that entrenches TSMC's bottleneck, making it a direct subject of the supply-constraint thesis, not merely tangential."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Baker explicitly states Nvidia could sell $2\u20133T of GPUs annually if TSMC supply were unconstrained. Nvidia is the direct demand-side entity whose growth is gated by this constraint and would be the primary beneficiary of any TSMC capacity expansion."
+    }
+  ]
+}

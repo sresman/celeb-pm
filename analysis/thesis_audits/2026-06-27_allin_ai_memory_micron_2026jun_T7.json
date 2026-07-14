@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T7",
+  "summary": "The future of enterprise AI is composable models combining open-weight and frontier models, shifting economic value from frontier labs to infrastructure",
+  "summary_extended": "Baker argues that the future of enterprise AI will be defined by 'composable' model architectures \u2014 specifically, a router-based 'council of LLMs' that directs roughly 85% of queries to fine-tuned open-weight models while reserving only the most complex tasks for expensive frontier models. This architectural shift means enterprises will dramatically reduce their spend on frontier model APIs (from OpenAI, Anthropic, Google, etc.), compressing margins at frontier labs. The economic value released from frontier labs flows instead to AI infrastructure providers \u2014 the compute, networking, and orchestration layer that runs the open-weight models at scale. Baker explicitly states that open-source models are net positive for AI infrastructure, implying that the commoditization of model intelligence accelerates infrastructure demand rather than reducing it. The investment implication is to be long AI infrastructure (compute, data centers, networking) and cautious on pure-play frontier model companies whose pricing power erodes as open-weight alternatives improve.",
+  "detail": "Baker argues every enterprise will run a 'council of LLMs' \u2014 a router directing queries to fine-tuned open-weight models for ~85% of tasks, with frontier models handling only the hardest queries. This shifts margin from frontier model companies to AI infrastructure providers. Open-source models are net positive for AI infrastructure.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as a strong structural belief, uses specific percentages, and names it as 'the future'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "AI software/models"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "open-source models just shift economic value from the margins of the frontier labs to the infrastructure",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "VRT"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "CoreWeave (private)",
+    "Crusoe (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of GPUs used to run both open-weight and frontier models at scale. If the 'council of LLMs' architecture drives more distributed inference workloads across enterprise infrastructure, NVDA benefits as the primary compute provider for that infrastructure build-out. Baker explicitly frames infrastructure as the winner, and NVDA is the clearest US-listed infrastructure beneficiary."
+    },
+    {
+      "ticker": "VRT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Vertiv supplies power and thermal management infrastructure for AI data centers. If open-weight model proliferation drives more on-premise and distributed inference infrastructure, data center infrastructure suppliers like VRT are direct beneficiaries of the thesis Baker is describing."
+    },
+    {
+      "ticker": "EQIX",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "While data center REITs benefit broadly from AI infrastructure growth, Baker's thesis is specifically about compute and model economics, not colocation real estate. Adding EQIX would be too loosely connected to this specific thesis."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-12",
+  "source": "CNBC Squawk on the Street \u2014 SpaceX public-debut day: orbital compute economics, compute shortage, IPO",
+  "thesis_id": "T3",
+  "summary": "SpaceX's gigawatt terrestrial compute buildout is a near-term high-IRR business that should be valued like Amazon's early capex cycle",
+  "summary_extended": "Baker argues that SpaceX's terrestrial compute buildout \u2014 specifically its Colossus 1 data center \u2014 represents a near-term, high-IRR capital deployment opportunity that the market should reward rather than penalize. He anchors this view on Altimeter's calculation of a 55% IRR on Colossus 1, arguing that when returns on invested capital are this high, heavy capex is value-creating, not value-destroying. Baker draws an explicit analogy to Amazon's early investment phase, suggesting that investors who understand the IRR math will be supportive of SpaceX's continued buildout. The key forward-looking variable, in his view, is how many gigawatts of compute capacity SpaceX can bring online over the next several years, which will determine the magnitude of value creation. As a large shareholder who participated in the IPO, Baker frames this as a core long position with a medium-term horizon tied to gigawatt-scale compute deployment.",
+  "detail": "Baker cites Altimeter's calculation of a 55% IRR on SpaceX's Colossus 1 data center. He argues markets should be supportive of heavy capital investment when IRRs are this high, drawing an explicit analogy to Amazon's early investment phase. The key variable is how many gigawatts SpaceX can bring online in the next few years.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites a specific third-party IRR figure (55%, from Altimeter) and uses it as the anchor for his valuation framework. He is a large shareholder who participated in the IPO.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy",
+    "space/orbital compute"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "55 percent IRR on their Colossus one data center",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SPXC"
+  ],
+  "tickers_subject": [
+    "SPXC"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (SPXC implied)",
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPXC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is about SpaceX's compute buildout and its IRR. SPXC is the direct subject. Note: SpaceX's actual ticker on public markets should be verified \u2014 SPXC is a placeholder used in the original extraction and may not reflect the actual listing ticker from the IPO."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is not the subject of this thesis and is not specifically identified as a beneficiary in Baker's argument. The thesis is about SpaceX's IRR and capital deployment framework, not about GPU procurement or NVDA's revenue. NVDA may loosely benefit from any large compute buildout but Baker does not make this claim here, and adding it would be speculative contamination."
+    }
+  ]
+}

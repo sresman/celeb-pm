@@ -1,0 +1,67 @@
+{
+  "date": "2019-11-26",
+  "source": "Invest Like the Best \u2014 Tech and consumer growth investing (EP.149)",
+  "thesis_id": "T5",
+  "summary": "Intel's loss of semiconductor manufacturing leadership to TSMC in 2018 was a structural inflection point creating a 20-30% competitiveness swing for fabless chip designers.",
+  "summary_extended": "Baker argues that TSMC's achievement of the 7nm node ahead of Intel in 2018 was a structural inflection point in semiconductor manufacturing, representing one of only two truly important technology events that year. Specifically, TSMC's 7nm is equivalent to Intel's 10nm, meaning that for the first time in decades, fabless chip designers gained a meaningful process technology advantage over Intel rather than being disadvantaged. Baker quantifies this as a 10-15% embedded performance/efficiency advantage for fabless designers, which translates to a 20-30% total competitiveness swing against Intel when accounting for both sides of the gap. The investment implication is that fabless semiconductor companies \u2014 those designing chips manufactured by TSMC \u2014 now have a durable structural cost and performance edge over Intel's integrated device model, benefiting companies like Apple whose custom silicon is manufactured at TSMC. Baker presents this as a long-term structural shift rather than a cyclical event, suggesting sustained headwinds for Intel and tailwinds for TSMC and its major fabless customers.",
+  "detail": "TSMC's 7nm node is equivalent to Intel's 10nm node. TSMC reached this node before Intel, giving the entire fabless semiconductor ecosystem (Apple chips, etc.) a 10-15% embedded advantage over Intel, representing a 20-30% total swing in competitiveness. Baker calls this one of only two truly important events in technology in 2018.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls it one of only two important things that happened in technology in 2018, presented with specific technical detail and quantified competitive impact.",
+  "themes": [
+    "semiconductor supply chain",
+    "semiconductor manufacturing",
+    "fabless vs IDM"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "Taiwan Semi got to the node before Intel",
+  "tickers_named_original": [
+    "INTC",
+    "TSM",
+    "AAPL"
+  ],
+  "tickers_direct": [
+    "INTC",
+    "TSM",
+    "AAPL",
+    "AMD",
+    "QCOM"
+  ],
+  "tickers_subject": [
+    "INTC",
+    "TSM"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "INTC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Intel is the direct subject of this thesis \u2014 the argument is specifically about Intel losing manufacturing leadership and suffering a 20-30% competitiveness disadvantage as a result."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "TSMC is the other direct subject \u2014 the thesis is explicitly about TSMC surpassing Intel at the 7nm node, making TSMC's foundry leadership the structural driver of the thesis."
+    },
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly cites Apple chips as an example of fabless designs benefiting from TSMC's process lead, giving Apple's custom silicon a 10-15% embedded advantage over Intel-based alternatives."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "AMD is the most unambiguous implied beneficiary: it is a US-listed fabless x86 CPU designer that was first to market with 7nm chips via TSMC, directly competing against Intel in the same markets Baker describes. The thesis about fabless designers gaining a 20-30% competitiveness swing over Intel applies most directly to AMD among publicly traded companies."
+    },
+    {
+      "ticker": "QCOM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Qualcomm is a major US-listed fabless designer manufacturing at TSMC whose chips directly benefit from TSMC's process leadership over Intel, making it a clear implied beneficiary of the structural shift Baker describes."
+    }
+  ]
+}

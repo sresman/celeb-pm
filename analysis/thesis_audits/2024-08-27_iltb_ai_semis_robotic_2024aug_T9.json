@@ -1,0 +1,37 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best \u2014 AI, semiconductors, and the robotic frontier (EP.385)",
+  "thesis_id": "T9",
+  "summary": "Tesla FSD is on the same scaling law trajectory as LLMs and is approaching a step-function improvement that will be 'abjectly humiliating' to skeptics within 6-18 months",
+  "summary_extended": "Baker argues that Tesla's Full Self-Driving (FSD) is following the same scaling law trajectory as large language models, and that the transition from FSD 12.3 (fully deep learning, no human-written code) to FSD 12.5 (running on AI4 hardware) represents roughly GPT-2 to GPT-2.5 level capability \u2014 with a rapid jump to GPT-4 equivalent capability expected within 6-18 months as Tesla scales its compute infrastructure. He points to Tesla standing up 50,000+ H100/H200 GPUs at Gigafactory Austin as the key catalyst enabling this step-function improvement, applying known LLM scaling techniques to the autonomous driving domain. Baker contends Tesla's proprietary visual training dataset is orders of magnitude larger than Waymo's, creating a durable data moat he compares to owning YouTube plus all of Meta's video properties versus Yahoo \u2014 making it structurally difficult for competitors to close the gap. He expresses unusual personal conviction, stating he has never before been willing to make a prediction with this specificity, and expects the outcome to be 'abjectly humiliating' to FSD skeptics, implying TSLA is a strong long given the market is not pricing in this capability inflection.",
+  "detail": "Baker argues FSD 12.3 (all deep learning, eliminated human code) and 12.5 (runs on AI4 hardware) represent GPT-2 and GPT-2.5 level capability respectively. Tesla is standing up 50,000+ H100/H200s at Gigafactory Austin. With known scaling techniques, Baker expects a rapid jump to GPT-4 equivalent FSD capability. Tesla's proprietary visual training dataset is orders of magnitude larger than Waymo's, creating a durable data moat analogous to owning YouTube plus all of Meta's properties vs. Yahoo.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'I haven't never been willing to make a prediction like that before' about the 6-18 month timeline, indicating unusual conviction; makes specific version-to-GPT-generation mappings",
+  "themes": [
+    "autonomous vehicles",
+    "AI scaling laws",
+    "robotics",
+    "FSD"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "abjectly humiliating to everyone who is an FSD skeptic in the next 12 to 18 months",
+  "tickers_named_original": [
+    "TSLA"
+  ],
+  "tickers_direct": [
+    "TSLA"
+  ],
+  "tickers_subject": [
+    "TSLA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TSLA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about Tesla's FSD product, its scaling trajectory, compute buildout, and data moat \u2014 TSLA is the direct subject and investment vehicle for this thesis."
+    }
+  ]
+}

@@ -1,0 +1,3074 @@
+# label: allin_e274_spacex_2t_nvidia_2026may
+# source: All-In Podcast
+# date: 2026-05-22
+# url: https://www.youtube.com/watch?v=HGbA6ze0_3M
+# youtube_id: HGbA6ze0_3M
+# sub_lang: en
+# actual_title: SpaceX’s $2T Case, Nvidia’s Shock Selloff, America Turns on AI, Trump Pulls AI Order, Bond Crisis?
+
+[00:00] All right, everybody. Welcome back to
+[00:01] the number one podcast in the world.
+[00:03] It's the All-In podcast episode 274.
+[00:07] Sacks is out today, but we're very lucky
+[00:10] to have Gavin Baker from a Treaties
+[00:13] Management joining us. The spicy takes
+[00:15] must flow.
+[00:17] Welcome back to the program, bestie
+[00:19] Gavin.
+[00:19] >> Thanks for having me. Always love it.
+[00:21] >> It's been a huge week in tech. We can
+[00:24] start with the SpaceX and OpenAI IPOs.
+[00:26] We've got Andrej Karpathy joining
+[00:28] Anthropic, Nvidia crushing it. So many
+[00:30] different to go, but I think we'll start
+[00:32] with Andrej Karpathy joining Anthropic.
+[00:35] Karpathy is only 39 years old. He's
+[00:38] already a legend in the tech industry,
+[00:39] if you don't know him. I believe he's
+[00:41] also coming to Liquidity, Chamath.
+[00:42] >> He's going to keynote on Monday morning.
+[00:44] >> Oh, fantastic.
+[00:45] >> I did not know. Tuesday, Tuesday,
+[00:46] Tuesday, day two. I think he's
+[00:47] keynoting. Okay.
+[00:49] >> As is Gavin. Gavin will be there.
+[00:51] Founding member
+[00:52] >> Gavin anchoring day two.
+[00:54] >> Excellent. Yeah, and this is Gavin's
+[00:55] second appearance at the event.
+[00:56] >> I look at those two bookmarks, Andrej
+[00:58] Karpathy and Gavin Baker.
+[00:59] >> Yeah, you know.
+[01:01] >> Liquidity pulls in the stars.
+[01:03] >> Obviously, Andrej was a founding member
+[01:06] of OpenAI. He led the self-driving team.
+[01:08] >> Also, hold on. Gavin is going to help us
+[01:10] judge the best ideas section as well.
+[01:13] >> Excellent. I don't know if you know
+[01:14] that, Gavin, but you're a judge. You're
+[01:15] going to be a judge.
+[01:16] >> I'm a pretty thing, man. I'm easy.
+[01:18] >> Yes. Karpathy also coined the term vibe
+[01:20] coding. He recently built Auto Research.
+[01:22] I think we talked about that here a bit.
+[01:24] That's an open-source training tool. It
+[01:25] helps AI models improve themselves by
+[01:28] running 5-minute experiments. That got
+[01:29] over 82,000 stars on GitHub. He did that
+[01:32] like as a weekend experiment, and all
+[01:34] these civilians started building their
+[01:36] own uh recursive LLMs. Really inspiring.
+[01:40] And the Andrej Karpathy skills is a tool
+[01:43] based on his set of principles for
+[01:45] Claude code, and somebody just released
+[01:48] that. And so, it's just pretty crazy
+[01:51] when you think about it. He's going to
+[01:52] be in charge of a new pre-training team
+[01:54] at Anthropic. The focus obviously being
+[01:56] recursive self-improvement. In other
+[01:58] words,
+[01:59] they're going to have Claude improve
+[02:01] itself and they've already talked a
+[02:02] little bit about AI improving AI over at
+[02:06] Anthropic. Chamath, what's your take on
+[02:08] this? Is
+[02:09] this super important in 2026? Obviously,
+[02:12] Karpathy is super well respected. He's
+[02:15] obviously, you know, one of the true
+[02:17] talents in the space, but hey, we're in
+[02:19] a we're in a different inning than we
+[02:20] were say 10 years ago when he was at
+[02:22] Tesla or 5 years ago when he co-founded
+[02:25] OpenAI.
+[02:25] >> You know what's interesting? If you go
+[02:26] back to like Google,
+[02:28] the culture of Google which they got
+[02:30] right was
+[02:31] the singular technical talents there.
+[02:35] They were singled out and they were
+[02:36] called Google fellows. I don't know if
+[02:37] you guys remember this like Amit
+[02:39] Singhal,
+[02:40] Shreedhar Ramaswamy, Jeff Dean.
+[02:44] These guys are stars. And what's
+[02:46] interesting is if you track what folks,
+[02:48] particularly Jeff Dean I guess now
+[02:50] because the other two aren't there
+[02:51] anymore, but
+[02:53] what they did inside of Google, it's
+[02:55] like wave upon wave, they were at the
+[02:56] foot of those waves. What's interesting
+[02:58] about Andrej, he's been at the wave upon
+[03:00] wave of AI. He was probably the first
+[03:03] person that really commercialized the
+[03:06] Richard Sutton bitter lesson essay
+[03:10] when he was leading FSD at Tesla,
+[03:13] which was really about the brute force
+[03:15] computation. And I remember him telling
+[03:17] me the story. I don't know if he said
+[03:18] this publicly or not, but where he spent
+[03:21] a portion of his time, I want to say a
+[03:22] quarter of his time labeling data. Could
+[03:24] you imagine like 2016, 17 like hand
+[03:27] labeling video data from Teslas?
+[03:31] So he did that, then he's co-founder of
+[03:32] OpenAI. He's a star.
+[03:34] And he's an exceptional human being and
+[03:36] he's super curious. And
+[03:38] then what he's done as a kind of a free
+[03:40] agent
+[03:41] is also quite impressive. So I think
+[03:44] that this is a really important deal. I
+[03:46] think he's one of these
+[03:48] really curious people that can be sent
+[03:50] off and they'll just go and
+[03:52] invent new things. And I think this idea
+[03:55] of recursive self-learning puts these
+[03:57] models on
+[03:59] a combination of overdrive and
+[04:02] autopilot. And so if you put those two
+[04:04] things together, I think that you start
+[04:06] to
+[04:08] you can potentially live out this idea
+[04:10] that there's an order of magnitude
+[04:12] improvement on a yearly basis. So like
+[04:14] this new form of Moore's law.
+[04:17] Well, so then the model quality just
+[04:18] goes absolutely parabolic. Just like
+[04:20] this. Straight up.
+[04:21] >> And I think that a bunch of compute at
+[04:23] the problem and these things learn
+[04:25] really quick.
+[04:26] I think is the high-order bit there.
+[04:29] Gavin, what do you What's your take on
+[04:31] Anthropic's recent success and their
+[04:33] massive hiring binge?
+[04:34] >> The success is extraordinary. It's
+[04:37] undeniable. I think the fact that they
+[04:40] are now they were even positive per the
+[04:42] Wall Street Journal in the most recent
+[04:44] quarter
+[04:45] is a really important fact for kind of
+[04:48] the whole AI narrative. Because now
+[04:50] there's
+[04:52] you know, you could talk about circular
+[04:53] funding, you could talk about ROI, and
+[04:56] we could go look at the ROIC of the
+[04:57] hyperscalers.
+[04:59] But if OpenAI and Anthropic are at call
+[05:03] it $100 billion of ARR now with 80%ish
+[05:08] gross margins on inference, like the
+[05:10] returns are there. And then if we add in
+[05:12] and they're growing really fast, if we
+[05:14] add in Gemini, we add in Cursor, we add
+[05:16] in xAI, we add in open source,
+[05:19] you know, it's it's not hard to see 200,
+[05:23] 300, 400 billion dollars of ARR at the
+[05:26] end of this year at high [clears throat]
+[05:28] market
+[05:28] >> Across all of the Across all of the
+[05:30] language models. And you're talking
+[05:31] specifically about the private language
+[05:33] model companies, maybe not Google, which
+[05:35] is obviously public. You're including
+[05:37] Google. Okay.
+[05:38] >> but I was excluding, you know, a lot of
+[05:40] the returns to this GPU spend have come
+[05:42] from you know, better recommender
+[05:44] systems at Facebook and Google,
+[05:48] Amazon, better ad targeting, better ad
+[05:50] measurement.
+[05:51] >> Sure.
+[05:52] >> So, excluding that and just narrowing it
+[05:54] to LLMs, which I think
+[05:56] is the
+[05:57] possible definition,
+[05:59] and it seems like there's going to be a
+[06:01] really strong ROI this year, even
+[06:04] excluding what are still some of the
+[06:06] most economically important and
+[06:07] profitable use cases for GPUs and AI
+[06:10] infrastructure.
+[06:12] I do think what Karpathy is working on,
+[06:13] recursive
+[06:15] self-improvement, is really important
+[06:18] and unlocking that and continual
+[06:20] learning,
+[06:21] you know, maybe the two final frontiers
+[06:24] for for AI.
+[06:26] And just the idea of recursive
+[06:28] self-improvement that the model,
+[06:30] while it is training, you know, during a
+[06:33] forward pass,
+[06:36] has input into its training, or another
+[06:39] model has input into the training,
+[06:42] I think that could be really powerful
+[06:44] and I think
+[06:45] Chamath's statistics of
+[06:48] of, you know, 10Xing every year,
+[06:52] you know, might seem conservative if
+[06:53] that comes to pass. And then, of course,
+[06:55] continual learning is the holy grail,
+[06:58] where the model learns from experiences
+[07:01] the way humans do. Yeah. And that's
+[07:03] something we haven't unlocked yet.
+[07:06] And those those those two combined, I
+[07:08] think would um
+[07:10] they might pull the future forward in a
+[07:12] very real way.
+[07:13] >> Yeah, and we have right now Anthropic
+[07:14] has a decent lead on everybody else,
+[07:17] whether it's 3 months or 6 months.
+[07:19] Obviously, they're probably 6-12 months
+[07:20] ahead of open source. Maybe they're
+[07:21] 3-6-9 months ahead of their
+[07:23] contemporaries, but they have a lead.
+[07:25] You put Karpathy in there, Friedberg,
+[07:27] now you have Karpathy, he does recursive
+[07:31] and at some point, and it may have even
+[07:33] occurred at Anthropic, the AI is going
+[07:36] to be improving
+[07:38] the language model more
+[07:41] than
+[07:43] the humans in the loop are doing it.
+[07:45] Obviously, they're orchestrating it,
+[07:46] Friedberg, but at what point do we think
+[07:49] this, let's call it, super recursiveness
+[07:52] occurs? When will we cross the recursive
+[07:55] valley
+[07:56] and AI is doing more to build a language
+[07:58] model than humans are?
+[08:02] >> I'm not sure when this idea that you
+[08:05] feed the whole model into a context
+[08:06] window to train itself and build a new
+[08:09] model is going to happen, but I think
+[08:11] there's probably a lot of different
+[08:12] architectural paths that could be walked
+[08:14] here.
+[08:15] One of which is this idea that you could
+[08:17] make much smaller models and then create
+[08:19] networks of smaller models that work
+[08:21] together where you ultimately have
+[08:24] less energy or less cost per token
+[08:25] produced out of a
+[08:27] aggregation of models than you did with
+[08:29] one single large model. I've said this
+[08:32] probably three or four times now.
+[08:33] There's a lot of work and a lot of
+[08:35] opportunity ahead
+[08:37] in kind of re-architecting models and
+[08:39] re-architecting how models work together
+[08:42] to solve problems. My guess is a lot of
+[08:44] leadership that that he can bring
+[08:47] to exploring those paths. And all it
+[08:49] takes is a minor breakthrough and your
+[08:51] cost per token drops in half. That's a
+[08:52] tremendous efficiency gain
+[08:54] that is seems very much on the horizon
+[08:56] because some of the early papers, I
+[08:58] think I shared one from MIT a few weeks
+[08:59] ago, indicate that there's a lot of room
+[09:02] to run here.
+[09:03] >> In terms of re-architecting models and
+[09:05] deployment of models.
+[09:06] >> These very small models,
+[09:10] uh, small language models and then
+[09:11] verticalized ones are the future. We've
+[09:14] got a company Abacus that's doing it for
+[09:16] corporations. Crushing it. Everybody's
+[09:18] got an interest in doing this. And I
+[09:20] don't know if you saw the news this
+[09:21] week, uh, Chamath, it happened about 2
+[09:23] weeks ago very quietly. Chrome included
+[09:27] Gemini or Google included in their
+[09:29] Chrome browser the Gemini Nano model
+[09:32] without telling anybody. 4 GB on your
+[09:34] computer. And that's the one that does
+[09:37] like proof reading, spelling, auto
+[09:38] complete, all that. So, now we have
+[09:41] Google
+[09:42] covertly installing this on everybody's
+[09:45] operating system.
+[09:46] >> on. Hold on. Covert is a strong word, so
+[09:48] let's not use that word.
+[09:49] >> Without telling people, without giving
+[09:51] people a heads-up. Let's say it in a way
+[09:53] that we can both agree.
+[09:55] >> We're in the phase now where
+[09:58] I think breathlessly talking about every
+[10:00] model improvement is a waste of time.
+[10:02] There's no ROI in it.
+[10:04] We are on a path of accelerated
+[10:06] learning, and we're going to start to
+[10:08] see end user achievements that were
+[10:12] heretofore impossible. That should be
+[10:14] the focus. So, for example,
+[10:17] we were able to solve, I'm just
+[10:18] collectively saying we, in this case it
+[10:20] was specifically
+[10:22] OpenAI.
+[10:24] By the use of a human, and this is
+[10:26] important,
+[10:27] you know, a math problem that stood
+[10:28] outstanding, not been solved for decades
+[10:31] and decades.
+[10:33] I can tell you in a different example,
+[10:35] there are drug candidates that
+[10:37] are about to enter clinical trials and
+[10:38] INDs that were sitting on the shelf and
+[10:41] people didn't think were very viable at
+[10:43] all.
+[10:45] So, we're at the phase now where these
+[10:46] things are front and center, they're
+[10:49] useful to people, they're increasingly
+[10:50] valuable.
+[10:52] I think what we should do now is focus
+[10:54] on these end user
+[10:56] use cases
+[10:57] because the way that you say it, in my
+[11:00] opinion, is part of the problem because
+[11:02] it starts to create this boogeyman us
+[11:04] versus them thing, and I'm not saying
+[11:06] you're doing it on purpose, but I'm
+[11:07] saying this is exactly why I think
+[11:10] so many people are becoming sort of like
+[11:13] it's a four-letter word now when you
+[11:14] mention AI because it's presented as
+[11:17] this thing, and I think we have to
+[11:18] present the other side of it, at least
+[11:19] so that people have the data. So, I
+[11:21] don't think Google's in the business of
+[11:23] doing shady or shady things. I don't
+[11:26] They're not that company. There are
+[11:27] other companies that would.
+[11:29] >> Meta.
+[11:30] >> [laughter]
+[11:30] >> You're referring to your alma mater?
+[11:32] >> I'm not going to say which ones, okay?
+[11:34] But Google is not that company. So, I I
+[11:37] think that the reason they did it was
+[11:38] probably because there's user utility.
+[11:39] And my point is we should focus on the
+[11:41] user utility because I think that's the
+[11:43] story we're telling from now on because
+[11:44] I think we, collectively, the four of
+[11:46] us,
+[11:47] can responsibly tell both sides of the
+[11:49] story in a well-balanced way because I
+[11:51] think nobody wins if we become Luddites
+[11:54] and go back in time.
+[11:55] >> Yeah.
+[11:55] >> And I think that if we don't if we're
+[11:57] not careful with our words, that's what
+[11:59] will happen.
+[11:59] >> Yeah, and by the way,
+[12:02] obviously not a Luddite, but this is
+[12:04] what
+[12:05] you know, has been reported by a lot of
+[12:06] folks that people were
+[12:10] surprised, shocked when they saw the
+[12:12] size of the model being done in the
+[12:14] background, and it has triggered some
+[12:17] people looking at it around privacy, and
+[12:19] I do agree that Google is not a bad
+[12:23] actor in the space. So, probably a speed
+[12:25] hour more than anything, I would say.
+[12:27] >> May I just add two things?
+[12:30] Um
+[12:30] there's attorney maxing, and then
+[12:32] there's attorney maxed.
+[12:34] And Google is probably
+[12:35] >> [laughter]
+[12:36] >> attorney maxed.
+[12:37] >> Yes.
+[12:38] >> Yeah.
+[12:38] >> It happened for a long time. And the
+[12:40] second second thing I would say is I do
+[12:42] think it's incumbent on all of us as
+[12:44] Americans who are involved in the
+[12:46] technology industry in one way or
+[12:47] another
+[12:48] to be advocates for a the positive,
+[12:51] optimistic possibilities
+[12:54] that AI introduces to to everyone in
+[12:56] this world
+[12:58] because it it is starting to feel or
+[13:00] seem
+[13:02] like there may be a CCP-funded
+[13:05] campaign against AI and data centers in
+[13:09] America.
+[13:10] And that's very logical for China, but
+[13:13] it is not good for America.
+[13:15] And so, I just I think it's
+[13:19] it we all have responsibility, is what I
+[13:21] would say.
+[13:21] >> Yeah. Who do you think's doing
+[13:24] a poor job at that and responsible for
+[13:25] this? Is it Dario with his constant hey,
+[13:29] everybody's going to lose their job?
+[13:31] Who's responsible for this? Is it the
+[13:33] CEOs blaming AI for their layoffs?
+[13:36] What's your take on this, Gavin? Look at
+[13:38] Hold on a second. Everybody is
+[13:40] trading their own book.
+[13:42] It makes enormous sense for Dario to try
+[13:45] to create the boundary conditions for a
+[13:47] regulatory moat because he will be
+[13:50] inside of the tent pissing out.
+[13:52] He's big enough now.
+[13:54] And if you notice that
+[13:56] a lot of the breathlessness has ramped
+[13:58] up.
+[13:59] And Jason, we've talked about this. You
+[14:01] can annotate successive rounds of
+[14:03] fundraising and successive scale with
+[14:06] the volume.
+[14:07] So, I think that it's a reasonable
+[14:09] business strategy and I think that he's
+[14:11] quite clever. And I think that look, if
+[14:13] you actually and I and I do this, if you
+[14:15] actually just have an ash bot, an ash
+[14:17] agent inside of Quad and you ask it what
+[14:19] it would do, it would come up with this
+[14:20] strategy. And meanwhile, there are other
+[14:22] versions of other counter strategies and
+[14:25] counter exploitative strategies. The
+[14:27] point is that each CEO has a clear
+[14:29] incentive. They're operating at such a
+[14:31] level of scale
+[14:33] that they're they're just reading their
+[14:35] own book. So, it's it's up to us to take
+[14:38] a step back and actually see the forest
+[14:40] from the trees. I think Nick, can you
+[14:42] find this? There was a clip of Shyam
+[14:44] Sankar, friend of the pod, fabulous guy,
+[14:46] the CTO of Palantir and he was I think
+[14:48] he was on Fox News
+[14:50] and he said, "Stop breathlessly asking
+[14:53] these model makers what they think.
+[14:56] Go to the end user and ask the person in
+[14:58] the factory that's using the model and
+[15:00] ask him what he or she thinks. Ask what
+[15:02] the doctor thinks. Ask what the
+[15:04] scientist think and start to tell those
+[15:06] stories. That's what we should be
+[15:07] talking about."
+[15:08] >> Yeah, and Gavin, you were
+[15:10] I was sort of asking you your opinion on
+[15:12] what's what's who's causing this and
+[15:15] then what's the solution? Like do you do
+[15:17] you have folks you think in the industry
+[15:20] who are representing it particularly
+[15:21] well we can point out, "Hey, Elon has
+[15:24] said we're going to move to a world of
+[15:26] incredible abundance and working will be
+[15:28] optional." I think that's on the margin
+[15:30] a little scary for people to hear
+[15:31] because they hear no job.
+[15:33] But, he does say, "Hey, universal basic
+[15:35] income is probably going to have to come
+[15:36] into, you know, place." And he said that
+[15:39] multiple times. You have Chamath,
+[15:41] according to Chamath, talking his own
+[15:43] book, scaring the bejesus out of people
+[15:45] in order to get regulatory capture.
+[15:48] What do you think is going on here? And
+[15:50] how can we do better as an industry?
+[15:52] >> I think Chamath outlined like a very
+[15:56] viable and positive path forward. We're
+[15:58] just, you know, real people who are not,
+[16:01] you know, at the tip of the spear.
+[16:04] These are the positive impacts AI's had
+[16:06] on my life. I was at a
+[16:08] I was at I was at an event maybe 10 days
+[16:10] ago
+[16:11] and someone who runs a hedge fund, his
+[16:14] daughter was born with a very rare
+[16:16] genetic mutation
+[16:18] that effectively would have
+[16:20] normally condemned her to a life devoid
+[16:22] of joy, meaning everything.
+[16:26] The neurons in her brain were not
+[16:27] firing. So, she wouldn't
+[16:30] you know, who knows what her life
+[16:31] expectancy would have been or what the
+[16:33] quality of her life would would have
+[16:34] been. And it's it's a tragic disease.
+[16:38] He said he didn't accept that as an
+[16:40] answer. He found He did an enormous
+[16:43] amount of research with LLMs and found
+[16:45] an existing safe drug on the market that
+[16:48] they thought would have a meaningful
+[16:50] impact on his daughter's condition.
+[16:53] And it did.
+[16:55] It took I think the percentage of times
+[16:56] the neurons were firing was 30 or 40%.
+[16:59] And it took it up to 80 or 90%. And that
+[17:02] means that she can live a normal life.
+[17:05] She may not be as smart as she would
+[17:06] have been, but she will live a normal
+[17:08] life.
+[17:09] And he's now figured out how to use AI,
+[17:13] how to to further tailor that drug. And
+[17:15] you know, there've been all sorts of
+[17:17] advances in
+[17:18] in protein design, etc., etc.
+[17:21] And he's reasonably confident he's going
+[17:23] to have a drug in months
+[17:25] that is a complete cure.
+[17:27] And that's just one person
+[17:30] one dad who was unwilling to accept
+[17:32] defeat for his daughter
+[17:34] and who changed her life and the life of
+[17:36] everyone else with that disease. And we
+[17:38] tell those stories. So, I think Elon's
+[17:40] doing a good job. A future where work is
+[17:42] optional, I think that sounds great to
+[17:44] some people and
+[17:45] you know, scary to others. You know,
+[17:47] four-day workweek, you know, I think
+[17:49] it's is probably something that sounds
+[17:50] sounds good to a lot of people. I think
+[17:52] Jensen is doing a good job of being an
+[17:54] effective advocate. And I do think
+[17:57] anyone who's trying to drive reg-
+[18:01] I just we need to stay focused on the
+[18:03] positives. That's what I'd say.
+[18:04] >> Yeah.
+[18:05] Freeberg,
+[18:06] what's your take here on the AI
+[18:10] PR crisis, if we'll call it that. Uh we
+[18:13] had three different
+[18:15] commencement speeches that were booed.
+[18:18] Eric Schmidt being one of them, two
+[18:20] other ones by maybe less notable folks.
+[18:23] When you hear young people booing AI
+[18:26] vociferously, why are they doing that,
+[18:28] Freeberg, and what's your take on the
+[18:30] overall PR problem and how to turn it
+[18:32] around?
+[18:35] >> Uh that's a
+[18:38] There's a long answer to that question.
+[18:39] Um
+[18:42] It relates in some ways to your concerns
+[18:44] about socialism and polarization.
+[18:46] >> answer?
+[18:47] >> Yeah. What's the long answer?
+[18:48] >> I mean, that's like
+[18:50] like why do people hate technology?
+[18:54] The greatest technological
+[18:56] >> Why do they hate this technology? They
+[18:58] love their phones. They love the
+[18:59] internet. This technology they hate.
+[19:02] >> Mhm.
+[19:04] I think that there's like an underlying
+[19:07] view that technology creates leverage
+[19:09] for a small group of people
+[19:11] which creates power imbalances and
+[19:15] nothing represents that more than AI.
+[19:18] That a small number of people that
+[19:21] control and profit from and benefit from
+[19:25] AI
+[19:26] are going to end up getting outsized
+[19:28] returns
+[19:29] relative to the broader population. That
+[19:32] the time to diffusion of the technology
+[19:35] cuz ultimately all technologies like
+[19:37] commoditize and diffuse.
+[19:39] But the time to diffusion here is such
+[19:41] that it's going to be like extremely
+[19:44] asymmetric for society. And I think that
+[19:47] there is something fundamental about
+[19:48] that.
+[19:49] It's like, you know, nuclear bombs I
+[19:51] think really created this this moment in
+[19:53] people's minds
+[19:54] in the mid-20th century that by the back
+[19:56] half of the 20th century gave everyone a
+[19:58] high degree of skepticism about
+[19:59] technology and science generally.
+[20:02] That those who have the knowledge and
+[20:04] those who engineer solutions with the
+[20:06] knowledge can create outsized advantages
+[20:09] for themselves and it puts the rest of
+[20:10] us at risk, the rest of the world, the
+[20:12] rest of the population at risk.
+[20:14] And because those questions about when
+[20:16] does this benefit me, how does it
+[20:18] benefit me can't be answered today
+[20:21] the economic benefit that's accruing to
+[20:23] the few today becomes the narrative, it
+[20:26] becomes the story and it becomes this
+[20:27] like power system
+[20:29] that a few people take from the many.
+[20:32] And so there's something deeply
+[20:34] disturbing for the average person about
+[20:36] that. They don't understand how it
+[20:38] works, why it works, what it'll do for
+[20:39] them, when it will do it, and all that
+[20:41] they're being told is that some people
+[20:42] are making trillions of dollars.
+[20:44] So, I think that it's pretty obvious why
+[20:46] this has got such a backlash. Secondly,
+[20:49] I think that there's a deep amount of
+[20:51] external energy that's fueling this
+[20:53] anti-technology sentiment in the United
+[20:54] States and has been for decades.
+[20:56] I think to Gavin's point, I don't think
+[20:58] it's just China with NGOs today. I think
+[21:00] that there is a long history
+[21:03] of
+[21:04] state actors intervening in media
+[21:07] activities in foreign nations to try and
+[21:10] create the sentiment
+[21:12] and fuel a sentiment that reduces
+[21:15] progress in that competitive state.
+[21:18] I think this goes all the way back to
+[21:19] KGB design
+[21:21] during the Cold War and it's been
+[21:24] refined and honed and improved over
+[21:26] time. This is not just some conspiracy
+[21:27] theory. There are plenty of great books
+[21:29] about this. The techniques of what's
+[21:30] going on specifically today, I don't
+[21:33] know enough. I don't have any great
+[21:34] details on that. But I don't think that
+[21:36] there's no foreign interest in seeing
+[21:39] technology advancement slow
+[21:42] in competitive nations. The United
+[21:43] States probably does similar things to
+[21:45] other nations and I think that that's
+[21:47] probably a key part of this.
+[21:50] And then I think this this like third
+[21:51] piece is like when
+[21:54] the Copernican revolution happened, it
+[21:56] was a mind, you know, like
+[21:58] heliocentricity was a totally new way of
+[22:00] thinking for humans and it was uh deeply
+[22:03] disruptive to the church.
+[22:05] And it was deeply disruptive to the
+[22:06] power centers, which were
+[22:08] the centers that could tell people Earth
+[22:11] is at the center of the universe, we're
+[22:13] in control, we're the direct channel to
+[22:14] God.
+[22:15] And the idea that the sun is at the
+[22:17] center of the solar system and we spin
+[22:18] around it and we're a tiny speck in the
+[22:20] universe was very hard for people to
+[22:22] grasp. There's something about AI that's
+[22:24] very like not human-centric and it kind
+[22:27] of shifts
+[22:29] and with the ego of the human. It
+[22:31] it's it's almost anti-humanist.
+[22:33] And I think that that's like a deep
+[22:35] psychological current for a lot of
+[22:37] people and their disdain for this
+[22:38] technology. It fuels it. It's not the
+[22:41] cause, but I think it fuels it. So I
+[22:43] think there's a lot of complicated
+[22:44] aspects to this, J Cal. You know, I
+[22:45] don't think there's like a simple put
+[22:46] put Cham on on a podcast and he'll solve
+[22:49] the the problems of AI right now. I
+[22:50] think that there's a real set of shifts
+[22:52] happening and there's a real set of
+[22:54] global competition underway
+[22:57] where, you know, various state and
+[22:59] actors and interests are competing with
+[23:00] each other.
+[23:01] >> Yeah. Cham, do you think that we should
+[23:03] slow down?
+[23:06] >> I don't think you can.
+[23:07] >> No, no, no. Do you think we should slow
+[23:09] down?
+[23:10] >> No, I I think I was just talking to some
+[23:11] people on a Zoom right before this, but
+[23:13] I think after the Manhattan Project, the
+[23:15] research labs were stood up to maintain
+[23:17] our scientists that worked on the the
+[23:19] Manhattan Project from uh effectively
+[23:21] leaching back or leaking back to
+[23:24] Russia and Germany and and and other
+[23:26] places that that were adversary to the
+[23:27] United States.
+[23:30] And they all were against the nuclear
+[23:32] bomb. They worked on it because it was
+[23:34] necessary for the United States
+[23:35] security, but then when Russia got a
+[23:37] hold of the secrets, they were leaked
+[23:39] because people were worried that if the
+[23:40] US had all the power,
+[23:42] there would be no counterbalance to the
+[23:44] power.
+[23:45] And so the the nuclear secrets were
+[23:47] leaked to Russia for that purpose. Then
+[23:49] when Russia had the nuclear secrets and
+[23:51] they began developing hydrogen
+[23:53] fusion bombs, and it it was clear that
+[23:56] they were going to race ahead. The
+[23:57] United States raced ahead with
+[23:58] developing nuclear bombs as a
+[24:00] counterbalance to Russia. When the
+[24:02] proliferation began, there was no
+[24:04] stopping it. It began and you had to
+[24:06] have this balance in the world,
+[24:07] otherwise you have effectively an
+[24:09] asymmetric power that can do whatever it
+[24:12] wants globally.
+[24:14] I think there's that moment in the world
+[24:15] right now where
+[24:17] if the United States does not
+[24:19] advance its AI technology, the
+[24:22] availability of it, TBD, industry,
+[24:24] taxation, all these all these things
+[24:25] that we're talking about doing, there
+[24:27] will be someone else that will.
+[24:29] And if someone else does, we can go
+[24:32] through what would happen. There's a
+[24:33] There's a complicated game theory on
+[24:35] this, but what would happen if China had
+[24:37] sufficiently advanced models and
+[24:39] sufficiently advanced scaled deployment
+[24:42] of those models relative to the United
+[24:43] States, as you do that analysis, you
+[24:45] realize, wait a second, that's probably
+[24:47] not a healthy place for the world to be.
+[24:49] It's also probably not a healthy place
+[24:50] for the United States to be the only one
+[24:52] with AI.
+[24:53] And so I I think what we end up seeing
+[24:57] is if we do try and slow down AI,
+[25:00] we kind of lose this moment of balance
+[25:02] that's necessary when you have a
+[25:03] technology proliferation like we saw
+[25:06] with the arms race after World War II
+[25:08] that, you know, we're going to see again
+[25:10] here.
+[25:10] >> Chamath, you
+[25:12] I think bring up a good point. You know,
+[25:14] should we slow it down or could we slow
+[25:16] it down? There actually have been some
+[25:18] discussions about ways to do this. One
+[25:21] of them would be, hey, with
+[25:22] self-driving, people are scared that all
+[25:24] these cab drivers are going to lose
+[25:26] their jobs, Uber drivers, cab drivers,
+[25:28] bus drivers, truck drivers. This is, you
+[25:31] know, over 10 million people in the
+[25:32] United States driving things for a
+[25:33] living.
+[25:35] Would you be in favor of some of the
+[25:37] announcements that
+[25:39] that will be
+[25:40] a paced rollout, it won't happen all at
+[25:42] once. In other words, those people will
+[25:44] be given some amount of job security to
+[25:46] stay behind the wheel with it. Another
+[25:48] example that's been given is if you put
+[25:50] Optimus into Amazon factories or the
+[25:53] Figure robot just did like a week of
+[25:55] just sorting packages. I'm sure
+[25:56] everybody saw that video, we'll insert
+[25:58] it here.
+[26:00] That Figure robot sorting these, hey, if
+[26:01] Amazon deploys those, there'll be a tax
+[26:03] on those per hour and we'll tax humanoid
+[26:06] robots in some ways and then use that
+[26:08] for, say, retraining people. Those are
+[26:10] two very specific conditions and
+[26:13] approaches that people have been
+[26:14] promoting. Do either of those resonate
+[26:16] with you in any way?
+[26:19] >> I think it's
+[26:20] interesting that in all of those
+[26:22] discussions
+[26:23] I've yet to see an actual survey of only
+[26:26] the truck drivers and only the package
+[26:28] sorters.
+[26:29] >> [clears throat]
+[26:30] >> The question that I would have is do the
+[26:31] people that do these jobs want these
+[26:33] jobs?
+[26:35] And if they do, then there's a
+[26:36] reasonable claim to make to keep those
+[26:37] jobs the way that they are.
+[26:39] If you're saying this is the job that I
+[26:40] do, I love it, I'm able to provide for
+[26:42] my family, great. That's a very
+[26:44] different argument than well, you know
+[26:46] what? Amazon has 35 or 40% churn inside
+[26:50] of their warehouses
+[26:52] and we should probably ask the question,
+[26:53] why is that? Because if it was such a
+[26:55] great job, I suspect the churn would be
+[26:57] 3% or 4%. So, what exactly is it that we
+[27:01] want to protect? And have you asked
+[27:04] them?
+[27:05] And I think that this is just a again, a
+[27:07] bunch of
+[27:08] people in the peanut gallery who want to
+[27:10] take a moral high ground and try to make
+[27:12] some other group of people feel guilty
+[27:15] or feel bad. At no point are we actually
+[27:17] asking the conversation that
+[27:20] that we should be having, which is
+[27:22] it's interesting to me that the there
+[27:24] was supposed to be an EO, an
+[27:26] presidential executive order that was
+[27:27] announced today.
+[27:28] And then it was pulled. It was scrubbed
+[27:30] at the last minute.
+[27:31] >> Mhm.
+[27:31] >> Did you guys notice that?
+[27:32] >> Yeah.
+[27:32] >> And yesterday, what was leaked was
+[27:34] everybody that was attending. It was all
+[27:36] the big neo labs CEOs, and it was all
+[27:38] the big hyperscaler CEOs.
+[27:40] Including friend of the pod, Nikesh
+[27:42] Arora. Shout out to Nikesh.
+[27:44] And then it was scrubbed an hour ago.
+[27:47] Why was it scrubbed?
+[27:49] And the president said that there were
+[27:50] aspects of the bill that he didn't agree
+[27:52] with. And as far as we can tell, the
+[27:54] aspects would have required some amount
+[27:57] of
+[27:58] supervision, insight, review from the
+[28:00] federal government.
+[28:01] >> Of language models specifically. Of
+[28:03] these frontier models is what I read.
+[28:05] >> Not language models, cuz I think just of
+[28:07] AI, because there's going to be many
+[28:08] different kinds. They're not always
+[28:09] going to be language models, but of AI.
+[28:11] So, look, I think Freeburg is is right.
+[28:14] We are in a proliferation
+[28:16] with China. I think it's actually good
+[28:18] that China is less than 9 months behind
+[28:20] us.
+[28:21] I think it allows us to find a detente
+[28:24] where we have a certain magnitude of
+[28:26] capability that they also have.
+[28:29] And that allows all of us to then seek
+[28:31] peace and abundance. And the fact that
+[28:33] we are orthogonal societies, we are
+[28:35] organized differently, increases the
+[28:37] probability of finding peace using the
+[28:39] René Girard kind of framework of mimetic
+[28:42] theory, than if if it was like us and
+[28:44] another country that was exactly similar
+[28:46] to us.
+[28:48] So, I think what we need to do
+[28:51] we probably need KYC. I think that that
+[28:53] should be something that us and China
+[28:55] get together and say, "You don't want it
+[28:58] to get into the hands of people you
+[28:59] can't control." You probably already KYC
+[29:01] those models anyway inside of China. You
+[29:03] already review those training runs
+[29:04] before you allow these models to get
+[29:06] released. We already know that that's
+[29:07] happening.
+[29:08] >> Yes.
+[29:08] >> So, we should probably do some sort of
+[29:10] KYC so some crazy person doesn't create
+[29:12] some biological weapon. I think that
+[29:14] those are like some reasonable ground
+[29:15] rules, but otherwise Freeburg is right.
+[29:17] You have to take a a little bit of a
+[29:19] deterministic view here, which is that
+[29:21] we are in this existential race
+[29:24] and we need to get to the place where
+[29:25] each of us, meaning us and China, can
+[29:27] look each other in the eye and say, "All
+[29:28] right, weapons down." So to speak.
+[29:31] >> Kevin, I'm going to hold you to answer
+[29:33] two questions. One,
+[29:35] should we
+[29:37] run frontier models cuz that's
+[29:39] specifically what was mentioned in the
+[29:40] leak about the EO frontier models, the
+[29:42] powerful ones. Should they be run
+[29:43] through some sort of testing before
+[29:45] they're released and should there be
+[29:46] some regulatory framework for that?
+[29:48] That's my first question to you. Yes or
+[29:50] no question and then you can explain
+[29:51] your answer.
+[29:55] >> Jeez, like I just think it's such a
+[29:57] complicated topic. It feels
+[30:01] we're a little early for that.
+[30:04] I don't love the idea of the United
+[30:06] States
+[30:08] um doing it and no one else doing it.
+[30:11] I
+[30:13] like I think in a world where we hold
+[30:15] hands with China
+[30:17] like I think that's that's much more
+[30:19] palatable and we are aligned and we
+[30:21] trust each other and have kind of
+[30:23] verification
+[30:25] uh capabilities. I do think
+[30:27] >> Right. Yeah. Let Let me then rephrase
+[30:28] it. Should China and the US come up with
+[30:31] a simple battery of things that have to
+[30:33] be
+[30:34] tested before these go out including
+[30:36] bioweapons, terrorism, and in genre of
+[30:41] and that vertical of just really known
+[30:43] dangerous things just like the FDA might
+[30:45] test for poisons or contaminants in a
+[30:47] food or a drug. Would you be in favor of
+[30:49] that? I'm curious.
+[30:52] >> So, a few things like the one one thing
+[30:54] that's great about America is there is
+[30:57] one thing that's
+[30:59] just
+[31:00] we have other forms of regulation.
+[31:03] >> Self-regulation, sure.
+[31:04] >> We have self one we have self-regulation
+[31:06] also we have the courts.
+[31:08] And if an AI model company
+[31:11] behaves responsibly
+[31:13] they know that there are
+[31:15] ways that people who have been harmed
+[31:17] can seek recourse.
+[31:19] And so we already have a system that
+[31:22] encourages responsible behavior on the
+[31:25] part of the model makers.
+[31:28] >> That's a great point because OpenAI is
+[31:29] being sued right now by a kid who who
+[31:31] killed themselves after talking to
+[31:32] OpenAI's model. So, you're you're
+[31:34] correct in that. Yes, after the fact.
+[31:35] Yeah.
+[31:36] >> And we will see we'll see we'll see more
+[31:37] of that. I just
+[31:40] you know, to me once you give something
+[31:42] give a power to the government
+[31:45] it's almost never taken back and it
+[31:47] seems to grow.
+[31:48] And it's kind of a one-way a one-way
+[31:50] path.
+[31:51] >> One-way ratchet. Yeah. And then the
+[31:53] one-way second yeah, second question
+[31:55] then.
+[31:56] Chamath is saying hey nobody listens to
+[31:58] the you know, these cab drivers or maybe
+[31:59] the
+[32:00] people sorting the packages do they want
+[32:02] their jobs or not. Actually the UK
+[32:04] there was just a 60-minute special in UK
+[32:07] and also Boston and New York are pretty
+[32:09] adamant that they want humans to stay
+[32:12] and they want to ban self-driving in
+[32:13] those locations or severely limit it or
+[32:15] maybe limit it in some way to let those
+[32:18] people keep their jobs. How do you feel
+[32:20] about that possibility? Is that
+[32:22] something you think society should be
+[32:24] open to some gradual licensing
+[32:26] >> They're going to get sued for wrongful
+[32:28] death. When somebody runs over somebody
+[32:30] else and you could have implemented a
+[32:32] solution that has a zero death rate,
+[32:33] that's very different from package
+[32:35] sorting.
+[32:36] >> Okay.
+[32:36] >> Go talk to the package sorters is what I
+[32:38] say. Go talk to the people inside the
+[32:39] Amazon warehouse. Ask them what they
+[32:41] would rather do at Amazon. Ask them.
+[32:44] >> Yeah, sure. But Gavin, what are your
+[32:45] what are your thoughts here on either
+[32:46] one of those examples here?
+[32:48] >> I think going to a city where you can't
+[32:49] get in a Waymo or a cyber cab is going
+[32:53] to feel barbaric and unsafe until you
+[32:56] >> Agree. I strongly agree.
+[32:57] >> I don't know if you remember like but
+[32:58] the early days of Uber, sometimes you go
+[33:00] to a city where there was no Uber.
+[33:02] >> Yeah, that'd be incredibly frustrating.
+[33:04] >> What I'm not going to come back until
+[33:05] they have Uber. It's so inconvenient.
+[33:08] And I think so whatever individual
+[33:11] municipalities decide, I do think one,
+[33:14] Chamath's point is really powerful.
+[33:16] There's 50,000 automotive deaths per
+[33:18] year in the United States if I recall
+[33:20] correctly and a million globally.
+[33:24] And you know, that's not tolerable and
+[33:26] there will be for sure be wrongful death
+[33:27] lawsuits and then just from a
+[33:29] convenience and quality of life
+[33:31] perspective, I just don't think it's
+[33:32] going to persist.
+[33:34] And that's another great thing about
+[33:35] America is you know, you have this
+[33:37] patchwork of different states and
+[33:38] municipalities and
+[33:41] each one doing things in a different way
+[33:42] and I'm not suggesting that's good for
+[33:44] AI,
+[33:46] but it does tend to, you know,
+[33:49] as historically the Curley effect aside,
+[33:53] led to, you know, I think more positive
+[33:55] outcomes where cities and states
+[33:57] compete. You know, the Curley effect
+[33:58] being that
+[33:59] >> Yeah, that yeah. That this is a really
+[34:01] important point you're making, Gavin.
+[34:03] With Flock Safety as but one example, we
+[34:05] had a an AI there's an AI tool called
+[34:08] Flock Safety. It's cameras that use AI,
+[34:10] monitor people who are committing
+[34:12] crimes. There's a privacy issue around
+[34:13] it. It is bottom-up. You just do it by
+[34:15] town. It's not top-down and states can
+[34:18] regulate it. Same thing will probably
+[34:19] happen with self-driving and states will
+[34:22] probably have some say in how AI is
+[34:24] deployed even if maybe some centralized
+[34:26] governments don't want to do that.
+[34:29] I really think this It comes down to
+[34:31] >> The Flock
+[34:31] >> thing I think it's so good, Jason. Crime
+[34:33] is now a choice.
+[34:34] >> Yeah.
+[34:35] >> You know, I think the the Cambridge City
+[34:36] Council voted
+[34:38] to turn off gunshot detectors 2 days
+[34:41] ago.
+[34:42] And
+[34:43] >> which city did that? Which municipality?
+[34:44] >> Cambridge. Cambridge, Cambridge, Mass.
+[34:46] >> That's the place where Harvard is.
+[34:48] >> That's the place where Harvard is.
+[34:49] >> So, the geniuses coming out of Harvard
+[34:51] in that town decided
+[34:53] gunshot detection
+[34:56] shouldn't occur.
+[34:57] >> We don't want gunshot detection. Just so
+[34:59] we're clear.
+[35:00] >> It's wild because, you know, there's
+[35:01] there's a theory that it disadvantages,
+[35:03] you know, that it might lead to an
+[35:05] illegal migrant
+[35:06] who's shooting a gun being apprehended,
+[35:09] and we don't want that.
+[35:10] >> Got it.
+[35:10] >> And A16Z had a great essay on Flock.
+[35:14] We can really, really solve crime,
+[35:18] and it's just a choice. And different
+[35:20] states and municipalities will make
+[35:22] different choices to be pro-crime or
+[35:24] anti-crime. And I'm sure they don't cast
+[35:26] it as pro-crime. There's
+[35:29] an, you know, some sort of, you know,
+[35:31] moral or ethical reason they may make
+[35:33] that choice, but people will vote with
+[35:35] their feet over time, and then voters
+[35:37] will vote with their votes, and we'll
+[35:39] see what works.
+[35:40] >> Have you guys been to Vegas recently? My
+[35:42] wife and I went to visit Vegas, and we
+[35:44] spent the
+[35:45] the afternoon with Ben Horowitz and his
+[35:47] wife, Felicia. She has done this
+[35:49] incredible job with the Las Vegas Police
+[35:51] Department.
+[35:52] It is one of the most impressive things
+[35:54] I've ever seen, and to your point,
+[35:56] crime is an option, and they've said no.
+[35:58] So, what happens there is they have
+[36:00] gunshot they have drones that get
+[36:02] deployed off the roof of the police
+[36:04] building. We were sitting inside of
+[36:06] mission control where you see it
+[36:07] happening, Jason. If something happens,
+[36:10] they have eyes on site within minutes.
+[36:12] They can track offenders and bad guys
+[36:15] all the way to wherever they're hiding.
+[36:17] And you walk out of it, and you feel
+[36:19] incredibly safe, like they're really on
+[36:21] top of it. And when you understand the
+[36:23] level of investment, it's not it doesn't
+[36:25] take billions of dollars compared to the
+[36:28] cost of the crimes. It's de minimis.
+[36:30] It's de minimis. Especially when
+[36:30] compared to the cost of the crime
+[36:32] occurring.
+[36:33] >> Exactly. If you gave the Las Vegas
+[36:34] Police Department
+[36:36] 30, 40 million dollars a year, it would
+[36:39] be the safest city in America and that's
+[36:40] all it would take.
+[36:41] >> Yeah, exactly. And the for the privacy
+[36:44] concerns Freiberg, there are very simple
+[36:45] solutions to this. I I am a privacy
+[36:47] advocate myself, of course. We all want
+[36:49] some level of privacy.
+[36:51] I had the Flock CEO on This Week in
+[36:52] Startups twice in the past 10 years.
+[36:54] He's very considered. And the way they
+[36:56] do it with Flock is they allow you to
+[36:59] have a rolling database and I think
+[37:01] there's a maximum you can save the
+[37:03] license plates for and they don't do
+[37:05] facial recognition. I I don't see why
+[37:07] not, but let's put that aside. You can
+[37:09] only keep it for two or three years. And
+[37:10] then they insist on having an audit
+[37:12] trail on it. So there are all little
+[37:13] things you can do on the back end to
+[37:14] protect privacy with audit trails, etc.
+[37:16] We got a lot more to get to in the
+[37:17] docket. I just want to just give my
+[37:19] final thoughts on
+[37:21] what we're talking about here in terms
+[37:22] of the AI problem
+[37:24] and the PR problem. I think we have to
+[37:27] recognize that the layoffs that are
+[37:29] occurring in Big Tech and in a lot of
+[37:31] these places are not just the bloating
+[37:35] issue anymore. And I'm just going to
+[37:36] point to two factors that I think are
+[37:38] scaring the bejeezus out of people and
+[37:40] we just have to admit that this is
+[37:42] occurring as opposed to we've been
+[37:43] debating it here. Is it occurring? Is
+[37:45] this just cover? And are we AI washing?
+[37:47] The first one I want to give you an
+[37:48] example of is Matthew Prince
+[37:51] who's the CEO of Cloudflare, incredible
+[37:53] company, public company. Two weeks ago I
+[37:55] laid off more than 20% of my workforce.
+[37:56] I didn't do it because Cloudflare is
+[37:58] struggling. We posted record revenue
+[38:00] growth, have strong free cash flow, and
+[38:02] are adding an unprecedented number of
+[38:04] customers, yada yada yada.
+[38:06] And he says basically he's getting rid
+[38:08] of measurers. Measurers are the people
+[38:11] who manage people and who measure data.
+[38:13] And he just says we're getting rid of
+[38:15] all those people. They're unnecessary
+[38:17] because of AI and we'll be adding to
+[38:19] people in other positions. At the same
+[38:21] time Zuckerberg did another round of
+[38:23] layoffs, and they were done in a way
+[38:25] that people felt was not considered
+[38:28] and a bit
+[38:31] um
+[38:32] What's the word?
+[38:34] Dystopian. Dystopian, thank you, sir. Uh
+[38:37] he did him in a in a pretty dystopian
+[38:38] way.
+[38:40] Here's Zuckerberg for 30 seconds.
+[38:42] >> In general, the average intelligence of
+[38:44] the people who are at this company is
+[38:46] significantly higher than the average
+[38:48] set of people that you can get to do
+[38:50] tasks if you're working through the
+[38:52] contract um
+[38:53] through through these contractors. So,
+[38:55] if we're trying to teach the models
+[38:57] coding, for example, then having people
+[39:00] internally uh build tools that or or
+[39:03] solve tasks that um that help teach the
+[39:06] model how to code, we think it's going
+[39:08] to dramatically increase our models'
+[39:09] coding ability faster than what others
+[39:11] in the industry have the capability to
+[39:13] do who don't have thousands and
+[39:15] thousands of extremely strong engineers
+[39:17] at their company.
+[39:18] >> [clears throat]
+[39:18] >> Okay, so what Zuckerberg did at the same
+[39:21] time, concurrently, he told everybody,
+[39:23] "We're laying off these 8,000 people." A
+[39:24] lot of those people are incredibly
+[39:25] talented.
+[39:27] Some of them are on H-1B visas, creates
+[39:29] all kinds of chaos for them in their
+[39:30] personal lives, and obviously they're
+[39:31] having record profits there as well.
+[39:34] At the same time, he was laying off
+[39:36] those 8,000 people. This is after tens
+[39:38] of thousands of layoffs before, which
+[39:40] were obviously because of bloating. He
+[39:41] said, "We're putting recording software
+[39:42] on every single person in the company's
+[39:44] computer to study and train our model."
+[39:47] And people were like, "Oh." And previous
+[39:49] people said, "I built during the AI
+[39:52] hackathons they had months ago. I
+[39:55] built all these AI tools to make my job
+[39:57] uh more efficient." And then Zuckerberg
+[39:59] laid me off. So, the now per- the
+[40:02] perception people have now, and it's
+[40:04] quite correct, I think, is the most you
+[40:06] can hope for here is you keep this job
+[40:09] for some amount of time and train your
+[40:10] way out of it, and hopefully there's
+[40:12] some more work for you, but they're
+[40:13] studying you, and Zuckerberg just said
+[40:15] it plainly there, "Hey, we're going to
+[40:16] study everybody here, and that's going
+[40:18] to lead to more replacements. This is
+[40:19] scaring the bejesus out of people and we
+[40:22] need to have an answer for it. Yeah.
+[40:23] >> I thought the Matthew Prince note was
+[40:26] horrible.
+[40:27] >> Okay, explain.
+[40:28] >> This was like from the
+[40:30] PR school of retards.
+[40:32] >> Okay, here we go.
+[40:34] >> You could not have written a worse memo.
+[40:36] It's like you reduce humans to a label
+[40:40] called the measurer
+[40:42] and then you're like I'm going to lay
+[40:43] off all the measurers.
+[40:45] I mean
+[40:47] I just think that part of this again,
+[40:49] I'll go back to the
+[40:51] maybe the Sham Sankar quote that I'm
+[40:53] thinking about should be extended beyond
+[40:55] the model makers. Can you just play this
+[40:57] for 1 second and I'll tell you why I
+[40:59] think this is just so
+[41:00] >> And then we'll go on to the S1 from
+[41:01] SpaceX.
+[41:02] >> We're listening too much to the
+[41:04] inventors of AI. I know that's
+[41:05] appealing. They're geniuses, they're
+[41:07] smart. We need to be listening to the
+[41:08] frontline factory workers who are using
+[41:10] AI saying, "Wow, I was able to add a
+[41:12] third shift. I was able to hire more
+[41:13] workers." Or the ICU nurse who says, "I
+[41:15] have more time to spend with my
+[41:17] patients. I'm able to ensure they don't
+[41:18] code during a shift change down."
+[41:20] >> so look, my my point is like the first
+[41:22] part of what he said applies here, which
+[41:24] is who cares what Matthew Prince thinks?
+[41:26] Because the reality is that if this is
+[41:28] the way that you're going to message
+[41:30] something as critical as this, I think
+[41:31] you did a horrible job. And now you
+[41:33] label these people and you put a scarlet
+[41:35] letter on their back. So now when they
+[41:36] try to get a different job, they're
+[41:37] like, "Oh, you're one of the Cloudflare
+[41:39] measurers?" How does that help anybody?
+[41:41] It didn't needed to be done this way.
+[41:43] There's enough of these tech
+[41:45] CEOs that are now public. You can hear
+[41:48] them, you can understand them.
+[41:50] And I think what we're learning is men,
+[41:52] they're really good at one thing and
+[41:53] they're not necessarily as good at all
+[41:55] the other things.
+[41:55] >> Yeah. Uh okay.
+[41:57] >> And so I would say shut the up.
+[42:01] Get behind the keyboard, just do your
+[42:03] job. And if you need to manage
+[42:05] something, just manage it, but don't
+[42:06] write these missives. You're terrible at
+[42:08] it. All of you. You're all terrible. You
+[42:10] suck at this.
+[42:13] >> All right.
+[42:14] >> End of my TED Talk. Thank you for coming
+[42:16] to my TED Talk.
+[42:16] >> Thanks for coming to Chamath's 18-minute
+[42:18] TED Talk. And we'll we'll we'll uh keep
+[42:21] moving on.
+[42:21] >> Sorry. And sorry. When everybody gets
+[42:23] upset, this will be why.
+[42:25] >> Yes. I mean I I do think the Zuckerberg
+[42:28] this and Jack saying, you know, "Hey,
+[42:29] we're going to have half as many people
+[42:30] everybody reports directly to me." This
+[42:32] is all building this fear in society and
+[42:34] I think people are right rightfully
+[42:36] scared. If the people building it tell
+[42:38] you be scared, your job's going away.
+[42:40] >> Wait till the next
+[42:42] regulatory filing comes out from these
+[42:44] companies and they authorize a massive
+[42:46] share buyback and an increase in their
+[42:48] dividend.
+[42:49] >> Yeah, and their cash pile grows.
+[42:51] >> All I'm saying is there's a right way to
+[42:53] do this, make these decisions, and then
+[42:54] there's a wrong way to do it, which is
+[42:56] to message it in the way that they're
+[42:57] doing it. So, whoever is running PR and
+[43:00] comms and approves and reviews these
+[43:02] things are really at their job.
+[43:05] >> Mhm.
+[43:06] >> They don't understand the moment.
+[43:08] >> Oh, some breaking news here. It looks
+[43:10] like Anthropic has hired three more
+[43:13] people. Here we go.
+[43:14] Oh, here we go. Personal job news from
+[43:16] Sam Altman. He'll be joining Anthropic.
+[43:18] I say that's pretty good. Okay. Who else
+[43:20] is joining Anthropic? Let's see if we
+[43:21] checked everybody's socials. Oh, Tucker.
+[43:25] Tucker Carlson is also joining
+[43:26] Anthropic. He'll be doing their PR and
+[43:28] podcast from Anthropic headquarters. And
+[43:31] who else? Oh, Chamath. Looking good.
+[43:34] [laughter] Well, you look like you put 5
+[43:35] lb on.
+[43:36] And using the pants
+[43:38] >> First of all, this is not This is not
+[43:40] what I look like. And
+[43:41] >> Did you gain 5 lb?
+[43:43] Looks like the same
+[43:45] guy. Are you not wearing Are you not
+[43:46] wearing underwear?
+[43:47] He's not wearing underwear and he's
+[43:48] wearing his khakis, but I think it's
+[43:50] just he's trying to not show off those
+[43:51] scrawny those scrawny splints those
+[43:54] those little slats he calls legs. He's
+[43:56] covering them up now.
+[43:57] >> Uh hold on. I'm going to send Nick
+[43:59] I I I knew that this was going to come
+[44:01] up. I'm going to send Nick an updated
+[44:02] picture of my legs, and you you can deal
+[44:04] with this.
+[44:05] >> You can Photoshop your legs all you
+[44:07] want.
+[44:07] >> I didn't Photoshop
+[44:08] >> look like ostrich, brother.
+[44:10] >> He's better than you today. I'M WORKING
+[44:12] ON
+[44:13] IT.
+[44:14] >> [laughter]
+[44:14] >> HE MAY NOT BE PHOTOSHOPPING. He may have
+[44:16] been leg maxing.
+[44:17] >> He could be leg maxing.
+[44:19] >> Are you leg maxing? Are you BP 157 your
+[44:21] legs? What are you doing here?
+[44:22] >> of all, first of all, I'm 6'2, you
+[44:24] goons. Okay, so
+[44:26] >> Ostrich legs.
+[44:27] >> All you little people, you know, Jason,
+[44:29] you're 5' tall, so you know, your
+[44:31] ability to have legs
+[44:32] >> I'm on a good day with my platforms.
+[44:33] >> to have legs is is different cuz like my
+[44:36] muscle mass won't show on my legs the
+[44:39] way it shows on your leg.
+[44:40] >> Oh, I don't think you're help but I look
+[44:42] at You know what he's doing there?
+[44:43] Freeberg, you see it, right? Look at how
+[44:45] skinny the calves are and then look at
+[44:47] how he's wearing a
+[44:48] >> Oh my god, Jason.
+[44:49] >> bra for your quads.
+[44:50] >> Oh my god, stop.
+[44:51] >> equivalent of a push-up bra. He has
+[44:53] those Bosu balls. He put Bosu balls
+[44:55] under his hammies to You did it. You're
+[44:58] using filets to pump those up.
+[45:00] >> my legs and I flat Okay, you know what?
+[45:01] Move on.
+[45:02] >> You know, I was just saying I think we
+[45:03] should give credit where credit is due.
+[45:06] >> Yeah. Jamath's legs
+[45:08] >> better
+[45:08] >> Jamath has been doing a lot of work on
+[45:09] his legs.
+[45:10] >> Thanks, man.
+[45:10] >> It's better.
+[45:11] >> Thank you.
+[45:12] >> It's better.
+[45:12] >> Thank you. I'll I'll give him better,
+[45:14] but I do think that he's pumping them up
+[45:16] here. Okay, let's keep going here. All
+[45:18] right, topic two is SpaceX just filed
+[45:20] their S-1 on Wednesday. They are aiming
+[45:23] to raise 75 billy at a 1.75 trillion
+[45:27] with a T valuation. This would be the
+[45:28] largest IPO ever by more than double
+[45:31] Saudi's Aramco $29 billion IPO a couple
+[45:34] years ago.
+[45:36] Listing is expected mid-June, likely
+[45:38] June 12th. Ticker will be SPCX.
+[45:41] We got a lot of interesting information
+[45:43] in the S-1 teardown. Obviously, SpaceX
+[45:46] has three main business units.
+[45:48] Starlink is the money printer right now,
+[45:52] but there's a second one that's
+[45:53] emerging. Starlink did 11.4 billion in
+[45:55] revenue last year on 50% growth with 4.4
+[46:00] billion in operating income.
+[46:02] Over 10 million people are now
+[46:03] subscribing to Starlink. That business
+[46:05] could easily be hundreds of millions of
+[46:08] paying subscribers. So, that that's a
+[46:11] lot of growth potentially there. The
+[46:13] space business is but 4 billion in
+[46:16] revenue. It's growing 17% growth, which
+[46:17] would still be strong growth.
+[46:19] Uh but had 650 million in operating
+[46:21] losses. AI did 3.2 billion in revenue.
+[46:24] That's more than double year-over-year
+[46:25] growth, but it had 6.4 billion in
+[46:27] operating losses.
+[46:29] SpaceX had 20 billion in capex spend
+[46:32] last year. Over 60% was for the AI
+[46:34] compute buildout.
+[46:36] And obviously they were trailing
+[46:38] Anthropic and OpenAI and Gemini in terms
+[46:40] of XAI, uh playing catch-up. And he did
+[46:43] a big reboot of that as we saw on the
+[46:45] Twitter.
+[46:46] But here's the big one. EWS, Elon Web
+[46:49] Services, as we call it here on the
+[46:51] All-In Pod, has exploded. Anthropic is
+[46:55] paying SpaceX, wait for it, 1.25 billion
+[46:59] a month to rent out Colossus 1 and parts
+[47:01] of Colossus 2. It's a $45 billion deal
+[47:05] over 3 years, 15 billion a year. In
+[47:08] other words, they added a Starlink in
+[47:09] terms of revenue to the party. Plus, if
+[47:12] they buy Cursor, that's going to add
+[47:14] another 2 or 3 billion. Not
+[47:15] >> Not if. I already told you they already
+[47:17] bought it.
+[47:17] >> Okay. I'm just trying to, you know, dot
+[47:19] the i's and t's here. But when they buy
+[47:22] Cursor, that adds 2 or 3 billion. That's
+[47:24] not in the S1.
+[47:26] >> That's also growing and doubling.
+[47:28] >> Yeah, that's probably growing 2x
+[47:30] year-over-year. And who knows how much
+[47:32] faster it'll grow. Polymarket, 71%
+[47:35] chance SpaceX closes its first day of
+[47:37] trading with a market cap above 2
+[47:39] trillion. Thank you to our partner,
+[47:41] Polymarket.
+[47:43] I'll stop here. Gavin, you've been
+[47:45] involved in the company for a long time.
+[47:46] Chamath, you I think were a big investor
+[47:49] in the satellite company that became
+[47:51] part of Starlink, which is the revenue
+[47:54] driver there. So, you both have a lot to
+[47:56] say about this. Gavin, your take on the
+[47:58] S1 and I think specifically Elon web
+[48:01] services.
+[48:02] >> Well, I think what's important about
+[48:04] Elon web services does make me laugh.
+[48:07] But 15 billion, that means the AI
+[48:09] business right there is going to
+[48:11] quadruple. It has already effectively
+[48:13] quadrupled.
+[48:15] I think what's important about that is
+[48:17] there's a stat in it that for I think
+[48:19] the the first data center was 122 days.
+[48:22] With the second one, it took them 91
+[48:24] days.
+[48:25] The third one was I think 66 days.
+[48:28] They build data centers dramatically
+[48:31] faster than anyone else at a lower cost.
+[48:36] And now that you have a
+[48:38] clear off-take partner and I would
+[48:41] expect partner to become partners,
+[48:44] there is no reason they can't start
+[48:46] stamping these data centers out really
+[48:49] fast.
+[48:51] And having watched Jensen for a long
+[48:53] time, it is important to Jensen that his
+[48:55] GPUs be used.
+[48:57] And so GPUs will be allocated to who can
+[49:00] plug them in, turn them on, and start
+[49:02] converting electrons into tokens.
+[49:05] And so I think this business can grow
+[49:09] dramatically faster than I think
+[49:12] you know, maybe what anyone could have
+[49:14] contemplated three, you know, three
+[49:16] three months ago. But 15 billion dollars
+[49:19] from Anthropic
+[49:21] is is extraordinary.
+[49:22] >> Important note, it can be canceled by
+[49:24] either party with 90 days notice. Just
+[49:26] want to make sure we also have that in
+[49:27] there. So that means Elon might want his
+[49:29] compute back or Anthropic may find
+[49:32] another solution. So they do both have
+[49:33] an out.
+[49:34] >> And I think that's that's a
+[49:36] you know, I think that's that's that's
+[49:37] probably an important provision
+[49:39] >> Yeah.
+[49:39] >> for everyone. But I think the other
+[49:41] thing that came out this week, which was
+[49:43] not in the S1. Nick, can you throw up
+[49:45] the parade of frontier and maybe don't,
+[49:47] you know, include the email and the
+[49:48] names and everything, but the composer
+[49:50] 2.5 stat. I think this is really
+[49:53] extraordinary.
+[49:54] So, Cursor's Composer 2.5 model came out
+[49:57] this week.
+[49:59] And I mean, this is Pareto dominant.
+[50:02] And this is just
+[50:04] you know, three, four weeks of doing
+[50:06] reinforcement learning
+[50:08] on Colossus 2
+[50:10] with Cursor's data.
+[50:13] And Cursor has We will never know, but
+[50:16] but Cursor allegedly has more tokens of
+[50:20] coding data than exist on the public
+[50:22] internet.
+[50:24] And that is a stat from I think more
+[50:25] than a year ago, so I'd imagine it's
+[50:27] grown significantly.
+[50:29] And I think Cursor and Anthropic
+[50:32] probably have the most proprietary
+[50:35] tokens of coding data. And what this
+[50:38] this jump from Composer 2 to Composer
+[50:40] 2.5 showed us
+[50:42] is that when you do an appropriate
+[50:44] amount of reinforcement learning using
+[50:47] that data, let alone injecting it into
+[50:50] the pre-training of a new base model.
+[50:52] Cuz Composer 2.5 is the same base model
+[50:54] as Composer 2, which is Kimmy K K.25.
+[50:59] Like this is amazing. This is three or
+[51:01] four weeks, and it is Pareto dominant.
+[51:03] The Pareto frontier, if you draw a curve
+[51:07] of the blue dots,
+[51:09] you can see
+[51:10] Composer 2.5 is literally
+[51:14] well outside the Pareto frontier. And
+[51:17] that's after three weeks.
+[51:18] And what's going to happen next is
+[51:20] you're going to have a
+[51:21] new base model
+[51:23] with a Cursor model in it.
+[51:25] >> Yep.
+[51:25] >> Then the Cursor model
+[51:27] RL'd
+[51:29] using the biggest coherent
+[51:31] compute cluster in the world.
+[51:33] And I think
+[51:35] this is
+[51:36] I I think this may
+[51:37] >> It's significant, yeah.
+[51:38] >> It's extremely significant for XAI and
+[51:41] Cursor.
+[51:42] >> And Cursor was dead in the water in
+[51:45] terms of access to compute and they were
+[51:48] falling very far behind Kodaks,
+[51:51] Google, Anthropic, and then Elon let
+[51:54] them on Colossus and boom, instantly
+[51:58] their models are
+[52:00] growing faster and this could be we
+[52:02] could be sitting here a year from now
+[52:04] and they're the dominant player.
+[52:06] And
+[52:07] could we be sitting here Gavin in a year
+[52:09] and Elon is selling compute to Google
+[52:13] and Open AI? Is that a possibility or
+[52:16] not?
+[52:18] >> Well, I think it's much easier to see
+[52:20] him selling compute to Google and I
+[52:22] think that's going to happen.
+[52:23] There've already been posts about that.
+[52:25] >> Yeah.
+[52:26] >> And for sure Google is going to want to
+[52:28] be part of orbital compute.
+[52:31] You know, it's it's a very funny. The
+[52:33] only people who are skeptical of orbital
+[52:35] compute are those people who are not
+[52:37] involved
+[52:39] in data centers or space. Google,
+[52:41] Anthropic, Amazon, Nvidia.
+[52:45] They are all very convinced that orbital
+[52:46] compute is going to be reality and
+[52:48] obviously SpaceX is extraordinarily well
+[52:49] positioned for that.
+[52:51] But I do think that composer 2.5 data
+[52:54] point is really powerful.
+[52:55] >> Keep an eye on it. Yeah.
+[52:57] >> And then the other thing that's come out
+[52:58] is Grok builds. So, what Grok lacked
+[53:01] that a lot of other models had and I do
+[53:03] think it's important to
+[53:05] remember that the newest version of Grok
+[53:07] 4.3 is on the Pareto frontier for all
+[53:09] frontier models.
+[53:11] And you're either on the frontier or
+[53:12] you're not.
+[53:13] And the the companies on the frontier
+[53:16] are xAI
+[53:18] with one build of Grok 4.3, which is a
+[53:20] 500 billion parameter model,
+[53:22] Google 3.1 Pro, and then Open AI and
+[53:25] Anthropic. And that's it. Those are the
+[53:26] companies on the frontier.
+[53:28] >> And then the four horsemen, yeah.
+[53:29] >> Google today each have one dot on the
+[53:32] Pareto frontier.
+[53:34] And obviously you want as many dots as
+[53:35] possible, but Grok lacked a harness.
+[53:40] So, Claude had Claude code, OpenAI had
+[53:43] Codex, and now with Grok build, there is
+[53:46] a harness that is available to to Grok,
+[53:49] and you know, as I'm as I'm sure
+[53:51] >> a downloadable app to translate into
+[53:54] English that has integrations to all
+[53:56] your favorite stuff, whether it's
+[53:57] Notion, Gmail, Slack, etc. And if you
+[54:00] don't have that, it's just like using a
+[54:03] basic chatbot from a year ago. So now
+[54:04] they have their downloadable, it's in
+[54:06] market, and they are cooking with oil on
+[54:08] it, and they're playing catch-up, but
+[54:09] they're moving fast.
+[54:10] >> And and it's it's more than just an app.
+[54:12] It's it's a runtime, it's an
+[54:13] environment. It manages state, it
+[54:15] manages memory.
+[54:17] It makes these models dramatically
+[54:21] more useful to the extent that I think
+[54:23] the people at the frontier all agree
+[54:25] that the harness is essentially as
+[54:27] important as the model, especially in an
+[54:29] energetic world, and the harness and the
+[54:31] model need to be developed together. So
+[54:34] the release of Grok build and the pace
+[54:36] at which they're iterating
+[54:37] is I think also really encouraging. So
+[54:40] now you have cursor, you have the cursor
+[54:42] data, you have a clear existence proof
+[54:44] that the cursor data is really
+[54:45] important.
+[54:46] Composer 2.5 is now Pareto dominant and
+[54:49] the most selected model on cursor, and
+[54:52] that's also important because, you know,
+[54:54] these evals don't capture everything.
+[54:57] You know, this is why people on X talk
+[54:59] about the vibes, and the vibes on cursor
+[55:02] 2.5 are also really good.
+[55:04] >> They're immaculate, yeah.
+[55:05] >> That together
+[55:06] >> Yeah.
+[55:06] >> with Grok build, I think these are
+[55:09] really important developments.
+[55:10] >> Yeah, I think they're There was Elon was
+[55:13] incredibly frustrated by the state of
+[55:15] affairs at xAI. He was very public about
+[55:17] that, and he's less frustrated now, and
+[55:19] he's shipping a lot faster. And so I
+[55:22] think that says something, and he has
+[55:24] been very focused on it.
+[55:26] Freeberg, your thoughts on the SpaceX
+[55:29] IPO and what this collection of
+[55:32] companies might look like a year or two
+[55:35] from now, especially if, like many
+[55:38] people believe
+[55:39] Tesla and
+[55:41] SpaceX merge, what do you think of
+[55:43] dollar sign E L O
+[55:45] E L O N as an entity and what impact it
+[55:49] might have as if those two were put
+[55:51] together the market cap would put them
+[55:52] in the fourth largest company in the
+[55:53] world. We can revisit our earlier
+[55:55] conversation about an anti-tech,
+[55:57] anti-AI, anti-
+[56:00] progress
+[56:01] world and society ahead. And if there is
+[56:04] an effort a concerted effort and
+[56:06] organized effort by governments to stop
+[56:08] or block access to information,
+[56:11] restrict freedom of speech, restrict
+[56:14] freedom of purchasing or buying things
+[56:17] to
+[56:18] control more things. And I think there's
+[56:20] a trend line in this direction right now
+[56:22] globally. The internet has always been
+[56:24] lauded as this kind of
+[56:26] system that provides an open alternative
+[56:29] to physical commerce that you could
+[56:31] create digital commerce, digital
+[56:33] uh
+[56:34] information, digital media that you
+[56:36] could share. And um it's almost this
+[56:38] digital representation of society, but
+[56:40] the internet has to sit physically
+[56:42] somewhere.
+[56:43] And the assault on data center builds
+[56:45] out in the United States right now,
+[56:48] I think
+[56:49] may indicate the importance of having an
+[56:52] alternative internet from the ground
+[56:54] layer up. If you have a communication
+[56:56] network that isn't restricted and
+[56:59] controlled
+[57:00] by a government
+[57:03] on Earth,
+[57:05] it's almost like a backup
+[57:07] for civilization, but it's a backup for
+[57:10] progress.
+[57:11] And I don't own any SpaceX shares, and
+[57:13] I'm not trying to sell the book of
+[57:15] SpaceX,
+[57:16] but I think that there's like an
+[57:17] important aspect of
+[57:19] can you create a system that's not under
+[57:21] the control of governments
+[57:23] as a way to ensure humanity's progress,
+[57:26] to ensure civilizational continuity if
+[57:29] things go south, if things aren't good,
+[57:31] if things are restricted, and if you
+[57:32] know, fundamental forms of tyranny start
+[57:34] to restrict speech, restrict commerce,
+[57:37] restrict information flow and whatnot.
+[57:40] And I think having like a space-based
+[57:42] communication network, space-based data
+[57:45] centers,
+[57:46] and space-based communication back down
+[57:48] to Earth wireless,
+[57:51] I think it's generally a good thing.
+[57:53] It's good to have a backup.
+[57:54] >> Yeah.
+[57:55] >> So, put all the economics aside and the
+[57:57] multiples and the valuations and whatnot
+[57:59] and whether it's SpaceX or not,
+[58:01] I think the idea that you could have
+[58:02] data centers, store information,
+[58:04] transmit information, route information,
+[58:06] and access information through
+[58:08] space-based systems that can't be
+[58:10] controlled, manipulated, or destroyed by
+[58:12] governments is is important. And I I
+[58:15] just I like that.
+[58:17] Yeah, if you
+[58:18] >> Most people don't remember this, but
+[58:19] when Elon was starting SpaceX, the
+[58:22] original idea
+[58:24] when he was running around with the DAO
+[58:25] and they were
+[58:27] looking at some rockets and getting
+[58:28] carriage from Russian rockets was to
+[58:30] back up the biosphere. And he came back
+[58:33] from that trip, and I remember talking
+[58:34] to him about it, and he said, "I think I
+[58:35] just have to make my own rockets because
+[58:37] that's actually where the problem is,
+[58:38] and it would be easier just to make my
+[58:39] own rocket to back up the biosphere."
+[58:41] And he wanted to put geodomes,
+[58:44] like geodesic domes in space
+[58:47] with all the plants and wildlife and and
+[58:49] creatures.
+[58:50] Uh and what incredible vision, and then
+[58:53] it you know, there was the necessity of
+[58:54] actually getting that up into space, and
+[58:56] that's that's the the unknown origin
+[58:58] story. I will say this, Chamath, the
+[59:01] idea of putting
+[59:03] uh data centers in space seems
+[59:05] completely doable, even though there are
+[59:07] a bunch of people who are saying it's
+[59:08] not,
+[59:10] when you compare it to what happened
+[59:11] with SpaceX um with Starlink, which
+[59:14] people said also wouldn't work. And now
+[59:16] he's got 10,000 Starlinks up there. The
+[59:18] difference between a Starlink satellite
+[59:20] and a data center satellite is really
+[59:22] not that different. And
+[59:25] >> No, they're they're pretty different.
+[59:27] >> Well, conceptually, yeah, of course
+[59:29] they're physically different, but
+[59:31] conceptually Elon put 10,000 Starlinks
+[59:34] up.
+[59:35] Is he capable of putting 10,000
+[59:37] >> No, look, the size is much the size the
+[59:39] size is much bigger, Jason. The foils
+[59:41] are much bigger, the wings are much
+[59:42] bigger.
+[59:43] >> but it's it's yeah. My point is it's not
+[59:45] different if he has the new Starship.
+[59:48] Cuz that's 10 times bigger, yeah.
+[59:50] >> You can't just scale like this. That
+[59:51] being said, it's technically possible. I
+[59:53] think he will be the first one to figure
+[59:56] it out.
+[59:58] But I'll just take a much more
+[59:59] pedestrian take, which is okay, you're
+[60:01] sitting here
+[60:02] and if I'm asking myself, Chamath, how
+[60:04] do I underwrite SpaceX at $2 trillion?
+[60:07] Here's the basic math that I would do.
+[60:09] Well, last year it did 18 19 billion
+[60:11] dollars.
+[60:12] It'll probably do 25 to 30 this year.
+[60:14] Okay. So, I'm buying this thing
+[60:17] at a fairly
+[60:20] costly premium, right?
+[60:22] So, what am I buying?
+[60:25] Well, I'm buying probably the most
+[60:28] important internet infrastructure
+[60:30] project that's happened since the
+[60:31] internet itself.
+[60:32] That's going to scale to hundreds of
+[60:34] millions of users. And the reason that's
+[60:35] going to scale to hundreds of millions
+[60:36] of users is
+[60:37] it's just very useful and it's just
+[60:38] going to become cheaper and cheaper and
+[60:40] cheaper.
+[60:41] So, that's number one.
+[60:43] I'm buying a delivery infrastructure.
+[60:45] But I think over time
+[60:48] GDP plus 10, GDP plus 15 kind of a
+[60:51] grower. So, good business,
+[60:53] valuable business, but it's the
+[60:54] underlying platform that allows
+[60:55] everything else to happen.
+[60:58] And then I'm buying an AI business which
+[60:59] will be at the top level the apps, but
+[61:01] at the bottom layer all the compute
+[61:03] capability.
+[61:05] And I think when you scale that out,
+[61:09] like why is Colossus so valuable to
+[61:12] Anthropic? Maybe that's like a good
+[61:13] question to ask.
+[61:15] It's because if you look at who's
+[61:17] actually capable of delivering a
+[61:19] gigawatt data center,
+[61:21] these guys are the closest.
+[61:23] Like an actual gigawatt. And And the
+[61:25] reason is is that this stuff is very
+[61:28] complicated and very, very hard. I think
+[61:30] you've probably heard this famous story
+[61:31] where Jensen was like, "Yeah, he was the
+[61:33] one that figured out this one thing that
+[61:35] we that nobody else could figure out so
+[61:36] that you could strip a bunch of racks
+[61:38] and drive a bunch of east-west traffic
+[61:40] and make the whole thing work together."
+[61:43] So, I suspect what happens is next year
+[61:46] it's probably 40, 45 billion. And then
+[61:50] the year after that it probably doubles
+[61:51] again. So, now I'm buying it at 20 times
+[61:53] revenue. And you would say, "Well, why
+[61:55] can you buy a company like this on
+[61:56] revenue versus earnings and cash flow?"
+[62:00] And I think the reason is because what
+[62:01] the revenue does is it gives him the
+[62:04] operating leverage to go and invest in
+[62:06] all of these other businesses
+[62:08] that ultimately consolidate
+[62:11] his differentiation and his competitive
+[62:13] moat. Because what he creates is a
+[62:15] capital moat that then accelerates a
+[62:17] technology moat that then accelerates an
+[62:19] execution and a learning moat.
+[62:22] And that's flywheel when it starts to
+[62:23] spin very quickly. And you would say,
+[62:26] "Hey, hold on a second. It's probably
+[62:27] spinning quickly now."
+[62:28] I would say we're at the beginning of
+[62:30] the beginning.
+[62:32] Because he's Again, he still has all
+[62:34] these disparate assets. I still don't
+[62:35] like the fact that Tesla's over here.
+[62:38] And as I've told you, that will get
+[62:39] merged in. And now you have this
+[62:42] incredible corpus of
+[62:44] physical capability,
+[62:46] movement of all kinds, X, Y, and Z,
+[62:49] right?
+[62:51] You have learning capability. You have
+[62:53] infrastructure. You have all the
+[62:54] connectivity.
+[62:56] That thing will look very cheap, I
+[62:58] think, in a few years.
+[63:00] And he has this one thing that nobody
+[63:02] else, if you look at the big CEOs,
+[63:05] who steps on stage where you're always
+[63:08] curious, "Okay, what does he got up his
+[63:10] sleeve?" You know, the Steve Jobs, "Oh,
+[63:12] and one more thing."
+[63:14] This is the only guy at the scale of
+[63:17] civilizational
+[63:19] out of left fields.
+[63:22] He's he's the guy. Whether you like him
+[63:24] or you hate him, he's the guy. And
+[63:26] there's a premium that is well-deserved
+[63:28] that comes with that.
+[63:29] So, if you had to pick an underwriting
+[63:31] case, Jason, I would flex the revenue
+[63:33] and realize that terrestrial data
+[63:34] centers alone
+[63:36] are 100 or 200 billion dollars of
+[63:38] revenue by 2030, 2032. Just And that
+[63:41] means just building it. So, already
+[63:44] you're buying it at 20 times revenue
+[63:45] just for that business. Everything else
+[63:47] is gravy.
+[63:48] >> on the ground earth-based.
+[63:50] >> it'll be Colossus three. No, no, forget
+[63:52] space for a second. It's a Colossus
+[63:54] three, Colossus four.
+[63:55] >> It pencils out with that, yes.
+[63:57] >> Getting a nameplate 1 gigawatt Look, it
+[63:59] is freaking hard, man. Getting a
+[64:01] gigawatt nameplate working
+[64:05] is almost And then, by the way, there's
+[64:07] all the stuff that he can do on land
+[64:08] that he's the best positioned to do.
+[64:10] I'll give you one example. There's a
+[64:11] great push that Jensen's making, which
+[64:13] he needs a partner, and I think Elon
+[64:15] becomes a natural partner, to do DC to
+[64:16] DC. Forget all this DC to AC to DC
+[64:19] nonsense that goes inside of a data
+[64:21] center. All the lossiness, all the
+[64:22] lossiness.
+[64:22] >> that is in English, yeah, for everybody.
+[64:24] >> Just like, look, you go through a bunch
+[64:25] of power transformations to to actually
+[64:28] deliver the electrons into the rack so
+[64:30] that, as Gavin said, you can generate
+[64:32] the token on the other end.
+[64:34] Today, it's it's very inefficient, it's
+[64:36] very costly, it requires a lot more
+[64:37] power, it requires a lot of cooling, it
+[64:40] requires complexity. And what people
+[64:42] have said is, "Wow, if we could just do
+[64:43] DC to DC like it comes in as DC, direct
+[64:46] current, it goes right to the rack as
+[64:47] DC." But it requires a fundamental
+[64:50] rearchitecture.
+[64:51] Jensen needs a design partner and a
+[64:53] thought partner to get that done.
+[64:56] He's probably the only one. So, I just
+[64:58] think there's a lot of reasons where you
+[64:59] can underwrite this to a multiple of
+[65:02] revenue plus the X factor, which is just
+[65:04] the creativity and the the one more
+[65:06] thing.
+[65:07] >> Love it. And then here's two charts, and
+[65:10] I'll have you comment on these, Gavin,
+[65:11] after it.
+[65:13] Here's the rocket sizes.
+[65:16] Just in terms of scale, and I most
+[65:18] people have not actually seen a Starship
+[65:20] in person. When you see this thing in
+[65:22] person, and I I've been inside that
+[65:24] rocket.
+[65:25] I think you were we were together,
+[65:27] Gavin, when we were in the first build.
+[65:29] And like inside of that, you can fit 300
+[65:32] people. It's basically like
+[65:34] a giant
+[65:35] If you thought of a commercial air
+[65:37] aircraft, that's what it feels like when
+[65:40] you're inside, right? Like a 747 in
+[65:42] terms of the amount of space in it.
+[65:44] Especially when you compare the Falcon
+[65:45] Heavy, which is their workhorse,
+[65:47] correct, Gavin?
+[65:48] >> Yeah, and Starship's going to get
+[65:49] bigger. Based on their road map, it's
+[65:51] going to get a lot bigger.
+[65:52] >> A lot bigger. And then this one is the
+[65:55] most interesting that this started
+[65:56] trending this week. This is cumulative
+[65:58] payloads launched 1957 to today. SpaceX
+[66:01] is basically about to in just that and
+[66:05] and this is really what exponential
+[66:06] growth is about, and this is what
+[66:07] disruptive technologies are about.
+[66:10] Just from 2012
+[66:12] to today,
+[66:13] SpaceX is about to dwarf
+[66:16] the rest of the world's cumulative
+[66:18] payloads into space. So, Gavin, maybe
+[66:23] take the other side of it.
+[66:25] When do these data centers in space
+[66:27] happen? What has to happen for those to
+[66:30] be a reality? When does that hit
+[66:32] SpaceX's bottom line? We've heard from
+[66:34] Chamath, "Hey, here's all the things
+[66:35] that hit the bottom line in the short
+[66:37] term and mid term." But I think data
+[66:39] centers in space would be a mid term to
+[66:41] long term play. 3 years is what I'm
+[66:43] hearing. So,
+[66:45] tell us about that business in relation
+[66:47] to the two charts I just shared.
+[66:49] >> Well, the one thing I would just say,
+[66:50] well, first, all those charts about
+[66:53] launch are before Starship was
+[66:54] operational, and most most of that mass
+[66:57] to orbit was done by Falcon.
+[66:58] >> Yes.
+[66:59] >> And Starship
+[67:01] the Falcon is reusable. Starship is
+[67:04] designed to be rapidly reusable. And
+[67:07] this is a critical difference. Like,
+[67:09] let's say Blue Origin successfully
+[67:11] solves reusability.
+[67:13] They're where SpaceX was 10 years ago.
+[67:16] Let's say China solves it 10 years ago.
+[67:19] Rapid re- The reusability means that you
+[67:21] extensively refurbish the rocket,
+[67:24] you know, the engines, everything, the
+[67:26] fairing. It takes a lot of time.
+[67:29] You know, maybe you can fly that rocket
+[67:31] again in
+[67:33] 30 days, 60 days.
+[67:35] Rapid reusability means that you can fly
+[67:38] the same flying land the same rocket
+[67:40] multiple times per day.
+[67:42] So, if SpaceX and and it's really hard
+[67:46] to do rapid reusability.
+[67:49] I think it would have been It would have
+[67:50] been not trivial, but much easier to
+[67:53] have Starships working if it was just
+[67:55] designed to be reusable.
+[67:57] >> Mhm. [clears throat]
+[67:57] >> That's not enough
+[67:59] for what Elon wants to achieve of, you
+[68:02] know, a a moon base, a colony on the
+[68:05] moon, a colony on Mars, mass drivers on
+[68:07] the moon. You need rapid reusability,
+[68:10] and that is why Starship is such a an
+[68:13] engineering challenge and will be such
+[68:15] an impressive achievement when they have
+[68:17] rapid reusability. But, I do think that
+[68:19] mass to orbit
+[68:21] rapid reusability of Starship means
+[68:24] if they get
+[68:25] >> you When do you predict they'll have
+[68:26] that, rapid reusability to space, you
+[68:28] think?
+[68:28] >> I mean, we're going to find out We're
+[68:29] going to find out, you know, we find out
+[68:31] I'm I'm I'm I'm going to be at Starbase
+[68:34] today for the whole launch.
+[68:35] >> Yeah.
+[68:36] >> So, you know, we we we turn over cards
+[68:38] and, you know, it's important for
+[68:39] everyone to remember,
+[68:41] like, let's just
+[68:42] let's just say it's a fireball. SpaceX
+[68:45] will still learn
+[68:47] from this.
+[68:48] >> Yes.
+[68:48] >> They They They learn from failure. If
+[68:50] you don't fail, you're not learning.
+[68:52] Same way, if you're not wrong, you
+[68:53] didn't learn anything in that day.
+[68:55] And this is a brand new rocket, a brand
+[68:57] new booster, a lot of new technology.
+[68:59] There's a lot of instrumentation on it.
+[69:02] So, whatever happens today, SpaceX is
+[69:05] going to learn and rapidly iterate.
+[69:07] I don't know when. I don't want to make
+[69:09] a prediction.
+[69:10] I would guess a year or two.
+[69:13] Maybe sooner.
+[69:14] >> I think that's most consensus. A year or
+[69:15] two is I think perfect consensus, yeah.
+[69:17] >> We'll see. So, like the Even if
+[69:19] everybody else solves reusability,
+[69:21] master orbit from everyone else will
+[69:22] quickly
+[69:24] asymptote to a very small number.
+[69:29] As far as when will orbital compute be a
+[69:31] reality, I would say, "Well, it is
+[69:33] important to realize there is a working
+[69:36] H100 and NVIDIA H100 GPU in space today.
+[69:40] >> Yeah.
+[69:40] >> Andrej Karpathy both trained a model on
+[69:43] and used for inference. So, this is
+[69:46] Yeah.
+[69:47] You know, it's it There's a working GPU
+[69:50] in space today.
+[69:51] >> And NVIDIA's making a space-designed
+[69:55] version of this, which will be different
+[69:57] because the heat sink has to be
+[69:58] different. There's a bunch of weight
+[69:59] that you put on it when it's in a data
+[70:01] center that you don't need in space. And
+[70:03] you also have to reinforce it for the
+[70:05] journey to space because these things
+[70:06] are going to shake and break apart. The
+[70:09] data center ones are not made to have
+[70:12] that many Gs put on them. So, you're
+[70:13] going to need an an an an industrial an
+[70:16] industrial-strength one that gets to
+[70:18] space that has a different profile.
+[70:19] Yeah, Gavin?
+[70:20] >> Well, one of the things that's been so
+[70:21] magical about SpaceX is they're very
+[70:23] good at engineering the rocket and the
+[70:25] payload so that you can use
+[70:28] semiconductors that are not designed
+[70:31] >> Hm.
+[70:32] >> be in space or satellites in space, and
+[70:34] those semiconductors are a lot cheaper.
+[70:36] We have a couple My my firm, Seraphim
+[70:38] Space, is an investor in a company
+[70:39] called Excite Labs that
+[70:41] it's a matter of public record is going
+[70:43] to be in essentially every Starlink.
+[70:46] And the chips were not designed to go to
+[70:49] space. They're not radiation-hardened.
+[70:52] You know, everyone,
+[70:53] you know, SpaceX really liked a lot of
+[70:55] the the specifications on the chips. and
+[70:58] then it's like, well, we'll see how they
+[70:59] do with rad testing and they just so
+[71:01] happen to pass. And so that is one of
+[71:04] like one of something that's very under
+[71:07] appreciated I think about space out.
+[71:08] >> One of their specialties.
+[71:09] >> One of their specialties.
+[71:11] >> Yeah.
+[71:11] >> But I think
+[71:12] second half of 28 to first half of 2030
+[71:16] would be my point prediction.
+[71:17] >> All right, let's do Nvidia and then the
+[71:19] the market recap since we have you here
+[71:20] Gavin and since Freeberg you wanted to
+[71:21] get in on that. Nvidia blew out its
+[71:23] earnings again.
+[71:25] Q1 performance is just mind-boggling.
+[71:27] 81.6 billion in revenue up 85%
+[71:30] year-over-year, 20%
+[71:32] quarter-over-quarter. High growth in the
+[71:33] stock market for those people who don't
+[71:35] participate, 20% would be a high growth
+[71:37] company.
+[71:38] Year-over-year. They did that
+[71:40] quarter-over-quarter. 58 billion of net
+[71:42] income and 48 billion in free cash flow.
+[71:46] They're doing all this at 75% gross
+[71:48] margins.
+[71:50] They're growing massively and
+[71:53] they're obviously the most valuable
+[71:54] company in the world at a 5.3
+[71:56] trillion-dollar market cap. Stock's up
+[71:59] but 16% year this year with all that
+[72:02] growth. That's a magnitude of that 16%.
+[72:05] And
+[72:07] they've announced another 80 billion in
+[72:10] additional buybacks on top of the 100
+[72:11] billion in buybacks they did at the
+[72:13] start of 2023. So they're buying back
+[72:15] about 4% of the company.
+[72:17] They raised the quarterly dividend 25x
+[72:19] from 1 cent a share to 25% cents per
+[72:22] share.
+[72:23] And their CFO said they're going to
+[72:25] return 50% of the free cash flow to
+[72:27] shareholders.
+[72:29] Never been a company like this, huh
+[72:30] Freeberg? The the scale of this is just
+[72:33] extraordinary.
+[72:35] >> Mhm.
+[72:36] >> Yep.
+[72:37] >> Don't don't seem to
+[72:39] >> They have first there's your market
+[72:40] report from Freeberg. Don't seem so
+[72:42] enthused.
+[72:43] >> Yeah, it's a mhm mhm. He's got potatoes
+[72:45] in the oven.
+[72:46] >> I have a question for Gavin. He did a
+[72:48] really interesting talk with Patrick
+[72:50] O'Shaughnessy and there was this one
+[72:52] thing that I wanted to ask you about
+[72:54] cuz I thought it was so interesting. You
+[72:56] said when you look at the revenue
+[72:58] multiples of the chip companies and you
+[72:59] look at the revenue multiples of the
+[73:01] DRAM companies, both cannot be true. In
+[73:03] the context of Nvidia's earnings, can
+[73:04] you just explain maybe in plain language
+[73:07] for folks? I just thought it was so
+[73:09] fascinating cuz it explains it explains,
+[73:12] I think, just to set it up where is
+[73:14] value over the next 5 years? Like, I
+[73:16] think if you looked at Leo Ashan
+[73:17] Brenner, his fund has gone from like 0
+[73:20] to 5 billion dollars overnight and it
+[73:22] looks like he's just got massive puts on
+[73:23] the chip sector and he's kind of
+[73:25] rotated. So, just give us context,
+[73:28] Gavin. Where Where's the puck going?
+[73:30] >> Well, so maybe take the question in the
+[73:32] reverse orders. For Leopold, who's
+[73:34] clearly a brilliant man, I think he was
+[73:36] a road scholar like 19 and I think my
+[73:39] understanding is he's putting up pretty
+[73:41] extraordinary numbers. I I've yet to
+[73:42] meet him.
+[73:44] He actually shares an office in San
+[73:45] Francisco with a friend of mine, so I
+[73:47] think I'll probably meet him sometime
+[73:48] soon. But, it's got to for that 13F that
+[73:51] he filed was at the end of the first
+[73:54] quarter
+[73:55] when, you know, I would say we were in
+[73:57] the, you know, the the thick of
+[73:59] geopolitical fears.
+[74:01] And I think you saw a lot of puts on a
+[74:03] lot of 13Fs and I don't know that those
+[74:06] puts are still there.
+[74:07] >> Okay.
+[74:08] >> You know, I think a lot of people wanted
+[74:09] to be hedged for on
+[74:11] and, you know, now I think it's a little
+[74:13] more clear. So, I wouldn't read I
+[74:15] wouldn't read Leopold's 13F as being
+[74:18] super negative on on semi.
+[74:21] >> Chips, okay.
+[74:22] >> On chips.
+[74:24] Second thing, I think cross actually, if
+[74:25] you look at the valuations for all these
+[74:26] AI names, they just they can't all be
+[74:30] accurate. You have memory makers that,
+[74:33] you know,
+[74:34] three to five times PE, you have Nvidia
+[74:37] at a really low PE.
+[74:40] You actually have, um, you know, some
+[74:42] other accelerator companies at
+[74:43] reasonable multiples.
+[74:45] And then you have everything else.
+[74:46] Everything in power, everything in
+[74:48] cooling. And when I say power, I don't
+[74:49] mean utilities. So IPPs are actually
+[74:51] quite
+[74:52] reasonably valued. But power, cooling,
+[74:55] even probably some of some of the
+[74:58] optical names.
+[75:00] These are discounting very different
+[75:03] things. If the multiples on the power,
+[75:05] cooling, optical names are correct,
+[75:09] Nvidia, memory, they're going up a lot.
+[75:12] If the multiples on Nvidia and memory
+[75:14] are are correct,
+[75:16] everything else is probably going to
+[75:17] underperform. The AI market is
+[75:19] cross-sectionally inefficient right now,
+[75:22] which is what I was trying to say. As
+[75:24] far as the Nvidia quarter, I do they
+[75:26] went to a new reporting structure, data
+[75:28] center and AI, and then with no data
+[75:30] center and edge, and then within within
+[75:33] AI they have hyperscalers,
+[75:35] and then I think they call it AI clouds,
+[75:37] >> AI clouds,
+[75:38] >> industrial and enterprise. What I
+[75:40] believe is if we were to make a true
+[75:42] apples-to-apples comparison,
+[75:45] and Broadcom, you know, there's a
+[75:46] narrative that Nvidia is losing share to
+[75:49] the TPU.
+[75:50] And Broadcom guided for 143%
+[75:54] year-over-year growth in their AI
+[75:56] semiconductor revenue in the quarter
+[75:58] that they will report. That's comparable
+[76:00] to the one Nvidia just reported.
+[76:02] I think
+[76:04] if you were to and I just
+[76:06] >> [laughter]
+[76:07] >> I so wish they had reported slightly
+[76:09] differently. I wish they'd done
+[76:10] hyperscalers, AI clouds, and then
+[76:13] industrial and enterprise. Because I
+[76:15] think the segment that is comparable is
+[76:18] the sum of hyperscalers
+[76:20] plus AI clouds,
+[76:23] stripping out China, because Broadcom
+[76:25] just did not have the China business
+[76:26] that Nvidia did.
+[76:28] And I think on that basis, in other
+[76:29] words, in within the western AI world,
+[76:32] within data centers that are being
+[76:34] built, whether they're being built by
+[76:35] CoreWeave, XAI, Amazon, Google,
+[76:39] >> Mhm.
+[76:39] >> Nvidia's AI business is growing faster
+[76:42] than Broadcom's.
+[76:44] And faster than a lot of other companies
+[76:47] that are, you know, seen as part of this
+[76:49] ASIC share gain story.
+[76:51] And, you know, I think Jensen has become
+[76:55] and you could you can hear it
+[76:58] increasingly frustrated, and rightfully
+[77:00] so, at two things.
+[77:02] One is to say, what is the performance
+[77:04] of stock? Uh
+[77:05] two two
+[77:06] >> vocal about that. Like, what is going on
+[77:08] here? You're putting up record numbers,
+[77:10] and we're getting no
+[77:11] like, uh credit.
+[77:12] >> Yeah, I get it. It It just
+[77:15] how can there be a share loss narrative
+[77:18] if I'm gaining share? And it is
+[77:20] indisputably true that he's growing
+[77:21] faster than hyperscaler CapEx, even
+[77:24] without these adjustments.
+[77:26] >> Yeah.
+[77:26] >> And I think the other thing that's so
+[77:27] frustrating to him is these other ASICs
+[77:30] >> Mhm.
+[77:30] >> are not being submitted for benchmarks.
+[77:33] They're not in the CV analysis in for
+[77:34] inference max. They're not in MLPerf.
+[77:38] And I think the reason they're not being
+[77:39] submitted is they will lose.
+[77:40] >> Mhm.
+[77:41] >> And you can't fight shadows. And until
+[77:45] we see a clean benchmark
+[77:48] of whether it's GB300s versus TPU
+[77:51] V7s or, you know, versus
+[77:54] >> versus inferentia, yeah. Yeah, yeah.
+[77:56] >> versus yeah, versus Tranium.
+[77:57] >> Yeah.
+[77:58] >> If we're we're not going to know. And
+[77:59] that's why the a lot of these other
+[78:01] chips
+[78:02] >> I think Tranium's in a great spot.
+[78:03] Aren't being submitted.
+[78:05] But nonetheless, if Nvidia's doing well,
+[78:07] once you become the largest company the
+[78:08] world, you kind of you tend to trade by
+[78:11] observation would be at stairstep
+[78:12] patterns.
+[78:14] Where you kind of the multiple
+[78:15] compresses, compresses, compresses, cuz
+[78:17] people are skeptical of the size
+[78:19] >> Then you have a re-rating. Yeah.
+[78:20] >> And then you re-rate.
+[78:21] >> New floor is established at a higher
+[78:23] rate. Yeah.
+[78:24] >> I think there was one other really
+[78:26] important thing in the Nvidia quarter.
+[78:27] It's they said that they thought their
+[78:29] CPU business was going to be $20 billion
+[78:31] this year.
+[78:31] >> Yeah, yeah, yeah.
+[78:32] >> Put it there. It means overnight you're
+[78:35] one of the world's largest CPU
+[78:37] manufacturers. And I think that is a
+[78:39] testament to Nvidia has a unique
+[78:41] position. They're the only company that
+[78:44] works with every lab. And so that puts
+[78:48] them in the best position to architect
+[78:51] their chips, they call co-designed, for
+[78:53] where the models are going.
+[78:55] And I think that $20 CPU figure is
+[78:58] pretty extraordinary.
+[79:00] >> This is the thing like at the end of
+[79:01] this Grok transaction last year, my kind
+[79:03] of prevailing thought on this is we're
+[79:05] going to move to these domain-specific
+[79:07] architectures. I thought that was like a
+[79:09] a fait accompli, we're just now waiting
+[79:11] for which models, but the reality is
+[79:13] that that DSA
+[79:15] market evolution is actually happening
+[79:17] inside of Nvidia. That's what's so
+[79:19] insane to me. That was my takeaway from
+[79:21] the quarter as well, which is like holy
+[79:23] These guys actually have domain-specific
+[79:25] architectures because they're doing
+[79:26] these design programs with every This is
+[79:28] why back to sort of the, you know, when
+[79:29] he does DC to DC with Elon and Colossus
+[79:32] 3 or whatever, it's just this it's
+[79:33] another game-changer for everybody.
+[79:35] >> He doesn't get a one-year flip. He makes
+[79:37] nine. And then I don't think the cost at
+[79:40] which you can finance these chips and
+[79:41] these useful lives is really important.
+[79:44] >> You had an incredible insight, which is
+[79:45] the amortization schedule for Coreweave
+[79:47] and all these guys, they got saved.
+[79:49] You may want to just explain what that
+[79:51] is and what why you said that. I thought
+[79:52] that was a great insight.
+[79:53] >> No, thank thank you Chamath, I
+[79:54] appreciate it. So, when Coreweave and
+[79:56] all these neo clouds came public, and by
+[79:57] the way, this goes for the hyperscalers
+[79:58] too, there was a big bear case that hey,
+[80:01] the these guys are amortizing their GPUs
+[80:03] and CPUs over four or five six years,
+[80:06] and that's way too short of a lifespan.
+[80:08] The true lifespan of a GPU is more like
+[80:10] two years, and therefore, you know, the
+[80:12] profits of all these businesses are
+[80:13] overstated.
+[80:15] The reality is
+[80:15] >> This was Michael Bury who put this out
+[80:17] there.
+[80:17] >> Yes, to be clear, yeah. Yeah, and you
+[80:20] know, thank you Michael Bury, we need
+[80:22] bears. Thank you.
+[80:23] >> Yeah, that's like that's like asking
+[80:25] Gerardo about modern music.
+[80:28] >> Well, I don't I don't want to cast
+[80:30] aspersions on Michael Bury, he's a he's
+[80:31] a brilliant man, but we need Barry.
+[80:33] >> Let me Hey, somebody call Vanilla Ice
+[80:35] and ask him what he thinks.
+[80:37] >> [laughter]
+[80:37] >> Oh my god. Milli Vanilli, check your
+[80:39] mail.
+[80:40] >> waste. What a waste of time. What a
+[80:42] waste of time.
+[80:43] >> Oh, poor Michael Come on the program
+[80:44] anytime, Michael Berry.
+[80:45] >> [laughter]
+[80:45] >> Go ahead, Gavin.
+[80:46] >> Yeah, I know. Keep it on track.
+[80:48] >> I'm happy to chat. But now that we've
+[80:49] disaggregated inference, we have these
+[80:51] different domain-specific accelerators.
+[80:53] You can mix and match them. And I think
+[80:55] the GPU stays in a lot of ways at the
+[80:57] center of this constellation for a
+[80:59] while. And you can put whether it's a
+[81:02] Groq accelerator, whether, you know,
+[81:05] it's a Cerebras accelerator in front of
+[81:07] old GPUs, use Groq or Cerebras for
+[81:10] decode. And then those older GPUs, they
+[81:12] have a useful life for 10 or 15 years.
+[81:14] And this means that you can finance GPUs
+[81:17] I think Corey's lowest financing, I
+[81:18] can't forget if it's 6 or 7%.
+[81:20] >> 6%. 6%.
+[81:22] >> Yeah.
+[81:22] >> And if you can get an asset-backed loan,
+[81:24] an asset-backed financing
+[81:26] for GPUs at a lower rate than other
+[81:28] chips.
+[81:29] >> No, that That's a profound advantage.
+[81:31] >> That quarter single-handedly saved the
+[81:33] Neo Neo's clouds. This quarter Nvidia
+[81:35] [laughter]
+[81:36] saved I mean, they single-handedly saved
+[81:38] them all. I think they they should all
+[81:40] They should all say an incredible thanks
+[81:42] to Jensen because
+[81:44] I interviewed the CEO of Core Weave,
+[81:45] Michael in Trader Michael in Trader,
+[81:48] yeah. And he was saying, "Hey, listen,
+[81:49] people have no problem
+[81:51] buying and financing these over a 6-year
+[81:54] period." And people are asking for
+[81:56] things that are coming off and that he
+[81:58] thinks they're going to have year 7 8 9,
+[82:00] they'll have some useful life. You know,
+[82:03] uh in addition to that. So,
+[82:04] Yeah, so he's like, "I I I don't know
+[82:06] what anybody's talking about here."
+[82:08] Like, this is just not informed analysis
+[82:10] was his point. Like, I the game on the
+[82:12] field and people are betting with their
+[82:14] dollars with him. He has them pay in
+[82:17] advance and sign 6-year contracts. If
+[82:19] they didn't think it had 6-year
+[82:20] lifespan, they wouldn't be signing a
+[82:22] 6-year contract. Pretty straightforward.
+[82:24] And they can't get enough of them. Okay,
+[82:25] let's end on this market update, macro
+[82:27] picture not great. Oil remains elevated,
+[82:30] although there might be a settlement
+[82:32] every week we have there is a settlement
+[82:33] coming. Maybe this time 16 time it's a
+[82:36] charm in the Iran war is going to wrap
+[82:38] up, but we're in week 12 of it. And this
+[82:40] was supposed to be 4 to 6 weeks. So,
+[82:41] wars never get resolved quickly. That's
+[82:43] one thing we've learned in our
+[82:44] lifetimes. Oil is driving inflation
+[82:47] massively higher. Polymarket says 99%
+[82:49] chance May inflation comes in at 4.2% or
+[82:52] higher. Survey of professional
+[82:54] forecasters projecting CPI hits 6%. You
+[82:58] heard that right, folks. We weren't just
+[82:59] talking about a 3% handle, which we just
+[83:01] said. Now people are saying 4, 5, and 6%
+[83:04] in Q2. And obviously, that's a huge
+[83:07] revision. And the narrative was, "Hey,
+[83:10] more Fed rate cuts coming." Now we're
+[83:12] talking about Fed
+[83:15] rate increases. Inflation is causing
+[83:18] obviously bond yields to rise. 10-year
+[83:19] hit 4.6%. You remember we've had Bessen
+[83:22] on the
+[83:23] pod multiple times, and his goal was to
+[83:26] get that under 4%. Now it's
+[83:28] significantly above that number. And
+[83:31] also, if we go around internationally,
+[83:32] Japan's 30-year is at a high of 5.1%.
+[83:36] Highest ever recorded. UK yields highest
+[83:39] since the great financial crisis.
+[83:40] Germany highest since 2011. And in
+[83:42] Korea, retail investors are borrowing
+[83:45] borrowing record amounts of money to
+[83:47] trade in AI chip stocks. They also had
+[83:50] an incredible run in Korea betting on
+[83:52] crypto at the peak. So, that's some sort
+[83:55] of an interesting signal.
+[83:57] Friedberg, is your alt personality going
+[84:00] to come out right now? Are you
+[84:01] concerned?
+[84:03] Is Dr. Doom making an appearance here,
+[84:05] or do you think this is manageable? How
+[84:06] concerned are you?
+[84:07] >> What is the point of being concerned
+[84:09] when you have ridden the roller coaster
+[84:11] to the top and it is beginning
+[84:13] [laughter] its descent? I I don't know
+[84:14] what there is to be concerned about. The
+[84:17] the the force of gravity is inevitable.
+[84:20] The roller coaster will roll down. We
+[84:22] will throw our hands in the air and we
+[84:24] will scream, "Whee!" as we go for the
+[84:26] ride. Global debt to GDP is 310%.
+[84:32] Reserve currency status
+[84:34] to the side,
+[84:36] the spending problem at the federal,
+[84:38] state, local level, the spending problem
+[84:41] at every country to basically keep
+[84:43] economies growing to support existing
+[84:45] leverage, ultimately creates a cascading
+[84:48] effect. It ultimately breaks. And as it
+[84:51] starts to break, you have massive
+[84:53] inflation because the value of your
+[84:56] underlying
+[84:57] currency collapses and then you have
+[84:59] money printing and all this other sort
+[85:01] of stuff, which inflates the value of
+[85:02] assets, which allows you to keep
+[85:03] servicing your debt.
+[85:05] And the spiral takes off.
+[85:07] And so we will just enjoy the ride. This
+[85:10] is the moment, you know, 30-year 5.2%
+[85:14] This Japanese yield
+[85:16] Some argue might, you know, you should
+[85:18] talk to more active market participants
+[85:20] than me, but
+[85:21] and probably some economists who trade
+[85:23] the market, but I would think that this
+[85:25] is one of those things that could be a
+[85:26] catalyst for a for a credit crisis.
+[85:30] Because there's a lot of people that are
+[85:31] in this carry trade.
+[85:33] And we'll see, you know, this is
+[85:36] >> Okay.
+[85:37] >> This is water leaking out of the bucket.
+[85:38] There it is.
+[85:39] >> he is. Dr. Doom is here. Chamath, your
+[85:41] thoughts on
+[85:43] Dr. Doom's panic attack of the month. Is
+[85:46] this Is this time real? Is this the 17th
+[85:49] prediction of the next six recessions?
+[85:52] What do we got here, Chamath? Are you
+[85:53] concerned? How concerned are you about
+[85:55] these signals that are flashing?
+[85:58] >> I think I think that's exactly what that
+[85:59] is, Jason. There are signals that are
+[86:00] flashing. I think there's pockets of the
+[86:02] market that still make sense that you
+[86:03] can underwrite if you
+[86:06] want to buy businesses that represent
+[86:07] the future.
+[86:09] And if you can find a few of those and
+[86:11] you can get comfortable with that and
+[86:13] you can own it for 10 years,
+[86:15] I think you buy those companies
+[86:17] and generally everything else I think
+[86:20] you should not speculate and you should
+[86:22] generally avoid. Not just because it's
+[86:24] an up market, but in every market. I've
+[86:26] learned this the hard way. We've all
+[86:28] kind of gone through this. As I get
+[86:29] older, I it's just not worth it. The
+[86:31] vicissitudes of the market
+[86:34] um don't give me
+[86:36] anywhere near the sugar high it used to
+[86:37] on the way up and it makes me feel
+[86:40] horrible on the way down. So, how I
+[86:41] manage myself is I have a few companies
+[86:44] that I really believe in. I have
+[86:45] extremely concentrated large holdings in
+[86:47] those. Large for me doesn't mean large
+[86:49] for everybody else.
+[86:51] And then otherwise, I just kind of stick
+[86:53] to my knitting and keep my head down.
+[86:54] It's a much more rational way to behave.
+[86:56] So,
+[86:56] >> How many public stocks can you keep in
+[86:59] your brain and still sleep at night
+[87:01] holding for the long term, Chamath?
+[87:03] What's the Is there a number for you? Is
+[87:04] it five? Is it 10? Is it
+[87:05] >> Seven. It's five It's five or less.
+[87:08] >> Five or less?
+[87:09] >> Five or less.
+[87:09] >> And so, what your largest holding right
+[87:11] now is what percentage of your net
+[87:12] worth, which is a
+[87:15] >> I don't know.
+[87:15] >> Or like top two, maybe.
+[87:16] >> Yeah.
+[87:18] Oh, top two?
+[87:19] >> Yeah, like one and two. One is 20, two
+[87:21] is 15, or one is 40, two is 20.
+[87:24] >> I don't know. Again, it depends on the
+[87:26] day. But I don't know. But it's it's
+[87:27] >> Just curious.
+[87:28] But I think that's I think that's really
+[87:29] important.
+[87:30] >> My point is there's no 30 things that
+[87:31] I'm tracking. I don't I don't have the
+[87:33] time. I'm not smart enough.
+[87:35] There's too much information. There's
+[87:37] like four things that I stay on top of.
+[87:39] >> Gavin, you you do this for a living. How
+[87:41] many positions do you manage and what's
+[87:43] your take on some of the flashing signs
+[87:45] that are saying, "Hey, slow down." or
+[87:47] maybe there might be a wreck around the
+[87:49] corner here, you know, when they do the
+[87:50] checkered flag in the F1 or whatever the
+[87:52] metaphor you want to use is.
+[87:54] >> Well, so what I I manage
+[87:57] more than 100
+[87:58] positions at my firm. Um and I do that
+[88:01] with a team. We're over 30 people now.
+[88:04] So, it's not just me and I work with
+[88:05] some some great people.
+[88:06] I then
+[88:07] three things can be true. Rates going up
+[88:10] is very concerning.
+[88:12] What is happening with AI right now with
+[88:14] Anthropic growing faster than
+[88:17] any country any company in history at
+[88:19] massive scale.
+[88:20] >> And certainly any country.
+[88:22] >> Absolutely unprecedented. Yes. They're
+[88:24] actually Yeah, they are they are now the
+[88:25] size of you know, yeah yeah they're we
+[88:29] pull up where they
+[88:29] >> They're bigger than a hundred different
+[88:31] countries.
+[88:31] >> For sure.
+[88:32] >> Exactly.
+[88:32] >> And compounding really fast.
+[88:34] >> And now profitable.
+[88:36] >> Yeah.
+[88:36] >> Which I think really changes the moment.
+[88:37] >> Which is bizarre.
+[88:38] >> Yeah.
+[88:39] >> Yeah, how did that happen?
+[88:40] >> So, those things can both be true and I
+[88:43] think we should all remember the tech
+[88:44] bubble happened with you know, the
+[88:45] 10-year and the 30-year much higher than
+[88:47] they are today. And you know,
+[88:50] the the Nvidia of of of the tech bubble
+[88:52] was Cisco and it traded a hundred times
+[88:54] forward earnings. And you know, I think
+[88:56] Nvidia is probably at a low teens
+[88:58] multiple of kind of low to mid teens
+[89:00] multiple of real earnings, you know, if
+[89:03] you that that'd be a buy side consensus
+[89:05] not the trade number. And then the third
+[89:07] thing that I think is true is a straight
+[89:08] up formula is being closed.
+[89:10] While it's terrible for everyone, it is
+[89:12] relatively the best for America because
+[89:15] we are self-sufficient in energy, we are
+[89:17] self-sufficient in food, we've become a
+[89:20] massive exporter of oil, we're now the
+[89:22] world's largest not only oil and gas
+[89:24] producer, but oil and gas exporter.
+[89:28] And you know, those three things can be
+[89:29] true. What do they mean? I think it's
+[89:31] probably hard for me to see
+[89:33] with America being the most advantaged
+[89:36] by what is going on.
+[89:38] >> We're still the best currency.
+[89:40] >> Yeah.
+[89:40] >> the best economy. We still have the best
+[89:42] public companies and we have the best
+[89:44] private market companies.
+[89:46] >> Yeah.
+[89:46] >> And we are
+[89:48] one of the greatest producers of oil in
+[89:50] the world. So, we're in good shape
+[89:52] despite this international chaos.
+[89:55] >> think a dollar crisis is around the
+[89:56] world. Now listen, like if you know, the
+[89:58] Bundesbank
+[90:00] in was still in charge and you had the
+[90:02] Deutsche Mark and there was a currency
+[90:04] with better fundamentals, we would be at
+[90:06] very high risk, probably. But just cuz
+[90:09] we're the best house in what is globally
+[90:12] a, you know, bad neighborhood of high
+[90:14] debt levels, and we have AI in our
+[90:17] corner, and we have energy
+[90:19] self-sufficiency, and every day the
+[90:21] Strait of Hormuz is closed, I think it's
+[90:23] relatively good for the
+[90:24] reindustrialization of America.
+[90:27] Like I think, you know, you have to you
+[90:29] have to all
+[90:30] >> You're saying it's a forcing function.
+[90:32] It makes us, just like COVID did, be
+[90:35] more resilient and, yeah, more
+[90:37] self-reliant.
+[90:38] >> Yes, and
+[90:41] electricity is a base input to every
+[90:44] manufacturing or industrial process,
+[90:46] essentially all of them.
+[90:48] >> Mhm.
+[90:48] >> And what we make electricity with in
+[90:50] America overwhelmingly is natural gas,
+[90:52] and you can look it up. NG1, it is down
+[90:55] this year.
+[90:56] >> Mhm.
+[90:56] >> The input cost for electricity in the
+[90:58] rest of the world, you know, lots of
+[91:00] different things, but LNG is a very
+[91:02] important one, and it's up 100, 200%.
+[91:06] And so, the Strait of Hormuz is
+[91:07] absolutely
+[91:09] bad for everyone, but relatively good
+[91:11] for America,
+[91:13] and relatively good for Trump's policy
+[91:15] goals.
+[91:16] >> Mhm.
+[91:16] >> And that's why I think he's in no hurry.
+[91:19] Every day the Strait is closed, and for
+[91:21] whatever he does seem like a relative
+[91:23] thinker. Every day the Strait of Hormuz
+[91:25] is closed is relatively good for
+[91:28] America. It's terrible for Europe. It is
+[91:31] terrible for Asia.
+[91:33] >> Japan and China need that oil.
+[91:34] Philippines needs it. India needs it.
+[91:37] Yeah.
+[91:37] >> Yeah, it's so all these things can be
+[91:39] true, but the one thing I do just want
+[91:40] to say is rates going up
+[91:42] and inflation going up is never good.
+[91:46] But we have to hold what's happening
+[91:47] with AI, where the fundamentals are
+[91:49] getting a lot stronger in our mind. And
+[91:52] the the one thing I would just add is
+[91:55] AI has been seasonal, the market's
+[91:57] seasonal.
+[91:58] You know, it often, you know, sell in
+[92:00] May, go away.
+[92:02] And AI fundamentals also appear a little
+[92:06] seasonal.
+[92:08] In the past that's been cuz you know,
+[92:09] cuz college students they they use a lot
+[92:11] less chat GPT
+[92:13] and Claude in the summer. And generally
+[92:15] people maybe work a little less hard
+[92:17] when the weather's nice. Now with the
+[92:18] generative AI, will the fundamentals
+[92:20] still be seasonal? We will see.
+[92:23] >> Oh, that's a really interesting point,
+[92:24] right? We see that e-commerce, apps,
+[92:26] subscriptions as investors in a lot of
+[92:28] these companies, we would always have
+[92:30] these board meetings Chamath. Oh, uh Q3,
+[92:33] uh yeah, people are out gallivanting and
+[92:36] they're not playing Candy Crush or
+[92:38] buying calm or whatever, but oh hey,
+[92:40] Uber and DoorDash went up, people are
+[92:42] traveling, etc. Okay, final story of the
+[92:44] week. We had a 48-hour jaunt
+[92:47] by a bunch of tech CEOs and the
+[92:50] president
+[92:51] to hang out with Xi. A lot of high
+[92:53] fives, a lot of handshakes,
+[92:55] a lot of great vibes, but coming out of
+[92:58] it we haven't seen anything
+[93:00] >> definitive Friedberg
+[93:02] in terms of policy. This was supposed to
+[93:04] be some big breakthrough. It would have
+[93:07] downstream effects on tariffs, on us
+[93:10] selling chips to China. We did see a
+[93:12] little movement there uh and the Strait
+[93:14] of Hormuz, we would become, you know,
+[93:16] Wonder Twins with Xi and Trump reopening
+[93:19] it, but nothing really definitive other
+[93:21] than some soybeans being sold and some
+[93:25] H100s, A200s getting sold to Baidu and
+[93:28] some of the top folks. So what do and
+[93:30] maybe some planes got sold, too. So
+[93:32] other than a little BD, a little
+[93:33] business development is
+[93:35] uh Friedberg, what's the outcome here or
+[93:37] was it just a bit performative in your
+[93:40] mind?
+[93:40] >> There was a a question
+[93:44] would the administration
+[93:46] leave China with a grand deal that made
+[93:48] everyone feel like there's a long-range
+[93:51] view on a partnership, but I don't think
+[93:52] that that's
+[93:53] what happened. There were a few
+[93:55] announcements obviously around an
+[93:56] intention to continue to work together
+[93:58] in a cooperative way and find a path to
+[94:00] partnership, an intention to
+[94:03] establish additional trade deals, and
+[94:05] and, you know, there were some purchases
+[94:07] of aircraft and
+[94:08] and some agricultural product
+[94:10] commitments, but fundamentally, the
+[94:11] grand deal, the big deal that I would
+[94:14] say reduces or de-escalates tension
+[94:17] probably didn't manifest as some had
+[94:19] hoped it would. And I don't think it's
+[94:21] any surprise that Putin is with Xi
+[94:24] today.
+[94:25] And this is also performative, that
+[94:27] following the US visit, there's now a
+[94:29] relationship bonding moment happening
+[94:32] between China and Russia.
+[94:34] So, the story continues. You know, there
+[94:37] is no happy ending, and there is no
+[94:39] rainbow-colored chapter three in this
+[94:41] book. It's going to continue to be a
+[94:44] dramatic arc
+[94:45] as this rising power continues to
+[94:47] challenge the United States.
+[94:50] And I think the story continues.
+[94:51] >> Were you expecting a happy ending?
+[94:54] >> CAN'T ANSWER THAT QUESTION.
+[94:56] >> [laughter]
+[94:58] >> I MEAN, TO THE STORY OF THE CHINA VISIT.
+[95:01] Not not I'm not talking about any other
+[95:03] things going on in your life, but
+[95:05] it seemed like some planes and soybeans
+[95:07] got sold, some H-100s, perhaps, but
+[95:10] >> the
+[95:11] >> it wasn't like there was some grand deal
+[95:13] that occurred, but it's nice to see them
+[95:15] together, right? I mean, that is nice.
+[95:16] >> I think it was successful. I think
+[95:18] there's what you see on the surface, and
+[95:19] then there's what happens behind closed
+[95:21] doors, and
+[95:22] without speculating too much, I think
+[95:23] that it was a useful and productive
+[95:25] trip. I think the the biggest thing that
+[95:27] they probably got alignment on is just
+[95:29] geopolitically, the tic-tac-toe of what
+[95:32] has to happen next. And and I think that
+[95:34] there's some amount of agreement there.
+[95:36] I'm just guessing.
+[95:37] >> Yeah, and so that guess, if I was going
+[95:38] to unpack it, hey, we got we have
+[95:42] Venezuela, we have Iran, and Taiwan.
+[95:45] You have lots of things to
+[95:47] >> here's
+[95:48] geopolitical chessboard, and
+[95:51] here's what I would say, just very
+[95:52] generally. Like it's just
+[95:54] I think that there's a that there's a um
+[95:57] a way to divide up the game board in a
+[96:00] way that helps them and helps us.
+[96:03] >> Mhm.
+[96:03] >> [clears throat]
+[96:04] >> Gavin, any thoughts on specifically
+[96:06] Nvidia being able to sell more chips
+[96:08] into China? Material for the company?
+[96:12] Good for America? I mean, it's obviously
+[96:15] a pretty debatable issue.
+[96:16] >> I think I disagree with Chamath on this.
+[96:18] I think selling
+[96:21] depreciated Nvidia GPUs
+[96:24] to China
+[96:26] lowers the odds of them developing their
+[96:28] own alternative ecosystem, which would
+[96:31] be a lot power hungrier. Um cuz you do
+[96:33] use optical you bring in optical a lot
+[96:36] earlier for scale-up fabrics. I think
+[96:37] there's sound arguments that this
+[96:41] is stabilizing for the world
+[96:44] and is the best highest probability path
+[96:49] for keeping America ahead in AI and kind
+[96:52] of keeping control of AI.
+[96:54] And that's almost a shame we've had to
+[96:56] have this debate because now people like
+[96:58] me have said this many times and try to
+[97:00] If they didn't understand it, they
+[97:01] probably do really understand it. And by
+[97:02] the way, that's not to say we shouldn't
+[97:03] have had the debate.
+[97:05] But um
+[97:07] that is what I believe, you know,
+[97:09] reasonable minds can disagree.
+[97:11] >> No, wait. What Where do you think we
+[97:12] disagree? I'm not sure I agree with you.
+[97:14] >> Oh, good. I'm glad we
+[97:15] >> I was going to I was going to jump in
+[97:16] No, no, you start you start with I'm in
+[97:18] agreement on
+[97:18] >> No, no, no. I'm like sell
+[97:20] >> I'm like sell everything to them. No,
+[97:21] what I was just saying is that there was
+[97:23] what you see on the surface of what they
+[97:25] can speak to the press, but I think the
+[97:26] most important thing was the negotiation
+[97:29] of hey, listen, like
+[97:31] we're going to do these things, you do
+[97:32] these other things.
+[97:33] And that's never going to get put out in
+[97:35] a multi, you know, memoed press release.
+[97:37] That's my point. That's all I'm saying.
+[97:39] >> Yeah. And I I would just say, listen, it
+[97:41] like
+[97:42] America and China talking is only good.
+[97:44] >> Only good.
+[97:45] >> the these trap that is being discussed.
+[97:48] And China talks about a lot. They're
+[97:50] very aware of it. And they brought it
+[97:52] up.
+[97:53] >> [laughter]
+[97:54] >> She brought it up by name. Yeah. Talking
+[97:56] is a
+[97:57] integral step of avoiding this
+[98:00] situation.
+[98:01] Having a nice resolution. From my
+[98:03] perspective, like the greatest
+[98:04] superpower Trump has is his ability to
+[98:07] bond with dictators, monarchs, royal
+[98:12] families, Gulf monarchies. He's just
+[98:15] great at it. They see eye to eye. They
+[98:17] vibe. He has no problem going to see
+[98:19] them. He has no problem inviting them to
+[98:21] UFC fights. Like this is like if if she
+[98:24] comes to the United States and he's
+[98:25] sitting courtside with Dana White, like
+[98:27] that's when we know things are going to
+[98:28] be okay. I do think he's probably giving
+[98:31] them the green light on like, "Hey,
+[98:33] Taiwan's yours. Just let's not have it
+[98:35] during my administration. Maybe like we
+[98:38] do a 30-year deal or a 20-year handoff
+[98:40] deal." I wouldn't be surprised if
+[98:42] something like that happens. Or a
+[98:43] 100-year deal or a 200-year deal. But
+[98:45] the one thing I would just say that I'm
+[98:47] sure was communicated is, "Hey,
+[98:50] wars consume a vast amount of oil.
+[98:53] You buy your oil from Iran,
+[98:55] Venezuela, and Russia. Russia alone can
+[98:58] supply a fraction of what you need.
+[99:01] And now it should be clear to the world
+[99:03] Two of the three are off the chessboard.
+[99:05] Yeah, if you Two of three are off the
+[99:06] chessboard, if you do something we don't
+[99:08] like,
+[99:09] Venezuelan oil, gone for you. American
+[99:12] oil, gone. Brazilian oil, gone.
+[99:16] And we'll say to all of our good friends
+[99:18] in the GCC, "We're so sorry, but we have
+[99:20] to close the Strait of Hormuz again."
+[99:22] So, Iran, all of Middle Eastern oil,
+[99:26] gone for China. Now you just have
+[99:28] Russia, and good luck fighting a war
+[99:31] with just Russian oil against us,
+[99:35] Japan,
+[99:36] South Korea, Australia, UK, France,
+[99:39] Germany, the world. I mean, who knows
+[99:42] about Europe? But for sure Japan would
+[99:44] be there. For sure Japan would be there.
+[99:47] Oh, and Australia for sure, Korea for
+[99:49] sure. Yeah.
+[99:49] >> And so I think it's going to be a more
+[99:51] stable world on the other side of Iran.
+[99:56] However it resolves, and I think that's
+[99:58] nothing but good.
+[99:59] >> Yeah, I think that's a good insight. I
+[100:00] think it's a great insight. All right,
+[100:02] listen.
+[100:03] We missed you Sachs. Come back soon.
+[100:06] And Gavin.
+[100:07] >> Big shout out to bestie Gavin. Thank
+[100:09] you.
+[100:09] >> Yeah, you're so great. Thanks for
+[100:11] coming. We appreciate it. Hey, and your
+[100:13] father-in-law, what's his name again?
+[100:15] >> Jeff Painter.
+[100:16] >> Jeff Painter.
+[100:18] We love you. Thank you so much for all
+[100:21] the kind words. We'd love to invite you
+[100:22] to come to Liquidity or the Summit. I
+[100:24] know you're a big fan of the show. Want
+[100:26] to give you a shout out here on the
+[100:27] show.
+[100:29] Thanks. I used your fandom of the show
+[100:33] to leverage Gavin who was like, "I can't
+[100:34] make it today." And I was like, "Tell
+[100:35] your father-in-law
+[100:37] we're going to get him backstage VIP
+[100:40] tickets to the next two events
+[100:42] if you show up today. And if you don't,
+[100:44] I'm going to back channel it to him."
+[100:45] And all of the sudden Gavin made it to
+[100:47] the show.
+[100:48] Love you boys. A little bit of pressure.
+[100:50] That's my way of the That's my hormone
+[100:52] straight.
+[100:53] >> Yeah, so I'm always there for my
+[100:55] father-in-law.
+[100:55] >> Absolutely. All right, everybody. We'll
+[100:57] see you next time. Bye-bye.
+[101:00] >> [music]
+[101:01] >> You let your winners ride.
+[101:04] Rain man David Sacks.
+[101:09] We [music] open sourced it to the fans
+[101:11] and they've just gone crazy with
+[101:15] >> [music]
+[101:21] >> Besties [music] are gone.
+[101:31] >> We should all [music] just get a room
+[101:33] and just have a one big huge orgy cuz
+[101:34] they're all just useless. It's like this
+[101:36] like sexual tension that they just need
+[101:38] to release somehow. [music]
+[101:40] >> Wet your bed
+[101:41] Wet your bed Wet your bed
+[101:44] Wet
+[101:44] >> [laughter]
+[101:45] >> We need to get merch.
+[101:46] >> Merches are back.
+[101:46] >> I'm going all in.
+[101:48] >> [music]
+[101:54] >> I'm going all in.

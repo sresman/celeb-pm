@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T11",
+  "summary": "GPU useful lives of 10-15 years (enabled by disaggregated inference with domain-specific accelerators) validate neo-cloud amortization schedules and financing structures",
+  "summary_extended": "Baker argues that the debate over GPU useful lives has been resolved in favor of the bulls: by disaggregating inference workloads\u2014routing decode tasks to domain-specific accelerators like Groq or Cerebras chips in front of older GPUs\u2014those older GPUs retain economic utility for 10 to 15 years rather than the 2-year useful life that bears had assumed. This structural shift directly validates the amortization schedules (4-6 years) and asset-backed financing rates (~6%) used by neo-cloud operators like CoreWeave, which had been attacked as financially unsound. Baker credits Nvidia's Q1 results as the catalyst that 'single-handedly saved the neo-clouds' by demonstrating sustained demand and proving the economics of the disaggregated inference model. The investment implication is that neo-cloud operators with long-duration GPU financing structures are vindicated, and their equity and debt valuations should reflect longer asset lives and more durable cash flows. Investors should watch CoreWeave and similar neo-cloud operators as direct beneficiaries of this re-rating in GPU asset economics.",
+  "detail": "Baker argues that by disaggregating inference\u2014using Groq or Cerebras accelerators for decode in front of older GPUs\u2014older GPUs have useful lives of 10-15 years, not 2 years as bears argued. This validates CoreWeave's 4-6 year amortization and ~6% asset-backed financing rates. He says Nvidia's Q1 quarter 'single-handedly saved the neo-clouds' by proving this.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a resolved debate: 'That quarter single-handedly saved the neo-clouds'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "neo-cloud economics"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "those older GPUs have a useful life for 10 or 15 years",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRWV",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "CRWV"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "CoreWeave is explicitly named as the neo-cloud operator whose 4-6 year amortization schedules and ~6% asset-backed financing rates are validated by the longer GPU useful life thesis. It is the primary direct subject of the investment implication."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Baker explicitly credits Nvidia's Q1 quarter as the catalyst that validated neo-cloud economics, and longer GPU useful lives sustain demand for Nvidia's GPU ecosystem. Nvidia is a direct beneficiary of the thesis being proven correct, though it is not the primary subject."
+    }
+  ]
+}

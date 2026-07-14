@@ -1,0 +1,65 @@
+{
+  "date": "2024-02-23",
+  "source": "FII Institute \u2014 Rise of the Gigafirm: next trillion-dollar tech company (panel)",
+  "thesis_id": "T4",
+  "summary": "Nvidia's GPU pricing represents the largest markup in human history, reflecting extreme structural pricing power",
+  "summary_extended": "Baker argues that Nvidia's GPU pricing represents the largest markup in human history, citing that TSMC fabricates the GPU die for $700\u2013800 while Nvidia sells the finished H100/A100 GPU to hyperscalers for approximately $50,000 \u2014 a markup of roughly 60\u201370x. He frames this as 'narcotics for nerds,' implying that hyperscalers are effectively captive buyers with no near-term alternative, which underpins durable and extreme structural pricing power for Nvidia. The investment implication is a strong long thesis on NVDA, as this pricing dynamic reflects both monopolistic supply conditions and inelastic demand from the largest cloud providers. Baker's credibility on this view is reinforced by his history as an Nvidia analyst dating back to 2000, and his use of specific fabrication cost figures suggests deep supply-chain diligence rather than surface-level observation.",
+  "detail": "TSMC fabricates the GPU die for $700-800; Nvidia sells the finished GPU for $50,000 to hyperscalers like Microsoft, Amazon, and Google. Baker calls this 'probably the biggest markup in human history' and 'narcotics for nerds,' implying durable pricing power.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses specific price figures and superlative framing, consistent with a long-held view (he was the Nvidia analyst in 2000)",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "probably the biggest markup in human history",
+  "tickers_named_original": [
+    "NVDA",
+    "MSFT",
+    "AMZN",
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "TSM"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "TSM"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is about Nvidia's GPU pricing power and markup \u2014 NVDA is the direct subject."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "TSMC fabricates the GPU die at $700\u2013800 and is a named participant in the supply chain that enables Nvidia's product; it benefits from Nvidia's dominant GPU demand as the sole advanced-node fabricator for these chips."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is cited only as an example hyperscaler buyer to illustrate the demand side; the thesis is about Nvidia's pricing power, not Microsoft's business. Microsoft is not a direct beneficiary of Nvidia's markup."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon is cited only as an example hyperscaler buyer; same reasoning as MSFT \u2014 tangential to the core thesis about Nvidia's structural pricing power."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google is cited only as an example hyperscaler buyer; same reasoning as MSFT and AMZN \u2014 tangential to the core thesis about Nvidia's structural pricing power."
+    }
+  ]
+}

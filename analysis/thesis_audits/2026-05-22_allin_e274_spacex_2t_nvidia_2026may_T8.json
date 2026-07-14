@@ -1,0 +1,50 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T8",
+  "summary": "Memory makers (DRAM/HBM producers) are deeply undervalued at 3-5x PE relative to the AI capex cycle",
+  "summary_extended": "Baker argues that memory makers (DRAM and HBM producers) are dramatically undervalued, trading at just 3-5x PE, which he views as anomalously cheap given the scale of AI infrastructure spending underway. His reasoning is rooted in a cross-sectional inefficiency argument: if the broader AI capex narrative is correct and hyperscalers continue to spend aggressively on compute, then memory \u2014 a critical and capacity-constrained component of that buildout \u2014 is being mispriced by the market relative to the rest of the AI supply chain. Baker frames this as a structural dislocation, not a cyclical call, suggesting the market has failed to connect the dots between AI capex growth and memory demand. The investment implication is to buy memory producers, particularly those with HBM exposure, as the valuation gap relative to other AI beneficiaries should close over a medium-term horizon. No specific price targets or timeframes beyond 'medium-term' were cited, but the 3-5x PE figure anchors the thesis as a concrete valuation argument.",
+  "detail": "Baker highlights memory makers trading at 3-5x PE as anomalously cheap given the AI infrastructure buildout. This is part of his cross-sectional inefficiency thesis\u2014if the broader AI capex narrative is correct, memory is dramatically mispriced.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker names the specific valuation (3-5x PE) and frames it as part of a structural mispricing argument",
+  "themes": [
+    "semiconductor supply chain",
+    "memory/HBM",
+    "relative value"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "memory makers at three to five times PE",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [
+    "MU"
+  ],
+  "tickers_implied_original": [
+    "MU",
+    "005930.KS",
+    "000660.KS"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is the primary US-listed DRAM and HBM producer and is the direct subject of this memory valuation thesis. It is the only US-listed pure-play memory maker with significant HBM exposure."
+    },
+    {
+      "ticker": "005930.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Samsung Electronics is Korea-listed and not a US equity. While it is a major DRAM/HBM producer and conceptually fits the thesis, it is not a US-listed equity and should be excluded per audit rules."
+    },
+    {
+      "ticker": "000660.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SK Hynix is Korea-listed and not a US equity. Despite being the leading HBM producer globally, it is not US-listed and should be excluded per audit rules."
+    }
+  ]
+}

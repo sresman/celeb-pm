@@ -1,0 +1,54 @@
+{
+  "date": "2026-06-15",
+  "source": "TBPN \u2014 SpaceX IPO, token path, sovereign AI won't reach frontier",
+  "thesis_id": "T6",
+  "summary": "CDNs like Cloudflare are partially in the token path but currently deliver less than 1% (possibly <10bps) of global tokens consumed",
+  "summary_extended": "Baker argues that CDN providers like Cloudflare are largely peripheral to the AI token delivery infrastructure today, estimating that CDNs collectively deliver less than 1% of global tokens consumed \u2014 and possibly as little as 10 basis points \u2014 with the vast majority of token delivery happening internally within hyperscaler infrastructure. His reasoning is that the real 'token path' is dominated by large cloud providers running inference at scale on their own networks, not by third-party CDN edge networks. Baker acknowledges CDNs have a potential future path toward becoming meaningful token path infrastructure and are already commanding premium pricing for low-latency AI delivery, but characterizes their current role as non-core. The investment implication is cautious: CDN stocks like Cloudflare, Fastly, and Akamai may be pricing in a token path narrative that is not yet supported by actual token delivery volumes, making the thesis contrarian against bullish CDN-as-AI-infrastructure narratives over the medium term.",
+  "detail": "Baker estimates CDNs are delivering less than 1% of tokens consumed on Earth, possibly less than 10 basis points. The real token delivery happens internally at hyperscalers. CDNs have a 'path towards being in the token path' and are commanding premium pricing for low-latency delivery, but are not core token path infrastructure today.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker gives specific quantitative estimates (<1%, possibly <10bps) suggesting analytical work, but frames as 'gut' feeling",
+  "themes": [
+    "token factories",
+    "AI infrastructure edge delivery"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "CDNs are delivering less than 1% of them",
+  "tickers_named_original": [
+    "NET"
+  ],
+  "tickers_direct": [
+    "NET",
+    "FSLY",
+    "AKAM"
+  ],
+  "tickers_subject": [
+    "NET",
+    "FSLY",
+    "AKAM"
+  ],
+  "tickers_implied_original": [
+    "Fastly",
+    "Akamai"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NET",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Cloudflare is the primary named example of a CDN Baker is discussing in the context of token path positioning \u2014 the thesis is directly about whether NET and peers are meaningful token path infrastructure."
+    },
+    {
+      "ticker": "FSLY",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Fastly is a CDN peer directly implicated in the same thesis about CDNs' limited role in token delivery; the claim applies equally to Fastly as a CDN operator."
+    },
+    {
+      "ticker": "AKAM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Akamai is a major CDN operator and a direct subject of the thesis that CDNs broadly are delivering a negligible share of global tokens consumed."
+    }
+  ]
+}

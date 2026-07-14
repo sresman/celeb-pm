@@ -1,0 +1,55 @@
+{
+  "date": "2024-01-30",
+  "source": "iConnections Global Alts 2024 \u2014 Industry titans panel: AI, growth/crossover investing",
+  "thesis_id": "T13",
+  "summary": "Mag 7 competitive dynamics will be scrambled by on-device AI and whether Apple/Meta enter search",
+  "summary_extended": "Baker argues that the most important variables driving public equity performance among the Magnificent 7 over the medium term are three specific competitive dynamics: whether Meta enters search, whether Apple enters search, and how aggressively Google cuts costs in response to AI-driven disruption. He frames on-device AI as a potential scrambler of the existing competitive order, suggesting that AI inference running locally on devices could erode Google's search dominance by enabling new entry points for rivals like Meta and Apple. The investment implication is that Google's search revenue moat is at risk, while Meta and Apple represent potential disruptors whose entry into search could materially shift advertising and query-volume economics. Baker does not cite specific numbers but frames these three variables as the dominant drivers of relative performance within the mega-cap tech cohort going forward.",
+  "detail": "Baker identifies three key variables that will drive most public equity performance: (1) whether Meta enters search, (2) whether Apple enters search, (3) how much Google cuts costs. He frames on-device AI as potentially scrambling competitive dynamics among the Magnificent 7.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker explicitly frames these as the most important variables for public equity performance going forward",
+  "themes": [
+    "AI disruption of incumbents",
+    "search",
+    "competitive dynamics",
+    "Magnificent 7"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "mag 7 or lag does Facebook enter search does Apple enter search",
+  "tickers_named_original": [
+    "META",
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "META",
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "META",
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is one of the three named variables \u2014 whether it enters search is a central question of the thesis, making it a direct subject of the competitive dynamic Baker is analyzing."
+    },
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Apple is one of the three named variables \u2014 whether it enters search via on-device AI is a central question of the thesis, making it a direct subject."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is the incumbent whose search dominance is under threat and whose cost-cutting response is the third named variable; it is the primary subject of the disruption thesis."
+    }
+  ]
+}

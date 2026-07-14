@@ -1,0 +1,66 @@
+{
+  "date": "2025-10-22",
+  "source": "Invested by Aleph \u2014 Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "thesis_id": "T10",
+  "summary": "US semiconductor export controls on China are working and have extended the Western lead to potentially multi-decade",
+  "summary_extended": "Baker argues that US semiconductor export controls on China are working effectively and have dramatically extended the Western technological lead, potentially to a multi-decade timeframe. He explicitly disagrees with Bill Gurley's view that export controls are counterproductive, citing that before controls were implemented China was approximately 6-8 years away from catching up in both semiconductor manufacturing and design, whereas now the gap has widened to roughly 4 years and is likely to continue expanding. His key insight is that semiconductor manufacturing knowledge is tacit and non-transferable \u2014 analogous to jet engine technology, which took China the longest to replicate in aviation despite having access to blueprints \u2014 meaning that even with stolen plans, China cannot simply copy leading-edge fabs. The investment implication is that Western semiconductor equipment and design companies with dominant positions in the supply chain face no credible Chinese competitive threat for the foreseeable future, reinforcing the durability of their moats and pricing power.",
+  "detail": "Baker disagrees with Bill Gurley's view that export controls are counterproductive. He argues China was 6-8 years from catching up in manufacturing/design before controls; now the lead is ~4 years and likely to widen. Semiconductor manufacturing is like a recipe \u2014 you can't copy it even with the plans. The analogy is jet engine technology, which took China the longest to replicate in aviation.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly says 'I respectfully disagree with Bill' and provides a specific timeline estimate (multi-decade lead) with historical analogies",
+  "themes": [
+    "semiconductor supply chain",
+    "geopolitics/national security",
+    "export controls"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "we really did stop them and slow them down. We have a multi-decade lead",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "ASML",
+    "AMAT",
+    "KLAC",
+    "LRCX"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "ASML",
+    "AMAT",
+    "KLAC",
+    "LRCX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about export controls slowing China's semiconductor manufacturing and design catch-up, not about Nvidia's business specifically. Nvidia may benefit indirectly but is not the subject of or a direct beneficiary uniquely implied by this structural thesis about fab technology gaps."
+    },
+    {
+      "ticker": "ASML",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "ASML is the monopoly supplier of EUV lithography equipment, which is precisely the type of equipment export controls restrict from reaching China. A multi-decade Western lead in semiconductor manufacturing directly preserves ASML's dominant moat with no Chinese competitive alternative emerging."
+    },
+    {
+      "ticker": "AMAT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Applied Materials is a leading semiconductor equipment supplier whose technology is restricted from China under export controls. The thesis that controls are working and the lead is widening directly benefits AMAT by eliminating a future Chinese competitive threat to its equipment business."
+    },
+    {
+      "ticker": "KLAC",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "KLA Corporation provides process control and inspection equipment critical to leading-edge fabs, and is subject to export controls. The thesis directly supports KLAC's sustained competitive moat as China cannot replicate this tacit manufacturing knowledge."
+    },
+    {
+      "ticker": "LRCX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Lam Research supplies etch and deposition equipment restricted from China. Like AMAT and KLAC, LRCX directly benefits from export controls preserving the Western lead and preventing Chinese equipment alternatives from emerging."
+    }
+  ]
+}

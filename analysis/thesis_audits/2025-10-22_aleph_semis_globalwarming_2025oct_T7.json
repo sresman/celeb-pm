@@ -1,0 +1,49 @@
+{
+  "date": "2025-10-22",
+  "source": "Invested by Aleph \u2014 Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "thesis_id": "T7",
+  "summary": "Exposure to frontier AI labs (OpenAI, Anthropic, XAI, Google DeepMind) is a must-have in a portfolio",
+  "summary_extended": "Baker argues that exposure to frontier AI labs \u2014 specifically OpenAI, Anthropic, xAI, and Google DeepMind \u2014 is a must-have portfolio allocation, treating them as a category rather than individual bets. His reasoning centers on three structural factors: the self-reinforcing post-reasoning flywheel (where better models attract more users and data, compounding capability advantages), oligopoly dynamics that limit the number of credible frontier competitors, and a credible path to AGI/ASI that makes these labs uniquely valuable. He cites explosive revenue growth as evidence of commercial validation \u2014 Anthropic reportedly grew from $1B to $6B in annualized revenue in roughly six months, while OpenAI has surpassed $10B in revenue \u2014 suggesting the monetization phase is accelerating rapidly. Baker does flag a structural risk at OpenAI specifically: a clause in its corporate documents that could transfer future AGI-level technology to its nonprofit parent, creating governance uncertainty for investors. The investment implication is to seek exposure to these private labs directly (via secondary markets or venture vehicles) rather than through public proxies, though GOOGL is the only publicly listed entity with a direct frontier lab (DeepMind) on this list.",
+  "detail": "Baker recommends having exposure to frontier labs as a category, citing the post-reasoning flywheel, oligopoly dynamics, and the path to ASI. He notes Anthropic went from $1B to $6B revenue in ~6 months and OpenAI has $10B+ revenue. Corporate structure risks at OpenAI (AGI clause sending future tech to nonprofit) are noted as a concern.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly says 'you want to have exposure to the frontier labs' as a forward-looking capital deployment priority",
+  "themes": [
+    "AI foundation models",
+    "software/AI platforms"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "you want to have exposure to the frontier labs",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google DeepMind is explicitly named as one of the four frontier labs Baker recommends exposure to, making GOOGL a direct subject of this thesis as the only publicly listed company with a named frontier lab."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT is a major investor in OpenAI but is not a frontier lab itself and is not named in this thesis. Baker's recommendation is about the labs, not their corporate backers or cloud partners. MSFT's exposure is indirect and not the subject of this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMZN is an investor in Anthropic but is not a frontier lab and is not named in this thesis. Baker's thesis is about the labs as a category, not their cloud or strategic investors. AMZN's exposure is indirect and tangential to this specific claim."
+    }
+  ]
+}

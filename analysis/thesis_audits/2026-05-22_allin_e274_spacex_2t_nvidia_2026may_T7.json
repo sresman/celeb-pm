@@ -1,0 +1,65 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T7",
+  "summary": "The AI market is cross-sectionally inefficient: power/cooling/optical names and memory/Nvidia cannot both be correctly valued simultaneously",
+  "summary_extended": "Baker argues that the AI infrastructure market is currently cross-sectionally inefficient, meaning that the relative valuations of different segments of the AI supply chain are internally inconsistent and cannot all be correct simultaneously. Specifically, he observes that memory makers (e.g., Micron) trade at 3-5x PE and Nvidia trades at low-to-mid teens PE on real earnings, while power, cooling, and optical names are priced at multiples that imply a much higher capex buildout scenario. The structural arbitrage he identifies is binary: if the power/cooling/optical multiples are correct, then Nvidia and memory are dramatically undervalued and should be bought; if Nvidia and memory multiples are correct, then power/cooling/optical names will underperform as capex expectations disappoint. Baker presents this as a high-conviction relative value observation, not a directional call on AI spending overall, but rather a call that the market has mispriced the internal consistency of the AI supply chain.",
+  "detail": "Baker observes that memory makers trade at 3-5x PE, Nvidia at low-to-mid teens PE on real earnings, while power, cooling, and optical names are discounting very different (much higher) capex scenarios. If power/cooling/optical multiples are correct, Nvidia and memory go up a lot. If Nvidia/memory multiples are correct, power/cooling/optical underperforms. This is a structural arbitrage observation.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this directly and explicitly: 'The AI market is cross-sectionally inefficient right now'",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "power/energy",
+    "relative value"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "The AI market is cross-sectionally inefficient right now",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "MU",
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "MU",
+    "NVDA",
+    "AVGO"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is the primary US-listed memory maker and is explicitly referenced as one of the undervalued legs of the cross-sectional inefficiency thesis, trading at 3-5x PE."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nvidia is explicitly named as trading at low-to-mid teens PE on real earnings and is one of the two undervalued legs of the arbitrage \u2014 if power/cooling/optical multiples are right, NVDA goes up a lot."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Broadcom is not specifically named in this thesis. While it participates in AI networking/optical, Baker's thesis references 'optical names' generically as the overvalued leg; AVGO is not identified as a direct subject or clear beneficiary of this specific relative value call and should be removed to avoid contamination."
+    },
+    {
+      "ticker": "VST",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Power names are referenced generically as the potentially overvalued leg, but no specific power company is unambiguously implied as a direct subject or beneficiary of this thesis."
+    },
+    {
+      "ticker": "SMCI",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Cooling/server names are referenced generically; no specific cooling company is unambiguously implied."
+    }
+  ]
+}

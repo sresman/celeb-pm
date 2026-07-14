@@ -1,0 +1,51 @@
+{
+  "date": "2025-01-28",
+  "source": "iConnections Global Alts 2025 \u2014 The Future of AI",
+  "thesis_id": "T8",
+  "summary": "AI infrastructure stocks may face choppy Q1 2025 due to product transitions and DeepSeek uncertainty, but H2 2025 could replicate 2023-2024 performance",
+  "summary_extended": "Baker argues that AI infrastructure stocks may experience a choppy Q1 2025 due to two concurrent headwinds: Nvidia's product transition as Blackwell ramps up (creating near-term supply/demand uncertainty) and broader uncertainty stemming from DeepSeek's efficiency revelations. Despite this near-term turbulence, Baker is more definitively bullish on H2 2025, arguing that higher AI ROI enabled by DeepSeek-style efficiency gains will accelerate enterprise AI deployment and drive infrastructure demand, potentially replicating the strong 2023-2024 performance of AI infrastructure stocks. The investment implication is to tolerate near-term choppiness in AI infrastructure names and position for a strong second half. Baker uses hedged language for the Q1 call ('some chance,' 'a little bit choppy') but is more confident in the full-year bullish thesis, suggesting a buy-the-dip posture rather than outright avoidance.",
+  "detail": "Baker specifically calls out 'video' (likely Nvidia) going through a product transition (Blackwell ramp) and micro-level AI dynamics creating near-term choppiness for infrastructure providers. However, higher AI ROI from DeepSeek-style efficiency and deployment acceleration should drive strong H2 2025 performance, potentially mirroring 2023-2024 AI stock performance.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker uses hedged language ('some chance', 'I think', 'a little bit choppy') for the near-term call but is more definitive about the full-year bullish view.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "near-term market timing"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "choppy first quarter for infrastructure providers... last nine months a rerun of 2024 and 2023",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "AVGO"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly references a 'video' product transition (widely understood as Nvidia's Blackwell GPU ramp), making NVDA the primary subject of the near-term choppiness thesis and the key beneficiary of the H2 2025 recovery thesis."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is not specifically referenced in this thesis. The product transition and Blackwell ramp discussion is Nvidia-specific; AMD is not a direct subject or clear beneficiary of this particular near-term/H2 timing call."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Broadcom is a major AI infrastructure provider (custom ASICs, networking) that would directly benefit from the H2 2025 acceleration in AI infrastructure spending Baker describes, making it a legitimate direct beneficiary alongside NVDA."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "date": "2025-01-28",
+  "source": "iConnections Global Alts 2025 \u2014 The Future of AI",
+  "thesis_id": "T9",
+  "summary": "We are in year 3 of a decade-long AI infrastructure supercycle analogous to the 1990s PC/client-server boom",
+  "summary_extended": "Baker argues that AI infrastructure spending is in year three of a decade-long supercycle directly analogous to the 1990s PC and client-server buildout, and that it is far too early for investors to turn bearish on the theme. He supports this view by citing the extraordinary compounding of infrastructure-era winners \u2014 Oracle, Sun Microsystems, Cisco, EMC, Microsoft, and Dell \u2014 which collectively grew at roughly 40% per year for a full decade during that cycle. His structural claim is that the current AI buildout will follow a similar multi-year trajectory, meaning the primary beneficiaries are still in the early innings of a long compounding period. The investment implication is to maintain or increase exposure to AI infrastructure and platform companies rather than fading the theme on near-term concerns. No specific price targets or near-term catalysts are cited; the thesis is explicitly a long-duration, high-conviction structural view.",
+  "detail": "Baker draws explicit parallel to Oracle, Sun Microsystems, Cisco, EMC, Microsoft, Dell compounding at 40% per year for a decade during the PC/client-server buildout. He frames current AI as entering year 3 of an equivalent cycle, arguing it is far too early to get bearish on AI/technology.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses a specific historical analog with precise data (40% CAGR for a decade), frames it as a structural multi-year view, and explicitly warns against premature bearishness.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "AI supercycle",
+    "technology secular growth"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "year three of AI... compounded at 40% per year for a decade",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "MSFT",
+    "AVGO"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AMZN",
+    "AVGO"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of AI accelerators and is the clearest analog to Cisco in the 1990s infrastructure buildout Baker describes \u2014 a picks-and-shovels infrastructure winner in the current AI supercycle. Qualifies as a direct beneficiary of this structural thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "MSFT is a major AI platform and infrastructure layer (Azure, OpenAI partnership) and is a reasonable analog to the Microsoft of the 1990s PC cycle Baker explicitly names. Qualifies as a direct beneficiary."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "AVGO is a major AI networking and custom silicon supplier, making it a direct infrastructure beneficiary of the AI supercycle thesis Baker describes. Analogous to the networking/infrastructure winners of the 1990s cycle."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While GOOGL is involved in AI, Baker's thesis is specifically about the AI infrastructure supercycle and its picks-and-shovels winners. GOOGL is primarily an AI application/hyperscaler and is not unambiguously implied as a direct infrastructure beneficiary by this specific thesis. Its inclusion appears to be bleed from adjacent themes."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META is an AI consumer/application company and a hyperscaler capex spender, but it is not an infrastructure beneficiary in the sense Baker's supercycle analog describes. Its inclusion is tangential to this specific infrastructure compounding thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Similar to META and GOOGL, AMZN is a hyperscaler and AI consumer rather than a pure infrastructure beneficiary in the mold of Cisco, EMC, or Sun that Baker's analog highlights. Tangential to this specific thesis."
+    }
+  ]
+}

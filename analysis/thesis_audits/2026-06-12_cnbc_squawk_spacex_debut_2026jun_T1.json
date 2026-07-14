@@ -1,0 +1,46 @@
+{
+  "date": "2026-06-12",
+  "source": "CNBC Squawk on the Street \u2014 SpaceX public-debut day: orbital compute economics, compute shortage, IPO",
+  "thesis_id": "T1",
+  "summary": "SpaceX's rapid entry into cloud computing positions it as a major hyperscaler within weeks of launch",
+  "summary_extended": "Baker argues that SpaceX, within approximately one month of entering the cloud computing market, has by some measures become the fourth largest cloud provider globally, surpassing Oracle \u2014 a feat he presents as evidence of extraordinary commercial velocity. He frames this rapid ascent as a foundational premise for his SpaceX bull case, suggesting that if the company can achieve this scale in a single month, the trajectory over a full year could be genuinely transformative for the cloud and AI infrastructure landscape. Baker is a large shareholder and participated in the IPO, giving him direct financial exposure and high conviction in this view. The investment implication is a strong buy on SpaceX at IPO, with the cloud growth story serving as a key differentiator from traditional hyperscalers. No specific revenue figures or market share percentages were cited beyond the ordinal ranking claim.",
+  "detail": "Baker notes that a month after entering cloud computing, SpaceX is by some measures the fourth largest cloud provider, ahead of Oracle. He frames this as a signal of extraordinary velocity and implies the trajectory over a full year could be transformative.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as fact ('by some measures it is the fourth largest cloud') and uses it as a foundational premise for his SpaceX bull case; he is a large shareholder and participated in the IPO.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "space/orbital compute",
+    "cloud computing"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "fourth largest cloud ahead of Oracle and they did that in one month",
+  "tickers_named_original": [
+    "SPCE"
+  ],
+  "tickers_direct": [
+    "SPCE",
+    "ORCL"
+  ],
+  "tickers_subject": [
+    "SPCE",
+    "ORCL"
+  ],
+  "tickers_implied_original": [
+    "ORCL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPCE",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SPCE is the Virgin Galactic ticker and is almost certainly a tagging error \u2014 the thesis is about SpaceX (private, now IPO'd). However, as the intended proxy for SpaceX in this extraction, it is classified as DIRECT_SUBJECT since the thesis is entirely about SpaceX's cloud entry and IPO."
+    },
+    {
+      "ticker": "ORCL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Oracle is explicitly named as the benchmark SpaceX surpassed in cloud scale within one month, making it a direct subject of the competitive displacement claim embedded in this thesis. It is not merely tangential \u2014 the thesis specifically positions SpaceX as having leapfrogged Oracle, which is a bearish signal for ORCL's cloud market position."
+    }
+  ]
+}

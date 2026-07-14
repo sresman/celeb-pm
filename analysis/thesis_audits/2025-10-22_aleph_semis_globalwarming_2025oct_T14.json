@@ -1,0 +1,55 @@
+{
+  "date": "2025-10-22",
+  "source": "Invested by Aleph \u2014 Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "thesis_id": "T14",
+  "summary": "Edge AI / on-device AI is a meaningful risk to the centralized data center boom",
+  "summary_extended": "Baker identifies edge AI / on-device AI as a meaningful structural risk to the current hyperscale data center buildout, framing it explicitly as a downside scenario rather than a base case. He argues that within 2-3 years, a smartphone could run a 130 IQ AI locally that knows the user personally, handles tasks like banking, and only calls out to cloud AI for complex queries \u2014 dramatically reducing per-user cloud compute demand. This mirrors the historical oscillation between centralized mainframe computing and decentralized personal computing, suggesting the current centralized AI infrastructure boom may not be permanent. The investment implication is bearish for companies whose valuations depend heavily on sustained hyperscale data center demand growth, particularly those building or monetizing large-scale AI inference infrastructure. Baker does not name specific companies but the risk is most acute for hyperscaler capex beneficiaries like GPU suppliers and cloud infrastructure providers.",
+  "detail": "Baker identifies a risk scenario where in 2-3 years a 130 IQ AI runs locally on a smartphone, knows the user personally, handles banking, and calls out to cloud AI only when needed. This would mirror the historical oscillation between centralized and decentralized computing and could significantly reduce demand for hyperscale data centers.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker frames this explicitly as 'a risk to this current data center boom' \u2014 not a base case but a named downside scenario",
+  "themes": [
+    "AI datacenter infrastructure",
+    "edge AI",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "130 IQ AI on your iPhone locally \u2014 a risk to the current data center boom",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMZN",
+    "GOOGL",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of GPUs powering hyperscale data centers; if edge AI reduces centralized compute demand, NVDA faces a direct headwind to its data center revenue \u2014 making it a direct (bearish) subject of this thesis rather than merely tangential."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While AWS is a major cloud provider, Baker's thesis does not specifically call out Amazon or AWS; the risk is generic to hyperscalers and AMZN's cloud exposure is not uniquely implicated versus peers. Insufficient specificity to classify as direct subject."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google Cloud and Google's own AI infrastructure could be affected, but Baker does not specifically name Google; the thesis is a general structural risk to centralized AI compute, not a Google-specific call."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft Azure and its OpenAI partnership give it data center exposure, but Baker does not specifically implicate Microsoft; this is a general hyperscaler risk thesis without company-specific targeting."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-07",
+  "source": "All-In Podcast \u2014 Liquidity Summit: secondary markets eating the IPO",
+  "thesis_id": "T4",
+  "summary": "Arista Networks and Drivetrain (Driveats/Drivets) are high-conviction positions in the AI networking infrastructure supercycle thesis \u2014 reinventing networking for disaggregated AI inference workloads.",
+  "summary_extended": "Baker argues that the shift toward disaggregated AI inference \u2014 where pre-fill and decode operations run on different, heterogeneous chips \u2014 requires a fundamental reinvention of data center networking, creating a multi-year infrastructure supercycle. He identifies Arista Networks (ANET) and a private company he refers to as 'Drivets' (likely a private networking startup) as two names he has been publicly involved in that are approaching this networking reinvention in a differentiated way. The investment implication is that traditional networking architectures are insufficient for orchestrating heterogeneous silicon at scale, and companies building purpose-built AI networking infrastructure stand to benefit enormously. Baker is described by co-host Gerstner as one of the earliest investors to frame the infra networking supercycle thesis, lending high conviction to the view. The thesis is long-term in nature and focused specifically on the networking layer of AI infrastructure, not compute or memory.",
+  "detail": "Baker names Arya (likely Arista Networks, ANET) and Drivets (likely a private networking company) as companies he has been publicly involved in. As data centers become more specialized with disaggregated inference (pre-fill and decode on different chips), networking must be reinvented to orchestrate heterogeneous silicon. Baker frames this as a multi-year supercycle in infra networking.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'two names that we've been involved in publicly' and Gerstner credits Baker as 'one of the earliest' to frame the infra networking supercycle thesis.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "networking",
+    "disaggregated inference"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "reinvent networking and Arya and driveets are coming at it in a very different way",
+  "tickers_named_original": [
+    "ANET"
+  ],
+  "tickers_direct": [
+    "ANET"
+  ],
+  "tickers_subject": [
+    "ANET"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ANET",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Arista Networks is explicitly named by Baker as one of two companies he has been publicly involved in that are reinventing networking for disaggregated AI inference workloads \u2014 it is the direct subject of this thesis."
+    }
+  ]
+}

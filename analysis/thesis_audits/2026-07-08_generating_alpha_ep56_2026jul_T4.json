@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha \u2014 Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T4",
+  "summary": "TSMC's manufacturing lead is durable and self-reinforcing; catching up is extremely difficult",
+  "summary_extended": "Baker argues that TSMC's manufacturing lead is structurally durable and self-reinforcing because semiconductor fabrication is fundamentally a recipe-based, trial-and-error discipline where incumbents accumulate irreplaceable process knowledge over time. He attributes TSMC's rise to a specific, ego-driven strategic mistake by Intel \u2014 which ceded the leading-edge foundry market \u2014 rather than any inherent weakness in Intel's technical capabilities, implying that such mistakes are rare and unlikely to be repeated by TSMC. Baker emphasizes that TSMC management deliberately constrains capacity expansion below what global demand would support, intentionally sustaining the bottleneck and preserving pricing power and margins. The investment implication is that TSMC remains a long-duration, high-conviction holding as the irreplaceable chokepoint in advanced semiconductor manufacturing, with no credible near-term challenger given the compounding nature of process knowledge advantages.",
+  "detail": "Baker describes semiconductor manufacturing as recipe-based with massive trial-and-error advantages for incumbents. TSMC caught up because Intel made an ego-driven mistake. TSMC management is tough and will not expand capacity as fast as the world demands, sustaining the bottleneck.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Detailed structural reasoning, specific attribution to Intel's mistake and TSMC management culture",
+  "themes": [
+    "semiconductor supply chain",
+    "semiconductor manufacturing"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "TSMC is still a bottleneck...if you're ahead, you have a big advantage",
+  "tickers_named_original": [
+    "TSM",
+    "INTC"
+  ],
+  "tickers_direct": [
+    "TSM"
+  ],
+  "tickers_subject": [
+    "TSM"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about TSMC's manufacturing moat, management culture, and deliberate capacity constraints \u2014 TSM is the direct subject."
+    },
+    {
+      "ticker": "INTC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Intel is referenced only as a historical cautionary example of an ego-driven mistake that allowed TSMC to catch up; the thesis is not about Intel's current prospects or any investment implication for INTC, making it tangential to this specific thesis."
+    }
+  ]
+}

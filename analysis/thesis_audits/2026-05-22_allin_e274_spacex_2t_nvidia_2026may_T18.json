@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T18",
+  "summary": "Nvidia trades in stairstep patterns once it becomes the largest company in the world \u2014 multiple compresses then re-rates to a new floor",
+  "summary_extended": "Baker argues that once a company becomes the world's largest by market cap, it tends to trade in a 'stairstep' pattern \u2014 periods of multiple compression driven by skepticism about its size are followed by re-rating events that establish a new, higher valuation floor. He presents this as an empirical observation drawn from prior mega-cap leaders, suggesting the pattern is structural rather than company-specific. Applied to Nvidia at its ~$5.3T market cap, Baker implies that the current multiple compression phase is temporary and that a re-rating to a new floor is likely to follow. The investment implication is that investors should not interpret multiple compression in Nvidia as a fundamental deterioration, but rather as a predictable phase in the lifecycle of the world's largest company. No specific timeframe or numerical multiple targets are cited, keeping the thesis at a moderate confidence level.",
+  "detail": "Baker observes that once a company becomes the world's largest by market cap, it tends to trade in stairstep patterns: multiple compresses as people are skeptical of size, then a re-rating event establishes a new higher floor. He applies this framework to Nvidia at $5.3T market cap, implying the current multiple compression is temporary.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as an empirical observation ('by observation') rather than a strong forward prediction",
+  "themes": [
+    "Nvidia platform",
+    "large-cap dynamics",
+    "market structure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "you tend to trade by observation at stairstep patterns",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly about Nvidia's market cap trajectory and valuation pattern as the world's largest company \u2014 NVDA is the direct subject of the stairstep framework being applied."
+    }
+  ]
+}

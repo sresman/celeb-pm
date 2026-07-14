@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T10",
+  "summary": "Orbital/space-based compute will become cost-competitive with terrestrial data centers within 3-4 years as Starship becomes reusable",
+  "summary_extended": "Baker constructs a first-principles cost model arguing that orbital compute will become cheaper than terrestrial data centers within 3-4 years once Starship achieves full reusability. He estimates a 1-gigawatt terrestrial data center costs approximately $35B in semiconductors plus $25B in power and cooling infrastructure, totaling roughly $60B, and projects this figure will continue inflating. By contrast, he calculates that a reusable Starship could deliver equivalent orbital compute capacity for approximately $5B in launch costs, bringing total orbital compute cost to roughly $40B \u2014 a meaningful discount to terrestrial alternatives. The investment implication is that SpaceX (private) is the primary vehicle for this thesis, but Baker does not name any publicly traded equity as a direct beneficiary; TSLA's implied connection via Megapod or Powerwall is speculative and not explicitly argued in this thesis. Investors in public markets have no clean direct-exposure vehicle identified by Baker, making this thesis primarily informational about a structural shift rather than an actionable public-equity trade.",
+  "detail": "Baker builds a first-principles cost model: 1 gigawatt terrestrial data center costs ~$35B in semiconductors + $25B in power/cooling = $60B total. With reusable Starship, launch cost for equivalent orbital compute falls to ~$5B, making total orbital cost ~$40B vs. $60B+ terrestrially (as terrestrial costs inflate). He projects this crossover in 3-4 years.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents specific dollar figures and a timeline but acknowledges significant execution uncertainty around Starship reusability",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "when Starship is reusable, it's going to cost $5 billion to put a gigawatt of compute into space",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "Tesla (implied: TSLA via Megapod/Powerwall thesis)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "TSLA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "TSLA was implied via a Megapod/Powerwall connection, but Baker's orbital compute thesis does not explicitly argue that Tesla's energy products are a direct beneficiary of space-based compute cost competitiveness. The link is speculative and not argued in this thesis; TSLA should be removed."
+    }
+  ]
+}

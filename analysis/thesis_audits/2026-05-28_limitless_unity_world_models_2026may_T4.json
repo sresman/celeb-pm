@@ -1,0 +1,50 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T4",
+  "summary": "Micron is a core beneficiary of AI memory demand, with HBM supply constraints driving extraordinary margins",
+  "summary_extended": "Baker argues that Micron (MU) is a core portfolio holding and direct beneficiary of severe supply constraints in the AI memory market, particularly in High Bandwidth Memory (HBM). He cites SK Hynix's ~70% operating margins as evidence of the extraordinary pricing power that HBM scarcity confers on suppliers, and notes that hyperscalers like Google and Microsoft are reportedly offering $50\u2013100 billion to lock in future HBM supply \u2014 underscoring how critical and constrained this resource is. Baker uses Micron's recent crossing of a $1 trillion market cap milestone as a data point illustrating the market's recognition of this structural dynamic. The investment implication is that Micron, as one of only three global HBM producers, benefits from the same supply-constraint tailwind as SK Hynix, making it a high-conviction long in the AI infrastructure buildout.",
+  "detail": "Micron is held as a major position. The AI memory market is severely supply-constrained; SK Hynix (the leading HBM supplier) has ~70% operating margins and is fielding $50-100B offers from Google and Microsoft to lock in future supply. Micron benefits from the same structural dynamic.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Named as a significant portfolio holding; memory supply constraint thesis is central to Baker's anti-bubble argument",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Micron, one of the largest memory makers, just eclipsed a trillion dollars",
+  "tickers_named_original": [
+    "MU"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [
+    "MU"
+  ],
+  "tickers_implied_original": [
+    "000660.KS",
+    "005930.KS"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is explicitly named as a major portfolio holding and the direct subject of this thesis about HBM supply constraints and AI memory demand."
+    },
+    {
+      "ticker": "000660.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SK Hynix is referenced as evidence for the HBM margin/supply-constraint thesis, but it is not US-listed and is not the investment subject \u2014 it is used as a comparable to support the MU thesis."
+    },
+    {
+      "ticker": "005930.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Samsung is not explicitly discussed in this thesis excerpt and is not US-listed; including it as an implied ticker is not warranted by the specific claims made."
+    }
+  ]
+}

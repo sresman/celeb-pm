@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-07",
+  "source": "All-In Podcast \u2014 Liquidity Summit: secondary markets eating the IPO",
+  "thesis_id": "T5",
+  "summary": "Zipline is a high-conviction private investment in autonomous drone delivery \u2014 a sector that had a false start but now works, with a path to dramatically lower delivery costs and massive consumption uplift.",
+  "summary_extended": "Baker argues that Zipline represents a high-conviction private investment opportunity in autonomous drone delivery, a sector he believes has now proven itself after an earlier false start. The company spent seven years delivering medicines autonomously in Africa, accumulating irreplaceable real-world flight data and demonstrably cutting maternal mortality by 90-95% in some regions \u2014 evidence Baker cites as proof the technology genuinely works at scale. Zipline's key technical differentiator is a tether-drop delivery system that eliminates the need for landing, enabling urban and suburban deployment in the US market. Baker frames the economic model as 'Uber 2.0': reducing per-delivery costs from roughly $15 today to $5 and eventually ~$2, which he believes will trigger a massive consumption uplift analogous to how ride-sharing expanded transportation demand. As a private company, there is no directly tradeable US-listed equity, and Baker's investment is through Atreides' private holdings.",
+  "detail": "Baker's Atreides is invested in Zipline. The company spent 7 years in Africa delivering medicines autonomously, cutting maternal mortality 90-95% in some countries, and accumulating real-world autonomous flight data. Now entering the US market. The key innovation is a tether-drop system that avoids landing. Baker frames this as 'Uber 2.0' \u2014 reducing delivery cost from $15 to $5 to eventually $2, driving massive consumption growth.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker confirms Atreides is invested ('my Atreides is also involved in Zipline') and provides detailed operational knowledge and thesis articulation.",
+  "themes": [
+    "robotics",
+    "autonomous delivery",
+    "logistics",
+    "space/orbital compute"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "Atreides is also involved in Zipline",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "Zipline (private)"
+  ],
+  "tickers_subject": [
+    "Zipline (private)"
+  ],
+  "tickers_implied_original": [
+    "Zipline (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "Zipline (private)",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Zipline is the explicit and sole subject of this thesis \u2014 Baker's entire argument is about Zipline's technology, operational history, US market entry, and cost-reduction economics. It is a private company with no US-listed ticker."
+    }
+  ]
+}

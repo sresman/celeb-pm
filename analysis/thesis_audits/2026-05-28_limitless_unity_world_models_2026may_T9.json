@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T9",
+  "summary": "Verticalized small language models (SLMs) running on-device are a major coming wave, with Apple as a key enabler",
+  "summary_extended": "Baker argues that verticalized small language models (SLMs) running on-device represent one of four major investment pillars in the coming AI wave, driven by enterprise and consumer demand for data privacy in sensitive verticals such as medical and financial services. He contends that locally run models avoid the privacy risks of cloud-based inference, making on-device deployment a structural necessity rather than a niche use case. Apple is identified as the primary hardware platform enabling this trend, given its dominant installed base of high-end consumer devices capable of running local inference workloads. However, Baker explicitly does not hold Apple as an investment expression of this thesis, suggesting he has not found a clean way to play the SLM-on-device theme through publicly traded equities. The investment implication is to watch for pure-play SLM developers or enterprise software companies building verticalized models, though no specific investable names beyond Apple are identified in this thesis.",
+  "detail": "Baker is bullish on enterprise and consumer SLMs optimized for specific verticals or running locally on device, preserving data privacy (medical, financial). Apple is identified as a primary device platform for this, though Baker does not hold Apple as an investment expression.",
+  "confidence": "moderate",
+  "confidence_evidence": "Described as one of four key investment pillars; Apple bullishness is stated but not expressed as a portfolio position",
+  "themes": [
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Apple is going to be the device maker for locally run models",
+  "tickers_named_original": [
+    "AAPL"
+  ],
+  "tickers_direct": [
+    "AAPL"
+  ],
+  "tickers_subject": [
+    "AAPL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Apple as the primary device platform for locally run models and the key enabler of on-device SLM deployment, making it the direct subject of this thesis even though he does not hold it as a portfolio position."
+    }
+  ]
+}

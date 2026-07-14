@@ -1,0 +1,62 @@
+{
+  "date": "2020-04-02",
+  "source": "Invest Like the Best \u2014 Investing through a bear market (EP.167)",
+  "thesis_id": "T2",
+  "summary": "Bear markets follow FIFO principle \u2014 first stocks sold are first to be bought back; aggressive/levered names lead recovery",
+  "summary_extended": "Baker argues that bear markets operate on a FIFO (first in, first out) principle: the stocks that were sold first to fund redemptions \u2014 typically the safer, more liquid names \u2014 are the first to be bought back during recovery, while the more aggressive, levered, or 'non-obvious' names that were sold last actually lead the eventual recovery. He draws directly on his 2009 experience, where he was forced to sell safer holdings to meet redemptions, inadvertently increasing his portfolio's weighting in higher-beta names like Netflix, Booking.com, and Domino's \u2014 all of which dramatically outperformed in the recovery. Baker contends that as of early April 2020, the market was approaching the phase where rotating into these non-obvious, higher-risk names is necessary to generate alpha, not just preserve capital. The investment implication is to actively seek out levered or out-of-favor growth names that have been disproportionately punished, as these historically lead recoveries once the redemption-driven selling pressure exhausts itself.",
+  "detail": "Baker draws on 2009 experience where he funded redemptions by selling safer names, increasing weighting in levered/aggressive names. Those names (e.g. Netflix, Booking.com, Domino's) led the recovery. He argues we are approaching the phase where taking risk in non-obvious names is required to generate alpha.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Backed by personal 2009 experience and named specific stocks that outperformed. Stated as a core bear market framework he has used across four bear markets.",
+  "themes": [
+    "bear market investing",
+    "recovery positioning",
+    "contrarian rotation"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "bear markets work on a FIFO principle, not a LIFO principle",
+  "tickers_named_original": [
+    "NFLX"
+  ],
+  "tickers_direct": [
+    "NFLX",
+    "BKNG",
+    "DPZ"
+  ],
+  "tickers_subject": [
+    "NFLX",
+    "BKNG",
+    "DPZ"
+  ],
+  "tickers_implied_original": [
+    "BKNG",
+    "ULTA",
+    "DPZ"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NFLX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly named Netflix as one of the specific stocks that led the 2009 recovery under this FIFO framework, making it a direct subject of the thesis as a historical example and implied current analog."
+    },
+    {
+      "ticker": "BKNG",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly named Booking.com (BKNG) as one of the levered/aggressive names that led the 2009 recovery, directly illustrating the FIFO thesis."
+    },
+    {
+      "ticker": "DPZ",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly named Domino's as one of the non-obvious names that led the 2009 recovery, serving as a direct example of the FIFO bear market framework."
+    },
+    {
+      "ticker": "ULTA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "ULTA does not appear to be directly named in the context of this specific FIFO thesis; it may have been mentioned elsewhere in the transcript. There is no clear basis for it being a direct subject or beneficiary of this particular bear market rotation framework, and it should be removed."
+    }
+  ]
+}

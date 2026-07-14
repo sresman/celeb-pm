@@ -1,0 +1,37 @@
+{
+  "date": "2024-01-30",
+  "source": "iConnections Global Alts 2024 \u2014 Industry titans panel: AI, growth/crossover investing",
+  "thesis_id": "T7",
+  "summary": "Open source LLMs will be a major winner; frontier model companies raised at $5-15B are likely zeros or sold at preference",
+  "summary_extended": "Baker argues that open source large language models \u2014 specifically citing Meta's Llama and the startup Mistral \u2014 will be major winners in the AI landscape, effectively commoditizing frontier model capabilities. His core reasoning is that frontier model startups which raised at $5-15B valuations are structurally squeezed: on one side by hyperscalers (Google, Microsoft, Amazon) who have massive distribution advantages, and on the other by high-quality open source models that undercut their pricing. Baker uses pointed language \u2014 'you're lucky if you get sold for the preference' \u2014 to convey that these startups will likely return only liquidation preference to investors, making them effective zeros for equity holders. The investment implication is to avoid private frontier model companies at current valuations, and to favor Meta as the primary public beneficiary given its Llama open source strategy positions it as the dominant open source AI platform while simultaneously pressuring competitors.",
+  "detail": "Baker argues open source LLMs (citing Llama, Mistral) will win, and that frontier model companies that raised at $5-15B valuations will be lucky to be sold for their liquidation preference, squeezed between hyperscalers with distribution and high-quality open source.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Strong directional language ('you're lucky if you get sold for the preference'), specific valuation range cited ($5-15B), names specific models",
+  "themes": [
+    "frontier model commoditization",
+    "open source AI",
+    "AI investment bubble"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "lucky if you get sold for the preference",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "META"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "META (Llama)",
+    "Mistral (private)",
+    "Anthropic (private)",
+    "Cohere (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Meta is the developer of Llama, the open source LLM Baker explicitly cites as a winner. Meta directly benefits from open source LLM adoption as it validates their strategy and strengthens their AI ecosystem positioning. This is the only US-listed public equity clearly implied by the thesis."
+    }
+  ]
+}

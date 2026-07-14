@@ -1,0 +1,32 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T13",
+  "summary": "Orbital/space-based compute is real and will hit SpaceX's bottom line in second half of 2028 to first half of 2030",
+  "summary_extended": "Baker argues that orbital/space-based compute will become a commercial reality on SpaceX's P&L between H2 2028 and H1 2030, representing a significant new revenue stream for the company. He supports this view by pointing to a working H100 GPU already operating in space today \u2014 noting that Andrej Karpathy has trained a model on it \u2014 as evidence that the technical barriers are being overcome faster than the market appreciates. A key underappreciated competitive advantage Baker highlights is SpaceX's ability to use non-radiation-hardened commercial chips in space because their hardware happens to pass radiation testing, dramatically lowering the cost and complexity of deploying compute in orbit versus traditional space-grade hardware. The primary investment implication is bullish on SpaceX (private), with no clear publicly-traded direct beneficiary that Baker specifies \u2014 NVDA is mentioned only as the manufacturer of the H100 already in orbit, not as a structural beneficiary of this thesis.",
+  "detail": "Baker gives a specific point prediction of H2 2028 to H1 2030 for orbital compute to be a commercial reality on SpaceX's P&L. He notes there is already a working H100 GPU in space today (Andrej Karpathy trained a model on it). SpaceX's ability to use non-radiation-hardened chips in space (they just happen to pass rad testing) is a key underappreciated competitive advantage.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker gives a specific timeline prediction but acknowledges uncertainty; calls it a 'point prediction'",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "SpaceX"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "second half of 28 to first half of 2030 would be my point prediction",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is referenced only because an H100 GPU (NVDA's product) is already in orbit \u2014 Baker does not argue that orbital compute creates a material incremental demand driver for NVDA specifically, nor does he frame NVDA as a beneficiary of this thesis. The thesis is about SpaceX's P&L opportunity, and NVDA's mention is incidental to illustrating that commercial chips can work in space."
+    }
+  ]
+}

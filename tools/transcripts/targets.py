@@ -99,9 +99,9 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "topic": "Omnichannel / tech",
     },
     "s4QVoht3YsI": {
-        "label": "iconn_globalalts_2024_gracias_gurley", "date": "2024-01-15",
-        "source": "iConnections Global Alts 2024", "host": "Gracias, Gurley",
-        "topic": "Markets panel",
+        "label": "iconn_globalalts_2026_gracias_baker", "date": "2026-02-24",
+        "source": "iConnections Global Alts 2026", "host": "Antonio Gracias (panel)",
+        "topic": "AI, Tesla, defense, energy — what comes next",
     },
     # All-In Podcast
     "K2xfW3hgxb4": {
@@ -110,14 +110,14 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "topic": "SEC, bitcoin, xAI",
     },
     "w8ah_tA0yfg": {
-        "label": "allin_dram_bottleneck_2024mid", "date": "2024-06-15",
+        "label": "allin_ai_memory_micron_2026jun", "date": "2026-06-27",
         "source": "All-In Podcast", "host": "Chamath, Jason, Sacks, Friedberg",
-        "topic": "DRAM bottleneck",
+        "topic": "E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
     },
     "V0lFjTWx36I": {
-        "label": "allin_secondary_markets_2024mid", "date": "2024-06-15",
-        "source": "All-In Podcast", "host": "Chamath, Jason, Sacks, Friedberg",
-        "topic": "Secondary markets",
+        "label": "allin_liquidity_secondaries_2026jun", "date": "2026-06-07",
+        "source": "All-In Podcast", "host": "All-In Liquidity Summit panel (Gerstner, Rodriguez)",
+        "topic": "Liquidity Summit: secondary markets eating the IPO",
     },
     # BG2 Pod
     "Tx9jT2c6e3U": {
@@ -133,21 +133,18 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
     },
     # TBPN / Technology Brothers
     "PW5n3ZnEJN0": {
-        "label": "tbpn_token_factories_sovereign_ai_2025", "date": "2025-11-15",
+        "label": "tbpn_spacex_sovereign_ai_2026jun", "date": "2026-06-15",
         "source": "TBPN", "host": "Technology Brothers",
-        "topic": "Token factories, sovereign AI",
+        "topic": "SpaceX IPO, token path, sovereign AI won't reach frontier",
     },
-    # Heller House / Mission Control
-    "_Tua32QoR6w": {
-        "label": "heller_house_spacex_cfo_2026", "date": "2026-02-15",
-        "source": "Heller House / Mission Control", "host": "Heller House",
-        "topic": "SpaceX CFO",
-    },
+    # Heller House / Mission Control -- REMOVED 2026-07-09: red herring, not a
+    # Baker appearance (reporter profiling SpaceX CFO Bret Johnson). See
+    # analysis/_removed_files_log.md.
     # Invested by Aleph
     "ugihLT9cFTE": {
-        "label": "aleph_semis_globalwarming_2024feb", "date": "2024-02-14",
+        "label": "aleph_semis_globalwarming_2025oct", "date": "2025-10-22",
         "source": "Invested by Aleph", "host": "Michael Eisenberg",
-        "topic": "Semiconductors, global warming",
+        "topic": "Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
     },
     # ---- Discovered via discover_youtube + operator-confirmed (Gate 2) ----
     # ILTB YouTube mirrors of the two Colossus episodes below (free fallback).
@@ -202,6 +199,48 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "label": "vspartners_global_tech_2021nov", "date": "2021-11-30",
         "source": "VS Partners", "host": "Vanessa Xu (panel)",
         "topic": "Global technology investment: hype, hope, reality",
+    },
+    # ---- Gap-fill 2026-07-09: missing appearances from corpus_audit.md ----
+    # (upload dates verified via yt-dlp; conference dates are event dates.)
+    "yosv2UDCm9M": {
+        "label": "limitless_unity_world_models_2026may", "date": "2026-05-28",
+        "source": "Limitless (Bankless)", "host": "Josh Kale & Ejaaz Ahamadeen",
+        "topic": "AI supercycle; Unity as world-model builder; chips/memory/power",
+    },
+    "UJ3pNPFwAeM": {
+        "label": "iconn_globalalts_2025_future_of_ai", "date": "2025-01-28",
+        "source": "iConnections Global Alts 2025", "host": "Antonio Gracias (panel)",
+        "topic": "The Future of AI",
+    },
+    "Iazo7g40VbQ": {
+        "label": "allin_e221_coreweave_ipo_2025mar", "date": "2025-03-29",
+        "source": "All-In Podcast", "host": "Chamath, Jason, Sacks, Friedberg",
+        "topic": "E221: AI cold war, Signalgate, CoreWeave IPO, tariffs",
+    },
+    "HGbA6ze0_3M": {
+        "label": "allin_e274_spacex_2t_nvidia_2026may", "date": "2026-05-22",
+        "source": "All-In Podcast", "host": "Chamath, Jason, Friedberg (Baker subs)",
+        "topic": "E274: SpaceX $2T case, Nvidia shock selloff",
+    },
+    "4YXMZhsVClI": {
+        "label": "twist_e1990_liquidity_gracias_2024aug", "date": "2024-08-07",
+        "source": "This Week in Startups", "host": "Jason Calacanis",
+        "topic": "E1990: Liquidity Summit fireside (with Antonio Gracias)",
+    },
+    "MWE5LsO62wA": {
+        "label": "iconn_globalalts_2024_gracias_baker_gurley", "date": "2024-01-30",
+        "source": "iConnections Global Alts 2024", "host": "Gracias, Baker, Gurley (panel)",
+        "topic": "Industry titans panel: AI, growth/crossover investing",
+    },
+    "FmLGYLQ6DFY": {
+        "label": "generating_alpha_ep56_2026jul", "date": "2026-07-08",
+        "source": "Generating Alpha", "host": "Amir Fischer",
+        "topic": "Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+    },
+    "esWMssGq-G0": {
+        "label": "fii_gigafirm_trillion_dollar_2024feb", "date": "2024-02-23",
+        "source": "FII Institute", "host": "FII panel",
+        "topic": "Rise of the Gigafirm: next trillion-dollar tech company (panel)",
     },
 }
 
@@ -319,13 +358,27 @@ CNBC_TARGET: ScrapeTarget = {
 # future audio-only appearance that lacks a YouTube mirror.
 # --------------------------------------------------------------------------
 
+# On The Tape + Thematic Investors were covered via YouTube mirrors (Step 1), so
+# they are NOT listed here (listing them would trigger redundant re-transcription).
+# The 4 Invest Like the Best episodes below are podcast-audio-only (no YouTube
+# mirror on the ILTB channel for pre-2025 episodes) -> Whisper. iTunes id
+# 1154105909 = "Invest Like the Best" (feed resolves to megaphone). Added
+# 2026-07-09 during the corpus gap-fill (corpus_audit.md).
 RSS_TARGETS: list[RssTarget] = [
-    {"itunes_id": "1545205930", "episode_match": "Fear is the Market Killer",
-     "label": "onthetape_fear_market_killer", "date": "2022-03-25",
-     "source": "On The Tape / RiskReversal", "host": "RiskReversal",
-     "topic": "Fear is the market killer"},
-    {"itunes_id": "1706531701", "episode_match": "Gavin Baker",
-     "label": "thematic_investors_scifi_history", "date": "2024-06-15",
-     "source": "Thematic Investors", "host": "Thematic Investors",
-     "topic": "Blending sci-fi, history and literature"},
+    {"itunes_id": "1154105909", "episode_match": "Robotic Frontier",
+     "label": "iltb_ai_semis_robotic_2024aug", "date": "2024-08-27",
+     "source": "Invest Like the Best", "host": "Patrick O'Shaughnessy",
+     "topic": "AI, semiconductors, and the robotic frontier (EP.385)"},
+    {"itunes_id": "1154105909", "episode_match": "Cyclone Under the Surface",
+     "label": "iltb_cyclone_surface_2022jan", "date": "2022-01-25",
+     "source": "Invest Like the Best", "host": "Patrick O'Shaughnessy",
+     "topic": "The cyclone under the surface (EP.260)"},
+    {"itunes_id": "1154105909", "episode_match": "Investing Through a Bear Market",
+     "label": "iltb_bear_market_2020apr", "date": "2020-04-02",
+     "source": "Invest Like the Best", "host": "Patrick O'Shaughnessy",
+     "topic": "Investing through a bear market (EP.167)"},
+    {"itunes_id": "1154105909", "episode_match": "Tech and Consumer Growth",
+     "label": "iltb_tech_consumer_2019nov", "date": "2019-11-26",
+     "source": "Invest Like the Best", "host": "Patrick O'Shaughnessy",
+     "topic": "Tech and consumer growth investing (EP.149)"},
 ]

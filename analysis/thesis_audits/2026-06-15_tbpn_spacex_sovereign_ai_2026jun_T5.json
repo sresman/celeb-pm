@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-15",
+  "source": "TBPN \u2014 SpaceX IPO, token path, sovereign AI won't reach frontier",
+  "thesis_id": "T5",
+  "summary": "Being a 'token factory' is sufficient as a business model for the next 5-10 years; the world needs more token factories",
+  "summary_extended": "Baker argues that being a 'token factory' \u2014 a pure-play AI compute provider focused solely on inference and training throughput \u2014 is a fully sufficient and durable business model for the next 5 to 10 years, without needing to build out a full cloud stack including databases, storage, or other services like AWS offers. His reasoning is structural: global demand for AI tokens will be so large that dedicated compute providers will be capacity-constrained for the foreseeable future, making vertical integration into adjacent cloud services unnecessary and potentially distracting. The investment implication is that pure-play AI compute and neocloud providers should not be penalized for lacking full-stack cloud capabilities, and that their focused model is a feature rather than a limitation. Baker frames this as a contrarian defense of the neocloud business model against critics who argue these companies need to become more like hyperscalers to survive long-term.",
+  "detail": "Baker explicitly states that being a token factory is 'more than enough for the next 5 to 10 years' and that the world needs more of them. This validates pure-play AI compute providers without needing to build full cloud stacks (databases, storage, etc.) like AWS.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this directly and emphatically as a structural view with a specific time horizon",
+  "themes": [
+    "token factories",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "being a token factory is more than enough for the next 5 to 10 years",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRWV"
+  ],
+  "tickers_subject": [
+    "CRWV"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "CoreWeave (private/public)",
+    "neocloud providers"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "CoreWeave is the canonical publicly-listed pure-play neocloud/token factory and is the most direct public equity expression of this thesis; Baker's structural view on token factories directly validates CoreWeave's business model."
+    }
+  ]
+}

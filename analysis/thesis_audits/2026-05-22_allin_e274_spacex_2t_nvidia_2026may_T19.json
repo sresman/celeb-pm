@@ -1,0 +1,46 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T19",
+  "summary": "IPPs (independent power producers) are reasonably valued within the AI power theme, unlike power equipment, cooling, and optical names which may be overvalued",
+  "summary_extended": "Baker argues that within the AI power theme, independent power producers (IPPs) stand out as 'actually quite reasonably valued' relative to other sub-sectors exposed to the same trend. He contrasts IPPs favorably against power equipment, cooling, and certain optical names, which he believes may be pricing in scenarios that are inconsistent with the more modest valuations implied by Nvidia and memory stocks \u2014 a cross-sectional inefficiency he finds notable. The investment implication is that IPPs represent a relatively safer or more attractively priced way to gain exposure to the AI datacenter power demand theme, without taking on the valuation risk present elsewhere in the infrastructure stack. Baker does not specify exact multiples or timeframes, but the framing is medium-term and relative-value in nature, suggesting a rotation or preference trade rather than an outright short on the overvalued names.",
+  "detail": "Baker explicitly carves out IPPs as 'actually quite reasonably valued' within his cross-sectional inefficiency thesis, while flagging power equipment, cooling, and some optical names as potentially discounting scenarios inconsistent with Nvidia/memory valuations. This implies IPPs are a relatively safer expression of the AI power theme.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker makes this distinction explicitly but briefly",
+  "themes": [
+    "power/energy",
+    "AI datacenter infrastructure",
+    "relative value"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "IPPs are actually quite reasonably valued",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "VST",
+    "NRG",
+    "CEG"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "VST",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Vistra is the largest US-listed IPP and the most prominent publicly traded name in the AI power/IPP theme; Baker's explicit call that IPPs are reasonably valued unambiguously implies VST as a primary beneficiary."
+    },
+    {
+      "ticker": "NRG",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "NRG Energy is a major US-listed IPP directly exposed to AI datacenter power demand, making it an unambiguous beneficiary of Baker's view that IPPs are reasonably valued within this theme."
+    },
+    {
+      "ticker": "CEG",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Constellation Energy is a leading US-listed IPP with significant nuclear capacity increasingly contracted to AI hyperscalers, making it a clear and unambiguous beneficiary of Baker's IPP relative-value thesis."
+    }
+  ]
+}

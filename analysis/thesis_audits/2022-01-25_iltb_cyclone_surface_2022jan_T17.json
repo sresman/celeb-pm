@@ -1,0 +1,47 @@
+{
+  "date": "2022-01-25",
+  "source": "Invest Like the Best \u2014 The cyclone under the surface (EP.260)",
+  "thesis_id": "T17",
+  "summary": "Apple is likely to enter search, and mobile OS platforms will collide with other tech ecosystems as the metaverse develops",
+  "summary_extended": "Baker argues that Apple will eventually enter the search market, representing a direct competitive threat to Google's core business. His reasoning centers on Apple's control of the mobile OS as a profound structural advantage \u2014 particularly as VR/AR converge into XR and the metaverse develops, which will intensify ecosystem collisions between companies that previously operated in separate lanes. The investment implication is that Apple's entry into search would threaten Google's dominant revenue stream, as Apple controls the on-ramp to search for hundreds of millions of iPhone users and currently receives billions annually from Google to remain the default search engine. Baker frames this as a long-term directional view rather than a near-term catalyst, but sees the metaverse transition as the forcing function that accelerates these platform conflicts.",
+  "detail": "Baker believes Apple will eventually do search. As VR/AR converge into XR and the metaverse develops, mobile OS control becomes a profound advantage. This will cause ecosystem collisions between companies that previously didn't compete directly.",
+  "confidence": "speculative",
+  "confidence_evidence": "Baker uses 'eventually' and frames this as a directional belief rather than a near-term catalyst.",
+  "themes": [
+    "metaverse",
+    "mobile platforms",
+    "search",
+    "competitive dynamics"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "Apple is going to do search...they're eventually going to do it",
+  "tickers_named_original": [
+    "AAPL"
+  ],
+  "tickers_direct": [
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Apple is the direct subject of this thesis \u2014 Baker explicitly states Apple will enter search and that its mobile OS control is the key structural advantage driving the thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is the direct subject on the other side of this thesis \u2014 Apple entering search is a direct threat to Google's core search revenue and its existing deal to be Apple's default search engine. GOOGL is not merely tangential but central to the competitive dynamic Baker describes."
+    }
+  ]
+}

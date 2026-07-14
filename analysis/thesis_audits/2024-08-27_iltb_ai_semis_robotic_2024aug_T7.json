@@ -1,0 +1,44 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best \u2014 AI, semiconductors, and the robotic frontier (EP.385)",
+  "thesis_id": "T7",
+  "summary": "Inference will increasingly shift to on-device (edge) compute, with DRAM capacity on phones becoming the key differentiating spec",
+  "summary_extended": "Baker argues that AI inference will follow historical compute cycles and shift toward decentralization, with a 'local when you can, cloud when you must' model becoming the dominant paradigm for on-device AI. He contends that DRAM capacity \u2014 not flash storage \u2014 will become the defining hardware specification for smartphones, because DRAM determines the maximum parameter count of models that can run locally on a device. Apple is uniquely positioned to capture this shift due to its iOS distribution chokehold, which gives it unmatched leverage to monetize a tiered AI intelligence subscription model and a premium 'super phone' market segment. Baker frames this as a structural, multi-year shift with explicit downstream consequences: a bifurcated phone market where AI capability is gated by DRAM, and Apple sitting at the top of the value chain as the primary beneficiary. No specific numeric targets or timeframes were cited, but the conviction is high and the implication is to be long AAPL as the clearest expression of this thesis.",
+  "detail": "Baker argues compute cycles between centralization and decentralization; inference will follow a 'local when you can, cloud when you must' model. Apple is best positioned via iOS distribution chokehold. The key phone spec will shift from flash storage to DRAM capacity, as DRAM determines the parameter count of the locally-runnable model. This creates a premium 'super phone' market and a tiered AI intelligence subscription model.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'clearly Apple's play' and draws explicit investment implications; frames it as a structural shift with multiple downstream consequences",
+  "themes": [
+    "edge inference",
+    "on-device AI",
+    "semiconductor supply chain",
+    "DRAM"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "what you will most care about is the amount of DRAM you have on your phone",
+  "tickers_named_original": [
+    "AAPL"
+  ],
+  "tickers_direct": [
+    "AAPL",
+    "MU"
+  ],
+  "tickers_subject": [
+    "AAPL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Apple as 'clearly' the best-positioned company to capture the on-device AI inference shift via its iOS distribution advantage and ability to monetize a tiered AI subscription model and premium 'super phone' market."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Baker's thesis that DRAM capacity becomes the key differentiating phone spec implies a structural increase in DRAM demand per device. Micron is the only US-listed DRAM producer and a direct beneficiary of higher DRAM content per smartphone, particularly as it supplies mobile LPDDR DRAM to Apple and other OEMs."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-06-15",
+  "source": "TBPN \u2014 SpaceX IPO, token path, sovereign AI won't reach frontier",
+  "thesis_id": "T8",
+  "summary": "Orbital/space compute becomes economically compelling once Starship is reusable, potentially cheaper than terrestrial compute on a per-gigawatt basis",
+  "summary_extended": "Baker argues that orbital compute will become economically superior to terrestrial compute once Starship achieves full reusability, presenting specific unit economics to support the claim. His math breaks down a terrestrial gigawatt data center at roughly $60B ($25B for power and cooling infrastructure plus $35B for IT equipment), while an orbital gigawatt eliminates the power/cooling cost entirely, leaving only $35B in IT equipment plus approximately $5B in reusable Starship launch costs \u2014 totaling ~$30B versus $60B on the ground. He further argues that terrestrial power and cooling costs are 'reasonably inflationary,' meaning the cost gap will widen over time as energy and land costs rise. The investment implication is structural: if Starship reusability is achieved, orbital compute becomes the dominant long-run paradigm for AI infrastructure, though Baker frames this as speculative and contingent on that technical milestone. No publicly traded pure-play on this thesis exists; SpaceX remains private, making this a thesis to monitor rather than act on with current public equities.",
+  "detail": "Baker's math: terrestrial gigawatt costs ~$60B ($25B power/cooling + $35B IT equipment). In space, no power/cooling needed, so the right comp is $35B IT equipment vs. cost of launch. With reusable Starship, launch cost ~$5B, so total orbital gigawatt cost ~$30B vs. $60B terrestrial. Power/cooling costs are 'reasonably inflationary' making the gap widen over time.",
+  "confidence": "speculative",
+  "confidence_evidence": "Baker presents specific math but frames it as forward-looking and contingent on Starship reusability; described as his own analysis",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "you can put a gig into space for 30 billion and a gig on earth is 60 billion",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SpaceX"
+  ],
+  "tickers_subject": [
+    "SpaceX"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SpaceX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX and its Starship vehicle are the central enabler of the entire thesis \u2014 the economics only work if Starship achieves reusability at the cost Baker assumes. However, SpaceX is private and not a tradeable US-listed equity."
+    }
+  ]
+}

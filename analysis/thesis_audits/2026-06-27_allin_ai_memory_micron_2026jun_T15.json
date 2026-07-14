@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T15",
+  "summary": "Chinese AI models (GLM 5.2) have achieved near-frontier capability through distillation of US model outputs, challenging the assumption of a durable US lead",
+  "summary_extended": "Baker argues that Chinese AI labs have achieved near-frontier model capability through a systematic distillation process, specifically citing GLM 5.2 as a model that has 'challenged some of his beliefs' about the durability of the US AI lead. The mechanism he describes involves Chinese operators running large-scale iPhone farms to query US model APIs (such as OpenAI and Anthropic), harvesting reasoning traces at scale and using them for reinforcement learning training \u2014 effectively bootstrapping frontier capability from US model outputs. Critically, Baker notes that GLM 5.2 is now capable enough to conduct its own RL training, meaning the distillation flywheel may accelerate without continued dependence on US APIs. He estimates China is approximately 9 months behind US frontier models (plus or minus 3 months), a gap he views as narrower and more dynamic than previously assumed, with implications for the assumed moat of US AI incumbents.",
+  "detail": "Baker acknowledges GLM 5.2 has 'challenged some of his beliefs.' He explains the distillation mechanism (Chinese iPhone farms querying US APIs at scale, harvesting reasoning traces for RL training) and notes that now that GLM 5.2 is good enough to do its own RL, the capability diffusion may accelerate. He estimates China is ~9 months behind US models (+/- 3 months).",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker explicitly says this 'challenged some of my beliefs' \u2014 a notable admission \u2014 but maintains uncertainty about the true frontier gap",
+  "themes": [
+    "AI software/models",
+    "geopolitics/China"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "how good GLM 5.2 is has challenged some of my beliefs",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "OpenAI (private)",
+    "Anthropic (private)",
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is not the subject of this thesis nor a direct beneficiary or victim of the specific claim about Chinese distillation capability. The thesis is about the US-China AI model gap and distillation mechanics, not about GPU demand or NVDA's business. NVDA may be loosely affected by geopolitical AI dynamics but that connection is too indirect to classify as DIRECT_SUBJECT or DIRECT_BENEFICIARY for this specific thesis."
+    }
+  ]
+}

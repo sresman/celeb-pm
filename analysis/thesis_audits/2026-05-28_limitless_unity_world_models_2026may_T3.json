@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T3",
+  "summary": "Astera Labs is a critical bottleneck-solver for AI cluster connectivity and a top portfolio position",
+  "summary_extended": "Baker argues that as AI clusters scale to hundreds of thousands of chips, the primary bottleneck shifts away from raw GPU compute toward data transfer and memory access \u2014 the 'plumbing' layer that connects chips within a cluster. Astera Labs (ALAB) directly addresses this connectivity bottleneck by providing the interconnect and memory interface solutions that enable large-scale AI infrastructure to function efficiently. Baker has made ALAB his second-largest portfolio position at approximately 7.4% of the fund, reflecting high conviction that this connectivity layer is a critical and underappreciated constraint on AI scaling. He draws an analogy to an early Cerebras thesis, suggesting he views ALAB as a similarly asymmetric opportunity in a structural bottleneck that the market may not yet fully appreciate. The investment implication is a concentrated long position in ALAB as the dominant pure-play on AI cluster connectivity infrastructure.",
+  "detail": "As AI clusters scale to hundreds of thousands of chips, the bottleneck shifts from raw GPU compute to data transfer and memory access \u2014 the 'plumbing' layer. Astera Labs (ALAB) addresses this connectivity layer and is Baker's second-largest position at ~7.4% of the fund.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "~7.4% portfolio position, explicitly named as a key bottleneck investment, compared favorably to early Cerebras thesis",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Astera Labs is the plumbing system between GPUs at scale",
+  "tickers_named_original": [
+    "ALAB"
+  ],
+  "tickers_direct": [
+    "ALAB"
+  ],
+  "tickers_subject": [
+    "ALAB"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ALAB",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Astera Labs is the explicit subject of this thesis \u2014 Baker's second-largest position and the direct solution to the AI cluster connectivity bottleneck he describes."
+    }
+  ]
+}

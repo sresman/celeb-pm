@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T6",
+  "summary": "CXMT (Chinese DRAM producer going public) will flood consumer-grade DRAM market but cannot address AI-grade DRAM shortage",
+  "summary_extended": "Baker argues that CXMT, a Chinese DRAM producer going public in China, will provide meaningful relief to the consumer-grade DRAM market but will have zero impact on the AI-server DRAM shortage. His reasoning is that CXMT produces conventional DRAM that competes in the commodity consumer segment, not the advanced High Bandwidth Memory (HBM) required for AI training and inference workloads. Baker specifically cites Apple as a potential beneficiary of CXMT's additional supply, suggesting CXMT could reverse the DRAM-driven price increases Apple has been passing on to consumers. Critically, he draws a hard line between consumer DRAM and AI-grade HBM, asserting that the HBM bottleneck remains the exclusive domain of the three HBM producers and is structurally unsolvable by Chinese commodity DRAM entrants. The investment implication is that the AI memory shortage thesis \u2014 and the pricing power of HBM producers \u2014 remains intact regardless of CXMT's market entry.",
+  "detail": "Baker notes CXMT is going public in China and may provide relief for consumer DRAM (e.g., Apple's price increases) but explicitly states this does not solve the AI-server DRAM bottleneck, which remains the exclusive domain of the three HBM producers.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as a likely outcome but with some uncertainty about CXMT's execution",
+  "themes": [
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "CXMT is going public in China. They may be the cure for Apple's ills",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "AAPL",
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "CXMT (private/Chinese listed)",
+    "AAPL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Apple as a potential beneficiary of CXMT's consumer DRAM supply relief, suggesting CXMT could cure Apple's DRAM cost pressures and allow it to reverse consumer price increases."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Micron is the only US-listed company among the three HBM producers Baker references. His assertion that the AI-grade HBM bottleneck remains exclusive to the three HBM producers directly implies sustained pricing power and demand for Micron's HBM products, making it an unambiguous direct beneficiary of this structural thesis."
+    }
+  ]
+}

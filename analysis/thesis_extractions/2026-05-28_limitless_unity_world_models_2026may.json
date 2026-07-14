@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "source": "Limitless (Bankless)",
+    "date": "2026-05-28",
+    "host": "Josh Kale & Ejaaz Ahamadeen",
+    "topic": "AI supercycle; Unity as world-model builder; chips/memory/power",
+    "duration_estimate_min": 29
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "AI is in a supercycle, not a bubble \u2014 constrained by physical supply of watts and wafers, not debt-fueled speculation",
+      "detail": "Baker argues the current AI buildout differs fundamentally from dot-com: hyperscalers (Google, Microsoft, Amazon, Meta) are spending free cash flow, not borrowed money; OpenAI and Anthropic alone are on track for $200B ARR; and supply is physically constrained by TSMC wafer capacity and energy availability, preventing oversupply. Physical atom constraints act as a natural bubble dampener.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Described as Baker's core, repeated thesis across multiple interviews; fund is structured around it; explicit anti-bubble argument made with financial data",
+      "tickers_named": [
+        "NVDA",
+        "MU",
+        "ALAB",
+        "U"
+      ],
+      "tickers_implied": [
+        "GOOGL",
+        "MSFT",
+        "AMZN",
+        "META",
+        "TSM"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "power/energy"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "it's not a bubble if you can't oversupply the entire market"
+    },
+    {
+      "id": "T2",
+      "summary": "Nvidia is on a path to ~$10 trillion market cap, driven by sustained demand and maintained profit margins",
+      "detail": "Baker has held Nvidia for 20+ years and maintains conviction that Nvidia will sustain profit margins and demand growth, implying a path toward ~$10T market cap from roughly $5T at time of recording.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "20-year holding, explicitly stated $10T market cap target in recent podcast appearances, largest named equity long",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "putting Nvidia on a clear path to getting close to $10 trillion"
+    },
+    {
+      "id": "T3",
+      "summary": "Astera Labs is a critical bottleneck-solver for AI cluster connectivity and a top portfolio position",
+      "detail": "As AI clusters scale to hundreds of thousands of chips, the bottleneck shifts from raw GPU compute to data transfer and memory access \u2014 the 'plumbing' layer. Astera Labs (ALAB) addresses this connectivity layer and is Baker's second-largest position at ~7.4% of the fund.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "~7.4% portfolio position, explicitly named as a key bottleneck investment, compared favorably to early Cerebras thesis",
+      "tickers_named": [
+        "ALAB"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Astera Labs is the plumbing system between GPUs at scale"
+    },
+    {
+      "id": "T4",
+      "summary": "Micron is a core beneficiary of AI memory demand, with HBM supply constraints driving extraordinary margins",
+      "detail": "Micron is held as a major position. The AI memory market is severely supply-constrained; SK Hynix (the leading HBM supplier) has ~70% operating margins and is fielding $50-100B offers from Google and Microsoft to lock in future supply. Micron benefits from the same structural dynamic.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Named as a significant portfolio holding; memory supply constraint thesis is central to Baker's anti-bubble argument",
+      "tickers_named": [
+        "MU"
+      ],
+      "tickers_implied": [
+        "000660.KS",
+        "005930.KS"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Micron, one of the largest memory makers, just eclipsed a trillion dollars"
+    },
+    {
+      "id": "T5",
+      "summary": "Unity Software is a world-model builder for robotics and AGI training, making it a sleeper AI infrastructure play",
+      "detail": "Unity's 3D game engine encodes deep physics, texture, and lighting understanding, making it ideal for generating synthetic training environments for humanoid robots and future LLMs. Baker holds it as a forward-looking bet on world models becoming the dominant training paradigm for embodied AI.",
+      "confidence": "moderate",
+      "confidence_evidence": "Named as third-largest position; thesis is forward-looking and speculative on world-model adoption timeline",
+      "tickers_named": [
+        "U"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "robotics",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "Unity is a world model builder with deep understanding of physics"
+    },
+    {
+      "id": "T6",
+      "summary": "The AI compute stack is shifting from pre-training to post-training and inference, creating a large new investment opportunity",
+      "detail": "Baker estimates the revenue opportunity from inference is 5-10x the compute spend on pre-training. This shift drives investments in inference-optimized chips (Cerebras, Positron) and connectivity (Astera Labs). Nvidia is also pivoting GPU product lines toward inference and agentic workloads.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Multiple portfolio positions (Cerebras, Positron, Astera Labs) directly express this thesis; explicitly stated 5-10x inference revenue estimate",
+      "tickers_named": [
+        "NVDA",
+        "ALAB"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "inference revenue opportunity is worth 5 to 10x pre-training compute"
+    },
+    {
+      "id": "T7",
+      "summary": "Cerebras is a high-conviction inference chip bet, with early-stage entry validated by successful IPO",
+      "detail": "Baker was an early investor in Cerebras, which recently IPO'd at ~$60B and is up ~40% post-IPO. The investment expresses his inference supercycle thesis and his approach of identifying infrastructure bottleneck solvers early.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Early-stage investor, IPO validation, explicitly cited as core thesis expression",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Cerebras IPO'd for an ungodly amount, up 40% since"
+    },
+    {
+      "id": "T8",
+      "summary": "Positron (inference chip startup) is a portfolio bet on the inference compute buildout",
+      "detail": "Baker holds Positron, an inference chip company similar in thesis to Cerebras, as part of his concentrated bet that inference-optimized silicon will be a major growth area as AI labs shift spend from pre-training to post-training and reasoning workloads.",
+      "confidence": "moderate",
+      "confidence_evidence": "Named as a portfolio holding; thesis is consistent with broader inference theme but company is early-stage/private",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Positron creates inference chips, very similar to Cerebras"
+    },
+    {
+      "id": "T9",
+      "summary": "Verticalized small language models (SLMs) running on-device are a major coming wave, with Apple as a key enabler",
+      "detail": "Baker is bullish on enterprise and consumer SLMs optimized for specific verticals or running locally on device, preserving data privacy (medical, financial). Apple is identified as a primary device platform for this, though Baker does not hold Apple as an investment expression.",
+      "confidence": "moderate",
+      "confidence_evidence": "Described as one of four key investment pillars; Apple bullishness is stated but not expressed as a portfolio position",
+      "tickers_named": [
+        "AAPL"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Apple is going to be the device maker for locally run models"
+    },
+    {
+      "id": "T10",
+      "summary": "Sovereign/physical AI infrastructure deployment speed is a durable moat \u2014 companies that can build fastest win",
+      "detail": "Baker identifies the speed of physical deployment (data centers, power, chips) as a structural moat because hardware complexity and grid constraints make rapid buildout extremely difficult. SpaceX/Colossus is cited as an example of a fast-deployer monetizing this capability by renting compute to Anthropic.",
+      "confidence": "moderate",
+      "confidence_evidence": "Named as one of four key investment pillars; SpaceX cited as exemplar but is private",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "power/energy",
+        "space/orbital compute"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "speed of physical deployment itself is the moat"
+    },
+    {
+      "id": "T11",
+      "summary": "Orbital/space compute is an emerging frontier for AI infrastructure, with SpaceX as the critical enabler",
+      "detail": "Baker has shifted focus toward orbital compute as a solution to terrestrial energy and land-use constraints on data centers. SpaceX (Starship) is the linchpin for delivering payload to orbit at scale. Without Starship, orbital data centers and energy-in-space are not viable. Baker sees this as early-stage but strategically important.",
+      "confidence": "speculative",
+      "confidence_evidence": "Described as a forward-looking focus shift; SpaceX is private; hosts note limited space-stock allocation in actual 13F suggesting Baker himself sees it as early",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "space/orbital compute",
+        "power/energy",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "orbital compute part, Starship required to get racks to orbit"
+    },
+    {
+      "id": "T12",
+      "summary": "TSMC supply constraint is the primary governor preventing the AI buildout from becoming a debt-fueled bubble",
+      "detail": "Baker argues Nvidia could sell $2-3T of GPUs annually if TSMC could supply them. TSMC's inability to scale rapidly forces a sustainable pace of buildout. ASML's monopoly on EUV lithography machines (5-year backlog, $400M per unit, single production team) further entrenches this constraint. Samsung overtaking TSMC is seen as improbable near-term.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Central to Baker's anti-bubble thesis; specific $2-3T demand figure cited; ASML constraint independently corroborated",
+      "tickers_named": [
+        "TSM"
+      ],
+      "tickers_implied": [
+        "ASML",
+        "005930.KS"
+      ],
+      "themes": [
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Nvidia could sell two to three trillion of GPUs if only TSMC could supply them"
+    },
+    {
+      "id": "T13",
+      "summary": "SK Hynix's dominant HBM position gives it extraordinary pricing power, with ~70% operating margins",
+      "detail": "SK Hynix is the #1 memory supplier for Nvidia GPUs and is fielding $50-100B offers from Google and Microsoft to lock in future supply. Rather than accepting supply guarantees, SK Hynix is hiking prices. 70% operating margins are described as unheard of in semiconductors, validating the memory supply thesis.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Specific margin and deal-size figures cited; directly supports Baker's memory investment thesis",
+      "tickers_named": [],
+      "tickers_implied": [
+        "000660.KS"
+      ],
+      "themes": [
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "SK Hynix has 70% operating margin, just hiking up the price"
+    },
+    {
+      "id": "T14",
+      "summary": "Baker holds a large QQQ put as a broad market hedge while remaining long AI infrastructure",
+      "detail": "Baker's largest single position is a put on QQQ (Nasdaq 100 ETF), expressing general bearishness on the broad market while maintaining concentrated longs in AI infrastructure names. This barbell structure suggests he believes AI infrastructure will outperform even in a broad market drawdown.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Described as largest position in 13F; explicitly discussed as a hedge against broad market weakness",
+      "tickers_named": [
+        "QQQ"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "largest position ironically is that QQQ put position, generally bearish on the market"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "ALAB (Astera Labs)",
+      "reasoning": "~7.4% portfolio position; solves AI cluster connectivity bottleneck as clusters scale to hundreds of thousands of chips; performance per watt thesis",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "NVDA (Nvidia)",
+      "reasoning": "20-year holding with continued conviction; path to $10T market cap; sustained margins and demand; GPU demand exceeds TSMC supply capacity",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "MU (Micron)",
+      "reasoning": "AI memory demand severely outstrips supply; structural beneficiary of HBM supercycle alongside SK Hynix",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "U (Unity Software)",
+      "reasoning": "World-model builder for robotics and AGI training environments; 3D physics engine uniquely positioned for synthetic data generation",
+      "confidence": "moderate"
+    },
+    {
+      "direction": "buy",
+      "target": "Cerebras (post-IPO)",
+      "reasoning": "Early-stage inference chip bet validated by IPO; inference revenue opportunity 5-10x pre-training compute spend",
+      "confidence": "moderate"
+    },
+    {
+      "direction": "sell",
+      "target": "QQQ (Nasdaq 100 ETF) \u2014 short/put position",
+      "reasoning": "General broad market bearishness; hedge against market-wide drawdown while remaining long AI infrastructure names",
+      "confidence": "high_conviction"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "AI infrastructure (chips, memory, connectivity, power)",
+      "over": "AI application layer (SaaS, chatbots, model labs)",
+      "reasoning": "Baker explicitly states biggest returns are in electricity, power, and silicon fabrication \u2014 not SaaS or chatbots like Anthropic/OpenAI"
+    },
+    {
+      "preferred": "Inference-optimized silicon",
+      "over": "Pre-training compute",
+      "reasoning": "Inference revenue opportunity estimated at 5-10x pre-training compute spend; shift from pre-training to post-training/reasoning is underway"
+    },
+    {
+      "preferred": "Physical AI infrastructure builders (fast deployers)",
+      "over": "Software-layer AI plays",
+      "reasoning": "Speed of physical deployment is a durable moat; hardware complexity and grid constraints make rapid buildout extremely difficult to replicate"
+    },
+    {
+      "preferred": "Memory (HBM/AI DRAM)",
+      "over": "General semiconductor",
+      "reasoning": "SK Hynix achieving ~70% operating margins; Google and Microsoft offering $50-100B to lock in future supply; supply severely constrained"
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "Broad AI investment thesis",
+      "nature": "timing",
+      "detail": "If TSMC or a competitor dramatically scales chip production capacity overnight, hyperscalers would borrow to fund purchases, causing CapEx to decouple from operating cash flow and creating genuine bubble conditions"
+    },
+    {
+      "target": "AI supercycle thesis",
+      "nature": "structural_risk",
+      "detail": "If a fundamentally different LLM architecture emerges requiring significantly fewer GPUs or less memory, the supply-constraint thesis breaks down"
+    },
+    {
+      "target": "ASML / chip supply chain",
+      "nature": "structural_risk",
+      "detail": "ASML is a single-point-of-failure for EUV lithography; 5-year backlog and single production team; any disruption cascades through entire semiconductor supply chain"
+    },
+    {
+      "target": "QQQ / broad Nasdaq",
+      "nature": "overvalued",
+      "detail": "Baker's largest position is a QQQ put, signaling he believes the broad market (beyond AI infrastructure names) is overvalued or at risk of correction"
+    },
+    {
+      "target": "AI model labs (Anthropic, OpenAI)",
+      "nature": "structural_risk",
+      "detail": "Baker explicitly avoids model labs as investment targets, viewing them as downstream of the real value creation in infrastructure; cost pressures (Microsoft/Uber cutting Claude Code budgets) validate margin risk at the application layer"
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Apple WWDC AI software and hardware integration announcements",
+      "timing": "Weeks from recording (mid-June 2026)",
+      "impact": "Could validate on-device SLM thesis and accelerate Apple's role as primary device platform for locally-run AI models",
+      "beneficiaries": [
+        "AAPL"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Starship V3 continued launch cadence and payload validation",
+      "timing": "Ongoing, near-term",
+      "impact": "Required prerequisite for orbital compute and space-based data center thesis; each successful launch de-risks the long-term space infrastructure bet",
+      "beneficiaries": [
+        "SpaceX (private)"
+      ],
+      "losers": []
+    },
+    {
+      "event": "SK Hynix supply negotiations with Google and Microsoft ($50-100B offers)",
+      "timing": "Near-term (active as of recording)",
+      "impact": "Outcome will set pricing benchmarks for AI memory; SK Hynix hiking prices rather than accepting supply guarantees validates memory pricing power thesis",
+      "beneficiaries": [
+        "000660.KS",
+        "MU",
+        "005930.KS"
+      ],
+      "losers": [
+        "GOOGL",
+        "MSFT"
+      ]
+    },
+    {
+      "event": "Shift of AI lab capex from pre-training to post-training and inference workloads",
+      "timing": "Ongoing, accelerating",
+      "impact": "Drives demand for inference-optimized chips (Cerebras, Positron) and connectivity solutions (Astera Labs); Nvidia already pivoting GPU lines toward inference",
+      "beneficiaries": [
+        "ALAB",
+        "NVDA",
+        "Cerebras",
+        "Positron"
+      ],
+      "losers": []
+    },
+    {
+      "event": "TSMC capacity expansion (or lack thereof)",
+      "timing": "Multi-year",
+      "impact": "TSMC remaining supply-constrained keeps AI buildout at sustainable pace and prevents debt-fueled bubble; any dramatic capacity increase would be a risk catalyst",
+      "beneficiaries": [
+        "TSM"
+      ],
+      "losers": [
+        "NVDA",
+        "hyperscalers if forced to borrow"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "AI bubble vs. supercycle",
+      "view": "Not a bubble \u2014 physically constrained supercycle",
+      "detail": "Baker's core meta-view: dot-com was debt-fueled with no revenue; current AI buildout is funded by free cash flow of the world's largest companies, has real ARR ($200B from OpenAI+Anthropic alone), and is supply-constrained by physical atoms (wafers, watts), making oversupply structurally impossible in the near term"
+    },
+    {
+      "topic": "Investment approach / portfolio construction",
+      "view": "Barbell: large-cap infrastructure anchors + early-stage bottleneck solvers",
+      "detail": "Baker pairs large liquid positions (Nvidia, Micron) with early-stage private/small-cap bets on specific bottleneck solvers (Cerebras, Positron, Astera Labs, Unity), plus a broad market short (QQQ put) as a hedge"
+    },
+    {
+      "topic": "Performance per watt as the key AI infrastructure metric",
+      "view": "Tokens per watt / cost per token is the dominant competitive variable for AI infrastructure",
+      "detail": "AI labs are increasingly selecting infrastructure based on cost per token generated; this metric drives purchasing decisions across GPUs, memory, and connectivity, and is the lens Baker uses to evaluate infrastructure investments"
+    },
+    {
+      "topic": "China vs. US AI race",
+      "view": "China has structural advantages in energy and chip scaling for inference-focused architectures",
+      "detail": "China's energy abundance and chip manufacturing scale give it a unique opportunity to build inference-optimized infrastructure that looks architecturally different from US training-focused buildout; Baker sees US inference infrastructure investment as the domestic response"
+    },
+    {
+      "topic": "Physical deployment speed as competitive moat",
+      "view": "The ability to compress months of infrastructure deployment into weeks is a durable, defensible moat",
+      "detail": "Hardware complexity (atomic-level transistors), grid constraints, and regulatory resistance (40% of new data centers face petitions) make rapid physical deployment extremely difficult; companies that can do it fast command premium economics"
+    }
+  ]
+}

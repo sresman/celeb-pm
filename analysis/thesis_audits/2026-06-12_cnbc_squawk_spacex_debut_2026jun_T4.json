@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-12",
+  "source": "CNBC Squawk on the Street \u2014 SpaceX public-debut day: orbital compute economics, compute shortage, IPO",
+  "thesis_id": "T4",
+  "summary": "The global compute shortage is severe and worsening, supporting pricing power for all compute providers including neoclouds",
+  "summary_extended": "Baker argues that the global compute shortage is severe and intensifying on a near-daily basis, making it one of the most pressing constraints in the AI infrastructure buildout. He emphasizes that while token prices and GPU rental rates fluctuate at the surface level, the underlying supply-demand imbalance is real and broadly recognized by industry insiders with direct visibility into capacity utilization. This structural shortage supports sustained pricing power and demand for any entity providing compute capacity, particularly neoclouds and GPU cloud providers. The implication is that terrestrial data center and GPU rental businesses remain attractive investments even as new compute modalities like orbital compute emerge as potential future competition.",
+  "detail": "Baker states there is a 'severe compute shortage that is almost growing more severe by the day.' Token prices and rental prices fluctuate but the underlying shortage is real and well understood by industry participants. This supports continued demand for terrestrial data center capacity even as orbital compute develops.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses emphatic language ('severe,' 'almost growing more severe by the day') and frames it as consensus among industry insiders ('well understood by people on the ground').",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "severe compute shortage that is almost growing more severe by the day",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRWV",
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "CoreWeave",
+    "Lambda Labs",
+    "neoclouds broadly"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "CoreWeave is the leading publicly listed neocloud and a direct beneficiary of the compute shortage thesis \u2014 pricing power and demand for GPU cloud capacity accrues directly to it."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "A worsening compute shortage implies continued and accelerating demand for NVIDIA GPUs, the dominant compute hardware, making NVDA a clear direct beneficiary of this structural thesis."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-02-24",
+  "source": "iConnections Global Alts 2026 \u2014 AI, Tesla, defense, energy \u2014 what comes next",
+  "thesis_id": "T9",
+  "summary": "Power and wafer shortages will prevent an AI overbuild, enabling a smoother and longer AI investment cycle",
+  "summary_extended": "Baker argues that the AI investment cycle will be structurally different from prior technology bubbles (railroads, internet) because physical constraints \u2014 specifically shortages of watts (energy/power) and wafers (TSMC manufacturing capacity) \u2014 will prevent the overbuild and subsequent crash that historically follows speculative technology booms. Drawing on Carlotta Perez's framework of technology deployment cycles, he contends that these supply-side bottlenecks act as a natural governor on capital misallocation, forcing a more measured pace of AI infrastructure buildout. The investment implication is that AI infrastructure spending will be sustained and less volatile over a longer horizon than typical bubble cycles, making the sector structurally attractive for long-term investors. Baker frames this as a core conviction view, not a near-term trade, and the thesis is explicitly bullish on the companies that sit at the chokepoints of watts and wafers \u2014 power infrastructure and leading-edge semiconductor fabrication.",
+  "detail": "Baker argues that historically, new technology bubbles lead to overbuilds and crashes (railroads, internet, etc.). The current constraints on watts (energy) and wafers (TSMC capacity) physically prevent the overbuild that would normally follow a bubble. This could result in a more sustained, less volatile AI investment cycle \u2014 structurally bullish for AI infrastructure investors.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as a core structural thesis with historical analogy (Carlotta Perez), stated with conviction as a reason to be constructive on AI infrastructure",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "power/energy",
+    "macro/cycle"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "shortages of watts and wafers are going to keep us from having an overbuild",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "TSM"
+  ],
+  "tickers_subject": [
+    "TSM"
+  ],
+  "tickers_implied_original": [
+    "TSM",
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "TSMC is the explicit 'wafer' constraint Baker references \u2014 it is the dominant provider of leading-edge AI chip fabrication and is one of the two named bottlenecks in the thesis, making it a direct subject of the supply constraint argument."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is a consumer of TSMC wafers and a major AI infrastructure company, but this thesis is about the supply constraints (watts and wafers) preventing overbuild \u2014 not about NVDA's business specifically. NVDA neither owns the constrained assets nor is it a direct beneficiary of the constraint thesis; it is a downstream customer of the bottleneck. Remove."
+    }
+  ]
+}

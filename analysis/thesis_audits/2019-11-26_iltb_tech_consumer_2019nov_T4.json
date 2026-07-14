@@ -1,0 +1,52 @@
+{
+  "date": "2019-11-26",
+  "source": "Invest Like the Best \u2014 Tech and consumer growth investing (EP.149)",
+  "thesis_id": "T4",
+  "summary": "Apple's hiring of Google's head of search signals a potential entry into search advertising, making Apple a credible Google competitor.",
+  "summary_extended": "Baker argues that Apple's 2018 hiring of John Giannandrea, Google's former head of search, signals a potential tectonic shift in Apple's competitive posture toward Google in the search advertising market. He interprets this hire as evidence that Apple may be reconsidering its historically privacy-first stance in order to build a differentiated search product, leveraging its unique first-party data set from the Apple ecosystem. Baker contends that only Apple and Facebook possess data sets sufficiently differentiated from Google's to mount a credible challenge in search, making Apple a plausible long-term competitor rather than a permanent also-ran. The investment implication is that Apple could emerge as a meaningful threat to Google's search advertising dominance, though Baker frames this as a possibility ('a chance') rather than a certainty, and the thesis is explicitly long-term and conditional on Apple actually pivoting its privacy stance.",
+  "detail": "Apple hired John Giannandrea (head of search at Google) in 2018. Baker interprets this as a tectonic shift in Apple's privacy stance and a signal that Apple could compete with Google in search. Apple and Facebook are the only two companies with sufficiently differentiated data sets to challenge Google in search.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker frames it as Apple having 'a chance' rather than certainty; conditional on privacy stance shift.",
+  "themes": [
+    "search advertising",
+    "platform competition",
+    "Apple ecosystem"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "Apple had a chance to compete with Google in search",
+  "tickers_named_original": [
+    "AAPL",
+    "GOOGL",
+    "FB"
+  ],
+  "tickers_direct": [
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Apple is the central subject of the thesis \u2014 the company potentially entering search advertising and competing with Google."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is the incumbent whose search advertising dominance is directly threatened by the thesis; it is a direct subject as the competitive target and potential loser."
+    },
+    {
+      "ticker": "FB",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Facebook is mentioned only as a comparator to illustrate that few companies have sufficiently differentiated data sets \u2014 it is not the subject of the thesis, does not benefit from it, and is not an actionable implication of this specific thesis."
+    }
+  ]
+}

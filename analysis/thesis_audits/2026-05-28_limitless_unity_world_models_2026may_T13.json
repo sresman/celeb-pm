@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T13",
+  "summary": "SK Hynix's dominant HBM position gives it extraordinary pricing power, with ~70% operating margins",
+  "summary_extended": "Baker argues that SK Hynix has achieved an extraordinary and historically unprecedented competitive position as the dominant HBM supplier to Nvidia, giving it near-monopolistic pricing power in the most critical segment of the AI memory market. He cites specific evidence: Google and Microsoft have reportedly approached SK Hynix with $50-100 billion offers to lock in future HBM supply, yet SK Hynix is reportedly declining guaranteed supply deals in favor of simply raising prices \u2014 a posture only possible when demand vastly exceeds supply. Baker highlights SK Hynix's ~70% operating margins as validation of this thesis, describing such margins as essentially unheard of in the semiconductor industry, which historically operates at far thinner margins. The investment implication is that the HBM memory supply constraint is real and durable, and that SK Hynix is the primary beneficiary \u2014 though as a Korean-listed stock (000660.KS), US investors seeking exposure to this thesis must look to US-listed proxies such as Micron (MU), the only US-listed HBM producer with meaningful scale.",
+  "detail": "SK Hynix is the #1 memory supplier for Nvidia GPUs and is fielding $50-100B offers from Google and Microsoft to lock in future supply. Rather than accepting supply guarantees, SK Hynix is hiking prices. 70% operating margins are described as unheard of in semiconductors, validating the memory supply thesis.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Specific margin and deal-size figures cited; directly supports Baker's memory investment thesis",
+  "themes": [
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "SK Hynix has 70% operating margin, just hiking up the price",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "000660.KS",
+    "MU"
+  ],
+  "tickers_subject": [
+    "000660.KS"
+  ],
+  "tickers_implied_original": [
+    "000660.KS"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "000660.KS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SK Hynix is the explicit subject of this thesis \u2014 Baker is specifically discussing its HBM dominance, pricing power, and 70% operating margins. It is Korean-listed and not a US equity, but it is the direct subject."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Micron is the only US-listed HBM producer of meaningful scale. Baker's thesis about HBM supply constraints and extraordinary pricing power in HBM directly implies Micron as a beneficiary, as it competes in the same HBM market and would benefit from the same supply-demand dynamics and pricing environment Baker describes."
+    }
+  ]
+}

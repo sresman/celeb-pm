@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "source": "CNBC Squawk on the Street",
+    "date": "2026-06-12",
+    "host": "CNBC (Quintanilla/Faber/Eisen)",
+    "topic": "SpaceX public-debut day: orbital compute economics, compute shortage, IPO",
+    "duration_estimate_min": 8
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "SpaceX's rapid entry into cloud computing positions it as a major hyperscaler within weeks of launch",
+      "detail": "Baker notes that a month after entering cloud computing, SpaceX is by some measures the fourth largest cloud provider, ahead of Oracle. He frames this as a signal of extraordinary velocity and implies the trajectory over a full year could be transformative.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states this as fact ('by some measures it is the fourth largest cloud') and uses it as a foundational premise for his SpaceX bull case; he is a large shareholder and participated in the IPO.",
+      "tickers_named": [
+        "SPCE"
+      ],
+      "tickers_implied": [
+        "ORCL"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "space/orbital compute",
+        "cloud computing"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "fourth largest cloud ahead of Oracle and they did that in one month"
+    },
+    {
+      "id": "T2",
+      "summary": "Orbital compute will be structurally cheaper than terrestrial compute once Starship is reusable, making space the dominant long-term compute platform",
+      "detail": "Baker's core orbital compute thesis: a terrestrial gigawatt data center costs ~$60B, of which ~$25B is power and cooling (not needed in space) and ~$10B is land/shell (also not needed). That leaves ~$35B in GPUs. With reusable Starship, launch cost for a gigawatt of compute is ~$5B, making total orbital cost ~$30B vs. $60B terrestrial \u2014 a ~50% cost advantage. Repair and maintenance remain open questions but Baker is confident SpaceX will solve them.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker presents a detailed first-principles cost model with specific dollar figures ($60B terrestrial, $25B power/cooling, $5B launch, $30B orbital). He calls this 'intellectually honest' math and frames it as a structural inevitability.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (SPXC implied post-IPO)",
+        "NVDA"
+      ],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure",
+        "power/energy"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "costs 30 billion to put a gigawatt of compute in space relative to 60 billion"
+    },
+    {
+      "id": "T3",
+      "summary": "SpaceX's gigawatt terrestrial compute buildout is a near-term high-IRR business that should be valued like Amazon's early capex cycle",
+      "detail": "Baker cites Altimeter's calculation of a 55% IRR on SpaceX's Colossus 1 data center. He argues markets should be supportive of heavy capital investment when IRRs are this high, drawing an explicit analogy to Amazon's early investment phase. The key variable is how many gigawatts SpaceX can bring online in the next few years.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker cites a specific third-party IRR figure (55%, from Altimeter) and uses it as the anchor for his valuation framework. He is a large shareholder who participated in the IPO.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (SPXC implied)",
+        "NVDA"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "power/energy",
+        "space/orbital compute"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "55 percent IRR on their Colossus one data center"
+    },
+    {
+      "id": "T4",
+      "summary": "The global compute shortage is severe and worsening, supporting pricing power for all compute providers including neoclouds",
+      "detail": "Baker states there is a 'severe compute shortage that is almost growing more severe by the day.' Token prices and rental prices fluctuate but the underlying shortage is real and well understood by industry participants. This supports continued demand for terrestrial data center capacity even as orbital compute develops.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker uses emphatic language ('severe,' 'almost growing more severe by the day') and frames it as consensus among industry insiders ('well understood by people on the ground').",
+      "tickers_named": [],
+      "tickers_implied": [
+        "CoreWeave",
+        "Lambda Labs",
+        "neoclouds broadly"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "severe compute shortage that is almost growing more severe by the day"
+    },
+    {
+      "id": "T5",
+      "summary": "Terrestrial data centers will never be decommissioned \u2014 once built they retain value \u2014 but orbital compute may dominate new installations within 10-20 years",
+      "detail": "Baker explicitly states he does not expect terrestrial data centers to be decommissioned. However, he believes the 'overwhelming majority of compute installed for planet Earth' could be orbital within 10-20 years. This implies a bifurcated future: existing terrestrial assets retain value while incremental compute shifts to space.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker uses hedged language ('I think,' 'there may be a day') and a wide 10-20 year range, indicating this is a structural directional view rather than a near-term actionable call.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (SPXC implied)",
+        "terrestrial datacenter REITs and operators"
+      ],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "overwhelming majority of compute installed for planet earth happens in outer space"
+    },
+    {
+      "id": "T6",
+      "summary": "Starlink V3 and direct-to-cell are key milestones gating the orbital compute timeline; Starship reusability is the critical enabling technology",
+      "detail": "Baker identifies a sequenced set of milestones for SpaceX as a public company: (1) gigawatt terrestrial compute buildout, (2) Starship reusability enabling Starlink V3 launches, (3) direct-to-cell capability, (4) orbital compute. Investors can track progress against these milestones.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker presents this as a framework for investors to track SpaceX, but does not give specific timelines beyond 'next few years' for gigawatt buildout.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "SpaceX (SPXC implied)",
+        "NVDA"
+      ],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "reusing Starship such that we can put Starlink V3 satellites up into space"
+    },
+    {
+      "id": "T7",
+      "summary": "GPU scarcity gives SpaceX a structural advantage in securing Nvidia allocations because Jensen Huang prioritizes customers who will use GPUs immediately",
+      "detail": "Baker argues that the 'seller of GPUs' (Nvidia/Jensen) prefers to allocate to buyers who will deploy immediately, and that landed power owners are similarly incentivized to give power to those who can energize it fastest. SpaceX's ability to bring gigawatts online quickly gives it preferential access to both power and GPUs.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker presents this as a logical inference ('I think') rather than confirmed fact, but it is consistent with known Nvidia allocation dynamics.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "SpaceX (SPXC implied)"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure",
+        "power/energy"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "seller of GPUs IE Jensen likes to give them to people who are going to use them"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "SpaceX (SPXC)",
+      "reasoning": "Baker's firm participated in the IPO and he is taking a long-term perspective. He cites 55% IRR on Colossus 1, rapid cloud market share gains, and a structural orbital compute cost advantage as the bull case.",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "hold",
+      "target": "Terrestrial neoclouds / datacenter operators",
+      "reasoning": "Baker says terrestrial data centers will never be decommissioned and retain value, and the compute shortage supports pricing. However, long-term incremental compute may shift to orbital, implying neoclouds are not a sell but not the primary long-term winner.",
+      "confidence": "moderate"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Orbital compute (SpaceX)",
+      "over": "Terrestrial hyperscalers and neoclouds",
+      "reasoning": "Orbital compute has a structural ~50% cost advantage per gigawatt once Starship is reusable ($30B orbital vs. $60B terrestrial), driven by elimination of power, cooling, land, and shell costs."
+    },
+    {
+      "preferred": "SpaceX cloud",
+      "over": "Oracle Cloud",
+      "reasoning": "Baker explicitly states SpaceX became the fourth largest cloud ahead of Oracle within one month of entering the market, implying superior growth velocity."
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "SpaceX orbital compute",
+      "nature": "structural_risk",
+      "detail": "Repair and maintenance of orbital compute infrastructure is an unresolved challenge that Baker acknowledges SpaceX will need to work through. This is the primary technical risk to the orbital compute cost thesis."
+    },
+    {
+      "target": "SpaceX (public company)",
+      "nature": "timing",
+      "detail": "Public market life introduces quarterly disclosure requirements and investor impatience that could conflict with SpaceX's long-cycle, capital-intensive business model \u2014 analogous to early Amazon but with higher capital intensity."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "SpaceX IPO / first day of trading",
+      "timing": "2026-06-12 (today)",
+      "impact": "Establishes public market valuation benchmark; enables institutional participation; begins quarterly disclosure cadence",
+      "beneficiaries": [
+        "SpaceX (SPXC)",
+        "early investors including Atreides"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Starship achieving full reusability",
+      "timing": "Not specified (implied medium-term)",
+      "impact": "Reduces orbital launch cost to ~$5B per gigawatt, making orbital compute ~50% cheaper than terrestrial and unlocking Starlink V3 deployment",
+      "beneficiaries": [
+        "SpaceX (SPXC)",
+        "orbital compute ecosystem"
+      ],
+      "losers": [
+        "Terrestrial datacenter operators (long-term incremental share loss)"
+      ]
+    },
+    {
+      "event": "Starlink V3 satellite deployment enabling direct-to-cell",
+      "timing": "Not specified (follows Starship reusability)",
+      "impact": "Expands SpaceX's addressable market and serves as a precursor milestone to orbital compute deployment",
+      "beneficiaries": [
+        "SpaceX (SPXC)"
+      ],
+      "losers": [
+        "Traditional telecom infrastructure providers"
+      ]
+    },
+    {
+      "event": "SpaceX gigawatt terrestrial compute buildout",
+      "timing": "Next few years",
+      "impact": "Monetizes landed power at high IRR (55% demonstrated on Colossus 1); positions SpaceX as a top-tier hyperscaler",
+      "beneficiaries": [
+        "SpaceX (SPXC)",
+        "NVDA (GPU demand)"
+      ],
+      "losers": [
+        "Competing cloud providers for enterprise AI workloads"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "How to value capital-intensive tech companies with high IRR",
+      "view": "Markets are supportive of heavy capex when IRR is demonstrably high",
+      "detail": "Baker draws an explicit analogy between SpaceX's current investment phase and Amazon's early years, arguing that a 55% IRR on Colossus 1 justifies market support for continued heavy capital deployment \u2014 investors should not penalize capex when returns are this clear."
+    },
+    {
+      "topic": "Compute scarcity as a macro condition",
+      "view": "The compute shortage is severe and worsening, not easing",
+      "detail": "Despite fluctuating token and rental prices, Baker believes the underlying compute shortage is intensifying. This is a macro tailwind for all compute providers and supports pricing power across the ecosystem."
+    },
+    {
+      "topic": "Long-term compute geography",
+      "view": "Space will become the dominant location for new compute installations within 10-20 years",
+      "detail": "Baker's 10-20 year structural view is that the majority of net new compute for Earth will be orbital, driven by the fundamental cost economics of eliminating power, cooling, land, and shell costs in space."
+    }
+  ]
+}

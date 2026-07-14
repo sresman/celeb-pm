@@ -1,0 +1,58 @@
+{
+  "date": "2024-01-30",
+  "source": "iConnections Global Alts 2024 \u2014 Industry titans panel: AI, growth/crossover investing",
+  "thesis_id": "T1",
+  "summary": "AI scaling laws entrench hyperscale incumbents, making most standalone frontier model companies worthless",
+  "summary_extended": "Baker argues that AI scaling laws \u2014 which require roughly 10x more compute and data to double algorithmic performance \u2014 structurally favor the largest hyperscale incumbents and will render nearly all standalone frontier model companies worthless over the medium term. The core reasoning is that only companies with massive compute infrastructure, proprietary data at scale, and large distribution networks for reinforcement learning from human feedback (RLHF) can sustain frontier model development; without these, smaller model companies cannot compete. Baker identifies Google, Microsoft/OpenAI, and xAI/Twitter as the hyperscale winners, while also noting that high-quality open-source models will further squeeze standalone frontier model companies from below. The investment implication is to own the hyperscale incumbents with compute, data, and distribution moats, and to avoid or short standalone frontier model companies (most of which are private), as Baker states with high conviction that 'almost all are going to be zeros.' This view has been held for multiple years and was explicitly endorsed by fellow panelist Gracias during the discussion.",
+  "detail": "Baker articulates that scaling laws (10x compute/data needed to double algorithm performance) mean the largest companies with the most compute and data win. Frontier model companies without massive distribution for RLHF will go to zero, squeezed between hyperscalers (Google, Microsoft/OpenAI, xAI/Twitter) and high-quality open source.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a multi-year held view, uses strong language ('almost all going to be zeros'), and Gracias explicitly agrees",
+  "themes": [
+    "AI scaling laws",
+    "frontier model commoditization",
+    "hyperscale incumbents"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "almost all going to be zeros if you're a frontier model company",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL",
+    "MSFT",
+    "META",
+    "AMZN"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "GOOGL",
+    "MSFT",
+    "META",
+    "TWTR/X (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google is explicitly named as one of the hyperscale incumbents that wins under Baker's scaling law thesis due to its compute, data, and distribution advantages."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft/OpenAI is explicitly named as one of the hyperscale winners in Baker's thesis, benefiting from its compute infrastructure and OpenAI distribution partnership."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "META is a hyperscale incumbent with massive compute, proprietary social graph data, and distribution at scale for RLHF \u2014 fitting Baker's criteria for winners even if not explicitly named in the quote fragment. META's open-source LLaMA also plays the role of squeezing frontier model companies from below, making it a direct beneficiary of this dynamic."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Amazon/AWS is a clear hyperscale incumbent with massive compute (AWS), proprietary data, and distribution \u2014 fitting Baker's exact criteria for winners under scaling laws. Its omission from the original list appears to be an oversight given it is the third major hyperscale cloud provider alongside Google and Microsoft."
+    }
+  ]
+}

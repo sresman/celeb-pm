@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-12",
+  "source": "CNBC Squawk on the Street \u2014 SpaceX public-debut day: orbital compute economics, compute shortage, IPO",
+  "thesis_id": "T2",
+  "summary": "Orbital compute will be structurally cheaper than terrestrial compute once Starship is reusable, making space the dominant long-term compute platform",
+  "summary_extended": "Baker argues that orbital compute will become structurally cheaper than terrestrial compute once Starship achieves full reusability, presenting a detailed first-principles cost model to support this claim. A terrestrial gigawatt-scale data center costs approximately $60B, of which roughly $25B goes to power and cooling infrastructure and ~$10B to land and physical shell \u2014 neither of which is required in space \u2014 leaving ~$25-35B in GPU hardware. With reusable Starship, Baker estimates launch costs for a gigawatt of compute at ~$5B, yielding a total orbital cost of ~$30B versus ~$60B terrestrial, a roughly 50% structural cost advantage. The investment implication is that SpaceX (post-IPO) is the primary beneficiary as the sole vertically integrated operator of the launch vehicle enabling this cost structure, and Baker frames this as a long-term structural inevitability rather than a speculative bet. Open questions around on-orbit repair and maintenance remain, but Baker expresses high confidence that SpaceX will solve them.",
+  "detail": "Baker's core orbital compute thesis: a terrestrial gigawatt data center costs ~$60B, of which ~$25B is power and cooling (not needed in space) and ~$10B is land/shell (also not needed). That leaves ~$35B in GPUs. With reusable Starship, launch cost for a gigawatt of compute is ~$5B, making total orbital cost ~$30B vs. $60B terrestrial \u2014 a ~50% cost advantage. Repair and maintenance remain open questions but Baker is confident SpaceX will solve them.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker presents a detailed first-principles cost model with specific dollar figures ($60B terrestrial, $25B power/cooling, $5B launch, $30B orbital). He calls this 'intellectually honest' math and frames it as a structural inevitability.",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "costs 30 billion to put a gigawatt of compute in space relative to 60 billion",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SPXC"
+  ],
+  "tickers_subject": [
+    "SPXC"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (SPXC implied post-IPO)",
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPXC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX (anticipated post-IPO ticker) is the direct subject of this thesis \u2014 it owns Starship, the reusable launch vehicle whose economics underpin the entire orbital compute cost model. SpaceX is the primary beneficiary of orbital compute becoming the dominant platform."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is not the subject of this thesis and does not uniquely benefit from orbital compute versus terrestrial compute \u2014 GPUs are required in both scenarios at roughly the same cost (~$35B per gigawatt). The thesis is about where compute is hosted, not which GPU vendor supplies it. NVDA's inclusion appears to be contamination from adjacent AI infrastructure discussion."
+    }
+  ]
+}

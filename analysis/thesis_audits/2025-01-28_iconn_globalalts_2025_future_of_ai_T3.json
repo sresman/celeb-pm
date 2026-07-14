@@ -1,0 +1,61 @@
+{
+  "date": "2025-01-28",
+  "source": "iConnections Global Alts 2025 \u2014 The Future of AI",
+  "thesis_id": "T3",
+  "summary": "Cheaper AI inference via DeepSeek-style efficiency will massively increase AI ROI and accelerate deployment phase",
+  "summary_extended": "Baker argues that the dramatic reduction in AI inference costs \u2014 exemplified by DeepSeek-style efficiency gains that cut the cost of equivalent reasoning tasks from roughly $500 to $100 \u2014 will trigger a Jevons Paradox dynamic where cheaper intelligence drives superlinear increases in demand. He contends this shift moves AI from a training and experimentation phase into a true deployment phase where real-world ROI is generated at scale, and that capex mix will rebalance away from training compute toward inference infrastructure. Baker frames this as the core structural reason the market recovered after the DeepSeek-driven selloff, arguing the selloff misread the news as negative when cheaper inference is actually a massive accelerant for AI adoption. The investment implication is that companies positioned to monetize AI at the application and deployment layer \u2014 rather than pure training infrastructure plays \u2014 stand to benefit most as ROI on AI spend becomes demonstrable and widespread.",
+  "detail": "Using Jevons Paradox: when intelligence gets cheaper (example: $500 to $100 for equivalent reasoning task), demand increases superlinearly. This shifts AI from training/tinkering phase to deployment phase with real-world impact. Capex mix shifts from training toward inference, which is where actual ROI is generated.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker invokes Jevons Paradox explicitly, gives specific cost examples, and frames this as the core reason the market bounced after the DeepSeek selloff. No hedging language.",
+  "themes": [
+    "AI inference",
+    "AI datacenter infrastructure",
+    "AI ROI",
+    "software/applications"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "intelligence just got a lot cheaper... massively increase the ROI on AI",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "MSFT",
+    "META",
+    "GOOGL",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While NVDA is the dominant AI chip supplier, this thesis is specifically about inference cost deflation accelerating deployment and ROI \u2014 not about NVDA's revenue or market share. The thesis actually implies a capex mix shift away from training (NVDA's core strength), making NVDA's role ambiguous at best. Baker does not name NVDA as a beneficiary in this specific thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT is a large AI deployer but Baker's thesis here is a macro structural argument about Jevons Paradox and inference cost deflation. MSFT is not specifically named or unambiguously implied as the beneficiary of this particular thesis \u2014 it is a general AI theme association."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META is a large AI consumer and inference deployer, but Baker does not specifically identify META as the beneficiary of this thesis. The Jevons Paradox argument applies broadly and does not unambiguously single out META."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GOOGL operates inference infrastructure and AI applications, but like MSFT and META, it is not specifically named or unambiguously implied as the direct beneficiary of this structural thesis. Its inclusion appears to be a general AI mega-cap association rather than a thesis-specific implication."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMZN's AWS is a major inference cloud provider, but again Baker's thesis is a broad structural argument about cost deflation and Jevons Paradox dynamics, not specifically about AMZN. No unambiguous single-company implication exists here."
+    }
+  ]
+}

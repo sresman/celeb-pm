@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-07",
+  "source": "All-In Podcast \u2014 Liquidity Summit: secondary markets eating the IPO",
+  "thesis_id": "T3",
+  "summary": "Long-only mutual funds (Fidelity, Baillie Gifford, Capital Research, Wellington, T. Rowe) are at or near their self-imposed private allocation caps (3-7%), creating a massive wave of pent-up demand that will be unleashed when large private companies go public and exit the illiquid bucket.",
+  "summary_extended": "Baker argues that long-only mutual funds such as Fidelity, Baillie Gifford, Capital Research, Wellington, and T. Rowe Price are at or near their self-imposed private allocation caps of 3-7% of AUM \u2014 well below the SEC-permitted ceiling of 15% \u2014 creating a structural bottleneck of pent-up institutional demand for late-stage tech equities. As evidence, he notes that Baillie Gifford was forced to sell its SpaceX position last year due to regulatory and capacity constraints, illustrating how binding these caps have become. When large private companies (e.g., SpaceX, Anthropic, Anduril) eventually IPO and lock-up periods expire, these funds will be able to redeploy hundreds of billions of dollars back into liquid late-stage tech equities, as the positions exit the illiquid bucket and free up allocation room. Baker frames this as a major structural demand catalyst for the broader late-stage tech IPO market, not a thesis about any single company, but rather a systemic wave of institutional buying power that will be unleashed across the IPO cohort. The investment implication is to be positioned in high-quality late-stage private companies ahead of their public listings, anticipating a surge of institutional demand at and after IPO.",
+  "detail": "Long-only mutual funds can allocate up to 15% of AUM to privates per SEC rules but self-cap at 3-7%. Baillie Gifford was forced to sell SpaceX last year due to regulatory/capacity constraints. When these companies IPO and lock-ups expire, hundreds of billions in new demand will re-enter the market. Baker frames this as a major structural catalyst for late-stage tech equities.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker presents this as a specific, named structural dynamic with named institutions and a clear mechanism. Described as 'hundreds of billions of dollars of new late stage demand.'",
+  "themes": [
+    "private markets",
+    "IPO pipeline",
+    "institutional demand",
+    "late-stage tech"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "hundreds of billions of dollars of new late stage demand coming back to the market",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SpaceX"
+  ],
+  "tickers_subject": [
+    "SpaceX"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "Anthropic (private)",
+    "Anduril (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SpaceX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX is explicitly named as a concrete example of the dynamic \u2014 Baillie Gifford was forced to sell its SpaceX stake due to cap constraints \u2014 making it a direct subject of the thesis, though it remains private and unlisted."
+    },
+    {
+      "ticker": "Anthropic",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Anthropic is private and not specifically named in the thesis mechanism; it is at best a loosely implied candidate for the IPO pipeline but the thesis does not make it an unambiguous beneficiary. No US-listed equity exists."
+    },
+    {
+      "ticker": "Anduril",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Anduril is private and not specifically named in the thesis; it is a loosely implied future IPO candidate but the thesis does not make it an unambiguous or specific beneficiary. No US-listed equity exists."
+    }
+  ]
+}

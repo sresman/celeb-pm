@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-15",
+  "source": "TBPN \u2014 SpaceX IPO, token path, sovereign AI won't reach frontier",
+  "thesis_id": "T2",
+  "summary": "SpaceX ordered 20% of Rubin GPUs; Rubin is a more drop-in replacement than Blackwell, enabling faster data center ramp",
+  "summary_extended": "Baker cites Altimeter research indicating that SpaceX has ordered approximately 20% of Nvidia's Rubin GPU allocation, a striking concentration of a single customer's demand for the next-generation chip. He argues that Rubin represents a meaningfully easier deployment than Blackwell \u2014 which was notoriously difficult to bring online \u2014 making it a more 'drop-in' replacement that enables faster data center energization and capacity ramp. Baker views SpaceX's aggressive ordering as a signal of high conviction in rapid AI infrastructure buildout, with Groq LPUs also expected to be integrated into SpaceX's stack within 6-9 months. The investment implication is straightforwardly bullish for Nvidia, as SpaceX's outsized Rubin demand validates both the chip's superiority and the durability of hyperscale-level GPU demand from non-traditional buyers. No specific price targets or revenue figures are cited, but the framing is near-term bullish on Nvidia's Rubin cycle.",
+  "detail": "Per Altimeter data, SpaceX has ordered 20% of Nvidia Rubin GPUs. Unlike Blackwell which was hard to bring online, Rubin is described as a more drop-in replacement. Grok LPUs will be integrated within 6-9 months. This signals SpaceX confidence in rapid data center energization.",
+  "confidence": "moderate",
+  "confidence_evidence": "Attributed to Altimeter research; Baker presents as fact but notes it as third-party sourced",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "ordered 20% of the Reubins and the Reubin is an epic chip",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)",
+    "Groq (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about demand for Nvidia's Rubin GPU \u2014 SpaceX ordering 20% of Rubin supply is a direct, quantified demand signal for Nvidia's next-generation product, making NVDA the primary investable subject of this thesis."
+    }
+  ]
+}

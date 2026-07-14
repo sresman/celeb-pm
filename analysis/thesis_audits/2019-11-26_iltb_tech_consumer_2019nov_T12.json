@@ -1,0 +1,51 @@
+{
+  "date": "2019-11-26",
+  "source": "Invest Like the Best \u2014 Tech and consumer growth investing (EP.149)",
+  "thesis_id": "T12",
+  "summary": "Video games are not hit-driven businesses; they are social networks with highly persistent franchise value.",
+  "summary_extended": "Baker argues that the public markets fundamentally misunderstand video games as hit-driven businesses, when in reality they function as social networks with durable, persistent franchise value. His evidence is 20 years of sales data showing Call of Duty has been the best-selling game nearly every year except when Rockstar releases a title, with franchises like Assassin's Creed and Battlefield consistently appearing in top 5 or top 10 lists year after year. The mechanism driving this persistence is social network effects: friend groups coalesce around specific games, creating high switching costs that make it extremely difficult for new titles to displace incumbents. The investment implication is that the market systematically undervalues the recurring earnings power of established gaming franchises and the companies that own them, suggesting long-term ownership of major franchise holders is warranted. Baker views this as a core misperception he has high conviction correcting, implying that companies like Activision Blizzard (Call of Duty), Ubisoft (Assassin's Creed), and EA (Battlefield) are structurally undervalued by markets that price them as hit-dependent rather than network-effect businesses.",
+  "detail": "For 20 years, Call of Duty has been the best-selling game every year except when Rockstar releases a title. Assassin's Creed and Battlefield consistently appear in top 10/5. The reason is that games are social networks \u2014 friend groups form around specific games and switching costs are very high.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker presents this as a core misperception in public markets that he has high conviction correcting, backed by 20 years of sales data.",
+  "themes": [
+    "video games",
+    "social networks",
+    "competitive moats",
+    "consumer engagement"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "big misperception in public markets that these are hit-driven businesses",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "ATVI",
+    "EA",
+    "TTWO"
+  ],
+  "tickers_subject": [
+    "ATVI",
+    "EA",
+    "TTWO"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ATVI",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Activision Blizzard owns Call of Duty, the primary franchise Baker cites as evidence for his thesis. As the owner of the most persistent top-selling franchise, ATVI is a direct subject and beneficiary of this structural misvaluation argument."
+    },
+    {
+      "ticker": "EA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Electronic Arts owns the Battlefield franchise, which Baker explicitly names as a consistent top 5/10 performer, making EA a direct subject of the thesis about persistent franchise value being underappreciated."
+    },
+    {
+      "ticker": "TTWO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Take-Two Interactive (Rockstar's parent) is explicitly referenced as the only company whose releases displace Call of Duty from the top spot, confirming its franchise power and making it a direct subject of the persistent franchise value thesis."
+    }
+  ]
+}

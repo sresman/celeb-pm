@@ -1,0 +1,39 @@
+{
+  "date": "2024-01-30",
+  "source": "iConnections Global Alts 2024 \u2014 Industry titans panel: AI, growth/crossover investing",
+  "thesis_id": "T11",
+  "summary": "Synthetic data and video game environments will extend AI scaling laws beyond the current data ceiling",
+  "summary_extended": "Baker argues that AI scaling laws will continue beyond the current data ceiling imposed by the exhaustion of human-generated text, driven by two new training data sources: synthetic data and video game environments. He contends that GPT-5 has effectively been trained on all available human-created content, creating a bottleneck that skeptics like Yann LeCun cite as evidence that scaling will plateau. Baker counters this view by noting that a human infant absorbs roughly 100x more data than GPT-5 by age 4, suggesting that vision and multimodal data represent a vast, largely untapped frontier for model training. His thesis implies that companies providing rich virtual environments or synthetic data pipelines \u2014 particularly large video game platforms with detailed 3D worlds \u2014 could become structurally important to AI development. However, Baker frames this as a forward-looking view rather than a current investment position, and the primary beneficiaries (synthetic data startups, game engine companies) are largely private or not unambiguously identifiable as US-listed pure plays.",
+  "detail": "Baker argues that while GPT-5 has been trained on essentially all human-created content, synthetic data and video game environments will provide new training data sources that extend scaling laws. He notes an infant takes in 100x more data than GPT-5 by age 4, suggesting vision/multimodal data is the next frontier.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as his view against Yan LeCun's skepticism, uses 'I think' framing, not stated as a current investment position",
+  "themes": [
+    "AI scaling laws",
+    "synthetic data",
+    "multimodal AI"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "synthetic data is going to help scaling laws continue",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "gaming companies as training data providers",
+    "synthetic data startups (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Microsoft owns major gaming assets (Xbox, Activision) and Azure AI infrastructure, but the thesis does not unambiguously identify any specific public gaming company as a beneficiary \u2014 adding MSFT would be speculative overreach."
+    },
+    {
+      "ticker": "RBLX",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Roblox has a large virtual environment but Baker does not name or clearly imply any specific gaming platform; adding RBLX would be speculative."
+    }
+  ]
+}

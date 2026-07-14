@@ -1,0 +1,60 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T9",
+  "summary": "Nvidia is growing faster than hyperscaler CapEx and faster than Broadcom's AI semiconductor revenue, disproving the ASIC share-gain narrative",
+  "summary_extended": "Baker argues that Nvidia's AI accelerator business is growing faster than both hyperscaler CapEx and Broadcom's AI semiconductor revenue, directly refuting the widely-held narrative that custom ASICs (from Google, Amazon, and others) are meaningfully taking GPU market share. His core evidence is that on an apples-to-apples basis \u2014 comparing hyperscalers plus AI clouds while excluding China \u2014 Nvidia's AI revenue growth outpaces even Broadcom's 143% YoY guided AI semiconductor growth, which itself is a high bar. He further notes that competing ASICs such as Google's TPUs, Amazon's Trainium, and Inferentia are conspicuously absent from MLPerf and computer vision benchmarks, and contends the reason is that they would lose to Nvidia hardware, undermining the ASIC share-gain thesis. An additional underappreciated growth vector Baker highlights is Nvidia's CPU business, which is guided at $20B for the year, suggesting the bull case extends beyond GPUs. The investment implication is that NVDA remains the dominant AI semiconductor play and the ASIC threat from Broadcom-designed chips and hyperscaler-proprietary silicon is overstated.",
+  "detail": "Baker argues that on an apples-to-apples basis (hyperscalers + AI clouds, ex-China), Nvidia's AI business is growing faster than Broadcom's 143% YoY guided AI semiconductor growth. He notes competing ASICs (TPUs, Trainium, Inferentia) are not being submitted to MLPerf or CV benchmarks, and believes the reason is they would lose. Nvidia's CPU business ($20B guided for the year) is an additional underappreciated growth vector.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker makes a specific analytical claim about segment-level growth comparisons and provides the Broadcom 143% figure as a benchmark",
+  "themes": [
+    "semiconductor supply chain",
+    "AI accelerators",
+    "ASIC vs GPU"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "Nvidia's AI business is growing faster than Broadcom's",
+  "tickers_named_original": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_subject": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Nvidia's AI accelerator business outgrowing competitors and disproving the ASIC share-gain narrative; NVDA is the central subject."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Broadcom's 143% YoY guided AI semiconductor growth is the explicit benchmark Baker uses to make his case; AVGO's AI business is directly analyzed and implicitly argued to be losing share to NVDA."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Google's TPUs are mentioned as an example of ASICs not submitted to benchmarks, but GOOGL is not a direct subject or beneficiary of this thesis \u2014 it is a hyperscaler whose custom silicon is being dismissed as a threat. No actionable investment implication for GOOGL flows from this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Amazon's Trainium and Inferentia are cited as examples of underperforming ASICs, but AMZN is not a direct subject or beneficiary of this thesis. The mention is illustrative of the ASIC threat being overstated, not an investment call on AMZN."
+    }
+  ]
+}

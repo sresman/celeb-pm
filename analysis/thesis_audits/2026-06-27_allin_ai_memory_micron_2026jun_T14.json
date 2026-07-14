@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T14",
+  "summary": "Cerebras' key investment variable is megawatt capacity addition speed, not competitive positioning or demand",
+  "summary_extended": "Baker argues that the primary investment variable for Cerebras is not competitive positioning, product differentiation, or demand \u2014 it is the speed at which the company can bring on megawatt capacity. He grounds this view in a specific monetization framework: AI compute infrastructure monetizes at approximately $15 billion in revenue per gigawatt of power, meaning that once power capacity is known, revenue is largely predictable. The critical bottleneck, therefore, is power addition speed, and Baker notes that outside of hyperscalers, only CoreWeave, Crusoe, and SpaceX AI have ever successfully brought on more than one gigawatt \u2014 making this an extremely difficult operational and logistical challenge. The investment implication is that Cerebras bulls and bears should focus their diligence on execution around power procurement and datacenter buildout rather than on demand or competitive dynamics. Baker presents this as a high-conviction personal framework but acknowledges meaningful execution uncertainty, making the thesis moderate-confidence.",
+  "detail": "Baker argues the market is focused on the wrong metrics for Cerebras. Given known monetization rates (~$15B revenue per gigawatt), the only question is how fast they can bring on power. He notes only CoreWeave, Crusoe, and SpaceX AI have ever brought on more than 1 gigawatt outside hyperscalers, making this extremely difficult.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as his personal investment framework for Cerebras with specific numbers, but acknowledges high execution uncertainty",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "how many megawatts can they bring on? Because we know what they're going to monetize at",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CBRS"
+  ],
+  "tickers_subject": [
+    "CBRS"
+  ],
+  "tickers_implied_original": [
+    "Cerebras (CBRS)",
+    "CoreWeave (private)",
+    "Crusoe (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CBRS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Cerebras is the explicit subject of this thesis \u2014 Baker's entire investment framework is built around evaluating Cerebras' capacity addition speed as the key variable."
+    },
+    {
+      "ticker": "CRWV",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "CoreWeave is cited only as a benchmark example of a non-hyperscaler that has successfully brought on more than 1 gigawatt, not as a beneficiary or subject of this thesis. Its mention is illustrative, not investment-relevant within this specific thesis."
+    }
+  ]
+}

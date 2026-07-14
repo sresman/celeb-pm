@@ -1,0 +1,52 @@
+{
+  "date": "2024-08-07",
+  "source": "This Week in Startups \u2014 E1990: Liquidity Summit fireside with Antonio Gracias and Gavin Baker",
+  "thesis_id": "T16",
+  "summary": "Agents and actions replacing search is the next major platform shift; this will be massive and is coming soon.",
+  "summary_extended": "Baker argues that the next major platform shift in technology is the replacement of traditional search queries with AI agent-driven actions and transactions \u2014 for example, a user saying 'book me a vacation in Italy' rather than searching for flights and hotels separately. He believes this shift will be enabled by on-device large language models that have deep personal context about the user, making agents far more capable and personalized than current search interfaces. Baker states unequivocally that 'agents are going to be massive,' framing this as a structural disruption to the search paradigm rather than an incremental improvement. The investment implication is that companies building leading AI agent platforms or deeply integrated on-device AI ecosystems stand to benefit enormously, while incumbent search-dependent business models face existential pressure. No specific financial metrics or timeframes were cited beyond a 'medium-term' horizon, but Baker's conviction is high and unhedged.",
+  "detail": "Baker describes the transition from search queries to agent-driven transactions (e.g., 'book me a vacation in Italy' instead of searching). He frames this as agents and actions replacing search, driven by on-device LLMs with personal context. He says 'agents are going to be massive.'",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states 'I think agents are going to be massive' without hedging; consistent with his broader AI framework.",
+  "themes": [
+    "AI agents",
+    "consumer AI",
+    "mobile AI",
+    "search disruption"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "agents and actions and transactions replacing search",
+  "tickers_named_original": [
+    "AAPL",
+    "GOOGL",
+    "META"
+  ],
+  "tickers_direct": [
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Apple is the dominant on-device mobile platform and is positioned to benefit from on-device LLMs with personal context \u2014 the exact mechanism Baker describes as enabling the agent shift. Apple Intelligence and Siri's evolution make AAPL a direct beneficiary of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google's core search business is the incumbent being disrupted by the agent/action paradigm Baker describes. GOOGL is both the subject of the disruption threat and a potential beneficiary if it successfully transitions its own AI agent offerings (Gemini), making it central to this thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta was likely mentioned in the broader transcript context around AI but is not a direct subject or clear beneficiary of the specific thesis that agents and actions replace search. Meta does not have a dominant search or agent-transaction platform that maps cleanly to this thesis."
+    }
+  ]
+}

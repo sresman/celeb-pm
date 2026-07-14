@@ -1,0 +1,37 @@
+{
+  "date": "2024-02-23",
+  "source": "FII Institute \u2014 Rise of the Gigafirm: next trillion-dollar tech company (panel)",
+  "thesis_id": "T8",
+  "summary": "Tesla will be the next public company to reach $2 trillion enterprise value, driven by AI and robotics rather than EV",
+  "summary_extended": "Baker's co-panelist Antonio, who holds a large disclosed position in Tesla, argues that TSLA will be the next public company to surpass $2 trillion enterprise value, but the key insight is that it should be valued as an AI and robotics company rather than an EV manufacturer. The bull case rests on two compounding assets: FSD v12, which Antonio claims drives like a human and generates a unique autonomous driving data moat, and the Optimus humanoid robot, which he describes as extraordinary and capable of leveraging reinforcement learning from that same driving data. The combination of real-world robotics data and autonomous vehicle training creates a proprietary feedback loop that no other company can replicate at scale. Baker does not explicitly endorse the view but does not push back, and the panel framing suggests shared conviction; the investment implication is to own TSLA as a long-duration AI/robotics option rather than an EV cyclical, with the $2 trillion EV target as the medium-term price milestone.",
+  "detail": "Co-panelist (Antonio) argues Tesla should be valued as an AI/robotics company, not an EV company. FSD v12 drives like a human; Optimus robot is extraordinary. The combination of autonomous driving data + humanoid robot reinforcement learning creates a unique data moat. Baker appears to endorse this view.",
+  "confidence": "moderate",
+  "confidence_evidence": "Stated by co-panelist with disclosed large position; Baker does not explicitly endorse but does not push back and the panel is framed as a shared thesis",
+  "themes": [
+    "robotics",
+    "AI models",
+    "data moats",
+    "autonomous vehicles"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "Tesla will be the next public company you see past $2 trillion enterprise value",
+  "tickers_named_original": [
+    "TSLA"
+  ],
+  "tickers_direct": [
+    "TSLA"
+  ],
+  "tickers_subject": [
+    "TSLA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TSLA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Tesla is the explicit subject of the thesis \u2014 the $2 trillion EV target, FSD v12, and Optimus robot are all Tesla-specific assets and the entire thesis is built around owning TSLA as an AI/robotics compounder."
+    }
+  ]
+}

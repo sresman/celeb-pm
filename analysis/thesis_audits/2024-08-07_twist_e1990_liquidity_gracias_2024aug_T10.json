@@ -1,0 +1,54 @@
+{
+  "date": "2024-08-07",
+  "source": "This Week in Startups \u2014 E1990: Liquidity Summit fireside with Antonio Gracias and Gavin Baker",
+  "thesis_id": "T10",
+  "summary": "If Apple and Google simultaneously triple memory in smartphones to enable on-device AI, it could trigger the first real memory supercycle since 1996, potentially making Micron a massive multi-bagger.",
+  "summary_extended": "Baker outlines a tail-risk scenario in which Apple and Google simultaneously double or triple the DRAM in their flagship smartphones to enable on-device AI inference, creating a demand shock that \u2014 layered on top of already record HBM consumption in data centers \u2014 could trigger the first true memory supercycle since 1996. He draws an explicit historical parallel to that cycle, during which Micron was a 50-bagger, to illustrate the potential magnitude of the opportunity. Baker is careful to frame this as a low-probability tail scenario rather than a base case, noting the simultaneous adoption by both Apple and Google is the key precondition that makes it extraordinary rather than incremental. The investment implication is that Micron (the only major US-listed pure-play DRAM/NAND manufacturer) would be the primary beneficiary, with the upside potentially being multi-bagger in nature if the scenario materializes. Apple and Google are the demand catalysts in this thesis \u2014 their strategic decisions on device memory are the trigger \u2014 but the financial beneficiary of the supply-demand shock is the memory producer, not the handset or platform companies.",
+  "detail": "Baker draws an explicit parallel to 1996 when Micron was a 50-bagger during a DRAM supercycle. If Apple doubles or triples iPhone memory AND Google does the same for Android simultaneously to enable on-device AI \u2014 at the same time data centers are consuming record HBM \u2014 the combined demand shock could create an unprecedented memory cycle. He caveats this is not his base case probability but flags the magnitude of the opportunity.",
+  "confidence": "speculative",
+  "confidence_evidence": "Baker explicitly says 'we'll see this probability and it's not going to happen but...' before citing the 50-bagger scenario \u2014 he is flagging the tail scenario, not a base case.",
+  "themes": [
+    "semiconductor supply chain",
+    "HBM memory",
+    "mobile AI",
+    "memory supercycle"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "first real memory cycle since 1996... Micron was a 50 bagger",
+  "tickers_named_original": [
+    "MU",
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [
+    "MU"
+  ],
+  "tickers_implied_original": [
+    "SK Hynix (KRX: 000660)",
+    "Samsung (KRX: 005930)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is the explicit subject of the thesis \u2014 Baker cites it as the 1996 analog 50-bagger and the primary beneficiary of a memory supercycle. It is the only major US-listed DRAM producer."
+    },
+    {
+      "ticker": "AAPL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Apple is a demand catalyst in the scenario (tripling iPhone memory), not a financial beneficiary of a memory supercycle. The thesis is about memory producers profiting from the demand shock, not about Apple's stock. Apple's margins would likely be pressured, not helped, by higher memory costs."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google/Android is the second demand catalyst required to make the scenario a true supercycle, but like Apple, Google does not benefit financially from higher memory prices. It is a trigger condition, not a beneficiary."
+    }
+  ]
+}

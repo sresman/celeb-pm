@@ -1,0 +1,102 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T1",
+  "summary": "AI is in a supercycle, not a bubble \u2014 constrained by physical supply of watts and wafers, not debt-fueled speculation",
+  "summary_extended": "Baker argues that AI is in a structural supercycle rather than a speculative bubble, drawing a sharp contrast with the dot-com era by pointing out that hyperscalers \u2014 Google, Microsoft, Amazon, and Meta \u2014 are funding their AI buildouts entirely from free cash flow rather than debt or equity issuance. He cites OpenAI and Anthropic alone being on track for $200B in ARR as evidence of genuine, rapidly scaling demand, not speculative hype. Critically, he argues that physical supply constraints \u2014 specifically TSMC wafer capacity and global energy availability \u2014 act as a natural dampener against oversupply, making the classic bubble mechanism (cheap capital enabling reckless overbuilding) structurally impossible in this cycle. The investment implication is to remain long the AI infrastructure stack, as constrained supply meeting surging demand is a durable, multi-year earnings tailwind for the companies enabling that buildout. Baker frames this as his core, repeated thesis around which his fund is structured.",
+  "detail": "Baker argues the current AI buildout differs fundamentally from dot-com: hyperscalers (Google, Microsoft, Amazon, Meta) are spending free cash flow, not borrowed money; OpenAI and Anthropic alone are on track for $200B ARR; and supply is physically constrained by TSMC wafer capacity and energy availability, preventing oversupply. Physical atom constraints act as a natural bubble dampener.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Described as Baker's core, repeated thesis across multiple interviews; fund is structured around it; explicit anti-bubble argument made with financial data",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "it's not a bubble if you can't oversupply the entire market",
+  "tickers_named_original": [
+    "NVDA",
+    "MU",
+    "ALAB",
+    "U"
+  ],
+  "tickers_direct": [
+    "GOOGL",
+    "MSFT",
+    "AMZN",
+    "META",
+    "TSM",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "GOOGL",
+    "MSFT",
+    "AMZN",
+    "META",
+    "TSM"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "MSFT",
+    "AMZN",
+    "META",
+    "TSM"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is explicitly named as one of the hyperscalers spending FCF on AI infrastructure, making it a direct subject of the thesis about sustainable AI capex."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Microsoft is explicitly named as one of the hyperscalers funding AI buildout from free cash flow, a central pillar of the anti-bubble argument."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon is explicitly named as one of the hyperscalers whose FCF-funded AI spending underpins the supercycle thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is explicitly named as one of the four hyperscalers whose FCF-funded capex is cited as evidence this is not a bubble."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "TSMC wafer capacity is specifically cited as one of the two physical constraints (alongside energy) that prevent oversupply, making TSM a direct subject of the supply-constraint argument."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of AI accelerators and directly benefits from sustained, supply-constrained hyperscaler capex, though the thesis is not specifically about NVDA's business model."
+    },
+    {
+      "ticker": "MU",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Memory/DRAM is not specifically discussed in this thesis; MU appears to have bled in from an adjacent thesis in the same transcript. The supercycle thesis focuses on wafer capacity and energy, not HBM supply specifically."
+    },
+    {
+      "ticker": "ALAB",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Astera Labs is not referenced in the specific claims of this thesis about FCF-funded hyperscaler capex and physical supply constraints; it appears to be contamination from an adjacent thesis."
+    },
+    {
+      "ticker": "U",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Unity Software is not relevant to the AI supercycle/bubble thesis focused on hyperscaler capex and physical supply constraints; this is clear contamination from a separate thesis about Unity as a world-model builder."
+    }
+  ]
+}

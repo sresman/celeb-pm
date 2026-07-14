@@ -1,0 +1,34 @@
+{
+  "date": "2026-06-15",
+  "source": "TBPN \u2014 SpaceX IPO, token path, sovereign AI won't reach frontier",
+  "thesis_id": "T1",
+  "summary": "SpaceX near-term value is driven by terrestrial compute gigawatt ramp and Grok/cursor adoption, not long-duration space optionality",
+  "summary_extended": "Baker argues that the near-term investment thesis for SpaceX is not about Mars colonization or asteroid mining, but rather two concrete near-term drivers: (1) the speed at which SpaceX can bring terrestrial compute gigawatts online, which Baker values at approximately $50B per gigawatt based on the Google deal \u2014 roughly half the 2-3x neocloud pricing premium cited by Altimeter \u2014 and (2) the adoption of Grok/Cursor, which Baker expects to reach half of the Fortune 500. He explicitly frames these two variables as what will matter most for SpaceX's valuation over the next year, making the long-duration space optionality (Mars, asteroid mining) a secondary consideration for investors. The investment implication is that SpaceX's near-term value creation is fundamentally a datacenter and AI software story, not a space story, and investors should track gigawatt ramp pace and enterprise AI adoption as the key leading indicators. SpaceX remains private, so there is no direct public equity play, but the thesis has implications for how neocloud and AI infrastructure peers are priced relative to SpaceX's emerging compute business.",
+  "detail": "Baker argues the most tangible near-term drivers for SpaceX are: (1) how quickly they can bring on terrestrial compute gigawatts, monetizing at ~$50B/gigawatt (vs. ~2-3x average neocloud pricing per Altimeter), and (2) Grok cursor being in half the Fortune 500. Mars/asteroid mining is exciting but not the near-term investment thesis.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly frames these as 'two variables that are going to matter a lot over the next year' and provides specific revenue math ($50B/gigawatt on Google deal)",
+  "themes": [
+    "AI datacenter infrastructure",
+    "space/orbital compute",
+    "token factories"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "how quickly can they bring on terrestrial compute",
+  "tickers_named_original": [
+    "SPCE"
+  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPCE",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SPCE is Virgin Galactic (now Rocket Lab adjacent / restructured), not SpaceX. SpaceX is a private company and SPCE has no meaningful relationship to this thesis. This ticker appears to be a misidentification \u2014 SpaceX has no US-listed equity. SPCE should be removed as it is not the subject of or a beneficiary of this thesis."
+    }
+  ]
+}

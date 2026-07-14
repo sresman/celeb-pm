@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T7",
+  "summary": "Cerebras is a high-conviction inference chip bet, with early-stage entry validated by successful IPO",
+  "summary_extended": "Baker identifies Cerebras as a high-conviction expression of his AI inference supercycle thesis, noting he was an early-stage investor in the company before its IPO. He highlights that Cerebras IPO'd at approximately $60 billion in valuation and has risen roughly 40% since its public debut, which he views as validation of both the company's positioning and his early entry thesis. Baker's core argument is that Cerebras solves a critical infrastructure bottleneck in AI inference \u2014 the delivery of fast, low-latency compute \u2014 making it a structural beneficiary as inference workloads scale dramatically. The investment implication is that Cerebras represents a differentiated chip architecture play on the inference supercycle, distinct from GPU-centric approaches, and Baker frames early-stage identification of such bottleneck solvers as a repeatable investment strategy.",
+  "detail": "Baker was an early investor in Cerebras, which recently IPO'd at ~$60B and is up ~40% post-IPO. The investment expresses his inference supercycle thesis and his approach of identifying infrastructure bottleneck solvers early.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Early-stage investor, IPO validation, explicitly cited as core thesis expression",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Cerebras IPO'd for an ungodly amount, up 40% since",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CBRS"
+  ],
+  "tickers_subject": [
+    "CBRS"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "CBRS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Cerebras Systems is the explicit subject of this thesis \u2014 Baker is an early investor and the entire thesis is about Cerebras's IPO performance and its role as an inference chip bottleneck solver. CBRS is the US-listed ticker for Cerebras post-IPO."
+    }
+  ]
+}

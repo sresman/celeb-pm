@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T9",
+  "summary": "Frontier model companies building their own chips create a dangerous incentive for Nvidia to launch a competing AI model company",
+  "summary_extended": "Baker warns that the trend of frontier AI labs building custom silicon\u2014specifically OpenAI's 'Jalapeno' chip developed in partnership with Broadcom\u2014creates a dangerous competitive dynamic with Nvidia. His core argument is that as frontier labs vertically integrate into chip design, they threaten Nvidia's dominance in AI accelerators, and Nvidia may retaliate by entering the AI model space directly, potentially launching an OpenAI competitor. Baker frames this as a speculative but plausible strategic risk ('don't be surprised if Nvidia starts an OpenAI competitor'), suggesting the AI stack could fragment into warring vertically integrated players. The investment implication is that both Nvidia and frontier AI labs like OpenAI face elevated competitive risk from each other's encroachment, though OpenAI remains private and thus not directly actionable; Broadcom is implicated as a key enabler of the custom chip trend that is triggering this dynamic.",
+  "detail": "Baker warns that OpenAI's Jalapeno chip (built with Broadcom) signals direct competition with Nvidia, and Nvidia may retaliate by launching an OpenAI competitor. He frames this as a serious strategic risk for frontier labs.",
+  "confidence": "speculative",
+  "confidence_evidence": "Baker presents this as a speculative forward-looking warning ('don't be surprised'), not a confirmed view",
+  "themes": [
+    "AI software/models",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "don't be surprised if Nvidia starts an OpenAI competitor",
+  "tickers_named_original": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "OpenAI (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nvidia is the central subject of this thesis \u2014 Baker argues Nvidia faces strategic risk from custom chip development by frontier labs and may retaliate by entering the AI model market, making NVDA directly implicated as both a subject of risk and a potential actor."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Broadcom is the chip design partner for OpenAI's Jalapeno chip, making it a direct participant in the custom silicon trend that Baker identifies as the trigger for this competitive dynamic. It benefits from the custom ASIC buildout even as it contributes to the threat against Nvidia."
+    }
+  ]
+}

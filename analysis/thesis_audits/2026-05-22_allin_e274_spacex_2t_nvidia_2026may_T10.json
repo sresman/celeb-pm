@@ -1,0 +1,49 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T10",
+  "summary": "Nvidia's $20B CPU business guidance makes it overnight one of the world's largest CPU manufacturers, an underappreciated growth vector",
+  "summary_extended": "Baker argues that Nvidia's guidance of $20B in CPU revenue for the year is a massively underappreciated growth vector that has received insufficient attention relative to its GPU business. He contends that Nvidia's unique position as the partner of every major AI lab gives it unparalleled visibility into where models are heading, enabling co-design of CPUs tailored to future workloads \u2014 a structural advantage no other chipmaker can replicate at scale. The $20B figure, if realized, would make Nvidia overnight one of the world's largest CPU manufacturers, a category historically dominated by Intel and AMD. Baker frames this not as a one-time event but as a durable competitive moat, suggesting the market has not yet priced in this new revenue stream. The investment implication is that NVDA's revenue and earnings power are being systematically underestimated by consensus models that focus narrowly on GPU/accelerator sales.",
+  "detail": "Baker highlights Nvidia's guided $20B CPU revenue for the year as extraordinary and a testament to Nvidia's unique position working with every lab, allowing co-design of chips for where models are going. This is a new, underappreciated revenue stream.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls the $20B CPU figure 'pretty extraordinary' and frames it as a structural competitive advantage",
+  "themes": [
+    "semiconductor supply chain",
+    "AI accelerators",
+    "Nvidia platform"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "overnight you're one of the world's largest CPU manufacturers",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "INTC"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Nvidia's CPU business guidance and what it means for Nvidia's revenue trajectory and competitive positioning. NVDA is the direct subject."
+    },
+    {
+      "ticker": "INTC",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Intel is the incumbent CPU market leader most directly disrupted by Nvidia entering the CPU market at scale with $20B in guided revenue. However, Baker's thesis is bullish on NVDA and does not frame INTC as a beneficiary \u2014 INTC would actually be a competitive loser here. Removing as not a beneficiary."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "AMD is a CPU competitor that could be displaced by Nvidia's CPU ramp, but Baker does not reference AMD and the thesis does not imply AMD benefits. Tangential and excluded."
+    }
+  ]
+}

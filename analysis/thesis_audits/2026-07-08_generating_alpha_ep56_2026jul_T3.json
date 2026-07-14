@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha \u2014 Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T3",
+  "summary": "Watts and wafers shortage may prevent an AI overbuild/bubble, alongside the psychological scars of the dot-com bubble",
+  "summary_extended": "Baker argues that two structural physical constraints \u2014 a shortage of power (watts) available for data center buildout and a shortage of semiconductor manufacturing capacity (wafers, primarily at TSMC) \u2014 will act as natural governors preventing the AI infrastructure cycle from becoming a true bubble or overbuild. Unlike the dot-com era, where capital could flow freely into fiber and networking buildout, the AI cycle is gated by real-world physical limits that cannot be quickly resolved regardless of capital availability. Baker also cites the psychological scarring of dot-com-era investors as an additional behavioral brake on excess speculation. The investment implication is that AI infrastructure spending is more likely to be supply-constrained than demand-constrained, meaning the cycle could be longer and more durable than skeptics expect, with less risk of a catastrophic overbuild collapse. No specific price targets or timeframes are cited, but Baker frames this as a medium-term structural view he holds with high conviction.",
+  "detail": "Baker argues two structural constraints \u2014 physical shortage of power (watts) for data centers and semiconductor manufacturing capacity (wafers/TSMC) \u2014 combined with investor memory of the dot-com bust, will likely prevent a true AI bubble and overbuild cycle.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Repeated multiple times as a core structural thesis; Baker says he is 'optimistic and hopeful' this prevents a bubble",
+  "themes": [
+    "semiconductor supply chain",
+    "power/energy",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "fundamentally short watts and wafers and no prior...that shortage may prevent an overbuild",
+  "tickers_named_original": [
+    "TSM"
+  ],
+  "tickers_direct": [
+    "TSM"
+  ],
+  "tickers_subject": [
+    "TSM"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "TSMC is the primary wafer capacity constraint Baker references \u2014 the thesis is explicitly about TSMC's manufacturing capacity as a structural bottleneck for AI infrastructure, making it a direct subject of the thesis and a direct beneficiary of sustained, non-overbuild demand."
+    }
+  ]
+}

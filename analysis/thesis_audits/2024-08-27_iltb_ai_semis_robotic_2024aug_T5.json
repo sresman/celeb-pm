@@ -1,0 +1,45 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best \u2014 AI, semiconductors, and the robotic frontier (EP.385)",
+  "thesis_id": "T5",
+  "summary": "NVIDIA's CUDA software moat is quantifiable via MAMF metric: NVIDIA runs at ~83% vs AMD's MI300 at ~60% and early MI250 at ~10-25%",
+  "summary_extended": "Baker argues that NVIDIA's CUDA software moat is concretely measurable using Stan Beckman's MAMF (Maximum Achievable Matrix Multiplication Flops) metric, which captures how efficiently a GPU actually utilizes its theoretical compute capacity. NVIDIA GPUs achieve approximately 83% MAMF efficiency, while AMD's MI300 has improved from roughly 10-25% (MI250 era) to ~60% on the MI300, still meaningfully lagging NVIDIA. Baker presents the MI250's ~10% MAMF as the definitive explanation for why that chip saw near-zero adoption despite being a competitively specced piece of hardware on paper \u2014 software efficiency, not raw silicon, determined real-world usability. He frames this gap as a durable, multi-generational moat for NVIDIA because closing it requires AMD to iterate through multiple chip generations and accumulate years of software ecosystem development, a pattern consistent with Google TPUs also failing to displace CUDA at scale. The investment implication is that NVIDIA's competitive position is more defensible than hardware-focused analyses suggest, and AMD's GPU compute ambitions face a structural software ceiling that will persist for the foreseeable future.",
+  "detail": "Stan Beckman's MAMF (Maximum Achievable Matrix Multiplication Flops) metric quantifies the CUDA advantage. NVIDIA GPUs run at ~83% MAMF; AMD's MI300 has improved from ~25-30% to ~60% but still lags. The MI250 ran at ~10% MAMF, explaining why it had no adoption despite being a decent chip. This is a durable software moat that takes AMD multiple chip generations to close (consistent with the pattern seen in Google TPUs).",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites specific published data and frames this as the definitive explanation for NVIDIA's competitive moat",
+  "themes": [
+    "semiconductor supply chain",
+    "AI compute efficiency",
+    "CUDA moat"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "NVIDIA GPUs run it per his testing, 83%... AMD is running a 25",
+  "tickers_named_original": [
+    "NVDA",
+    "AMD"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "AMD"
+  ],
+  "tickers_subject": [
+    "NVDA",
+    "AMD"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about NVIDIA's CUDA software moat as quantified by the MAMF metric \u2014 NVDA is the direct subject and primary beneficiary of this structural advantage."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "AMD's MI300 and MI250 GPUs are the explicit comparison case used to illustrate NVIDIA's moat; AMD is a direct subject as the competitor whose software efficiency gap is being analyzed and whose adoption prospects are negatively impacted by this thesis."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T5",
+  "summary": "Only three companies can manufacture AI-grade HBM DRAM; new entrants cannot replicate this capability",
+  "summary_extended": "Baker argues that AI-grade DRAM \u2014 specifically HBM, SOCAM, and LPDDR variants used in AI servers \u2014 constitutes a fundamentally different product from commodity consumer DRAM, and that only three companies in the world (SK Hynix, Samsung, and Micron) possess the manufacturing capability to produce it. He characterizes this capability as 'as close to magic as science can get,' implying decades of accumulated process know-how that cannot be replicated by new entrants such as China's CXMT, which he believes can only threaten the commodity DRAM market. The structural implication is a durable oligopoly with no credible competitive threat on the horizon for AI-server memory, insulating pricing and margins for the three incumbents. Among US-listed equities, Micron is the sole pure-play beneficiary, making it the primary actionable name; SK Hynix and Samsung are Korean-listed and not directly tradeable for most US investors. Baker presents this as a long-term structural moat thesis, not a near-term trade.",
+  "detail": "Baker distinguishes between commodity consumer-grade DRAM (which CXMT from China may flood) and AI-server-grade HBM/SOCAM/LPDDR DRAM, which only SK Hynix, Samsung, and Micron can produce. He describes it as 'as close to magic as science can get,' creating a durable oligopoly moat.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Stated with high conviction multiple times; Baker explicitly names the three producers and dismisses new entrant risk for AI-grade DRAM",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "for the DRAM you need in these AI servers, there are three companies that can make it",
+  "tickers_named_original": [
+    "MU"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [
+    "MU"
+  ],
+  "tickers_implied_original": [
+    "SK Hynix (implied: 000660.KS)",
+    "Samsung (implied: 005930.KS)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is the only US-listed member of the three-company HBM oligopoly Baker describes; it is a direct subject of and beneficiary from this thesis."
+    },
+    {
+      "ticker": "000660.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SK Hynix is one of the three named producers but is Korean-listed and not a US-traded equity; it cannot be actioned by US investors and should be excluded per audit rules."
+    },
+    {
+      "ticker": "005930.KS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Samsung is one of the three named producers but is Korean-listed and not a US-traded equity; it cannot be actioned by US investors and should be excluded per audit rules."
+    }
+  ]
+}

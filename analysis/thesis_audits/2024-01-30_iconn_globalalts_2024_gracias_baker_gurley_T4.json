@@ -1,0 +1,54 @@
+{
+  "date": "2024-01-30",
+  "source": "iConnections Global Alts 2024 \u2014 Industry titans panel: AI, growth/crossover investing",
+  "thesis_id": "T4",
+  "summary": "All hard drives in AI data centers will be replaced by flash storage, reviving a storage investment supercycle",
+  "summary_extended": "Baker argues that all hard drives in AI data centers will be replaced by NAND flash storage, representing a structural shift in how data infrastructure is built and invested in. He draws an analogy to the EMC era \u2014 when storage became the dominant way to invest in the data center buildout \u2014 suggesting that storage is once again becoming a primary investment theme rather than a secondary one. The implication is a storage supercycle driven by AI workloads, which demand the lower latency and higher throughput that flash provides over spinning disk. Baker sees opportunity in both public and private markets across flash storage vendors, and frames this as a high-conviction, definitive outcome rather than a probabilistic view. No specific revenue figures or timeframes were cited, but the medium-term horizon and 'all hard drives' framing suggest a broad, secular replacement cycle is already underway.",
+  "detail": "Baker states all hard drives will be replaced by flash storage in AI data centers. He draws an analogy to the EMC era, suggesting storage is returning as a primary way to invest in data infrastructure, with opportunities in both public and private markets.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Stated as a definitive outcome ('all hard drives are going to be replaced'), draws on historical analogy, says 'lots of opportunity' in public and private",
+  "themes": [
+    "AI datacenter infrastructure",
+    "storage",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "all hard drives are going to be replaced by flash storage",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU",
+    "WDC"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "flash storage vendors (Samsung, SK Hynix, Micron, Western Digital, Seagate)",
+    "SNOW (Snowflake as layer above)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is a major US-listed NAND flash producer and directly benefits from a secular shift from HDD to flash in AI data centers. This is the most actionable US-listed pure-play on the thesis."
+    },
+    {
+      "ticker": "WDC",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Western Digital is a US-listed company with significant NAND flash exposure (alongside its HDD business), making it a direct beneficiary of flash replacing HDDs in AI data centers."
+    },
+    {
+      "ticker": "STX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Seagate is primarily an HDD manufacturer with minimal flash exposure. The thesis explicitly argues HDDs will be replaced, making Seagate a potential loser, not a beneficiary. It should not be included as a beneficiary ticker."
+    },
+    {
+      "ticker": "SNOW",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Snowflake operates as a cloud data platform layer above storage infrastructure. The thesis is specifically about physical flash storage replacing hard drives in AI data centers \u2014 Snowflake is not a direct subject or beneficiary of this hardware-level replacement cycle."
+    }
+  ]
+}

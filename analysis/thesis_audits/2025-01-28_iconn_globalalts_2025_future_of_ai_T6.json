@@ -1,0 +1,32 @@
+{
+  "date": "2025-01-28",
+  "source": "iConnections Global Alts 2025 \u2014 The Future of AI",
+  "thesis_id": "T6",
+  "summary": "GPU financing businesses face significant asset value risk given DeepSeek's demonstration of equivalent workloads on cheaper chips",
+  "summary_extended": "Baker (and co-discussant Gracias) flags a specific risk to GPU financing businesses: if DeepSeek's reported ability to train equivalent workloads on H800 chips (a downscaled, export-restricted version of the H100) is valid, then the residual value assumptions underpinning 3-5 year GPU depreciation cycles may be materially impaired. The core concern is that financed GPU portfolios \u2014 built around the premise that high-end Nvidia GPUs retain strong residual value \u2014 could face significant write-downs if cheaper or lower-spec chips can perform equivalent AI training tasks. Baker does not directly contradict this risk but frames it as a conditional warning ('if what happened in China is actually true'), indicating moderate rather than high conviction. The investment implication is a cautionary flag on specialty finance companies and leasing businesses with large GPU-collateralized loan or lease books, rather than a direct short on Nvidia itself. No specific GPU financing companies are named, and NVDA is only tangentially implicated as the manufacturer of the assets in question rather than the direct subject of the thesis.",
+  "detail": "If DeepSeek's claims about training on H800s (vs H100s) are valid, the residual value of financed GPUs on 3-5 year depreciation cycles is at risk. The value proposition of high-end GPU assets may be impaired if equivalent workloads can run on cheaper, downscaled chips.",
+  "confidence": "moderate",
+  "confidence_evidence": "Gracias raises this as a concern with hedging ('if what happened in China is actually true'). Baker does not directly contradict it. Framed as a risk warning rather than a high-conviction short.",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "GPU financing"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "if I was in a GPU financing business I would be very worried right now",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Nvidia manufactures the H800/H100 GPUs whose residual values are at risk, but the thesis is specifically about GPU financing businesses and their asset value exposure \u2014 not about Nvidia's revenue, margins, or competitive position. Nvidia is the upstream supplier of the collateral asset, not the direct subject or beneficiary of this thesis. Removing as tangential."
+    }
+  ]
+}

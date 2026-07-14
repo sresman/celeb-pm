@@ -1,0 +1,52 @@
+{
+  "date": "2024-02-23",
+  "source": "FII Institute \u2014 Rise of the Gigafirm: next trillion-dollar tech company (panel)",
+  "thesis_id": "T6",
+  "summary": "Foundation model companies attached to giant internet platforms with proprietary data will be immensely valuable; only a few qualify",
+  "summary_extended": "Baker argues that the most valuable AI companies of the next decade will be foundation model companies that are tightly coupled to giant internet platforms with proprietary, hard-to-replicate data moats \u2014 and that only a tiny handful of companies qualify for this structural advantage. He specifically names Google (Gemini attached to Search, YouTube, Gmail, Maps) and Microsoft/OpenAI (GPT models attached to Office 365, Azure, LinkedIn, Bing) as the two clearest examples of this archetype, and also cites Elon Musk's xAI/X (Grok attached to the X social graph and real-time data) as a third candidate. Meta, despite its scale and data assets, has disqualified itself from this value-capture dynamic by choosing to open-source its foundation models (LLaMA), effectively commoditizing its own model layer. The investment implication is highly concentrated: Baker views this as a structural long on GOOGL and MSFT specifically, with the universe of qualifying public equities being extremely small, and suggests investors should not expect many new entrants to this category.",
+  "detail": "Baker identifies Google, Microsoft/OpenAI, and xAI/X as the qualifying platform-attached foundation model companies. Meta has chosen open-source, removing itself from this value capture. The set is extremely small.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker names specific companies and frames this as a high-confidence structural view",
+  "themes": [
+    "AI models",
+    "data moats"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "foundation model company attached to a giant internet platform with proprietary data",
+  "tickers_named_original": [
+    "GOOGL",
+    "MSFT"
+  ],
+  "tickers_direct": [
+    "GOOGL",
+    "MSFT",
+    "META"
+  ],
+  "tickers_subject": [
+    "GOOGL",
+    "MSFT",
+    "META"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is explicitly named as a primary qualifying platform-attached foundation model company, with Gemini tied to Search, YouTube, Gmail, and Maps as proprietary data moats."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Microsoft/OpenAI is explicitly named as a qualifying platform-attached foundation model company, with GPT models tied to Office 365, Azure, LinkedIn, and Bing."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Baker explicitly names Meta as a company that has removed itself from this value-capture dynamic by open-sourcing LLaMA, making it a direct subject of the thesis as a negative case or excluded company \u2014 clearly implied and central to the argument."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2025-10-22",
+  "source": "Invested by Aleph \u2014 Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "thesis_id": "T13",
+  "summary": "Artificial superintelligence (ASI) will arrive within 10 years; economic returns are unknowable but the trajectory is supportive",
+  "summary_extended": "Baker argues that artificial superintelligence \u2014 defined as an AI system smarter than the smartest human in every discipline \u2014 will arrive within 10 years, and that the current trajectory of AI development supports this view. He identifies two primary risks to the current AI investment cycle: first, that the economic returns from ASI prove disappointing (no transformative breakthroughs like warp drives or cancer cures), and second, that edge AI (roughly 130 IQ AI running locally on devices like smartphones) could decentralize compute away from large data centers, undermining the centralized infrastructure buildout thesis. The investment implication is broadly supportive of AI infrastructure and foundation model plays, but Baker's framing of the edge AI risk introduces a structural hedge \u2014 if compute decentralizes, the data center capex supercycle could be disrupted. No specific company is named as the primary subject; the thesis is a macro-level directional view on AI timelines and risk factors rather than a stock-specific call.",
+  "detail": "Baker defines ASI as an AI smarter than the smartest human in every discipline. He believes current trajectory supports getting there. The two biggest risks to the current AI cycle are: (1) economic returns to ASI are lower than expected (no warp drives/cancer cures), and (2) edge AI (130 IQ AI running locally on a phone) disrupts the centralized data center boom via compute decentralization.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states 'I think we will have artificial superintelligence in 10 years' as his explicit 10-year prediction",
+  "themes": [
+    "AI foundation models",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "we will have artificial superintelligence in 10 years",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker's thesis is a macro view on ASI timelines and risks, not a specific claim about Nvidia. While Nvidia benefits from AI infrastructure broadly, the thesis does not make a specific or unambiguous claim about Nvidia's prospects, and the edge AI risk he identifies could actually be a headwind to Nvidia's data center dominance. Adding it here would be contamination from adjacent AI infrastructure theses."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google is not named or specifically implied in this thesis. The ASI timeline and risk framework Baker presents does not unambiguously point to Alphabet as a beneficiary distinct from any other large AI player."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is not named or specifically implied. The thesis is a broad macro view on ASI arrival and risks, not a claim about any specific hyperscaler or foundation model company."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon is not named or specifically implied. Like MSFT and GOOGL, its inclusion appears to be bleed-over from adjacent AI infrastructure theses rather than a direct implication of this specific ASI timeline thesis."
+    }
+  ]
+}

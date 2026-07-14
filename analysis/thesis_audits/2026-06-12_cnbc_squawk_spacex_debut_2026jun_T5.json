@@ -1,0 +1,47 @@
+{
+  "date": "2026-06-12",
+  "source": "CNBC Squawk on the Street \u2014 SpaceX public-debut day: orbital compute economics, compute shortage, IPO",
+  "thesis_id": "T5",
+  "summary": "Terrestrial data centers will never be decommissioned \u2014 once built they retain value \u2014 but orbital compute may dominate new installations within 10-20 years",
+  "summary_extended": "Baker argues that while terrestrial data centers will never be decommissioned and will retain their value, the overwhelming majority of net-new compute installed to serve planet Earth could be orbital within a 10-20 year timeframe, representing a fundamental structural shift in where incremental compute capacity is built. His reasoning is directional rather than near-term actionable \u2014 he uses hedged language ('I think,' 'there may be a day') and a wide time horizon, suggesting this is a long-term structural view about the economics of orbital versus terrestrial compute. The investment implication is a bifurcated future: existing terrestrial data center assets (REITs, operators) retain value as legacy infrastructure, while the incremental growth opportunity shifts toward orbital compute providers. Baker made these comments on SpaceX's public-debut day, implying SpaceX is the primary vehicle he has in mind for orbital compute, though no specific US-listed pure-play orbital compute equity exists today beyond SpaceX itself, which remains private.",
+  "detail": "Baker explicitly states he does not expect terrestrial data centers to be decommissioned. However, he believes the 'overwhelming majority of compute installed for planet Earth' could be orbital within 10-20 years. This implies a bifurcated future: existing terrestrial assets retain value while incremental compute shifts to space.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker uses hedged language ('I think,' 'there may be a day') and a wide 10-20 year range, indicating this is a structural directional view rather than a near-term actionable call.",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "overwhelming majority of compute installed for planet earth happens in outer space",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "EQIX",
+    "DLR"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (SPXC implied)",
+    "terrestrial datacenter REITs and operators"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "EQIX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Equinix is a major publicly listed terrestrial data center REIT/operator. Baker explicitly states terrestrial data centers retain value and will not be decommissioned, making incumbent operators like Equinix direct beneficiaries of the 'legacy floor' thesis."
+    },
+    {
+      "ticker": "DLR",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Digital Realty is a major publicly listed terrestrial data center REIT. Same reasoning as Equinix \u2014 Baker's view that terrestrial assets retain value supports existing operators, making DLR a direct beneficiary of the legacy-floor component of this thesis."
+    },
+    {
+      "ticker": "IRDM",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Iridium operates LEO satellite communications but is not a compute infrastructure provider. The thesis is about orbital compute economics, not satellite communications, so IRDM is not a direct beneficiary and should be excluded."
+    }
+  ]
+}

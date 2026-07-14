@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-12",
+  "source": "CNBC Squawk on the Street \u2014 SpaceX public-debut day: orbital compute economics, compute shortage, IPO",
+  "thesis_id": "T6",
+  "summary": "Starlink V3 and direct-to-cell are key milestones gating the orbital compute timeline; Starship reusability is the critical enabling technology",
+  "summary_extended": "Baker outlines a sequenced milestone framework for evaluating SpaceX as a newly public company, arguing that investors should track four discrete stages: (1) gigawatt-scale terrestrial compute buildout, (2) Starship reusability enabling Starlink V3 satellite launches, (3) direct-to-cell capability rollout, and (4) eventual orbital compute. He presents Starship reusability as the single most critical enabling technology, as without it the economics of launching Starlink V3 satellites at scale are not viable. The investment implication is that SpaceX's public equity is the primary vehicle to express this thesis, with each milestone serving as a trackable catalyst for re-rating. Baker does not provide specific timelines beyond describing the gigawatt terrestrial compute buildout as occurring over 'the next few years,' making this a medium-term, milestone-gated thesis rather than a near-term trade.",
+  "detail": "Baker identifies a sequenced set of milestones for SpaceX as a public company: (1) gigawatt terrestrial compute buildout, (2) Starship reusability enabling Starlink V3 launches, (3) direct-to-cell capability, (4) orbital compute. Investors can track progress against these milestones.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as a framework for investors to track SpaceX, but does not give specific timelines beyond 'next few years' for gigawatt buildout.",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "reusing Starship such that we can put Starlink V3 satellites up into space",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SPXC"
+  ],
+  "tickers_subject": [
+    "SPXC"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (SPXC implied)",
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPXC",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX is the direct subject of this thesis \u2014 the entire framework of milestones (Starship reusability, Starlink V3, direct-to-cell, orbital compute) is about evaluating SpaceX as a newly public company."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is not mentioned in the context of this specific milestone framework for SpaceX. The thesis is about SpaceX's sequenced development roadmap, not about GPU or compute suppliers. NVDA likely bled in from an adjacent AI infrastructure discussion in the same transcript segment and is not a direct subject or beneficiary of this specific thesis."
+    }
+  ]
+}

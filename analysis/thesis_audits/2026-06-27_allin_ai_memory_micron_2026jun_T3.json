@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T3",
+  "summary": "HBM/AI-grade DRAM producers are cross-sectionally cheap relative to the rest of AI",
+  "summary_extended": "Baker argues that HBM and AI-grade DRAM producers are cross-sectionally cheap relative to the rest of the AI investment universe, representing a significant valuation anomaly. His reasoning is that while wafer fab equipment suppliers and other semiconductor supply chain companies have rerated to large premiums versus prior cycles, DRAM stocks have not experienced a comparable rerate despite three structural improvements: a better industry structure, a customization moat from HBM production, and supply agreements with floor pricing that already exceeds prior cycle gross margin peaks. Baker has high conviction in this view, citing a prior public call on HBM makers that is up 14x, and explicitly describes these stocks as 'cross-sectionally cheap relative to the rest of AI.' The investment implication is to be long US-listed HBM/AI-grade DRAM producers, particularly Micron, as the valuation gap between DRAM stocks and the broader AI supply chain is unjustified given the structural improvements in the business. No specific price targets or timeframes were cited, but the thesis is framed as a medium-term opportunity driven by valuation convergence.",
+  "detail": "Baker notes that wafer fab equipment suppliers and other semiconductor supply chain companies have rerated to large premiums vs. prior cycles, but DRAM stocks have not rerated comparably despite improved industry structure, HBM customization moat, and supply agreements with floor pricing above prior cycle gross margin peaks.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly calls them 'cross-sectionally cheap relative to the rest of AI' and has a prior public call on HBM makers that is up 14x",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "these stocks still trade cross-sectionally cheap relative to the rest of AI",
+  "tickers_named_original": [
+    "MU"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [
+    "MU"
+  ],
+  "tickers_implied_original": [
+    "SK Hynix (implied: 000660.KS)",
+    "Samsung (implied: 005930.KS)",
+    "Lam Research (implied: LRCX)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is the primary US-listed HBM/AI-grade DRAM producer and is the direct subject of this thesis about DRAM stocks being cheap relative to the rest of AI."
+    },
+    {
+      "ticker": "LRCX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Lam Research is a wafer fab equipment supplier mentioned as an example of a company that HAS rerated to a premium \u2014 it is used as a contrast to illustrate the DRAM valuation gap, not as a beneficiary or subject of the thesis. It should be removed."
+    }
+  ]
+}

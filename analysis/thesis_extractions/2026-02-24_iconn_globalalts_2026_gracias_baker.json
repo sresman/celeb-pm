@@ -1,0 +1,383 @@
+{
+  "metadata": {
+    "source": "iConnections Global Alts 2026",
+    "date": "2026-02-24",
+    "host": "Antonio Gracias (panel)",
+    "topic": "AI, Tesla, defense, energy \u2014 what comes next",
+    "duration_estimate_min": 30
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "Anthropic is ~4x more capital efficient than OpenAI and growing fast with low cash burn",
+      "detail": "Baker states Anthropic is roughly four times more capital efficient than OpenAI, growing rapidly while not burning much cash. Their models can perform comparable quality tasks using half the tokens of competitors like Google, making them structurally advantaged on cost.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states this as a direct factual claim with specific ratio ('roughly four times more capital efficient'), not hedged as speculation",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI infrastructure",
+        "AI model efficiency",
+        "private markets"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "anthropic is roughly four times more capital efficient than OpenAI"
+    },
+    {
+      "id": "T2",
+      "summary": "Token efficiency is the key competitive axis for AI models \u2014 Anthropic leads on this metric",
+      "detail": "Baker argues that the sum of cost-per-token and token-efficiency is the critical competitive variable. Anthropic can produce comparable quality answers to Google using half the tokens. Combined with xAI's low cost-per-token from superior data center operations, these two metrics together determine which labs win economically.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker frames this as a structural thesis with specific mechanics, not a passing observation. He returns to it multiple times.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI model efficiency",
+        "AI infrastructure",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "token efficiency and cost per token is going to be really really important"
+    },
+    {
+      "id": "T3",
+      "summary": "xAI has the lowest cost-per-token due to superior data center construction and GPU utilization",
+      "detail": "Baker claims xAI builds data centers faster and at lower cost than peers, runs GPUs at higher utilization, and therefore has the lowest cost per token in the industry. This is a structural cost advantage.",
+      "confidence": "moderate",
+      "confidence_evidence": "Stated as a factual claim but sourced from Baker's own analysis; no third-party corroboration cited",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI infrastructure",
+        "AI model efficiency"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Xxii has the lowest cost per token because they build data centers in a superhuman way"
+    },
+    {
+      "id": "T4",
+      "summary": "SaaS/software companies face existential risk from AI-enabled vibe coding and autonomous software development",
+      "detail": "Baker argues that AI tools now allow non-developers to build functional software (e.g., a CRM in 2-3 hours), directly threatening traditional SaaS vendors. He notes HubSpot has already fallen from ~$850 to the low $200s. He has not invested in a pure software company in 6-7 years. He also sees an opportunity for AI labs to acquire small-cap software companies cheaply, gut headcount, and use them as distribution channels \u2014 analogous to Larry Ellison's post-bubble acquisition playbook.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker explicitly states he hasn't invested in a pure software company in 6-7 years, and frames the risk as existential with a 2-3 month decision window for software CEOs",
+      "tickers_named": [
+        "HUBS"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "SaaS disruption",
+        "AI software",
+        "enterprise software"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "we have not invested in a pure software company in like 6 or 7 years"
+    },
+    {
+      "id": "T5",
+      "summary": "AI labs will acquire small-cap software companies as cheap distribution channels, gutting headcount",
+      "detail": "Baker draws an explicit parallel to Larry Ellison's post-dot-com acquisition strategy (PeopleSoft, Siebel). He argues that with small-cap software valuations at 3-4x sales, AI labs can acquire these companies, replace most employees with AI, and use the customer base as a distribution channel. He notes traditional software firms have not yet made such purchases despite the opportunity.",
+      "confidence": "moderate",
+      "confidence_evidence": "Framed as a prediction/thesis rather than a current observation; Baker notes the absence of such deals as evidence the opportunity exists",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "SaaS disruption",
+        "M&A",
+        "AI software"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "a lab can acquire one of these small software companies take out most of the humans"
+    },
+    {
+      "id": "T6",
+      "summary": "Leveraged buyout debt on software companies done 2 years ago is at serious risk",
+      "detail": "Baker warns that private equity software buyouts done 2 years ago at high multiples, now levered 3-4x with high-yield debt, face severe stress as AI disrupts their revenue models. He says he would be 'very worried' holding such securities.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker uses strong language ('very worried') and frames it as a direct risk warning, not speculation",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "SaaS disruption",
+        "credit markets",
+        "private equity"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "very worried if I were holding 3 or 4 times levered high yield security for a buyout done two years ago"
+    },
+    {
+      "id": "T7",
+      "summary": "Humanoid robots will decisively win over specialized robots; Tesla vs. Chinese competitors is the key battle",
+      "detail": "Baker argues the debate between humanoid and specialized robots is now settled in favor of humanoid, driven by the breakthrough of learning from human video data. He frames the competitive landscape as Tesla vs. Chinese players (analogous to EVs), with Tesla holding an AI advantage. He views US dominance in humanoid robotics as a national security imperative.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker says 'I kind of think that debate is over now' \u2014 strong declarative framing",
+      "tickers_named": [
+        "TSLA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "robotics",
+        "AI",
+        "defense tech",
+        "geopolitics"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "humanoid robots are going to be a big winner and I think it's Tesla versus the Chinese"
+    },
+    {
+      "id": "T8",
+      "summary": "Tesla's Autopilot AI is the most token-efficient AI in the world, running superhuman tasks at near-human power consumption",
+      "detail": "Antonio Gracias (corroborated by Baker) argues Tesla Autopilot running on an A4 chip with no cloud access performs the most complex task humans do (driving) at ~20-50W \u2014 comparable to the human brain. This makes Tesla the most advanced edge AI deployment and positions Optimus as a natural extension of this capability advantage.",
+      "confidence": "moderate",
+      "confidence_evidence": "Stated as a strong claim by Gracias with Baker's agreement, but relies on internal analysis; specific wattage figures are approximate",
+      "tickers_named": [
+        "TSLA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "robotics",
+        "AI model efficiency",
+        "edge computing"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "Tesla actually is today the most advanced AI in the world"
+    },
+    {
+      "id": "T9",
+      "summary": "Power and wafer shortages will prevent an AI overbuild, enabling a smoother and longer AI investment cycle",
+      "detail": "Baker argues that historically, new technology bubbles lead to overbuilds and crashes (railroads, internet, etc.). The current constraints on watts (energy) and wafers (TSMC capacity) physically prevent the overbuild that would normally follow a bubble. This could result in a more sustained, less volatile AI investment cycle \u2014 structurally bullish for AI infrastructure investors.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker frames this as a core structural thesis with historical analogy (Carlotta Perez), stated with conviction as a reason to be constructive on AI infrastructure",
+      "tickers_named": [],
+      "tickers_implied": [
+        "TSM",
+        "NVDA"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "power/energy",
+        "macro/cycle"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "shortages of watts and wafers are going to keep us from having an overbuild"
+    },
+    {
+      "id": "T10",
+      "summary": "Space-based compute (racks in space connected by laser) is a viable and strategically important architecture",
+      "detail": "Baker outlines a specific technical vision: scaled Starlink V3 satellites (~100kW each) connected by laser links forming a distributed data center in orbit. He notes lasers in vacuum are faster than fiber, enabling lower latency than terrestrial cloud. Cloud providers already earn a 70% premium for proximity; space-based compute could command similar or greater premiums. He frames this as important for US competitiveness.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker presents specific technical specs (20kW Starlink V3, 130kW Blackwell rack) suggesting deep research, but this is a forward-looking architectural thesis",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure",
+        "power/energy"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "racks in space connected by lasers that's your data center"
+    },
+    {
+      "id": "T11",
+      "summary": "US uranium enrichment capacity is a critical national security gap; investing in domestic enrichment is a priority",
+      "detail": "Gracias highlights that the US buys all nuclear fuel from Russia and has no domestic enrichment capacity. His firm is investing in a company building US enrichment capacity. This is framed as both a national security imperative and an investment opportunity in reindustrializing the nuclear fuel supply chain.",
+      "confidence": "moderate",
+      "confidence_evidence": "Gracias states active investment in this area, giving it operational credibility, but Baker does not independently corroborate",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "nuclear energy",
+        "defense tech",
+        "supply chain reindustrialization"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "we don't enrich fuel at all in America we buy from the Russians"
+    },
+    {
+      "id": "T12",
+      "summary": "Stranded/behind-the-meter power capacity in the US is an underappreciated resource for AI data centers",
+      "detail": "Gracias references companies (including Crusoe) finding stranded industrial power capacity across the US and repurposing it for AI compute. He frames this as a near-term solution to the energy bottleneck that doesn't require new generation capacity.",
+      "confidence": "moderate",
+      "confidence_evidence": "Gracias cites specific companies (Crusoe) as examples, suggesting active investment thesis",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "power/energy",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "stranded capacity in America industrial facilities not being utilized that we can repurpose"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "avoid",
+      "target": "Leveraged high-yield debt on software company LBOs done ~2022",
+      "reasoning": "AI disruption to SaaS revenue models threatens the cash flows underpinning 3-4x levered buyout debt; Baker says he would be 'very worried' holding such securities",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "avoid",
+      "target": "Pure-play traditional SaaS companies",
+      "reasoning": "Baker has not invested in a pure software company in 6-7 years; AI-enabled vibe coding and autonomous software development pose existential competitive threat",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "AI infrastructure / power / energy companies",
+      "reasoning": "Power and wafer shortages prevent overbuild, enabling a longer and smoother AI investment cycle; structurally bullish for infrastructure plays",
+      "confidence": "moderate"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Anthropic / AI labs with high token efficiency",
+      "over": "OpenAI and less capital-efficient labs",
+      "reasoning": "Anthropic is ~4x more capital efficient, growing fast, low burn, and leads on token efficiency \u2014 the key competitive axis for AI economics"
+    },
+    {
+      "preferred": "Humanoid robotics (Tesla Optimus)",
+      "over": "Specialized robots",
+      "reasoning": "Breakthrough in learning from human video data decisively settles the humanoid vs. specialized debate in favor of humanoid"
+    },
+    {
+      "preferred": "AI infrastructure / power / energy",
+      "over": "Traditional SaaS software",
+      "reasoning": "AI infrastructure benefits from constrained supply (watts and wafers) preventing overbuild; SaaS faces existential disruption from AI coding tools"
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "Traditional SaaS companies (e.g., HubSpot)",
+      "nature": "structural_risk",
+      "detail": "AI-enabled vibe coding allows non-developers to build custom software in hours, directly substituting for SaaS products. HubSpot already down from ~$850 to low $200s. Baker frames this as existential with a 2-3 month decision window for CEOs."
+    },
+    {
+      "target": "Leveraged buyout debt on software companies (~2022 vintage)",
+      "nature": "structural_risk",
+      "detail": "3-4x levered high-yield securities backing software LBOs face severe stress as AI disrupts SaaS revenue models. Baker explicitly says he would be 'very worried' holding these."
+    },
+    {
+      "target": "AI sector broadly",
+      "nature": "overhyped",
+      "detail": "Baker and Gracias acknowledge there are 'little bubbles' in different segments of AI. The key question is how big the bubble is and how big the break will be."
+    },
+    {
+      "target": "US national security / defense",
+      "nature": "geopolitical",
+      "detail": "Chinese humanoid robots (e.g., Unitree doing martial arts) and drone swarms represent a real and growing capability gap. Baker frames US dominance in humanoid robotics and AI as a national security imperative."
+    },
+    {
+      "target": "US nuclear energy supply chain",
+      "nature": "structural_risk",
+      "detail": "The US has no domestic uranium enrichment capacity and buys all nuclear fuel from Russia \u2014 a critical supply chain vulnerability analogous to the prior dependence on Russian rocket engines."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "AI labs acquiring small-cap software companies at 3-4x sales",
+      "timing": "near_term (2-3 months per Baker's framing)",
+      "impact": "Would validate the SaaS disruption thesis, accelerate headcount reduction in software, and create new AI-native distribution channels",
+      "beneficiaries": [
+        "AI labs (xAI, Anthropic, OpenAI implied)"
+      ],
+      "losers": [
+        "Traditional SaaS vendors",
+        "SaaS employees"
+      ]
+    },
+    {
+      "event": "Tesla Optimus commercial launch",
+      "timing": "2025-2027 (Baker says 'later this year or 2027')",
+      "impact": "Validates humanoid robot thesis; establishes Tesla as dominant Western humanoid platform",
+      "beneficiaries": [
+        "TSLA"
+      ],
+      "losers": [
+        "Specialized robot manufacturers",
+        "Chinese humanoid competitors (near-term)"
+      ]
+    },
+    {
+      "event": "Power and wafer constraints persisting through AI buildout",
+      "timing": "medium_term (ongoing)",
+      "impact": "Prevents AI infrastructure overbuild, extends investment cycle, avoids bubble-crash dynamic",
+      "beneficiaries": [
+        "AI infrastructure investors",
+        "NVDA (implied)",
+        "TSM (implied)"
+      ],
+      "losers": [
+        "Companies requiring rapid AI capacity scaling"
+      ]
+    },
+    {
+      "event": "AI lab development of space-based compute (racks in orbit)",
+      "timing": "long_term",
+      "impact": "Creates new ultra-low-latency compute tier with 70%+ pricing premium potential; reduces dependence on terrestrial power grid",
+      "beneficiaries": [
+        "SpaceX/Starlink (implied)",
+        "Space compute infrastructure players"
+      ],
+      "losers": [
+        "Terrestrial cloud providers (long-term)"
+      ]
+    },
+    {
+      "event": "Domestic US uranium enrichment capacity coming online",
+      "timing": "long_term",
+      "impact": "Reduces critical dependence on Russian nuclear fuel; enables nuclear power expansion for AI data centers",
+      "beneficiaries": [
+        "Domestic uranium enrichment companies (unnamed)",
+        "Nuclear power operators"
+      ],
+      "losers": [
+        "Russian uranium suppliers"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "AI bubble risk",
+      "view": "Constrained supply (watts and wafers) may prevent the classic overbuild-crash cycle",
+      "detail": "Baker invokes Carlotta Perez's framework on technological waves and financial bubbles. Every major technology has produced a bubble and overbuild. But physical constraints on energy and TSMC wafer capacity may cap the overbuild, resulting in a smoother, longer AI cycle. He acknowledges bubbles exist in pockets but argues the macro constraint is structurally different this time."
+    },
+    {
+      "topic": "Open source AI safety",
+      "view": "Open source is more secure, not less, than closed source AI",
+      "detail": "Baker argues open source projects fix bugs continuously and are generally more secure. He is encouraged that the Open Source AI Foundation remains open source. He frames this as counterintuitive but important for investors evaluating AI safety risk."
+    },
+    {
+      "topic": "AI agent autonomy risk",
+      "view": "Autonomous AI agents acting without human notification is a real and growing operational risk",
+      "detail": "Baker cites a specific example of an Amazon AWS coding agent that deleted critical production code and caused a 14-hour outage because it didn't understand it needed to inform humans. He recommends reading Anthropic's safety reports as the most comprehensive available."
+    },
+    {
+      "topic": "AI model values and optimization function",
+      "view": "The optimization function and values of AI creators are the most important safety variable",
+      "detail": "Gracias argues models are imbued with the values of their creators. He contrasts consumer-morality-optimized models (which may create confirmation bias loops) with truth-seeking models. He recommends using multiple models to cross-check each other, as the host does with Claude and Grok."
+    },
+    {
+      "topic": "Software CEO decision window",
+      "view": "Software company CEOs have 2-3 months to make existential strategic decisions",
+      "detail": "Baker quotes Gladiator ('decisions made now will echo in eternity') and states software CEOs have roughly 2-3 months to adapt their business models before AI disruption becomes irreversible. He notes no traditional software firm has yet made an acquisition at current depressed valuations, which he views as a strategic failure."
+    },
+    {
+      "topic": "US energy competitiveness",
+      "view": "Cautiously optimistic \u2014 America will find solutions through ingenuity despite structural gaps",
+      "detail": "Baker and Gracias acknowledge China is outpacing the US in energy capacity for AI. Solutions discussed include space-based solar/compute, small modular nuclear reactors, domestic uranium enrichment, and stranded industrial power capacity. Both express long-term optimism about American ingenuity but acknowledge the gap is real and urgent."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "date": "2026-06-15",
+  "source": "TBPN \u2014 SpaceX IPO, token path, sovereign AI won't reach frontier",
+  "thesis_id": "T3",
+  "summary": "EV/net PP&E is an increasingly important valuation metric; installed physical assets on Earth will appreciate in value",
+  "summary_extended": "Baker argues that EV/net PP&E is an increasingly important valuation metric for the current market environment, reflecting a structural view that installed physical assets on Earth will appreciate in value over time. He references Goldman Sachs's 'halo trade' concept \u2014 companies with high asset value and low obsolescence risk \u2014 as the intellectual framework underpinning this view. The implication is that asset-heavy AI infrastructure companies (hyperscalers, data center REITs, and similar capital-intensive businesses) are undervalued when assessed on this metric relative to their true replacement-cost value. Baker frames this as a contrarian lens: the market has historically rewarded asset-light businesses, but the AI infrastructure buildout is reversing that dynamic, making physical capital intensity a feature rather than a bug. Investors should look for companies with large, hard-to-replicate installed bases of physical infrastructure that face low technological obsolescence risk.",
+  "detail": "Baker says he is 'increasingly looking at EV to net PP&E as a valuation metric' with the thesis that installed atoms on earth will appreciate. References Goldman Sachs 'halo trade' concept: high asset value, low obsolescence. Implies asset-heavy AI infrastructure companies are undervalued on this metric.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states he is 'increasingly' using this metric and frames it as a structural view, not a passing comment",
+  "themes": [
+    "AI datacenter infrastructure",
+    "valuation frameworks"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "EV to net PP&E as a valuation metric",
+  "tickers_named_original": [
+    "META"
+  ],
+  "tickers_direct": [
+    "META",
+    "AMZN",
+    "GOOGL",
+    "MSFT",
+    "EQIX",
+    "DLR"
+  ],
+  "tickers_subject": [
+    "META"
+  ],
+  "tickers_implied_original": [
+    "hyperscalers broadly",
+    "data center REITs",
+    "AI infrastructure companies"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "META is explicitly named and is a canonical example of a company with massive physical infrastructure (data centers, fiber, hardware) that would score well on EV/net PP&E under Baker's framework, making it a direct subject of this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "AWS/Amazon is a leading hyperscaler with enormous net PP&E from data center buildout; unambiguously among the asset-heavy AI infrastructure companies Baker implies are undervalued on this metric."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Alphabet is a major hyperscaler with massive data center PP&E and fits squarely within Baker's 'installed atoms' thesis as a direct beneficiary of EV/net PP&E revaluation."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Microsoft is a leading hyperscaler investing heavily in physical AI infrastructure; directly implied by Baker's reference to hyperscalers broadly as beneficiaries of this valuation framework."
+    },
+    {
+      "ticker": "EQIX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Equinix is the largest publicly listed data center REIT and is unambiguously implied by Baker's explicit reference to data center REITs as a category benefiting from EV/net PP&E revaluation."
+    },
+    {
+      "ticker": "DLR",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Digital Realty is a major US-listed data center REIT explicitly implied by Baker's reference to data center REITs as beneficiaries of the installed-atoms appreciation thesis."
+    }
+  ]
+}

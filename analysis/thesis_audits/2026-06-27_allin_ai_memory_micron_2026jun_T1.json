@@ -1,0 +1,36 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T1",
+  "summary": "DRAM is the single most important bottleneck in AI infrastructure, not other components",
+  "summary_extended": "Baker argues that DRAM is the single most critical bottleneck in AI infrastructure, explicitly dismissing competing bottleneck candidates including lasers, capacitors, power supply semiconductors, NAND flash, and HDDs. His reasoning is that memory capacity and bandwidth are foundational constraints that directly limit the performance of every AI model, making DRAM uniquely irreplaceable among hardware components. He cites Elon Musk's strategic focus on memory for Terapab as corroborating evidence that sophisticated AI builders recognize DRAM as the binding constraint. The investment implication is to be long DRAM producers, with Micron (MU) being the primary US-listed beneficiary; SK Hynix and Samsung are the other major producers but are not US-listed equities. No specific price targets or timeframes beyond 'medium-term' were cited.",
+  "detail": "Baker explicitly dismisses other bottleneck candidates (lasers, capacitors, power supply semiconductors, NAND flash, HDDs) and identifies DRAM as foundational because memory capacity and bandwidth underpin every AI model's performance. Elon Musk is focusing Terapab on memory for this reason.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this emphatically and repeatedly, names specific alternatives he is dismissing, and cites Musk's strategic focus as corroboration",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "DRAM is the most important bottleneck simply because memory capacity",
+  "tickers_named_original": [
+    "MU"
+  ],
+  "tickers_direct": [
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SK Hynix (implied: 000660.KS)",
+    "Samsung (implied: 005930.KS)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is the primary US-listed DRAM producer and directly benefits from DRAM being identified as the most critical AI infrastructure bottleneck, driving demand and pricing power for its core product."
+    }
+  ]
+}

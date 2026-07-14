@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-15",
+  "source": "TBPN \u2014 SpaceX IPO, token path, sovereign AI won't reach frontier",
+  "thesis_id": "T12",
+  "summary": "SpaceX supply/demand dynamics are favorable post-IPO due to employee ownership concentration and prior liquidity opportunities reducing overhang",
+  "summary_extended": "Baker argues that SpaceX's post-IPO supply/demand dynamics are unusually favorable compared to typical IPO lockup situations, making the stock less susceptible to post-IPO selling pressure. His reasoning centers on two structural factors: over 10,000 SpaceX employees purchased shares on the IPO itself (indicating demand, not just passive receipt), and employees plus long-term investors have had liquidity via tender offers every six months for approximately ten years prior to the IPO. Because those who wanted or needed to sell already had ample opportunity to do so, the typical post-lockup supply overhang that depresses many newly public stocks is significantly reduced in SpaceX's case. The investment implication is that SpaceX shares are likely to trade with less post-IPO selling pressure than the market might expect, making the stock a more attractive near-term holding than conventional IPO caution would suggest.",
+  "detail": "10,000+ SpaceX employees bought stock on the IPO. Employees and long-term investors have had liquidity every 6 months for 10 years via tender offers \u2014 those who wanted to sell already did. This reduces post-IPO supply overhang significantly vs. typical IPO lockup dynamics.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents specific data point (10K+ employees bought on IPO) and logical framework for reduced supply overhang",
+  "themes": [
+    "IPO dynamics",
+    "supply/demand",
+    "space/orbital compute"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "10,000 SpaceX employees bought on the IPO",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (public)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPCE",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Virgin Galactic (SPCE) is not SpaceX and is not implied by this thesis. SpaceX is not yet US-listed under a standard ticker; no US-listed equity directly maps to this thesis at this time."
+    }
+  ]
+}

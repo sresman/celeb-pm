@@ -1,0 +1,57 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "thesis_id": "T11",
+  "summary": "Terrestrial data center capacity that does get built will become extremely valuable ('hope diamonds') as contestation rates rise",
+  "summary_extended": "Baker argues that the accelerating contestation and blocking of planned data center projects \u2014 which he estimates has affected roughly 40% of projects since 2021 \u2014 will make successfully permitted and energized terrestrial compute capacity extraordinarily scarce and valuable, likening it to 'hope diamonds.' He reasons that as opposition from local communities, regulators, and grid operators intensifies, the rate of successful project completion will decline further, creating a structural supply constraint on large-scale (hundreds of megawatts to gigawatt-class) data center capacity. The investment implication is that operators who already hold permitted, energized, and operational terrestrial data center capacity will command significant pricing power and valuation premiums. Baker implies investors should favor established, operating data center REITs and hyperscale operators with existing capacity over those dependent on new greenfield development pipelines.",
+  "detail": "Baker estimates ~40% of planned data centers since 2021 have been contested/blocked, and expects this rate to increase. This makes successfully permitted and energized terrestrial compute capacity scarce and highly valuable, particularly in the hundreds of megawatts to gigawatt range.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker uses the 40% contestation figure and 'hope diamonds' framing with conviction, but the forward projection is inherently uncertain",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "whatever is left on the ground will be incredibly valuable. It'll be a diamond",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "EQIX",
+    "DLR",
+    "IRON",
+    "VRT"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "CoreWeave (private)",
+    "Crusoe (private)",
+    "Equinix (implied: EQIX)",
+    "Digital Realty (implied: DLR)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "EQIX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Equinix is a large-scale, operating data center REIT with existing permitted and energized capacity globally. If contestation rates rise and new supply is constrained, Equinix's existing footprint becomes more valuable \u2014 a direct beneficiary of the scarcity thesis."
+    },
+    {
+      "ticker": "DLR",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Digital Realty similarly holds a large portfolio of operational data centers. Rising contestation rates constraining new supply directly benefit incumbents like DLR whose existing capacity appreciates in value."
+    },
+    {
+      "ticker": "IRON",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Iron Mountain operates data centers with existing permitted capacity and has been expanding its colocation footprint; as a holder of operational terrestrial compute capacity it is a direct beneficiary of the scarcity dynamic Baker describes."
+    },
+    {
+      "ticker": "VRT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Vertiv provides critical power and cooling infrastructure embedded in existing data centers; scarcity of permitted capacity increases the value and utilization of installed infrastructure, benefiting Vertiv's installed base and aftermarket services \u2014 however this connection is somewhat indirect and may be tangential."
+    }
+  ]
+}

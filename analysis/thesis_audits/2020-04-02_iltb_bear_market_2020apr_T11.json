@@ -1,0 +1,83 @@
+{
+  "date": "2020-04-02",
+  "source": "Invest Like the Best \u2014 Investing through a bear market (EP.167)",
+  "thesis_id": "T11",
+  "summary": "Video games are foundational to the metaverse and will become platforms with identity, payments, and social layers",
+  "summary_extended": "Baker argues that video games are the foundational layer of what he calls the metaverse \u2014 connected virtual worlds where a majority of people will spend a majority of their waking hours within his lifetime. He defines the metaverse not as a single product but as a structural shift in how humans socialize and spend time, with video games already functioning as social platforms rather than mere entertainment. His key evidence is Telecom Italia data showing video game traffic up 75% during COVID lockdowns while social media traffic was flat, which he interprets as confirmation that games have already displaced traditional social media as the primary social venue for many users. Baker argues that platforms which have built identity, payments, and social layers \u2014 specifically citing Xbox, PlayStation, Steam, Roblox, and Fortnite \u2014 are best positioned to become the infrastructure of this metaverse, making their parent companies long-term structural winners. The investment implication is to own the companies behind these platforms as they compound value through network effects, virtual economies, and user identity lock-in over a multi-year horizon.",
+  "detail": "Baker defines the metaverse as connected virtual worlds where a majority of people will spend a majority of waking hours within his lifetime. Video games are the current foundation. Platforms with identity and payments layers (Xbox, PlayStation, Steam, Roblox, Fortnite) are well positioned. Video game traffic up 75% (Telecom Italia data) vs social media traffic up 0% during COVID lockdown confirms the social function of games.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls the metaverse 'the most exciting trend in the world today' and presents a detailed structural framework. Backed by traffic data and named specific platforms.",
+  "themes": [
+    "metaverse",
+    "video games",
+    "social networking",
+    "digital platforms",
+    "COVID structural shifts"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "video games are going to be foundational to the metaverse",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MSFT",
+    "SNE",
+    "RBLX",
+    "TTWO",
+    "ATVI"
+  ],
+  "tickers_subject": [
+    "RBLX"
+  ],
+  "tickers_implied_original": [
+    "MSFT",
+    "SNE",
+    "RBLX",
+    "TTWO",
+    "EA",
+    "ATVI"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft owns Xbox, which Baker explicitly names as one of the platforms with identity and payments layers well-positioned for the metaverse. MSFT is a direct beneficiary of this thesis."
+    },
+    {
+      "ticker": "SNE",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Sony owns PlayStation, which Baker explicitly names as one of the key platforms. SNE (now SONY) is a direct beneficiary. Note: Sony is Japan-listed primarily but SNE/SONY trades as an ADR on NYSE, so it qualifies."
+    },
+    {
+      "ticker": "RBLX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Roblox is explicitly named by Baker as a platform with identity and payments layers foundational to the metaverse. It is a direct subject of this thesis. Note: RBLX IPO'd in 2021 after this 2020 interview, so it was implied/private at the time."
+    },
+    {
+      "ticker": "TTWO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Take-Two owns Rockstar (GTA Online) and 2K; while not explicitly named, it was implied as a major gaming platform operator. However, Baker specifically named Fortnite (Epic, private) and Roblox \u2014 TTWO has no explicitly named platform in this thesis. Classification as direct beneficiary is marginal but defensible given the structural video game platform thesis."
+    },
+    {
+      "ticker": "EA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "EA was not named by Baker in this thesis and does not own a dominant platform with identity and payments layers comparable to Xbox, PlayStation, Steam, or Roblox/Fortnite. EA is a game publisher, not a platform operator in the metaverse sense Baker describes. Tangential and should be removed."
+    },
+    {
+      "ticker": "ATVI",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Activision Blizzard operates Battle.net and owns major live-service games (Call of Duty, World of Warcraft) with identity and payments layers. It is a reasonable direct beneficiary of the video-game-as-social-platform thesis, though not explicitly named by Baker."
+    },
+    {
+      "ticker": "VALVE",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Steam (Valve) was explicitly named by Baker but Valve is private and not US-listed. Not added."
+    }
+  ]
+}

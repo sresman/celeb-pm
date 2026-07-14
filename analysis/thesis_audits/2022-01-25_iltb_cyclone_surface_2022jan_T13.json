@@ -1,0 +1,64 @@
+{
+  "date": "2022-01-25",
+  "source": "Invest Like the Best \u2014 The cyclone under the surface (EP.260)",
+  "thesis_id": "T13",
+  "summary": "Large internet/cloud/advertising platforms are levered royalties on global GDP with a structural tailwind from the rising share of revenue that companies spend with them",
+  "summary_extended": "Baker argues that large internet, cloud, and advertising platforms function as structural royalties on global GDP, with a compounding tailwind driven by the rising share of corporate revenue flowing to these platforms over time. He supports this with a cohort analysis: companies founded 50 years ago allocate roughly 2% of revenue to modern internet platforms, while companies founded in the last three years may allocate 50% or more \u2014 meaning every new cohort of businesses is more deeply integrated with these platforms than the last. This dynamic ensures that, in aggregate, the world's spending with these platforms grows faster than GDP simply through the natural turnover of the corporate population. Baker further notes that semiconductors grow at roughly 3x GDP, and suggests these platforms may collectively grow at an even higher multiple. The investment implication is a long-term structural overweight to the dominant internet platform operators that capture advertising, cloud, and commerce spend.",
+  "detail": "Baker describes a cohort analysis: companies founded 50 years ago spend ~2% of revenue with modern internet platforms; companies founded in the last 3 years may spend 50%+ of revenue with them. Every year, the world moves toward these platforms. Combined with semiconductors growing at 3x GDP, these platforms may collectively grow at an even higher multiple of GDP.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as a structural framework he uses, with illustrative numbers he acknowledges are approximate.",
+  "themes": [
+    "internet platforms",
+    "secular growth",
+    "advertising",
+    "cloud computing"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "every year, the world moves towards them",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL",
+    "META",
+    "AMZN",
+    "MSFT"
+  ],
+  "tickers_subject": [
+    "GOOGL",
+    "META",
+    "AMZN",
+    "MSFT"
+  ],
+  "tickers_implied_original": [
+    "GOOGL",
+    "META",
+    "AMZN",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google is one of the dominant internet/advertising/cloud platforms that directly fits Baker's royalty-on-GDP framework, capturing advertising and cloud spend from the growing cohort of platform-dependent businesses."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is a core internet advertising platform that directly benefits from the structural shift in corporate advertising spend toward modern platforms described in Baker's cohort analysis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon operates both a dominant cloud platform (AWS) and a major advertising/commerce platform, making it a direct subject of Baker's royalty-on-GDP thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Microsoft's Azure cloud and enterprise software platforms are direct beneficiaries of the structural shift in corporate spend toward modern internet platforms described by Baker."
+    }
+  ]
+}

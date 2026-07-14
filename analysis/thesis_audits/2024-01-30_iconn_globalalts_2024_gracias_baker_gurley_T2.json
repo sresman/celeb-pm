@@ -1,0 +1,60 @@
+{
+  "date": "2024-01-30",
+  "source": "iConnections Global Alts 2024 \u2014 Industry titans panel: AI, growth/crossover investing",
+  "thesis_id": "T2",
+  "summary": "GPU utilization bottleneck is the central structural problem in AI infrastructure, creating massive investment opportunity",
+  "summary_extended": "Baker argues that the GPU utilization bottleneck is the defining structural problem in AI infrastructure: GPUs have gotten 50x faster in under four years while the rest of the data center has only improved 4x, creating a severe mismatch that leaves GPUs idle 70-80% of the time while still consuming full power. This imbalance requires a fundamental rearchitecting of the entire data center stack \u2014 specifically storage, networking, and memory \u2014 to keep pace with GPU compute throughput. Baker has held this thesis for four years across venture, growth equity, and public equities, making it one of his highest-conviction structural views. The investment implication is not primarily NVDA (which already reflects GPU demand) but rather the infrastructure layers that must be upgraded: high-bandwidth memory, optical networking, and flash storage vendors that enable GPUs to actually run at capacity. Investors should focus on companies supplying the bottleneck-relieving components rather than the GPU itself.",
+  "detail": "Baker argues the GPU has gotten 50x faster in under 4 years while the rest of the data center has only gotten 4x faster. GPUs sit idle 70-80% of the time while consuming full power. This requires fundamental rearchitecting of storage, networking, and memory \u2014 a thesis he has held for four years across venture, growth equity, and public equities.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly calls this a four-year thesis held across all asset classes, gives specific quantitative claims (50x vs 4x, 70-80% idle), and names specific public positions",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "GPU utilization",
+    "storage/networking bottleneck"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "GPU does nothing 70 to 80% of the time sucking full power",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "CIEN",
+    "COHR",
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "CIEN",
+    "COHR",
+    "memory producers (SK Hynix, Samsung, Micron)",
+    "flash storage vendors"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is the context for the bottleneck thesis but is not the investment subject \u2014 Baker's thesis is explicitly about the infrastructure layers (storage, networking, memory) that must catch up to GPUs. NVDA already reflects GPU demand and is not the beneficiary of this specific structural argument."
+    },
+    {
+      "ticker": "CIEN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Ciena is an optical networking vendor directly benefiting from the need to rearchitect data center networking to keep pace with GPU throughput \u2014 a core component of Baker's bottleneck thesis."
+    },
+    {
+      "ticker": "COHR",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Coherent is an optical components supplier directly benefiting from the networking upgrade cycle Baker identifies as necessary to resolve the GPU utilization bottleneck."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Micron is the only US-listed HBM and DRAM memory producer; Baker explicitly names memory as one of the three infrastructure layers requiring fundamental rearchitecting, and MU is the unambiguous US-listed beneficiary of that memory upgrade cycle."
+    }
+  ]
+}

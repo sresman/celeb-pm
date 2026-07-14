@@ -1,0 +1,43 @@
+{
+  "date": "2022-01-25",
+  "source": "Invest Like the Best \u2014 The cyclone under the surface (EP.260)",
+  "thesis_id": "T5",
+  "summary": "Infrastructure software is preferred over application software due to structural risk from hyperscaler competition",
+  "summary_extended": "Baker argues for a structural preference for infrastructure software over application software, driven by the growing threat that hyperscalers (AWS, Azure, Google Cloud) pose to application-layer companies by making it easier for enterprises to build their own apps. He believes application software companies lacking deep proprietary technology face long-term terminal value risk as cloud vendors commoditize the application layer, while infrastructure software providers are more defensible and are increasingly embraced as channels by the hyperscalers themselves \u2014 Google first, then Azure, with AWS as the last holdout. Baker views this as a structural, long-term positioning thesis rather than a near-term trade, explicitly rejecting the idea that software will consolidate into a pure hyperscaler oligopoly. The implication is to favor infrastructure software names like Datadog and Twilio (which provide developer-facing, technically deep infrastructure) over pure application software vendors without differentiated technology. No specific financial metrics or timeframes were cited, but the thesis is framed as extending to terminal value considerations.",
+  "detail": "Baker has a 'big bias towards infrastructure companies relative to application software.' Application software companies without deep technology are at risk as cloud vendors make it easier for enterprises to build their own apps. Google was first to embrace third-party infrastructure software providers as a channel; Azure followed. AWS is the last holdout. Baker believes the world of software will not become an oligopoly of just the three hyperscalers.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a structural belief extending to terminal value, not just near-term positioning.",
+  "themes": [
+    "software",
+    "cloud computing",
+    "infrastructure software",
+    "hyperscaler competition"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "big bias towards infrastructure companies relative to application software",
+  "tickers_named_original": [
+    "TWLO",
+    "DDOG"
+  ],
+  "tickers_direct": [
+    "TWLO",
+    "DDOG"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TWLO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Twilio is a developer-facing infrastructure software company (communications APIs) that fits Baker's preferred category of technically deep infrastructure providers, making it a direct beneficiary of his structural preference for infrastructure over application software."
+    },
+    {
+      "ticker": "DDOG",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Datadog is an observability and monitoring infrastructure platform, squarely in the infrastructure software category Baker favors over application software, making it a direct beneficiary of this structural thesis."
+    }
+  ]
+}

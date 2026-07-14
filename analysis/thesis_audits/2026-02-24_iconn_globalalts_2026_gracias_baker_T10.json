@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-24",
+  "source": "iConnections Global Alts 2026 \u2014 AI, Tesla, defense, energy \u2014 what comes next",
+  "thesis_id": "T10",
+  "summary": "Space-based compute (racks in space connected by laser) is a viable and strategically important architecture",
+  "summary_extended": "Baker outlines a specific technical vision for space-based compute in which scaled Starlink V3 satellites \u2014 each generating approximately 100kW of power \u2014 are connected by laser inter-satellite links to form a distributed orbital data center. He argues that lasers operating in vacuum propagate faster than signals through terrestrial fiber, enabling lower latency than any ground-based cloud architecture, and that this latency advantage could command pricing premiums analogous to (or exceeding) the ~70% premium cloud providers already charge for proximity-based compute. Baker frames this architecture as strategically critical for US competitiveness, suggesting sovereign and defense use cases beyond commercial cloud. The investment implication is long-term and speculative: if orbital compute becomes viable, SpaceX (via Starlink) would be the primary infrastructure provider, but SpaceX remains private, leaving no clean US-listed pure-play equity expression of this thesis at present.",
+  "detail": "Baker outlines a specific technical vision: scaled Starlink V3 satellites (~100kW each) connected by laser links forming a distributed data center in orbit. He notes lasers in vacuum are faster than fiber, enabling lower latency than terrestrial cloud. Cloud providers already earn a 70% premium for proximity; space-based compute could command similar or greater premiums. He frames this as important for US competitiveness.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents specific technical specs (20kW Starlink V3, 130kW Blackwell rack) suggesting deep research, but this is a forward-looking architectural thesis",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "racks in space connected by lasers that's your data center",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

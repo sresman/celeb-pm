@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-07",
+  "source": "All-In Podcast \u2014 Liquidity Summit: secondary markets eating the IPO",
+  "thesis_id": "T6",
+  "summary": "Sierra (Brett Taylor's company) is an attractive private investment in agent-native enterprise software \u2014 building Salesforce-equivalent sales, marketing, and customer service agents from the ground up.",
+  "summary_extended": "Gerstner (not Baker) explicitly names Sierra \u2014 the enterprise AI company co-founded by Brett Taylor \u2014 as a company he would buy on secondary markets, framing it as an agent-native software platform building the equivalent of Salesforce's sales, marketing, and customer service stack from the ground up for the agentic era. The core thesis is that Sierra is positioned to capture enterprise software spend as companies replace legacy CRM and service workflows with AI agents, rather than bolting agents onto existing platforms. The key risk Gerstner identifies is commoditization from foundation model providers like OpenAI or Anthropic moving up the stack, while the key upside is acquisition by a hyperscaler or platform company (Meta, Google, or others) seeking to accelerate agentic enterprise capabilities. Baker does not explicitly endorse the view but does not contradict it, making this primarily Gerstner's thesis with implicit Baker tolerance. Sierra is private and not directly investable on public markets; the secondary market framing is the only near-term access point for most institutional investors.",
+  "detail": "Gerstner names Sierra as a company he would buy in secondary markets. It is building agent-native enterprise software for sales, marketing, and customer service. Key risk: OpenAI/Anthropic could commoditize the layer. Key upside: acquisition target for Meta, Google, or others seeking to accelerate agentic capabilities. Baker does not explicitly endorse but does not contradict.",
+  "confidence": "moderate",
+  "confidence_evidence": "Named by Gerstner as a specific secondary buy recommendation with explicit upside/downside framing. Baker's endorsement is implicit only.",
+  "themes": [
+    "AI agents",
+    "enterprise software",
+    "agentic AI"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Sierra Brett Taylor's company agent native",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Sierra (private)",
+    "Salesforce (CRM)",
+    "OpenAI (private)",
+    "Anthropic (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRM",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Salesforce is referenced only as an analogy for what Sierra is building \u2014 an agent-native equivalent of CRM's product suite. CRM is not a direct subject or beneficiary of this thesis; if anything, Sierra's success would be a competitive threat to CRM, but the thesis does not frame it that way explicitly enough to classify as DIRECT_SUBJECT."
+    }
+  ]
+}

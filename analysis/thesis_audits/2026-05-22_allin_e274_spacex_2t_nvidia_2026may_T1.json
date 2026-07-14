@@ -1,0 +1,58 @@
+{
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "thesis_id": "T1",
+  "summary": "AI inference revenue is approaching $200-400B ARR across major LLM providers by end of 2026, validating ROI on GPU spend",
+  "summary_extended": "Baker argues that AI inference is already generating massive, real revenue \u2014 estimating that OpenAI and Anthropic alone are running at approximately $100B ARR with roughly 80% gross margins on inference workloads. Adding Gemini (Google), Cursor, xAI, and open-source inference deployments, he projects total LLM inference ARR of $200-400B by end of 2026 at high gross margins. This figure is presented as a direct rebuttal to critics who claim hyperscaler AI capex is circular or unvalidated \u2014 Baker contends the revenue is real, external, and growing rapidly. The investment implication is that hyperscaler capex on GPUs and AI infrastructure is justified by demonstrable ROI, and that companies with large inference revenue exposure or GPU infrastructure buildouts are vindicated. He also notes that GPU returns from improved recommender systems at Meta, Google, and Amazon provide additional ROI validation beyond pure LLM inference revenue.",
+  "detail": "Baker estimates OpenAI and Anthropic alone are at ~$100B ARR with ~80% gross margins on inference. Adding Gemini, Cursor, xAI, and open source, he sees $200-400B of ARR by year-end at high gross margins. This validates hyperscaler capex ROI even before counting GPU returns from better recommender systems at Meta/Google/Amazon.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states specific ARR figures and margin estimates with conviction; frames it as 'not hard to see' and uses it to rebut circular funding critiques",
+  "themes": [
+    "AI inference monetization",
+    "LLM revenue scaling",
+    "hyperscaler capex ROI"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "200, 300, 400 billion dollars of ARR at the end of this year",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GOOGL",
+    "META",
+    "AMZN",
+    "MSFT"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "GOOGL",
+    "META",
+    "AMZN",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google's Gemini is explicitly cited as one of the major inference revenue contributors in Baker's $200-400B ARR estimate, and Google is a hyperscaler whose capex ROI is directly validated by this thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker specifically calls out Meta as a beneficiary of GPU ROI through improved recommender systems, directly supporting the capex validation thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly mentions Amazon alongside Meta and Google as a company generating GPU ROI from better recommender systems, directly supporting the capex validation thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft is the primary commercial partner and investor in OpenAI, which Baker cites as one of the two anchor companies (~$100B ARR combined with Anthropic) driving inference revenue; MSFT directly monetizes OpenAI inference through Azure and Copilot products."
+    }
+  ]
+}

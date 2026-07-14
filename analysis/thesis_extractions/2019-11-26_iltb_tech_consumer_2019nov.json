@@ -1,0 +1,583 @@
+{
+  "metadata": {
+    "source": "Invest Like the Best",
+    "date": "2019-11-26",
+    "host": "Patrick O'Shaughnessy",
+    "topic": "Tech and consumer growth investing (EP.149)",
+    "duration_estimate_min": 75
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "We are entering peak disruption analogous to the peak Industrial Revolution, with 30-40 more years of rapid technological change ahead.",
+      "detail": "Baker draws analogy between the integrated circuit (1959) and James Watt's rotary steam engine (1761), arguing peak economic/political/social change from the microchip may still be ahead of us, just as peak Industrial Revolution impact came 70-100 years after Watt's invention.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker frames this as a foundational lens for his entire investment approach, not a passing observation.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "secular technology disruption",
+        "long-duration growth investing"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "we may be just entering peak disruption"
+    },
+    {
+      "id": "T2",
+      "summary": "Apple's used iPhone resale value creates a structural pricing advantage over Android that is underappreciated.",
+      "detail": "Used iPhones retain value far better than Android phones. A consumer trading in an 18-month-old iPhone gets ~$400, effectively paying $600 for a new $1000 iPhone. The comparable Android trade-in yields ~$150, meaning the consumer pays $850. Apple charges more but delivers a lower effective price to the consumer.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker describes this as one of three critically important variables for Apple's business model, presented with specific dollar figures.",
+      "tickers_named": [
+        "AAPL"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "consumer hardware",
+        "platform economics",
+        "Apple ecosystem"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Apple can charge the consumer more but actually have a lower effective price"
+    },
+    {
+      "id": "T3",
+      "summary": "The iPhone is becoming an edge server for a constellation of wearable devices including AirPods and future AR glasses.",
+      "detail": "Baker frames the iPhone as the hub of a client-server-like ecosystem of wearables. The attach rate of wearables (AirPods, future AR glasses) to the iPhone is a key investment variable for Apple's future revenue streams.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Explicitly named as one of three critically important variables for Apple's business model.",
+      "tickers_named": [
+        "AAPL"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "Apple ecosystem",
+        "augmented reality",
+        "wearables"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "the iPhone is becoming an edge server of sorts for wearable devices"
+    },
+    {
+      "id": "T4",
+      "summary": "Apple's hiring of Google's head of search signals a potential entry into search advertising, making Apple a credible Google competitor.",
+      "detail": "Apple hired John Giannandrea (head of search at Google) in 2018. Baker interprets this as a tectonic shift in Apple's privacy stance and a signal that Apple could compete with Google in search. Apple and Facebook are the only two companies with sufficiently differentiated data sets to challenge Google in search.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker frames it as Apple having 'a chance' rather than certainty; conditional on privacy stance shift.",
+      "tickers_named": [
+        "AAPL",
+        "GOOGL",
+        "FB"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "search advertising",
+        "platform competition",
+        "Apple ecosystem"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "Apple had a chance to compete with Google in search"
+    },
+    {
+      "id": "T5",
+      "summary": "Intel's loss of semiconductor manufacturing leadership to TSMC in 2018 was a structural inflection point creating a 20-30% competitiveness swing for fabless chip designers.",
+      "detail": "TSMC's 7nm node is equivalent to Intel's 10nm node. TSMC reached this node before Intel, giving the entire fabless semiconductor ecosystem (Apple chips, etc.) a 10-15% embedded advantage over Intel, representing a 20-30% total swing in competitiveness. Baker calls this one of only two truly important events in technology in 2018.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker calls it one of only two important things that happened in technology in 2018, presented with specific technical detail and quantified competitive impact.",
+      "tickers_named": [
+        "INTC",
+        "TSM",
+        "AAPL"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain",
+        "semiconductor manufacturing",
+        "fabless vs IDM"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "Taiwan Semi got to the node before Intel"
+    },
+    {
+      "id": "T6",
+      "summary": "Artificial intelligence is in the bottom of the first inning and will be the next major platform wave, enabled by mobile-generated data.",
+      "detail": "AI advances have been driven almost entirely by increased compute (cloud) and dramatically more data (from mobile phones), not algorithmic breakthroughs. For every order of magnitude increase in training data, AI quality doubles (per Google and Microsoft Research papers). This creates powerful feedback loops for large-scale data holders.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker presents this as a foundational structural view with specific citations to research papers and quantified relationships.",
+      "tickers_named": [
+        "GOOGL"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "artificial intelligence",
+        "big data",
+        "platform economics",
+        "cloud computing"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "we are at the bottom of the first inning in the AI revolution"
+    },
+    {
+      "id": "T7",
+      "summary": "Data quantity is the single most predictive variable of AI quality, creating compounding moats for dominant-scale internet platforms.",
+      "detail": "Per multiple Google and Microsoft Research papers, every order of magnitude increase in training data doubles AI quality (measured as halving error rate). This means dominant market share \u2192 most users \u2192 most data \u2192 fastest-improving algorithms, creating a self-reinforcing feedback loop that entrenches incumbents and reduces mean reversion.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Backed by specific academic citations; Baker presents this as a core structural view on competitive dynamics.",
+      "tickers_named": [
+        "GOOGL"
+      ],
+      "tickers_implied": [
+        "META",
+        "AMZN",
+        "MSFT"
+      ],
+      "themes": [
+        "artificial intelligence",
+        "platform economics",
+        "competitive moats",
+        "big data"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "for every order of magnitude increase in data, the quality of the AI doubles"
+    },
+    {
+      "id": "T8",
+      "summary": "Autonomous vehicles will have larger economic impact on retail real estate and urban/suburban living patterns than on the core automotive industry.",
+      "detail": "AVs will make long suburban commutes tolerable (sleep, use phone in car), potentially reversing urbanization trends. Combined with drone delivery, AVs will shift the economics between e-commerce and physical retail. Baker frames lateral thinking about AV impact as more important than direct automotive investment.",
+      "confidence": "moderate",
+      "confidence_evidence": "Presented as a structural view but framed speculatively ('I think,' 'going to'); no specific investment vehicle named.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "autonomous vehicles",
+        "retail real estate",
+        "e-commerce vs physical retail",
+        "future of cities"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "cities may have a bigger impact than within the core automotive industry"
+    },
+    {
+      "id": "T9",
+      "summary": "The metaverse is inevitable: a majority of people will spend a majority of waking hours in virtual worlds within our lifetimes.",
+      "detail": "This is a linear extrapolation of current trends in consumer time spent. Video games have gone from sub-5% to a majority of combined UK video game/music/movie sales over 20 years. Video games are the only entertainment format riding Moore's Law, making them continuously better unlike movies or music.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker uses the word 'inevitable' and 'semi-inevitable' multiple times; frames as linear extrapolation of observable data.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "metaverse",
+        "virtual reality",
+        "video games",
+        "consumer engagement"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "inevitable that a majority of people will spend a majority of waking hours in virtual worlds"
+    },
+    {
+      "id": "T10",
+      "summary": "Dominant video game franchises will become the platform layer of the metaverse, analogous to operating systems.",
+      "detail": "When people enter virtual worlds, they will enter through existing game universes (Assassin's Creed for historical settings, Call of Duty/Fortnite for combat). This is already beginning with Fortnite functioning as a proto-metaverse. The dominant franchises today are likely to be the platforms of the metaverse.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker qualifies with 'semi-realistic outcome' and 'hazy edge of intuition'; not presented as certain.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "metaverse",
+        "video games",
+        "platform economics",
+        "virtual reality"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "dominant video game franchises today become the platforms within the metaverse"
+    },
+    {
+      "id": "T11",
+      "summary": "AR platform dominance will accrue to dominant mobile OS providers (Apple, Google), not Facebook/Meta.",
+      "detail": "If the iPhone is an edge server, the dominant phone operating systems will be the dominant AR platform providers. This structurally disadvantages Facebook in AR despite its Oculus and CTRL Labs acquisitions, because Facebook missed the mobile platform revolution.",
+      "confidence": "moderate",
+      "confidence_evidence": "Presented as a logical inference ('highly likely') from the edge server thesis; conditional on that thesis being correct.",
+      "tickers_named": [
+        "AAPL",
+        "GOOGL",
+        "FB"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "augmented reality",
+        "platform economics",
+        "mobile OS",
+        "metaverse"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "it is highly likely that the dominant phone operating systems will be the dominant AR providers"
+    },
+    {
+      "id": "T12",
+      "summary": "Video games are not hit-driven businesses; they are social networks with highly persistent franchise value.",
+      "detail": "For 20 years, Call of Duty has been the best-selling game every year except when Rockstar releases a title. Assassin's Creed and Battlefield consistently appear in top 10/5. The reason is that games are social networks \u2014 friend groups form around specific games and switching costs are very high.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker presents this as a core misperception in public markets that he has high conviction correcting, backed by 20 years of sales data.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "video games",
+        "social networks",
+        "competitive moats",
+        "consumer engagement"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "big misperception in public markets that these are hit-driven businesses"
+    },
+    {
+      "id": "T13",
+      "summary": "Video game monetization will converge upward toward cable TV levels ($0.85-$0.90/hr) and potentially to passionate sports fan levels ($2-3/hr), from current $0.08-0.50/hr.",
+      "detail": "Mobile games monetize at $0.08-0.10/hr; console/PC games at $0.50/hr; average cable channel at $0.85-0.90/hr; highly engaging content at $2-3/hr. Given engagement levels in gaming exceed most TV content, monetization should converge upward. eSports monetization is not yet included in these figures and represents additional upside.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker presents specific per-hour monetization figures and frames convergence as 'inevitable.'",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "video games",
+        "monetization",
+        "eSports",
+        "consumer engagement"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "inevitable that monetization is going to increase"
+    },
+    {
+      "id": "T14",
+      "summary": "Global video game population will eventually encompass all humans on Earth, driven by mobile and Fortnite as new entry points.",
+      "detail": "The global gaming population has 10X'd in 10-15 years. The industry had one entry point (Nintendo/arcades), then the iPhone created a second, and Fortnite created a third. Currently less than one-third of Earth's population plays games; Baker believes everyone will play in some form within his lifetime.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker says he is 'reasonably confident' about this statement; framed as a long-term structural view.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "video games",
+        "mobile gaming",
+        "total addressable market"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "everyone on Planet Earth will play video games in one form or another in my lifetime"
+    },
+    {
+      "id": "T15",
+      "summary": "Facebook's advertising revenue share was structurally undervalued in 2012 relative to its share of consumer time spent.",
+      "detail": "In 2012, internet/mobile was ~35% of consumer time but only ~23% of US ad revenue. Facebook specifically was ~7% of consumer time but only ~4% (~$5B) of ad dollars. Historical precedent (radio, TV) shows ad dollars always follow consumer attention with a lag. Fair share implied ~$35B in global ad revenue for Facebook, with upside from measurability premium and CAC replacing rent.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "This is a retrospective thesis Baker executed with high conviction; described as a 'big position.'",
+      "tickers_named": [
+        "FB"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "digital advertising",
+        "social media",
+        "platform economics",
+        "consumer attention"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "I was very confident that 23% of advertising revenue would go to 36%"
+    },
+    {
+      "id": "T16",
+      "summary": "Top-decile ROICs are more persistent than historically, driven by regulatory capture and scale advantages compounded by AI feedback loops, undermining value investing mean reversion.",
+      "detail": "Two structural forces are reducing mean reversion: (1) increased regulatory capture entrenching incumbents, and (2) scale being the dominant competitive advantage, especially online where AI feedback loops (more users \u2192 more data \u2192 better AI \u2192 more users) make dominant positions self-reinforcing. This explains why value investing has underperformed.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker presents this as a considered structural view with multiple supporting mechanisms; not speculative.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "value investing",
+        "competitive moats",
+        "artificial intelligence",
+        "regulatory capture",
+        "platform economics"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "top decile ROICs are dramatically more persistent than they were even 10 or 15 years ago"
+    },
+    {
+      "id": "T17",
+      "summary": "Breaking up large tech companies would likely be value-accretive due to elimination of conglomerate discount and improved capital allocation.",
+      "detail": "Baker argues Google Search as a standalone business would have very different (better) capital allocation \u2014 higher buybacks \u2014 since it's not a high-growth business. The conglomerate discount embedded in large tech companies means breakup could be net positive for shareholders, though heavy-handed regulation (without breakup) would be net negative and would benefit Chinese internet companies.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker frames this as a way he 'could get comfortable' with breakup; presented as a considered view but not a core investment thesis.",
+      "tickers_named": [
+        "GOOGL",
+        "FB",
+        "AMZN",
+        "AAPL"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "regulatory",
+        "antitrust",
+        "conglomerate discount",
+        "capital allocation"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "I could get comfortable with them being broken up"
+    },
+    {
+      "id": "T18",
+      "summary": "Alternative data has become table stakes for fundamental investors but is not a source of sustained competitive advantage for most funds.",
+      "detail": "Credit card data and sales tracking are now widely available and scale-priced, meaning no single fund has a true proprietary edge. The exception is Renaissance, which locked up proprietary datasets with 50-100 year licenses. Alternative data is causing large earnings-season price moves based on small, error-prone sample sets, creating mispricings.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states this directly and emphatically as a structural observation about the industry.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "alternative data",
+        "market structure",
+        "information edge"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "it is very difficult to get a sustained competitive advantage from alternative data"
+    },
+    {
+      "id": "T19",
+      "summary": "Physical retail with exclusive supply, high cash-paying customers, and digital sophistication is structurally resilient against Amazon.",
+      "detail": "Amazon's Whole Foods acquisition in summer 2017 caused average retailers to fall 10-20% on what Baker viewed as an irrational fear. The correct framework: retailers with (1) exclusive/proprietary supply not on Amazon, (2) high cash-paying customer base (not competing with Prime), and (3) digital sophistication (loyalty program size, personalized messaging) are structurally defensible.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker describes making this a position based on a clear framework; presented with specific screening criteria.",
+      "tickers_named": [
+        "AMZN"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "physical retail",
+        "e-commerce vs physical retail",
+        "consumer",
+        "Amazon disruption"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "Amazon bought Whole Foods and yet your average retailer went down 10% to 20%"
+    },
+    {
+      "id": "T20",
+      "summary": "Netflix faces structural headwinds from rising competitive intensity increasing customer acquisition costs and eliminating pricing power.",
+      "detail": "Netflix benefited from being the near-sole bidder on many Google/Facebook ad keywords (Vickrey auction dynamics), giving it exceptional CAC efficiency. New streaming entrants will increase auction competition, blowing out CAC in ways not modeled by consensus. Simultaneously, loss of licensed content (The Office, Friends) whose value is underappreciated, and elimination of pricing power in a competitive environment, compress the bull case. Baker was short Netflix at time of recording.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker held an active short position; presented with specific auction mechanics and content valuation arguments.",
+      "tickers_named": [
+        "NFLX",
+        "GOOGL",
+        "FB"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "streaming media",
+        "digital advertising",
+        "competitive intensity",
+        "customer acquisition cost"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "we were short Netflix"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "Public equity video game companies (broad basket)",
+      "reasoning": "Misperceived as hit-driven and cyclical; actually social networks with persistent franchises. iPhone substitution fear was wrong \u2014 mobile gaming is complementary. New console cycle (PS4/Xbox One) had largest-ever processing power uplift due to longest prior cycle. Baker owned 8-10% of most US public video game companies.",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "sell",
+      "target": "NFLX",
+      "reasoning": "Rising streaming competition will blow out CAC via Vickrey auction dynamics on Google/Facebook; loss of key licensed content (The Office, Friends) whose value is underappreciated; pricing power disappears in competitive environment; valuation horizons will compress as 5-7 year outcome uncertainty rises.",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "Physical retailers with exclusive supply, high cash-paying customers, and digital sophistication",
+      "reasoning": "Amazon Whole Foods acquisition caused irrational 10-20% selloff in retailers. Amazon validated physical retail value. Retailers meeting the three-criteria screen are structurally defensible.",
+      "confidence": "moderate"
+    },
+    {
+      "direction": "avoid",
+      "target": "Chinese internet companies",
+      "reasoning": "Baker cannot reach top 1% knowledge threshold due to language barrier; process discipline prevents investment regardless of apparent opportunity.",
+      "confidence": "high_conviction"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Technology",
+      "over": "All other sectors",
+      "reasoning": "Alpha spread (top vs bottom decile) scores 10/10 for tech vs 3.5-4/10 for most other sectors. Huge uncertainty about the future creates wild swings and dislocations. Cumulative knowledge advantage accrues to long-tenured tech investors."
+    },
+    {
+      "preferred": "Consumer",
+      "over": "Industrials, Energy, Healthcare, Financials",
+      "reasoning": "Consumer scores 7/10 on alpha richness. Most immediately impacted by technological shifts, creating both enduring businesses and structural losers. Baker explicitly destroyed alpha in industrials, energy, healthcare, and financials."
+    },
+    {
+      "preferred": "Video games (within consumer/tech)",
+      "over": "Traditional media (movies, music)",
+      "reasoning": "Video games are the only entertainment format riding Moore's Law \u2014 continuously improving unlike movies or music. UK data shows games went from sub-5% to majority of combined games/music/movies market over 20 years."
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "NFLX",
+      "nature": "structural_risk",
+      "detail": "Rising competitive intensity from new streaming entrants will increase CAC via Vickrey auction dynamics on Google/Facebook ad platforms in ways consensus has not modeled. Loss of licensed content and elimination of pricing power compound the risk."
+    },
+    {
+      "target": "GOOGL, FB, AMZN, AAPL",
+      "nature": "regulatory",
+      "detail": "Antitrust regulation is the most important risk for large tech platforms. Heavy-handed regulation (without breakup) would be net negative for equities and would benefit Chinese internet companies. Breakup scenario is more benign and potentially value-accretive."
+    },
+    {
+      "target": "Value investing factor",
+      "nature": "structural_risk",
+      "detail": "Mean reversion in ROICs has structurally declined due to regulatory capture and AI-driven scale feedback loops. Algorithmic value strategies have also reduced the career-risk premium that historically supported the factor."
+    },
+    {
+      "target": "Alternative data consumers",
+      "nature": "structural_risk",
+      "detail": "Alternative data creates large earnings-season price moves based on small, error-prone sample sets, causing investors to be offsides when the data is wrong. Not a source of sustained edge for most participants."
+    },
+    {
+      "target": "Intel",
+      "nature": "structural_risk",
+      "detail": "TSMC reached the 7nm/10nm equivalent node before Intel in 2018, eliminating Intel's historical 15-20% embedded manufacturing advantage and creating a 20-30% competitiveness swing in favor of the fabless ecosystem."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "New console cycle launch (PS4/Xbox One generation)",
+      "timing": "2012-2013 (retrospective)",
+      "impact": "Largest-ever processing power uplift over prior generation due to longest prior console cycle. Drove major re-rating of video game equities from trough multiples.",
+      "beneficiaries": [
+        "Public video game publishers (Activision Blizzard, EA, Take-Two implied)"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Amazon acquisition of Whole Foods",
+      "timing": "Summer 2017 (retrospective)",
+      "impact": "Validated value of physical retail from world's most sophisticated e-commerce company; caused irrational 10-20% selloff in retailers, creating buying opportunity in high-quality retailers.",
+      "beneficiaries": [
+        "Physical retailers with exclusive supply and high cash-paying customers"
+      ],
+      "losers": [
+        "Retailers without differentiation"
+      ]
+    },
+    {
+      "event": "Apple hiring Google's head of search (John Giannandrea)",
+      "timing": "2018 (retrospective)",
+      "impact": "Signals potential tectonic shift in Apple's privacy stance and credible entry into search advertising, threatening Google's search monopoly.",
+      "beneficiaries": [
+        "AAPL"
+      ],
+      "losers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "event": "TSMC reaching 7nm node ahead of Intel",
+      "timing": "2018 (retrospective)",
+      "impact": "Eliminated Intel's historical manufacturing lead; created 20-30% competitiveness swing for entire fabless semiconductor ecosystem.",
+      "beneficiaries": [
+        "TSM",
+        "AAPL",
+        "AMD (implied \u2014 fabless designers)"
+      ],
+      "losers": [
+        "INTC"
+      ]
+    },
+    {
+      "event": "Launch of major new streaming services (Disney+, Apple TV+, HBO Max, Peacock)",
+      "timing": "2019-2020",
+      "impact": "Will increase competition for Google/Facebook ad keywords used for subscriber acquisition, blowing out Netflix CAC via Vickrey auction dynamics; will also remove pricing power and licensed content.",
+      "beneficiaries": [
+        "GOOGL",
+        "FB (ad revenue beneficiaries)"
+      ],
+      "losers": [
+        "NFLX"
+      ]
+    },
+    {
+      "event": "Augmented reality glasses launch (Apple ~2022 per Baker's reference)",
+      "timing": "~2022",
+      "impact": "Will establish which mobile OS platform controls the AR layer; likely to entrench Apple and Google as dominant AR platforms.",
+      "beneficiaries": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "losers": [
+        "FB"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "Growth investing philosophy",
+      "view": "Buy businesses at 20-30% FCF yield to EV on 5-7 year forward estimates, assuming multiple compression; get paid on business outcomes not valuation expansion.",
+      "detail": "Baker explicitly states it is critical to assume multiple compression in growth investing. The 5-7 year horizon is as far as he can have a differential view with conviction. Price paid determines return for a given business outcome, not in absolute terms."
+    },
+    {
+      "topic": "Sector focus discipline",
+      "view": "Stick to technology and consumer; avoid all other sectors.",
+      "detail": "Baker has a quantified track record of destroying alpha in industrials, energy, healthcare, and financials while generating sufficient alpha in tech and consumer to overcome those losses. He attributes this to both alpha richness of the sectors and personal passion/knowledge depth."
+    },
+    {
+      "topic": "Top 1% knowledge requirement",
+      "view": "Only take positions where you are in the top 1% of investor knowledge about a company.",
+      "detail": "Tech is a game of cumulative knowledge; many brilliant investors were washed out in 2000 and 2008-09 and never returned, reducing competition. Ben Thompson's Stratechery is cited as the gold standard for what accumulated knowledge looks like in practice."
+    },
+    {
+      "topic": "Value investing",
+      "view": "Structural forces have permanently reduced mean reversion, making classic value investing less effective.",
+      "detail": "Two forces: (1) regulatory capture entrenching incumbents more than in the past 70-80 years; (2) scale as the dominant competitive advantage, amplified by AI data feedback loops. Additionally, algorithmic strategies have arbitraged away the career-risk premium that historically supported value."
+    },
+    {
+      "topic": "Chinese internet",
+      "view": "Chinese internet companies are more innovative than US counterparts due to absence of legacy retail/payments infrastructure, but Baker will not invest due to language barrier preventing top-1% knowledge.",
+      "detail": "Baker visits China at least once per year to observe trends. Chinese super apps (WeChat, Alipay) are the shape of things to come for US internet. First-cut WhatsApp monetization and Uber super-app ambitions were directly inspired by Chinese models."
+    },
+    {
+      "topic": "Occam's Razor in forecasting",
+      "view": "Simple, powerful mental models that allow long-horizon conviction are more valuable than precise short-term estimates.",
+      "detail": "The Sony Walkman/iPod insight (Sonu Kalra anecdote) and the Facebook time-spent/ad-revenue gap are examples of simple frameworks that gave conviction to hold through volatility. Complexity in short-term forecasting (850K vs 900K iPods) is a distraction from the powerful simple truth."
+    },
+    {
+      "topic": "Alternative data",
+      "view": "Table stakes but not a competitive advantage; the biggest structural change to public equity investing since Reg FD.",
+      "detail": "Alternative data is 'dark matter' \u2014 has huge impact on prices (stocks move on provider reports) but is widely available and scale-priced. The other dark matter is private market activity influencing public equity valuations. Cohort analysis enabled by alt data may be more useful in venture than public markets."
+    },
+    {
+      "topic": "Physical retail investment framework",
+      "view": "Exclusive supply + high cash-paying customers + digital sophistication = structurally defensible retailer.",
+      "detail": "Amazon Prime is the key competitive threat; high cash-paying customers are not Prime members and thus not competing on that dimension. Exclusive/proprietary supply cannot be replicated on Amazon. Digital sophistication (loyalty program, personalization) is the third filter."
+    }
+  ]
+}

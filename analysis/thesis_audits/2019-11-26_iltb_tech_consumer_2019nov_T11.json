@@ -1,0 +1,53 @@
+{
+  "date": "2019-11-26",
+  "source": "Invest Like the Best \u2014 Tech and consumer growth investing (EP.149)",
+  "thesis_id": "T11",
+  "summary": "AR platform dominance will accrue to dominant mobile OS providers (Apple, Google), not Facebook/Meta.",
+  "summary_extended": "Baker argues that if smartphones function as edge servers \u2014 the primary compute layer for augmented reality \u2014 then the dominant mobile operating system providers will naturally become the dominant AR platform providers, because they control the hardware-software stack that AR applications will run on. He reasons that Apple and Google, as the duopoly owners of iOS and Android respectively, are structurally positioned to capture AR platform economics in the same way they captured mobile platform economics. This thesis structurally disadvantages Facebook despite its investments in Oculus (VR headsets) and CTRL Labs (neural interface), because Facebook missed the mobile platform revolution and lacks a proprietary OS or hardware ecosystem with meaningful market share. Baker presents this as a high-confidence logical inference ('highly likely') conditional on the edge server thesis being correct, with a long-term time horizon tied to the eventual mainstream adoption of AR. The investment implication is to favor AAPL and GOOGL as AR platform beneficiaries and to be skeptical of FB's ability to dominate AR despite its acquisitions.",
+  "detail": "If the iPhone is an edge server, the dominant phone operating systems will be the dominant AR platform providers. This structurally disadvantages Facebook in AR despite its Oculus and CTRL Labs acquisitions, because Facebook missed the mobile platform revolution.",
+  "confidence": "moderate",
+  "confidence_evidence": "Presented as a logical inference ('highly likely') from the edge server thesis; conditional on that thesis being correct.",
+  "themes": [
+    "augmented reality",
+    "platform economics",
+    "mobile OS",
+    "metaverse"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "it is highly likely that the dominant phone operating systems will be the dominant AR providers",
+  "tickers_named_original": [
+    "AAPL",
+    "GOOGL",
+    "FB"
+  ],
+  "tickers_direct": [
+    "AAPL",
+    "GOOGL",
+    "FB"
+  ],
+  "tickers_subject": [
+    "FB"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AAPL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Apple owns iOS, one of the two dominant mobile operating systems, and is directly positioned as a likely AR platform winner under Baker's thesis. Apple is a direct beneficiary of the structural advantage he describes."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google owns Android, the other dominant mobile OS, and is equally positioned as a likely AR platform winner. Direct beneficiary of the mobile OS-to-AR platform thesis."
+    },
+    {
+      "ticker": "FB",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Facebook/Meta is the direct subject of the contrarian element of this thesis \u2014 Baker argues FB is structurally disadvantaged in AR despite its Oculus and CTRL Labs acquisitions because it lacks a dominant mobile OS. FB is the company whose AR ambitions are being challenged."
+    }
+  ]
+}

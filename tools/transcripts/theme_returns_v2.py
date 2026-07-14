@@ -66,6 +66,11 @@ UNIVERSE: list[str] = [
     "LUNR", "MA", "META", "MSFT", "MSTR", "MU", "NOW", "NVDA", "ORCL", "QCOM",
     "RBLX", "RDW", "RKLB", "RXRX", "SDGR", "SMH", "SNOW", "SPCE", "SPCX", "SPY",
     "TEAM", "TGT", "TSLA", "TTWO", "V", "VST",
+    # Added 2026-07-09 for override + new-theme baskets (Part 2/3). Delisted/
+    # ADR/private names (ATVI, VSAT, SATS, CRSO) resolve to NO_DATA gracefully.
+    "AMAT", "KLAC", "LRCX", "T", "VZ", "TMUS", "HUBS", "ATVI", "NBIS", "VSAT",
+    "SATS", "LUMN", "U", "EQIX", "DLR", "SONY", "NTDOY", "VRT", "ETN", "PWR",
+    "NET", "FSLY", "AKAM", "LEU", "CRSO",
 ]
 
 # --- Event-generation config -------------------------------------------------
@@ -92,6 +97,122 @@ def load_api_key() -> str:
 
 
 # ---------------------------------------------------------------------------
+# Durable manual-override layer (analysis/manual_overrides.json)
+#
+# Applied AFTER clustering + basket resolution, immediately BEFORE returns.
+# Two kinds:
+#   cluster_overrides: move a thesis from one theme to another (re-clustering);
+#                      applied to the assignments dict before event generation.
+#   event_overrides:   set resolved_basket / basket_source / basket_direction and
+#                      boolean flags on a resolved event row; applied after
+#                      resolve_basket, before compute_returns. Match wins over
+#                      clustering by design — this file survives rebuilds.
+# Match keys: theme, date, mention_number, summary_contains (str | list, all must
+# be substrings, case-insensitive).
+# ---------------------------------------------------------------------------
+OVERRIDES_JSON = ANALYSIS_DIR / "manual_overrides.json"
+PAIR_TRADE = "PAIR_TRADE"
+OVERRIDE_FLAGS = (
+    "is_derisk_signal", "is_thesis_reversal", "is_thesis_close",
+    "exclude_from_long_stats",
+)
+
+
+def load_overrides() -> dict[str, list[dict[str, Any]]]:
+    if not OVERRIDES_JSON.exists():
+        return {"cluster_overrides": [], "event_overrides": []}
+    raw = json.loads(OVERRIDES_JSON.read_text())
+    return {
+        "cluster_overrides": list(raw.get("cluster_overrides", [])),
+        "event_overrides": list(raw.get("event_overrides", [])),
+    }
+
+
+def _match(m: dict[str, Any], *, theme: str, date: str, summary: str,
+           mention_number: int | None = None) -> bool:
+    if "theme" in m and m["theme"] != theme:
+        return False
+    if "date" in m and m["date"] != date:
+        return False
+    if "mention_number" in m and mention_number is not None and m["mention_number"] != mention_number:
+        return False
+    sc = m.get("summary_contains")
+    if sc is not None:
+        subs = [sc] if isinstance(sc, str) else sc
+        if not all(s.lower() in summary.lower() for s in subs):
+            return False
+    return True
+
+
+def apply_cluster_overrides(
+    assignments: dict[str, list[dict[str, Any]]], overrides: dict[str, Any]
+) -> None:
+    """Move theses between themes per cluster_overrides (mutates assignments)."""
+    for ov in overrides.get("cluster_overrides", []):
+        frm, to, m = ov["from_theme"], ov["to_theme"], ov["match"]
+        moved: list[dict[str, Any]] = []
+        keep: list[dict[str, Any]] = []
+        for t in assignments.get(frm, []):
+            (moved if _match(m, theme=frm, date=t["date"],
+                             summary=str(t.get("summary", ""))) else keep).append(t)
+        assignments[frm] = keep
+        dest = assignments.setdefault(to, [])
+        for t in moved:
+            if t not in dest:
+                dest.append(t)
+
+
+def find_event_override(
+    overrides: dict[str, Any], *, theme: str, date: str, summary: str,
+    mention_number: int | None = None, require_summary: bool = False,
+) -> dict[str, Any] | None:
+    for ov in overrides.get("event_overrides", []):
+        ov_typed: dict[str, Any] = ov
+        m = ov_typed["match"]
+        if require_summary and "summary_contains" not in m:
+            continue
+        if _match(m, theme=theme, date=date, summary=summary, mention_number=mention_number):
+            return ov_typed
+    return None
+
+
+def apply_event_override(row: dict[str, Any], ov: dict[str, Any]) -> None:
+    ap = ov["apply"]
+    if "resolved_basket" in ap:
+        row["resolved_basket"] = ", ".join(ap["resolved_basket"])
+    if "basket_source" in ap:
+        row["basket_source"] = ap["basket_source"]
+    if "basket_direction" in ap:
+        row["basket_direction"] = ap["basket_direction"]
+    for flag in OVERRIDE_FLAGS:
+        if flag in ap:
+            row[flag] = "TRUE" if ap[flag] else "FALSE"
+    row["override_note"] = ov.get("note", "")
+
+
+# ---------------------------------------------------------------------------
+# THESIS_REVERSAL guard (Part 4): a reversal must express a change from Baker's
+# OWN prior stance, not merely bearish-sounding words about a topic.
+# ---------------------------------------------------------------------------
+STANCE_REVERSAL_PATTERNS: list[str] = [
+    r"no longer (believe|think|hold|see|the)",
+    r"used to (think|believe|be)",
+    r"previously (thought|believed|argued|said|held)",
+    r"walked back", r"backtrack", r"\bwas wrong\b", r"changed (his|my|her|its) (mind|view|thinking|stance)",
+    r"reversed (his|my|the|its) (view|stance|position|call)",
+    r"lost its .{0,45}(leadership|advantage|edge|lead|crown|frontier|moat|position)",
+    r"has ceded", r"ceded (its|the) (lead|leadership|edge)",
+    r"no longer the (cost leader|leader|lowest|best)",
+    r"abandon(ed|ing) (his|the|its)", r"reversal of (his|the) (prior|earlier)",
+]
+
+
+def is_stance_reversal(text: str) -> bool:
+    t = text.lower()
+    return any(re.search(p, t) for p in STANCE_REVERSAL_PATTERNS)
+
+
+# ---------------------------------------------------------------------------
 # Step 4: price fetch + cache (only new tickers hit the API)
 # ---------------------------------------------------------------------------
 def fetch_prices(api_key: str, force_refetch: bool) -> dict[str, dict[str, float]]:
@@ -108,13 +229,18 @@ def fetch_prices(api_key: str, force_refetch: bool) -> dict[str, dict[str, float
                 "from": EODHD_FROM_DATE, "to": today, "period": "d",
                 "fmt": "json", "api_token": api_key,
             }
-            resp = requests.get(
-                EODHD_URL_TEMPLATE.format(symbol=ticker), params=params, timeout=HTTP_TIMEOUT
-            )
-            resp.raise_for_status()
-            rows = resp.json()
+            try:
+                resp = requests.get(
+                    EODHD_URL_TEMPLATE.format(symbol=ticker), params=params, timeout=HTTP_TIMEOUT
+                )
+                resp.raise_for_status()
+                rows = resp.json()
+                print(f"  [fetched] {ticker}")
+            except requests.RequestException as exc:
+                # Invalid/delisted/private ticker (e.g. 404) -> graceful NO_DATA.
+                rows = []
+                print(f"  [no data] {ticker}: fetch failed ({exc.__class__.__name__})")
             cache_path.write_text(json.dumps(rows))
-            print(f"  [fetched] {ticker}")
             time.sleep(SLEEP_BETWEEN_FETCH)
 
         series = _series_from_rows(rows)
@@ -254,15 +380,12 @@ def generate_events(
         if _is_hc(t) and _venue_match(str(t.get("source", ""))):
             emit("HC_HIGH_PROFILE_VENUE", t)
 
-    # THESIS_REVERSAL (LONG themes only; light self-reference guard)
+    # THESIS_REVERSAL (LONG themes only; Part-4 tightened guard: requires an
+    # explicit change from Baker's own prior stance, not just bearish words).
     if direction == "LONG":
-        key_blob = " ".join(key_patterns).lower()
         for t in theses:
-            summary_lc = str(t.get("summary", "")).lower()
-            for kw in REVERSAL_KEYWORDS:
-                if kw in summary_lc and kw not in key_blob:
-                    emit("THESIS_REVERSAL", t)
-                    break
+            if is_stance_reversal(str(t.get("summary", ""))):
+                emit("THESIS_REVERSAL", t)
 
     return events
 
@@ -393,6 +516,10 @@ def main() -> None:
     assignments, unclustered = cluster_theses(theses, baskets)
     clustered = len(theses) - unclustered
 
+    # Step 1b: durable cluster overrides (re-theme specific theses)
+    overrides = load_overrides()
+    apply_cluster_overrides(assignments, overrides)
+
     # Step 2: generate events
     raw_events: list[dict[str, Any]] = []
     for theme, theme_theses in assignments.items():
@@ -418,14 +545,27 @@ def main() -> None:
         raise SystemExit(f"No {CALENDAR_SYMBOL} calendar data — cannot anchor returns.")
     print(f"Calendar ({CALENDAR_SYMBOL}): {len(calendar)} days [{calendar[0]} .. {calendar[-1]}]")
 
-    # Steps 3 + 5: resolve baskets, compute returns
+    # Steps 3 + 5: resolve baskets, apply event overrides, compute returns
     for ev in events:
         tickers, source, direction, asterisk = resolve_basket(ev["theme"], ev["date"], baskets)
         ev["resolved_basket"] = ", ".join(tickers)
         ev["basket_source"] = source if source else NO_BASKET
         ev["basket_direction"] = direction
         ev["basket_asterisk"] = str(asterisk)
-        ev.update(compute_returns(ev["date"], tickers, direction, prices, calendar))
+        ov = find_event_override(
+            overrides, theme=ev["theme"], date=ev["date"],
+            summary=str(ev.get("summary", "")), mention_number=ev.get("mention_number"),
+        )
+        if ov is not None:
+            apply_event_override(ev, ov)
+        basket = [x.strip() for x in ev["resolved_basket"].split(",") if x.strip()]
+        if ev["basket_source"] == PAIR_TRADE or ev["basket_direction"] == PAIR_TRADE:
+            for label in INTERVALS:
+                ev[f"ret_{label}"] = PAIR_TRADE
+                ev[f"smh_{label}"] = PAIR_TRADE
+                ev[f"excess_{label}"] = PAIR_TRADE
+        else:
+            ev.update(compute_returns(ev["date"], basket, ev["basket_direction"], prices, calendar))
 
     # Step 6: sort + write
     events.sort(key=lambda e: (e["date"], e["theme"]))
