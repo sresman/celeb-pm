@@ -1,0 +1,23 @@
+{
+  "date": "2025-10-22",
+  "source": "Invested by Aleph — Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "thesis_id": "T8",
+  "summary": "Semiconductors (public and private) are structurally advantaged because AI makes global GDP inexorably more silicon-intensive",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker's thesis is a broad structural claim that AI makes global GDP more silicon-intensive. He does not specifically name Nvidia as a beneficiary of this exact thesis. The thesis explicitly states 'no single company singled out as the primary beneficiary.' Including NVDA is an inference about who benefits from the general theme, not a specific connection Baker made in this thesis."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "REMOVE",
+      "reasoning": "Same reasoning as NVDA. Baker does not specifically name Broadcom in connection with this structural thesis about AI increasing silicon intensity of GDP. AVGO's inclusion is an inference about sector beneficiaries, not a direct connection Baker made to this exact claim. The thesis is explicitly a broad sector call with no specific company named."
+    }
+  ]
+}

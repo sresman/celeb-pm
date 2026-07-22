@@ -1,0 +1,58 @@
+{
+  "date": "2025-07-17",
+  "source": "All-In Podcast \u2014 Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
+  "thesis_id": "T6",
+  "summary": "Blackwell-trained models (Grok 5, OpenAI o5, next Gemini) will represent a significant step-function improvement over current Hopper-trained models",
+  "summary_extended": "Baker argues that the next generation of frontier AI models \u2014 specifically Grok 5, OpenAI's o5, and the next Gemini \u2014 will represent a significant step-function improvement in capability because they will be trained on Nvidia's Blackwell architecture rather than the prior Hopper generation. His reasoning is that Blackwell's substantially greater compute density and memory bandwidth will unlock model quality gains that Hopper-trained models could not achieve, making the Blackwell ramp a critical inflection point for AI capability rather than merely an incremental hardware upgrade. The investment implication is that Nvidia is the primary beneficiary as the sole supplier of Blackwell GPUs at scale, and that hyperscalers racing to train and deploy these superior models will sustain or accelerate their already-elevated AI capex cycles. Baker presents this as a high-conviction forward-looking structural view, implying that the Blackwell transition validates continued infrastructure spending and competitive moats for the leading model developers.",
+  "detail": "Baker explicitly states that the next generation of frontier models trained on Blackwell will be a 'really big step function.' This implies Nvidia's Blackwell ramp is a critical catalyst for AI capability advancement and by extension for hyperscaler capex and Nvidia revenue.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this directly and with conviction as a forward-looking structural view",
+  "themes": [
+    "AI model competition",
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "trained on Blackwell and I think that will be a really big step function",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "GOOGL",
+    "MSFT",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nvidia's Blackwell architecture is the explicit subject of the thesis \u2014 the step-function improvement in model quality is directly attributed to Blackwell training, making NVDA the primary beneficiary and subject of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Google DeepMind's next Gemini model is explicitly named as one of the Blackwell-trained frontier models expected to show step-function improvement, making GOOGL a direct beneficiary of the capability leap Baker describes."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is not explicitly named in this thesis. OpenAI (o5) is mentioned but OpenAI is not publicly listed; MSFT's connection as OpenAI's investor is too indirect to classify as a direct beneficiary of this specific Blackwell training thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Grok 5 is attributed to xAI (not Meta), but Meta is a major Blackwell customer training its own frontier Llama models at scale \u2014 however, Meta is not explicitly named in this thesis and the connection is inferential rather than direct. Reclassifying as tangential would be appropriate, but given Meta's confirmed large Blackwell orders and frontier model ambitions it narrowly qualifies as a direct beneficiary. [RE-AUDIT: Baker did not explicitly name Meta or its Llama models in connection with this Blackwell training thesis. The first-pass audit itself acknowledged the connection was 'inferential rather than direct.' Grok 5 is xAI's, o5 is OpenAI's, and Gemini is Google's \u2014 Meta was not named. Under the strict test, this must be removed.]"
+    }
+  ]
+}

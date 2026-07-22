@@ -26,8 +26,7 @@
     "MSFT",
     "AMZN",
     "META",
-    "TSM",
-    "NVDA"
+    "TSM"
   ],
   "tickers_subject": [
     "GOOGL",
@@ -76,9 +75,9 @@
     },
     {
       "ticker": "NVDA",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "NVDA is the dominant supplier of AI accelerators and directly benefits from sustained, supply-constrained hyperscaler capex, though the thesis is not specifically about NVDA's business model."
+      "reasoning": "NVDA is the dominant supplier of AI accelerators and directly benefits from sustained, supply-constrained hyperscaler capex, though the thesis is not specifically about NVDA's business model. [RE-AUDIT: While Nvidia is an obvious beneficiary of AI infrastructure spending, Baker did not specifically connect NVDA to this thesis about FCF-funded hyperscaler capex and physical supply constraints (wafers and watts). NVDA is a GPU supplier, not a wafer capacity or energy constraint. Its inclusion appears to be contamination from adjacent AI infrastructure discussion rather than a specific connection to this exact thesis.]"
     },
     {
       "ticker": "MU",

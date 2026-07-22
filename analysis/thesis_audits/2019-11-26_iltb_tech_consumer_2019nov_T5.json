@@ -23,9 +23,7 @@
   "tickers_direct": [
     "INTC",
     "TSM",
-    "AAPL",
-    "AMD",
-    "QCOM"
+    "AAPL"
   ],
   "tickers_subject": [
     "INTC",
@@ -53,15 +51,15 @@
     },
     {
       "ticker": "AMD",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "AMD is the most unambiguous implied beneficiary: it is a US-listed fabless x86 CPU designer that was first to market with 7nm chips via TSMC, directly competing against Intel in the same markets Baker describes. The thesis about fabless designers gaining a 20-30% competitiveness swing over Intel applies most directly to AMD among publicly traded companies."
+      "reasoning": "AMD is the most unambiguous implied beneficiary: it is a US-listed fabless x86 CPU designer that was first to market with 7nm chips via TSMC, directly competing against Intel in the same markets Baker describes. The thesis about fabless designers gaining a 20-30% competitiveness swing over Intel applies most directly to AMD among publicly traded companies. [RE-AUDIT: Baker did not specifically name AMD in connection with this thesis. AMD is an obvious implied beneficiary of the general structural claim, but the critical test requires Baker to have specifically connected AMD to this exact thesis \u2014 he did not. This is an inference added in the prior audit, not a direct connection Baker made.]"
     },
     {
       "ticker": "QCOM",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Qualcomm is a major US-listed fabless designer manufacturing at TSMC whose chips directly benefit from TSMC's process leadership over Intel, making it a clear implied beneficiary of the structural shift Baker describes."
+      "reasoning": "Qualcomm is a major US-listed fabless designer manufacturing at TSMC whose chips directly benefit from TSMC's process leadership over Intel, making it a clear implied beneficiary of the structural shift Baker describes. [RE-AUDIT: Baker did not specifically name Qualcomm in connection with this thesis. Like AMD, Qualcomm is a plausible implied beneficiary of the general structural claim about fabless designers, but Baker did not explicitly connect Qualcomm to this exact thesis. This was an inference added in the prior audit.]"
     }
   ]
 }

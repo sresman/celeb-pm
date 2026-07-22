@@ -1,0 +1,35 @@
+{
+  "date": "2024-01-30",
+  "source": "iConnections Global Alts 2024 — Industry titans panel: AI, growth/crossover investing",
+  "thesis_id": "T1",
+  "summary": "AI scaling laws entrench hyperscale incumbents, making most standalone frontier model companies worthless",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "MSFT",
+    "META",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Google as one of the hyperscale incumbents that wins under his scaling law thesis due to compute, data, and distribution moats."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Microsoft/OpenAI as one of the hyperscale winners in his scaling law thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Baker did not explicitly name Meta in connection with this specific thesis. The first-pass reasoning relied on inference ('fitting Baker's criteria') and Meta's open-source role, not a direct statement by Baker connecting Meta to this exact scaling law / hyperscale incumbent thesis. Per the strict test, inferred beneficiaries must be removed."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Baker did not explicitly name Amazon in connection with this thesis. The first-pass reasoning explicitly acknowledged it 'was not original' and that its inclusion was an inference based on it being a hyperscale cloud provider. This is exactly the kind of addition the strict audit is designed to remove."
+    }
+  ]
+}

@@ -119,6 +119,18 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "source": "All-In Podcast", "host": "All-In Liquidity Summit panel (Gerstner, Rodriguez)",
         "topic": "Liquidity Summit: secondary markets eating the IPO",
     },
+    # Added 2026-07-22 (6-new-appearances task). Baker is a guest/bestie among
+    # multiple All-In speakers — extraction must attribute only Baker's contributions.
+    "WvTTDxMuAis": {
+        "label": "allin_e125_spacex_starship_2023apr", "date": "2023-04-21",
+        "source": "All-In Podcast", "host": "Chamath, Jason, Sacks, Friedberg",
+        "topic": "E125: SpaceX Starship launch, Fox News settlement, AI/Reddit (with Antonio Gracias)",
+    },
+    "wu-p5xrJ8-E": {
+        "label": "allin_tariffs_agi_prize_2025jul", "date": "2025-07-17",
+        "source": "All-In Podcast", "host": "Chamath, Jason, Sacks, Friedberg",
+        "topic": "Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
+    },
     # BG2 Pod
     "Tx9jT2c6e3U": {
         "label": "bg2_spacex_ipo_2026jun", "date": "2026-06-11",
@@ -137,9 +149,19 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "source": "TBPN", "host": "Technology Brothers",
         "topic": "SpaceX IPO, token path, sovereign AI won't reach frontier",
     },
-    # Heller House / Mission Control -- REMOVED 2026-07-09: red herring, not a
-    # Baker appearance (reporter profiling SpaceX CFO Bret Johnson). See
-    # analysis/_removed_files_log.md.
+    # Heller House / Mission Control.
+    # NOTE (2026-07-22): a prior file (2026-02-15_heller_house_spacex_cfo_2026) was
+    # REMOVED 2026-07-08 as a red herring (reporter profiling SpaceX CFO Bret Johnsen;
+    # see analysis/_removed_files_log.md). Re-added per operator instruction, reframed
+    # as Baker-as-INTERVIEWER of the CFO — a legitimate source of Baker's own views via
+    # his questions/commentary. Extraction MUST attribute only Baker (not Johnsen);
+    # pending operator sign-off at the basket-curation gate. See
+    # analysis/six_new_appearances_implementation_notes.md (SD-6NEW-1).
+    "jOgbqt04eUk": {
+        "label": "heller_house_spacex_cfo_2026jun", "date": "2026-06-08",
+        "source": "Heller House", "host": "Gavin Baker (as interviewer)",
+        "topic": "Interview with SpaceX CFO Bret Johnsen at Mission Control — financial mechanics, Starship timeline, capital risk",
+    },
     # Invested by Aleph
     "ugihLT9cFTE": {
         "label": "aleph_semis_globalwarming_2025oct", "date": "2025-10-22",

@@ -65,8 +65,8 @@ from .theme_returns_v2 import (
 ANALYSIS_DIR = targets.REPO_ROOT / "analysis"
 TIMELINE_JSON = ANALYSIS_DIR / "thesis_timeline_v2_flat.json"
 BASKETS_JSON = ANALYSIS_DIR / "theme_baskets_v3.json"
-OUTPUT_CSV = ANALYSIS_DIR / "step4_signal_events_v6_with_returns_extended.csv"
-OUTPUT_XLSX = ANALYSIS_DIR / "step4_signal_events_v6_with_returns_extended.xlsx"
+OUTPUT_CSV = ANALYSIS_DIR / "step4_signal_events_v7_with_returns_extended.csv"
+OUTPUT_XLSX = ANALYSIS_DIR / "step4_signal_events_v7_with_returns_extended.xlsx"
 
 HORIZONS: dict[str, int] = {
     "1m": 21, "1q": 63, "6m": 126, "9m": 189, "1y": 252, "18m": 378, "2y": 504,

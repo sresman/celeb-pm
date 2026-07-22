@@ -20,8 +20,7 @@
   "tickers_direct": [
     "META",
     "GOOGL",
-    "MSFT",
-    "AMZN"
+    "MSFT"
   ],
   "tickers_subject": [],
   "tickers_implied_original": [
@@ -51,9 +50,9 @@
     },
     {
       "ticker": "AMZN",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "Amazon benefits as both an internet platform (advertising, e-commerce AI) and through AWS application-layer AI services; fits the software/internet application thesis directly."
+      "reasoning": "Amazon benefits as both an internet platform (advertising, e-commerce AI) and through AWS application-layer AI services; fits the software/internet application thesis directly. [RE-AUDIT: While Amazon is an internet company, Baker's specific framing of the thesis centered on software and internet companies benefiting from cheaper inference at the application layer. There is no evidence Baker specifically named Amazon in connection with this thesis \u2014 Amazon's primary AI narrative is infrastructure (AWS), which Baker was explicitly de-emphasizing. Without a specific mention connecting AMZN to this application-layer thesis, it should be removed.]"
     }
   ]
 }

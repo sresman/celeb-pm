@@ -21,9 +21,7 @@
   "tickers_direct": [
     "MSFT",
     "SNE",
-    "RBLX",
-    "TTWO",
-    "ATVI"
+    "RBLX"
   ],
   "tickers_subject": [
     "RBLX"
@@ -57,9 +55,9 @@
     },
     {
       "ticker": "TTWO",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "Take-Two owns Rockstar (GTA Online) and 2K; while not explicitly named, it was implied as a major gaming platform operator. However, Baker specifically named Fortnite (Epic, private) and Roblox \u2014 TTWO has no explicitly named platform in this thesis. Classification as direct beneficiary is marginal but defensible given the structural video game platform thesis."
+      "reasoning": "Take-Two owns Rockstar (GTA Online) and 2K; while not explicitly named, it was implied as a major gaming platform operator. However, Baker specifically named Fortnite (Epic, private) and Roblox \u2014 TTWO has no explicitly named platform in this thesis. Classification as direct beneficiary is marginal but defensible given the structural video game platform thesis. [RE-AUDIT: Baker did not explicitly name any Take-Two property (GTA Online, 2K games) in connection with this thesis. He named Xbox, PlayStation, Steam, Roblox, and Fortnite specifically. TTWO was not mentioned in connection with this exact thesis and fails the critical test of specific connection.]"
     },
     {
       "ticker": "EA",
@@ -69,9 +67,9 @@
     },
     {
       "ticker": "ATVI",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "Activision Blizzard operates Battle.net and owns major live-service games (Call of Duty, World of Warcraft) with identity and payments layers. It is a reasonable direct beneficiary of the video-game-as-social-platform thesis, though not explicitly named by Baker."
+      "reasoning": "Activision Blizzard operates Battle.net and owns major live-service games (Call of Duty, World of Warcraft) with identity and payments layers. It is a reasonable direct beneficiary of the video-game-as-social-platform thesis, though not explicitly named by Baker. [RE-AUDIT: Baker did not explicitly name Activision Blizzard, Battle.net, Call of Duty, or World of Warcraft in connection with this thesis. The platforms he specifically named were Xbox, PlayStation, Steam, Roblox, and Fortnite. ATVI is a general video game beneficiary but was not specifically connected to this exact thesis by Baker.]"
     },
     {
       "ticker": "VALVE",

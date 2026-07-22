@@ -1,0 +1,35 @@
+{
+  "date": "2022-01-25",
+  "source": "Invest Like the Best — The cyclone under the surface (EP.260)",
+  "thesis_id": "T13",
+  "summary": "Large internet/cloud/advertising platforms are levered royalties on global GDP with a structural tailwind from the rising share of revenue that companies spend with them",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "META",
+    "AMZN",
+    "MSFT"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Google/Alphabet as one of the dominant internet/advertising/cloud platforms that function as structural royalties on GDP in this exact thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Meta as a core internet advertising platform directly subject to the cohort analysis and royalty-on-GDP framework described in this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Amazon as one of the large internet/cloud/advertising platforms that are the direct subject of this structural royalty-on-GDP thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Microsoft as one of the dominant cloud/internet platforms directly subject to this thesis, capturing the rising share of corporate revenue flowing to these platforms."
+    }
+  ]
+}

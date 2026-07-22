@@ -1,0 +1,29 @@
+{
+  "date": "2025-01-28",
+  "source": "iConnections Global Alts 2025 — The Future of AI",
+  "thesis_id": "T9",
+  "summary": "We are in year 3 of a decade-long AI infrastructure supercycle analogous to the 1990s PC/client-server boom",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "MSFT",
+    "AVGO"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Nvidia as the primary analog to Cisco in the 1990s infrastructure buildout when discussing this specific AI supercycle thesis. It is the clearest direct beneficiary he named in connection with this exact structural claim."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "While Baker mentioned Microsoft as one of the 1990s-era winners (Oracle, Sun, Cisco, EMC, Microsoft, Dell) to illustrate the historical analog, he did not specifically name the current Microsoft as a direct beneficiary of the AI infrastructure supercycle thesis. The historical reference to MSFT is illustrative of the past cycle, not a specific claim about the current company's role in the AI buildout."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically connect AVGO to this AI infrastructure supercycle thesis in the transcript. AVGO may be an obvious sector beneficiary, but the critical test requires Baker to have explicitly named it in connection with this exact thesis, which he did not. Its inclusion appears to be analyst inference rather than a direct Baker statement."
+    }
+  ]
+}

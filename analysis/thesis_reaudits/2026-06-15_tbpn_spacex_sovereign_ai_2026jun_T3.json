@@ -1,0 +1,47 @@
+{
+  "date": "2026-06-15",
+  "source": "TBPN — SpaceX IPO, token path, sovereign AI won't reach frontier",
+  "thesis_id": "T3",
+  "summary": "EV/net PP&E is an increasingly important valuation metric; installed physical assets on Earth will appreciate in value",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "META",
+    "AMZN",
+    "GOOGL",
+    "MSFT",
+    "EQIX",
+    "DLR"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "The summary does not indicate Baker specifically named META in connection with the EV/net PP&E thesis. META appears to have been inferred as a canonical example rather than explicitly connected by Baker to this specific valuation framework in this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "AMZN was added as an inferred beneficiary of the hyperscaler category, not because Baker specifically named Amazon in connection with the EV/net PP&E thesis. This is a sector-level inference, not a direct connection."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "GOOGL was added as an inferred beneficiary based on being a hyperscaler, not because Baker specifically named Alphabet/Google in connection with the EV/net PP&E valuation metric thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "MSFT was added as an inferred beneficiary based on being a hyperscaler, not because Baker specifically named Microsoft in connection with the EV/net PP&E thesis."
+    },
+    {
+      "ticker": "EQIX",
+      "action": "REMOVE",
+      "reasoning": "While Baker referenced data center REITs as a category, EQIX was not specifically named by Baker in connection with this thesis. Category-level inference does not meet the strict test for direct connection."
+    },
+    {
+      "ticker": "DLR",
+      "action": "REMOVE",
+      "reasoning": "Like EQIX, DLR was inferred from Baker's general reference to data center REITs as a category. Baker did not specifically name Digital Realty in connection with the EV/net PP&E thesis."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best — AI, semiconductors, and the robotic frontier (EP.385)",
+  "thesis_id": "T14",
+  "summary": "Hyperscaler ROIC has increased despite rising capex, disproving the AI ROI skeptic narrative",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "META",
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly uses Meta as his primary case study for this thesis, specifically citing Meta Advantage and the post-IDFA revenue re-acceleration as direct, measurable evidence of AI ROI. Meta is the centerpiece of this argument."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically names Alphabet/Google as one of the major hyperscalers whose ROIC has risen despite surging capex, directly citing it as empirical evidence for this thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "The summary notes Microsoft is 'clearly implied' but the critical test requires Baker to have specifically named Microsoft in connection with this exact ROIC thesis. 'Implied' does not meet the strict standard — if Baker did not explicitly name Microsoft when making this ROIC claim, it should be removed."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Similarly, Amazon is described as 'clearly implied' as one of 'all of these companies,' but the strict standard requires explicit connection. If Baker did not specifically name Amazon when citing rising ROIC as evidence against AI ROI skepticism, it fails the critical test and should be removed."
+    }
+  ]
+}

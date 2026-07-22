@@ -1,0 +1,23 @@
+{
+  "date": "2025-07-17",
+  "source": "All-In Podcast — Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
+  "thesis_id": "T1",
+  "summary": "Tariffs on semiconductors would undermine US AI leadership and are likely to be avoided or carved out",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "AVGO"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name NVDA in connection with this semiconductor tariff thesis. The thesis is a general structural/policy observation about the logical incompatibility of semiconductor tariffs and US AI leadership. No specific company was named as a beneficiary of tariff carve-outs in this thesis. NVDA's inclusion is an inferential leap — it is the obvious beneficiary of the general theme, but Baker did not specifically connect it to this exact claim."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name AVGO in connection with this semiconductor tariff thesis. Like NVDA, AVGO's inclusion is based on thematic association (AI chip supplier) rather than Baker explicitly connecting AVGO to this specific tariff carve-out argument. The thesis is a general structural observation with no named company beneficiaries."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2022-01-25",
+  "source": "Invest Like the Best — The cyclone under the surface (EP.260)",
+  "thesis_id": "T11",
+  "summary": "The metaverse is real and coming, but today's true metaverses are video games (Roblox, Fortnite, World of Warcraft, Destiny, Minecraft)",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "RBLX",
+    "MSFT",
+    "AAPL",
+    "GOOGL",
+    "SNE"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "RBLX",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Roblox as one of the true existing metaverses where real commerce occurs — directly connected to this thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Minecraft (owned by Microsoft) as one of the true existing metaverses, and the thesis summary specifically calls out Minecraft/Microsoft as a favored gaming platform with existing metaverse-like ecosystems."
+    },
+    {
+      "ticker": "AAPL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly called out Apple's forthcoming headset as a hardware catalyst and identified Apple as a mobile OS platform owner with profound structural advantages in the XR/metaverse transition — directly connected to this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly identified Google/Android as the other mobile OS platform owner with structural advantages in the metaverse/XR transition — directly connected to this thesis."
+    },
+    {
+      "ticker": "SNE",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly expressed excitement about PlayStation VR by name as a hardware catalyst in the VR/XR convergence — Sony is the direct subject of that specific callout within this thesis."
+    }
+  ]
+}

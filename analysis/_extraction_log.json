@@ -1,12 +1,12 @@
 {
   "model": "claude-sonnet-4-6",
-  "transcripts_processed": 39,
-  "ok": 4,
-  "skipped": 35,
+  "transcripts_processed": 45,
+  "ok": 6,
+  "skipped": 39,
   "errors": [],
-  "total_input_tokens": 79359,
-  "total_output_tokens": 25862,
-  "estimated_cost_usd": 0.626,
+  "total_input_tokens": 107374,
+  "total_output_tokens": 21866,
+  "estimated_cost_usd": 0.6501,
   "rows": [
     {
       "label": "iltb_tech_consumer_2019nov",
@@ -14,10 +14,9 @@
       "source": "Invest Like the Best",
       "filepath": "transcripts/whisper/2019-11-26_iltb_tech_consumer_2019nov.txt",
       "output": "analysis/thesis_extractions/2019-11-26_iltb_tech_consumer_2019nov.json",
-      "status": "ok",
-      "input_tokens": 18498,
-      "output_tokens": 6445,
-      "counts": "20 theses, 4 recommendations, 6 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "iltb_bear_market_2020apr",
@@ -25,10 +24,9 @@
       "source": "Invest Like the Best",
       "filepath": "transcripts/whisper/2020-04-02_iltb_bear_market_2020apr.txt",
       "output": "analysis/thesis_extractions/2020-04-02_iltb_bear_market_2020apr.json",
-      "status": "ok",
-      "input_tokens": 14409,
-      "output_tokens": 5426,
-      "counts": "15 theses, 5 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "columbia_sima_investing_2020may",
@@ -71,6 +69,17 @@
       "output_tokens": 0
     },
     {
+      "label": "cnbc_sharpe_angle_spacs_2021aug",
+      "date": "2021-08-09",
+      "source": "CNBC Sharpe Angle",
+      "filepath": "transcripts/whisper/2021-08-09_cnbc_sharpe_angle_spacs_2021aug.txt",
+      "output": "analysis/thesis_extractions/2021-08-09_cnbc_sharpe_angle_spacs_2021aug.json",
+      "status": "ok",
+      "input_tokens": 4471,
+      "output_tokens": 2068,
+      "counts": "6 theses, 0 recommendations, 2 catalysts"
+    },
+    {
       "label": "themarket_inflation_matters",
       "date": "2021-09-13",
       "source": "The Market (themarket.ch)",
@@ -101,15 +110,25 @@
       "output_tokens": 0
     },
     {
+      "label": "sohn_australia_2021_coinbase",
+      "date": "2021-12-03",
+      "source": "Sohn Hearts & Minds Australia 2021 (secondary coverage)",
+      "filepath": "transcripts/web/2021-12-03_sohn_australia_2021_coinbase.txt",
+      "output": "analysis/thesis_extractions/2021-12-03_sohn_australia_2021_coinbase.json",
+      "status": "ok",
+      "input_tokens": 2739,
+      "output_tokens": 1193,
+      "counts": "3 theses, 1 recommendations, 1 catalysts"
+    },
+    {
       "label": "iltb_cyclone_surface_2022jan",
       "date": "2022-01-25",
       "source": "Invest Like the Best",
       "filepath": "transcripts/whisper/2022-01-25_iltb_cyclone_surface_2022jan.txt",
       "output": "analysis/thesis_extractions/2022-01-25_iltb_cyclone_surface_2022jan.json",
-      "status": "ok",
-      "input_tokens": 22286,
-      "output_tokens": 6323,
-      "counts": "17 theses, 5 recommendations, 6 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "onthetape_fear_market_killer_2022mar",
@@ -130,6 +149,17 @@
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
+    },
+    {
+      "label": "allin_e125_spacex_starship_2023apr",
+      "date": "2023-04-21",
+      "source": "All-In Podcast",
+      "filepath": "transcripts/youtube/2023-04-21_allin_e125_spacex_starship_2023apr_WvTTDxMuAis.txt",
+      "output": "analysis/thesis_extractions/2023-04-21_allin_e125_spacex_starship_2023apr.json",
+      "status": "ok",
+      "input_tokens": 40187,
+      "output_tokens": 4719,
+      "counts": "10 theses, 3 recommendations, 5 catalysts"
     },
     {
       "label": "twist_ai_platform_shift_2023jun",
@@ -187,10 +217,9 @@
       "source": "Invest Like the Best",
       "filepath": "transcripts/whisper/2024-08-27_iltb_ai_semis_robotic_2024aug.txt",
       "output": "analysis/thesis_extractions/2024-08-27_iltb_ai_semis_robotic_2024aug.json",
-      "status": "ok",
-      "input_tokens": 24166,
-      "output_tokens": 7668,
-      "counts": "20 theses, 5 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "allin_sec_bitcoin_xai_2024dec",
@@ -241,6 +270,17 @@
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
+    },
+    {
+      "label": "allin_tariffs_agi_prize_2025jul",
+      "date": "2025-07-17",
+      "source": "All-In Podcast",
+      "filepath": "transcripts/youtube/2025-07-17_allin_tariffs_agi_prize_2025jul_wu-p5xrJ8-E.txt",
+      "output": "analysis/thesis_extractions/2025-07-17_allin_tariffs_agi_prize_2025jul.json",
+      "status": "ok",
+      "input_tokens": 34542,
+      "output_tokens": 5248,
+      "counts": "15 theses, 3 recommendations, 5 catalysts"
     },
     {
       "label": "aleph_semis_globalwarming_2025oct",
@@ -353,6 +393,17 @@
       "output_tokens": 0
     },
     {
+      "label": "heller_house_spacex_cfo_2026jun",
+      "date": "2026-06-08",
+      "source": "Heller House",
+      "filepath": "transcripts/youtube/2026-06-08_heller_house_spacex_cfo_2026jun_jOgbqt04eUk.txt",
+      "output": "analysis/thesis_extractions/2026-06-08_heller_house_spacex_cfo_2026jun.json",
+      "status": "ok",
+      "input_tokens": 20563,
+      "output_tokens": 4658,
+      "counts": "11 theses, 3 recommendations, 6 catalysts"
+    },
+    {
       "label": "bg2_spacex_ipo_2026jun",
       "date": "2026-06-11",
       "source": "BG2 Pod",
@@ -401,6 +452,17 @@
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
+    },
+    {
+      "label": "cnbc_spacex_drawdown_2026jul",
+      "date": "2026-07-20",
+      "source": "CNBC",
+      "filepath": "transcripts/whisper/2026-07-20_cnbc_spacex_drawdown_2026jul.txt",
+      "output": "analysis/thesis_extractions/2026-07-20_cnbc_spacex_drawdown_2026jul.json",
+      "status": "ok",
+      "input_tokens": 4872,
+      "output_tokens": 3980,
+      "counts": "10 theses, 3 recommendations, 6 catalysts"
     }
   ]
 }

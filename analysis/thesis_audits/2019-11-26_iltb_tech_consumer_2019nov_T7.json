@@ -21,8 +21,6 @@
   ],
   "tickers_direct": [
     "GOOGL",
-    "META",
-    "AMZN",
     "MSFT"
   ],
   "tickers_subject": [
@@ -42,15 +40,15 @@
     },
     {
       "ticker": "META",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "Meta operates at massive scale with billions of users generating social and behavioral data across Facebook, Instagram, and WhatsApp, making it a direct beneficiary of the data-quantity-drives-AI-quality thesis."
+      "reasoning": "Meta operates at massive scale with billions of users generating social and behavioral data across Facebook, Instagram, and WhatsApp, making it a direct beneficiary of the data-quantity-drives-AI-quality thesis. [RE-AUDIT: While Meta is an obvious beneficiary of the data-quantity thesis, Baker did not specifically name Facebook/Meta in connection with this exact structural claim in the transcript. It appears to have been included by inference rather than explicit connection.]"
     },
     {
       "ticker": "AMZN",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "Amazon operates dominant-scale platforms in e-commerce and cloud (AWS), generating enormous quantities of behavioral and transactional data that directly benefit from the data-scaling dynamic Baker describes."
+      "reasoning": "Amazon operates dominant-scale platforms in e-commerce and cloud (AWS), generating enormous quantities of behavioral and transactional data that directly benefit from the data-scaling dynamic Baker describes. [RE-AUDIT: Amazon is a plausible beneficiary of the data-scaling thesis, but Baker did not specifically name Amazon in connection with this exact claim. Its inclusion appears inferential rather than based on Baker explicitly linking it to this thesis.]"
     },
     {
       "ticker": "MSFT",

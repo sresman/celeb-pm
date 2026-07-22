@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "source": "Sohn Hearts & Minds Australia 2021",
+    "date": "2021-12-03",
+    "host": "Sohn Hearts & Minds Australia 2021",
+    "topic": "Stock pick: Coinbase (COIN) \u2014 Coinbase Cloud as the AWS of crypto / web3 infra",
+    "duration_estimate_min": null
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "Coinbase Cloud is the AWS of crypto \u2014 a foundational web3 infrastructure layer with 20-30 year compounding potential",
+      "detail": "Baker's primary value driver for COIN is Coinbase Cloud, which he frames as the infrastructure and tooling layer for web3 application development across multiple blockchains. He draws an explicit analogy to AWS as the foundational cloud infrastructure layer for web2, arguing Coinbase Cloud will play the same role for web3. The 20-30 year horizon reflects his view that programmable blockchains open a much larger and more disruptive design space than the prior decade's cloud/AI/SaaS cycle.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Presented as single stock pick at Sohn conference; explicitly framed as long-term high-conviction; 20-30 year horizon stated; primary value driver identified as Coinbase Cloud rather than near-term trading",
+      "tickers_named": [
+        "COIN"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "crypto infrastructure",
+        "web3",
+        "blockchain developer tooling",
+        "cloud infrastructure analogy"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "Cloud is the infrastructure and tooling layer for web 3.0"
+    },
+    {
+      "id": "T2",
+      "summary": "Programmable crypto enables far more diverse revenue streams than fiat-focused brokers, giving Coinbase structural monetization optionality",
+      "detail": "Baker argues that the programmable nature of cryptocurrency allows Coinbase to generate revenue across trading, custody, staking, infrastructure/cloud, and developer tooling \u2014 layers simply unavailable to traditional fiat-focused brokers. This multi-layer monetization is a structural advantage that compounds over time as web3 adoption grows.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Explicitly stated as a core pillar of the thesis; framed as a structural differentiation vs. traditional brokers",
+      "tickers_named": [
+        "COIN"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "crypto infrastructure",
+        "web3",
+        "fintech disruption",
+        "platform monetization"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "lets a company like Coinbase generate a wide variety of revenue streams"
+    },
+    {
+      "id": "T3",
+      "summary": "Crypto/web3 will drive significantly more technological disruption over the next 20-30 years than the prior decade's cloud/AI/SaaS cycle",
+      "detail": "Baker characterizes the prior decade's technology environment as comparatively 'stable,' dominated by cloud, AI, and SaaS. He expects programmable blockchains to open a much larger and more disruptive design space, implying that investors underestimate the magnitude of disruption ahead and that infrastructure providers positioned early will capture outsized value.",
+      "confidence": "moderate",
+      "confidence_evidence": "Stated as a directional macro view supporting the COIN thesis; not quantified with specific metrics but framed with conviction as a structural backdrop",
+      "tickers_named": [
+        "COIN"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "web3",
+        "crypto infrastructure",
+        "secular disruption",
+        "blockchain adoption"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "significantly more technological disruption driven by the crypto world over the coming decades"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "COIN",
+      "reasoning": "Coinbase Cloud positions COIN as the AWS-equivalent infrastructure layer for web3; programmable crypto enables multi-layer revenue streams unavailable to fiat brokers; 20-30 year secular disruption tailwind from blockchain adoption",
+      "confidence": "high_conviction"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "crypto/web3 infrastructure",
+      "over": "traditional fiat-focused brokerage",
+      "reasoning": "Programmable crypto enables far more diverse revenue streams (trading, custody, staking, cloud, developer tooling) vs. fiat brokers; structural monetization advantage compounds over time"
+    }
+  ],
+  "risk_warnings": [],
+  "catalysts": [
+    {
+      "event": "Broader web3 application development adoption across multiple blockchains",
+      "timing": "20-30 year horizon",
+      "impact": "Coinbase Cloud becomes the dominant infrastructure and tooling layer for web3, analogous to AWS for web2",
+      "beneficiaries": [
+        "COIN"
+      ],
+      "losers": [
+        "traditional fiat-focused brokers"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "Web3 disruption magnitude vs. prior tech cycle",
+      "view": "Crypto/web3 will be more disruptive than the prior decade of cloud, AI, and SaaS combined",
+      "detail": "Baker frames the prior decade as a 'stable' tech environment and argues programmable blockchains open a fundamentally larger design space, implying consensus underestimates the scale of coming disruption"
+    },
+    {
+      "topic": "Coinbase identity",
+      "view": "Coinbase is a web3 infrastructure company, not a retail trading exchange",
+      "detail": "Baker explicitly positions Coinbase Cloud \u2014 not retail trading volumes \u2014 as the primary long-term value driver, reframing the market's tendency to value COIN on near-term crypto trading activity"
+    }
+  ]
+}

@@ -18,9 +18,7 @@
   "tickers_named_original": [],
   "tickers_direct": [
     "GOOGL",
-    "MSFT",
-    "META",
-    "AMZN"
+    "MSFT"
   ],
   "tickers_subject": [],
   "tickers_implied_original": [
@@ -44,15 +42,15 @@
     },
     {
       "ticker": "META",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "META is a hyperscale incumbent with massive compute, proprietary social graph data, and distribution at scale for RLHF \u2014 fitting Baker's criteria for winners even if not explicitly named in the quote fragment. META's open-source LLaMA also plays the role of squeezing frontier model companies from below, making it a direct beneficiary of this dynamic."
+      "reasoning": "META is a hyperscale incumbent with massive compute, proprietary social graph data, and distribution at scale for RLHF \u2014 fitting Baker's criteria for winners even if not explicitly named in the quote fragment. META's open-source LLaMA also plays the role of squeezing frontier model companies from below, making it a direct beneficiary of this dynamic. [RE-AUDIT: Baker did not explicitly name Meta in connection with this specific thesis. The first-pass reasoning relied on inference ('fitting Baker's criteria') and Meta's open-source role, not a direct statement by Baker connecting Meta to this exact scaling law / hyperscale incumbent thesis. Per the strict test, inferred beneficiaries must be removed.]"
     },
     {
       "ticker": "AMZN",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Amazon/AWS is a clear hyperscale incumbent with massive compute (AWS), proprietary data, and distribution \u2014 fitting Baker's exact criteria for winners under scaling laws. Its omission from the original list appears to be an oversight given it is the third major hyperscale cloud provider alongside Google and Microsoft."
+      "reasoning": "Amazon/AWS is a clear hyperscale incumbent with massive compute (AWS), proprietary data, and distribution \u2014 fitting Baker's exact criteria for winners under scaling laws. Its omission from the original list appears to be an oversight given it is the third major hyperscale cloud provider alongside Google and Microsoft. [RE-AUDIT: Baker did not explicitly name Amazon in connection with this thesis. The first-pass reasoning explicitly acknowledged it 'was not original' and that its inclusion was an inference based on it being a hyperscale cloud provider. This is exactly the kind of addition the strict audit is designed to remove.]"
     }
   ]
 }

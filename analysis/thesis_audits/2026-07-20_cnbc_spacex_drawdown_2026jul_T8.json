@@ -1,0 +1,52 @@
+{
+  "date": "2026-07-20",
+  "source": "CNBC \u2014 SpaceX IPO drawdown, AI infrastructure, open source models, frontier AI",
+  "thesis_id": "T8",
+  "summary": "Kimi K3 release is wildly bullish for all compute and AI infrastructure, not bearish for US AI",
+  "summary_extended": "Baker argues that the market fundamentally misread the Kimi K3 release as bearish for US AI, when in fact it is the opposite \u2014 a wildly bullish signal for all compute and AI infrastructure. His core reasoning is that cheaper, more capable models do not cannibalize compute demand; rather, they dramatically expand token consumption as more use cases become economically viable, which in turn drives greater aggregate demand for AI infrastructure. This is a structural 'Jevons paradox' argument applied to AI: lower cost per token leads to more total tokens consumed, not fewer. The investment implication is to be long the entire compute stack \u2014 GPUs, data center infrastructure, and cloud providers \u2014 rather than selling them on the back of efficient open-source model releases. Baker frames this as a high-conviction contrarian trade against the market's reflexive negative reaction to Chinese open-source model releases.",
+  "detail": "The market reacted in exactly the wrong way to Kimi K3 \u2014 treating it as bearish for US AI when it is actually wildly bullish for all compute and AI trade. More capable cheap models drive more token consumption, which drives more compute demand.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'I think the market really reacted in exactly the wrong way' \u2014 strong contrarian framing with clear reasoning",
+  "themes": [
+    "AI datacenter infrastructure",
+    "open source AI",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "market reacted in exactly the wrong way to Kimmy K3... wildly bullish for all of compute",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "SMCI",
+    "CRWV"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "neoclouds",
+    "hyperscalers",
+    "AI infrastructure broadly"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant GPU supplier for AI training and inference. If Kimi K3 drives more token consumption and compute demand as Baker argues, NVDA is the clearest and most direct beneficiary of incremental AI infrastructure buildout."
+    },
+    {
+      "ticker": "SMCI",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Super Micro Computer is a major AI server and data center infrastructure provider. As a direct supplier of compute infrastructure to hyperscalers and neoclouds, it is an unambiguous beneficiary of increased AI infrastructure spending driven by higher token demand."
+    },
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "CoreWeave is the leading US-listed neocloud and a direct beneficiary of increased demand for GPU compute capacity, which Baker explicitly identifies as a beneficiary category under the Kimi K3 bullish thesis."
+    }
+  ]
+}

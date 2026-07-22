@@ -16,14 +16,7 @@
   "contrarian": false,
   "quote_fragment": "as AI eats the world, silicon is going to eat the world",
   "tickers_named_original": [],
-  "tickers_direct": [
-    "NVDA",
-    "AMD",
-    "AVGO",
-    "TSM",
-    "MRVL",
-    "ARM"
-  ],
+  "tickers_direct": [],
   "tickers_subject": [],
   "tickers_implied_original": [
     "NVDA",
@@ -34,39 +27,39 @@
   "ticker_audit": [
     {
       "ticker": "NVDA",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "NVIDIA is the dominant supplier of AI compute (GPUs/accelerators) and is the clearest direct beneficiary of structurally higher semiconductor intensity from AI workloads."
+      "reasoning": "NVIDIA is the dominant supplier of AI compute (GPUs/accelerators) and is the clearest direct beneficiary of structurally higher semiconductor intensity from AI workloads. [RE-AUDIT: Baker did not specifically name NVDA as a beneficiary of this structural thesis about semiconductor intensity. The thesis is a general structural view ('as AI eats the world, silicon eats the world') with no specific company callouts. NVDA may be an obvious beneficiary but Baker did not explicitly connect it to this exact claim in this thesis statement.]"
     },
     {
       "ticker": "AMD",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "AMD competes in AI accelerators and data center GPUs, making it a direct beneficiary of rising AI compute demand, though secondary to NVDA."
+      "reasoning": "AMD competes in AI accelerators and data center GPUs, making it a direct beneficiary of rising AI compute demand, though secondary to NVDA. [RE-AUDIT: AMD was not specifically named by Baker in connection with this structural semiconductor intensity thesis. The thesis is a broad, general structural view with no company-specific callouts.]"
     },
     {
       "ticker": "AVGO",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "Broadcom supplies custom AI ASICs (XPUs) to hyperscalers and networking silicon critical to AI infrastructure, making it a direct beneficiary of AI-driven semiconductor intensity."
+      "reasoning": "Broadcom supplies custom AI ASICs (XPUs) to hyperscalers and networking silicon critical to AI infrastructure, making it a direct beneficiary of AI-driven semiconductor intensity. [RE-AUDIT: AVGO was not specifically named by Baker in connection with this structural semiconductor intensity thesis. The thesis is a broad, general structural view with no company-specific callouts.]"
     },
     {
       "ticker": "TSM",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "TSMC manufactures the leading-edge chips for NVDA, AMD, and AVGO, making it a direct beneficiary of structurally higher AI semiconductor demand. US-listed via ADR."
+      "reasoning": "TSMC manufactures the leading-edge chips for NVDA, AMD, and AVGO, making it a direct beneficiary of structurally higher AI semiconductor demand. US-listed via ADR. [RE-AUDIT: TSM was not specifically named by Baker in connection with this structural semiconductor intensity thesis. The thesis is a broad, general structural view with no company-specific callouts.]"
     },
     {
       "ticker": "MRVL",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Marvell is a clear implied beneficiary \u2014 it designs custom AI ASICs and networking silicon for hyperscalers, directly participating in the AI semiconductor intensity theme alongside AVGO."
+      "reasoning": "Marvell is a clear implied beneficiary \u2014 it designs custom AI ASICs and networking silicon for hyperscalers, directly participating in the AI semiconductor intensity theme alongside AVGO. [RE-AUDIT: MRVL was added as an implied beneficiary, not because Baker specifically connected it to this thesis. This is exactly the kind of false positive the audit is designed to remove.]"
     },
     {
       "ticker": "ARM",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Arm Holdings licenses CPU/NPU IP that underlies virtually all AI inference chips including custom ASICs and mobile AI, making it a direct beneficiary of structurally higher silicon intensity from AI."
+      "reasoning": "Arm Holdings licenses CPU/NPU IP that underlies virtually all AI inference chips including custom ASICs and mobile AI, making it a direct beneficiary of structurally higher silicon intensity from AI. [RE-AUDIT: ARM was added as an implied beneficiary, not because Baker specifically connected it to this thesis. This is exactly the kind of false positive the audit is designed to remove.]"
     }
   ]
 }

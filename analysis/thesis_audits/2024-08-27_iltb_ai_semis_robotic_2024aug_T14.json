@@ -21,15 +21,11 @@
   ],
   "tickers_direct": [
     "META",
-    "GOOGL",
-    "MSFT",
-    "AMZN"
+    "GOOGL"
   ],
   "tickers_subject": [
     "META",
-    "GOOGL",
-    "MSFT",
-    "AMZN"
+    "GOOGL"
   ],
   "tickers_implied_original": [
     "MSFT",
@@ -50,15 +46,15 @@
     },
     {
       "ticker": "MSFT",
-      "classification": "DIRECT_SUBJECT",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Microsoft is a core hyperscaler and major AI spender whose rising ROIC is part of the empirical claim Baker is making; clearly implied as one of 'all of these companies' in the thesis."
+      "reasoning": "Microsoft is a core hyperscaler and major AI spender whose rising ROIC is part of the empirical claim Baker is making; clearly implied as one of 'all of these companies' in the thesis. [RE-AUDIT: The summary notes Microsoft is 'clearly implied' but the critical test requires Baker to have specifically named Microsoft in connection with this exact ROIC thesis. 'Implied' does not meet the strict standard \u2014 if Baker did not explicitly name Microsoft when making this ROIC claim, it should be removed.]"
     },
     {
       "ticker": "AMZN",
-      "classification": "DIRECT_SUBJECT",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Amazon/AWS is a major AI capex spender and hyperscaler; clearly implied as one of 'all of these companies' whose ROIC Baker references as having risen alongside capex."
+      "reasoning": "Amazon/AWS is a major AI capex spender and hyperscaler; clearly implied as one of 'all of these companies' whose ROIC Baker references as having risen alongside capex. [RE-AUDIT: Similarly, Amazon is described as 'clearly implied' as one of 'all of these companies,' but the strict standard requires explicit connection. If Baker did not specifically name Amazon when citing rising ROIC as evidence against AI ROI skepticism, it fails the critical test and should be removed.]"
     }
   ]
 }

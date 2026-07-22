@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-08",
+  "source": "Heller House \u2014 SpaceX CFO Bret Johnsen interview \u2014 financial mechanics, Starship timeline, orbital compute, AI business",
+  "thesis_id": "T9",
+  "summary": "TSMC supply chain concentration is a critical bottleneck for AI scaling \u2014 all major AI chips (Nvidia, Google TPU, AI5) converge on TSMC, creating systemic risk for any company trying to scale to 100 GW of compute.",
+  "summary_extended": "Baker \u2014 or in this case SpaceX CFO Bret Johnsen \u2014 argues that TSMC represents a single, non-diversifiable bottleneck in the AI compute supply chain, because every major AI chip (Nvidia GPUs, Google TPUs, and next-generation AI accelerators) converges on TSMC one layer down the supply chain. Johnsen presents this concentration risk as a primary strategic motivation for SpaceX's Terafab initiative, which is explicitly designed to reduce dependence on TSMC as AI infrastructure scales toward 100 GW of compute. The implication is that any hyperscaler or AI infrastructure company relying on TSMC-manufactured chips faces a hard ceiling on scaling ambitions that cannot be solved through procurement diversification alone. TSMC itself is identified as the structural chokepoint, making it both the critical dependency and, paradoxically, a potential beneficiary of any company that cannot escape its gravitational pull \u2014 while also being the risk factor that motivates vertical integration efforts like Terafab.",
+  "detail": "Johnsen explicitly names TSMC as the single-point dependency when you trace Nvidia, TPUs, and other AI chips one layer down the supply chain. This is the stated motivation for Terafab. Implies that any company dependent on TSMC for AI chip supply faces a hard ceiling on scaling ambitions.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "CFO states this as a primary strategic concern driving a major capital allocation decision (Terafab); not speculative commentary.",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "all of a sudden you start talking about TSMC \u2014 can't diversify one layer down",
+  "tickers_named_original": [
+    "NVDA",
+    "INTC"
+  ],
+  "tickers_direct": [
+    "TSM"
+  ],
+  "tickers_subject": [
+    "TSM"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Nvidia is mentioned only as an example of a chip that depends on TSMC \u2014 the thesis is about TSMC as a supply chain bottleneck and the systemic risk it creates, not about Nvidia specifically. Nvidia is neither the subject of the thesis nor a direct beneficiary of the TSMC concentration risk argument."
+    },
+    {
+      "ticker": "INTC",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Intel does not appear in the quote fragment or the thesis detail at all \u2014 it appears to be a contamination from an adjacent thesis. Intel is not mentioned as a subject, beneficiary, or relevant party to the TSMC concentration risk argument."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "TSMC is explicitly named as the single-point dependency and the central subject of this thesis. The entire argument revolves around TSMC's chokehold on AI chip manufacturing. TSM is the most obvious implied ticker and was missing from the original extraction."
+    }
+  ]
+}

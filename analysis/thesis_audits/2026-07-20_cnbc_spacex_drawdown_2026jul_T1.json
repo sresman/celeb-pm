@@ -1,0 +1,34 @@
+{
+  "date": "2026-07-20",
+  "source": "CNBC \u2014 SpaceX IPO drawdown, AI infrastructure, open source models, frontier AI",
+  "thesis_id": "T1",
+  "summary": "SpaceX's terrestrial compute buildout is massively underestimated by consensus and represents a hidden revenue driver",
+  "summary_extended": "Baker argues that SpaceX's terrestrial compute buildout \u2014 specifically its plan to bring approximately 3 gigawatts of AI datacenter power online \u2014 represents roughly $150B of incremental annual revenue that is entirely absent from consensus models, which currently embed only ~$73B in total SpaceX revenue. He contends that SpaceX monetizes each gigawatt of installed compute capacity at a meaningful premium to competitors like hyperscalers or independent data center operators, and can deploy that capacity faster and more cheaply than rivals, creating a structural cost and speed advantage. The investment implication is that SpaceX's true revenue potential is more than double what consensus assumes, making it a high-conviction long for investors who can access it \u2014 though it remains a private company. Baker frames this terrestrial compute opportunity as the single biggest variable markets are missing in SpaceX's valuation, distinct from its Starlink or launch businesses.",
+  "detail": "Consensus revenue estimate for SpaceX is ~$73B, embedding very little for incremental terrestrial gigawatts. Baker calculates that 3 gigawatts of power brought online at announced monetization rates equals ~$150B of revenue not in the model. SpaceX monetizes a gigawatt of installed power at a meaningful premium to anyone else and brings on gigawatts faster and cheaper than competitors.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker provides specific numbers ($150B vs $73B consensus), calls it a 'big variable markets are missing', and frames it as the primary investment thesis for SpaceX",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy",
+    "space/orbital compute"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "three gigs next year... that's a hundred and fifty billion dollars of revenue not in the model",
+  "tickers_named_original": [
+    "SPCE"
+  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPCE",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SPCE is Virgin Galactic (now Rocket Lab-adjacent shell), not SpaceX. SpaceX is a private company with no US-listed equity ticker. SPCE has no relationship to this thesis and appears to be a data entry error confusing Virgin Galactic's ticker with SpaceX."
+    }
+  ]
+}

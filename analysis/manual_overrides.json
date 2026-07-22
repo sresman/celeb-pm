@@ -1,5 +1,5 @@
 {
-  "_README": "Durable manual-override layer for the Baker thesis-scoring pipeline. Applied AFTER clustering + basket resolution, immediately BEFORE returns, by theme_returns_v2.py and build_repeat_mention_events.py. Survives rebuilds; overrides win over clustering. Match keys: theme, date, mention_number, summary_contains (str|list, all substrings, case-insensitive). Thesis/date-specific entries are listed before theme-level catch-alls so the specific one wins (first match).",
+  "_README": "Durable manual-override layer for the Baker thesis-scoring pipeline. Applied AFTER clustering + basket resolution, immediately BEFORE returns, by theme_returns_v2.py and build_repeat_mention_events.py. Survives rebuilds; overrides win over clustering. Match keys: theme, date, mention_number, summary_contains (str|list, all substrings, case-insensitive). Thesis/date-specific entries are listed before theme-level catch-alls so the specific one wins (first match). | 2026-07-22: event-override matches are DATE-ANCHORED \u2014 mention_number was removed from all matches (it is redundant since (theme,date) is unique in the mention grain, and fragile: adding an earlier-dated appearance renumbers later mentions and silently breaks mention_number matches). Match on theme+date(+summary_contains).",
   "cluster_overrides": [
     {
       "from_theme": "Google TPU competitive position",
@@ -396,6 +396,141 @@
         "thesis_id": "T12"
       },
       "note": "2026-07-17: NVDA-roundtripping-defense thesis; Google is context. Move to NVDA moat (inherits NVDA)."
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T3"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "Google TPU competitive position",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T9"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "Intel recovery / foundry failure",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T8"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T3"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "Orbital / space-based compute",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T10"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "Orbital / space-based compute",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T11"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "Orbital / space-based compute",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T5"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "Orbital / space-based compute",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T7"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "Power / watts as binding constraint",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T5"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "SpaceX ecosystem / Starship economics",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T1"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "SpaceX ecosystem / Starship economics",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T2"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "SpaceX ecosystem / Starship economics",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T3"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "SpaceX ecosystem / Starship economics",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T7"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "SpaceX ecosystem / Starship economics",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T8"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "xAI competitive position",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-08",
+        "thesis_id": "T7"
+      },
+      "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
     }
   ],
   "event_overrides": [
@@ -532,8 +667,7 @@
     {
       "match": {
         "theme": "Target / omnichannel retail",
-        "date": "2020-04-02",
-        "mention_number": 1
+        "date": "2020-04-02"
       },
       "apply": {
         "resolved_basket": [
@@ -550,8 +684,7 @@
     {
       "match": {
         "theme": "Intel recovery / foundry failure",
-        "date": "2020-07-27",
-        "mention_number": 2
+        "date": "2020-07-27"
       },
       "apply": {
         "resolved_basket": [
@@ -565,8 +698,7 @@
     {
       "match": {
         "theme": "Target / omnichannel retail",
-        "date": "2021-11-01",
-        "mention_number": 3
+        "date": "2021-11-01"
       },
       "apply": {
         "resolved_basket": [
@@ -583,8 +715,7 @@
     {
       "match": {
         "theme": "AI bubble not happening",
-        "date": "2021-11-30",
-        "mention_number": 1
+        "date": "2021-11-30"
       },
       "apply": {
         "resolved_basket": [],
@@ -596,8 +727,7 @@
     {
       "match": {
         "theme": "DRAM / HBM memory bottleneck",
-        "date": "2021-11-30",
-        "mention_number": 2
+        "date": "2021-11-30"
       },
       "apply": {
         "resolved_basket": [
@@ -612,8 +742,7 @@
     {
       "match": {
         "theme": "Scaling laws intact",
-        "date": "2021-11-30",
-        "mention_number": 1
+        "date": "2021-11-30"
       },
       "apply": {
         "resolved_basket": [],
@@ -625,8 +754,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2021-11-30",
-        "mention_number": 2
+        "date": "2021-11-30"
       },
       "apply": {
         "resolved_basket": [],
@@ -638,8 +766,7 @@
     {
       "match": {
         "theme": "Tesla / EV / FSD",
-        "date": "2021-11-30",
-        "mention_number": 1
+        "date": "2021-11-30"
       },
       "apply": {
         "resolved_basket": [
@@ -655,8 +782,7 @@
     {
       "match": {
         "theme": "AI bubble not happening",
-        "date": "2022-03-25",
-        "mention_number": 2
+        "date": "2022-03-25"
       },
       "apply": {
         "resolved_basket": [],
@@ -668,8 +794,7 @@
     {
       "match": {
         "theme": "DRAM / HBM memory bottleneck",
-        "date": "2023-06-19",
-        "mention_number": 3
+        "date": "2023-06-19"
       },
       "apply": {
         "resolved_basket": [
@@ -684,8 +809,7 @@
     {
       "match": {
         "theme": "Nvidia GPU moat / CUDA ecosystem",
-        "date": "2023-06-19",
-        "mention_number": 2
+        "date": "2023-06-19"
       },
       "apply": {
         "resolved_basket": [
@@ -700,8 +824,7 @@
     {
       "match": {
         "theme": "Optical networking / interconnect",
-        "date": "2023-06-19",
-        "mention_number": 1
+        "date": "2023-06-19"
       },
       "apply": {
         "resolved_basket": [
@@ -730,8 +853,7 @@
     {
       "match": {
         "theme": "Scaling laws intact",
-        "date": "2024-01-30",
-        "mention_number": 2
+        "date": "2024-01-30"
       },
       "apply": {
         "resolved_basket": [],
@@ -743,8 +865,7 @@
     {
       "match": {
         "theme": "Humanoid robotics / Tesla Optimus",
-        "date": "2024-02-23",
-        "mention_number": 1
+        "date": "2024-02-23"
       },
       "apply": {
         "resolved_basket": [
@@ -759,8 +880,7 @@
     {
       "match": {
         "theme": "Power / watts as binding constraint",
-        "date": "2024-02-23",
-        "mention_number": 2
+        "date": "2024-02-23"
       },
       "apply": {
         "resolved_basket": [
@@ -776,8 +896,7 @@
     {
       "match": {
         "theme": "Frontier model concentration",
-        "date": "2024-07-01",
-        "mention_number": 1
+        "date": "2024-07-01"
       },
       "apply": {
         "resolved_basket": [],
@@ -789,8 +908,7 @@
     {
       "match": {
         "theme": "Optical networking / interconnect",
-        "date": "2024-07-01",
-        "mention_number": 3
+        "date": "2024-07-01"
       },
       "apply": {
         "resolved_basket": [
@@ -806,8 +924,7 @@
     {
       "match": {
         "theme": "Power / watts as binding constraint",
-        "date": "2024-07-01",
-        "mention_number": 3
+        "date": "2024-07-01"
       },
       "apply": {
         "resolved_basket": [
@@ -822,8 +939,7 @@
     {
       "match": {
         "theme": "Scaling laws intact",
-        "date": "2024-07-01",
-        "mention_number": 3
+        "date": "2024-07-01"
       },
       "apply": {
         "resolved_basket": [],
@@ -849,8 +965,7 @@
     {
       "match": {
         "theme": "Meta AI transformation",
-        "date": "2024-08-07",
-        "mention_number": 1
+        "date": "2024-08-07"
       },
       "apply": {
         "resolved_basket": [],
@@ -862,8 +977,7 @@
     {
       "match": {
         "theme": "Power / watts as binding constraint",
-        "date": "2024-08-07",
-        "mention_number": 4
+        "date": "2024-08-07"
       },
       "apply": {
         "resolved_basket": [
@@ -878,8 +992,7 @@
     {
       "match": {
         "theme": "Power / watts as binding constraint",
-        "date": "2024-08-27",
-        "mention_number": 5
+        "date": "2024-08-27"
       },
       "apply": {
         "resolved_basket": [
@@ -895,8 +1008,7 @@
     {
       "match": {
         "theme": "Scaling laws intact",
-        "date": "2024-08-27",
-        "mention_number": 4
+        "date": "2024-08-27"
       },
       "apply": {
         "resolved_basket": [],
@@ -908,8 +1020,7 @@
     {
       "match": {
         "theme": "Nuclear / clean energy for AI",
-        "date": "2024-12-07",
-        "mention_number": 1
+        "date": "2024-12-07"
       },
       "apply": {
         "resolved_basket": [
@@ -925,8 +1036,7 @@
     {
       "match": {
         "theme": "Optical networking / interconnect",
-        "date": "2024-12-07",
-        "mention_number": 5
+        "date": "2024-12-07"
       },
       "apply": {
         "resolved_basket": [
@@ -943,8 +1053,7 @@
     {
       "match": {
         "theme": "Reasoning / inference-time compute",
-        "date": "2024-12-07",
-        "mention_number": 1
+        "date": "2024-12-07"
       },
       "apply": {
         "resolved_basket": [
@@ -960,8 +1069,7 @@
     {
       "match": {
         "theme": "Scaling laws intact",
-        "date": "2024-12-07",
-        "mention_number": 5
+        "date": "2024-12-07"
       },
       "apply": {
         "resolved_basket": [],
@@ -973,8 +1081,7 @@
     {
       "match": {
         "theme": "DRAM / HBM memory bottleneck",
-        "date": "2025-01-04",
-        "mention_number": 6
+        "date": "2025-01-04"
       },
       "apply": {
         "resolved_basket": [
@@ -989,8 +1096,7 @@
     {
       "match": {
         "theme": "Reasoning / inference-time compute",
-        "date": "2025-01-04",
-        "mention_number": 2
+        "date": "2025-01-04"
       },
       "apply": {
         "resolved_basket": [
@@ -1005,8 +1111,7 @@
     {
       "match": {
         "theme": "Optical networking / interconnect",
-        "date": "2025-01-28",
-        "mention_number": 6
+        "date": "2025-01-28"
       },
       "apply": {
         "resolved_basket": [
@@ -1023,8 +1128,7 @@
     {
       "match": {
         "theme": "Scaling laws intact",
-        "date": "2025-01-28",
-        "mention_number": 6
+        "date": "2025-01-28"
       },
       "apply": {
         "resolved_basket": [],
@@ -1036,8 +1140,7 @@
     {
       "match": {
         "theme": "DRAM / HBM memory bottleneck",
-        "date": "2025-05-28",
-        "mention_number": 7
+        "date": "2025-05-28"
       },
       "apply": {
         "resolved_basket": [
@@ -1052,8 +1155,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2025-10-22",
-        "mention_number": 4
+        "date": "2025-10-22"
       },
       "apply": {
         "resolved_basket": [],
@@ -1065,8 +1167,7 @@
     {
       "match": {
         "theme": "xAI competitive position",
-        "date": "2025-10-22",
-        "mention_number": 8
+        "date": "2025-10-22"
       },
       "apply": {
         "resolved_basket": [
@@ -1080,8 +1181,7 @@
     {
       "match": {
         "theme": "AI bubble not happening",
-        "date": "2025-10-30",
-        "mention_number": 3
+        "date": "2025-10-30"
       },
       "apply": {
         "resolved_basket": [],
@@ -1093,8 +1193,7 @@
     {
       "match": {
         "theme": "Scaling laws intact",
-        "date": "2025-10-30",
-        "mention_number": 7
+        "date": "2025-10-30"
       },
       "apply": {
         "resolved_basket": [],
@@ -1106,8 +1205,7 @@
     {
       "match": {
         "theme": "DRAM / HBM memory bottleneck",
-        "date": "2025-12-09",
-        "mention_number": 9
+        "date": "2025-12-09"
       },
       "apply": {
         "resolved_basket": [
@@ -1122,8 +1220,7 @@
     {
       "match": {
         "theme": "Nuclear/quantum bubble warning",
-        "date": "2025-12-09",
-        "mention_number": 1
+        "date": "2025-12-09"
       },
       "apply": {
         "resolved_basket": [],
@@ -1135,8 +1232,7 @@
     {
       "match": {
         "theme": "Scaling laws intact",
-        "date": "2025-12-09",
-        "mention_number": 8
+        "date": "2025-12-09"
       },
       "apply": {
         "resolved_basket": [],
@@ -1148,8 +1244,7 @@
     {
       "match": {
         "theme": "AI bubble not happening",
-        "date": "2026-02-24",
-        "mention_number": 4
+        "date": "2026-02-24"
       },
       "apply": {
         "resolved_basket": [],
@@ -1161,8 +1256,7 @@
     {
       "match": {
         "theme": "Optical networking / interconnect",
-        "date": "2026-02-24",
-        "mention_number": 9
+        "date": "2026-02-24"
       },
       "apply": {
         "resolved_basket": [
@@ -1179,8 +1273,7 @@
     {
       "match": {
         "theme": "Orbital / space-based compute",
-        "date": "2026-02-24",
-        "mention_number": 2
+        "date": "2026-02-24"
       },
       "apply": {
         "resolved_basket": [],
@@ -1192,8 +1285,7 @@
     {
       "match": {
         "theme": "Uranium enrichment / national security",
-        "date": "2026-02-24",
-        "mention_number": 1
+        "date": "2026-02-24"
       },
       "apply": {
         "resolved_basket": [
@@ -1207,8 +1299,7 @@
     {
       "match": {
         "theme": "DRAM / HBM memory bottleneck",
-        "date": "2026-05-12",
-        "mention_number": 10
+        "date": "2026-05-12"
       },
       "apply": {
         "resolved_basket": [
@@ -1223,8 +1314,7 @@
     {
       "match": {
         "theme": "Orbital / space-based compute",
-        "date": "2026-05-12",
-        "mention_number": 3
+        "date": "2026-05-12"
       },
       "apply": {
         "resolved_basket": [],
@@ -1236,8 +1326,7 @@
     {
       "match": {
         "theme": "TSMC capacity discipline",
-        "date": "2026-05-12",
-        "mention_number": 2
+        "date": "2026-05-12"
       },
       "apply": {
         "resolved_basket": [],
@@ -1249,8 +1338,7 @@
     {
       "match": {
         "theme": "AI destroying application layer value",
-        "date": "2026-05-20",
-        "mention_number": 1
+        "date": "2026-05-20"
       },
       "apply": {
         "resolved_basket": [],
@@ -1262,8 +1350,7 @@
     {
       "match": {
         "theme": "Disaggregation prefill/decode",
-        "date": "2026-05-20",
-        "mention_number": 1
+        "date": "2026-05-20"
       },
       "apply": {
         "resolved_basket": [
@@ -1277,8 +1364,7 @@
     {
       "match": {
         "theme": "Power / cooling equipment suppliers",
-        "date": "2026-05-20",
-        "mention_number": 1
+        "date": "2026-05-20"
       },
       "apply": {
         "resolved_basket": [],
@@ -1290,8 +1376,7 @@
     {
       "match": {
         "theme": "Power / watts as binding constraint",
-        "date": "2026-05-20",
-        "mention_number": 7
+        "date": "2026-05-20"
       },
       "apply": {
         "resolved_basket": [
@@ -1307,8 +1392,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2026-05-20",
-        "mention_number": 6
+        "date": "2026-05-20"
       },
       "apply": {
         "resolved_basket": [
@@ -1325,8 +1409,7 @@
     {
       "match": {
         "theme": "TSMC capacity discipline",
-        "date": "2026-05-20",
-        "mention_number": 3
+        "date": "2026-05-20"
       },
       "apply": {
         "resolved_basket": [
@@ -1343,8 +1426,7 @@
     {
       "match": {
         "theme": "DRAM / HBM memory bottleneck",
-        "date": "2026-05-22",
-        "mention_number": 12
+        "date": "2026-05-22"
       },
       "apply": {
         "resolved_basket": [
@@ -1359,8 +1441,7 @@
     {
       "match": {
         "theme": "Disaggregation prefill/decode",
-        "date": "2026-05-22",
-        "mention_number": 2
+        "date": "2026-05-22"
       },
       "apply": {
         "resolved_basket": [
@@ -1374,8 +1455,7 @@
     {
       "match": {
         "theme": "Optical networking / interconnect",
-        "date": "2026-05-22",
-        "mention_number": 11
+        "date": "2026-05-22"
       },
       "apply": {
         "resolved_basket": [
@@ -1392,8 +1472,7 @@
     {
       "match": {
         "theme": "Orbital / space-based compute",
-        "date": "2026-05-22",
-        "mention_number": 5
+        "date": "2026-05-22"
       },
       "apply": {
         "resolved_basket": [],
@@ -1405,8 +1484,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2026-05-22",
-        "mention_number": 7
+        "date": "2026-05-22"
       },
       "apply": {
         "resolved_basket": [],
@@ -1418,8 +1496,7 @@
     {
       "match": {
         "theme": "AI bubble not happening",
-        "date": "2026-05-28",
-        "mention_number": 5
+        "date": "2026-05-28"
       },
       "apply": {
         "resolved_basket": [],
@@ -1431,8 +1508,7 @@
     {
       "match": {
         "theme": "DRAM / HBM memory bottleneck",
-        "date": "2026-05-28",
-        "mention_number": 13
+        "date": "2026-05-28"
       },
       "apply": {
         "resolved_basket": [
@@ -1459,8 +1535,7 @@
     {
       "match": {
         "theme": "Orbital / space-based compute",
-        "date": "2026-05-28",
-        "mention_number": 6
+        "date": "2026-05-28"
       },
       "apply": {
         "resolved_basket": [],
@@ -1472,8 +1547,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2026-05-28",
-        "mention_number": 8
+        "date": "2026-05-28"
       },
       "apply": {
         "resolved_basket": [],
@@ -1485,8 +1559,7 @@
     {
       "match": {
         "theme": "TSMC capacity discipline",
-        "date": "2026-05-28",
-        "mention_number": 4
+        "date": "2026-05-28"
       },
       "apply": {
         "resolved_basket": [],
@@ -1498,8 +1571,7 @@
     {
       "match": {
         "theme": "AI bubble not happening",
-        "date": "2026-06-07",
-        "mention_number": 6
+        "date": "2026-06-07"
       },
       "apply": {
         "resolved_basket": [],
@@ -1511,8 +1583,7 @@
     {
       "match": {
         "theme": "DRAM / HBM memory bottleneck",
-        "date": "2026-06-07",
-        "mention_number": 14
+        "date": "2026-06-07"
       },
       "apply": {
         "resolved_basket": [
@@ -1527,8 +1598,7 @@
     {
       "match": {
         "theme": "Disaggregation prefill/decode",
-        "date": "2026-06-07",
-        "mention_number": 3
+        "date": "2026-06-07"
       },
       "apply": {
         "resolved_basket": [
@@ -1542,8 +1612,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2026-06-07",
-        "mention_number": 9
+        "date": "2026-06-07"
       },
       "apply": {
         "resolved_basket": [],
@@ -1555,8 +1624,7 @@
     {
       "match": {
         "theme": "Orbital / space-based compute",
-        "date": "2026-06-11",
-        "mention_number": 7
+        "date": "2026-06-11"
       },
       "apply": {
         "resolved_basket": [],
@@ -1568,8 +1636,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2026-06-11",
-        "mention_number": 10
+        "date": "2026-06-11"
       },
       "apply": {
         "resolved_basket": [],
@@ -1581,8 +1648,7 @@
     {
       "match": {
         "theme": "Datacenter physical assets",
-        "date": "2026-06-12",
-        "mention_number": 1
+        "date": "2026-06-12"
       },
       "apply": {
         "resolved_basket": [],
@@ -1594,8 +1660,7 @@
     {
       "match": {
         "theme": "Orbital / space-based compute",
-        "date": "2026-06-12",
-        "mention_number": 8
+        "date": "2026-06-12"
       },
       "apply": {
         "resolved_basket": [],
@@ -1607,8 +1672,7 @@
     {
       "match": {
         "theme": "Power / watts as binding constraint",
-        "date": "2026-06-12",
-        "mention_number": 10
+        "date": "2026-06-12"
       },
       "apply": {
         "resolved_basket": [
@@ -1624,8 +1688,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2026-06-12",
-        "mention_number": 11
+        "date": "2026-06-12"
       },
       "apply": {
         "resolved_basket": [],
@@ -1637,8 +1700,7 @@
     {
       "match": {
         "theme": "CDN / token delivery path",
-        "date": "2026-06-15",
-        "mention_number": 1
+        "date": "2026-06-15"
       },
       "apply": {
         "resolved_basket": [],
@@ -1650,8 +1712,7 @@
     {
       "match": {
         "theme": "Meta AI transformation",
-        "date": "2026-06-15",
-        "mention_number": 3
+        "date": "2026-06-15"
       },
       "apply": {
         "resolved_basket": [
@@ -1666,8 +1727,7 @@
     {
       "match": {
         "theme": "Orbital / space-based compute",
-        "date": "2026-06-15",
-        "mention_number": 9
+        "date": "2026-06-15"
       },
       "apply": {
         "resolved_basket": [],
@@ -1679,8 +1739,7 @@
     {
       "match": {
         "theme": "Power / watts as binding constraint",
-        "date": "2026-06-15",
-        "mention_number": 11
+        "date": "2026-06-15"
       },
       "apply": {
         "resolved_basket": [
@@ -1696,8 +1755,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2026-06-15",
-        "mention_number": 12
+        "date": "2026-06-15"
       },
       "apply": {
         "resolved_basket": [],
@@ -1709,8 +1767,7 @@
     {
       "match": {
         "theme": "Disaggregation prefill/decode",
-        "date": "2026-06-27",
-        "mention_number": 4
+        "date": "2026-06-27"
       },
       "apply": {
         "resolved_basket": [],
@@ -1722,8 +1779,7 @@
     {
       "match": {
         "theme": "Orbital / space-based compute",
-        "date": "2026-06-27",
-        "mention_number": 10
+        "date": "2026-06-27"
       },
       "apply": {
         "resolved_basket": [],
@@ -1735,8 +1791,7 @@
     {
       "match": {
         "theme": "SpaceX ecosystem / Starship economics",
-        "date": "2026-06-27",
-        "mention_number": 13
+        "date": "2026-06-27"
       },
       "apply": {
         "resolved_basket": [],
@@ -1748,8 +1803,7 @@
     {
       "match": {
         "theme": "AI bubble not happening",
-        "date": "2026-07-08",
-        "mention_number": 7
+        "date": "2026-07-08"
       },
       "apply": {
         "resolved_basket": [],
@@ -1761,8 +1815,7 @@
     {
       "match": {
         "theme": "AI world models for gaming",
-        "date": "2026-07-08",
-        "mention_number": 1
+        "date": "2026-07-08"
       },
       "apply": {
         "resolved_basket": [
@@ -1789,8 +1842,7 @@
     {
       "match": {
         "theme": "Power / watts as binding constraint",
-        "date": "2026-07-08",
-        "mention_number": 12
+        "date": "2026-07-08"
       },
       "apply": {
         "resolved_basket": [

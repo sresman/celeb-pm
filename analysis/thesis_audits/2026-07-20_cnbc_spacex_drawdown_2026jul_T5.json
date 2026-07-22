@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-20",
+  "source": "CNBC \u2014 SpaceX IPO drawdown, AI infrastructure, open source models, frontier AI",
+  "thesis_id": "T5",
+  "summary": "Token efficiency and cost per token will be the defining competitive metric in AI, not raw intelligence",
+  "summary_extended": "Baker argues that the defining competitive metric in AI is not raw intelligence but 'intelligence per dollar' \u2014 a composite of cost per token and intelligence per token. He illustrates this with a specific example: Chinese model Kimi K3 requires 2-3x more tokens to produce an equivalent answer compared to leading frontier models, meaning that despite a lower per-token price, its total cost of inference is not actually cheaper. Baker frames this as a historically novel dynamic in tech investing, where being the low-cost producer of intelligence \u2014 not just the most capable model \u2014 is what wins, marking the first time in his career as a tech investor that cost efficiency has been the primary competitive axis. The investment implication is that frontier AI labs and infrastructure providers who can deliver high intelligence per token at low cost will dominate, while models that are cheap per token but token-inefficient will lose market share over time.",
+  "detail": "Baker argues 'intelligence per dollar' is the key metric \u2014 a function of cost per token and intelligence per token. Kimi K3 (Chinese model) requires 2-3x more tokens to produce an equivalent answer, making it less efficient despite being cheaper per token. This is a new dynamic in tech investing where being the low-cost producer matters for the first time.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'really unique about AI for the first time in my kind of history as a tech investor' \u2014 strong personal conviction framing",
+  "themes": [
+    "frontier AI",
+    "AI efficiency",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "intelligence per dollar is what matters... token efficiency cost per token matters",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Anthropic (private)",
+    "xAI (private)",
+    "Meta"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVDA is not the subject of this thesis, which is about token efficiency as a competitive metric among AI model providers. NVDA may benefit broadly from AI compute demand but is not a direct subject or direct beneficiary of the specific claim about intelligence-per-dollar as a competitive metric among model labs."
+    }
+  ]
+}

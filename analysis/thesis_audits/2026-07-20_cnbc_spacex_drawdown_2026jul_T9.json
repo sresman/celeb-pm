@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-20",
+  "source": "CNBC \u2014 SpaceX IPO drawdown, AI infrastructure, open source models, frontier AI",
+  "thesis_id": "T9",
+  "summary": "SpaceX's ability to bring on power cheaply and fast is its core competitive moat and the key variable for valuation",
+  "summary_extended": "Baker argues that SpaceX's singular competitive moat in AI infrastructure is its demonstrated ability to bring gigawatts of power online faster and more cheaply than any competitor, and that this speed advantage is itself a cost advantage \u2014 a point he attributes directly to Jensen Huang, who stated that the speed of gigawatt deployment is literally cost. Baker frames this as the key variable that markets are missing in SpaceX's valuation: if SpaceX can deploy power at scale, it can simultaneously sell excess capacity to other AI players at high rates while serving its own AI models at low internal cost, creating a dual-revenue flywheel that is extremely valuable. The investment implication is that power deployment velocity \u2014 not compute or model quality \u2014 is the correct lens through which to underwrite SpaceX's AI infrastructure business. Because SpaceX is private, there is no directly actionable US-listed equity, though the thesis implies that public power infrastructure and utility-scale energy companies could be tangential beneficiaries \u2014 none of which Baker names specifically enough to include.",
+  "detail": "Jensen Huang noted that speed of gigawatt deployment is literally cost \u2014 every day of construction is expense. SpaceX has proven ability to bring on gigawatts faster and cheaper than anyone. If SpaceX can bring on enough power to both sell to other AI players at high rates AND serve its own models at low cost, the combination is extremely valuable.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites Jensen Huang directly and frames this as the key variable markets are missing, with specific revenue math",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy",
+    "space/orbital compute"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "Jensen said the speed in which you bring on a gigawatt is literally cost",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SpaceX"
+  ],
+  "tickers_subject": [
+    "SpaceX"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SpaceX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX is the explicit and sole subject of this thesis \u2014 the entire argument is about SpaceX's power deployment moat and its valuation implications. It remains private and is not a US-listed equity, but it is correctly identified as the direct subject."
+    }
+  ]
+}

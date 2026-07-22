@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-08",
+  "source": "Heller House \u2014 SpaceX CFO Bret Johnsen interview \u2014 financial mechanics, Starship timeline, orbital compute, AI business",
+  "thesis_id": "T6",
+  "summary": "Terrestrial AI compute hosting (colocation/cloud for third parties) is already a material business at ~$3.75B quarterly run rate, with the Anthropic deal as proof of concept for further expansion.",
+  "summary_extended": "Baker argues that SpaceX has quietly become a top-5 AI infrastructure business through its terrestrial compute hosting operations, calculating that the Anthropic hosting deal alone implies a $3.75 billion per quarter revenue run rate. He reasons that SpaceX uses NVIDIA GB300 GPUs for its own AI training and inference workloads, and monetizes excess capacity to third parties \u2014 with Anthropic serving as the proof-of-concept anchor tenant. SpaceX CFO Bret Johnsen confirmed on the record that SpaceX intends to sign additional such deals and expand its terrestrial data center footprint, suggesting this is a deliberate strategic business rather than an opportunistic one-off. The investment implication is that SpaceX's AI infrastructure segment is already material and scaling, though SpaceX itself is private; the primary public-market beneficiary is NVIDIA as the GPU supplier enabling this capacity build-out.",
+  "detail": "Baker calculates that the Anthropic hosting deal puts SpaceX AI at a $3.75B/quarter run rate, making it a top-5 AI infrastructure business. Johnsen confirms intent to sign more such deals and expand terrestrial data center capacity. SpaceX uses GB300s for its own training/inference and monetizes remaining capacity to third parties.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Specific revenue run rate cited by Baker; CFO confirms deal and intent to expand; Anthropic deal publicly reported.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "cloud/hyperscale"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "$3.75 billion run rate per quarter \u2014 top five AI infrastructure business",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "SpaceX is explicitly using NVIDIA GB300 GPUs to build out its AI compute hosting capacity. As SpaceX expands its terrestrial data center footprint to sign more deals like Anthropic, NVIDIA is the direct hardware supplier and beneficiary of that capex spend."
+    }
+  ]
+}

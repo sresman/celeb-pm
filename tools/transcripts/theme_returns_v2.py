@@ -74,6 +74,8 @@ UNIVERSE: list[str] = [
     # Added 2026-07-16 for v4-review baskets: retail omnichannel (WMT/HD/LOW/
     # COST/KR) + SK Hynix (Korean listing; may resolve NO_DATA gracefully).
     "WMT", "HD", "LOW", "COST", "KR", "000660.KS",
+    # Added 2026-07-22 (6-new-appearances task): Coinbase (Sohn AU 2021 pick).
+    "COIN",
 ]
 
 # --- Event-generation config -------------------------------------------------

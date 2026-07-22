@@ -1,0 +1,48 @@
+{
+  "date": "2025-07-17",
+  "source": "All-In Podcast \u2014 Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
+  "thesis_id": "T9",
+  "summary": "Software/coding is the first sector with proven, generalized AI productivity impact \u2014 developers are getting 5-10% more productive per month",
+  "summary_extended": "Baker argues that software development is the first sector where AI has delivered proven, generalized productivity gains, with the average developer reporting 5-10% faster code shipping per month \u2014 a rate he describes as 'undeniable' and among the strongest empirical signals he has seen from AI adoption. He distinguishes this from broader economy-wide AI productivity claims, which he views as more speculative and slower to diffuse, positioning coding as a unique early proof point. The investment implication centers on companies that sell AI coding tools or whose developer platforms are directly enhanced by this productivity wave. Baker does not name specific beneficiaries in this segment, but the thesis most directly supports pure-play AI coding tool providers rather than large diversified cloud platforms for which coding productivity is a minor revenue driver.",
+  "detail": "Baker states unequivocally that AI's impact on coding is 'undeniable' and that the average developer would say they are 5-10% faster per month at shipping code. He distinguishes this from broader economy-wide productivity gains which he views as more speculative and slower to diffuse.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses 'undeniable' and 'for sure' \u2014 among his strongest language in the transcript",
+  "themes": [
+    "AI software productivity",
+    "consumer AI",
+    "AI model competition"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "the impact it has had on coding is undeniable",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MSFT"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "MSFT",
+    "GOOGL",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft owns GitHub Copilot, the dominant AI coding assistant, and directly monetizes developer productivity gains through Copilot subscriptions \u2014 making it the clearest named beneficiary of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google offers AI coding tools but coding productivity is a marginal revenue driver for Alphabet; this thesis does not specifically implicate GOOGL as a primary beneficiary and it appears to have bled in from adjacent AI discussion."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon has AWS CodeWhisperer but coding tool revenue is negligible relative to AMZN's overall business; this ticker is tangential to the specific thesis about developer productivity gains and was likely contaminated from adjacent cloud/AI discussion."
+    }
+  ]
+}

@@ -132,7 +132,8 @@
       "grid.*constraint",
       "power.*bottleneck",
       "energy.*constraint",
-      "power.*limit"
+      "power.*limit",
+      "electricity generation"
     ],
     "exclude": [
       "global warming",
@@ -270,7 +271,8 @@
       "chain of thought",
       "o1",
       "inference scaling",
-      "reasoning.*data flywheel"
+      "reasoning.*data flywheel",
+      "structurally short (of )?compute"
     ]
   },
   "SaaS existential disruption": {
@@ -552,7 +554,8 @@
       "cost per token",
       "token production",
       "inference econom",
-      "token econom"
+      "token econom",
+      "lowest.?cost token"
     ]
   },
   "Nvidia GPU moat / CUDA ecosystem": {
@@ -1082,5 +1085,20 @@
       "behind.the.meter",
       "behind-the-meter"
     ]
+  },
+  "Crypto / Coinbase (COIN)": {
+    "tickers": [
+      "COIN"
+    ],
+    "source": "SOHN_AU_2021_PICK",
+    "direction": "LONG",
+    "note": "Baker's Sohn Australia 2021 single-stock pick: Coinbase Cloud as the AWS of crypto / web3 infra.",
+    "keys": [
+      "coinbase",
+      "web ?3",
+      "programmable crypto",
+      "crypto exchange"
+    ],
+    "exclude": []
   }
 }

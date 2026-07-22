@@ -1,0 +1,46 @@
+{
+  "date": "2026-07-20",
+  "source": "CNBC \u2014 SpaceX IPO drawdown, AI infrastructure, open source models, frontier AI",
+  "thesis_id": "T2",
+  "summary": "Open source AI models shift margin from the model layer to the infrastructure layer, making compute infrastructure more valuable",
+  "summary_extended": "Baker argues that the rise of open source AI models does not compress compute demand \u2014 it expands it, because token demand is highly elastic and cheaper tokens drive higher consumption volumes. Critically, each open source token requires the same compute, watts, and capex as a closed-source token, meaning the cost structure of inference is unchanged; what shifts is where the margin accrues. Open source models structurally transfer margin percentage away from model-layer companies (e.g., proprietary AI labs) toward compute infrastructure providers \u2014 neoclouds, GPU manufacturers, and data center operators. Baker frames this as a core conviction, invoking the Red Hat analogy (open source software shifted value to services/infrastructure, not destroyed it) and explicitly stating he believes the world is 'structurally short compute.' The investment implication is to own compute infrastructure \u2014 NVIDIA as the dominant GPU supplier and publicly listed neoclouds \u2014 regardless of which frontier model wins the market.",
+  "detail": "Cheaper open source tokens do not reduce compute consumption \u2014 they increase it because demand is elastic. Each open source token costs the same compute/watts/capex as a closed-source token. This structurally benefits neoclouds, NVIDIA, and compute infrastructure providers regardless of which model wins.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a fundamental principle, uses the red hat analogy, and explicitly says 'if you believe like I do that we are structurally short compute' \u2014 framing it as a core conviction",
+  "themes": [
+    "AI datacenter infrastructure",
+    "open source AI",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "open source models fundamentally just shift margin percentage from the model layer to the infrastructure layer",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "CRWV"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "CoreWeave",
+    "Lambda Labs",
+    "Cerebras",
+    "neoclouds broadly"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVIDIA is the dominant supplier of GPUs that power all AI compute \u2014 open source or closed. Since open source tokens require the same compute per token and drive higher aggregate demand, NVIDIA directly benefits as the primary hardware vendor to neoclouds and hyperscalers."
+    },
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "CoreWeave is a publicly listed neocloud (GPU cloud provider) that directly benefits as margin shifts from the model layer to the infrastructure layer \u2014 exactly the dynamic Baker describes."
+    }
+  ]
+}

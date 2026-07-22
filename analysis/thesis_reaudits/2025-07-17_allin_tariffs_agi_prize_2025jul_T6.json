@@ -1,0 +1,29 @@
+{
+  "date": "2025-07-17",
+  "source": "All-In Podcast — Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
+  "thesis_id": "T6",
+  "summary": "Blackwell-trained models (Grok 5, OpenAI o5, next Gemini) will represent a significant step-function improvement over current Hopper-trained models",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "GOOGL",
+    "META"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Nvidia's Blackwell architecture is the explicit and central subject of this thesis. Baker directly attributes the step-function improvement in model quality to Blackwell training, making NVDA the unambiguous direct subject and primary beneficiary."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named the next Gemini model as one of the Blackwell-trained frontier models expected to show step-function improvement. GOOGL is the parent of Google DeepMind, making this a direct and specific connection to this thesis."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Baker did not explicitly name Meta or its Llama models in connection with this Blackwell training thesis. The first-pass audit itself acknowledged the connection was 'inferential rather than direct.' Grok 5 is xAI's, o5 is OpenAI's, and Gemini is Google's — Meta was not named. Under the strict test, this must be removed."
+    }
+  ]
+}

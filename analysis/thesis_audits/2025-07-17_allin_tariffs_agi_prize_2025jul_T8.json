@@ -1,0 +1,67 @@
+{
+  "date": "2025-07-17",
+  "source": "All-In Podcast \u2014 Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
+  "thesis_id": "T8",
+  "summary": "The total addressable market for AI is at least $10 trillion in market cap, anchored by ~$1 trillion in annual revenue from productivity gains alone",
+  "summary_extended": "Baker endorses a framework \u2014 originally proposed by Jason Calacanis \u2014 that the total addressable market for AI represents at least $10 trillion in market cap, grounded in a revenue estimate of roughly $1 trillion per year. The logic runs as follows: approximately 1 billion people in the developed world will pay around $1,000 per year for AI productivity tools, analogous to how consumers historically spent $1,000 per year on a PC (a $3,000\u2013$4,000 machine lasting three years). Baker calls this framing 'reasonable' and 'quite reasonable,' lending it credibility as a structural sizing exercise rather than dismissing it as hype. The investment implication is that the AI sector as a whole has a long-term market cap expansion runway of at least $10 trillion, suggesting current valuations of leading AI platform companies may still be early relative to the eventual prize. Baker does not specify individual winners but implicitly frames this as a macro tailwind for the dominant AI platform and infrastructure players.",
+  "detail": "Baker validates Jason Calacanis's back-of-envelope: 1 billion people in the developed world paying ~$1,000/year for AI = $1 trillion in revenue, implying ~$10 trillion in market cap. He draws analogy to the PC era where a $3-4k PC lasting 3 years = ~$1,000/year per person. He calls the framing 'reasonable' and 'quite reasonable.'",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker explicitly validates the framework as 'reasonable' but does not independently derive it; uses hedged language around the productivity bogey",
+  "themes": [
+    "AI model competition",
+    "AI frontier models",
+    "consumer AI"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "the trillion dollars a year in revenue because of AI seems quite reasonable",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "GOOGL",
+    "MSFT",
+    "META",
+    "AMZN",
+    "AAPL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "The thesis is a macro TAM sizing argument for AI broadly, not specifically about NVDA's GPU business. NVDA is not named or implied as a direct subject or uniquely positioned beneficiary in this specific framing \u2014 it is a general AI theme bleed-in."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Baker does not identify GOOGL specifically as a beneficiary of this $10T TAM thesis. GOOGL is a major AI player but its inclusion here reflects general AI theme contamination rather than a specific claim Baker made about GOOGL in this thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT is not specifically named or implied in this TAM framework. While MSFT is a leading AI platform company, Baker's thesis is a broad market sizing argument and does not single out MSFT as a direct beneficiary."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META is not referenced in this thesis. The $10T TAM argument is a macro framing exercise and does not specifically implicate META as a subject or beneficiary."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMZN is not specifically implicated in this TAM sizing thesis. Its inclusion appears to be general AI mega-cap contamination from adjacent transcript segments."
+    },
+    {
+      "ticker": "AAPL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AAPL is not referenced in this thesis. The consumer AI TAM framing does not specifically identify AAPL as a direct beneficiary in Baker's argument."
+    }
+  ]
+}

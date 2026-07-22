@@ -1,0 +1,35 @@
+{
+  "date": "2025-07-17",
+  "source": "All-In Podcast — Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
+  "thesis_id": "T7",
+  "summary": "Being the lowest-cost token producer will be the defining competitive advantage in AI — a structural shift from prior tech cycles",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "GOOGL",
+    "META",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name NVDA in connection with the lowest-cost token producer thesis. NVDA is infrastructure that others use; the thesis is about who wins by being the lowest-cost producer, not about the hardware supplier. Baker's structural argument favors companies with proprietary silicon over those relying on expensive third-party compute — which actually positions NVDA as something to be displaced, not a direct beneficiary. No specific connection made by Baker between NVDA and this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "While GOOGL structurally fits the thesis (TPUs, scale, vertical integration), Baker did not specifically name Google as a beneficiary of the lowest-cost token producer thesis in this interview. The thesis summary explicitly states 'Baker does not name specific winners explicitly.' Applying the strict test: no specific verbal connection made."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Same issue as GOOGL — META structurally fits the thesis but Baker did not specifically name Meta as a beneficiary of the lowest-cost token producer thesis. The thesis summary confirms Baker named no specific winners. No specific verbal connection made."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Same issue — AMZN has Trainium/Inferentia and fits the thesis structurally, but Baker did not specifically name Amazon in connection with this thesis. The thesis summary explicitly states no specific winners were named. No specific verbal connection made."
+    }
+  ]
+}

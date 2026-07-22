@@ -1,0 +1,46 @@
+{
+  "date": "2023-04-21",
+  "source": "All-In Podcast \u2014 E125: SpaceX Starship launch, Fox News settlement, AI/Reddit",
+  "thesis_id": "T3",
+  "summary": "Starship disrupts trans-Pacific and trans-Atlantic air cargo routes within 5-10 years",
+  "summary_extended": "Baker argues that SpaceX's Starship, once it achieves full reusability and sufficient fleet scale, will render trans-Pacific and trans-Atlantic air cargo routes economically obsolete through point-to-point suborbital transport. He explicitly states 'there will be no more trans-pacific or transatlantic cargo flights,' framing this as a structural disruption rather than incremental competition. The investment implication is bearish on long-haul air freight incumbents, particularly integrated carriers like FedEx and UPS whose international express networks depend on these routes. Baker acknowledges the thesis is contingent on a large Starship fleet being built out, and offers a wide timeframe of 5-10 years, making this highly speculative and dependent on SpaceX execution that cannot be traded via public markets. Notably, SpaceX itself is private, so there is no direct public equity beneficiary of this thesis \u2014 only potential losers among listed air freight operators.",
+  "detail": "Baker explicitly states that transatlantic and trans-Pacific aerospace cargo routes 'go away' once Starship achieves full reusability and fleet scale. Point-to-point suborbital transport makes air freight economically obsolete for long-haul routes.",
+  "confidence": "speculative",
+  "confidence_evidence": "Baker states this as a forward view but acknowledges 'you're gonna need a big Starship Fleet to accomplish that' \u2014 implying it is contingent on fleet buildout. No specific timeline beyond '5-6-7-8-10 years.'",
+  "themes": [
+    "space/orbital compute",
+    "logistics disruption",
+    "transportation"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "there will be no more trans-pacific or transatlantic cargo flights",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "FDX",
+    "UPS"
+  ],
+  "tickers_subject": [
+    "FDX",
+    "UPS"
+  ],
+  "tickers_implied_original": [
+    "FedEx (FDX)",
+    "UPS",
+    "air freight incumbents as losers"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "FDX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "FedEx derives significant revenue from international air freight on trans-Pacific and trans-Atlantic routes \u2014 the exact routes Baker says will be disrupted. It is a direct subject of the bearish thesis as a structural loser if Starship achieves fleet scale."
+    },
+    {
+      "ticker": "UPS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "UPS similarly operates major international air cargo networks on long-haul routes Baker identifies as at risk. It is a direct subject of the bearish disruption thesis alongside FedEx."
+    }
+  ]
+}

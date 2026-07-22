@@ -1,0 +1,23 @@
+{
+  "date": "2023-04-21",
+  "source": "All-In Podcast — E125: SpaceX Starship launch, Fox News settlement, AI/Reddit",
+  "thesis_id": "T10",
+  "summary": "AI co-pilots for professional verticals (coding, legal, medical, architecture) will produce multiple unicorns",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "MSFT",
+    "GOOGL"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "Sacks did not specifically name Microsoft or GitHub Copilot in connection with this thesis in the transcript. The thesis is a general venture/structural view about AI co-pilots producing unicorns. MSFT is an obvious inference by the auditor, not a specific connection Sacks made in this interview to this exact claim."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "Sacks did not specifically name Google or its foundation model APIs in connection with this thesis. GOOGL was added by the first-pass auditor as an inferred beneficiary, not because Sacks explicitly connected it to this exact claim about professional AI co-pilots producing unicorns."
+    }
+  ]
+}

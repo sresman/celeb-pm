@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-20",
+  "source": "CNBC — SpaceX IPO drawdown, AI infrastructure, open source models, frontier AI",
+  "thesis_id": "T3",
+  "summary": "We are structurally short compute; this is the dominant macro fact for AI investing",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "NVDA",
+    "SMCI",
+    "VRT",
+    "CEG",
+    "EQIX"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name NVIDIA in connection with this structural compute shortage thesis. The thesis is a general macro view about compute demand outpacing supply. NVDA was not explicitly cited by Baker as a beneficiary of this exact claim in the transcript — it is an obvious inference but not a specific connection Baker made."
+    },
+    {
+      "ticker": "SMCI",
+      "action": "REMOVE",
+      "reasoning": "Super Micro Computer was not specifically named by Baker in connection with this structural compute shortage thesis. It was added by inference in the first audit pass, not because Baker explicitly connected it to this claim."
+    },
+    {
+      "ticker": "VRT",
+      "action": "REMOVE",
+      "reasoning": "Vertiv was not specifically named by Baker in connection with this structural compute shortage thesis. It was added by inference, not because Baker explicitly cited it as a beneficiary of this exact structural claim."
+    },
+    {
+      "ticker": "CEG",
+      "action": "REMOVE",
+      "reasoning": "Constellation Energy was not specifically named by Baker in connection with this structural compute shortage thesis. It was added by inference about power demand, not because Baker explicitly connected it to this claim."
+    },
+    {
+      "ticker": "EQIX",
+      "action": "REMOVE",
+      "reasoning": "Equinix was not specifically named by Baker in connection with this structural compute shortage thesis. It was added by inference about data center demand, not because Baker explicitly cited it as a beneficiary of this exact claim."
+    }
+  ]
+}

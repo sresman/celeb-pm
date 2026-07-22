@@ -1,0 +1,41 @@
+{
+  "date": "2020-04-02",
+  "source": "Invest Like the Best — Investing through a bear market (EP.167)",
+  "thesis_id": "T11",
+  "summary": "Video games are foundational to the metaverse and will become platforms with identity, payments, and social layers",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "MSFT",
+    "SNE",
+    "RBLX",
+    "TTWO",
+    "ATVI"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Xbox as one of the platforms with identity and payments layers foundational to the metaverse. Microsoft owns Xbox, making MSFT a direct and specific beneficiary of this exact thesis."
+    },
+    {
+      "ticker": "SNE",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named PlayStation as one of the key platforms with identity and payments layers. Sony owns PlayStation, so SNE is directly and specifically connected to this thesis."
+    },
+    {
+      "ticker": "RBLX",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Roblox as a platform with identity and payments layers foundational to the metaverse. It is the direct subject of this thesis."
+    },
+    {
+      "ticker": "TTWO",
+      "action": "REMOVE",
+      "reasoning": "Baker did not explicitly name any Take-Two property (GTA Online, 2K games) in connection with this thesis. He named Xbox, PlayStation, Steam, Roblox, and Fortnite specifically. TTWO was not mentioned in connection with this exact thesis and fails the critical test of specific connection."
+    },
+    {
+      "ticker": "ATVI",
+      "action": "REMOVE",
+      "reasoning": "Baker did not explicitly name Activision Blizzard, Battle.net, Call of Duty, or World of Warcraft in connection with this thesis. The platforms he specifically named were Xbox, PlayStation, Steam, Roblox, and Fortnite. ATVI is a general video game beneficiary but was not specifically connected to this exact thesis by Baker."
+    }
+  ]
+}

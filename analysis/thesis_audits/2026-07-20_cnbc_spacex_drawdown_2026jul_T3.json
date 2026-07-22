@@ -1,0 +1,59 @@
+{
+  "date": "2026-07-20",
+  "source": "CNBC \u2014 SpaceX IPO drawdown, AI infrastructure, open source models, frontier AI",
+  "thesis_id": "T3",
+  "summary": "We are structurally short compute; this is the dominant macro fact for AI investing",
+  "summary_extended": "Baker argues that the AI industry is in a state of structural compute shortage \u2014 meaning demand for compute will persistently outpace supply over a long-term horizon, not merely as a cyclical imbalance. His reasoning is that cheaper tokens produced by open source models will stimulate dramatically more consumption of AI services, which in turn increases aggregate compute demand rather than reducing it (a Jevons paradox dynamic). This structural shortage underpins a broadly bullish view on all compute infrastructure, from chips to data centers to power. Baker frames this as the dominant macro fact for AI investing, suggesting it should be the foundational lens through which all AI infrastructure investments are evaluated. The implication is to be long compute infrastructure across the stack \u2014 GPUs, networking, data center operators, and power \u2014 as the shortage is self-reinforcing rather than self-correcting.",
+  "detail": "Baker explicitly states he believes 'we are structurally short compute' as a foundational view. Cheaper tokens from open source models will drive more consumption, not less, reinforcing the compute shortage thesis. This underpins bullish views on all compute infrastructure.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses 'I do believe' framing and calls it a structural condition, not a cyclical one",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "if you believe like I do that we are structurally short compute",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "neoclouds",
+    "hyperscalers",
+    "AI infrastructure broadly"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "NVIDIA is the dominant supplier of AI GPUs and is the most direct beneficiary of a structural compute shortage thesis. As the primary compute provider, persistent undersupply of compute directly benefits NVDA's pricing power and demand visibility. [RE-AUDIT: Baker did not specifically name NVIDIA in connection with this structural compute shortage thesis. The thesis is a general macro view about compute demand outpacing supply. NVDA was not explicitly cited by Baker as a beneficiary of this exact claim in the transcript \u2014 it is an obvious inference but not a specific connection Baker made.]"
+    },
+    {
+      "ticker": "SMCI",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Super Micro Computer is a leading AI server manufacturer and a direct beneficiary of sustained data center buildout driven by structural compute shortage. Demand for its GPU-dense server systems scales directly with compute infrastructure spending. [RE-AUDIT: Super Micro Computer was not specifically named by Baker in connection with this structural compute shortage thesis. It was added by inference in the first audit pass, not because Baker explicitly connected it to this claim.]"
+    },
+    {
+      "ticker": "VRT",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Vertiv provides power and thermal management infrastructure critical to AI data centers. A structural compute shortage implies sustained data center construction and densification, directly benefiting VRT's core business. [RE-AUDIT: Vertiv was not specifically named by Baker in connection with this structural compute shortage thesis. It was added by inference, not because Baker explicitly cited it as a beneficiary of this exact structural claim.]"
+    },
+    {
+      "ticker": "CEG",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Constellation Energy is a leading nuclear power provider increasingly contracted to supply hyperscaler data centers. Structural compute shortage implies sustained power demand growth for AI infrastructure, directly benefiting CEG. [RE-AUDIT: Constellation Energy was not specifically named by Baker in connection with this structural compute shortage thesis. It was added by inference about power demand, not because Baker explicitly connected it to this claim.]"
+    },
+    {
+      "ticker": "EQIX",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Equinix is a major data center REIT and colocation provider that benefits directly from sustained AI infrastructure buildout implied by a structural compute shortage thesis. [RE-AUDIT: Equinix was not specifically named by Baker in connection with this structural compute shortage thesis. It was added by inference about data center demand, not because Baker explicitly cited it as a beneficiary of this exact claim.]"
+    }
+  ]
+}

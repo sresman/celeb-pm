@@ -1,0 +1,35 @@
+{
+  "date": "2025-01-28",
+  "source": "iConnections Global Alts 2025 — The Future of AI",
+  "thesis_id": "T10",
+  "summary": "2025 is the year of AI applications — software and internet companies will be primary beneficiaries of higher AI ROI",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "META",
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker specifically cited the 'DeepSeek bounce day' where software and internet stocks outperformed, and Meta as a large internet platform is explicitly within the category Baker named as primary beneficiaries of the application-layer AI ROI thesis. Baker named internet companies as the direct beneficiaries of this shift."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named software and internet companies as the primary beneficiaries of the 2025 application-layer thesis, and Google is a canonical internet platform he referenced in this context. The thesis directly applies to internet platforms monetizing cheaper inference."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named software companies as primary beneficiaries of the application-layer AI ROI thesis, and Microsoft is the canonical large-cap software company monetizing AI through Copilot and enterprise products. Baker specifically connected software companies to this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "While Amazon is an internet company, Baker's specific framing of the thesis centered on software and internet companies benefiting from cheaper inference at the application layer. There is no evidence Baker specifically named Amazon in connection with this thesis — Amazon's primary AI narrative is infrastructure (AWS), which Baker was explicitly de-emphasizing. Without a specific mention connecting AMZN to this application-layer thesis, it should be removed."
+    }
+  ]
+}

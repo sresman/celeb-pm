@@ -17,17 +17,8 @@
   "tickers_named_original": [
     "META"
   ],
-  "tickers_direct": [
-    "META",
-    "AMZN",
-    "GOOGL",
-    "MSFT",
-    "EQIX",
-    "DLR"
-  ],
-  "tickers_subject": [
-    "META"
-  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
   "tickers_implied_original": [
     "hyperscalers broadly",
     "data center REITs",
@@ -36,39 +27,39 @@
   "ticker_audit": [
     {
       "ticker": "META",
-      "classification": "DIRECT_SUBJECT",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "META is explicitly named and is a canonical example of a company with massive physical infrastructure (data centers, fiber, hardware) that would score well on EV/net PP&E under Baker's framework, making it a direct subject of this thesis."
+      "reasoning": "META is explicitly named and is a canonical example of a company with massive physical infrastructure (data centers, fiber, hardware) that would score well on EV/net PP&E under Baker's framework, making it a direct subject of this thesis. [RE-AUDIT: The summary does not indicate Baker specifically named META in connection with the EV/net PP&E thesis. META appears to have been inferred as a canonical example rather than explicitly connected by Baker to this specific valuation framework in this thesis.]"
     },
     {
       "ticker": "AMZN",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "AWS/Amazon is a leading hyperscaler with enormous net PP&E from data center buildout; unambiguously among the asset-heavy AI infrastructure companies Baker implies are undervalued on this metric."
+      "reasoning": "AWS/Amazon is a leading hyperscaler with enormous net PP&E from data center buildout; unambiguously among the asset-heavy AI infrastructure companies Baker implies are undervalued on this metric. [RE-AUDIT: AMZN was added as an inferred beneficiary of the hyperscaler category, not because Baker specifically named Amazon in connection with the EV/net PP&E thesis. This is a sector-level inference, not a direct connection.]"
     },
     {
       "ticker": "GOOGL",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Alphabet is a major hyperscaler with massive data center PP&E and fits squarely within Baker's 'installed atoms' thesis as a direct beneficiary of EV/net PP&E revaluation."
+      "reasoning": "Alphabet is a major hyperscaler with massive data center PP&E and fits squarely within Baker's 'installed atoms' thesis as a direct beneficiary of EV/net PP&E revaluation. [RE-AUDIT: GOOGL was added as an inferred beneficiary based on being a hyperscaler, not because Baker specifically named Alphabet/Google in connection with the EV/net PP&E valuation metric thesis.]"
     },
     {
       "ticker": "MSFT",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Microsoft is a leading hyperscaler investing heavily in physical AI infrastructure; directly implied by Baker's reference to hyperscalers broadly as beneficiaries of this valuation framework."
+      "reasoning": "Microsoft is a leading hyperscaler investing heavily in physical AI infrastructure; directly implied by Baker's reference to hyperscalers broadly as beneficiaries of this valuation framework. [RE-AUDIT: MSFT was added as an inferred beneficiary based on being a hyperscaler, not because Baker specifically named Microsoft in connection with the EV/net PP&E thesis.]"
     },
     {
       "ticker": "EQIX",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Equinix is the largest publicly listed data center REIT and is unambiguously implied by Baker's explicit reference to data center REITs as a category benefiting from EV/net PP&E revaluation."
+      "reasoning": "Equinix is the largest publicly listed data center REIT and is unambiguously implied by Baker's explicit reference to data center REITs as a category benefiting from EV/net PP&E revaluation. [RE-AUDIT: While Baker referenced data center REITs as a category, EQIX was not specifically named by Baker in connection with this thesis. Category-level inference does not meet the strict test for direct connection.]"
     },
     {
       "ticker": "DLR",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Digital Realty is a major US-listed data center REIT explicitly implied by Baker's reference to data center REITs as beneficiaries of the installed-atoms appreciation thesis."
+      "reasoning": "Digital Realty is a major US-listed data center REIT explicitly implied by Baker's reference to data center REITs as beneficiaries of the installed-atoms appreciation thesis. [RE-AUDIT: Like EQIX, DLR was inferred from Baker's general reference to data center REITs as a category. Baker did not specifically name Digital Realty in connection with the EV/net PP&E thesis.]"
     }
   ]
 }

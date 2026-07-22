@@ -1,0 +1,32 @@
+{
+  "date": "2023-04-21",
+  "source": "All-In Podcast \u2014 E125: SpaceX Starship launch, Fox News settlement, AI/Reddit",
+  "thesis_id": "T1",
+  "summary": "Starship achieves ~50x reduction in cost-per-kg to orbit vs Falcon 9, representing a step-function change in launch economics",
+  "summary_extended": "Baker argues that Starship represents a structural, step-function improvement in launch economics \u2014 not an incremental one \u2014 citing specific numbers: Falcon 9 lifts approximately 17 metric tons to orbit at roughly $15M in variable cost, while Starship targets over 100 metric tons at under $2M variable cost, implying roughly 50x improvement in cost-per-kilogram to orbit. He was physically present at Starbase for the launch and speaks with firsthand conviction, framing this as a fundamental change in the economics of accessing space rather than a marginal upgrade. The investment implication is that industries and business models predicated on expensive launch costs \u2014 satellite communications, space-based compute, orbital infrastructure \u2014 face a structural disruption in their cost assumptions. Baker does not name specific public equity beneficiaries in this segment, but the thesis implies that downstream users of cheap launch capacity (satellite operators, space infrastructure companies) could see dramatically altered economics if Starship achieves its targets.",
+  "detail": "Falcon 9 lifts 17 metric tons to orbit at ~$15M variable cost. Starship targets 100+ metric tons at under $2M variable cost \u2014 roughly 5x the payload at 10-15% of the cost, implying ~50x improvement in cost-per-kg. Baker frames this as a structural step-function, not incremental improvement.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states specific numbers publicly attributed to SpaceX/Elon tweets, frames it as 'roughly a 50x huge change' with clear arithmetic, and speaks with authority as someone physically present at Starbase.",
+  "themes": [
+    "space/orbital compute",
+    "launch economics",
+    "infrastructure disruption"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "roughly a 50x huge change in this massively changes needed economics",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SpaceX (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPCE",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Virgin Galactic is a suborbital tourism company and not a beneficiary of Starship's cost reduction thesis \u2014 it competes in an entirely different market segment and would more likely be disrupted than benefit."
+    }
+  ]
+}

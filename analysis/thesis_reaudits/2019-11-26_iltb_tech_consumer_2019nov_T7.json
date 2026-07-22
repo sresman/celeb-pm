@@ -1,0 +1,35 @@
+{
+  "date": "2019-11-26",
+  "source": "Invest Like the Best — Tech and consumer growth investing (EP.149)",
+  "thesis_id": "T7",
+  "summary": "Data quantity is the single most predictive variable of AI quality, creating compounding moats for dominant-scale internet platforms.",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "GOOGL",
+    "META",
+    "AMZN",
+    "MSFT"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly cited Google Research papers as the empirical basis for the data-scaling law, and Google is the canonical dominant-scale internet platform he uses to illustrate the thesis. Directly connected."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "While Meta is an obvious beneficiary of the data-quantity thesis, Baker did not specifically name Facebook/Meta in connection with this exact structural claim in the transcript. It appears to have been included by inference rather than explicit connection."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Amazon is a plausible beneficiary of the data-scaling thesis, but Baker did not specifically name Amazon in connection with this exact claim. Its inclusion appears inferential rather than based on Baker explicitly linking it to this thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly cited Microsoft Research papers alongside Google Research as the empirical source of the data-scaling law. Microsoft is directly named as a contributor to the foundational research underpinning this thesis, making it a specific and explicit connection."
+    }
+  ]
+}

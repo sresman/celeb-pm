@@ -16,10 +16,7 @@
   "contrarian": false,
   "quote_fragment": "AI makes global GDP inexorably more silicon intensive",
   "tickers_named_original": [],
-  "tickers_direct": [
-    "NVDA",
-    "AVGO"
-  ],
+  "tickers_direct": [],
   "tickers_subject": [],
   "tickers_implied_original": [
     "NVDA",
@@ -34,9 +31,9 @@
   "ticker_audit": [
     {
       "ticker": "NVDA",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "NVDA is the dominant supplier of compute infrastructure that AI companies spend ~50% of revenue on; as the largest direct beneficiary of AI-driven silicon intensity, it qualifies as a direct beneficiary of this structural thesis, though it is not the singular subject."
+      "reasoning": "NVDA is the dominant supplier of compute infrastructure that AI companies spend ~50% of revenue on; as the largest direct beneficiary of AI-driven silicon intensity, it qualifies as a direct beneficiary of this structural thesis, though it is not the singular subject. [RE-AUDIT: Baker's thesis is a broad structural claim that AI makes global GDP more silicon-intensive. He does not specifically name Nvidia as a beneficiary of this exact thesis. The thesis explicitly states 'no single company singled out as the primary beneficiary.' Including NVDA is an inference about who benefits from the general theme, not a specific connection Baker made in this thesis.]"
     },
     {
       "ticker": "AMD",
@@ -46,9 +43,9 @@
     },
     {
       "ticker": "AVGO",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "AVGO is a major supplier of custom AI silicon (XPUs) and networking for AI datacenters, directly benefiting from the structural increase in compute spend that Baker describes; its exposure to hyperscaler AI infrastructure makes it a genuine direct beneficiary."
+      "reasoning": "AVGO is a major supplier of custom AI silicon (XPUs) and networking for AI datacenters, directly benefiting from the structural increase in compute spend that Baker describes; its exposure to hyperscaler AI infrastructure makes it a genuine direct beneficiary. [RE-AUDIT: Same reasoning as NVDA. Baker does not specifically name Broadcom in connection with this structural thesis about AI increasing silicon intensity of GDP. AVGO's inclusion is an inference about sector beneficiaries, not a direct connection Baker made to this exact claim. The thesis is explicitly a broad sector call with no specific company named.]"
     },
     {
       "ticker": "MU",

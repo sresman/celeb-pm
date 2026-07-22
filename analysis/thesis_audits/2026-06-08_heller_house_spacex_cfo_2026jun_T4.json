@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-08",
+  "source": "Heller House \u2014 SpaceX CFO Bret Johnsen interview \u2014 financial mechanics, Starship timeline, orbital compute, AI business",
+  "thesis_id": "T4",
+  "summary": "Direct-to-cell (direct-to-device) at 5G quality within two years is a new high-margin revenue stream and a structural threat to terrestrial cellular carriers.",
+  "summary_extended": "Baker (via SpaceX CFO Bret Johnsen) argues that SpaceX's Starlink direct-to-device service will achieve 5G-quality connectivity within two years, enabling seamless global coverage from any standard handset without dead zones. Johnsen frames this as a product that terrestrial carriers structurally cannot replicate, as it requires a low-Earth orbit satellite constellation at scale \u2014 a moat no ground-based competitor can match. The investment implication is that this represents a new high-margin revenue stream for SpaceX (private, not directly investable) while posing a structural threat to terrestrial cellular carriers whose rural and roaming revenue could be displaced. No specific financial figures were cited, but the CFO described the two-year timeline as a near-certain product roadmap item rather than speculative, lending high conviction to the near-term commercialization thesis.",
+  "detail": "Johnsen states next-gen direct-to-device will be '5G quality' within two years, enabling global roaming with no dead zones from any standard handset. This is framed as a product nobody else can replicate terrestrially and one consumers would pay a premium for.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "CFO gives explicit two-year timeline and describes it as a near-certain product roadmap item, not speculative.",
+  "themes": [
+    "satellite connectivity",
+    "telecom disruption"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "next generation of direct to cell will be 5G quality in the next two years",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "TMUS",
+    "T",
+    "VZ"
+  ],
+  "tickers_subject": [
+    "TMUS",
+    "T",
+    "VZ"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TMUS",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "T-Mobile is a major US terrestrial carrier directly threatened by Starlink direct-to-device achieving 5G quality; it is also a current Starlink distribution partner, making it both a potential beneficiary and a structural risk \u2014 the thesis implies carriers like TMUS face disruption to roaming and rural revenue."
+    },
+    {
+      "ticker": "T",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "AT&T is a major US terrestrial carrier whose rural and roaming revenue streams are directly threatened by Starlink direct-to-device at 5G quality, making it a direct subject of the disruption thesis."
+    },
+    {
+      "ticker": "VZ",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Verizon is a major US terrestrial carrier directly threatened by Starlink direct-to-device displacing rural and roaming revenue, making it a direct subject of the disruption thesis."
+    }
+  ]
+}

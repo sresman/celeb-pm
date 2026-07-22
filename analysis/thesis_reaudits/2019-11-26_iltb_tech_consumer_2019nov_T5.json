@@ -1,0 +1,41 @@
+{
+  "date": "2019-11-26",
+  "source": "Invest Like the Best — Tech and consumer growth investing (EP.149)",
+  "thesis_id": "T5",
+  "summary": "Intel's loss of semiconductor manufacturing leadership to TSMC in 2018 was a structural inflection point creating a 20-30% competitiveness swing for fabless chip designers.",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "INTC",
+    "TSM",
+    "AAPL",
+    "AMD",
+    "QCOM"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "INTC",
+      "action": "KEEP",
+      "reasoning": "Intel is the direct subject of the thesis — Baker explicitly argues that Intel lost manufacturing leadership to TSMC at 7nm, creating a structural competitiveness disadvantage for Intel specifically."
+    },
+    {
+      "ticker": "TSM",
+      "action": "KEEP",
+      "reasoning": "TSMC is the other direct subject — Baker explicitly names TSMC as the company that surpassed Intel at the 7nm node, making TSMC's foundry leadership the core of the thesis."
+    },
+    {
+      "ticker": "AAPL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly cited Apple chips as a specific example of fabless designs benefiting from TSMC's process lead, directly connecting Apple to this thesis."
+    },
+    {
+      "ticker": "AMD",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name AMD in connection with this thesis. AMD is an obvious implied beneficiary of the general structural claim, but the critical test requires Baker to have specifically connected AMD to this exact thesis — he did not. This is an inference added in the prior audit, not a direct connection Baker made."
+    },
+    {
+      "ticker": "QCOM",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Qualcomm in connection with this thesis. Like AMD, Qualcomm is a plausible implied beneficiary of the general structural claim about fabless designers, but Baker did not explicitly connect Qualcomm to this exact thesis. This was an inference added in the prior audit."
+    }
+  ]
+}

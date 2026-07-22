@@ -1,0 +1,23 @@
+{
+  "date": "2024-08-07",
+  "source": "This Week in Startups — E1990: Liquidity Summit fireside with Antonio Gracias and Gavin Baker",
+  "thesis_id": "T16",
+  "summary": "Agents and actions replacing search is the next major platform shift; this will be massive and is coming soon.",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "AAPL",
+    "GOOGL"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "AAPL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically described on-device LLMs with deep personal context as the enabling mechanism for the agent shift, and Apple is the dominant on-device mobile platform. This is a direct and specific connection Baker made to this thesis, not a general sector mention."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker's thesis is explicitly about agents and actions replacing search — Google's core search business is the direct incumbent being disrupted. GOOGL is the central subject of this thesis, not merely mentioned in passing."
+    }
+  ]
+}

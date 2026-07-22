@@ -1,0 +1,357 @@
+{
+  "metadata": {
+    "source": "Heller House",
+    "date": "2026-06-08",
+    "host": "Gavin Baker",
+    "topic": "SpaceX CFO Bret Johnsen interview \u2014 financial mechanics, Starship timeline, orbital compute, AI business",
+    "duration_estimate_min": 48
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "Starship rapid reusability will deliver a 10x reduction in cost per kilogram to orbit within a couple of years, enabling a step-change across all SpaceX businesses.",
+      "detail": "CFO Johnsen states that once second-stage catch-and-reuse is achieved (framed as 'next couple of years'), cost per kilogram will fall 10x from current Falcon levels. This is the foundational enabler for Starlink V3, orbital compute, and direct-to-cell scaling.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "CFO states directly and repeatedly; framed as near-term operational milestone with specific launch infrastructure already being built (4 towers, Cape Canaveral pad).",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "space/orbital compute",
+        "launch infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "10x improvement as we get to rapid reusability with Starship"
+    },
+    {
+      "id": "T2",
+      "summary": "Starlink is a structurally differentiated telecom product \u2014 better, faster, lower latency, and lower cost to serve \u2014 positioned to grow from 10M to hundreds of millions of customers in a ~$1.6T addressable market.",
+      "detail": "Baker (as interviewer) frames Starlink as the first genuinely differentiated product in telecom history, noting incumbents share the same towers, rights-of-way, and equipment. Starlink's cost structure (no trench digging, terminal as primary CAC) and performance (lower latency, higher speed) create a durable competitive moat. Johnsen confirms the path to hundreds of millions of customers.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Both interviewer and CFO express high conviction; specific market sizing ($1.6T), customer trajectory, and structural cost advantage articulated in detail.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "satellite connectivity",
+        "telecom disruption"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "10 million customers can become hundreds of millions"
+    },
+    {
+      "id": "T3",
+      "summary": "Starship V3 Starlink satellites deliver 20x the broadband capacity per launch versus Falcon, dramatically accelerating constellation build-out and Starlink revenue growth.",
+      "detail": "Each Starship launch of V3 Starlink satellites brings 20x the capability of a Falcon launch. This is a near-term catalyst (V3 satellites launching 'in the coming months') that directly expands Starlink capacity and lowers per-bit cost.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "CFO states the 20x figure explicitly; V3 Starship launch already occurred; V3 Starlink satellites described as imminent.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "satellite connectivity",
+        "launch infrastructure"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "every Starship launch brings 20 times the capability of a Falcon launch"
+    },
+    {
+      "id": "T4",
+      "summary": "Direct-to-cell (direct-to-device) at 5G quality within two years is a new high-margin revenue stream and a structural threat to terrestrial cellular carriers.",
+      "detail": "Johnsen states next-gen direct-to-device will be '5G quality' within two years, enabling global roaming with no dead zones from any standard handset. This is framed as a product nobody else can replicate terrestrially and one consumers would pay a premium for.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "CFO gives explicit two-year timeline and describes it as a near-certain product roadmap item, not speculative.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "satellite connectivity",
+        "telecom disruption"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "next generation of direct to cell will be 5G quality in the next two years"
+    },
+    {
+      "id": "T5",
+      "summary": "Orbital compute (racks in space) is the next major SpaceX business, requiring Starship for viability, with a target of gigawatts to eventually 100 gigawatts per year of orbital compute capacity.",
+      "detail": "Orbital compute satellites are described as Starlink-derivative platforms with Nvidia GPUs, radiative cooling, and solar power \u2014 not novel architectures. First capability demonstrations expected as soon as next year. 200 Starship launches per gigawatt at current gen. SpaceX is capacitizing for thousands of launches per year. Long-term target is 100 GW/year. Key structural advantages: no land lease, solar 5x more efficient in space (sun-sync, no atmosphere, no protective glass), radiative cooling vs. liquid cooling, and improving silicon cost curves vs. rising terrestrial data center costs.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "CFO provides specific metrics (200 launches/GW, 100 GW target), near-term demo timeline (next year), and detailed first-principles cost analysis. Framed as core strategic priority.",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "space/orbital compute",
+        "power/energy"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "scaling to gigawatts a year into space is a very hard challenge"
+    },
+    {
+      "id": "T6",
+      "summary": "Terrestrial AI compute hosting (colocation/cloud for third parties) is already a material business at ~$3.75B quarterly run rate, with the Anthropic deal as proof of concept for further expansion.",
+      "detail": "Baker calculates that the Anthropic hosting deal puts SpaceX AI at a $3.75B/quarter run rate, making it a top-5 AI infrastructure business. Johnsen confirms intent to sign more such deals and expand terrestrial data center capacity. SpaceX uses GB300s for its own training/inference and monetizes remaining capacity to third parties.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Specific revenue run rate cited by Baker; CFO confirms deal and intent to expand; Anthropic deal publicly reported.",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "cloud/hyperscale"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "$3.75 billion run rate per quarter \u2014 top five AI infrastructure business"
+    },
+    {
+      "id": "T7",
+      "summary": "Grok + Cursor acquisition creates a vertically integrated enterprise AI coding platform with access to Fortune 500 data, real-time X data, and SpaceX's compute advantage.",
+      "detail": "Cursor works with over half the Fortune 500 and thousands of enterprise accounts. After just weeks of mid-training RL on Colossus 2, Cursor's Composer model showed a noticeable jump in performance on the Pareto frontier (intelligence per unit cost). Grok Build harness is launching now. Real-time X data is a key differentiator for consumer and enterprise AI.",
+      "confidence": "moderate",
+      "confidence_evidence": "CFO describes the strategic rationale and early results with enthusiasm but acknowledges it is early days; performance improvement is described qualitatively.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI models/software",
+        "enterprise software"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "cursor working with over half the Fortune 500 and thousands of enterprise accounts"
+    },
+    {
+      "id": "T8",
+      "summary": "Terafab (SpaceX + Tesla + Intel semiconductor JV) is a strategic hedge against TSMC supply chain concentration risk, with SpaceX and Tesla as captive customers providing demand certainty that de-risks the foundry ramp.",
+      "detail": "Johnsen frames Terafab as driven primarily by supply chain security concern \u2014 SpaceX needs assured silicon supply to reach 100 GW/year of orbital compute. Without a captive customer, starting a new foundry is nearly impossible. SpaceX and Tesla as anchor customers remove demand risk, leaving only capital risk. Intel brings decades of process know-how. Elon's first-principles approach to semiconductor process requirements could yield efficiency gains.",
+      "confidence": "moderate",
+      "confidence_evidence": "CFO explains strategic rationale clearly but acknowledges it is early stage and capital-intensive; framed as a necessity rather than a high-return standalone bet.",
+      "tickers_named": [
+        "INTC"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain",
+        "vertical integration"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "concern is the supply chain won't be there to ramp to many many gigawatts"
+    },
+    {
+      "id": "T9",
+      "summary": "TSMC supply chain concentration is a critical bottleneck for AI scaling \u2014 all major AI chips (Nvidia, Google TPU, AI5) converge on TSMC, creating systemic risk for any company trying to scale to 100 GW of compute.",
+      "detail": "Johnsen explicitly names TSMC as the single-point dependency when you trace Nvidia, TPUs, and other AI chips one layer down the supply chain. This is the stated motivation for Terafab. Implies that any company dependent on TSMC for AI chip supply faces a hard ceiling on scaling ambitions.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "CFO states this as a primary strategic concern driving a major capital allocation decision (Terafab); not speculative commentary.",
+      "tickers_named": [
+        "NVDA",
+        "INTC"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "all of a sudden you start talking about TSMC \u2014 can't diversify one layer down"
+    },
+    {
+      "id": "T10",
+      "summary": "The terrestrial data center cost curve is deteriorating (power, cooling, land/regulatory costs rising) while orbital compute costs will improve, creating a long-term structural cost crossover.",
+      "detail": "Johnsen explicitly contrasts the two trajectories: orbital compute benefits from silicon cost reductions (Moore's Law), no land lease, free radiative cooling, and 5x more efficient solar. Terrestrial data centers face rising power bills, increasingly complex liquid cooling, and growing regulatory/land opposition. This cost crossover is the core long-term bull case for orbital compute.",
+      "confidence": "moderate",
+      "confidence_evidence": "Logical first-principles argument made by CFO; directionally compelling but crossover timing is uncertain and depends on Starship scaling.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "power/energy",
+        "space/orbital compute"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "terrestrial solutions the curve is going the other direction \u2014 everything getting more expensive"
+    },
+    {
+      "id": "T11",
+      "summary": "SpaceX's capital allocation is sequenced so that Starlink V3 cash flows fund orbital compute capex \u2014 the business model is self-financing at the critical inflection point.",
+      "detail": "Baker observes and Johnsen confirms that Starlink V3 (enabled by Starship) generates incremental cash flows and unlocks direct-to-cell (new high-margin revenue) precisely when orbital compute requires heavy capital deployment. This sequencing reduces external financing risk and is described as intentional Elon-level capital planning.",
+      "confidence": "moderate",
+      "confidence_evidence": "Both parties affirm the timing alignment; CFO credits Elon's vision for the sequencing but does not provide specific cash flow figures.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "space/orbital compute",
+        "satellite connectivity",
+        "capital allocation"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Starlink growth is cash flows \u2014 that unlocks direct to sell right when orbital compute needs capital"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "SpaceX (private) \u2014 orbital compute thesis",
+      "reasoning": "CFO confirms first capability demonstrations as soon as next year, 100 GW/year long-term target, structural cost advantages over terrestrial data centers, and $3.75B/quarter existing AI infrastructure run rate as proof of business model. Starship rapid reusability is the key gating factor and is progressing.",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "Nvidia (NVDA) \u2014 named as GPU supplier for orbital compute satellites",
+      "reasoning": "SpaceX orbital compute satellites will use Nvidia GPUs; SpaceX AI terrestrial clusters use GB300s; Cursor deal brings Fortune 500 enterprise data. SpaceX represents a new, large, and growing demand vector for Nvidia.",
+      "confidence": "moderate"
+    },
+    {
+      "direction": "avoid",
+      "target": "Terrestrial telecom incumbents (implied)",
+      "reasoning": "Baker frames Starlink as the first genuinely differentiated telecom product ever, with structural cost and performance advantages. Starlink's expansion to hundreds of millions of customers and 5G direct-to-device within two years poses existential competitive pressure on terrestrial carriers in underserved and rural markets.",
+      "confidence": "moderate"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Orbital compute / space-based AI infrastructure",
+      "over": "Terrestrial hyperscale data centers",
+      "reasoning": "Orbital compute has improving cost curves (silicon, no land, radiative cooling, 5x solar efficiency) while terrestrial data center costs are rising (power, cooling, land, regulatory). Long-term structural crossover favors orbital."
+    },
+    {
+      "preferred": "Satellite connectivity (Starlink)",
+      "over": "Terrestrial telecom",
+      "reasoning": "First genuinely differentiated product in telecom history \u2014 better performance, lower cost structure, no trench digging, global coverage. Terrestrial carriers share identical infrastructure and cannot replicate the cost or coverage advantage."
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "Orbital compute / SpaceX AI",
+      "nature": "timing",
+      "detail": "Engineers caution that scaling to gigawatts per year in space is a very hard challenge despite the logical extension from existing Starlink technology. First demonstrations expected next year but commercial scale is years away and depends on Starship rapid reusability being achieved."
+    },
+    {
+      "target": "Terafab",
+      "nature": "structural_risk",
+      "detail": "Starting a new semiconductor foundry is described as extremely difficult without captive customers. Even with SpaceX and Tesla as anchors, the capital risk is explicitly acknowledged by the CFO. Intel's process competitiveness relative to TSMC remains a key uncertainty."
+    },
+    {
+      "target": "TSMC / AI chip supply chain",
+      "nature": "structural_risk",
+      "detail": "All major AI chips (Nvidia, Google TPU, AI5) converge on TSMC one layer down the supply chain, creating systemic concentration risk for any company trying to scale AI compute to 100 GW/year. SpaceX views this as a near-term (next handful of years) constraint."
+    },
+    {
+      "target": "Starship program",
+      "nature": "timing",
+      "detail": "Rapid reusability of the second stage (catch at tower) is described as a 'next couple of years' milestone but is the critical gating factor for orbital compute, Starlink V3 economics, and direct-to-cell. Schedule slippage would delay all downstream businesses."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Starship second-stage catch and rapid reuse achieved",
+      "timing": "Next couple of years",
+      "impact": "10x reduction in cost per kilogram to orbit; unlocks orbital compute at scale, Starlink V3 economics, and direct-to-cell 5G",
+      "beneficiaries": [
+        "SpaceX (private)",
+        "Nvidia (GPU demand for orbital compute)"
+      ],
+      "losers": [
+        "Terrestrial telecom carriers",
+        "Terrestrial data center operators"
+      ]
+    },
+    {
+      "event": "Starlink V3 satellites launched on Starship (20x capacity per launch)",
+      "timing": "Coming months",
+      "impact": "Massive expansion of Starlink broadband capacity; accelerates path from 10M to hundreds of millions of customers; generates cash flows to fund orbital compute capex",
+      "beneficiaries": [
+        "SpaceX (private)"
+      ],
+      "losers": [
+        "Terrestrial ISPs",
+        "Satellite broadband competitors"
+      ]
+    },
+    {
+      "event": "Direct-to-cell 5G quality service launch",
+      "timing": "Within two years",
+      "impact": "New high-margin revenue stream; global roaming from standard handsets with no dead zones; structural threat to cellular carriers",
+      "beneficiaries": [
+        "SpaceX (private)"
+      ],
+      "losers": [
+        "Terrestrial cellular carriers (implied: T, VZ, TMUS)"
+      ]
+    },
+    {
+      "event": "First orbital compute capability demonstration",
+      "timing": "As soon as next year (2027)",
+      "impact": "Proof of concept for space-based AI inference; validates business model for hosting third-party AI workloads in orbit",
+      "beneficiaries": [
+        "SpaceX (private)",
+        "Nvidia (GPU supplier)"
+      ],
+      "losers": [
+        "Terrestrial hyperscale cloud providers (implied: AMZN, MSFT, GOOGL)"
+      ]
+    },
+    {
+      "event": "Terafab semiconductor foundry ramp",
+      "timing": "Multi-year, next handful of years",
+      "impact": "Assured silicon supply for SpaceX orbital compute scaling to 100 GW/year; reduces TSMC dependency; creates US-based advanced semiconductor manufacturing",
+      "beneficiaries": [
+        "SpaceX (private)",
+        "Intel (INTC \u2014 process partner)",
+        "Tesla (TSLA \u2014 captive customer/partner)"
+      ],
+      "losers": [
+        "TSMC (TSM \u2014 loses captive demand)"
+      ]
+    },
+    {
+      "event": "Additional third-party AI compute hosting deals (Anthropic model)",
+      "timing": "Near-term, ongoing",
+      "impact": "Expands terrestrial AI infrastructure revenue beyond $3.75B/quarter run rate; validates SpaceX as top-tier AI cloud provider",
+      "beneficiaries": [
+        "SpaceX (private)",
+        "Nvidia (incremental GPU demand)"
+      ],
+      "losers": [
+        "AWS",
+        "Azure",
+        "Google Cloud"
+      ]
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "SpaceX vertical integration model",
+      "view": "Each business unit is both a standalone revenue generator and an enabler of the next \u2014 launch enables Starlink, Starlink funds orbital compute, orbital compute justifies Terafab. The stack is self-reinforcing.",
+      "detail": "Johnsen explicitly frames the business as analogous to Microsoft's OS enabling applications \u2014 launch is the OS. Every vertical (Starlink, direct-to-cell, orbital compute, AI) is an application layer that also feeds back to justify more launch capacity."
+    },
+    {
+      "topic": "Elon Musk as capital allocator and engineer",
+      "view": "Elon's step-by-step IP acquisition strategy (organic) and sequenced business model construction is the primary source of SpaceX's compounding value creation.",
+      "detail": "Johnsen draws analogy to Broadcom's SOC IP acquisition strategy \u2014 each piece of technology needed for Mars is built as a standalone business (Falcon, Dragon, Starlink, Starship, orbital compute). This removes the 'how do you fund a multiplanetary species' objection by making each step self-financing."
+    },
+    {
+      "topic": "Regulatory environment for terrestrial data centers",
+      "view": "Growing NIMBY opposition to data centers is a structural tailwind for orbital compute.",
+      "detail": "Johnsen identifies 'I don't want this data center in my backyard' as a 'concerning trend' that orbital compute sidesteps entirely \u2014 no land, no local opposition, clean solar energy. Frames this as a regulatory advantage that will compound over time."
+    },
+    {
+      "topic": "AI model differentiation",
+      "view": "Real-time data from X (Twitter) is a durable differentiator for Grok vs. other LLMs, particularly for consumer and enterprise use cases requiring current information.",
+      "detail": "Johnsen frames X's live content feed as a key competitive moat for Grok, distinct from static training data used by competitors. Also notes SpaceX is investing in X's ads engine optimization as a separate revenue opportunity."
+    },
+    {
+      "topic": "SpaceX IPO readiness / capital needs",
+      "view": "The business is approaching an inflection where capital requirements are rising significantly (Terafab, Starship towers, orbital compute, terrestrial data centers) but the sequencing of cash flows from Starlink V3 and terrestrial AI hosting is designed to be self-funding.",
+      "detail": "CFO describes capital allocation as 'just in time' manufacturing model \u2014 mapping capex quarter by quarter to avoid getting ahead of revenue. Implies IPO or external capital raise is not imminent necessity but does not rule it out. Track record of value creation cited as basis for investor confidence."
+    }
+  ]
+}

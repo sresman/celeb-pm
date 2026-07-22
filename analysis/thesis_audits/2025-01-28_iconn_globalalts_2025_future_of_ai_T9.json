@@ -17,9 +17,7 @@
   "quote_fragment": "year three of AI... compounded at 40% per year for a decade",
   "tickers_named_original": [],
   "tickers_direct": [
-    "NVDA",
-    "MSFT",
-    "AVGO"
+    "NVDA"
   ],
   "tickers_subject": [],
   "tickers_implied_original": [
@@ -39,15 +37,15 @@
     },
     {
       "ticker": "MSFT",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "MSFT is a major AI platform and infrastructure layer (Azure, OpenAI partnership) and is a reasonable analog to the Microsoft of the 1990s PC cycle Baker explicitly names. Qualifies as a direct beneficiary."
+      "reasoning": "MSFT is a major AI platform and infrastructure layer (Azure, OpenAI partnership) and is a reasonable analog to the Microsoft of the 1990s PC cycle Baker explicitly names. Qualifies as a direct beneficiary. [RE-AUDIT: While Baker mentioned Microsoft as one of the 1990s-era winners (Oracle, Sun, Cisco, EMC, Microsoft, Dell) to illustrate the historical analog, he did not specifically name the current Microsoft as a direct beneficiary of the AI infrastructure supercycle thesis. The historical reference to MSFT is illustrative of the past cycle, not a specific claim about the current company's role in the AI buildout.]"
     },
     {
       "ticker": "AVGO",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "AVGO is a major AI networking and custom silicon supplier, making it a direct infrastructure beneficiary of the AI supercycle thesis Baker describes. Analogous to the networking/infrastructure winners of the 1990s cycle."
+      "reasoning": "AVGO is a major AI networking and custom silicon supplier, making it a direct infrastructure beneficiary of the AI supercycle thesis Baker describes. Analogous to the networking/infrastructure winners of the 1990s cycle. [RE-AUDIT: Baker did not specifically connect AVGO to this AI infrastructure supercycle thesis in the transcript. AVGO may be an obvious sector beneficiary, but the critical test requires Baker to have explicitly named it in connection with this exact thesis, which he did not. Its inclusion appears to be analyst inference rather than a direct Baker statement.]"
     },
     {
       "ticker": "GOOGL",

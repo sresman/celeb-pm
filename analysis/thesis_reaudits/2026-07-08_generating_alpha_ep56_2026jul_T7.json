@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha — Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T7",
+  "summary": "As AI eats the world, silicon eats the world — semiconductor intensity of AI is structurally higher than deterministic software",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "TSM",
+    "MRVL",
+    "ARM"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name NVDA as a beneficiary of this structural thesis about semiconductor intensity. The thesis is a general structural view ('as AI eats the world, silicon eats the world') with no specific company callouts. NVDA may be an obvious beneficiary but Baker did not explicitly connect it to this exact claim in this thesis statement."
+    },
+    {
+      "ticker": "AMD",
+      "action": "REMOVE",
+      "reasoning": "AMD was not specifically named by Baker in connection with this structural semiconductor intensity thesis. The thesis is a broad, general structural view with no company-specific callouts."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "REMOVE",
+      "reasoning": "AVGO was not specifically named by Baker in connection with this structural semiconductor intensity thesis. The thesis is a broad, general structural view with no company-specific callouts."
+    },
+    {
+      "ticker": "TSM",
+      "action": "REMOVE",
+      "reasoning": "TSM was not specifically named by Baker in connection with this structural semiconductor intensity thesis. The thesis is a broad, general structural view with no company-specific callouts."
+    },
+    {
+      "ticker": "MRVL",
+      "action": "REMOVE",
+      "reasoning": "MRVL was added as an implied beneficiary, not because Baker specifically connected it to this thesis. This is exactly the kind of false positive the audit is designed to remove."
+    },
+    {
+      "ticker": "ARM",
+      "action": "REMOVE",
+      "reasoning": "ARM was added as an implied beneficiary, not because Baker specifically connected it to this thesis. This is exactly the kind of false positive the audit is designed to remove."
+    }
+  ]
+}

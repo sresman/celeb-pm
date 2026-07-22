@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-08",
+  "source": "Generating Alpha — Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "thesis_id": "T14",
+  "summary": "The most AI-exposed mega-caps are at attractive valuations despite market simultaneously fearing AI job displacement",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named hyperscalers and AI platform leaders as the attractively valued AI mega-caps at the center of this thesis. Microsoft as a leading hyperscaler and AI platform (Azure, OpenAI partnership) is directly within the set Baker described."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Google/Alphabet is a core hyperscaler and AI platform leader explicitly within the category Baker described as trading at attractive valuations despite AI displacement fears."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Meta is one of the most AI-exposed mega-caps Baker referenced in this context — its ad business and AI integration make it a direct subject of the valuation paradox thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Amazon via AWS is a hyperscaler and AI platform leader, directly within the set Baker characterized as attractively valued AI mega-caps subject to the market paradox he described."
+    }
+  ]
+}

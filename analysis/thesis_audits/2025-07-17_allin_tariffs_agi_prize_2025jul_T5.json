@@ -1,0 +1,34 @@
+{
+  "date": "2025-07-17",
+  "source": "All-In Podcast \u2014 Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
+  "thesis_id": "T5",
+  "summary": "Grok 4 represents the largest AI model leapfrog seen in years, trained on Hopper, and sets a high bar before Blackwell-trained models arrive",
+  "summary_extended": "Baker argues that Grok 4, xAI's latest frontier model, represents the largest single-generation capability leap in AI in years, scoring roughly 2x better than Google, OpenAI, and Anthropic models on the RKGI2 semi-private benchmark and reaching the 40s on Humanity's Last Exam (HLE) \u2014 a test where exceptional human experts score only 5%. He notes that Grok 4 was trained on Hopper-generation GPUs and represents approximately the ceiling of what that hardware generation can achieve, implying the next step-change will come from Blackwell-trained models. The investment implication is that xAI has emerged as a serious frontier lab competitor, reshaping the competitive landscape among AI model providers, and that the Blackwell GPU generation (NVDA's current product cycle) is the critical next battleground for model capability. Baker's framing suggests that whoever secures the most Blackwell compute earliest will have a structural advantage in the next capability leap, making GPU supply and allocation a key investment variable.",
+  "detail": "Baker identifies RKGI2 (semi-private benchmark) and Humanity's Last Exam as the benchmarks that matter. Grok 4 scored roughly 2x better than Google/OpenAI/Anthropic on RKGI2 and scored in the 40s on HLE where exceptional humans score 5%. He notes this model is approximately the ceiling of what Hopper-generation GPUs can achieve.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker speaks with specificity about benchmark scores and explicitly calls it 'the biggest leapfrog we've seen in quite some time'",
+  "themes": [
+    "AI model competition",
+    "semiconductor supply chain",
+    "AI frontier models"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "roughly twice as good as the state-of-the-art Google OpenAI and Anthropic models",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly frames Grok 4 as the ceiling of Hopper-generation compute and implies Blackwell-trained models are the next frontier, making NVDA \u2014 the sole supplier of both Hopper and Blackwell GPUs \u2014 a direct beneficiary of continued frontier model training demand and the competitive race among labs to secure next-gen compute."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+GAVIN BAKER CORPUS — APPEARANCE JOURNAL
+========================================
+NOTE (2026-07-22): No pre-existing journal.txt was found in the repo or git history when
+this task ran ("Add entries ... following the existing format"). This file was created fresh
+with the format below. If a journal lives elsewhere (another branch/machine), point me to it
+and I'll reformat these entries to match.
+
+Format per entry:
+  [DATE] LABEL
+    source   : <source> (<capture tier>)
+    theses   : <n extracted>
+    tickers  : <key tickers surfaced>
+    themes   : <key themes it fed>
+    notes    : <attribution / scoring notes>
+
+----------------------------------------------------------------------
+2026-07-22 SESSION — 6 new appearances added (corpus 39 -> 45 transcripts; 507 -> 562 theses)
+Deliverable regenerated: step4_signal_events_v6 -> v7. See analysis/v6_to_v7_changelog.md.
+----------------------------------------------------------------------
+
+[2021-08-09] cnbc_sharpe_angle_spacs_2021aug
+  source   : CNBC Sharpe Angle (whisper_small; CNBC video had no captions)
+  theses   : 6
+  tickers  : (none — SPAC-era macro)
+  themes   : SPAC structural analysis (NO_BASKET)
+  notes    : Baker interviewee. PIPE liquidity / SPAC freeze / retail investors. Genuine Baker.
+
+[2021-12-03] sohn_australia_2021_coinbase
+  source   : Sohn Hearts & Minds Australia 2021 (secondary_coverage — video gated/404, no YT mirror)
+  theses   : 3
+  tickers  : COIN
+  themes   : Crypto / Coinbase (COIN) [NEW theme added this session]
+  notes    : Single-stock pick — Coinbase Cloud as "AWS of crypto"/web3 infra. Scored 1y -82.7%
+             (pick preceded the 2022 crypto drawdown). Transcript is assembled secondary coverage,
+             not verbatim (Sohn H&M Foundation + AFR write-ups w/ reported quotes).
+
+[2023-04-21] allin_e125_spacex_starship_2023apr
+  source   : All-In Podcast E125 (youtube_auto)
+  theses   : 10
+  tickers  : COIN, FDX, FOX, SATS, UPS, VSAT
+  themes   : SpaceX ecosystem, Optical networking (via new 2023-04-21 events)
+  notes    : Multi-speaker; Starship theses (T1-T3) likely trace to co-guest Antonio Gracias, not
+             Baker. FOX/FDX/UPS tangential (Fox defamation, Starship-vs-air-cargo) -> NO_BASKET.
+
+[2025-07-17] allin_tariffs_agi_prize_2025jul
+  source   : All-In Podcast (youtube_auto)
+  theses   : 15
+  tickers  : AAPL, AMD, GOOGL, META, MSFT, NVDA
+  themes   : China AI export (H20), Inference economics (lowest-cost token), Power/watts
+             (electricity constraint), Stablecoin
+  notes    : Highest-signal of the 6 (Baker featured). Lowest-cost-token-producer + electricity-
+             constraint theses captured via new keys (operator-approved). Grok/Hopper & Blackwell
+             (T5/T6) left NO_BASKET (blackwell/hopper keys declined — blast radius too large).
+
+[2026-06-08] heller_house_spacex_cfo_2026jun
+  source   : Heller House — "Gavin Baker interviews SpaceX CFO Bret Johnsen" (youtube_auto)
+  theses   : 11 (extracted) -> 0 scored
+  tickers  : INTC, NVDA, TSM, T, TMUS, VZ (in extraction)
+  themes   : NONE (all 11 removed from scoring)
+  notes    : Baker is the INTERVIEWER; ~90% of extracted theses are the CFO's operational claims,
+             not Baker's views. Operator decision: REMOVE ALL 11 from scoring via cluster_override
+             null removals. Mirrors the 2026-07-08 removal of an earlier Heller House file.
+             Extraction retained on disk for the record.
+
+[2026-07-20] cnbc_spacex_drawdown_2026jul
+  source   : CNBC full interview (whisper_small; no captions)
+  theses   : 10
+  tickers  : NVDA, CRWV, SMCI (private: Anthropic/OpenAI/xAI/SpaceX -> NO_DATA)
+  themes   : Inference economics, Optical, Orbital, Reasoning/inference-time compute, SpaceX
+  notes    : Baker interviewee; strong AI-infra views ("structurally short compute" captured via
+             new key). Events are 2 days old -> returns INSUFFICIENT_DATA for now. Audit removed a
+             wrong SPCE tag (SpaceX is private, not Virgin Galactic). Whisper garbles: "Motron"
+             (=Nemotron), "Kimi K3".

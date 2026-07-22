@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) — AI supercycle; Unity as world-model builder; chips/memory/power",
+  "thesis_id": "T1",
+  "summary": "AI is in a supercycle, not a bubble — constrained by physical supply of watts and wafers, not debt-fueled speculation",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "GOOGL",
+    "MSFT",
+    "AMZN",
+    "META",
+    "TSM",
+    "NVDA"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Google as one of the four hyperscalers funding AI buildout from free cash flow, which is the central evidence for the anti-bubble supercycle thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Microsoft as one of the four hyperscalers whose FCF-funded AI capex underpins the supercycle argument."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Amazon as one of the four hyperscalers whose FCF-funded spending is cited as proof this is not a debt-fueled bubble."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Meta as one of the four hyperscalers whose FCF-funded capex is central to the supercycle thesis."
+    },
+    {
+      "ticker": "TSM",
+      "action": "KEEP",
+      "reasoning": "Baker specifically cited TSMC wafer capacity as one of the two physical supply constraints that make classic bubble overbuilding structurally impossible in this cycle — TSM is a direct subject of the supply-constraint argument."
+    },
+    {
+      "ticker": "NVDA",
+      "action": "REMOVE",
+      "reasoning": "While Nvidia is an obvious beneficiary of AI infrastructure spending, Baker did not specifically connect NVDA to this thesis about FCF-funded hyperscaler capex and physical supply constraints (wafers and watts). NVDA is a GPU supplier, not a wafer capacity or energy constraint. Its inclusion appears to be contamination from adjacent AI infrastructure discussion rather than a specific connection to this exact thesis."
+    }
+  ]
+}

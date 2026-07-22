@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-20",
+  "source": "CNBC \u2014 SpaceX IPO drawdown, AI infrastructure, open source models, frontier AI",
+  "thesis_id": "T6",
+  "summary": "NVIDIA's Motron open-source model is being throttled but could rapidly reach frontier quality, making NVIDIA a potential open-source AI leader",
+  "summary_extended": "Baker argues that NVIDIA has developed a strong open-source AI model called Motron that is currently being deliberately throttled \u2014 meaning NVIDIA is intentionally limiting its capabilities or release \u2014 to avoid upsetting its existing customers who compete in the AI model space. Baker believes that whenever NVIDIA chooses, it could rapidly bring Motron to near-frontier quality, positioning NVIDIA as a significant player in open-source AI in addition to its dominant hardware role. The investment implication is that NVIDIA holds a latent, underappreciated optionality in the AI software/model layer that is not yet reflected in how the market thinks about the company. Baker disclosed he holds a position in NVIDIA, and while his view is speculative ('I think,' 'I believe they could'), it is grounded in his direct knowledge of the model's current capabilities.",
+  "detail": "Baker believes NVIDIA has a strong open-source model (Motron) that they are deliberately throttling to avoid upsetting customers. NVIDIA could quickly bring an American-sourced open-source model close to the frontier whenever they choose. Baker holds a position in NVIDIA.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says 'I think' and 'I believe they could' \u2014 speculative but grounded in his NVIDIA position and knowledge of the model",
+  "themes": [
+    "frontier AI",
+    "open source AI",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "NVIDIA their new Motron model is actually really good... throttling it to a degree",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about NVIDIA's open-source AI model Motron and NVIDIA's strategic decision to throttle it \u2014 NVDA is the direct subject of this thesis."
+    }
+  ]
+}
