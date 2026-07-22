@@ -16,6 +16,35 @@ Branch: **`gavin-baker-transcript-corpus`** (not yet merged to main).
 
 ---
 
+## Current State (as of 2026-07-22)
+
+> Working branch this session: **`baker-corpus-audit-rescore-2026-07`**.
+
+**Basket re-resolution APPLIED + 13F AI-signal layer extended (Unity, net-buying ramp).** Two
+threads this session, both operator-reviewed:
+
+- **Baker thesis-scoring — basket resolutions finalized.** (1) Second-opinion re-resolution pass
+  over all 241 events via `claude-opus-4-6` → `analysis/basket_reresolution_v2.csv` (review artifact).
+  (2) Applied the operator's v4 review (`analysis/basket_reresolution_v4.csv`) into
+  `manual_overrides.json` — 102 event overrides (STEVE/CHANGE/NO_BASKET/continuation) + the two
+  "never-a-trade" macro themes (AI-capex-ROI, Broad-AI-bullish) consolidated to theme-level NO_BASKET.
+  (3) Clustering fix: 42 `cluster_override` **removals** (new null/`thesis_id` support) of misclustered
+  theses + 8 NO_BASKET flags. (4) Three targeted corrections (Edge-AI→DRAM move, China embargo→NO_BASKET,
+  TPU-roundtripping→NVDA-moat). Scored events 194 → **~100**; `step4_signal_events_v6_with_returns_extended.xlsx`
+  regenerated each time. Diffs: `analysis/basket_v4_application_diff.md`, `analysis/clustering_fix_diff.md`,
+  `analysis/basket_reresolution_v2_implementation_notes.md`.
+- **13F AI-signal layer.** Added **Unity (U) → sub-theme "AI/World Models"** in
+  `ai_basket_reclassification.json` (flows into ramp basket, sub-theme crossings; new-position trigger
+  gated at 2% so U enters as NEW_AI_SUBTHEME not NEW_POSITION — flagged). **Rebuilt the ramp trigger on
+  net buying** (deliberate capital deployment from `positions.json` share deltas, ≥5% of portfolio) instead
+  of weight drift — May-2026 correctly no longer fires (net seller). Added buying-detail columns
+  (net/gross buying %, $, tickers_bought/sold/new/exited) to the Ramp + RampBasket sheets of
+  `trigger_analysis.xlsx`. Details in `docs/implementation_notes/13f_signal_triggers_implementation_notes.md`.
+
+All touched modules `mypy --strict` clean. See `workstreams/transcripts-decisions.md` (2026-07-22).
+
+---
+
 ## Current State (as of 2026-07-14)
 
 **Corpus audit → gap-fill → re-score → durable overrides COMPLETE; basket re-resolution is a

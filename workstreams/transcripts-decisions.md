@@ -141,3 +141,49 @@ current top Opus at the same price if ever preferred). **Finding:** useful but n
 NO_BASKET-aggressive (100 flips) and multi-ticker-overeager (adds unnamed peers, hallucinated `CBRS`);
 disagreeing with 35/41 overrides mostly reflects that aggression, not that the overrides are wrong.
 Treat as triage input, not ground truth.
+
+---
+
+## 2026-07-22 — Basket resolutions applied + 13F net-buying ramp + Unity
+
+### Baker thesis-scoring (manual_overrides.json + theme_returns_v2.py)
+- **cluster_overrides now support removal.** `to_theme`/`new_theme` = null/"unclustered" drops the
+  matched thesis from `from_theme` (no re-add) → generates no event, doesn't affect any theme's mention
+  numbering. Match keys gained `thesis_id` (per-date ordinal). Removal is `from_theme`-scoped so a
+  multi-clustered thesis survives in its correct theme (e.g. 2026-05-22 T15 removed from NVDA-moat but
+  kept in China as NO_BASKET). WHY: sequential review found ~42 keyword-collision misclusters.
+- **Matched removals by CONTENT, not the task's `Tn` labels** — the operator's thesis_id labels were
+  inconsistent with the timeline (~13/29 wrong); resolved each against the theses actually clustered in
+  the theme. Validated against operator's target mention counts.
+- **Two macro themes are theme-level NO_BASKET** ("AI capex ROI positive", "Broad AI bullish / early
+  innings") — never-a-trade regardless of mention number. This SUPERSEDED an earlier v4 CHANGE (AI-capex
+  m4 2025-03-29 → NVDA); latest review wins.
+- **theme_returns_v2 OUTPUT_FIELDS bug fixed** — added `override_note` + the 4 override-flag columns;
+  `apply_event_override` set them but the DictWriter fieldnames omitted them → `ValueError` on any
+  overridden row (was masked in prior runs by piping through `tail`). `step4_signal_events_v3.csv`/`_v5.csv`
+  are its outputs (not the deliverable; the deliverable xlsx comes from build_repeat_mention_events).
+- **UNIVERSE extended** (theme_returns_v2) with WMT/HD/LOW/COST/KR/000660.KS for the v4 retail + DRAM
+  baskets; 000660.KS (SK Hynix) 404s on EODHD → graceful NO_DATA, DRAM still scores via MU.
+
+### 13F AI-signal layer (build_13f_analysis.py + build_trigger_workbook.py)
+- **Unity U → "AI/World Models"** in `ai_basket_reclassification.json`; RBLX deliberately NOT AI (gaming
+  in Baker's framing). Ramp membership is exclusion-based (`_in_ramp`: is_ai & not Hyperscaler/EV), so U
+  auto-flows; `RAMP_INCLUDED_BUCKETS` is only the definition-doc list.
+- **Ramp trigger = net buying, not weight drift.** `compute_net_buying` reads `positions.json` share
+  deltas for the narrow AI basket: Δshares×current price (buys/sells) + new-position value; net as % of
+  total portfolio value; fires ≥5%. WHY: weight can rise on price alone (May-2026 "ramp" +13.7pt while a
+  net seller of ~$109M).
+- **DEVIATION (documented, toggle `COUNT_EXITS`): full exits are NOT counted as selling.** Spec text said
+  count them, but that gave May-2025 +$381M / May-2026 −$402M; excluding exits reproduces the operator's
+  stated targets exactly (May-2025 +$561,990,623 ≈ $562M). The fire/no-fire verdicts hold either way.
+- **value_reported units normalized per filing** — $thousands pre-2023-Q4, whole-$ after (detected via
+  max implied price/share ≥$15 → dollars, else ×1000). Applied to all $ outputs so net_buying_dollars &
+  the `+$NNM` ticker detail read as real dollars across eras. Percent columns are ratios (unit-safe).
+
+### Open / flagged
+- **DRAM = 9 mentions, not the requested 7** — all 9 are genuine HBM/DRAM theses; target predates recent
+  corpus gap-fill. Operator to say which 2 (if any) to drop.
+- **Unity NewPosition**: enters at 1.88% equity weight (< 2% threshold) so no NEW_AI_POSITION_2PCT event;
+  captured as NEW_AI_SUBTHEME. Operator's 2.7%/6.7% figures are a different basis than 13F equity-only.
+- **Minor**: the `15.0`/`1000.0` units-detection constants in `compute_net_buying` are inline magic
+  numbers (documented); could be promoted to module constants.

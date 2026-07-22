@@ -71,6 +71,9 @@ UNIVERSE: list[str] = [
     "AMAT", "KLAC", "LRCX", "T", "VZ", "TMUS", "HUBS", "ATVI", "NBIS", "VSAT",
     "SATS", "LUMN", "U", "EQIX", "DLR", "SONY", "NTDOY", "VRT", "ETN", "PWR",
     "NET", "FSLY", "AKAM", "LEU", "CRSO",
+    # Added 2026-07-16 for v4-review baskets: retail omnichannel (WMT/HD/LOW/
+    # COST/KR) + SK Hynix (Korean listing; may resolve NO_DATA gracefully).
+    "WMT", "HD", "LOW", "COST", "KR", "000660.KS",
 ]
 
 # --- Event-generation config -------------------------------------------------
@@ -129,10 +132,12 @@ def load_overrides() -> dict[str, list[dict[str, Any]]]:
 
 
 def _match(m: dict[str, Any], *, theme: str, date: str, summary: str,
-           mention_number: int | None = None) -> bool:
+           mention_number: int | None = None, thesis_id: str | None = None) -> bool:
     if "theme" in m and m["theme"] != theme:
         return False
     if "date" in m and m["date"] != date:
+        return False
+    if "thesis_id" in m and thesis_id is not None and m["thesis_id"] != thesis_id:
         return False
     if "mention_number" in m and mention_number is not None and m["mention_number"] != mention_number:
         return False
@@ -147,19 +152,32 @@ def _match(m: dict[str, Any], *, theme: str, date: str, summary: str,
 def apply_cluster_overrides(
     assignments: dict[str, list[dict[str, Any]]], overrides: dict[str, Any]
 ) -> None:
-    """Move theses between themes per cluster_overrides (mutates assignments)."""
+    """Move theses between themes per cluster_overrides (mutates assignments).
+
+    Destination is `to_theme` (or `new_theme`). A null/empty/"unclustered"
+    destination REMOVES the matched thesis from `from_theme` without re-adding
+    it anywhere — it then generates no event and does not count toward any
+    theme's mention numbering (the thesis still exists in the timeline).
+    Match keys include `thesis_id` (per-date ordinal) alongside date/theme.
+    """
+    _REMOVE = {None, "", "null", "unclustered", "none"}
     for ov in overrides.get("cluster_overrides", []):
-        frm, to, m = ov["from_theme"], ov["to_theme"], ov["match"]
+        frm = ov["from_theme"]
+        to = ov.get("to_theme", ov.get("new_theme"))
+        m = ov["match"]
         moved: list[dict[str, Any]] = []
         keep: list[dict[str, Any]] = []
         for t in assignments.get(frm, []):
             (moved if _match(m, theme=frm, date=t["date"],
-                             summary=str(t.get("summary", ""))) else keep).append(t)
+                             summary=str(t.get("summary", "")),
+                             thesis_id=t.get("thesis_id")) else keep).append(t)
         assignments[frm] = keep
-        dest = assignments.setdefault(to, [])
-        for t in moved:
-            if t not in dest:
-                dest.append(t)
+        if isinstance(to, str) and to.lower() not in _REMOVE:
+            dest = assignments.setdefault(to, [])
+            for t in moved:
+                if t not in dest:
+                    dest.append(t)
+        # else: null/unclustered destination -> drop (removed from scoring)
 
 
 def find_event_override(
@@ -495,6 +513,8 @@ OUTPUT_FIELDS = [
     "date", "theme", "event_type", "confidence", "mention_number", "total_theme_mentions",
     "source", "summary", "summary_extended", "tickers_direct",
     "resolved_basket", "basket_source", "basket_direction", "basket_asterisk",
+    "override_note", "is_derisk_signal", "is_thesis_reversal", "is_thesis_close",
+    "exclude_from_long_stats",
     *(f"ret_{l}" for l in INTERVALS),
     *(f"smh_{l}" for l in INTERVALS),
     *(f"excess_{l}" for l in INTERVALS),

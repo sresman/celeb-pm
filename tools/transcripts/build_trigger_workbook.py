@@ -164,6 +164,30 @@ def _tickers(cell: str) -> list[str]:
     return [t.strip() for t in cell.split(",") if t.strip()]
 
 
+# Buying-detail block shared by the Ramp and RampBasket sheets (net-buying trigger metrics
+# + what was bought/sold/entered/exited). Placed after the weight columns, before returns.
+BUYING_DETAIL_HEADERS = [
+    "net_buying_pct", "net_buying_dollars", "gross_buying_pct", "gross_selling_pct",
+    "tickers_bought", "tickers_sold", "tickers_new", "tickers_exited",
+]
+BUYING_DETAIL_WIDTHS: list[float] = [14, 16, 14, 14, 30, 30, 22, 22]
+
+
+def _put_buying_detail(ws: Worksheet, row: int, col: int, e: dict[str, str]) -> int:
+    """Write the 8 buying-detail cells starting at `col`; return the next free column."""
+    _put_weight(ws, row, col, trig._f(e.get("net_buying_pct")))
+    nbd = trig._f(e.get("net_buying_dollars"))
+    if nbd is not None:
+        ws.cell(row, col + 1, nbd).number_format = "#,##0"
+    _put_weight(ws, row, col + 2, trig._f(e.get("gross_buying_pct")))
+    _put_weight(ws, row, col + 3, trig._f(e.get("gross_selling_pct")))
+    ws.cell(row, col + 4, e.get("tickers_bought", ""))
+    ws.cell(row, col + 5, e.get("tickers_sold", ""))
+    ws.cell(row, col + 6, e.get("tickers_new", ""))
+    ws.cell(row, col + 7, e.get("tickers_exited", ""))
+    return col + 8
+
+
 # --------------------------------------------------------------------------
 # Sheets
 # --------------------------------------------------------------------------
@@ -173,15 +197,15 @@ def sheet_ramp(ws: Worksheet, events: list[dict[str, str]], ret: dict[tuple[str,
                filings: list[str], fidx: dict[str, int]) -> None:
     pre = [4, 3, 2, 1]
     fwd = list(range(1, 9))
-    headers = (["filing_date", "ai_weight_change", "ai_weight_current"]
+    headers = (["filing_date", "ai_weight_change", "ai_weight_current"] + BUYING_DETAIL_HEADERS
                + [f"Q-{i}_SMH" for i in pre] + [f"Q+{j}_SMH" for j in fwd])
-    _finish(ws, headers, [12, 16, 16])
+    _finish(ws, headers, [12.0, 16.0, 16.0, *BUYING_DETAIL_WIDTHS])
     for row, e in enumerate(events, 2):
         k = fidx[e["filing_date"]]
         _put_date(ws, row, 1, e["filing_date"])
         _put_weight(ws, row, 2, trig._f(e["ai_weight_change"]), RET_FMT)
         _put_weight(ws, row, 3, trig._f(e["ai_weight_current"]))
-        col = 4
+        col = _put_buying_detail(ws, row, 4, e)  # cols 4..11
         for i in pre:
             if k - i >= 0:
                 _put_ret(ws, row, col, ret.get(("SMH", filings[k - i])))
@@ -198,15 +222,16 @@ def sheet_ramp_basket(ws: Worksheet, events: list[dict[str, str]], ret: dict[tup
     pre = [4, 3, 2, 1]
     fwd = list(range(1, 9))
     max_n = max((len(holdings.get(e["filing_date"], [])) for e in events), default=0)
-    headers = ["filing_date", "ai_weight_change", "ai_weight_current"]
+    headers = ["filing_date", "ai_weight_change", "ai_weight_current"] + BUYING_DETAIL_HEADERS
     for i in range(1, max_n + 1):
         headers += [f"ticker_{i}", f"wt_{i}"]
     for i in pre:
         headers += [f"Q-{i}_EW", f"Q-{i}_CW", f"Q-{i}_SMH"]
     for j in fwd:
         headers += [f"Q+{j}_EW", f"Q+{j}_CW", f"Q+{j}_SMH"]
-    _finish(ws, headers, [12, 16, 16])
+    _finish(ws, headers, [12.0, 16.0, 16.0, *BUYING_DETAIL_WIDTHS])
 
+    comp_start = 4 + len(BUYING_DETAIL_HEADERS)  # composition begins after the detail block
     for row, e in enumerate(events, 2):
         k = fidx[e["filing_date"]]
         pairs = holdings.get(e["filing_date"], [])
@@ -214,12 +239,13 @@ def sheet_ramp_basket(ws: Worksheet, events: list[dict[str, str]], ret: dict[tup
         _put_date(ws, row, 1, e["filing_date"])
         _put_weight(ws, row, 2, trig._f(e["ai_weight_change"]), RET_FMT)
         _put_weight(ws, row, 3, trig._f(e["ai_weight_current"]))
-        col = 4
+        _put_buying_detail(ws, row, 4, e)  # cols 4..11
+        col = comp_start
         for ticker, weight in pairs:
             ws.cell(row, col, ticker)
             _put_weight(ws, row, col + 1, weight)
             col += 2
-        col = 4 + max_n * 2  # start of the period block (past all ticker/wt pairs)
+        col = comp_start + max_n * 2  # start of the period block (past all ticker/wt pairs)
         starts = ([filings[k - i] if k - i >= 0 else None for i in pre]
                   + [filings[k + j - 1] if k + j <= len(filings) - 1 else None for j in fwd])
         for start in starts:

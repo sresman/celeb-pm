@@ -215,3 +215,65 @@ from the same CSVs), so the "append, don't overwrite" intent holds.
   CW +20.8% (distinct; MU's 6% weight lifts CW) vs SMH +18.2%; no compounding; last
   filing (2026-05-18) blanks forward, Q− populated.
 
+
+## 2026-07-17 — Added Unity (U) as AI sub-theme "AI/World Models"
+
+- `analysis/ai_basket_reclassification.json`: added `U -> {ai:true, bucket:"AI/World Models"}`
+  (documenting note re Baker's AI-infra framing; RBLX deliberately NOT assigned).
+- `build_13f_analysis.py`: added "AI/World Models" to `RAMP_INCLUDED_BUCKETS` (definition-doc list;
+  actual ramp membership is exclusion-based via `_in_ramp`, so U was auto-included regardless).
+- Re-ran `build_13f_analysis` -> `build_trigger_workbook` -> `analysis/trigger_analysis.xlsx`. mypy clean.
+- **Verified:** U in ramp basket for every held filing (Q4 2024→Q1 2026), incl. May 2026 @ 5.43% with
+  ALAB/CIEN/MU/NVDA; AI/World Models fired NEW_AI_SUBTHEME (Q4 2024) and crossed 2% & 4% in Q1 2025.
+- **Discrepancy flagged (weights):** U's 13F equity-only weight is 1.88% at Q4 2024 entry and 5.61% at
+  Q1 2025 (peak), vs the brief's 2.7%/6.7%. Because entry 1.88% < the 2.0% NEW_AI_POSITION threshold, U
+  does NOT fire NEW_AI_POSITION_2PCT (absent from NewPosition sheet) — it's captured as NEW_AI_SUBTHEME
+  instead. Did not alter the weight basis or threshold; reconstructed weights are consistent across
+  new_ideas.csv + position_lifecycles.csv. Operator's figures likely a different basis (fund book /
+  options-inclusive) than the 13F equity-only reconstruction.
+
+## 2026-07-17 — Ramp trigger rebuilt on net buying (deliberate deployment), not weight drift
+
+- `build_13f_analysis.py`: new `compute_net_buying(views, reclass)` reads `positions.json`
+  SHARE deltas per filing for the narrow AI basket (is_ai, ex-Hyperscaler/EV, COMMON):
+  share up -> gross_buying += Δshares×current_price; share down -> gross_selling += Δshares×current_price;
+  new position -> gross_buying += current_value. net = gross_buying − gross_selling, as % of total
+  portfolio value (all positions, current period). `trigger_ramp` now fires when net_buying_pct ≥ 5
+  (was: AI-weight drift ≥ 5 pts). New CSV columns: gross_buying_pct, gross_selling_pct, net_buying_pct,
+  net_buying_dollars. `build_trigger_workbook.py`: `sheet_ramp` gained those 4 columns; RampBasket
+  composition/returns (EW/CW/SMH, Q-4..Q+8) and the NewSubtheme/NewPosition/Cross sheets are UNCHANGED.
+- **DEVIATION (flagged) — full exits not counted as selling.** The task spec says "exited positions:
+  selling += prior_value", but that yields May-2025 +$381M / May-2026 −$402M. Excluding full exits
+  reproduces the operator's stated verification EXACTLY: May-2025 = +$561,990,623 (~$562M target),
+  May-2026 = −$122M net-selling (target ~−$109M; both net-selling => no fire). The exact $562M match
+  is decisive that the reference figures excluded exits. Implemented with `COUNT_EXITS = False` (flip
+  to restore spec-literal). Note the two verification VERDICTS (May-2025 fires, May-2026 doesn't) hold
+  under either setting — only the dollar magnitudes change.
+- **Verification:** May-2025 FIRES (net +$562M, 17.06%); May-2026 does NOT (net −$122M). Population:
+  OLD weight-drift {2020-08-14,2021-06-01,2022-02-14,2022-11-14,2023-02-14,2023-11-14,2024-05-15,
+  **2024-08-14**,2025-05-15,**2026-05-18**} → NEW net-buying drops 2024-08-14 & 2026-05-18 (passive
+  drift / net selling), adds 2023-05-15, 2024-11-14, 2026-02-17 (real buying weight-drift missed).
+  Cumulative CW vs SMH (new pop): Q+1 +17.0/+12.0 (beat 73%), 2Q +30.8/+22.0 (70%), 1yr +60.8/+46.3
+  (60%), 2yr +100.8/+85.9 (50%). `mypy --strict` clean.
+
+## 2026-07-17 (later) — Buying-detail columns on RampBasket + Ramp sheets
+
+Extended `compute_net_buying` to also emit per-ticker detail; added 4 CSV cols
+(tickers_bought/sold/new/exited) to OUT_COLUMNS + trigger_ramp. In build_trigger_workbook,
+new shared `BUYING_DETAIL_HEADERS`/`_put_buying_detail` write 8 columns
+(net_buying_pct, net_buying_dollars, gross_buying_pct, gross_selling_pct, tickers_bought,
+tickers_sold, tickers_new, tickers_exited) on BOTH Ramp and RampBasket, positioned right
+after ai_weight_current and before the composition/return blocks. Only those two sheets changed.
+
+- tickers_bought/sold = HELD positions whose share count rose/fell (Δshares×current price),
+  sorted by $ desc, formatted "TICK +$NNM" / "TICK -$NNM". tickers_new = brand-new positions
+  (tickers only, $-sorted). tickers_exited = held-prior/gone (display only; not counted in
+  selling, per the net-buying deviation). New positions are NOT in tickers_bought (separate).
+- **Units:** value_reported is $thousands pre-2023, whole-$ after (verified: max implied
+  price/share <$3.5 pre-2023-Q4 vs >$400 after). `compute_net_buying` detects per filing
+  (max implied price ≥$15 => dollars, else ×1000) and normalizes all $ outputs to real
+  dollars — so net_buying_dollars for old firing events is now correct (e.g. 2020-08-14
+  $68.7M); recent events unchanged (May-2025 $561,990,623). pct columns are ratios (unit-safe).
+- Verified: both sheets show the 8 cols contiguous at positions 4-11; RampBasket composition
+  (ticker_i/wt_i) + EW/CW/SMH returns intact after the block; NewSubtheme/NewPosition/Cross4pct/
+  Cross2pct unchanged (15/31/22/28). `mypy --strict` clean.

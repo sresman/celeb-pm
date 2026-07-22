@@ -3,85 +3,2009 @@
   "cluster_overrides": [
     {
       "from_theme": "Google TPU competitive position",
-      "to_theme": "China AI distillation / export controls",
-      "match": {"date": "2026-06-27", "summary_contains": "GLM 5.2"},
-      "note": "TPU mention 5 (GLM 5.2 distillation) is misclustered — it is a China-distillation thesis, not a TPU-competitiveness thesis. Move to China theme (already double-clustered there)."
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-27",
+        "summary_contains": "GLM 5.2"
+      },
+      "note": "TPU mention 5 (GLM 5.2 distillation) is misclustered \u2014 it is a China-distillation thesis, not a TPU-competitiveness thesis. Move to China theme (already double-clustered there). [2026-07-16: destination changed China->null; GLM 5.2 removed from scoring entirely.]"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2020-07-27",
+        "thesis_id": "T1"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T1 2020-07-27] AI has dramatically higher semiconductor intensity than human-written software, "
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2021-11-30",
+        "thesis_id": "T3"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T3 2021-11-30] AI-driven scaling laws will dramatically increase semiconductor intensity of the"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2021-11-30",
+        "thesis_id": "T6"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T6 2021-11-30] SpaceX / Starlink is the only investable space company \u2014 dramatically lower laun"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2023-06-19",
+        "thesis_id": "T6"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T6 2023-06-19] AI will enable recursive self-improvement (hard takeoff), with GPT-5 and beyond "
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2023-06-19",
+        "thesis_id": "T9"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T9 2023-06-19] GPU utilization efficiency is dramatically underoptimized (30% utilization durin"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2025-10-22",
+        "thesis_id": "T1"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T1 2025-10-22] Scaled foundation model companies are dramatically better investments post-reaso"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2025-12-09",
+        "thesis_id": "T15"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T15 2025-12-09] Anthropic is burning dramatically less cash than OpenAI while growing faster, be"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2026-05-22",
+        "thesis_id": "T4"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T4 2026-05-22] SpaceX's Elon Web Services (EWS) data center business can grow dramatically fast"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-07",
+        "thesis_id": "T5"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T5 2026-06-07] Zipline is a high-conviction private investment in autonomous drone delivery \u2014 a"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-11",
+        "thesis_id": "T10"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T10 2026-06-11] Long-running agentic AI models represent a step-change in intelligence utilizati"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-11",
+        "thesis_id": "T2"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T2 2026-06-11] SpaceX's terrestrial AI compute business is monetizing at dramatically higher ra"
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-11",
+        "thesis_id": "T4"
+      },
+      "note": "misclustered into 'DRAM / HBM memory bottleneck'; removed from scoring. [T4 2026-06-11] Cursor acquisition dramatically advances XAI/SpaceX's frontier model capability "
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2023-06-19",
+        "thesis_id": "T10"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T10 2023-06-19] Solar and battery storage compounding will solve climate change structurally; fo"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2023-06-19",
+        "thesis_id": "T4"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T4 2023-06-19] Open-source model optimization (smaller models, efficiency gains) is a credible "
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2023-06-19",
+        "thesis_id": "T8"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T8 2023-06-19] Compute centralization is cyclical; AI will drive a move back toward edge comput"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2023-06-19",
+        "thesis_id": "T9"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T9 2023-06-19] GPU utilization efficiency is dramatically underoptimized (30% utilization durin"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2024-08-27",
+        "thesis_id": "T2"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T2 2024-08-27] XAI's 100,000-GPU coherent cluster gives it a ~1-year lead over other labs, forc"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2024-08-27",
+        "thesis_id": "T3"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T3 2024-08-27] Model Flops Utilization (MFU) decomposed into MAMF \u00d7 SFU \u00d7 checkpoint frequency "
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2024-12-07",
+        "thesis_id": "T7"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T7 2024-12-07] xAI's Colossus supercomputer (100,000+ coherent H100s) is the first real test of"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2025-01-28",
+        "thesis_id": "T3"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T3 2025-01-28] Cheaper AI inference via DeepSeek-style efficiency will massively increase AI RO"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2025-10-30",
+        "thesis_id": "T14"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T14 2025-10-30] Consumer AI business model will shift to outcome-based affiliate fees, squeezing"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2025-12-09",
+        "thesis_id": "T10"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T10 2025-12-09] Power scarcity is structurally bullish for the most compute-efficient chips (Nvi"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2026-02-24",
+        "thesis_id": "T1"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T1 2026-02-24] Anthropic is ~4x more capital efficient than OpenAI and growing fast with low ca"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2026-02-24",
+        "thesis_id": "T2"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T2 2026-02-24] Token efficiency is the key competitive axis for AI models \u2014 Anthropic leads on "
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2026-02-24",
+        "thesis_id": "T8"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T8 2026-02-24] Tesla's Autopilot AI is the most token-efficient AI in the world, running superh"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2026-05-22",
+        "thesis_id": "T16"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T16 2026-05-22] The Strait of Hormuz closure is relatively good for America and Trump's policy g"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2026-05-22",
+        "thesis_id": "T7"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T7 2026-05-22] The AI market is cross-sectionally inefficient: power/cooling/optical names and "
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2026-05-22",
+        "thesis_id": "T19"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T19 2026-05-22] IPPs (independent power producers) are reasonably valued within the AI power the"
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-15",
+        "thesis_id": "T5"
+      },
+      "note": "misclustered into 'Optical networking / interconnect'; removed from scoring. [T5 2026-06-15] Being a 'token factory' is sufficient as a business model for the next 5-10 year"
+    },
+    {
+      "from_theme": "Power / watts as binding constraint",
+      "to_theme": null,
+      "match": {
+        "date": "2025-12-09",
+        "thesis_id": "T10"
+      },
+      "note": "misclustered into 'Power / watts as binding constraint'; removed from scoring. [T10 2025-12-09] Power scarcity is structurally bullish for the most compute-efficient chips (Nvi"
+    },
+    {
+      "from_theme": "Power / watts as binding constraint",
+      "to_theme": null,
+      "match": {
+        "date": "2026-05-20",
+        "thesis_id": "T7"
+      },
+      "note": "misclustered into 'Power / watts as binding constraint'; removed from scoring. [T7 2026-05-20] Orbital compute (racks in space connected by lasers) is a real and near-term sol"
+    },
+    {
+      "from_theme": "Power / watts as binding constraint",
+      "to_theme": null,
+      "match": {
+        "date": "2026-05-28",
+        "thesis_id": "T1"
+      },
+      "note": "misclustered into 'Power / watts as binding constraint'; removed from scoring. [T1 2026-05-28] AI is in a supercycle, not a bubble \u2014 constrained by physical supply of watts an"
+    },
+    {
+      "from_theme": "Power / watts as binding constraint",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-11",
+        "thesis_id": "T12"
+      },
+      "note": "misclustered into 'Power / watts as binding constraint'; removed from scoring. [T12 2026-06-11] AI compute monetization rates per gigawatt are increasing, not deflating, contra"
+    },
+    {
+      "from_theme": "Power / watts as binding constraint",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-12",
+        "thesis_id": "T3"
+      },
+      "note": "misclustered into 'Power / watts as binding constraint'; removed from scoring. [T3 2026-06-12] SpaceX's gigawatt terrestrial compute buildout is a near-term high-IRR business "
+    },
+    {
+      "from_theme": "Power / watts as binding constraint",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-15",
+        "thesis_id": "T1"
+      },
+      "note": "misclustered into 'Power / watts as binding constraint'; removed from scoring. [T1 2026-06-15] SpaceX near-term value is driven by terrestrial compute gigawatt ramp and Grok/c"
+    },
+    {
+      "from_theme": "Power / watts as binding constraint",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-15",
+        "thesis_id": "T8"
+      },
+      "note": "misclustered into 'Power / watts as binding constraint'; removed from scoring. [T8 2026-06-15] Orbital/space compute becomes economically compelling once Starship is reusable,"
+    },
+    {
+      "from_theme": "Power / watts as binding constraint",
+      "to_theme": null,
+      "match": {
+        "date": "2026-07-08",
+        "thesis_id": "T3"
+      },
+      "note": "misclustered into 'Power / watts as binding constraint'; removed from scoring. [T3 2026-07-08] Watts and wafers shortage may prevent an AI overbuild/bubble, alongside the psyc"
+    },
+    {
+      "from_theme": "China AI distillation / export controls",
+      "to_theme": null,
+      "match": {
+        "date": "2025-01-04",
+        "thesis_id": "T4"
+      },
+      "note": "misclustered into 'China AI distillation / export controls'; removed from scoring. [T4 2025-01-04] Frontier AI labs will stop releasing leading-edge models publicly to prevent kno"
+    },
+    {
+      "from_theme": "China AI distillation / export controls",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-15",
+        "thesis_id": "T10"
+      },
+      "note": "misclustered into 'China AI distillation / export controls'; removed from scoring. [T10 2026-06-15] China's AI advantage via distillation of Western frontier models is eroding as l"
+    },
+    {
+      "from_theme": "China AI distillation / export controls",
+      "to_theme": null,
+      "match": {
+        "date": "2026-06-27",
+        "thesis_id": "T15"
+      },
+      "note": "misclustered into 'China AI distillation / export controls'; removed from scoring. [T15 2026-06-27] Chinese AI models (GLM 5.2) have achieved near-frontier capability through disti"
+    },
+    {
+      "from_theme": "Nvidia GPU moat / CUDA ecosystem",
+      "to_theme": null,
+      "match": {
+        "date": "2026-05-22",
+        "thesis_id": "T15"
+      },
+      "note": "misclustered into 'Nvidia GPU moat / CUDA ecosystem'; removed from scoring. [T15 2026-05-22] Selling depreciated Nvidia GPUs to China reduces the probability of China develo"
+    },
+    {
+      "from_theme": "Edge AI as bear case for cloud",
+      "to_theme": "DRAM / HBM memory bottleneck",
+      "match": {
+        "date": "2024-08-27",
+        "thesis_id": "T7"
+      },
+      "note": "2026-07-17: on-device-DRAM thesis misclustered under Edge AI; moved to DRAM (inherits MU)."
+    },
+    {
+      "from_theme": "Google TPU competitive position",
+      "to_theme": "Nvidia GPU moat / CUDA ecosystem",
+      "match": {
+        "date": "2025-10-30",
+        "thesis_id": "T12"
+      },
+      "note": "2026-07-17: NVDA-roundtripping-defense thesis; Google is context. Move to NVDA moat (inherits NVDA)."
     }
   ],
   "event_overrides": [
     {
-      "match": {"theme": "SpaceX ecosystem / Starship economics", "date": "2021-11-01", "summary_contains": "disruptor to leveraged telecom"},
-      "apply": {"resolved_basket": ["VSAT", "SATS", "LUMN"], "basket_source": "BAKER_NAMED", "basket_direction": "SHORT"},
+      "match": {
+        "theme": "China AI distillation / export controls",
+        "date": "2025-01-28"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "2026-07-17: DeepSeek embargo geopolitical-risk analysis, not a trade -> NO_BASKET."
+    },
+    {
+      "match": {
+        "theme": "China AI distillation / export controls",
+        "date": "2025-03-29"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "clustering-fix (2026-07-16) NO_BASKET: enforcement-difficulty commentary \u2014 correctly themed, not a trade"
+    },
+    {
+      "match": {
+        "theme": "China AI distillation / export controls",
+        "date": "2026-05-22"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "clustering-fix (2026-07-16) NO_BASKET: selling depreciated GPUs to China \u2014 correctly themed, not a trade"
+    },
+    {
+      "match": {
+        "theme": "Nvidia GPU moat / CUDA ecosystem",
+        "date": "2024-08-07"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "clustering-fix (2026-07-16) NO_BASKET: 'three architectures' structural observation \u2014 correctly themed, not a trade"
+    },
+    {
+      "match": {
+        "theme": "xAI competitive position",
+        "date": "2025-10-22"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "clustering-fix (2026-07-16) NO_BASKET: flag decision: not a trade"
+    },
+    {
+      "match": {
+        "theme": "Reasoning / inference-time compute",
+        "date": "2024-12-07"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "clustering-fix (2026-07-16) NO_BASKET: flag decision: not a trade"
+    },
+    {
+      "match": {
+        "theme": "Reasoning / inference-time compute",
+        "date": "2025-12-09"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "clustering-fix (2026-07-16) NO_BASKET: flag decision: not a trade"
+    },
+    {
+      "match": {
+        "theme": "Inference economics / token factories",
+        "date": "2026-05-20"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "clustering-fix (2026-07-16) NO_BASKET: flag decision: not a trade"
+    },
+    {
+      "match": {
+        "theme": "Neoclouds as durable model",
+        "date": "2025-03-29"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "clustering-fix (2026-07-16) NO_BASKET: flag decision: not a trade"
+    },
+    {
+      "match": {
+        "theme": "AI capex ROI positive"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "Never-a-trade theme: macro commentary regardless of mention number, NO_BASKET for all mentions (operator 2026-07-16). Supersedes the v4 m4 2025-03-29 -> NVDA CHANGE."
+    },
+    {
+      "match": {
+        "theme": "Broad AI bullish / early innings"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "Never-a-trade theme: macro commentary regardless of mention number, NO_BASKET for all mentions (operator 2026-07-16)."
+    },
+    {
+      "match": {
+        "theme": "Target / omnichannel retail",
+        "date": "2020-04-02",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [
+          "WMT",
+          "TGT",
+          "COST",
+          "KR"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named all four"
+    },
+    {
+      "match": {
+        "theme": "Intel recovery / foundry failure",
+        "date": "2020-07-27",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [
+          "INTC"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "SHORT"
+      },
+      "note": "v4 review (STEVE). Steve: short INTC"
+    },
+    {
+      "match": {
+        "theme": "Target / omnichannel retail",
+        "date": "2021-11-01",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [
+          "WMT",
+          "TGT",
+          "HD",
+          "LOW"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named all four"
+    },
+    {
+      "match": {
+        "theme": "AI bubble not happening",
+        "date": "2021-11-30",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "DRAM / HBM memory bottleneck",
+        "date": "2021-11-30",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Scaling laws intact",
+        "date": "2021-11-30",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: no basket"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2021-11-30",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "Tesla / EV / FSD",
+        "date": "2021-11-30",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [
+          "TSLA",
+          "LCID(short)",
+          "RIVN(short)"
+        ],
+        "basket_source": "PAIR_TRADE",
+        "basket_direction": "PAIR_TRADE"
+      },
+      "note": "v4 review (STEVE). Steve: short LCID/RIVN long TSLA"
+    },
+    {
+      "match": {
+        "theme": "AI bubble not happening",
+        "date": "2022-03-25",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "DRAM / HBM memory bottleneck",
+        "date": "2023-06-19",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Nvidia GPU moat / CUDA ecosystem",
+        "date": "2023-06-19",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [
+          "NVDA"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Optical networking / interconnect",
+        "date": "2023-06-19",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [
+          "CIEN",
+          "COHR",
+          "LITE"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Edge AI as bear case for cloud",
+        "date": "2024-01-30"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Scenario framing, not a trade"
+    },
+    {
+      "match": {
+        "theme": "Scaling laws intact",
+        "date": "2024-01-30",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: no basket"
+    },
+    {
+      "match": {
+        "theme": "Humanoid robotics / Tesla Optimus",
+        "date": "2024-02-23",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [
+          "TSLA"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Power / watts as binding constraint",
+        "date": "2024-02-23",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [
+          "VST",
+          "CEG"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Frontier model concentration",
+        "date": "2024-07-01",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: no basket"
+    },
+    {
+      "match": {
+        "theme": "Optical networking / interconnect",
+        "date": "2024-07-01",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [
+          "CIEN",
+          "COHR",
+          "LITE"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named all three"
+    },
+    {
+      "match": {
+        "theme": "Power / watts as binding constraint",
+        "date": "2024-07-01",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [
+          "VST",
+          "CEG"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named them"
+    },
+    {
+      "match": {
+        "theme": "Scaling laws intact",
+        "date": "2024-07-01",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "Edge AI as bear case for cloud",
+        "date": "2024-08-07"
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Memory supercycle = MU"
+    },
+    {
+      "match": {
+        "theme": "Meta AI transformation",
+        "date": "2024-08-07",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: no basket"
+    },
+    {
+      "match": {
+        "theme": "Power / watts as binding constraint",
+        "date": "2024-08-07",
+        "mention_number": 4
+      },
+      "apply": {
+        "resolved_basket": [
+          "VST",
+          "CEG"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named them"
+    },
+    {
+      "match": {
+        "theme": "Power / watts as binding constraint",
+        "date": "2024-08-27",
+        "mention_number": 5
+      },
+      "apply": {
+        "resolved_basket": [
+          "VST",
+          "CEG"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Scaling laws intact",
+        "date": "2024-08-27",
+        "mention_number": 4
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "Nuclear / clean energy for AI",
+        "date": "2024-12-07",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [
+          "CCJ",
+          "VST",
+          "CEG"
+        ],
+        "basket_source": "CONSTRUCTED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). No SMR/OKLO"
+    },
+    {
+      "match": {
+        "theme": "Optical networking / interconnect",
+        "date": "2024-12-07",
+        "mention_number": 5
+      },
+      "apply": {
+        "resolved_basket": [
+          "CIEN",
+          "COHR",
+          "LITE"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Reasoning / inference-time compute",
+        "date": "2024-12-07",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [
+          "NVDA",
+          "AMD"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Scaling laws intact",
+        "date": "2024-12-07",
+        "mention_number": 5
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "DRAM / HBM memory bottleneck",
+        "date": "2025-01-04",
+        "mention_number": 6
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU",
+          "000660.KS"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named both"
+    },
+    {
+      "match": {
+        "theme": "Reasoning / inference-time compute",
+        "date": "2025-01-04",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [
+          "NVDA",
+          "MU"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named both"
+    },
+    {
+      "match": {
+        "theme": "Optical networking / interconnect",
+        "date": "2025-01-28",
+        "mention_number": 6
+      },
+      "apply": {
+        "resolved_basket": [
+          "CIEN",
+          "COHR",
+          "LITE"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Scaling laws intact",
+        "date": "2025-01-28",
+        "mention_number": 6
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "DRAM / HBM memory bottleneck",
+        "date": "2025-05-28",
+        "mention_number": 7
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU",
+          "000660.KS"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Sohn pitch, named both"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2025-10-22",
+        "mention_number": 4
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "xAI competitive position",
+        "date": "2025-10-22",
+        "mention_number": 8
+      },
+      "apply": {
+        "resolved_basket": [
+          "GOOGL"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). xAI private, GOOGL is tradeable"
+    },
+    {
+      "match": {
+        "theme": "AI bubble not happening",
+        "date": "2025-10-30",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: not bullish NVDA, just not a bubble"
+    },
+    {
+      "match": {
+        "theme": "Scaling laws intact",
+        "date": "2025-10-30",
+        "mention_number": 7
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "DRAM / HBM memory bottleneck",
+        "date": "2025-12-09",
+        "mention_number": 9
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Nuclear/quantum bubble warning",
+        "date": "2025-12-09",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: no basket"
+    },
+    {
+      "match": {
+        "theme": "Scaling laws intact",
+        "date": "2025-12-09",
+        "mention_number": 8
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "AI bubble not happening",
+        "date": "2026-02-24",
+        "mention_number": 4
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "Optical networking / interconnect",
+        "date": "2026-02-24",
+        "mention_number": 9
+      },
+      "apply": {
+        "resolved_basket": [
+          "CIEN",
+          "COHR",
+          "LITE"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Orbital / space-based compute",
+        "date": "2026-02-24",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "Uranium enrichment / national security",
+        "date": "2026-02-24",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [
+          "LEU"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (STEVE). Steve: long LEU"
+    },
+    {
+      "match": {
+        "theme": "DRAM / HBM memory bottleneck",
+        "date": "2026-05-12",
+        "mention_number": 10
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Orbital / space-based compute",
+        "date": "2026-05-12",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "TSMC capacity discipline",
+        "date": "2026-05-12",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: no basket"
+    },
+    {
+      "match": {
+        "theme": "AI destroying application layer value",
+        "date": "2026-05-20",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "Disaggregation prefill/decode",
+        "date": "2026-05-20",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [
+          "CRWV"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named CRWV"
+    },
+    {
+      "match": {
+        "theme": "Power / cooling equipment suppliers",
+        "date": "2026-05-20",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: no trade"
+    },
+    {
+      "match": {
+        "theme": "Power / watts as binding constraint",
+        "date": "2026-05-20",
+        "mention_number": 7
+      },
+      "apply": {
+        "resolved_basket": [
+          "VST",
+          "CEG"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2026-05-20",
+        "mention_number": 6
+      },
+      "apply": {
+        "resolved_basket": [
+          "ASML",
+          "LRCX",
+          "KLAC",
+          "AMAT"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). TerraFab semicap"
+    },
+    {
+      "match": {
+        "theme": "TSMC capacity discipline",
+        "date": "2026-05-20",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [
+          "NVDA",
+          "AVGO",
+          "MU"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "DRAM / HBM memory bottleneck",
+        "date": "2026-05-22",
+        "mention_number": 12
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Disaggregation prefill/decode",
+        "date": "2026-05-22",
+        "mention_number": 2
+      },
+      "apply": {
+        "resolved_basket": [
+          "CRWV"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named CRWV"
+    },
+    {
+      "match": {
+        "theme": "Optical networking / interconnect",
+        "date": "2026-05-22",
+        "mention_number": 11
+      },
+      "apply": {
+        "resolved_basket": [
+          "CIEN",
+          "COHR",
+          "LITE"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Orbital / space-based compute",
+        "date": "2026-05-22",
+        "mention_number": 5
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2026-05-22",
+        "mention_number": 7
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "AI bubble not happening",
+        "date": "2026-05-28",
+        "mention_number": 5
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "DRAM / HBM memory bottleneck",
+        "date": "2026-05-28",
+        "mention_number": 13
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU",
+          "000660.KS"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named both"
+    },
+    {
+      "match": {
+        "theme": "Edge AI as bear case for cloud",
+        "date": "2026-05-28"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Scenario framing, not a trade"
+    },
+    {
+      "match": {
+        "theme": "Orbital / space-based compute",
+        "date": "2026-05-28",
+        "mention_number": 6
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2026-05-28",
+        "mention_number": 8
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "TSMC capacity discipline",
+        "date": "2026-05-28",
+        "mention_number": 4
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: no basket"
+    },
+    {
+      "match": {
+        "theme": "AI bubble not happening",
+        "date": "2026-06-07",
+        "mention_number": 6
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "DRAM / HBM memory bottleneck",
+        "date": "2026-06-07",
+        "mention_number": 14
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Disaggregation prefill/decode",
+        "date": "2026-06-07",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [
+          "ANET"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Named ANET for networking"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2026-06-07",
+        "mention_number": 9
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "Orbital / space-based compute",
+        "date": "2026-06-11",
+        "mention_number": 7
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2026-06-11",
+        "mention_number": 10
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "Datacenter physical assets",
+        "date": "2026-06-12",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: no basket"
+    },
+    {
+      "match": {
+        "theme": "Orbital / space-based compute",
+        "date": "2026-06-12",
+        "mention_number": 8
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "Power / watts as binding constraint",
+        "date": "2026-06-12",
+        "mention_number": 10
+      },
+      "apply": {
+        "resolved_basket": [
+          "VST",
+          "CEG"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2026-06-12",
+        "mention_number": 11
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "CDN / token delivery path",
+        "date": "2026-06-15",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review (STEVE). Steve: not a short, not a long"
+    },
+    {
+      "match": {
+        "theme": "Meta AI transformation",
+        "date": "2026-06-15",
+        "mention_number": 3
+      },
+      "apply": {
+        "resolved_basket": [
+          "META"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "Orbital / space-based compute",
+        "date": "2026-06-15",
+        "mention_number": 9
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "Power / watts as binding constraint",
+        "date": "2026-06-15",
+        "mention_number": 11
+      },
+      "apply": {
+        "resolved_basket": [
+          "VST",
+          "CEG"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2026-06-15",
+        "mention_number": 12
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "Disaggregation prefill/decode",
+        "date": "2026-06-27",
+        "mention_number": 4
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). CBRS not real ticker, Cerebras private"
+    },
+    {
+      "match": {
+        "theme": "Orbital / space-based compute",
+        "date": "2026-06-27",
+        "mention_number": 10
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2026-06-27",
+        "mention_number": 13
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Private/macro, agree with model"
+    },
+    {
+      "match": {
+        "theme": "AI bubble not happening",
+        "date": "2026-07-08",
+        "mention_number": 7
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Theme is macro commentary, never a specific trade"
+    },
+    {
+      "match": {
+        "theme": "AI world models for gaming",
+        "date": "2026-07-08",
+        "mention_number": 1
+      },
+      "apply": {
+        "resolved_basket": [
+          "SONY",
+          "NTDOY"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
+      "note": "v4 review (CHANGE). Platform holders win"
+    },
+    {
+      "match": {
+        "theme": "Edge AI as bear case for cloud",
+        "date": "2026-07-08"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "basket_direction": ""
+      },
+      "note": "v4 review: NO_BASKET (removed from scored returns). Scenario framing, not a trade"
+    },
+    {
+      "match": {
+        "theme": "Power / watts as binding constraint",
+        "date": "2026-07-08",
+        "mention_number": 12
+      },
+      "apply": {
+        "resolved_basket": [
+          "VST",
+          "CEG"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "reason": "trade_continuation",
+      "note": "v4 review: trade continuation, basket locked. Established trade, continuation mention"
+    },
+    {
+      "match": {
+        "theme": "SpaceX ecosystem / Starship economics",
+        "date": "2021-11-01",
+        "summary_contains": "disruptor to leveraged telecom"
+      },
+      "apply": {
+        "resolved_basket": [
+          "VSAT",
+          "SATS",
+          "LUMN"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "SHORT"
+      },
       "note": "Nov-2021 Starlink-disruption thesis names VSAT/SATS/LUMN as victims. Only this SpaceX row; others keep retail proxy / NO_BASKET."
     },
     {
-      "match": {"theme": "Reasoning / inference-time compute", "date": "2025-05-28"},
-      "apply": {"resolved_basket": ["MU"], "basket_source": "OBVIOUS_UNIVERSE", "basket_direction": "LONG"},
+      "match": {
+        "theme": "Reasoning / inference-time compute",
+        "date": "2025-05-28"
+      },
+      "apply": {
+        "resolved_basket": [
+          "MU"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
       "note": "Sohn Montreal 2025-05-28: 'reasoning drives HBM demand' -> MU."
     },
     {
-      "match": {"theme": "Reasoning / inference-time compute", "summary_contains": "flywheel"},
-      "apply": {"resolved_basket": ["GOOGL"], "basket_source": "BAKER_NAMED", "basket_direction": "LONG"},
+      "match": {
+        "theme": "Reasoning / inference-time compute",
+        "summary_contains": "flywheel"
+      },
+      "apply": {
+        "resolved_basket": [
+          "GOOGL"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
       "note": "Flywheel theses (reasoning creates a data flywheel for scaled model cos; beneficiaries OpenAI/Anthropic/xAI/Google) -> GOOGL (public proxy)."
     },
     {
-      "match": {"theme": "Power / watts as binding constraint", "date": "2020-05-07"},
-      "apply": {"resolved_basket": [], "basket_source": "NO_BASKET"},
+      "match": {
+        "theme": "Power / watts as binding constraint",
+        "date": "2020-05-07"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET"
+      },
       "note": "2020-05-07 edge-computing-in-retail thesis is misclustered into power -> NO_BASKET. Only that row."
     },
     {
-      "match": {"theme": "Intel recovery / foundry failure", "date": "2019-11-26"},
-      "apply": {"resolved_basket": [], "basket_source": "NO_BASKET"},
+      "match": {
+        "theme": "Intel recovery / foundry failure",
+        "date": "2019-11-26"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET"
+      },
       "note": "Intel mention 1 (2019-11-26) is a TSMC-beat-Intel structural observation, not an Intel long -> NO_BASKET. Mentions 2/3 keep INTC LONG (default)."
     },
     {
-      "match": {"theme": "Google TPU competitive position", "date": "2026-05-20"},
-      "apply": {"is_thesis_reversal": true, "is_thesis_close": true, "exclude_from_long_stats": true},
-      "note": "TPU mention 4 (2026-05-20): genuine reversal — Google lost per-cost-token leadership. Tag thesis-close, exclude from long-mention scoring. Mentions 1-3 keep GOOGL LONG."
+      "match": {
+        "theme": "Google TPU competitive position",
+        "date": "2026-05-20"
+      },
+      "apply": {
+        "is_thesis_reversal": true,
+        "is_thesis_close": true,
+        "exclude_from_long_stats": true
+      },
+      "note": "TPU mention 4 (2026-05-20): genuine reversal \u2014 Google lost per-cost-token leadership. Tag thesis-close, exclude from long-mention scoring. Mentions 1-3 keep GOOGL LONG."
     },
     {
-      "match": {"theme": "China AI distillation / export controls"},
-      "apply": {"resolved_basket": ["ASML", "LRCX", "AMAT", "KLAC"], "basket_source": "OBVIOUS_UNIVERSE", "basket_direction": "LONG"},
+      "match": {
+        "theme": "China AI distillation / export controls"
+      },
+      "apply": {
+        "resolved_basket": [
+          "ASML",
+          "LRCX",
+          "AMAT",
+          "KLAC"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "LONG"
+      },
       "note": "All mentions. NVDA/MIXED was wrong (NVDA loses China revenue). Thesis = Western semicap-equipment monopolies protected by export controls."
     },
     {
-      "match": {"theme": "Custom ASIC failure thesis"},
-      "apply": {"resolved_basket": ["NVDA", "GOOGL", "AVGO(short)"], "basket_source": "PAIR_TRADE", "basket_direction": "PAIR_TRADE"},
+      "match": {
+        "theme": "Custom ASIC failure thesis"
+      },
+      "apply": {
+        "resolved_basket": [
+          "NVDA",
+          "GOOGL",
+          "AVGO(short)"
+        ],
+        "basket_source": "PAIR_TRADE",
+        "basket_direction": "PAIR_TRADE"
+      },
       "note": "All mentions. PAIR_TRADE: long NVDA+GOOGL / short AVGO. No returns computed."
     },
     {
-      "match": {"theme": "DISH / 5G bearish"},
-      "apply": {"resolved_basket": ["T", "VZ", "TMUS"], "basket_source": "OBVIOUS_UNIVERSE", "basket_direction": "SHORT"},
+      "match": {
+        "theme": "DISH / 5G bearish"
+      },
+      "apply": {
+        "resolved_basket": [
+          "T",
+          "VZ",
+          "TMUS"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "SHORT"
+      },
       "note": "All mentions. He named the incumbents (T/VZ/TMUS) as 5G cost-treadmill victims -> SHORT."
     },
     {
-      "match": {"theme": "SaaS existential disruption"},
-      "apply": {"resolved_basket": ["CRM", "NOW", "TEAM", "SNOW", "HUBS"], "basket_source": "OBVIOUS_UNIVERSE", "basket_direction": "SHORT"},
+      "match": {
+        "theme": "SaaS existential disruption"
+      },
+      "apply": {
+        "resolved_basket": [
+          "CRM",
+          "NOW",
+          "TEAM",
+          "SNOW",
+          "HUBS"
+        ],
+        "basket_source": "OBVIOUS_UNIVERSE",
+        "basket_direction": "SHORT"
+      },
       "note": "All mentions. HUBS restored."
     },
     {
-      "match": {"theme": "Metaverse / gaming as platform"},
-      "apply": {"resolved_basket": ["ATVI", "EA", "TTWO"], "basket_source": "BAKER_NAMED", "basket_direction": "LONG"},
-      "note": "All mentions. RBLX removed — not public until 2021-03-10, cannot anchor 2020 returns."
+      "match": {
+        "theme": "Metaverse / gaming as platform"
+      },
+      "apply": {
+        "resolved_basket": [
+          "ATVI",
+          "EA",
+          "TTWO"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
+      "note": "All mentions. RBLX removed \u2014 not public until 2021-03-10, cannot anchor 2020 returns."
     },
     {
-      "match": {"theme": "Neoclouds as durable model"},
-      "apply": {"resolved_basket": ["CRWV", "NBIS"], "basket_source": "BAKER_NAMED", "basket_direction": "LONG"},
+      "match": {
+        "theme": "Neoclouds as durable model"
+      },
+      "apply": {
+        "resolved_basket": [
+          "CRWV",
+          "NBIS"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
       "note": "All mentions. He named both CoreWeave and Nebius at Sohn NY 2026."
     },
     {
-      "match": {"theme": "Inference economics / token factories"},
-      "apply": {"resolved_basket": ["CRWV"], "basket_source": "BAKER_NAMED", "basket_direction": "LONG"},
+      "match": {
+        "theme": "Inference economics / token factories"
+      },
+      "apply": {
+        "resolved_basket": [
+          "CRWV"
+        ],
+        "basket_source": "BAKER_NAMED",
+        "basket_direction": "LONG"
+      },
       "note": "Source -> BAKER_NAMED; basket CRWV stays."
     },
     {
-      "match": {"theme": "Microsoft AI position"},
-      "apply": {"resolved_basket": [], "basket_source": "NO_BASKET"},
+      "match": {
+        "theme": "Microsoft AI position"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET"
+      },
       "note": "Both mentions -> NO_BASKET. Neither is a trade rec; the Dec-2024 row is really an xAI thesis."
     },
     {
-      "match": {"theme": "Bottleneck trade ending"},
-      "apply": {"resolved_basket": [], "basket_source": "NO_BASKET", "is_derisk_signal": true},
+      "match": {
+        "theme": "Bottleneck trade ending"
+      },
+      "apply": {
+        "resolved_basket": [],
+        "basket_source": "NO_BASKET",
+        "is_derisk_signal": true
+      },
       "note": "Both mentions (2026-06-11, 2026-06-15) -> NO_BASKET + is_derisk_signal. Verbal exposure-reduction signal front-running the Q2 2026 filing."
     }
   ]

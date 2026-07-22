@@ -52,7 +52,7 @@ BENCHMARKS = ["SMH", "SPY"]
 PRE_IPO = "PRE_IPO"
 NO_DATA = "NO_DATA"
 
-RAMP_THRESHOLD_PT = 5.0
+RAMP_THRESHOLD_PT = 5.0  # ramp fires when net_buying_pct (deliberate deployment) >= 5% of portfolio
 NEW_POSITION_MIN_WEIGHT_PCT = 2.0
 SUBSEQUENT_ADD_WINDOW = 2
 THRESHOLDS = [2.0, 4.0]
@@ -63,7 +63,8 @@ RAMP_INCLUDED_BUCKETS = [
     "AI/Datacenter Chips", "AI/Datacenter Optical", "AI/Datacenter Memory",
     "AI/Datacenter Networking", "AI/Datacenter Storage", "AI/Datacenter Compute",
     "AI/Datacenter Power", "AI/Datacenter Infrastructure", "AI/Edge Computing",
-    "AI/Data Infrastructure", "Semiconductor Manufacturing", "Semiconductor Supply Chain",
+    "AI/Data Infrastructure", "AI/World Models",
+    "Semiconductor Manufacturing", "Semiconductor Supply Chain",
 ]
 
 Return = float | str
@@ -75,6 +76,8 @@ OUT_COLUMNS = [
     "total_portfolio_weight", "ai_positions_count",
     "new_ai_entries_this_quarter", "ai_adds_this_quarter", "ai_exits_this_quarter",
     "top_5_ai_positions",
+    "gross_buying_pct", "gross_selling_pct", "net_buying_pct", "net_buying_dollars",
+    "tickers_bought", "tickers_sold", "tickers_new", "tickers_exited",
     # Trigger 2
     "subtheme", "entering_tickers", "entering_weights", "total_subtheme_weight",
     "subsequent_add", "subsequent_add_tickers",
@@ -219,13 +222,122 @@ def _in_ramp(row: dict[str, Any]) -> bool:
     return bool(row["is_ai"]) and row["subtheme"] not in RAMP_EXCLUDED_BUCKETS
 
 
+def compute_net_buying(
+    views_dir: Path, reclass: dict[str, Any]
+) -> dict[str, dict[str, Any]]:
+    """Per filing: deliberate net capital deployment into the narrow AI (picks-and-
+    shovels) basket, from positions.json SHARE deltas (not weight drift), plus the
+    per-ticker buying/selling detail.
+
+    For each AI COMMON position (narrow scope = is_ai and not Hyperscaler/EV):
+      shares up   -> gross_buying  += delta_shares * current_price_per_share  (tickers_bought)
+      shares down -> gross_selling += delta_shares * current_price_per_share  (tickers_sold)
+      new         -> gross_buying  += current_value                           (tickers_new)
+      exited      -> listed in tickers_exited (NOT counted as selling; see below)
+    net = gross_buying - gross_selling, expressed as % of total portfolio value
+    (all positions, current period). Dollar figures are normalized to whole dollars:
+    value_reported is in $thousands for pre-2023 filings and whole $ afterward, detected
+    per filing via the max implied price/share (>= $15 => already dollars, else x1000).
+
+    DEVIATION from the task's written spec: full exits (held prior, absent now) are
+    NOT counted as selling. The spec text says "exited positions: selling += prior_value",
+    but that yields May-2025 +$381M / May-2026 -$402M; excluding exits reproduces the
+    stated verification targets exactly (May-2025 +$561,990,623 ~= +$562M; May-2026
+    -$122M net-selling => no fire). See implementation notes. Flip `COUNT_EXITS` to
+    restore spec-literal behavior. (tickers_exited is display-only and unaffected.)
+    """
+    COUNT_EXITS = False
+    positions = json.loads((views_dir.parent / "positions.json").read_text(encoding="utf-8"))
+    periods = sorted({r["period"] for r in positions})
+    prior_of = {p: (periods[i - 1] if i > 0 else None) for i, p in enumerate(periods)}
+    fd_of: dict[str, str] = {}
+    total_val: dict[str, float] = {}
+    implied_max: dict[str, float] = {}  # period -> max implied price/share (units detector)
+    common: dict[tuple[str, str], list[Any]] = {}  # (period,cusip)->[shares,value,ticker]
+    for r in positions:
+        fd_of[r["period"]] = r["filing_date"]
+        total_val[r["period"]] = total_val.get(r["period"], 0.0) + (r["value_reported"] or 0.0)
+        if r["security_type"] != "COMMON":
+            continue
+        sh0 = r["shares"] or 0.0
+        if sh0 > 0:
+            implied_max[r["period"]] = max(
+                implied_max.get(r["period"], 0.0), (r["value_reported"] or 0.0) / sh0)
+        rec = common.setdefault((r["period"], r["cusip"]), [0.0, 0.0, None])
+        rec[0] += sh0
+        rec[1] += r["value_reported"] or 0.0
+        rec[2] = r["ticker"]
+
+    def narrow(ticker: Any, fd: str) -> bool:
+        if not ticker:
+            return False
+        is_ai, bucket = trig.resolve_ai(reclass, ticker, fd, "")
+        return bool(is_ai) and bucket not in RAMP_EXCLUDED_BUCKETS
+
+    def _fmt(items: list[tuple[str, float]], sign: str) -> str:
+        return ", ".join(f"{tk} {sign}${d / 1e6:.0f}M" for tk, d in items)
+
+    out: dict[str, dict[str, Any]] = {}
+    for period in periods:
+        prior = prior_of[period]
+        if prior is None:
+            continue
+        fd = fd_of[period]
+        usd = 1.0 if implied_max.get(period, 0.0) >= 15.0 else 1000.0  # -> whole dollars
+        cur = {cu: v for (p, cu), v in common.items() if p == period}
+        pri = {cu: v for (p, cu), v in common.items() if p == prior}
+        gross_buy = gross_sell = 0.0
+        bought: list[tuple[str, float]] = []
+        sold: list[tuple[str, float]] = []
+        new: list[tuple[str, float]] = []
+        exited: list[tuple[str, float]] = []
+        for cu, (sh, val, tk) in cur.items():
+            if not narrow(tk, fd):
+                continue
+            if cu in pri:
+                delta = sh - pri[cu][0]
+                amt = abs(delta) * (val / sh if sh else 0.0)  # delta_shares * current price
+                if delta > 0:
+                    gross_buy += amt
+                    bought.append((tk, amt * usd))
+                elif delta < 0:
+                    gross_sell += amt
+                    sold.append((tk, amt * usd))
+            else:
+                gross_buy += val
+                new.append((tk, val * usd))
+        for cu, (sh, val, tk) in pri.items():
+            if cu in cur or not narrow(tk, fd):
+                continue
+            exited.append((tk, val * usd))
+            if COUNT_EXITS:
+                gross_sell += val
+        net = gross_buy - gross_sell
+        total = total_val.get(period, 0.0) or 1.0
+        for lst in (bought, sold, new, exited):
+            lst.sort(key=lambda x: -x[1])
+        out[fd] = {
+            "gross_buying_pct": gross_buy / total * 100.0,
+            "gross_selling_pct": gross_sell / total * 100.0,
+            "net_buying_pct": net / total * 100.0,
+            "net_buying_dollars": net * usd,
+            "tickers_bought": _fmt(bought, "+"),
+            "tickers_sold": _fmt(sold, "-"),
+            "tickers_new": ", ".join(tk for tk, _ in new),
+            "tickers_exited": ", ".join(tk for tk, _ in exited),
+        }
+    return out
+
+
 # --------------------------------------------------------------------------
-# Trigger 1: AI_BASKET_RAMP (narrow basket)
+# Trigger 1: AI_BASKET_RAMP — fires on net BUYING (deliberate deployment),
+# not weight drift. Basket composition/returns unchanged (narrow AI).
 # --------------------------------------------------------------------------
 
 
 def trigger_ramp(
-    common: list[dict[str, Any]], filings: list[str], fd_to_period: dict[str, str]
+    common: list[dict[str, Any]], filings: list[str], fd_to_period: dict[str, str],
+    net_buying: dict[str, dict[str, Any]],
 ) -> list[dict[str, str]]:
     events: list[dict[str, str]] = []
     prior: float | None = None
@@ -235,7 +347,8 @@ def trigger_ramp(
         ramp = [r for r in non_exit if _in_ramp(r)]
         ai_weight = sum((r["weight"] or 0.0) for r in ramp)
         total_weight = sum((r["weight"] or 0.0) for r in non_exit)
-        if prior is not None and ai_weight - prior >= RAMP_THRESHOLD_PT:
+        nb = net_buying.get(fd)
+        if nb is not None and nb["net_buying_pct"] >= RAMP_THRESHOLD_PT:
             new_entries = [r["ticker"] for r in ramp if r["change_type"] == "NEW"]
             adds = [r["ticker"] for r in ramp if r["change_type"] == "ACTIVE_ADD"]
             exits = [r["ticker"] for r in fd_rows if r["change_type"] == "EXIT" and _in_ramp(r)]
@@ -244,9 +357,9 @@ def trigger_ramp(
                 "trigger_type": "AI_BASKET_RAMP",
                 "filing_date": fd,
                 "quarter": fd_to_period.get(fd, ""),
-                "ai_weight_prior": trig._fmt(prior),
+                "ai_weight_prior": trig._fmt(prior) if prior is not None else "",
                 "ai_weight_current": trig._fmt(ai_weight),
-                "ai_weight_change": trig._fmt(ai_weight - prior),
+                "ai_weight_change": trig._fmt(ai_weight - prior) if prior is not None else "",
                 "total_portfolio_weight": trig._fmt(total_weight),
                 "ai_positions_count": str(len(ramp)),
                 "new_ai_entries_this_quarter": ", ".join(new_entries),
@@ -254,6 +367,14 @@ def trigger_ramp(
                 "ai_exits_this_quarter": ", ".join(exits),
                 "top_5_ai_positions": ", ".join(
                     f"{r['ticker']}:{trig._fmt(r['weight'])}" for r in top5),
+                "gross_buying_pct": trig._fmt(nb["gross_buying_pct"]),
+                "gross_selling_pct": trig._fmt(nb["gross_selling_pct"]),
+                "net_buying_pct": trig._fmt(nb["net_buying_pct"]),
+                "net_buying_dollars": f"{nb['net_buying_dollars']:.0f}",
+                "tickers_bought": nb["tickers_bought"],
+                "tickers_sold": nb["tickers_sold"],
+                "tickers_new": nb["tickers_new"],
+                "tickers_exited": nb["tickers_exited"],
             })
         prior = ai_weight
     return events
@@ -455,8 +576,9 @@ def main(argv: list[str] | None = None) -> int:
             w.writerows(uni_rows)
 
     # Part 2: clean triggers
+    net_buying = compute_net_buying(views, reclass)
     events = (
-        trigger_ramp(common, filings, fd_to_period)
+        trigger_ramp(common, filings, fd_to_period, net_buying)
         + trigger_subtheme(common, filings, fd_to_period)
         + trigger_2b(common, filings, fd_to_period)
         + trigger_new_position(new_ideas, common, reclass)

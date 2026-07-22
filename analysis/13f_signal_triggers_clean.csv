@@ -1,103 +1,108 @@
-trigger_type,filing_date,quarter,ai_weight_prior,ai_weight_current,ai_weight_change,total_portfolio_weight,ai_positions_count,new_ai_entries_this_quarter,ai_adds_this_quarter,ai_exits_this_quarter,top_5_ai_positions,subtheme,entering_tickers,entering_weights,total_subtheme_weight,subsequent_add,subsequent_add_tickers,subtheme_weight_prior,subtheme_weight_current,subtheme_weight_change,active_tickers,all_tickers_in_subtheme,ticker,company,theme,initial_weight_pct,became_active_add
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2020-05-15,2020-03-31,,,,,,,,,,AI/Datacenter Memory,,,,,,0.00,3.91,3.91,MU,MU,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2020-05-15,2020-03-31,,,,,,,,,,AI/Hyperscaler,,,,,,0.00,11.65,11.65,"AMZN, GOOGL","AMZN, GOOGL",,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2020-05-15,2020-03-31,,,,,,,,,,AI/Hyperscaler,,,,,,0.00,11.65,11.65,"AMZN, GOOGL","AMZN, GOOGL",,,,,
-NEW_AI_POSITION_2PCT,2020-05-15,2020-03-31,,,,,,,,,,,,,,,,,,,,,AMZN,AMAZON COM INC,AI/Hyperscaler,4.70,FALSE
-NEW_AI_SUBTHEME,2020-05-15,2020-03-31,,,,,,,,,,AI/Datacenter Chips,NVDA,4.11,4.11,FALSE,,,,,,,,,,,
-NEW_AI_SUBTHEME,2020-05-15,2020-03-31,,,,,,,,,,AI/Hyperscaler,"GOOGL, AMZN","6.95, 4.70",11.65,FALSE,,,,,,,,,,,
-NEW_AI_SUBTHEME,2020-05-15,2020-03-31,,,,,,,,,,AI/Datacenter Memory,MU,3.91,3.91,TRUE,MU,,,,,,,,,,
-NEW_AI_SUBTHEME,2020-05-15,2020-03-31,,,,,,,,,,AI/EV,TSLA,5.14,5.14,FALSE,,,,,,,,,,,
-AI_BASKET_RAMP,2020-08-14,2020-06-30,8.02,16.53,8.51,97.98,4,"INTC, XLNX",MU,,"MU:6.01, XLNX:3.67, INTC:3.59, NVDA:3.26",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2020-08-14,2020-06-30,,,,,,,,,,AI/Edge Computing,,,,,,0.00,3.67,3.67,XLNX,XLNX,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2020-08-14,2020-06-30,,,,,,,,,,Semiconductor Manufacturing,,,,,,0.00,3.59,3.59,INTC,INTC,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2020-08-14,2020-06-30,,,,,,,,,,AI/Datacenter Memory,,,,,,3.91,6.01,2.11,MU,MU,,,,,
-NEW_AI_POSITION_2PCT,2020-08-14,2020-06-30,,,,,,,,,,,,,,,,,,,,,XLNX,XILINX INC,AI/Edge Computing,3.67,FALSE
-NEW_AI_POSITION_2PCT,2020-08-14,2020-06-30,,,,,,,,,,,,,,,,,,,,,INTC,INTEL CORP,Semiconductor Manufacturing,3.59,FALSE
-NEW_AI_SUBTHEME,2020-08-14,2020-06-30,,,,,,,,,,AI/Edge Computing,XLNX,3.67,3.67,FALSE,,,,,,,,,,,
-NEW_AI_SUBTHEME,2020-08-14,2020-06-30,,,,,,,,,,Semiconductor Manufacturing,INTC,3.59,3.59,FALSE,,,,,,,,,,,
-AI_BASKET_RAMP,2021-06-01,2021-03-31,1.75,7.57,5.82,69.99,3,"AMD, INTC",,,"AMD:5.36, MU:1.68, INTC:0.52",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2021-06-01,2021-03-31,,,,,,,,,,AI/Datacenter Chips,,,,,,0.00,5.36,5.36,AMD,AMD,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2021-06-01,2021-03-31,,,,,,,,,,AI/Datacenter Chips,,,,,,0.00,5.36,5.36,AMD,AMD,,,,,
-NEW_AI_POSITION_2PCT,2021-06-01,2021-03-31,,,,,,,,,,,,,,,,,,,,,AMD,ADVANCED MICRO DEVICES INC,AI/Datacenter Chips,5.36,FALSE
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2021-08-16,2021-06-30,,,,,,,,,,AI/Hyperscaler,,,,,,0.00,4.26,4.26,"AMZN, GOOGL","AMZN, GOOGL",,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2021-08-16,2021-06-30,,,,,,,,,,AI/Hyperscaler,,,,,,0.00,4.26,4.26,"AMZN, GOOGL","AMZN, GOOGL",,,,,
-NEW_AI_POSITION_2PCT,2021-08-16,2021-06-30,,,,,,,,,,,,,,,,,,,,,AMZN,AMAZON COM INC,AI/Hyperscaler,2.92,TRUE
-AI_BASKET_RAMP,2022-02-14,2021-12-31,1.27,10.98,9.71,98.82,2,INTC,MU,MRVL,"INTC:6.70, MU:4.28",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-02-14,2021-12-31,,,,,,,,,,AI/Datacenter Memory,,,,,,1.19,4.28,3.08,MU,MU,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-02-14,2021-12-31,,,,,,,,,,Semiconductor Manufacturing,,,,,,0.00,6.70,6.70,INTC,INTC,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2022-02-14,2021-12-31,,,,,,,,,,AI/Datacenter Memory,,,,,,1.19,4.28,3.08,MU,MU,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2022-02-14,2021-12-31,,,,,,,,,,Semiconductor Manufacturing,,,,,,0.00,6.70,6.70,INTC,INTC,,,,,
-NEW_AI_POSITION_2PCT,2022-02-14,2021-12-31,,,,,,,,,,,,,,,,,,,,,INTC,INTEL CORP,Semiconductor Manufacturing,6.70,FALSE
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-08-15,2022-06-30,,,,,,,,,,AI/EV,,,,,,1.67,2.73,1.05,TSLA,TSLA,,,,,
-NEW_AI_POSITION_2PCT,2022-08-15,2022-06-30,,,,,,,,,,,,,,,,,,,,,META,META PLATFORMS INC,AI/Hyperscaler,8.74,TRUE
-NEW_AI_POSITION_2PCT,2022-08-15,2022-06-30,,,,,,,,,,,,,,,,,,,,,ORCL,ORACLE CORP,AI/Hyperscaler,3.42,FALSE
-AI_BASKET_RAMP,2022-11-14,2022-09-30,0.00,9.61,9.61,71.04,3,"AMD, MRVL, P",,,"AMD:5.54, P:2.41, MRVL:1.66",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-11-14,2022-09-30,,,,,,,,,,AI/Datacenter Chips,,,,,,0.00,7.20,7.20,"AMD, MRVL","AMD, MRVL",,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-11-14,2022-09-30,,,,,,,,,,AI/Datacenter Storage,,,,,,0.00,2.41,2.41,P,P,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2022-11-14,2022-09-30,,,,,,,,,,AI/Datacenter Chips,,,,,,0.00,7.20,7.20,"AMD, MRVL","AMD, MRVL",,,,,
-NEW_AI_POSITION_2PCT,2022-11-14,2022-09-30,,,,,,,,,,,,,,,,,,,,,AMD,ADVANCED MICRO DEVICES INC,AI/Datacenter Chips,5.54,TRUE
-NEW_AI_POSITION_2PCT,2022-11-14,2022-09-30,,,,,,,,,,,,,,,,,,,,,P,PURE STORAGE INC,AI/Datacenter Storage,2.41,TRUE
-NEW_AI_SUBTHEME,2022-11-14,2022-09-30,,,,,,,,,,AI/Datacenter Storage,P,2.41,2.41,TRUE,P,,,,,,,,,,
-AI_BASKET_RAMP,2023-02-14,2022-12-31,9.61,21.59,11.98,100.00,4,NVDA,"MRVL, P",,"AMD:9.29, MRVL:6.19, P:3.98, NVDA:2.14",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2023-02-14,2022-12-31,,,,,,,,,,AI/EV,,,,,,1.25,3.27,2.02,TSLA,TSLA,,,,,
-NEW_AI_POSITION_2PCT,2023-02-14,2022-12-31,,,,,,,,,,,,,,,,,,,,,NVDA,NVIDIA CORPORATION,AI/Datacenter Chips,2.14,FALSE
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2023-05-15,2023-03-31,,,,,,,,,,AI/Datacenter Storage,,,,,,3.98,5.67,1.69,P,P,,,,,
-NEW_AI_SUBTHEME,2023-08-14,2023-06-30,,,,,,,,,,AI/Datacenter Infrastructure,HPE,1.34,1.34,FALSE,,,,,,,,,,,
-AI_BASKET_RAMP,2023-11-14,2023-09-30,16.76,24.88,8.12,94.01,5,"CIEN, COHR",AMD,"HPE, MRVL","AMD:11.50, P:9.07, CIEN:2.55, MU:1.57, COHR:0.19",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2023-11-14,2023-09-30,,,,,,,,,,AI/Datacenter Optical,,,,,,0.00,2.74,2.74,"CIEN, COHR","CIEN, COHR",,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2023-11-14,2023-09-30,,,,,,,,,,AI/Hyperscaler,,,,,,3.49,15.71,12.22,"GOOGL, META, MSFT","GOOGL, META, MSFT",,,,,
-NEW_AI_POSITION_2PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,,,,MSFT,MICROSOFT CORP,AI/Hyperscaler,6.70,FALSE
-NEW_AI_POSITION_2PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,,,,GOOGL,ALPHABET INC,AI/Hyperscaler,5.31,FALSE
-NEW_AI_POSITION_2PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,,,,META,META PLATFORMS INC,AI/Hyperscaler,3.70,FALSE
-NEW_AI_POSITION_2PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,,,,CIEN,CIENA CORP,AI/Datacenter Optical,2.55,TRUE
-NEW_AI_SUBTHEME,2023-11-14,2023-09-30,,,,,,,,,,AI/Datacenter Optical,"CIEN, COHR","2.55, 0.19",2.74,TRUE,"CIEN, COHR",,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-02-14,2023-12-31,,,,,,,,,,AI/EV,,,,,,1.66,4.56,2.90,TSLA,TSLA,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-02-14,2023-12-31,,,,,,,,,,AI/Datacenter Optical,,,,,,2.74,4.57,1.84,"CIEN, COHR","CIEN, COHR",,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-02-14,2023-12-31,,,,,,,,,,AI/EV,,,,,,1.66,4.56,2.90,TSLA,TSLA,,,,,
-NEW_AI_POSITION_2PCT,2024-02-14,2023-12-31,,,,,,,,,,,,,,,,,,,,,ORCL,ORACLE CORP,AI/Hyperscaler,3.02,FALSE
-NEW_AI_POSITION_2PCT,2024-02-14,2023-12-31,,,,,,,,,,,,,,,,,,,,,AMZN,AMAZON COM INC,AI/Hyperscaler,2.11,TRUE
-AI_BASKET_RAMP,2024-05-15,2024-03-31,17.85,30.02,12.17,75.69,8,"ALAB, LITE, MDB, MRVL, MU",,COHR,"MRVL:6.77, ALAB:4.49, AMD:4.17, MU:4.12, CIEN:3.58",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-05-15,2024-03-31,,,,,,,,,,AI/Data Infrastructure,,,,,,0.00,2.40,2.40,MDB,MDB,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-05-15,2024-03-31,,,,,,,,,,AI/Datacenter Memory,,,,,,0.00,4.12,4.12,MU,MU,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-05-15,2024-03-31,,,,,,,,,,AI/Datacenter Networking,,,,,,0.00,4.49,4.49,ALAB,ALAB,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-05-15,2024-03-31,,,,,,,,,,AI/Datacenter Memory,,,,,,0.00,4.12,4.12,MU,MU,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-05-15,2024-03-31,,,,,,,,,,AI/Datacenter Networking,,,,,,0.00,4.49,4.49,ALAB,ALAB,,,,,
-NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,MRVL,MARVELL TECHNOLOGY INC,AI/Datacenter Chips,6.77,FALSE
-NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,ALAB,ASTERA LABS INC,AI/Datacenter Networking,4.49,TRUE
-NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,MU,MICRON TECHNOLOGY INC,AI/Datacenter Memory,4.12,TRUE
-NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,GOOGL,ALPHABET INC,AI/Hyperscaler,3.07,TRUE
-NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,MDB,MONGODB INC,AI/Data Infrastructure,2.40,FALSE
-NEW_AI_SUBTHEME,2024-05-15,2024-03-31,,,,,,,,,,AI/Datacenter Networking,ALAB,4.49,4.49,TRUE,ALAB,,,,,,,,,,
-NEW_AI_SUBTHEME,2024-05-15,2024-03-31,,,,,,,,,,AI/Data Infrastructure,MDB,2.40,2.40,FALSE,,,,,,,,,,,
-AI_BASKET_RAMP,2024-08-14,2024-06-30,30.02,35.39,5.38,100.00,9,"AMKR, HPE",CIEN,MDB,"MRVL:5.78, CIEN:5.65, AMD:5.51, ALAB:5.49, HPE:4.13",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-08-14,2024-06-30,,,,,,,,,,AI/Datacenter Infrastructure,,,,,,0.00,4.13,4.13,HPE,HPE,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-08-14,2024-06-30,,,,,,,,,,AI/EV,,,,,,0.61,4.54,3.93,TSLA,TSLA,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-08-14,2024-06-30,,,,,,,,,,AI/Datacenter Infrastructure,,,,,,0.00,4.13,4.13,HPE,HPE,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-08-14,2024-06-30,,,,,,,,,,AI/EV,,,,,,0.61,4.54,3.93,TSLA,TSLA,,,,,
-NEW_AI_POSITION_2PCT,2024-08-14,2024-06-30,,,,,,,,,,,,,,,,,,,,,HPE,HEWLETT PACKARD ENTERPRISE C,AI/Datacenter Infrastructure,4.13,FALSE
-NEW_AI_SUBTHEME,2024-08-14,2024-06-30,,,,,,,,,,Semiconductor Supply Chain,AMKR,0.28,0.28,FALSE,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-02-14,2024-12-31,,,,,,,,,,AI/Data Infrastructure,,,,,,0.00,4.35,4.35,"MDB, SNOW","MDB, SNOW",,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2025-02-14,2024-12-31,,,,,,,,,,AI/Data Infrastructure,,,,,,0.00,4.35,4.35,"MDB, SNOW","MDB, SNOW",,,,,
-NEW_AI_POSITION_2PCT,2025-02-14,2024-12-31,,,,,,,,,,,,,,,,,,,,,MSFT,MICROSOFT CORP,AI/Hyperscaler,2.95,TRUE
-NEW_AI_POSITION_2PCT,2025-02-14,2024-12-31,,,,,,,,,,,,,,,,,,,,,SNOW,SNOWFLAKE INC,AI/Data Infrastructure,2.56,FALSE
-NEW_AI_POSITION_2PCT,2025-02-14,2024-12-31,,,,,,,,,,,,,,,,,,,,,AVGO,BROADCOM INC,AI/Datacenter Chips,2.30,FALSE
-AI_BASKET_RAMP,2025-05-15,2025-03-31,22.39,32.24,9.85,83.52,9,"CRWV, NVDA, SNPS","ALAB, MU","AVGO, CIEN, LRCX, LSCC, NTNX","ALAB:8.43, AMD:6.56, NVDA:3.57, LITE:3.55, SNOW:2.70",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-05-15,2025-03-31,,,,,,,,,,AI/Datacenter Compute,,,,,,0.00,2.11,2.11,CRWV,CRWV,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-05-15,2025-03-31,,,,,,,,,,AI/Datacenter Memory,,,,,,0.44,2.35,1.90,MU,MU,,,,,
-NEW_AI_POSITION_2PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,,,,META,META PLATFORMS INC,AI/Hyperscaler,4.20,FALSE
-NEW_AI_POSITION_2PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,,,,NVDA,NVIDIA CORPORATION,AI/Datacenter Chips,3.57,TRUE
-NEW_AI_POSITION_2PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,,,,CRWV,COREWEAVE INC,AI/Datacenter Compute,2.11,TRUE
-NEW_AI_SUBTHEME,2025-05-15,2025-03-31,,,,,,,,,,AI/Datacenter Compute,CRWV,2.11,2.11,FALSE,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-08-14,2025-06-30,,,,,,,,,,AI/Datacenter Storage,,,,,,0.00,5.68,5.68,P,P,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-08-14,2025-06-30,,,,,,,,,,AI/EV,,,,,,1.54,2.84,1.30,TSLA,TSLA,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2025-08-14,2025-06-30,,,,,,,,,,AI/Datacenter Optical,,,,,,3.55,7.49,3.94,CIEN,"CIEN, LITE",,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2025-08-14,2025-06-30,,,,,,,,,,AI/Datacenter Storage,,,,,,0.00,5.68,5.68,P,P,,,,,
-NEW_AI_POSITION_2PCT,2025-08-14,2025-06-30,,,,,,,,,,,,,,,,,,,,,P,PURE STORAGE INC,AI/Datacenter Storage,5.68,TRUE
-NEW_AI_POSITION_2PCT,2025-08-14,2025-06-30,,,,,,,,,,,,,,,,,,,,,CIEN,CIENA CORP,AI/Datacenter Optical,2.85,TRUE
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-11-14,2025-09-30,,,,,,,,,,AI/Datacenter Memory,,,,,,0.24,2.36,2.12,MU,MU,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2026-02-17,2025-12-31,,,,,,,,,,AI/Datacenter Networking,,,,,,0.24,3.28,3.04,ALAB,ALAB,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2026-02-17,2025-12-31,,,,,,,,,,AI/Datacenter Chips,,,,,,3.16,4.39,1.23,NVDA,NVDA,,,,,
-AI_BASKET_RAMP,2026-05-18,2026-03-31,25.34,37.20,11.86,82.06,16,"AKAM, SNPS, VECO, VST","ALAB, CRWV",P,"ALAB:7.37, CIEN:5.25, MU:5.14, NVDA:4.35, LITE:3.76",,,,,,,,,,,,,,,,
-AI_SUBTHEME_ACTIVE_CROSS_2PCT,2026-05-18,2026-03-31,,,,,,,,,,AI/Edge Computing,,,,,,0.87,2.84,1.97,AKAM,"AKAM, AMBQ, SMTC",,,,,
-AI_SUBTHEME_ACTIVE_CROSS_4PCT,2026-05-18,2026-03-31,,,,,,,,,,AI/Datacenter Networking,,,,,,3.28,7.37,4.10,ALAB,ALAB,,,,,
-NEW_AI_SUBTHEME,2026-05-18,2026-03-31,,,,,,,,,,AI/Datacenter Power,VST,1.57,1.57,FALSE,,,,,,,,,,,
+trigger_type,filing_date,quarter,ai_weight_prior,ai_weight_current,ai_weight_change,total_portfolio_weight,ai_positions_count,new_ai_entries_this_quarter,ai_adds_this_quarter,ai_exits_this_quarter,top_5_ai_positions,gross_buying_pct,gross_selling_pct,net_buying_pct,net_buying_dollars,tickers_bought,tickers_sold,tickers_new,tickers_exited,subtheme,entering_tickers,entering_weights,total_subtheme_weight,subsequent_add,subsequent_add_tickers,subtheme_weight_prior,subtheme_weight_current,subtheme_weight_change,active_tickers,all_tickers_in_subtheme,ticker,company,theme,initial_weight_pct,became_active_add
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2020-05-15,2020-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Memory,,,,,,0.00,3.91,3.91,MU,MU,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2020-05-15,2020-03-31,,,,,,,,,,,,,,,,,,AI/Hyperscaler,,,,,,0.00,11.65,11.65,"AMZN, GOOGL","AMZN, GOOGL",,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2020-05-15,2020-03-31,,,,,,,,,,,,,,,,,,AI/Hyperscaler,,,,,,0.00,11.65,11.65,"AMZN, GOOGL","AMZN, GOOGL",,,,,
+NEW_AI_POSITION_2PCT,2020-05-15,2020-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AMZN,AMAZON COM INC,AI/Hyperscaler,4.70,FALSE
+NEW_AI_SUBTHEME,2020-05-15,2020-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Chips,NVDA,4.11,4.11,FALSE,,,,,,,,,,,
+NEW_AI_SUBTHEME,2020-05-15,2020-03-31,,,,,,,,,,,,,,,,,,AI/Hyperscaler,"GOOGL, AMZN","6.95, 4.70",11.65,FALSE,,,,,,,,,,,
+NEW_AI_SUBTHEME,2020-05-15,2020-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Memory,MU,3.91,3.91,TRUE,MU,,,,,,,,,,
+NEW_AI_SUBTHEME,2020-05-15,2020-03-31,,,,,,,,,,,,,,,,,,AI/EV,TSLA,5.14,5.14,FALSE,,,,,,,,,,,
+AI_BASKET_RAMP,2020-08-14,2020-06-30,8.02,16.53,8.51,97.98,4,"INTC, XLNX",MU,,"MU:6.01, XLNX:3.67, INTC:3.59, NVDA:3.26",10.21,0.52,9.69,68653139,MU +$21M,NVDA -$4M,"XLNX, INTC",,,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2020-08-14,2020-06-30,,,,,,,,,,,,,,,,,,AI/Edge Computing,,,,,,0.00,3.67,3.67,XLNX,XLNX,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2020-08-14,2020-06-30,,,,,,,,,,,,,,,,,,Semiconductor Manufacturing,,,,,,0.00,3.59,3.59,INTC,INTC,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2020-08-14,2020-06-30,,,,,,,,,,,,,,,,,,AI/Datacenter Memory,,,,,,3.91,6.01,2.11,MU,MU,,,,,
+NEW_AI_POSITION_2PCT,2020-08-14,2020-06-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,XLNX,XILINX INC,AI/Edge Computing,3.67,FALSE
+NEW_AI_POSITION_2PCT,2020-08-14,2020-06-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,INTC,INTEL CORP,Semiconductor Manufacturing,3.59,FALSE
+NEW_AI_SUBTHEME,2020-08-14,2020-06-30,,,,,,,,,,,,,,,,,,AI/Edge Computing,XLNX,3.67,3.67,FALSE,,,,,,,,,,,
+NEW_AI_SUBTHEME,2020-08-14,2020-06-30,,,,,,,,,,,,,,,,,,Semiconductor Manufacturing,INTC,3.59,3.59,FALSE,,,,,,,,,,,
+AI_BASKET_RAMP,2021-06-01,2021-03-31,1.75,7.57,5.82,69.99,3,"AMD, INTC",,,"AMD:5.36, MU:1.68, INTC:0.52",6.51,0.00,6.51,288714657,MU +$28M,,"AMD, INTC",,,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2021-06-01,2021-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Chips,,,,,,0.00,5.36,5.36,AMD,AMD,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2021-06-01,2021-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Chips,,,,,,0.00,5.36,5.36,AMD,AMD,,,,,
+NEW_AI_POSITION_2PCT,2021-06-01,2021-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AMD,ADVANCED MICRO DEVICES INC,AI/Datacenter Chips,5.36,FALSE
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2021-08-16,2021-06-30,,,,,,,,,,,,,,,,,,AI/Hyperscaler,,,,,,0.00,4.26,4.26,"AMZN, GOOGL","AMZN, GOOGL",,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2021-08-16,2021-06-30,,,,,,,,,,,,,,,,,,AI/Hyperscaler,,,,,,0.00,4.26,4.26,"AMZN, GOOGL","AMZN, GOOGL",,,,,
+NEW_AI_POSITION_2PCT,2021-08-16,2021-06-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AMZN,AMAZON COM INC,AI/Hyperscaler,2.92,TRUE
+AI_BASKET_RAMP,2022-02-14,2021-12-31,1.27,10.98,9.71,98.82,2,INTC,MU,MRVL,"INTC:6.70, MU:4.28",8.91,0.00,8.91,285097912,MU +$71M,,INTC,MRVL,,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-02-14,2021-12-31,,,,,,,,,,,,,,,,,,AI/Datacenter Memory,,,,,,1.19,4.28,3.08,MU,MU,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-02-14,2021-12-31,,,,,,,,,,,,,,,,,,Semiconductor Manufacturing,,,,,,0.00,6.70,6.70,INTC,INTC,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2022-02-14,2021-12-31,,,,,,,,,,,,,,,,,,AI/Datacenter Memory,,,,,,1.19,4.28,3.08,MU,MU,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2022-02-14,2021-12-31,,,,,,,,,,,,,,,,,,Semiconductor Manufacturing,,,,,,0.00,6.70,6.70,INTC,INTC,,,,,
+NEW_AI_POSITION_2PCT,2022-02-14,2021-12-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,INTC,INTEL CORP,Semiconductor Manufacturing,6.70,FALSE
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-08-15,2022-06-30,,,,,,,,,,,,,,,,,,AI/EV,,,,,,1.67,2.73,1.05,TSLA,TSLA,,,,,
+NEW_AI_POSITION_2PCT,2022-08-15,2022-06-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,META,META PLATFORMS INC,AI/Hyperscaler,8.74,TRUE
+NEW_AI_POSITION_2PCT,2022-08-15,2022-06-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ORCL,ORACLE CORP,AI/Hyperscaler,3.42,FALSE
+AI_BASKET_RAMP,2022-11-14,2022-09-30,0.00,9.61,9.61,71.04,3,"AMD, MRVL, P",,,"AMD:5.54, P:2.41, MRVL:1.66",9.61,0.00,9.61,365574000,,,"AMD, P, MRVL",,,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-11-14,2022-09-30,,,,,,,,,,,,,,,,,,AI/Datacenter Chips,,,,,,0.00,7.20,7.20,"AMD, MRVL","AMD, MRVL",,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2022-11-14,2022-09-30,,,,,,,,,,,,,,,,,,AI/Datacenter Storage,,,,,,0.00,2.41,2.41,P,P,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2022-11-14,2022-09-30,,,,,,,,,,,,,,,,,,AI/Datacenter Chips,,,,,,0.00,7.20,7.20,"AMD, MRVL","AMD, MRVL",,,,,
+NEW_AI_POSITION_2PCT,2022-11-14,2022-09-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AMD,ADVANCED MICRO DEVICES INC,AI/Datacenter Chips,5.54,TRUE
+NEW_AI_POSITION_2PCT,2022-11-14,2022-09-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,P,PURE STORAGE INC,AI/Datacenter Storage,2.41,TRUE
+NEW_AI_SUBTHEME,2022-11-14,2022-09-30,,,,,,,,,,,,,,,,,,AI/Datacenter Storage,P,2.41,2.41,TRUE,P,,,,,,,,,,
+AI_BASKET_RAMP,2023-02-14,2022-12-31,9.61,21.59,11.98,100.00,4,NVDA,"MRVL, P",,"AMD:9.29, MRVL:6.19, P:3.98, NVDA:2.14",7.41,0.00,7.41,188019697,"MRVL +$102M, AMD +$20M, P +$11M",,NVDA,,,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2023-02-14,2022-12-31,,,,,,,,,,,,,,,,,,AI/EV,,,,,,1.25,3.27,2.02,TSLA,TSLA,,,,,
+NEW_AI_POSITION_2PCT,2023-02-14,2022-12-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NVDA,NVIDIA CORPORATION,AI/Datacenter Chips,2.14,FALSE
+AI_BASKET_RAMP,2023-05-15,2023-03-31,21.59,25.83,4.24,86.22,4,MU,"MRVL, P",NVDA,"AMD:11.61, MRVL:6.84, P:5.67, MU:1.70",6.35,0.00,6.35,207211332,"P +$89M, MRVL +$40M, AMD +$23M",,MU,NVDA,,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2023-05-15,2023-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Storage,,,,,,3.98,5.67,1.69,P,P,,,,,
+NEW_AI_SUBTHEME,2023-08-14,2023-06-30,,,,,,,,,,,,,,,,,,AI/Datacenter Infrastructure,HPE,1.34,1.34,FALSE,,,,,,,,,,,
+AI_BASKET_RAMP,2023-11-14,2023-09-30,16.76,24.88,8.12,94.01,5,"CIEN, COHR",AMD,"HPE, MRVL","AMD:11.50, P:9.07, CIEN:2.55, MU:1.57, COHR:0.19",10.22,1.27,8.95,273720798,AMD +$229M,"MU -$35M, P -$4M","CIEN, COHR","MRVL, HPE",,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,AI/Datacenter Optical,,,,,,0.00,2.74,2.74,"CIEN, COHR","CIEN, COHR",,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,AI/Hyperscaler,,,,,,3.49,15.71,12.22,"GOOGL, META, MSFT","GOOGL, META, MSFT",,,,,
+NEW_AI_POSITION_2PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MSFT,MICROSOFT CORP,AI/Hyperscaler,6.70,FALSE
+NEW_AI_POSITION_2PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,GOOGL,ALPHABET INC,AI/Hyperscaler,5.31,FALSE
+NEW_AI_POSITION_2PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,META,META PLATFORMS INC,AI/Hyperscaler,3.70,FALSE
+NEW_AI_POSITION_2PCT,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CIEN,CIENA CORP,AI/Datacenter Optical,2.55,TRUE
+NEW_AI_SUBTHEME,2023-11-14,2023-09-30,,,,,,,,,,,,,,,,,,AI/Datacenter Optical,"CIEN, COHR","2.55, 0.19",2.74,TRUE,"CIEN, COHR",,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-02-14,2023-12-31,,,,,,,,,,,,,,,,,,AI/EV,,,,,,1.66,4.56,2.90,TSLA,TSLA,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-02-14,2023-12-31,,,,,,,,,,,,,,,,,,AI/Datacenter Optical,,,,,,2.74,4.57,1.84,"CIEN, COHR","CIEN, COHR",,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-02-14,2023-12-31,,,,,,,,,,,,,,,,,,AI/EV,,,,,,1.66,4.56,2.90,TSLA,TSLA,,,,,
+NEW_AI_POSITION_2PCT,2024-02-14,2023-12-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ORCL,ORACLE CORP,AI/Hyperscaler,3.02,FALSE
+NEW_AI_POSITION_2PCT,2024-02-14,2023-12-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AMZN,AMAZON COM INC,AI/Hyperscaler,2.11,TRUE
+AI_BASKET_RAMP,2024-05-15,2024-03-31,17.85,30.02,12.17,75.69,8,"ALAB, LITE, MDB, MRVL, MU",,COHR,"MRVL:6.77, ALAB:4.49, AMD:4.17, MU:4.12, CIEN:3.58",19.80,4.92,14.88,655481376,CIEN +$32M,"P -$145M, AMD -$72M","MRVL, ALAB, MU, MDB, LITE",COHR,,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,AI/Data Infrastructure,,,,,,0.00,2.40,2.40,MDB,MDB,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Memory,,,,,,0.00,4.12,4.12,MU,MU,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Networking,,,,,,0.00,4.49,4.49,ALAB,ALAB,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Memory,,,,,,0.00,4.12,4.12,MU,MU,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Networking,,,,,,0.00,4.49,4.49,ALAB,ALAB,,,,,
+NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MRVL,MARVELL TECHNOLOGY INC,AI/Datacenter Chips,6.77,FALSE
+NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ALAB,ASTERA LABS INC,AI/Datacenter Networking,4.49,TRUE
+NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MU,MICRON TECHNOLOGY INC,AI/Datacenter Memory,4.12,TRUE
+NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,GOOGL,ALPHABET INC,AI/Hyperscaler,3.07,TRUE
+NEW_AI_POSITION_2PCT,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MDB,MONGODB INC,AI/Data Infrastructure,2.40,FALSE
+NEW_AI_SUBTHEME,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Networking,ALAB,4.49,4.49,TRUE,ALAB,,,,,,,,,,
+NEW_AI_SUBTHEME,2024-05-15,2024-03-31,,,,,,,,,,,,,,,,,,AI/Data Infrastructure,MDB,2.40,2.40,FALSE,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-08-14,2024-06-30,,,,,,,,,,,,,,,,,,AI/Datacenter Infrastructure,,,,,,0.00,4.13,4.13,HPE,HPE,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2024-08-14,2024-06-30,,,,,,,,,,,,,,,,,,AI/EV,,,,,,0.61,4.54,3.93,TSLA,TSLA,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-08-14,2024-06-30,,,,,,,,,,,,,,,,,,AI/Datacenter Infrastructure,,,,,,0.00,4.13,4.13,HPE,HPE,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2024-08-14,2024-06-30,,,,,,,,,,,,,,,,,,AI/EV,,,,,,0.61,4.54,3.93,TSLA,TSLA,,,,,
+NEW_AI_POSITION_2PCT,2024-08-14,2024-06-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HPE,HEWLETT PACKARD ENTERPRISE C,AI/Datacenter Infrastructure,4.13,FALSE
+NEW_AI_SUBTHEME,2024-08-14,2024-06-30,,,,,,,,,,,,,,,,,,Semiconductor Supply Chain,AMKR,0.28,0.28,FALSE,,,,,,,,,,,
+AI_BASKET_RAMP,2024-11-14,2024-09-30,35.39,25.62,-9.77,75.39,6,NTNX,"ALAB, AMD, LITE","AMKR, HPE, MRVL, P","ALAB:9.56, AMD:8.62, CIEN:3.48, LITE:2.73, MU:1.02",10.95,3.05,7.90,310299586,"ALAB +$230M, AMD +$168M, LITE +$24M","CIEN -$85M, MU -$35M",NTNX,"MRVL, HPE, P, AMKR",,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-02-14,2024-12-31,,,,,,,,,,,,,,,,,,AI/Data Infrastructure,,,,,,0.00,4.35,4.35,"MDB, SNOW","MDB, SNOW",,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2025-02-14,2024-12-31,,,,,,,,,,,,,,,,,,AI/Data Infrastructure,,,,,,0.00,4.35,4.35,"MDB, SNOW","MDB, SNOW",,,,,
+NEW_AI_POSITION_2PCT,2025-02-14,2024-12-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MSFT,MICROSOFT CORP,AI/Hyperscaler,2.95,TRUE
+NEW_AI_POSITION_2PCT,2025-02-14,2024-12-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SNOW,SNOWFLAKE INC,AI/Data Infrastructure,2.56,FALSE
+NEW_AI_POSITION_2PCT,2025-02-14,2024-12-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AVGO,BROADCOM INC,AI/Datacenter Chips,2.30,FALSE
+NEW_AI_SUBTHEME,2025-02-14,2024-12-31,,,,,,,,,,,,,,,,,,AI/World Models,U,1.88,1.88,TRUE,U,,,,,,,,,,
+AI_BASKET_RAMP,2025-05-15,2025-03-31,24.27,37.84,13.58,83.52,10,"CRWV, NVDA, SNPS","ALAB, MU, U","AVGO, CIEN, LRCX, LSCC, NTNX","ALAB:8.43, AMD:6.56, U:5.61, NVDA:3.57, LITE:3.55",18.61,1.55,17.06,561990623,"ALAB +$168M, U +$110M, MU +$56M, AMD +$19M, LITE +$7M","MDB -$29M, SNOW -$22M","NVDA, CRWV, SNPS","AVGO, LSCC, NTNX, LRCX, CIEN",,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Compute,,,,,,0.00,2.11,2.11,CRWV,CRWV,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Memory,,,,,,0.44,2.35,1.90,MU,MU,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,AI/World Models,,,,,,1.88,5.61,3.73,U,U,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,AI/World Models,,,,,,1.88,5.61,3.73,U,U,,,,,
+NEW_AI_POSITION_2PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,META,META PLATFORMS INC,AI/Hyperscaler,4.20,FALSE
+NEW_AI_POSITION_2PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,NVDA,NVIDIA CORPORATION,AI/Datacenter Chips,3.57,TRUE
+NEW_AI_POSITION_2PCT,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CRWV,COREWEAVE INC,AI/Datacenter Compute,2.11,TRUE
+NEW_AI_SUBTHEME,2025-05-15,2025-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Compute,CRWV,2.11,2.11,FALSE,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-08-14,2025-06-30,,,,,,,,,,,,,,,,,,AI/Datacenter Storage,,,,,,0.00,5.68,5.68,P,P,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-08-14,2025-06-30,,,,,,,,,,,,,,,,,,AI/EV,,,,,,1.54,2.84,1.30,TSLA,TSLA,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2025-08-14,2025-06-30,,,,,,,,,,,,,,,,,,AI/Datacenter Optical,,,,,,3.55,7.49,3.94,CIEN,"CIEN, LITE",,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2025-08-14,2025-06-30,,,,,,,,,,,,,,,,,,AI/Datacenter Storage,,,,,,0.00,5.68,5.68,P,P,,,,,
+NEW_AI_POSITION_2PCT,2025-08-14,2025-06-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,P,PURE STORAGE INC,AI/Datacenter Storage,5.68,TRUE
+NEW_AI_POSITION_2PCT,2025-08-14,2025-06-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CIEN,CIENA CORP,AI/Datacenter Optical,2.85,TRUE
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2025-11-14,2025-09-30,,,,,,,,,,,,,,,,,,AI/Datacenter Memory,,,,,,0.24,2.36,2.12,MU,MU,,,,,
+AI_BASKET_RAMP,2026-02-17,2025-12-31,31.10,28.92,-2.18,57.60,14,,"ALAB, COHR, NVDA","AMD, SNPS","NVDA:4.39, CIEN:4.08, U:3.58, P:3.42, ALAB:3.28",7.94,2.19,5.75,470327590,"ALAB +$258M, NVDA +$252M, COHR +$59M, CRWV +$39M, U +$23M, CIEN +$6M, P +$5M, MU +$4M, SNOW +$2M, SMTC +$1M, AMBQ +$0M, ROG +$0M","LITE -$101M, INTC -$78M",,"AMD, SNPS",,,,,,,,,,,,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2026-02-17,2025-12-31,,,,,,,,,,,,,,,,,,AI/Datacenter Networking,,,,,,0.24,3.28,3.04,ALAB,ALAB,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2026-02-17,2025-12-31,,,,,,,,,,,,,,,,,,AI/Datacenter Chips,,,,,,3.16,4.39,1.23,NVDA,NVDA,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_2PCT,2026-05-18,2026-03-31,,,,,,,,,,,,,,,,,,AI/Edge Computing,,,,,,0.87,2.84,1.97,AKAM,"AKAM, AMBQ, SMTC",,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2026-05-18,2026-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Networking,,,,,,3.28,7.37,4.10,ALAB,ALAB,,,,,
+AI_SUBTHEME_ACTIVE_CROSS_4PCT,2026-05-18,2026-03-31,,,,,,,,,,,,,,,,,,AI/World Models,,,,,,3.58,5.43,1.86,U,U,,,,,
+NEW_AI_SUBTHEME,2026-05-18,2026-03-31,,,,,,,,,,,,,,,,,,AI/Datacenter Power,VST,1.57,1.57,FALSE,,,,,,,,,,,
