@@ -5,6 +5,48 @@
 
 ---
 
+## 2026-08-01 — 6 new appearances added → signal events v7
+
+Full detail: `analysis/six_new_appearances_implementation_notes.md` (SD-6NEW-1…3),
+`analysis/six_new_appearances_curation_gate.md`, `analysis/v6_to_v7_changelog.md`. Committed as `17b1488`.
+
+**Ingestion**
+- Corpus 39 → **45** transcripts, 507 → **562** theses. 3 YouTube (yt-dlp), 2 CNBC via **local Whisper
+  `small`** (HLS `hls-264` audio → mp3 → whisper; CNBC has no captions), 1 Sohn AU 2021 as a labeled
+  **`secondary_coverage`** web transcript (primary gated/404, no YT mirror; assembled from Sohn H&M +
+  AFR write-ups with reported quotes — NOT verbatim).
+- **Pipeline gotcha (logged):** `fetch_youtube <ids>` OVERWRITES `youtube/_manifest.json` with only the
+  passed IDs (transcript files untouched). Always re-run `fetch_youtube` with NO args before
+  `build_manifest` so the step-manifest is complete. Missing this dropped the master manifest 45→17 once.
+
+**SD-6NEW-1 — Heller House reversal.** `jOgbqt04eUk` (Baker *interviews* SpaceX CFO Johnsen) was re-added
+after its 2026-07-08 red-herring removal, then — per operator at the gate — **all 11 theses removed from
+scoring** (they're the CFO's operational claims, not Baker's views; they clustered into tradeable
+AI/space baskets). Mechanism: 15 `cluster_override` null removals (one per theme membership), extractions
+retained on disk. Confirmed 0 Heller rows in v7.
+
+**SD-6NEW-2 — new theme + keys (operator-approved, blast-radius reviewed).**
+- New theme `Crypto / Coinbase (COIN)` LONG `[COIN]`; `COIN` added to `theme_returns_v2.UNIVERSE`.
+- 3 keys added, each ticker/basket-connected: `lowest.?cost token` (Inference economics),
+  `electricity generation` (Power/watts), `structurally short (of )?compute` (Reasoning/inference-time).
+- **Declined** `blackwell`/`hopper` keys — 15/4-thesis blast radius (re-clusters many already-clustered
+  theses). Consequence: All-In-tariffs T5/T6 stay NO_BASKET by choice.
+
+**SD-6NEW-3 — event overrides are now DATE-ANCHORED.** Renumbering (inserting earlier-dated appearances)
+silently broke event-overrides keyed by `(date, mention_number)` — stale mention numbers stopped matching
+→ 9 SpaceX events reverted baskets. Root cause: `mention_number` is a fragile derived key; `(theme,date)`
+is unique in the mention grain. **Fix:** stripped `mention_number` from all 73 dated event-overrides
+(0 used it without a date → lossless). Immunizes the file against future renumbering; also activated
+3 dormant DRAM overrides (`MU` → `MU, 000660.KS`, 0 return impact — SK Hynix is NO_DATA on EODHD).
+**Rule going forward:** never key an override on `mention_number`; use `theme`+`date`(+`summary_contains`).
+
+**Deliverable versioning.** `build_repeat_mention_events.py` output bumped v6 → **v7**
+(`step4_signal_events_v7_with_returns_extended.{csv,xlsx}`); v6 kept for the diff. `theme_returns_v2.py`
+still writes `step4_signal_events_v5.csv` (criterion grain). v6→v7: +15 events, 0 removed, 0 basket/return
+changes on pre-existing rows, 21 pure mention renumbers.
+
+---
+
 ## 2026-07-06 — Thesis audit + 13F AI-signal infrastructure + Excel workbook
 
 Full per-decision detail lives in `docs/implementation_notes/13f_signal_triggers_implementation_notes.md`

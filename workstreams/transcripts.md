@@ -16,6 +16,27 @@ Branch: **`gavin-baker-transcript-corpus`** (not yet merged to main).
 
 ---
 
+## Current State (as of 2026-08-01)
+
+> Branch **`main`** (the `baker-corpus-audit-rescore-2026-07` branch was merged to main + deleted).
+
+**6 new appearances added end-to-end → signal events v7 (committed + pushed, `17b1488`).** Corpus
+39 → **45** transcripts, 507 → **562** theses. New: All-In E125 (2023-04-21), All-In tariffs/AGI
+(2025-07-17), Heller House CFO interview (2026-06-08), CNBC Sharpe SPACs (2021-08-09, Whisper),
+CNBC SpaceX drawdown (2026-07-20, Whisper), Sohn AU Coinbase (2021-12-03, secondary coverage).
+Deliverable **`analysis/step4_signal_events_v7_with_returns_extended.{csv,xlsx}`** (215 → 230 events).
+
+Key outcomes (operator-reviewed at the curation gate): **Heller House = 0 scored** (Baker interviews
+the SpaceX CFO; the 11 theses are the CFO's claims — removed via cluster_override null); new
+**`Crypto / Coinbase (COIN)`** theme + `COIN` in UNIVERSE; 3 new ticker-connected keys added,
+blackwell/hopper declined; **event overrides globally DATE-ANCHORED** (stripped `mention_number` from all
+73 dated matches) after renumbering silently broke 9 SpaceX overrides — this also activated 3 dormant
+DRAM overrides (`MU`→`MU,000660.KS`, 0 return impact). v6→v7: +15 events, 0 removed, 0 basket/return
+changes on pre-existing rows. All touched modules `mypy --strict` clean. Detail:
+`analysis/six_new_appearances_implementation_notes.md`, `analysis/v6_to_v7_changelog.md`,
+`analysis/six_new_appearances_curation_gate.md`, `journal.txt`; decisions SD-6NEW-1…3 in
+`workstreams/transcripts-decisions.md` (2026-08-01).
+
 ## Current State (as of 2026-07-22)
 
 > Working branch this session: **`baker-corpus-audit-rescore-2026-07`**.
@@ -144,6 +165,12 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 ---
 
 ## Immediate Next Steps
+
+**From 2026-08-01 (6-new-appearances):** (a) v7 is live on `main` (pushed). (b) Open flags, none blocking:
+All-In E125 (2023-04-21) Starship theses likely trace to co-guest Gracias, not Baker — decide keep/drop;
+`journal.txt` was created fresh (no prior journal existed in-repo) — confirm location/format or point to the
+real one; private tickers (Anthropic/OpenAI/xAI/SpaceX) sit in tickers_direct as NO_DATA (harmless).
+(c) The 2026-07-20 events are too recent to have forward returns — refresh once ~1q of data accrues.
 
 1. **Operator reviews `analysis/basket_reresolution.csv`** (207/241 re-resolutions changed; disagrees
    with 35/41 overrides). Triage which rows to accept; the accepted ones fold into
