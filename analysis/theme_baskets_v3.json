@@ -7,7 +7,7 @@
     "direction": "LONG",
     "note": "Only US-listed pure-play HBM/DRAM. Includes memory cycle hold-signal theses.",
     "keys": [
-      "dram",
+      "\\bdram\\b",
       "hbm",
       "high bandwidth memory",
       "memory bottleneck",
@@ -38,9 +38,9 @@
       "transceiver",
       "photonic",
       "fiber optic",
-      "cien",
+      "\\bcien",
       "cohr",
-      "lite",
+      "\\blite",
       "lumentum",
       "ciena",
       "coherent corp"
@@ -497,7 +497,7 @@
     "direction": "LONG",
     "note": "Direction shifts over time (TPU bull 2024 \u2192 TPU losing ground 2026).",
     "keys": [
-      "tpu",
+      "\\btpu",
       "google.*cost leader",
       "google.*chip",
       "google.*custom",
