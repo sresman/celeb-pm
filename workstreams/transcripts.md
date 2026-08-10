@@ -16,6 +16,36 @@ Branch: **`gavin-baker-transcript-corpus`** (not yet merged to main).
 
 ---
 
+## Current State (as of 2026-08-10)
+
+> Branch **`main`** (committed + pushed: `e57de51` v8, `98442d3` v9).
+
+**2 new appearances added end-to-end → v8, then a targeted regex fix → v9.** Corpus 45 → **47**
+transcripts, 562 → **589** theses. New (from the fomo-fund-monitor YouTube triage; operator confirmed
+2 of 25 candidates as genuine): **ILTB "Why the markets are pricing AI wrong"** (`NGsi2PC4y68`,
+2026-08-04, 20 theses) + **Aria Networks "MFU"** (`MmNWwIYFBeI`, 2026-04-16, 7 theses). Both **solo
+Baker** — full attribution, no co-guest split.
+
+Curation gate (operator-reviewed): nulled 4 substring-false-positive clusters; left high-conviction
+unclustered theses (T4 $700B credit-gap, T7/T9 NVDA) as noise; no new themes. **v8 = 238 events
+(+8, 0 dropped, 0 return changes on 230 pre-existing).**
+
+Then a **targeted regex word-boundary fix** to 4 collision keys in `theme_baskets_v3.json`
+(`dram`→`\bdram\b`, `cien`→`\bcien`, `lite`→`\blite`, `tpu`→`\btpu`). A full dry-run showed blanket
+`\b`-anchoring was destructive (would drop 27 events / 7 meets-criteria by killing legit stem keys),
+so only the 4 true offenders were fixed. **v9 = 236 events (−2 spurious Optical events, 0 return
+changes on shared rows);** signal slice improved n 45→44, ret_1y 240.5%→**257.8%**, 100% winrate.
+Deliverable **`analysis/step4_signal_events_v9_with_returns_extended.{csv,xlsx}`** (v7, v8 preserved).
+Detail: `two_new_appearances_implementation_notes.md`, `two_new_appearances_curation_gate.md`,
+`v7_to_v8_changelog.md`, `regex_word_boundary_audit.md`, `v8_to_v9_changelog.md`; decisions
+SD-2NEW-1…3 + SD-REGEX-1…3 in `workstreams/transcripts-decisions.md` (2026-08-10).
+
+New known issues: (1) PIPELINE_MAP's "minimal re-run" recipe is unsafe — `fetch_youtube <ids>`
+overwrites the per-step manifest and truncated the master 45→16 (recovered by re-running with no
+args). (2) 3 cluster_overrides from the v8 task (tpu/dram/cien) are now redundant with the key fix
+(harmless). (3) the `coherent` key still semantically over-matches ("coherent cluster") — not a
+word-boundary issue, handled per-thesis via overrides.
+
 ## Current State (as of 2026-08-01)
 
 > Branch **`main`** (the `baker-corpus-audit-rescore-2026-07` branch was merged to main + deleted).
@@ -165,6 +195,13 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 ---
 
 ## Immediate Next Steps
+
+**From 2026-08-10 (2-new-appearances + regex fix):** v9 is live on `main` (pushed). Optional
+follow-ups, none blocking: (a) drop the 3 now-redundant tpu/dram/cien cluster_overrides (SD-REGEX-2);
+(b) harden the corpus tooling — make `write_step_manifest` merge-by-id so `fetch_youtube <ids>` can't
+truncate the master manifest, or fix the PIPELINE_MAP recipe; (c) the 2026-08-04 ILTB events are too
+recent for forward returns — refresh once ~1q accrues; (d) consider whether `coherent` should be
+tightened (semantic over-match into Optical, currently patched via overrides).
 
 **From 2026-08-01 (6-new-appearances):** (a) v7 is live on `main` (pushed). (b) Open flags, none blocking:
 All-In E125 (2023-04-21) Starship theses likely trace to co-guest Gracias, not Baker — decide keep/drop;

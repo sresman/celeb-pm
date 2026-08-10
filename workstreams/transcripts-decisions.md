@@ -5,6 +5,50 @@
 
 ---
 
+## 2026-08-10 — 2 new appearances → v8; targeted regex word-boundary fix → v9
+
+### 2 new appearances (SD-2NEW)
+- **SD-2NEW-1: source = fomo-fund-monitor triage.** 25 YouTube IDs triaged there; operator confirmed
+  exactly 2 genuine new Baker appearances (ILTB `NGsi2PC4y68` 2026-08-04; Aria `MmNWwIYFBeI` 2026-04-16).
+  Both **solo Baker** → full attribution, no co-guest/interviewer split (contrast Heller House SD-6NEW-1).
+- **SD-2NEW-2: curation-gate decisions.** (1) Null 4 substring-false-positive clusters (see SD-REGEX-2).
+  (2) Leave high-conviction *unclustered* theses as noise — T4 (hyperscaler OCF / $700B Blackwell-Rubin
+  credit gap) is a macro framework call, not a ticker thesis; T7/T9 NVDA views are already well-captured
+  corpus-wide; targeted overrides = maintenance surface without added signal; they'll cluster naturally if
+  repeated. (3) No new themes for regulatory tail-risk (T19) / token-for-labor (T17) — one-off framings,
+  no investable basket.
+- **SD-2NEW-3: reaudit no-op is verified, not assumed.** 0 of 27 new theses met reaudit A/B/C (max 4
+  tickers < 5; no ETFs; T3/T4 mega-caps are named in-text so not orphan-B) — checked via the tool's own
+  `selection_reason`.
+
+### Regex word-boundary fix (SD-REGEX)
+- **SD-REGEX-1: targeted, NOT blanket.** Dry-run re-clustered all 589 theses with `\b`-anchored keys:
+  blanket anchoring removes 133 matches but ~94 are legitimate stem/prefix matches (disaggregat→
+  disaggregation, distill→distillation, scaling law→scaling laws, stablecoin→stablecoins, export
+  control→export controls, …). It would drop 27 events / 20 material / 7 meets-criteria — mostly
+  regressions. Rejected. See `analysis/regex_word_boundary_audit.md`.
+- **SD-REGEX-2: fix = 4 collision keys only.** `dram`→`\bdram\b` (kills "dramatically"; needs BOTH
+  bounds since the word starts at a boundary), `cien`→`\bcien` (efficient/efficiency), `lite`→`\blite`
+  (satellites), `tpu`→`\btpu` (output). Leading-`\b` keeps plurals (tpus, ciena). `tpu.*v8`/`tpu.*cost`
+  verified to have no residual "output" FP → left as-is. All stem/prefix keys untouched.
+- **SD-REGEX-3: v9 is a correction that MOVES historical stats — needed sign-off.** Removed 2 spurious
+  Optical events; 2023-04-21 was a meets-criteria "winner" (+13.5% 1y) that was really an All-In
+  Starlink/satellites thesis (`lite`←"satellites"). Removing a below-average winner RAISED the signal
+  mean (240.5%→257.8%). 0 return changes on shared rows; 3 Optical mentions renumbered (mention_number only).
+
+### Open / flagged (2026-08-10)
+- **PIPELINE_MAP "minimal re-run" recipe is unsafe.** `fetch_youtube <ids>` overwrites
+  `youtube/_manifest.json` with only the passed IDs; `build_manifest` then truncated
+  `_master_manifest.json` 45→16. Recovered by re-running `fetch_youtube` with no args. Fix:
+  make `write_step_manifest` merge-by-id, or amend the doc to always fetch full-corpus before build.
+- **3 redundant cluster_overrides** (tpu/dram/cien from the v8 task) now subsumed by SD-REGEX-2;
+  harmless/idempotent, left in place. The `compute.*scale`→"hyperscaler" override on ILTB T3 is NOT a
+  substring collision (real words) and is still needed.
+- **`coherent` key over-matches** semantically ("coherent cluster" xAI theses land in Optical) — not a
+  word-boundary issue; handled per-thesis via existing overrides.
+
+---
+
 ## 2026-08-01 — 6 new appearances added → signal events v7
 
 Full detail: `analysis/six_new_appearances_implementation_notes.md` (SD-6NEW-1…3),
