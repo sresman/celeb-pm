@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T7",
+  "summary": "Nvidia is at its lowest forward P/E in 10 years, implying the market believes it is significantly over-earning \u2014 Baker disagrees",
+  "summary_extended": "Baker argues that Nvidia is trading at its lowest forward P/E in the past 10 years, a valuation level that implies the market believes Nvidia is significantly over-earning and due for substantial earnings mean-reversion. He contends this is inconsistent with his ground-level channel checks, which show accelerating GPU demand, rising GPU prices, and no negative quantitative metrics that would justify such pessimism. Baker notes that the only prior instances when semiconductors were this cheap were Liberation Day and the DeepSeek selloff, both of which resolved as sharp V-shaped recoveries, suggesting the current dislocation is similarly temporary and sentiment-driven rather than fundamentals-driven. The investment implication is that Nvidia represents a high-conviction long at current levels, as the low multiple is a mispricing relative to the actual demand environment Baker observes. He frames this as the central valuation anomaly in the AI/semis complex as of early August 2026.",
+  "detail": "As of recording, Nvidia's forward P/E is at a 10-year low. The only prior times semis were cheaper were Liberation Day and DeepSeek, both of which were V-bottoms. The market is pricing in significant mean-reversion in earnings, but Baker's ground-level checks show accelerating demand, rising GPU prices, and no negative quantitative metrics. The low multiple is inconsistent with the fundamental picture Baker sees.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this explicitly and frames it as the central valuation anomaly; calls it 'hard to understand why it's trading at such a low multiple'",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "Nvidia's at its lowest forward PE of the last 10 years",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly and entirely about Nvidia's valuation \u2014 its forward P/E, earnings trajectory, and whether the market is correctly pricing its earnings power. NVDA is the direct subject."
+    }
+  ]
+}

@@ -6488,6 +6488,103 @@
     "tickers_implied": []
   },
   {
+    "date": "2026-04-16",
+    "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+    "thesis_id": "T1",
+    "summary": "AI is the first major tech sector where being the lowest-cost producer of the core output (tokens/intelligence) is the decisive competitive advantage",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "AI model economics",
+      "tokenomics"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-04-16",
+    "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+    "thesis_id": "T2",
+    "summary": "GPU/XPU utilization in AI factories is critically low (30\u201345% for training, lower for inference), making network infrastructure the primary bottleneck and value creation opportunity",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "networking infrastructure",
+      "semiconductor supply chain"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-04-16",
+    "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+    "thesis_id": "T3",
+    "summary": "Spending more on everything surrounding the accelerator (especially networking) is the correct path to lowest cost per token \u2014 counterintuitively, cheapest infra is not the answer",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "networking infrastructure"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-04-16",
+    "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+    "thesis_id": "T4",
+    "summary": "Data center scarcity (regulatory constraints in 7 states) makes maximizing utilization of existing AI factories economically imperative",
+    "confidence": "moderate",
+    "themes": [
+      "AI datacenter infrastructure",
+      "regulatory",
+      "power/energy"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-04-16",
+    "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+    "thesis_id": "T5",
+    "summary": "The shift from training to distributed inference dramatically increases the importance and value of network infrastructure, particularly for agentic and interactive workloads",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "networking infrastructure",
+      "agentic AI"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-04-16",
+    "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+    "thesis_id": "T6",
+    "summary": "Inference economics make tokenomics explicit and essential in a way training never did \u2014 inference is the competitive battleground where cost per token determines winners",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI model economics",
+      "tokenomics",
+      "agentic AI"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-04-16",
+    "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+    "thesis_id": "T7",
+    "summary": "Latency (time to first token and inter-token latency) is a direct revenue driver for AI inference products, analogous to Google's 100ms = 1% revenue rule",
+    "confidence": "moderate",
+    "themes": [
+      "AI model economics",
+      "networking infrastructure",
+      "tokenomics"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
     "date": "2026-05-12",
     "source": "HedgeFundAlpha (writeup) \u2014 Baker & Khaira fireside writeup",
     "thesis_id": "T1",
@@ -9445,5 +9542,317 @@
     "tickers_implied": [
       "SpaceX (private)"
     ]
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T1",
+    "summary": "July 2026 AI/semis selloff was a sentiment-driven overreaction ('2022 in a month') with no negative quantitative fundamentals to justify it",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "semiconductor supply chain"
+    ],
+    "tickers_named": [
+      "NVDA"
+    ],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T10",
+    "summary": "SK Hynix should replicate Nvidia's credit wrapper / revenue share model to capture upside from the AI compute buildout",
+    "confidence": "high_conviction",
+    "themes": [
+      "semiconductor supply chain",
+      "AI datacenter infrastructure"
+    ],
+    "tickers_named": [],
+    "tickers_implied": [
+      "MU",
+      "HYNIX"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T11",
+    "summary": "SpaceX (Grok/xAI compute) is significantly undervalued in public markets; the compute buildout optionality is not in estimates",
+    "confidence": "moderate",
+    "themes": [
+      "AI datacenter infrastructure",
+      "space/orbital compute"
+    ],
+    "tickers_named": [],
+    "tickers_implied": [
+      "SPACEX"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T12",
+    "summary": "Orbital/space-based compute is becoming increasingly real and is underappreciated by public markets",
+    "confidence": "speculative",
+    "themes": [
+      "space/orbital compute",
+      "AI datacenter infrastructure"
+    ],
+    "tickers_named": [],
+    "tickers_implied": [
+      "SPACEX"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T13",
+    "summary": "SRAM-based accelerators disaggregated from HBM DRAM will significantly improve AI inference ROI and are underappreciated",
+    "confidence": "moderate",
+    "themes": [
+      "AI datacenter infrastructure",
+      "semiconductor supply chain"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T14",
+    "summary": "Continual learning and sample-efficient learning breakthroughs could reduce training compute demand but are unlikely to be net negative for AI infrastructure",
+    "confidence": "speculative",
+    "themes": [
+      "AI datacenter infrastructure",
+      "semiconductor supply chain"
+    ],
+    "tickers_named": [
+      "NVDA"
+    ],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T15",
+    "summary": "Private inference clouds (Fireworks, Base10, Modal) are growing nearly as fast as frontier labs with very little cash burn \u2014 extraordinary business models",
+    "confidence": "moderate",
+    "themes": [
+      "open source AI",
+      "AI datacenter infrastructure",
+      "private markets"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T16",
+    "summary": "AI adoption is in extremely early innings globally; compute shortage exists with only ~500K people using generative AI out of 8 billion",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "semiconductor supply chain"
+    ],
+    "tickers_named": [],
+    "tickers_implied": [
+      "NVDA",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "META"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T17",
+    "summary": "AI-native companies are substituting tokens for labor at scale, with token spend reaching 20-50% of total comp at leading companies",
+    "confidence": "moderate",
+    "themes": [
+      "AI datacenter infrastructure",
+      "labor/productivity"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T18",
+    "summary": "China's DUV machine development is a real phase transition but the market overreacted; it will take decades to close the gap with EUV",
+    "confidence": "moderate",
+    "themes": [
+      "semiconductor supply chain",
+      "geopolitics"
+    ],
+    "tickers_named": [
+      "ASML"
+    ],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T19",
+    "summary": "Regulatory risk is the single biggest tail risk to AI \u2014 the industry has done a terrible job of PR and data center moratoria could spread",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "regulatory"
+    ],
+    "tickers_named": [],
+    "tickers_implied": [
+      "NVDA",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "META"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T2",
+    "summary": "Public markets are missing the AI demand picture because they lack visibility into private inference clouds and private frontier labs",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "private markets"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T20",
+    "summary": "Claude/LLM homogenization of investment analysis is creating artificial volatility cycles and breakdown of market diversity",
+    "confidence": "moderate",
+    "themes": [
+      "market structure",
+      "AI adoption"
+    ],
+    "tickers_named": [],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T3",
+    "summary": "Contracted GPU compute is trading at a massive discount to spot market; as contracts roll off and reprice higher, hyperscaler operating cash flows will accelerate sharply",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "semiconductor supply chain"
+    ],
+    "tickers_named": [
+      "MSFT",
+      "META",
+      "AMZN"
+    ],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T4",
+    "summary": "Hyperscaler operating cash flows are already accelerating and consensus is modeling them to monetize Blackwell/Rubin at Ampere-era rates \u2014 a ~$700B underestimate",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "semiconductor supply chain"
+    ],
+    "tickers_named": [
+      "MSFT",
+      "META",
+      "AMZN"
+    ],
+    "tickers_implied": [
+      "GOOGL"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T5",
+    "summary": "Open-source token growth taking share from frontier models is neutral-to-positive for AI infrastructure demand, not negative",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "open source AI"
+    ],
+    "tickers_named": [
+      "NVDA"
+    ],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T6",
+    "summary": "Credit risk to the AI buildout is real but likely overstated given the operating cash flow acceleration thesis",
+    "confidence": "moderate",
+    "themes": [
+      "AI datacenter infrastructure",
+      "credit markets"
+    ],
+    "tickers_named": [
+      "META"
+    ],
+    "tickers_implied": [
+      "MSFT",
+      "AMZN",
+      "GOOGL"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T7",
+    "summary": "Nvidia is at its lowest forward P/E in 10 years, implying the market believes it is significantly over-earning \u2014 Baker disagrees",
+    "confidence": "high_conviction",
+    "themes": [
+      "semiconductor supply chain",
+      "AI datacenter infrastructure"
+    ],
+    "tickers_named": [
+      "NVDA"
+    ],
+    "tickers_implied": []
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T8",
+    "summary": "Memory LTAs (long-term agreements) are structurally sticky due to game-theoretic dynamics \u2014 breaking them risks losing competitive allocation in a supply-constrained world",
+    "confidence": "high_conviction",
+    "themes": [
+      "semiconductor supply chain",
+      "AI datacenter infrastructure"
+    ],
+    "tickers_named": [],
+    "tickers_implied": [
+      "MU",
+      "HYNIX",
+      "SAMSUNG"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    "thesis_id": "T9",
+    "summary": "Nvidia's 'credit wrapper with revenue share' business model is highly underappreciated and could create a massive royalty-based cloud business",
+    "confidence": "high_conviction",
+    "themes": [
+      "AI datacenter infrastructure",
+      "semiconductor supply chain"
+    ],
+    "tickers_named": [
+      "NVDA"
+    ],
+    "tickers_implied": []
   }
 ]

@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T19",
+  "summary": "Regulatory risk is the single biggest tail risk to AI \u2014 the industry has done a terrible job of PR and data center moratoria could spread",
+  "summary_extended": "Baker argues that regulatory risk \u2014 specifically data center moratoria \u2014 is the single largest structural tail risk to the AI buildout, and that the industry has done a poor job of defending itself politically. He points to New York's data center moratorium as the first domino, warning that a false but spreading political narrative (data centers raise electricity prices, consume water, and displace jobs) could trigger similar bans in other states or municipalities. Baker contends the factual reality is the opposite \u2014 data centers lower local electricity prices, create well-paying blue-collar jobs, and have minimal environmental impact \u2014 but that this story is not being told effectively. He calls for a coordinated industry PAC running mass-market advertising (e.g., NFL and World Series slots) to counter the narrative before it metastasizes into broader legislative action that could materially slow or halt the AI infrastructure buildout.",
+  "detail": "New York's data center moratorium is the first of potentially many. The political narrative (data centers raise electricity prices, use water, take jobs) is factually wrong but spreading. The industry needs a coordinated PR campaign (PAC running ads during NFL/World Series) explaining that data centers lower local electricity prices, create high-paying blue-collar jobs, and have no material water/environmental impact. The AI industry's failure to tell its story is a structural risk to the buildout.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls regulation 'the most obvious risk' and 'the biggest risk'; spends significant time on it",
+  "themes": [
+    "AI datacenter infrastructure",
+    "regulatory"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "regulation just has to be the biggest risk... New York making a data center moratorium",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "This thesis is about regulatory/political risk to data center construction broadly, not about Nvidia specifically. While Nvidia would be harmed by a slowdown in data center buildout, the thesis does not make Nvidia a specific or unambiguous subject or primary beneficiary \u2014 it is a general industry risk thesis. Nvidia is likely bleed-over from adjacent theses in the same transcript."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft operates data centers and would be affected by moratoria, but the thesis does not specifically name or analyze Microsoft. It is a general regulatory risk thesis applicable to the entire industry; MSFT is not an unambiguous direct subject or beneficiary here."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon/AWS is a major data center operator and would be affected, but the thesis is a broad industry-level regulatory risk argument. AMZN is not specifically called out and is tangential bleed-over."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Alphabet operates large data center infrastructure and would be affected by moratoria, but the thesis is a general regulatory risk argument, not specific to Alphabet. Tangential."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta is a large data center builder and would be harmed by moratoria, but the thesis is a broad political/regulatory risk argument with no specific focus on Meta. Tangential."
+    }
+  ]
+}

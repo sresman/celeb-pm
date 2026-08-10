@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T10",
+  "summary": "SK Hynix should replicate Nvidia's credit wrapper / revenue share model to capture upside from the AI compute buildout",
+  "summary_extended": "Baker argues that SK Hynix should adopt Nvidia's credit wrapper / revenue share financing model to capture a larger share of the AI compute buildout's economics. Specifically, he says that if he were CEO of SK Hynix, he would approach GPU buyers and offer to put up cash as surety upfront in exchange for a cut of ongoing revenues \u2014 mirroring the structure Nvidia is reportedly using to help customers finance Blackwell/Rubin purchases amid a ~$700B credit gap. His reasoning is that memory companies like SK Hynix and Micron now have strong cash flows and credit markets are tightening, creating an opportune moment for suppliers to offer alternative financing structures that also give them revenue upside. He notes that Blackstone and Apollo are likely already pitching variants of this to hyperscalers, suggesting the window for memory companies to act is now. The investment implication is that Micron (the US-listed HBM producer) could pursue a similar strategy, potentially transforming its earnings profile from a commodity cyclical to a revenue-share participant in AI infrastructure.",
+  "detail": "Baker explicitly states that if he were CEO of SK Hynix, he would go to GPU buyers and participate in a Nvidia-style credit wrapper \u2014 putting up some cash upfront as surety and taking a cut of ongoing revenues. Memory companies have strong cash flows now and credit markets are tightening, making this an opportune moment to offer alternative financing structures. Blackstone and Apollo are likely already suggesting variants of this.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'I'd do the exact same thing Nvidia's doing right now' and walks through the specific structure",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "if I were CEO of Hynix, I'd do the exact same thing Nvidia's doing",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU",
+    "HYNIX"
+  ],
+  "tickers_subject": [
+    "HYNIX"
+  ],
+  "tickers_implied_original": [
+    "MU",
+    "HYNIX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is the only US-listed HBM memory producer and the direct analog to SK Hynix in Baker's thesis. If SK Hynix should adopt this model, Micron faces the same opportunity and competitive dynamic, making it a direct beneficiary of this structural thesis."
+    },
+    {
+      "ticker": "HYNIX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SK Hynix is the explicit subject of Baker's thesis \u2014 he frames the entire argument as what he would do if he were SK Hynix's CEO. Not US-listed, but was in the original implied list and is the direct subject of the thesis."
+    }
+  ]
+}

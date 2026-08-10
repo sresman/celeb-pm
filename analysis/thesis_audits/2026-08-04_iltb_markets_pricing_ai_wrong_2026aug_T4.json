@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T4",
+  "summary": "Hyperscaler operating cash flows are already accelerating and consensus is modeling them to monetize Blackwell/Rubin at Ampere-era rates \u2014 a ~$700B underestimate",
+  "summary_extended": "Baker argues that consensus analysts are making a critical error by modeling hyperscaler monetization of Blackwell and Rubin GPU generations at Ampere-era rates \u2014 two full GPU generations behind current pricing \u2014 leading to a ~$700B underestimate of hyperscaler operating cash flow. He supports this with concrete data: Microsoft, Meta, and Amazon operating cash flows accelerated from 28% to 32% growth this quarter, and when adjusted for one-time items like EU fines, the acceleration is even sharper at 28% to 35%. If hyperscalers monetize Blackwell and Rubin even at a discount to current market rates (rather than Ampere rates), aggregate hyperscale operating cash flow would be closer to $2T versus the consensus estimate of $1.3\u20131.4T. This $700B gap effectively removes the credit risk narrative \u2014 the bear case that hyperscalers cannot fund AI capex without dangerous levels of external borrowing \u2014 making that concern largely moot. The investment implication is that the hyperscalers themselves (MSFT, META, AMZN, GOOGL) are materially undervalued relative to their true cash generation capacity, and the AI infrastructure selloff of mid-2026 is mispriced.",
+  "detail": "Microsoft, Meta, and Amazon operating cash flows accelerated from 28% to 32% growth this quarter; adjusted for one-time items (EU fines etc.), from 28% to 35% \u2014 a material acceleration at scale. Consensus models Blackwell and Rubin monetizing at Ampere rates (two generations behind), implying ~$1.3-1.4T in hyperscale operating cash flow. If they monetize even at a discount to current Blackwell rates, operating cash flow is closer to $2T, removing ~$700B of credit demand from the equation. This makes the credit risk narrative largely moot.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker provides specific numbers ($1.3-1.4T vs $2T, $700B credit gap) and frames this as the key quantitative rebuttal to the credit bear case",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "more like 2 trillion of operating cash flow... takes 700 billion of credit demand out",
+  "tickers_named_original": [
+    "MSFT",
+    "META",
+    "AMZN"
+  ],
+  "tickers_direct": [
+    "MSFT",
+    "META",
+    "AMZN",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "MSFT",
+    "META",
+    "AMZN",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Microsoft is one of the three hyperscalers Baker explicitly cites with accelerating operating cash flow data, and is a direct subject of the monetization thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta is one of the three hyperscalers Baker explicitly cites with accelerating operating cash flow data, and is a direct subject of the monetization thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon is one of the three hyperscalers Baker explicitly cites with accelerating operating cash flow data, and is a direct subject of the monetization thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Alphabet is the fourth major hyperscaler and is clearly implied as part of the aggregate hyperscale operating cash flow estimate ($1.3-1.4T vs $2T), which cannot be reached without including Google Cloud and YouTube cash flows. Its inclusion as a direct subject of the Blackwell/Rubin monetization thesis is unambiguous."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-04-16",
+  "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+  "thesis_id": "T4",
+  "summary": "Data center scarcity (regulatory constraints in 7 states) makes maximizing utilization of existing AI factories economically imperative",
+  "summary_extended": "Baker argues that a growing regulatory trend \u2014 with seven US states having introduced or passed legislation to ban new data center construction \u2014 is creating a structural supply constraint on AI compute capacity. Because new capacity cannot easily be built in these jurisdictions, operators with existing data centers face strong economic incentive to maximize the utilization of their current XPU infrastructure rather than expand footprint. This dynamic, Baker contends, elevates the strategic and economic value of networking, orchestration, and utilization-improvement solutions that help squeeze more performance out of existing AI factories. The implication is that companies providing high-performance networking and MFU (Model FLOP Utilization)-enhancing infrastructure stand to benefit disproportionately as the lowest-cost token producer \u2014 achieved through superior utilization \u2014 becomes the competitive winner in AI workloads.",
+  "detail": "Seven US states have or are considering legislation to ban new data center construction. This supply constraint means operators with existing data centers have strong economic incentive to maximize XPU utilization rather than build new capacity, further increasing the value of networking and utilization-improvement solutions.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker cites the regulatory dynamic as a supporting argument but does not dwell on it or provide sourcing.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "regulatory",
+    "power/energy"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "seven states have bills to make it illegal to build data centers",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

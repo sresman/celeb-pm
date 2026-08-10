@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T3",
+  "summary": "Contracted GPU compute is trading at a massive discount to spot market; as contracts roll off and reprice higher, hyperscaler operating cash flows will accelerate sharply",
+  "summary_extended": "Baker argues that GPU compute contracts signed in 2024-2025 are now massively underpriced relative to current spot market rates, creating a significant earnings acceleration catalyst as those contracts roll off and reprice higher. The evidence is concrete: a startup Baker spoke to that day was paying ~$2/GPU-hour on a Blackwell cluster and expected to pay just under $4 for the same cluster 7 months later (a ~50-60% increase), while one inference cloud publicly stated it expects to pay 100% more when its Blackwell contract expires. Baker's thesis is that the entire contracted installed base of GPU compute \u2014 primarily owned and operated by hyperscalers \u2014 is currently under-earning relative to spot, and as multi-year contracts roll off, hyperscaler operating cash flows will accelerate materially. The investment implication is to be long the major hyperscalers (Microsoft, Meta, Amazon, and Google) who own and lease out large GPU fleets, as their compute revenue and margins will reprice sharply upward over the medium term. This is a contrarian view because the market in mid-2026 was pricing AI infrastructure as a cost burden rather than a repricing revenue opportunity.",
+  "detail": "In 2024-2025, everyone assumed GPU prices would decline slowly or precipitously. Instead, old GPU prices are going vertical in 2026. A startup Baker spoke to that day was paying ~$2/GPU-hour on a Blackwell cluster and expected to pay just under $4 for the same cluster 7 months later \u2014 a 50-60% increase. One inference cloud publicly stated they expect to pay 100% more when their Blackwell contract expires. This means the entire contracted installed base of compute is under-earning relative to spot, and as contracts roll off, hyperscaler operating cash flows will accelerate materially.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker provides specific anecdotal data points (startup paying $2 going to $4, inference cloud expecting 100% increase), frames this as the central bull case, and quantifies the impact on operating cash flows",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "contracted base of installed compute trading at a massive discount to current spot",
+  "tickers_named_original": [
+    "MSFT",
+    "META",
+    "AMZN"
+  ],
+  "tickers_direct": [
+    "MSFT",
+    "META",
+    "AMZN",
+    "GOOGL"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Microsoft is a major hyperscaler with a large contracted GPU compute base; as contracts reprice higher, Azure's AI compute revenue and operating cash flows will accelerate materially \u2014 a direct beneficiary of the repricing thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Meta owns significant GPU infrastructure and leases/monetizes compute capacity; repricing of contracted GPU rates directly benefits Meta's AI infrastructure economics and operating cash flows."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Amazon AWS is one of the largest GPU compute providers; as contracted rates roll off and reprice to spot, AWS operating cash flows will accelerate \u2014 a direct beneficiary of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Google Cloud is a major hyperscaler with a large GPU compute fleet and contracted customer base; the repricing thesis applies equally to Google, making it a clear implied beneficiary that the original extraction missed."
+    }
+  ]
+}

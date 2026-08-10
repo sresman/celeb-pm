@@ -1,0 +1,272 @@
+# label: aria_networks_mfu_ai_factories_2026apr
+# source: Aria Networks
+# date: 2026-04-16
+# url: https://www.youtube.com/watch?v=MmNWwIYFBeI
+# youtube_id: MmNWwIYFBeI
+# sub_lang: en
+# actual_title: MFU Is the Most Important Metric in AI — Here's Why | Gavin Baker at Aria Networks Launch
+
+[00:01] [music]
+[00:10] [applause]
+[00:12] >> Well, first I want to Well, first I
+[00:13] wanted to welcome everyone here. I'm I'm
+[00:16] thrilled to see all of you guys here
+[00:19] participate in our launch event. This
+[00:21] has been an exciting week for for us at
+[00:24] at Arya. We finally can talk publicly
+[00:27] about the details of what we're doing.
+[00:30] And so, you know, I want to thank our
+[00:31] customers, our partners, our investors,
+[00:34] our board members, everybody is here.
+[00:37] And we look forward to showing you more
+[00:39] about what we've been building today.
+[00:41] I'm going to invite
+[00:43] to the stage Gavin Baker.
+[00:46] Gavin, it's good to see you. Good to see
+[00:48] you. Thank you for having me, Mansour.
+[00:50] Of course.
+[00:51] Well, first thank you I know you flew
+[00:54] here for this event, so really
+[00:57] appreciate appreciate that.
+[00:59] And you just joined our board, so I want
+[01:00] to welcome you to our board and look
+[01:03] forward to be working with you.
+[01:05] So um
+[01:06] what I wanted to do here is
+[01:09] is explore the economics of AI
+[01:11] factories. You've talked extensively
+[01:14] about MFU, a model flop utilization.
+[01:17] You've talked extensively about a token
+[01:19] efficiency. You've stated that for AI
+[01:22] factories to be successful, they need to
+[01:25] be the lowest cost producers of tokens.
+[01:29] Can you break this down for us?
+[01:32] Yeah, absolutely. And and I actually
+[01:33] think it's really it it it's
+[01:35] interesting.
+[01:37] And it's awesome for everyone in this
+[01:38] room.
+[01:39] But at no point in my career has an
+[01:41] investor
+[01:42] in tech
+[01:44] has a big winner been because they were
+[01:46] the low-cost producer of anything. It's
+[01:47] not like Apple is worth 3 trillion cuz
+[01:49] they're the low-cost producer of
+[01:50] smartphones. Nvidia is not worth 5
+[01:52] trillion or whatever it is today because
+[01:55] they're the low-cost producer of
+[01:57] accelerators of silicon. They're just
+[01:59] the best.
+[02:00] AI is fundamentally different in that um
+[02:04] at some level, the amount of
+[02:06] intelligence you get out of an answer is
+[02:09] determined by two things. The token
+[02:11] efficiency, how many tokens you need to
+[02:13] get that answer.
+[02:15] Um other people call that intelligence
+[02:16] density. We'll We'll see which term
+[02:18] wins. Um
+[02:20] I like token efficiency and then cost
+[02:22] per token.
+[02:24] So, for a given level of intelligence,
+[02:27] the person who can get there with the
+[02:29] fewest tokens and the lowest cost per
+[02:31] tokens is going to win.
+[02:34] Because and this is this is something
+[02:35] that is I I think uh I started actually
+[02:38] um in aggregates, rock pits.
+[02:41] And in any extraction industry, oil and
+[02:43] gas, metals and mining, the low-cost
+[02:46] producer always wins. And we We haven't
+[02:48] had that in tech.
+[02:50] >> [clears throat]
+[02:50] >> And if you were the low-cost producer,
+[02:52] what's up, Thomas? If you were the um If
+[02:55] you were the low-cost producer
+[02:57] of intelligence, you can choose
+[03:00] between actually generating more tokens
+[03:03] and having a higher-quality product or
+[03:05] you can choose
+[03:06] >> [clears throat]
+[03:06] >> to have higher margins and invest that
+[03:09] money in user acquisition, customer
+[03:10] service, all these things. Now, token
+[03:13] efficiency, that is fundamentally the
+[03:15] job of the labs.
+[03:17] Full stop.
+[03:19] But everyone in this room,
+[03:21] presumably, is here lowest cost per
+[03:24] token. Um and there is a trade-off as
+[03:26] Dylan referenced. You know, if you can
+[03:28] make really, really fast tokens, maybe
+[03:30] maybe cost is less important. Um
+[03:33] but strangely enough,
+[03:35] the way you get the lowest cost per
+[03:37] token
+[03:38] is you spend a lot on everything around
+[03:41] the accelerator, which makes perfect
+[03:43] sense from first principles. If these
+[03:45] data centers are AI factories,
+[03:48] you know, in in my days following
+[03:50] manufacturing industries, factory
+[03:53] utilization is a key input.
+[03:56] In airlines, it's how much you are the
+[03:58] seats full?
+[04:00] And the
+[04:02] truth is is that GPUs,
+[04:05] TPUs,
+[04:07] Traniums, they are rarely running at
+[04:10] full utilization.
+[04:12] So, we have spent hundreds of billions
+[04:14] of dollars
+[04:16] on these AI factories and they are
+[04:18] running at low levels of utilization.
+[04:21] And the network
+[04:22] is an
+[04:23] one of the one of the biggest culprits
+[04:25] in this.
+[04:26] >> Right.
+[04:27] So, that's why I'm that's why I invested
+[04:29] and I'm very excited.
+[04:30] >> [laughter]
+[04:30] >> Yes. Well, that's indeed actually, if
+[04:32] you think of about the utilization of
+[04:35] these accelerators,
+[04:37] uh it's around 30 to 45%
+[04:40] maybe for training, even lower for
+[04:42] distributed inference. And so, like you
+[04:44] pay for all the flops in the
+[04:46] accelerators and you're only getting,
+[04:48] you know, a very small fraction to, you
+[04:50] know, towards the job. And the larger
+[04:52] the cluster,
+[04:53] the more uh inefficient it is.
+[04:56] Absolutely.
+[04:57] >> the network is connecting all of it. And
+[04:59] as the world Maybe maybe you can comment
+[05:01] on this. As the world moved from
+[05:03] training to more inference at scale and
+[05:06] especially distributed inference like in
+[05:08] these high inter activity use cases that
+[05:10] uh Dylan mentioned, you know, the
+[05:12] network becomes even more of a of a
+[05:15] bottleneck. Absolutely. Yeah, I mean,
+[05:17] especially with, you know, the expert
+[05:19] parallelism and the disaggregation of
+[05:21] prefill And the codes, right? and
+[05:23] decode. I mean, the network is more
+[05:25] important than ever.
+[05:28] And just if you take your utilization
+[05:30] from 40 to 80, you've dropped your cost
+[05:33] per token in half
+[05:35] and you've literally and
+[05:37] you have dramatically increased your
+[05:38] margins.
+[05:39] And it's crazy and on top of all of
+[05:41] this, not only are we have we spent
+[05:43] hundreds of billions of dollars on these
+[05:45] AI factories that are sub-optimized
+[05:48] often because of networking. Um but we
+[05:51] are increasingly in a what constrained
+[05:54] world.
+[05:55] So,
+[05:56] you know, seven states are have bills to
+[05:58] make it illegal to build data centers.
+[06:00] And so it you know, you may you want to
+[06:04] get if you have a data center in the
+[06:05] ground, it is crazy not to run those
+[06:08] GPUs as close to 100% GPUs or TPUs. Um
+[06:13] >> XPU's XPU's XPU's
+[06:14] >> XPU's XPU's is the word. XPU's XPU's
+[06:18] as as close to I I see uh Hassan from
+[06:20] Broadcom. So, XPU's not GPUs. Um
+[06:24] It's crazy not to run them as close to
+[06:26] 100% utilization as you can. And then
+[06:28] you can make all sorts of trade-offs
+[06:30] between interactive interactivity and
+[06:32] and latency
+[06:34] >> right? and hit hit the right um target
+[06:36] for your workload and your users. Right.
+[06:38] And then just I'd like to
+[06:41] more on the network. Uh
+[06:43] for training traditionally it was the
+[06:45] back end only scale out, but for
+[06:48] distributed inference it's also the
+[06:49] front end. Because that's where a lot of
+[06:52] when the when the query comes in it's
+[06:53] being fanned out into all these agents
+[06:55] that are converting back and forth into
+[06:57] the token space. And then it and then
+[06:59] you have you know, to to the point we
+[07:01] made the decode and then the the
+[07:03] pre-fill decode and transfer of KV
+[07:05] cache. And and even oh even a level up
+[07:08] when you're like training costs they're
+[07:11] kind of obfuscated,
+[07:13] but you feel it has a user inference
+[07:16] costs. these
+[07:17] >> So, I just think
+[07:19] training, you know, if you're if you're
+[07:21] Google or if you're one of these
+[07:23] resource rich resource rich mag seven
+[07:26] companies, maybe you can live with a low
+[07:28] utilization of your AI factory during
+[07:30] training cuz you really don't care. You
+[07:32] have some huge monopoly. I mean, you
+[07:33] care you care a little bit. But during
+[07:35] inference, you are out there competing
+[07:38] for users every day.
+[07:40] Most applications have a router. They're
+[07:42] constantly routing to where they get the
+[07:44] most intelligence per dollar.
+[07:46] And so inference makes these tokenomics,
+[07:50] which I believe Dylan coined,
+[07:52] really explicit and essential for the
+[07:55] economics of everything. [snorts]
+[07:58] So just a level up, just
+[08:00] inference makes
+[08:03] costs important in a way they never were
+[08:05] before.
+[08:06] >> Right. That's indeed. Actually, it's all
+[08:07] it's about the utilization of these
+[08:09] accelerators. And also, just from an
+[08:11] interactivity standpoint, time to first
+[08:13] token, a lot has to happen. And that
+[08:15] involves the network to get to that
+[08:17] first token.
+[08:18] And
+[08:19] >> And we know the history of the internet
+[08:20] is
+[08:22] every 100 millisecond delay Right. in
+[08:25] Google search results cost them 1% of
+[08:27] revenue. Exactly. So I can't think of
+[08:30] the number of times that I've like, you
+[08:32] know, like Claude has a good trick now
+[08:34] where they start they they have some
+[08:35] generic words they say at the beginning
+[08:37] every time.
+[08:39] They really have they sometimes have to
+[08:40] do with your query, but the number of
+[08:42] times I've abandoned something because I
+[08:44] was waiting. I guess. Yeah. So it's it's
+[08:47] everything.
+[08:48] >> Indeed. The two numbers are token to
+[08:50] time to first token and then
+[08:52] inter-token latency, right? From every
+[08:54] token to the next. And then again, and
+[08:55] if it stalls at some point it stops.
+[08:57] That's you know
+[08:59] I would say likely the network, right?
+[09:02] So Almost certainly the network, yeah. I
+[09:04] like seeing that answer fast, that first
+[09:06] token. I like seeing it populate
+[09:07] quickly. And then I want to get pay the
+[09:10] lowest cost I can for the um
+[09:12] you know, the intelligence I'm getting.
+[09:13] Excellent. Well, again, we're going to
+[09:15] bring you back on stage to wrap up at
+[09:17] the end, but thank you so much. Thanks
+[09:19] Mance. Thank you.
+[09:21] >> [applause]
+[09:22] >> Who do I give this to?

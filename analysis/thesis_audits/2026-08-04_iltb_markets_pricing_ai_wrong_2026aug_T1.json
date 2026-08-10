@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T1",
+  "summary": "July 2026 AI/semis selloff was a sentiment-driven overreaction ('2022 in a month') with no negative quantitative fundamentals to justify it",
+  "summary_extended": "Baker argues that the July 2026 AI/semiconductor selloff \u2014 in which leading AI names fell 40-60% from their highs in a straight line \u2014 was a pure sentiment-driven overreaction with no fundamental justification, analogizing it to 'what 2022 felt like but compressed into a single month.' He pressure-tested every quantitative assumption during a dedicated Silicon Valley trip and found zero negative data points: GPU availability, GPU retail pricing, DRAM spot prices, and token/inference growth were all accelerating, not decelerating. The implication is that the selloff created a significant buying opportunity in AI infrastructure and semiconductor names, as the market mispriced a sentiment shock as a fundamental deterioration. Baker frames this as his highest-conviction thesis for the episode, with the recovery thesis predicated on the divergence between collapsing equity prices and uniformly positive real-time supply-chain and demand metrics.",
+  "detail": "AI names fell 40-60% from highs in a straight line during July 2026, yet every quantitative metric Baker tracked \u2014 GPU availability, GPU retail pricing, DRAM spot prices, token growth \u2014 was accelerating, not decelerating. Baker pressure-tested every assumption during a Silicon Valley trip and could not find a single negative quantitative data point.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states he spent the week pressure-testing assumptions and found zero negative quantitative metrics; frames this as his core thesis for the episode",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "July as 2022 in a month... every metric is accelerating",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant GPU supplier and the primary AI infrastructure equity; a thesis about GPU availability, GPU pricing, and AI infrastructure selloff is directly and specifically about NVDA as the central subject of the trade."
+    }
+  ]
+}

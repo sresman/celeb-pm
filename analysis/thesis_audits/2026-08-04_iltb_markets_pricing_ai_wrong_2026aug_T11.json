@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T11",
+  "summary": "SpaceX (Grok/xAI compute) is significantly undervalued in public markets; the compute buildout optionality is not in estimates",
+  "summary_extended": "Baker argues that SpaceX is significantly undervalued in public markets because consensus estimates (~$73B revenue for next year) do not price in the optionality of a massive compute buildout that could reach 8 gigawatts of capacity. He notes SpaceX has demonstrated the ability to deploy compute faster and at lower cost than anyone except the hyperscalers, and is monetizing at roughly $50B per gigawatt, meaning even a fraction of the reported 8GW target would be transformative to the valuation. Baker is skeptical of the exact 8GW figure from the Funder AI Substack report but emphasizes that the market is focused on a bear case (spot inference prices down ~90%) while ignoring the supply-side buildout optionality entirely. He also flags the Star Cloud orbital compute partnership as an additional underappreciated call option on the business. The investment implication is that SpaceX shares (accessible only in private markets) are mispriced to the downside, with Grok 4.5 and the Cursor acquisition having materially improved fundamentals since IPO.",
+  "detail": "SpaceX has demonstrated the ability to bring out more compute faster at lower cost than anyone except hyperscalers. Grok 4.5 and Cursor acquisition have materially improved fundamentals since IPO. A Substack report (Funder AI) suggests SpaceX may target 8 gigawatts of compute \u2014 Baker is skeptical of the exact number but notes it's not in consensus estimates (which are at $73B for next year). SpaceX is monetizing at ~$50B/gigawatt. The market is focused on a short case (spot prices declining 90%) but is not pricing in the compute buildout optionality. Baker also notes orbital compute (via Star Cloud partnership) as an additional underappreciated option.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says 'very little is built in from my perspective to that stock for the amount of compute they might bring on' but also says he 'almost doesn't believe' the 8GW report",
+  "themes": [
+    "AI datacenter infrastructure",
+    "space/orbital compute"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "very little is built in to that stock for the amount of compute they might bring on",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SPACEX"
+  ],
+  "tickers_subject": [
+    "SPACEX"
+  ],
+  "tickers_implied_original": [
+    "SPACEX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPACEX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The entire thesis is specifically about SpaceX's compute buildout optionality being underpriced in its valuation; it is the direct subject of the thesis."
+    }
+  ]
+}

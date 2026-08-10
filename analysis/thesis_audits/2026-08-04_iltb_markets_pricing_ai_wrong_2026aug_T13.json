@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T13",
+  "summary": "SRAM-based accelerators disaggregated from HBM DRAM will significantly improve AI inference ROI and are underappreciated",
+  "summary_extended": "Baker argues that the optimal inference architecture involves disaggregating the three core computational workloads \u2014 prefill, attention, and feed-forward network (FFN) \u2014 across specialized chips rather than running all on a single monolithic GPU. Specifically, he contends that SRAM-based accelerators are uniquely well-suited for FFN workloads because SRAM's bandwidth and latency characteristics are unbeatable for that task, while HBM-heavy chips handle attention and prefill can run without HBM entirely. The core structural insight is that because inference workload ratios are constantly shifting, no single chip can maintain the right compute/HBM/SRAM balance, making disaggregation the only scalable solution. Baker sees SRAM accelerators as additive to the existing GPU installed base \u2014 boosting ROI without displacing leading-edge GPUs \u2014 and notes these chips often run on older process nodes, meaning they don't compete for leading-edge fab capacity. The investment implication is that companies building SRAM-based inference accelerators represent an underappreciated opportunity, though Baker does not name specific companies, making this a thematic structural view without a directly actionable ticker at this time.",
+  "detail": "The ultimate inference architecture holy grail is disaggregating prefill, attention, and feed-forward network (FFN) across specialized chips: prefill on one chip (no HBM needed), attention on a high-powered HBM chip, and FFN on an SRAM-based accelerator. SRAM is unbeatable for FFN workloads. Because workloads are always changing, you can't get the compute/HBM/SRAM ratio right on a single chip \u2014 disaggregation solves this. Adding SRAM accelerators to the existing installed base of compute will be very positive for AI ROI. These chips are often on older nodes and don't compete with leading-edge GPUs.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as a structural insight from his Silicon Valley trip but doesn't name specific companies or give a timeline",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "SRAM-based accelerators... ROI on adding these to the existing install base",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

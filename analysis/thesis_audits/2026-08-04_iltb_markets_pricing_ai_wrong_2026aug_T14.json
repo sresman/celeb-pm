@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T14",
+  "summary": "Continual learning and sample-efficient learning breakthroughs could reduce training compute demand but are unlikely to be net negative for AI infrastructure",
+  "summary_extended": "Baker argues that breakthroughs in continual learning and sample-efficient learning \u2014 where models could be trained on roughly 10 trillion tokens instead of 300 trillion and then learn continuously from real-world interaction \u2014 are potentially close at hand according to many Silicon Valley researchers, with SSI (Safe Superintelligence) expected to release a model demonstrating this in August 2026. If realized, this would reduce the raw compute required for initial training runs, which some interpret as a bearish signal for AI infrastructure demand. However, Baker contends this is unlikely to be net negative for overall AI infrastructure spending, reasoning that the compute savings in training could be offset or exceeded by the compute demands of continuous inference-time learning and world-interaction loops. He also notes that Nvidia is deeply embedded with the startups pursuing these techniques, suggesting Nvidia would remain a primary beneficiary regardless of which training paradigm wins. Baker explicitly flags high uncertainty on timing, calling this the most interesting scientific/technical takeaway while acknowledging the horizon is unknown.",
+  "detail": "Many people in Silicon Valley feel they are close to solving continual learning and sample-efficient learning. If solved, training demand could fall (models trained on 10T tokens instead of 300T, then learning in the world). However, Baker believes this is unlikely to be net negative for AI infrastructure demand overall, partly because Nvidia is heavily involved with all these startups. SSI (Safe Superintelligence) expected to release a model in August 2026.",
+  "confidence": "speculative",
+  "confidence_evidence": "Baker calls this 'the most interesting scientific/technical takeaway' but explicitly says 'who knows if it's long horizon or short horizon'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "very close to solving continual learning and sample-efficient learning",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly notes Nvidia is heavily involved with the startups pursuing continual and sample-efficient learning, and argues the net effect on AI infrastructure demand (and thus Nvidia) is unlikely to be negative even if training compute per run declines \u2014 making Nvidia a direct beneficiary of this thesis regardless of which paradigm prevails."
+    }
+  ]
+}

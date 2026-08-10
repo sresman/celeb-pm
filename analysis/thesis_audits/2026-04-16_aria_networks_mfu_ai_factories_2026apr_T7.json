@@ -1,0 +1,23 @@
+{
+  "date": "2026-04-16",
+  "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+  "thesis_id": "T7",
+  "summary": "Latency (time to first token and inter-token latency) is a direct revenue driver for AI inference products, analogous to Google's 100ms = 1% revenue rule",
+  "summary_extended": "Baker argues that latency \u2014 specifically time to first token and inter-token latency \u2014 is a direct and measurable revenue driver for AI inference products, drawing an explicit analogy to Google's well-documented finding that a 100ms delay in search results caused a 1% loss in revenue. He supports this view with a personal anecdote of abandoning Claude queries due to slow response times, suggesting user churn from latency is already a real behavioral phenomenon in AI products. The implication is that network infrastructure capable of minimizing these latency metrics becomes a critical competitive lever for AI inference providers, and that companies delivering high-performance, low-latency networking infrastructure are structurally advantaged. Baker does not quantify the exact revenue impact of latency for AI inference specifically, treating this as a directionally strong analogy rather than a precisely modeled thesis. The investment implication points toward networking and AI infrastructure providers that enable faster inference delivery, though no specific ticker is named or unambiguously implied.",
+  "detail": "Baker cites the well-known Google search latency study (100ms delay = 1% revenue loss) as directly applicable to AI inference products. Time to first token and inter-token latency are the two key UX metrics, and network infrastructure is the primary lever for improving both. User abandonment due to latency is a real and measurable revenue risk.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker uses this as a supporting analogy and personal anecdote (abandoning Claude queries), not a primary thesis. Directionally strong but not quantified for AI specifically.",
+  "themes": [
+    "AI model economics",
+    "networking infrastructure",
+    "tokenomics"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "every 100 millisecond delay in Google search results cost them 1% of revenue",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

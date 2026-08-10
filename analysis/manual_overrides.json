@@ -531,6 +531,42 @@
         "thesis_id": "T7"
       },
       "note": "2026-07-22 (6-new task): Heller House = Baker interviewing SpaceX CFO Johnsen; CFO's operational claims, not Baker's thesis. Remove from scoring (SD-6NEW-1)."
+    },
+    {
+      "from_theme": "Google TPU competitive position",
+      "to_theme": null,
+      "match": {
+        "date": "2026-04-16",
+        "thesis_id": "T1"
+      },
+      "note": "2026-08-10 (2-new task): substring false positive — key 'tpu' matched 'ou[tpu]t' in a lowest-cost-token thesis, not a Google-TPU thesis. Removed from scoring."
+    },
+    {
+      "from_theme": "DRAM / HBM memory bottleneck",
+      "to_theme": null,
+      "match": {
+        "date": "2026-04-16",
+        "thesis_id": "T5"
+      },
+      "note": "2026-08-10 (2-new task): substring false positive — key 'dram' matched '[dram]atically' in a networking/inference thesis, not a DRAM/HBM thesis. Removed from scoring."
+    },
+    {
+      "from_theme": "Optical networking / interconnect",
+      "to_theme": null,
+      "match": {
+        "date": "2026-08-04",
+        "thesis_id": "T14"
+      },
+      "note": "2026-08-10 (2-new task): substring false positive — key 'cien' matched 'sample-effi[cien]t' in a continual-learning thesis, not an optical thesis. Removed from scoring."
+    },
+    {
+      "from_theme": "Scaling laws intact",
+      "to_theme": null,
+      "match": {
+        "date": "2026-08-04",
+        "thesis_id": "T3"
+      },
+      "note": "2026-08-10 (2-new task): mis-cluster — key 'compute.*scale' matched 'compute ... hyperscaler'; thesis is hyperscaler GPU-compute repricing, not scaling-laws-intact. Removed from scoring."
     }
   ],
   "event_overrides": [

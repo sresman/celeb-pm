@@ -1,0 +1,22 @@
+{
+  "date": "2026-04-16",
+  "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+  "thesis_id": "T3",
+  "summary": "Spending more on everything surrounding the accelerator (especially networking) is the correct path to lowest cost per token \u2014 counterintuitively, cheapest infra is not the answer",
+  "summary_extended": "Baker argues that the counterintuitive path to lowest cost per token in AI inference and training is to spend heavily on everything surrounding the GPU/accelerator \u2014 particularly networking, interconnects, and fabric \u2014 rather than cutting costs on peripheral infrastructure. His reasoning is grounded in first principles around Model Flop Utilization (MFU): idle accelerators are the most expensive outcome, and cheap or underprovisioned networking causes accelerator stall, destroying utilization and driving up effective cost per token. Therefore, operators who invest in high-performance surrounding infrastructure achieve superior MFU, which translates directly into lower cost per token and competitive advantage in the AI factory model. Baker cites this thesis as the foundational rationale for Atreides' investment in Aria Networks, a private networking company, suggesting the public-market implication is that high-performance networking vendors \u2014 not commodity infrastructure providers \u2014 are the structural winners. No specific financial figures or timeframes were cited, but the view is held with high conviction as a medium-term structural thesis.",
+  "detail": "The paradox Baker highlights: to achieve lowest cost per token, operators must spend heavily on surrounding infrastructure (networking, interconnects, fabric) to maximize accelerator utilization. Buying cheap accelerators or skimping on network yields worse economics due to idle compute.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Stated directly and emphatically as a first-principles conclusion; underpins his investment in Aria Networks.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "networking infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "the way you get the lowest cost per token is you spend a lot on everything around the accelerator",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

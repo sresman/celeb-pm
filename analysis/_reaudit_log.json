@@ -1,63 +1,15 @@
 {
   "model": "claude-sonnet-4-6",
-  "theses_reaudited": 32,
-  "ok": 21,
-  "skipped": 11,
+  "theses_reaudited": 18,
+  "ok": 0,
+  "skipped": 18,
   "errors": [],
-  "tickers_removed": 52,
-  "tickers_kept": 92,
-  "total_input_tokens": 31520,
-  "total_output_tokens": 5484,
-  "estimated_cost_usd": 0.1768,
+  "tickers_removed": 12,
+  "tickers_kept": 77,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "estimated_cost_usd": 0.0,
   "rows": [
-    {
-      "index": 4,
-      "date": "2019-11-26",
-      "thesis_id": "T5",
-      "criteria": "A",
-      "output": "analysis/thesis_reaudits/2019-11-26_iltb_tech_consumer_2019nov_T5.json",
-      "status": "ok",
-      "input_tokens": 1566,
-      "output_tokens": 324,
-      "n_before": 5,
-      "n_after": 3,
-      "removed": [
-        "AMD",
-        "QCOM"
-      ]
-    },
-    {
-      "index": 6,
-      "date": "2019-11-26",
-      "thesis_id": "T7",
-      "criteria": "B",
-      "output": "analysis/thesis_reaudits/2019-11-26_iltb_tech_consumer_2019nov_T7.json",
-      "status": "ok",
-      "input_tokens": 1392,
-      "output_tokens": 251,
-      "n_before": 4,
-      "n_after": 2,
-      "removed": [
-        "META",
-        "AMZN"
-      ]
-    },
-    {
-      "index": 30,
-      "date": "2020-04-02",
-      "thesis_id": "T11",
-      "criteria": "A",
-      "output": "analysis/thesis_reaudits/2020-04-02_iltb_bear_market_2020apr_T11.json",
-      "status": "ok",
-      "input_tokens": 1752,
-      "output_tokens": 338,
-      "n_before": 5,
-      "n_after": 3,
-      "removed": [
-        "TTWO",
-        "ATVI"
-      ]
-    },
     {
       "index": 35,
       "date": "2020-05-07",
@@ -96,9 +48,9 @@
       "thesis_id": "T11",
       "criteria": "A",
       "output": "analysis/thesis_reaudits/2022-01-25_iltb_cyclone_surface_2022jan_T11.json",
-      "status": "ok",
-      "input_tokens": 1681,
-      "output_tokens": 277,
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0,
       "n_before": 5,
       "n_after": 5,
       "removed": []
@@ -109,44 +61,12 @@
       "thesis_id": "T13",
       "criteria": "B",
       "output": "analysis/thesis_reaudits/2022-01-25_iltb_cyclone_surface_2022jan_T13.json",
-      "status": "ok",
-      "input_tokens": 1381,
-      "output_tokens": 194,
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0,
       "n_before": 4,
       "n_after": 4,
       "removed": []
-    },
-    {
-      "index": 152,
-      "date": "2023-04-21",
-      "thesis_id": "T10",
-      "criteria": "B",
-      "output": "analysis/thesis_reaudits/2023-04-21_allin_e125_spacex_starship_2023apr_T10.json",
-      "status": "ok",
-      "input_tokens": 1317,
-      "output_tokens": 173,
-      "n_before": 2,
-      "n_after": 0,
-      "removed": [
-        "MSFT",
-        "GOOGL"
-      ]
-    },
-    {
-      "index": 163,
-      "date": "2024-01-30",
-      "thesis_id": "T1",
-      "criteria": "B",
-      "output": "analysis/thesis_reaudits/2024-01-30_iconn_globalalts_2024_gracias_baker_gurley_T1.json",
-      "status": "ok",
-      "input_tokens": 1476,
-      "output_tokens": 252,
-      "n_before": 4,
-      "n_after": 2,
-      "removed": [
-        "META",
-        "AMZN"
-      ]
     },
     {
       "index": 198,
@@ -167,28 +87,12 @@
       "thesis_id": "T16",
       "criteria": "B",
       "output": "analysis/thesis_reaudits/2024-08-07_twist_e1990_liquidity_gracias_2024aug_T16.json",
-      "status": "ok",
-      "input_tokens": 1372,
-      "output_tokens": 137,
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0,
       "n_before": 2,
       "n_after": 2,
       "removed": []
-    },
-    {
-      "index": 232,
-      "date": "2024-08-27",
-      "thesis_id": "T14",
-      "criteria": "B",
-      "output": "analysis/thesis_reaudits/2024-08-27_iltb_ai_semis_robotic_2024aug_T14.json",
-      "status": "ok",
-      "input_tokens": 1461,
-      "output_tokens": 283,
-      "n_before": 4,
-      "n_after": 2,
-      "removed": [
-        "MSFT",
-        "AMZN"
-      ]
     },
     {
       "index": 261,
@@ -207,99 +111,18 @@
       ]
     },
     {
-      "index": 279,
-      "date": "2025-01-28",
-      "thesis_id": "T9",
-      "criteria": "B",
-      "output": "analysis/thesis_reaudits/2025-01-28_iconn_globalalts_2025_future_of_ai_T9.json",
-      "status": "ok",
-      "input_tokens": 1635,
-      "output_tokens": 264,
-      "n_before": 3,
-      "n_after": 1,
-      "removed": [
-        "MSFT",
-        "AVGO"
-      ]
-    },
-    {
       "index": 280,
       "date": "2025-01-28",
       "thesis_id": "T10",
       "criteria": "B",
       "output": "analysis/thesis_reaudits/2025-01-28_iconn_globalalts_2025_future_of_ai_T10.json",
-      "status": "ok",
-      "input_tokens": 1378,
-      "output_tokens": 321,
-      "n_before": 4,
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "n_before": 3,
       "n_after": 3,
       "removed": [
         "AMZN"
-      ]
-    },
-    {
-      "index": 297,
-      "date": "2025-07-17",
-      "thesis_id": "T1",
-      "criteria": "B",
-      "output": "analysis/thesis_reaudits/2025-07-17_allin_tariffs_agi_prize_2025jul_T1.json",
-      "status": "ok",
-      "input_tokens": 1379,
-      "output_tokens": 210,
-      "n_before": 2,
-      "n_after": 0,
-      "removed": [
-        "NVDA",
-        "AVGO"
-      ]
-    },
-    {
-      "index": 302,
-      "date": "2025-07-17",
-      "thesis_id": "T6",
-      "criteria": "B",
-      "output": "analysis/thesis_reaudits/2025-07-17_allin_tariffs_agi_prize_2025jul_T6.json",
-      "status": "ok",
-      "input_tokens": 1514,
-      "output_tokens": 240,
-      "n_before": 3,
-      "n_after": 2,
-      "removed": [
-        "META"
-      ]
-    },
-    {
-      "index": 303,
-      "date": "2025-07-17",
-      "thesis_id": "T7",
-      "criteria": "B",
-      "output": "analysis/thesis_reaudits/2025-07-17_allin_tariffs_agi_prize_2025jul_T7.json",
-      "status": "ok",
-      "input_tokens": 1526,
-      "output_tokens": 344,
-      "n_before": 4,
-      "n_after": 0,
-      "removed": [
-        "NVDA",
-        "GOOGL",
-        "META",
-        "AMZN"
-      ]
-    },
-    {
-      "index": 319,
-      "date": "2025-10-22",
-      "thesis_id": "T8",
-      "criteria": "B",
-      "output": "analysis/thesis_reaudits/2025-10-22_aleph_semis_globalwarming_2025oct_T8.json",
-      "status": "ok",
-      "input_tokens": 1705,
-      "output_tokens": 187,
-      "n_before": 2,
-      "n_after": 0,
-      "removed": [
-        "NVDA",
-        "AVGO"
       ]
     },
     {
@@ -344,7 +167,7 @@
       "removed": []
     },
     {
-      "index": 407,
+      "index": 414,
       "date": "2026-05-20",
       "thesis_id": "T10",
       "criteria": "A",
@@ -357,7 +180,7 @@
       "removed": []
     },
     {
-      "index": 412,
+      "index": 419,
       "date": "2026-05-20",
       "thesis_id": "T15",
       "criteria": "B",
@@ -370,7 +193,7 @@
       "removed": []
     },
     {
-      "index": 424,
+      "index": 431,
       "date": "2026-05-20",
       "thesis_id": "T27",
       "criteria": "A",
@@ -383,35 +206,35 @@
       "removed": []
     },
     {
-      "index": 447,
+      "index": 454,
       "date": "2026-05-28",
       "thesis_id": "T1",
       "criteria": "A",
       "output": "analysis/thesis_reaudits/2026-05-28_limitless_unity_world_models_2026may_T1.json",
-      "status": "ok",
-      "input_tokens": 1769,
-      "output_tokens": 357,
-      "n_before": 6,
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "n_before": 5,
       "n_after": 5,
       "removed": [
         "NVDA"
       ]
     },
     {
-      "index": 460,
+      "index": 467,
       "date": "2026-05-28",
       "thesis_id": "T14",
       "criteria": "C",
       "output": "analysis/thesis_reaudits/2026-05-28_limitless_unity_world_models_2026may_T14.json",
-      "status": "ok",
-      "input_tokens": 1185,
-      "output_tokens": 73,
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0,
       "n_before": 1,
       "n_after": 1,
       "removed": []
     },
     {
-      "index": 493,
+      "index": 500,
       "date": "2026-06-11",
       "thesis_id": "T11",
       "criteria": "B",
@@ -427,76 +250,17 @@
       ]
     },
     {
-      "index": 510,
-      "date": "2026-06-15",
-      "thesis_id": "T3",
-      "criteria": "A+B",
-      "output": "analysis/thesis_reaudits/2026-06-15_tbpn_spacex_sovereign_ai_2026jun_T3.json",
-      "status": "ok",
-      "input_tokens": 1576,
-      "output_tokens": 375,
-      "n_before": 6,
-      "n_after": 0,
-      "removed": [
-        "META",
-        "AMZN",
-        "GOOGL",
-        "MSFT",
-        "EQIX",
-        "DLR"
-      ]
-    },
-    {
-      "index": 543,
-      "date": "2026-07-08",
-      "thesis_id": "T7",
-      "criteria": "A+B",
-      "output": "analysis/thesis_reaudits/2026-07-08_generating_alpha_ep56_2026jul_T7.json",
-      "status": "ok",
-      "input_tokens": 1533,
-      "output_tokens": 344,
-      "n_before": 6,
-      "n_after": 0,
-      "removed": [
-        "NVDA",
-        "AMD",
-        "AVGO",
-        "TSM",
-        "MRVL",
-        "ARM"
-      ]
-    },
-    {
-      "index": 550,
+      "index": 557,
       "date": "2026-07-08",
       "thesis_id": "T14",
       "criteria": "B",
       "output": "analysis/thesis_reaudits/2026-07-08_generating_alpha_ep56_2026jul_T14.json",
-      "status": "ok",
-      "input_tokens": 1468,
-      "output_tokens": 228,
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0,
       "n_before": 4,
       "n_after": 4,
       "removed": []
-    },
-    {
-      "index": 554,
-      "date": "2026-07-20",
-      "thesis_id": "T3",
-      "criteria": "A",
-      "output": "analysis/thesis_reaudits/2026-07-20_cnbc_spacex_drawdown_2026jul_T3.json",
-      "status": "ok",
-      "input_tokens": 1454,
-      "output_tokens": 312,
-      "n_before": 5,
-      "n_after": 0,
-      "removed": [
-        "NVDA",
-        "SMCI",
-        "VRT",
-        "CEG",
-        "EQIX"
-      ]
     }
   ]
 }

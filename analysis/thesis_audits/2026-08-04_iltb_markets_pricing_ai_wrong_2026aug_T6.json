@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T6",
+  "summary": "Credit risk to the AI buildout is real but likely overstated given the operating cash flow acceleration thesis",
+  "summary_extended": "Baker acknowledges that rising real yields, widening credit spreads, and Meta's poorly-priced bond offering (with CDS blowing out) represent a legitimate bear case for the AI infrastructure buildout \u2014 the one risk he takes most seriously. However, he argues this credit risk is likely overstated because it only becomes severely negative if debt is required to fund the buildout. His core counter-argument is that if the installed compute base reprices to spot rates, the resulting acceleration in operating cash flows could fund most or all of the AI capex internally, eliminating the need for external credit. Baker went 'really deep on credit' to pressure-test this bear case and concluded that the repricing of compute economics is the key variable that resolves the credit concern. The investment implication is that credit market stress is not a sufficient reason to exit AI infrastructure positions, provided one believes in the compute repricing thesis.",
+  "detail": "Real yields have risen, spreads have widened, and Meta's bond priced poorly with CDS blowing out. This would be severely negative if debt were required to fund the buildout. However, if the installed compute base reprices to spot rates, operating cash flows could fund most or all of the buildout internally, removing the need for credit. The credit risk is the one legitimate bear case Baker acknowledges, but he believes it resolves as compute reprices.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker explicitly calls credit 'the real concern' and 'undeniable facts' but then argues it resolves; acknowledges he went 'really deep on credit' to pressure-test",
+  "themes": [
+    "AI datacenter infrastructure",
+    "credit markets"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "if we need credit to fund this buildout, this is a significant negative",
+  "tickers_named_original": [
+    "META"
+  ],
+  "tickers_direct": [
+    "META"
+  ],
+  "tickers_subject": [
+    "META"
+  ],
+  "tickers_implied_original": [
+    "MSFT",
+    "AMZN",
+    "GOOGL"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Meta's bond offering and CDS blowout are the specific credit market evidence Baker cites; META is the direct subject of the credit stress example used to frame this thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is a major AI infrastructure spender but is not specifically referenced in this credit risk thesis; its inclusion appears to be bleed-over from adjacent AI capex themes in the same transcript."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon is a large AI capex spender but is not specifically tied to the credit risk argument Baker makes here; tangential bleed from broader AI infrastructure discussion."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Alphabet is not specifically referenced in this credit thesis; its inclusion is likely contamination from adjacent AI infrastructure themes in the same transcript segment."
+    }
+  ]
+}

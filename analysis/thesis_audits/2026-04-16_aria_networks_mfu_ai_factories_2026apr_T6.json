@@ -1,0 +1,23 @@
+{
+  "date": "2026-04-16",
+  "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+  "thesis_id": "T6",
+  "summary": "Inference economics make tokenomics explicit and essential in a way training never did \u2014 inference is the competitive battleground where cost per token determines winners",
+  "summary_extended": "Baker argues that inference represents a fundamentally different economic regime than training, where cost-per-token becomes the decisive competitive variable for AI model providers and infrastructure operators. During training, hyperscalers with monopoly businesses subsidizing compute costs could tolerate low model flop utilization (MFU) without consequence, but inference changes this dynamic entirely because applications dynamically route to the highest intelligence-per-dollar provider. This means that whoever can produce tokens at the lowest cost \u2014 through superior infrastructure efficiency, high MFU, and optimized AI factory design \u2014 will win the inference market. Baker views this as a structural shift that makes tokenomics explicit and essential in a way training economics never required, with near-term implications for which model providers and infrastructure operators survive the competitive shakeout. The investment implication is to favor companies with the lowest-cost token production capabilities, though Baker does not name specific tickers in this thesis segment.",
+  "detail": "During training, resource-rich hyperscalers can tolerate low utilization because they have monopoly businesses subsidizing the cost. During inference, every application is routing dynamically to the highest intelligence-per-dollar provider. This makes inference the moment where tokenomics become the decisive competitive variable for AI model providers and infrastructure operators alike.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this directly and emphatically: 'inference makes costs important in a way they never were before.'",
+  "themes": [
+    "AI model economics",
+    "tokenomics",
+    "agentic AI"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "inference makes costs important in a way they never were before",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

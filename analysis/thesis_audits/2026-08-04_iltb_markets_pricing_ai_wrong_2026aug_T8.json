@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T8",
+  "summary": "Memory LTAs (long-term agreements) are structurally sticky due to game-theoretic dynamics \u2014 breaking them risks losing competitive allocation in a supply-constrained world",
+  "summary_extended": "Baker argues that memory long-term agreements (LTAs) are structurally sticky due to game-theoretic dynamics that are fundamentally different from prior semiconductor cycles. His core claim is that memory \u2014 specifically high-bandwidth memory \u2014 is the single most important lever for increasing token output per unit of compute, making supply chain allocation a critical competitive variable for AI hyperscalers and cloud providers. The game theory works as follows: if a buyer breaks an LTA to capture short-term savings during an oversupply period, the memory supplier reallocates that volume to a competitor, and when the cycle tightens again, the defecting buyer loses its allocation permanently \u2014 potentially crippling its AI infrastructure buildout relative to rivals. Baker explicitly contrasts this with prior cycles (e.g., Apple's historical leverage over memory suppliers) by noting that there are now 4+ major compute buyers competing for the same constrained supply, eliminating any single buyer's ability to dictate terms without consequence. The investment implication is that memory suppliers with LTA books \u2014 particularly HBM producers \u2014 have structurally more durable revenue visibility than the market appreciates, making them attractive long positions.",
+  "detail": "Memory is the single most important lever for increasing token output per unit of compute (more memory per flop = more tokens). In a world where market share is determined by supply chain allocations, breaking an LTA risks losing volume to competitors permanently. The game theory holds even in oversupply: if you break an LTA, the memory supplier gives your volume to a competitor, and when the cycle turns, you lose your allocation. This is fundamentally different from prior cycles (e.g., Apple's leverage over memory suppliers) because there are now 4+ major compute buyers competing for allocation.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker walks through the game theory in detail and calls this a key structural insight he 'got wrong' in terms of market transition",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "break the LTA... you just lost share... you might blow up your entire business",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU",
+    "HYNIX",
+    "SAMSUNG"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "MU",
+    "HYNIX",
+    "SAMSUNG"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Micron is the only US-listed HBM/memory producer and directly benefits from the structural stickiness of LTAs \u2014 its contracted revenue is more durable than the market prices in. This thesis is a direct positive for MU's revenue visibility and pricing power."
+    },
+    {
+      "ticker": "HYNIX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "SK Hynix is a leading HBM supplier and direct beneficiary of LTA stickiness, but is not US-listed (Korea-listed). Retaining for completeness of the audit but noting it is not a US-listed equity."
+    },
+    {
+      "ticker": "SAMSUNG",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Samsung is a major memory supplier and beneficiary of LTA dynamics, but is not US-listed (Korea-listed). Retaining for completeness but noting it is not a US-listed equity."
+    }
+  ]
+}

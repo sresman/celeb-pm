@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T16",
+  "summary": "AI adoption is in extremely early innings globally; compute shortage exists with only ~500K people using generative AI out of 8 billion",
+  "summary_extended": "Baker argues that AI adoption is in the earliest possible innings globally, citing an estimate from 'Yoc' that only approximately 500,000 people worldwide are currently using generative AI out of a global population of 8 billion. He reasons that even reaching 1% global adoption \u2014 80 million users \u2014 would require orders-of-magnitude more compute than currently exists, and the world is already experiencing an acute compute shortage at the current negligible adoption level. This structural supply-demand imbalance forms Baker's foundational long-term bull case for AI infrastructure investment, suggesting that demand for compute will compound dramatically for years. The investment implication is a sustained, multi-year tailwind for AI infrastructure providers, particularly those supplying the compute hardware and data center capacity required to scale from hundreds of thousands to hundreds of millions or billions of AI users.",
+  "detail": "Baker cites an estimate (attributed to 'Yoc') that only ~500,000 people globally are using generative AI, and the world is already in an acute compute shortage. Going from 500K to 1% of 8 billion (80M) or beyond implies orders-of-magnitude more compute demand. This is the structural long-term bull case for AI infrastructure.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker returns to this as a foundational structural argument; frames it as the thought he 'can't get out of his mind'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "500,000 people using generative AI... we're in an acute compute shortage",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of AI compute hardware (GPUs); if compute demand grows orders-of-magnitude as Baker argues, NVDA is the clearest and most direct beneficiary of that structural demand surge, making it a genuine DIRECT_BENEFICIARY rather than tangential."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT is a hyperscaler and AI platform company, but this thesis is specifically about the structural compute shortage driven by low global AI adoption \u2014 it does not specifically implicate MSFT as a subject or unambiguous direct beneficiary distinct from any other hyperscaler or cloud provider. Too loosely connected to retain."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMZN (AWS) is a major cloud and AI infrastructure provider, but the thesis does not specifically call out AMZN as a beneficiary; the structural compute shortage argument does not unambiguously single out AMZN over other hyperscalers. Tangential bleed from adjacent transcript context."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GOOGL is a hyperscaler and AI developer, but this thesis does not specifically implicate GOOGL as a direct subject or unambiguous beneficiary. Its inclusion appears to be contamination from adjacent transcript discussion rather than a direct implication of this specific thesis."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META is an AI consumer and infrastructure investor, but this thesis about global compute shortage driven by low adoption rates does not unambiguously single out META as a direct beneficiary. Tangential bleed from broader transcript context."
+    }
+  ]
+}

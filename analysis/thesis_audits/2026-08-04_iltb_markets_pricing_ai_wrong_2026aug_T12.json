@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T12",
+  "summary": "Orbital/space-based compute is becoming increasingly real and is underappreciated by public markets",
+  "summary_extended": "Baker argues that orbital/space-based compute is transitioning from science fiction to a credible near-term infrastructure category, and that public markets are not pricing this possibility at all. He visited Starbase and came away with increased conviction, noting that 'orbital compute feels more real every day.' A key data point is that Benchmark \u2014 a top-tier VC firm with no particular ideological alignment to the Elon Musk ecosystem \u2014 independently funded Star Cloud, an orbital compute startup that is partnering with SpaceX to leverage Starlink's inter-satellite laser communication technology, which Baker views as the critical enabling infrastructure for low-latency orbital compute. Baker treats Benchmark's involvement as an independent sanity check validating the thesis beyond SpaceX boosterism, and frames this as a potential entirely new category of AI infrastructure that is absent from any current public market estimates or sell-side models.",
+  "detail": "Baker spent significant time at Starbase and says 'orbital compute feels more real every day.' Benchmark funded Star Cloud (an orbital compute company) which is partnering with SpaceX to use Starlink laser technology \u2014 critical for orbital compute. Benchmark's involvement (independent of the Elon ecosystem) is a sanity check on the thesis. This represents a potential new category of AI infrastructure that is not in public market estimates.",
+  "confidence": "speculative",
+  "confidence_evidence": "Baker calls it 'more real every day' and uses Benchmark's investment as a sanity check, but acknowledges significant uncertainty",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "orbital compute feels more real every day",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SPACEX"
+  ],
+  "tickers_subject": [
+    "SPACEX"
+  ],
+  "tickers_implied_original": [
+    "SPACEX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPACEX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX is the direct infrastructure partner for Star Cloud's orbital compute thesis via Starlink laser technology; however, SpaceX is not US-listed and cannot be traded in public markets, so this ticker should be noted but carries no actionable public equity implication."
+    }
+  ]
+}

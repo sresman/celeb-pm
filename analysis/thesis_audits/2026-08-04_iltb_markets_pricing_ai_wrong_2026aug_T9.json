@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T9",
+  "summary": "Nvidia's 'credit wrapper with revenue share' business model is highly underappreciated and could create a massive royalty-based cloud business",
+  "summary_extended": "Baker argues that Nvidia has developed a highly underappreciated 'credit wrapper with revenue share' business model that fundamentally changes how GPUs are financed and monetized. Specifically, Nvidia facilitates financing for GPU buyers by arranging third-party lending \u2014 Nvidia itself does not lend the money \u2014 and in return receives a revenue share when GPU prices exceed a floor price, effectively creating a royalty-like income stream tied to GPU utilization and pricing. Baker emphasizes this is not vendor financing and is widely misunderstood by the market; he believes Nvidia should communicate it more clearly because it bridges the cash flow mismatch in the AI buildout cycle, increases Nvidia's revenue per gigawatt deployed, and could compound into a very large recurring cloud-like royalty business over time. The investment implication is that NVDA's earnings power and business model durability are being underestimated by the market, making it a stronger long than consensus appreciates. Baker also notes SK Hynix should consider adopting a similar model, though he frames this as an observation rather than a primary investment thesis.",
+  "detail": "Nvidia has developed a new model: they facilitate financing for GPU buyers (a third party lends the money), and in return Nvidia gets a revenue share if GPU prices are above a floor. This is not vendor financing \u2014 Nvidia isn't lending the money. It bridges the cash flow mismatch in the buildout, increases Nvidia's revenue per gigawatt, strengthens competitive position, and could result in a large recurring royalty stream. Baker recommends SK Hynix should do something similar.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'very misunderstood' and says Nvidia should explain it better; describes it as 'significant in a good way'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "credit wrapper with a revenue share... could lead to a really giant cloud business through royalties",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically and entirely about Nvidia's credit wrapper and revenue share business model \u2014 NVDA is the direct subject of this thesis."
+    }
+  ]
+}

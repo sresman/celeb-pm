@@ -1,0 +1,23 @@
+{
+  "date": "2026-04-16",
+  "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+  "thesis_id": "T2",
+  "summary": "GPU/XPU utilization in AI factories is critically low (30\u201345% for training, lower for inference), making network infrastructure the primary bottleneck and value creation opportunity",
+  "summary_extended": "Baker argues that GPU/XPU utilization in AI factories is critically low \u2014 running at only 30\u201345% during training and even lower during distributed inference \u2014 and that the network fabric is the primary bottleneck responsible for this inefficiency. His core quantitative insight is that doubling utilization from 40% to 80% halves the cost per token, making network infrastructure investment the single highest-ROI lever in AI factory economics and the defining competitive advantage for whoever produces the lowest-cost token. Baker explicitly states this thesis is the reason he invested in Aria Networks, a private networking company building high-performance fabric specifically to address this utilization gap. The investment implication is that companies solving the AI network bottleneck \u2014 enabling higher Model Flop Utilization (MFU) \u2014 will capture outsized value as AI factories scale, while the lowest-cost token producer will dominate the market. No publicly listed pure-play on this thesis exists via Aria Networks (private), and Baker does not name other public beneficiaries with sufficient specificity to add them unambiguously.",
+  "detail": "Current AI accelerators run at only 30\u201345% utilization during training and even lower during distributed inference. The network fabric is identified as the primary culprit. Doubling utilization from 40% to 80% halves cost per token and dramatically expands margins, making network investment the highest-ROI lever in AI factory economics.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states specific utilization figures (30\u201345%), quantifies the cost impact (utilization doubling = cost per token halved), and explicitly states this is why he invested in Aria Networks.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "networking infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "if you take your utilization from 40 to 80, you've dropped your cost per token in half",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T18",
+  "summary": "China's DUV machine development is a real phase transition but the market overreacted; it will take decades to close the gap with EUV",
+  "summary_extended": "Baker argues that China's development of a DUV lithography machine represents a meaningful technological milestone \u2014 a 'phase transition' in capability \u2014 but that the market dramatically overreacted by selling off semiconductor capital equipment stocks. He uses the analogy of a propeller plane (DUV) versus a jet turbine (EUV) to illustrate that China remains approximately 25 years behind the leading edge, and that the learning-by-doing process required to close that gap cannot be artificially accelerated. Baker contends that even if China's DUV progress eventually threatens ASML's order book, that impact is likely 5 or more years away, and the market will have cycled through multiple rounds of worry and forgetting before it materializes. The investment implication is that the selloff in semi-cap equipment names \u2014 particularly ASML \u2014 was an overreaction and potentially a buying opportunity, though Baker acknowledges the development should not be entirely dismissed.",
+  "detail": "China developing a DUV machine is significant \u2014 a phase transition from 'liquid to solid' \u2014 but DUV is like a propeller plane vs. EUV's jet turbine. China is ~25 years behind. Learning-by-doing cannot be accelerated; you have to go through the cycles. The market massively overreacted in semi-cap equipment stocks. If it ever hits ASML's orders, it may be 5 years away, and the market will have forgotten and re-worried multiple times by then.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says 'probably an overreaction' but also 'we shouldn't dismiss it either'; balanced view",
+  "themes": [
+    "semiconductor supply chain",
+    "geopolitics"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "DUV machine is like a propeller plane, EUV is like a jet turbine... 25 years behind",
+  "tickers_named_original": [
+    "ASML"
+  ],
+  "tickers_direct": [
+    "ASML",
+    "KLAC",
+    "LRCX",
+    "AMAT"
+  ],
+  "tickers_subject": [
+    "ASML"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "ASML",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "ASML is the direct subject of this thesis \u2014 Baker explicitly discusses the potential (but distant) threat to ASML's order book from China's DUV development and argues the selloff in ASML was an overreaction."
+    },
+    {
+      "ticker": "KLAC",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "KLAC is a leading semi-cap equipment company that would have been caught in the same selloff Baker describes as an overreaction; as a major process control equipment supplier, it is a direct beneficiary of the thesis that the selloff was overdone."
+    },
+    {
+      "ticker": "LRCX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "LRCX is a major semi-cap equipment company similarly affected by fears of Chinese lithography self-sufficiency; Baker's thesis that the market overreacted to China's DUV news implies the selloff in names like LRCX was also excessive."
+    },
+    {
+      "ticker": "AMAT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "AMAT is the largest US-listed semi-cap equipment company and would be directly implicated in any broad selloff of the sector driven by China DUV fears; Baker's overreaction thesis applies to this group."
+    }
+  ]
+}

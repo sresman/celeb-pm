@@ -264,6 +264,19 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "source": "FII Institute", "host": "FII panel",
         "topic": "Rise of the Gigafirm: next trillion-dollar tech company (panel)",
     },
+    # ---- Added 2026-08-10 (2-new-appearances task; from fomo-fund-monitor
+    # YouTube triage). Both are genuine solo Baker appearances (interviewee /
+    # featured speaker) — full attribution to Baker, no co-guest split. ----
+    "NGsi2PC4y68": {
+        "label": "iltb_markets_pricing_ai_wrong_2026aug", "date": "2026-08-04",
+        "source": "Invest Like the Best", "host": "Patrick O'Shaughnessy",
+        "topic": "Why the markets are pricing AI wrong: July 2026 AI/semis selloff ('2022 in a month'), private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+    },
+    "MmNWwIYFBeI": {
+        "label": "aria_networks_mfu_ai_factories_2026apr", "date": "2026-04-16",
+        "source": "Aria Networks", "host": "Aria Networks (product launch)",
+        "topic": "MFU (Model Flop Utilization) as the defining AI-factory metric; lowest-cost token producer wins → deploy highest-performance infra, not cheapest",
+    },
 }
 
 # --------------------------------------------------------------------------

@@ -1,17 +1,17 @@
 {
   "model": "claude-sonnet-4-6",
-  "theses_selected": 562,
-  "ok": 22,
-  "skipped": 540,
+  "theses_selected": 589,
+  "ok": 27,
+  "skipped": 562,
   "errors": [],
-  "tickers_removed_tangential": 382,
-  "tickers_added": 143,
-  "avg_summary_len": 131.8,
-  "avg_summary_extended_len": 1022.9,
-  "timeline_v2_entries": 562,
-  "total_input_tokens": 27870,
-  "total_output_tokens": 6917,
-  "estimated_cost_usd": 0.1874,
+  "tickers_removed_tangential": 436,
+  "tickers_added": 147,
+  "avg_summary_len": 132.3,
+  "avg_summary_extended_len": 1026.1,
+  "timeline_v2_entries": 589,
+  "total_input_tokens": 35094,
+  "total_output_tokens": 9093,
+  "estimated_cost_usd": 0.2417,
   "rows": [
     {
       "date": "2019-11-26",
@@ -2817,9 +2817,9 @@
       "source_label": "allin_tariffs_agi_prize_2025jul",
       "thesis_id": "T15",
       "output": "analysis/thesis_audits/2025-07-17_allin_tariffs_agi_prize_2025jul_T15.json",
-      "status": "ok",
-      "input_tokens": 1228,
-      "output_tokens": 214
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2025-10-22",
@@ -3486,6 +3486,69 @@
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_mfu_ai_factories_2026apr",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_mfu_ai_factories_2026apr_T1.json",
+      "status": "ok",
+      "input_tokens": 1270,
+      "output_tokens": 274
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_mfu_ai_factories_2026apr",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_mfu_ai_factories_2026apr_T2.json",
+      "status": "ok",
+      "input_tokens": 1282,
+      "output_tokens": 247
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_mfu_ai_factories_2026apr",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_mfu_ai_factories_2026apr_T3.json",
+      "status": "ok",
+      "input_tokens": 1238,
+      "output_tokens": 235
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_mfu_ai_factories_2026apr",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_mfu_ai_factories_2026apr_T4.json",
+      "status": "ok",
+      "input_tokens": 1221,
+      "output_tokens": 188
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_mfu_ai_factories_2026apr",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_mfu_ai_factories_2026apr_T5.json",
+      "status": "ok",
+      "input_tokens": 1262,
+      "output_tokens": 195
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_mfu_ai_factories_2026apr",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_mfu_ai_factories_2026apr_T6.json",
+      "status": "ok",
+      "input_tokens": 1241,
+      "output_tokens": 210
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_mfu_ai_factories_2026apr",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_mfu_ai_factories_2026apr_T7.json",
+      "status": "ok",
+      "input_tokens": 1275,
+      "output_tokens": 226
     },
     {
       "date": "2026-05-12",
@@ -4266,99 +4329,99 @@
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T1",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T1.json",
-      "status": "ok",
-      "input_tokens": 1268,
-      "output_tokens": 214
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T2",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T2.json",
-      "status": "ok",
-      "input_tokens": 1293,
-      "output_tokens": 230
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T3",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T3.json",
-      "status": "ok",
-      "input_tokens": 1255,
-      "output_tokens": 192
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T4",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T4.json",
-      "status": "ok",
-      "input_tokens": 1250,
-      "output_tokens": 432
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T5",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T5.json",
-      "status": "ok",
-      "input_tokens": 1359,
-      "output_tokens": 382
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T6",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T6.json",
-      "status": "ok",
-      "input_tokens": 1276,
-      "output_tokens": 300
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T7",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T7.json",
-      "status": "ok",
-      "input_tokens": 1276,
-      "output_tokens": 279
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T8",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T8.json",
-      "status": "ok",
-      "input_tokens": 1306,
-      "output_tokens": 334
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T9",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T9.json",
-      "status": "ok",
-      "input_tokens": 1284,
-      "output_tokens": 480
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T10",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T10.json",
-      "status": "ok",
-      "input_tokens": 1273,
-      "output_tokens": 254
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-08",
       "source_label": "heller_house_spacex_cfo_2026jun",
       "thesis_id": "T11",
       "output": "analysis/thesis_audits/2026-06-08_heller_house_spacex_cfo_2026jun_T11.json",
-      "status": "ok",
-      "input_tokens": 1270,
-      "output_tokens": 214
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-06-11",
@@ -4986,90 +5049,270 @@
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T1",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T1.json",
-      "status": "ok",
-      "input_tokens": 1279,
-      "output_tokens": 302
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-07-20",
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T2",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T2.json",
-      "status": "ok",
-      "input_tokens": 1259,
-      "output_tokens": 361
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-07-20",
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T3",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T3.json",
-      "status": "ok",
-      "input_tokens": 1218,
-      "output_tokens": 518
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-07-20",
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T4",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T4.json",
-      "status": "ok",
-      "input_tokens": 1275,
-      "output_tokens": 385
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-07-20",
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T5",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T5.json",
-      "status": "ok",
-      "input_tokens": 1250,
-      "output_tokens": 289
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-07-20",
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T6",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T6.json",
-      "status": "ok",
-      "input_tokens": 1240,
-      "output_tokens": 259
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-07-20",
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T7",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T7.json",
-      "status": "ok",
-      "input_tokens": 1302,
-      "output_tokens": 233
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-07-20",
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T8",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T8.json",
-      "status": "ok",
-      "input_tokens": 1243,
-      "output_tokens": 431
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-07-20",
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T9",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T9.json",
-      "status": "ok",
-      "input_tokens": 1247,
-      "output_tokens": 315
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-07-20",
       "source_label": "cnbc_spacex_drawdown_2026jul",
       "thesis_id": "T10",
       "output": "analysis/thesis_audits/2026-07-20_cnbc_spacex_drawdown_2026jul_T10.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T1.json",
       "status": "ok",
-      "input_tokens": 1219,
-      "output_tokens": 299
+      "input_tokens": 1285,
+      "output_tokens": 283
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T2.json",
+      "status": "ok",
+      "input_tokens": 1284,
+      "output_tokens": 253
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T3.json",
+      "status": "ok",
+      "input_tokens": 1364,
+      "output_tokens": 531
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T4.json",
+      "status": "ok",
+      "input_tokens": 1376,
+      "output_tokens": 562
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T5.json",
+      "status": "ok",
+      "input_tokens": 1293,
+      "output_tokens": 311
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T6.json",
+      "status": "ok",
+      "input_tokens": 1305,
+      "output_tokens": 432
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T7.json",
+      "status": "ok",
+      "input_tokens": 1301,
+      "output_tokens": 289
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T8.json",
+      "status": "ok",
+      "input_tokens": 1336,
+      "output_tokens": 491
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T9.json",
+      "status": "ok",
+      "input_tokens": 1313,
+      "output_tokens": 307
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T10.json",
+      "status": "ok",
+      "input_tokens": 1293,
+      "output_tokens": 419
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T11.json",
+      "status": "ok",
+      "input_tokens": 1383,
+      "output_tokens": 317
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T12.json",
+      "status": "ok",
+      "input_tokens": 1273,
+      "output_tokens": 287
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T13.json",
+      "status": "ok",
+      "input_tokens": 1354,
+      "output_tokens": 277
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T14.json",
+      "status": "ok",
+      "input_tokens": 1295,
+      "output_tokens": 326
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T15.json",
+      "status": "ok",
+      "input_tokens": 1314,
+      "output_tokens": 229
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T16",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T16.json",
+      "status": "ok",
+      "input_tokens": 1299,
+      "output_tokens": 604
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T17",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T17.json",
+      "status": "ok",
+      "input_tokens": 1306,
+      "output_tokens": 261
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T18",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T18.json",
+      "status": "ok",
+      "input_tokens": 1320,
+      "output_tokens": 528
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T19",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T19.json",
+      "status": "ok",
+      "input_tokens": 1311,
+      "output_tokens": 565
+    },
+    {
+      "date": "2026-08-04",
+      "source_label": "iltb_markets_pricing_ai_wrong_2026aug",
+      "thesis_id": "T20",
+      "output": "analysis/thesis_audits/2026-08-04_iltb_markets_pricing_ai_wrong_2026aug_T20.json",
+      "status": "ok",
+      "input_tokens": 1300,
+      "output_tokens": 246
     }
   ]
 }

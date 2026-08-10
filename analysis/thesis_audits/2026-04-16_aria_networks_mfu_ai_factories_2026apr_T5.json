@@ -1,0 +1,23 @@
+{
+  "date": "2026-04-16",
+  "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+  "thesis_id": "T5",
+  "summary": "The shift from training to distributed inference dramatically increases the importance and value of network infrastructure, particularly for agentic and interactive workloads",
+  "summary_extended": "Baker argues that the transition from AI training to distributed inference fundamentally increases the strategic importance of network infrastructure within AI factories. In training, networking stress is concentrated on backend scale-out fabrics, but distributed inference \u2014 particularly agentic and high-interactivity workloads \u2014 also stresses frontend networking due to query fan-out, prefill/decode disaggregation, and KV cache transfer between nodes. Baker frames this as a structural, durable shift rather than a transient trend, emphasizing that the network becomes 'even more of a bottleneck' in the inference era than it was during the training era. The investment implication is that companies providing high-performance networking infrastructure for AI datacenters stand to benefit disproportionately as inference workloads scale, though Baker does not name specific companies in this segment of the transcript.",
+  "detail": "Training workloads primarily stress backend scale-out networking. Distributed inference \u2014 especially agentic, high-interactivity use cases \u2014 also stresses frontend networking due to query fan-out, prefill/decode disaggregation, and KV cache transfer. This makes network infrastructure more critical and more valuable in the inference era than in the training era.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker agrees emphatically and elaborates on expert parallelism, prefill/decode disaggregation as specific technical drivers. Framed as a structural shift, not a transient trend.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "networking infrastructure",
+    "agentic AI"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "the network becomes even more of a bottleneck",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

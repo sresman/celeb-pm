@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "thesis_id": "T15",
+  "summary": "Private inference clouds (Fireworks, Base10, Modal) are growing nearly as fast as frontier labs with very little cash burn \u2014 extraordinary business models",
+  "summary_extended": "Baker argues that private inference cloud companies \u2014 specifically Fireworks, Base10, and Modal \u2014 represent extraordinary business models, growing nearly as fast as frontier AI labs in their early days while burning very little cash, producing Rule of 40 metrics he describes as 'crazy numbers.' The core product innovation he highlights is Fireworks' 'Nexus,' which allows customers to route queries between their own RL-fine-tuned open-source models and frontier models like Claude and Grok in just three lines of code, achieving better outcomes at roughly half the cost of using frontier models exclusively. Baker sees this as the definitive solution for AI-native companies, evidenced by adoption from Harvey, Cursor, Legora, and others. The investment implication is primarily relevant to private markets \u2014 these companies are not publicly listed \u2014 though the thesis implicitly suggests competitive pressure on frontier model providers who charge premium inference prices. No publicly traded equities are directly implicated as subjects or clear beneficiaries of this specific thesis.",
+  "detail": "Fireworks, Base10, and Modal are growing almost as fast as frontier labs in their early days but burning very little cash. By Rule of 40 metrics, these are 'crazy numbers.' Fireworks launched 'Nexus' \u2014 a product that in 3 lines of code routes queries between a customer's RL-fine-tuned open-source model and frontier models (Claude, Grok), achieving better outcomes at half the cost. This is the solution for AI natives and is driving adoption by Harvey, Cursor, Legora, and others.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker describes these as extraordinary business models with specific product details but they are private companies without audited financials",
+  "themes": [
+    "open source AI",
+    "AI datacenter infrastructure",
+    "private markets"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "growing almost as fast as frontier labs... burning very little cash",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}
