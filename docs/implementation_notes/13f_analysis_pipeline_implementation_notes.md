@@ -303,3 +303,39 @@ Implemented v5 plan exactly. Key decisions / mechanisms recorded:
   Integration test routes the amendment cover page to a benign `<edgarSubmission/>` so
   refine_amendment_type leaves UNKNOWN + WARN without aborting. Sort key
   `(-initial_weight_pct, cusip, security_type)` for DESC-weight, asc tiebreaks.
+
+---
+
+## 2026-08-14 — Q2 2026 Atreides ingest + trigger analysis (operator task)
+
+Ran `python -m celebpm.pipeline 1777813 --today 2026-08-14` to ingest Baker's Q2 2026 13F
+(acc `0001777813-26-000009`, period 2026-06-30, filed 2026-08-14). 28 discovered / 27 parsed /
+0 skipped / timeline_degraded=False. positions 1037→1086, changes→1390. Q1 baseline unchanged
+(verified vs pre-run backup). Full writeup: `analysis/atreides_q2_2026_trigger_analysis.md`.
+
+**Data verification:** parsed `value`/`sshPrnamt` match the raw EDGAR infotable
+(`ATREIDES13FXMLQ2.xml`) to the dollar for ACVA/MU/SPCX/QQQ/ALAB/CIEN/CBRS/META. Q2 uses the
+new `xslForm13F_X02` stylesheet (older filings: X01) — parser handled it with no scaling issue.
+Stylized per-share prices (e.g. MU implied $1,154/sh) are AS-FILED in this dataset, not a parse
+bug; Q1 is stylized identically so the QoQ diff is internally valid.
+
+**Key analytical decision — use SHARE deltas, not weight deltas, this quarter.** Total 13F value
+tripled ($5.00B→$14.34B) so the weight-based classifier returned 0 ACTIVE_ADD / 1 DRIFT_UP: every
+continuing name's weight compressed against the 3× denominator. Conviction was read from
+positions.json share deltas instead (deliberate net buying = +36.0% of port; ramp fires hard).
+Reused the exit-not-counted-as-selling convention from `build_13f_analysis.compute_net_buying`
+(COUNT_EXITS=False).
+
+**Automated ramp did NOT fire for 2026-08-14** (ramp dates end 2026-02-17). Correct given the
+narrow "picks-and-shovels" basket excludes SpaceX (space/orbital) by design AND the new Q2 tickers
+(SPCX, CBRS, and CRWV's new weight) are absent from `ai_basket_reclassification.json`. The manual
+portfolio-wide net-buying measure is reclass-independent and is the reported figure.
+
+**Open items:** (1) add Q2 tickers to `ai_basket_reclassification.json` (curated bucket calls
+needed) so automated AI triggers classify Q2; (2) 4 unresolved CUSIPs (ticker=None) — OpenFIGI
+misses, re-resolve next run; (3) `EODHD_API_KEY` blank in .env → forward-return/fundamentals cols
+NO_DATA for new tickers (does not affect classification or net-buying).
+
+**Working tree left dirty (not committed):** `data/atreides_management/*` (Q2 ingested),
+`analysis/13f_signal_triggers_clean.csv` + `ai_basket_definition.json` (regenerated),
+`analysis/atreides_q2_2026_trigger_analysis.md` (new). Awaiting operator decision to commit.
