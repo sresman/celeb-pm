@@ -5,9 +5,14 @@ Reads Gavin Baker's (Atreides, CIK 0001777813) position-lifecycle and new-idea v
 CSVs plus analysis/ai_basket_reclassification.json, and emits every instance of three
 triggers to analysis/13f_signal_triggers.csv:
 
-    AI_BASKET_RAMP        total AI-basket equity weight rose >= 5.0 pt filing-to-filing
+    AI_BASKET_RAMP        total AI-basket weight rose >= 5.0 pt filing-to-filing
     NEW_AI_SUBTHEME       first-ever entry into a resolved AI sub-theme
     NEW_AI_POSITION_2PCT  new equity AI position opened at >= 2.0% initial weight
+
+NOTE: this legacy generator uses REPORTED (total-book) weights and is retained only for
+its shared helpers (resolve_ai, _read_csv, etc.). The workbook's authoritative trigger
+CSV (analysis/13f_signal_triggers_clean.csv) is produced by build_13f_analysis.py, which
+weights on thesis-investable equity (COMMON ex IPO-reclass). Prefer that module.
 
 Purely derived from committed pipeline output — no API calls, no external data. Every
 event row carries supporting fields so it can be verified against the source CSVs.

@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "purpose": "Single primary-basket overrides for Baker (Atreides) holdings on the trigger_analysis.xlsx context sheets. Each held ticker maps to exactly ONE basket. Resolution order: primary_basket[ticker] -> primary_basket_by_cusip[cusip] -> ai_basket_reclassification.json bucket -> position theme -> 'Unassigned'.",
+    "as_of": "2026-06-30",
+    "rationale": "For tickers in several thesis-level baskets in theme_baskets_v3.json, this picks the primary by Baker's highest-conviction / most-natural categorization. Other memberships appear in the 'also_in' note column, not as duplicate rows. by_cusip handles positions that file with an unresolved (null) ticker.",
+    "editable": "Change any value to re-home a ticker; add a ticker or cusip to override."
+  },
+  "primary_basket": {
+    "META": "Hyperscalers (quasi-index)",
+    "AMZN": "Hyperscalers (quasi-index)",
+    "GOOGL": "Hyperscalers (quasi-index)",
+    "NVDA": "Nvidia GPU moat / CUDA ecosystem",
+    "MU": "DRAM / HBM memory bottleneck",
+    "CRWV": "Neoclouds as durable model",
+    "NEBIUS": "Neoclouds as durable model",
+    "NBIS": "Neoclouds as durable model",
+    "TSLA": "Humanoid robotics / Tesla Optimus",
+    "SPCX": "Orbital / space-based compute"
+  },
+  "primary_basket_by_cusip": {
+    "G25457105": "AI/Datacenter Networking",
+    "N52A8C105": "AI/Datacenter Power",
+    "N97284108": "Neoclouds as durable model",
+    "M98068105": "Web / SMB SaaS",
+    "M8744T106": "AdTech / digital advertising",
+    "G39387108": "Semiconductor Manufacturing",
+    "M6191J100": "Enterprise SaaS"
+  },
+  "_cusip_labels": {
+    "G25457105": "CREDO TECHNOLOGY GROUP",
+    "N52A8C105": "INNIO NV",
+    "N97284108": "NEBIUS GROUP N.V.",
+    "M98068105": "WIX.COM LTD",
+    "M8744T106": "TABOOLA.COM LTD",
+    "G39387108": "GLOBALFOUNDRIES INC (Q1 exit)",
+    "M6191J100": "JFROG LTD (Q1 exit)"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "manager": "Situational Awareness LP (Leopold Aschenbrenner)",
+    "as_of": "2026-06-30",
+    "source_data": "analysis/sa_q2_2026_mtm_vs_trading.csv",
+    "note": "Ticker->basket map for Leopold's Q2 2026 book. Each ticker maps to ONE basket. Crypto miners are a SEPARATE basket from pure datacenter/power names (operator direction, iteration 2). Some positions file with unresolved tickers, so each basket also lists company-name aliases for name-based matching. Editable by hand.",
+    "match_order": "ticker first, then company alias (case-insensitive substring)"
+  },
+  "AI datacenter / power": {
+    "tickers": ["BE", "TE", "SEI", "BW", "PUMP", "PSIX", "KEEL", "APLD"],
+    "companies": [],
+    "direction": "LONG",
+    "source": "OPERATOR_NAMED + EMERGED",
+    "note": "Datacenter power/energy + datacenter operators: BE (Bloom fuel cells), TE (T1 Energy), SEI (Solaris Energy Infra), BW (Babcock & Wilcox), PUMP (ProPetro), PSIX (Power Solutions Intl), KEEL (Keel Infrastructure), APLD (Applied Digital datacenter operator)."
+  },
+  "Crypto miners → AI/HPC": {
+    "tickers": ["CORZ", "RIOT", "CLSK", "IREN", "HIVE", "1B2"],
+    "companies": ["IREN LIMITED", "BITDEER"],
+    "direction": "LONG",
+    "source": "OPERATOR_NAMED",
+    "note": "Bitcoin miners pivoting to AI/HPC hosting: CORZ (Core Scientific), RIOT, CLSK (CleanSpark), IREN, HIVE, 1B2 (Bitfarms), Bitdeer."
+  },
+  "Memory / semis": {
+    "tickers": ["MU", "SNDK", "TSM", "STM", "NVDA", "AMD", "AVGO", "INTC", "GLW", "VSH"],
+    "companies": ["ASML HLDG"],
+    "direction": "LONG",
+    "source": "OPERATOR_NAMED + EMERGED",
+    "note": "Operator-named core: MU, SNDK, TSM, STM. Emerged: NVDA, AMD, AVGO, INTC, GLW (Corning), VSH (Vishay), ASML. Memory bottleneck + logic/foundry/analog semis."
+  },
+  "Neoclouds": {
+    "tickers": ["CRWV", "SHAZ"],
+    "companies": ["NEBIUS GROUP", "WHITEFIBER"],
+    "direction": "LONG",
+    "source": "OPERATOR_NAMED + EMERGED",
+    "note": "Operator-named core: CRWV, NEBIUS. Emerged: WhiteFiber, SHAZ (SharonAI). GPU-cloud / neocloud compute rental."
+  },
+  "AI accelerators (silicon)": {
+    "tickers": ["CBRS"],
+    "companies": [],
+    "direction": "LONG",
+    "source": "EMERGED",
+    "note": "CBRS (Cerebras) — wafer-scale AI accelerators. New small starter position."
+  },
+  "IT services / other": {
+    "tickers": ["INFY"],
+    "companies": [],
+    "direction": "LONG",
+    "source": "EMERGED",
+    "note": "INFY (Infosys) — held via a long-dated put in Q2; IT services / offshore delivery."
+  },
+  "ETF / benchmark hedge": {
+    "tickers": ["SMH"],
+    "companies": ["VANECK ETF TRUST"],
+    "direction": "MIXED",
+    "source": "EMERGED",
+    "note": "SMH (VanEck Semiconductor ETF) — used as a benchmark/hedge; Q2 common + options fully closed."
+  }
+}

@@ -52,10 +52,32 @@ BENCHMARKS = ["SMH", "SPY"]
 PRE_IPO = "PRE_IPO"
 NO_DATA = "NO_DATA"
 
-RAMP_THRESHOLD_PT = 5.0  # ramp fires when net_buying_pct (deliberate deployment) >= 5% of portfolio
+RAMP_THRESHOLD_PT = 5.0  # ramp fires when net_buying_pct >= 5% of thesis-investable equity (ex-reclass)
 NEW_POSITION_MIN_WEIGHT_PCT = 2.0
 SUBSEQUENT_ADD_WINDOW = 2
 THRESHOLDS = [2.0, 4.0]
+
+# Positions that entered the 13F via an IPO (a pre-existing private holding becoming a
+# reportable security), NOT a market purchase. Excluded from the weight/flow denominator
+# so a single mega-reclassification (SpaceX = ~33% of total book) does not compress every
+# AI subtheme's weight below the fixed thresholds — and worsen as its mark rises. All
+# weights below are therefore % of thesis-investable equity (COMMON, ex-reclass).
+IPO_RECLASS_TICKERS = {"SPCX"}
+
+
+def ex_reclass_denoms(positions: list[dict[str, Any]]) -> tuple[dict[str, float], dict[str, float]]:
+    """Per period: (total_book incl options+reclass, thesis-investable equity = Σ COMMON
+    value ex IPO-reclass tickers). Used to rescale reported weights onto the ex-reclass basis."""
+    tot: dict[str, float] = {}
+    exq: dict[str, float] = {}
+    for r in positions:
+        p = r["period"]
+        v = r["value_reported"] or 0.0
+        tot[p] = tot.get(p, 0.0) + v
+        if r["security_type"] == "COMMON" and (r.get("ticker") or "") not in IPO_RECLASS_TICKERS:
+            exq[p] = exq.get(p, 0.0) + v
+    return tot, exq
+
 
 # NARROW ramp basket: everything AI except these two buckets.
 RAMP_EXCLUDED_BUCKETS = {"AI/Hyperscaler", "AI/EV"}
@@ -204,16 +226,28 @@ def build_universal_table(
 # --------------------------------------------------------------------------
 
 
-def annotate_common(raw_life: list[dict[str, str]], reclass: dict[str, Any]) -> list[dict[str, Any]]:
+def annotate_common(
+    raw_life: list[dict[str, str]], reclass: dict[str, Any],
+    tot_book: dict[str, float], ex_equity: dict[str, float],
+) -> list[dict[str, Any]]:
+    """COMMON lifecycle rows with weight rescaled from reported (÷ total book) onto the
+    thesis-investable basis (÷ equity ex IPO-reclass). Reclass tickers are dropped so
+    they neither count toward nor dilute the basis; ex-reclass weights sum to 100%."""
     common: list[dict[str, Any]] = []
     for r in raw_life:
         if r["security_type"] != "COMMON":
             continue
+        if (r.get("ticker") or "") in IPO_RECLASS_TICKERS:
+            continue
         is_ai, subtheme = trig.resolve_ai(reclass, r["ticker"], r["filing_date"], r["theme"])
+        w = trig._f(r["weight_pct"])
+        p = r["period"]
+        if w is not None and ex_equity.get(p):
+            w = w * tot_book[p] / ex_equity[p]  # reported (÷book) -> ÷(equity ex-reclass)
         common.append({
             "ticker": r["ticker"], "cusip": r["cusip"], "filing_date": r["filing_date"],
             "period": r["period"], "change_type": r["change_type"], "theme": r["theme"],
-            "weight": trig._f(r["weight_pct"]), "is_ai": is_ai, "subtheme": subtheme,
+            "weight": w, "is_ai": is_ai, "subtheme": subtheme,
         })
     return common
 
@@ -313,7 +347,11 @@ def compute_net_buying(
             if COUNT_EXITS:
                 gross_sell += val
         net = gross_buy - gross_sell
-        total = total_val.get(period, 0.0) or 1.0
+        # Denominator = thesis-investable equity (COMMON ex IPO-reclass), NOT total book,
+        # so SpaceX's ~33%-of-book reclassification doesn't compress the deployment %.
+        ex_equity_p = sum(v for (p, cu), (sh, v, tk) in common.items()
+                          if p == period and (tk or "") not in IPO_RECLASS_TICKERS)
+        total = ex_equity_p or 1.0
         for lst in (bought, sold, new, exited):
             lst.sort(key=lambda x: -x[1])
         out[fd] = {
@@ -483,12 +521,14 @@ def trigger_new_position(
     for row in new_ideas:
         if row.get("is_option", "") != "False":
             continue
-        initial = trig._f(row.get("initial_weight_pct"))
-        if initial is None or initial < NEW_POSITION_MIN_WEIGHT_PCT:
-            continue
         fd = row["filing_date"]
         life_new = new_common.get((row["cusip"], fd))
-        theme_col = life_new["theme"] if life_new else ""
+        if life_new is None:  # non-COMMON, or an IPO-reclass position (not a market buy)
+            continue
+        initial = life_new["weight"]  # ex-reclass equity basis (matches the other triggers)
+        if initial is None or initial < NEW_POSITION_MIN_WEIGHT_PCT:
+            continue
+        theme_col = life_new["theme"]
         is_ai, subtheme = trig.resolve_ai(reclass, row["ticker"], fd, theme_col)
         if not is_ai:
             continue
@@ -553,7 +593,9 @@ def main(argv: list[str] | None = None) -> int:
     raw_life = trig._read_csv(views / "position_lifecycles.csv")
     new_ideas = trig._read_csv(views / "new_ideas.csv")
 
-    common = annotate_common(raw_life, reclass)
+    positions = json.loads((views.parent / "positions.json").read_text(encoding="utf-8"))
+    tot_book, ex_equity = ex_reclass_denoms(positions)
+    common = annotate_common(raw_life, reclass, tot_book, ex_equity)
     fd_to_period: dict[str, str] = {}
     for r in raw_life:
         fd_to_period.setdefault(r["filing_date"], r["period"])
