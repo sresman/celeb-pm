@@ -164,5 +164,75 @@
     "ai": false,
     "bucket": "Enterprise SaaS",
     "note": "CDN/edge security. Nov 2020 entry was pre-AI narrative."
+  },
+  "CBRS": {
+    "ai": true,
+    "bucket": "AI/Datacenter Chips",
+    "note": "Cerebras — wafer-scale AI accelerators. NEW Q2 2026 (common $687M + calls $155M); discussed high-conviction 2026-06-27 (disaggregated inference)."
+  },
+  "APH": {
+    "ai": true,
+    "bucket": "AI/Datacenter Networking",
+    "note": "Amphenol — high-speed interconnect/connectors/cabling for AI clusters. NEW Q2 2026."
+  },
+  "PDFS": {
+    "ai": true,
+    "bucket": "Semiconductor Supply Chain",
+    "note": "PDF Solutions — semiconductor yield/process analytics. NEW Q2 2026."
+  },
+  "CIFR": {
+    "ai": true,
+    "bucket": "AI/Datacenter Power",
+    "note": "Cipher — bitcoin miner converting sites to powered AI/HPC datacenter capacity. NEW Q2 2026."
+  },
+  "FRVO": {
+    "ai": true,
+    "bucket": "AI/Datacenter Power",
+    "note": "Fervo Energy — geothermal power for datacenters. NEW Q2 2026 (tiny). Ticker resolves once OpenFIGI maps the CUSIP."
+  },
+  "INNIO": {
+    "ai": true,
+    "bucket": "AI/Datacenter Power",
+    "note": "Innio (Jenbacher gas engines) — prime/backup power for datacenters. NEW Q2 2026. CURRENTLY UNRESOLVED ticker (position carries ticker=None); entry binds once the CUSIP resolves."
+  },
+  "CREDO": {
+    "ai": true,
+    "bucket": "AI/Datacenter Networking",
+    "note": "Credo — AECs/SerDes, copper interconnect for AI clusters (the 'copper vs fiber' side of Baker's optical thesis). ADD Q2 2026. CURRENTLY UNRESOLVED ticker; binds on CUSIP resolution."
+  },
+  "SPCX": {
+    "ai": false,
+    "bucket": "Space/Orbital",
+    "note": "SpaceX (IPO'd Q2 2026). NEW $4.67B = 32.6% of the book. OPERATOR REVIEW: Baker frames 'orbital/space-based compute' within his AI-infrastructure thesis, but SpaceX today is launch/Starlink, not AI datacenter. Left ai:false so a single 32.6% position does not dominate/distort every AI-weight trigger. If you want it tracked, create a dedicated 'Space' basket/trigger rather than folding it into the AI ramp."
+  },
+  "QNT": {
+    "ai": false,
+    "bucket": "Quantum Computing",
+    "note": "Quantinuum — quantum computing. NEW Q2 2026 (tiny, 0.02%). ai:false deliberately: Baker has flagged a 'nuclear/quantum bubble' (corpus 2025-12-09); this is not AI-infra."
+  },
+  "GTLB": {
+    "ai": false,
+    "bucket": "Enterprise SaaS",
+    "note": "GitLab — DevOps SaaS (AI coding features, but classified as SaaS consistent with ADBE/NET). NEW Q2 2026."
+  },
+  "IOT": {
+    "ai": false,
+    "bucket": "Industrial IoT",
+    "note": "Samsara — connected-operations platform. NEW Q2 2026."
+  },
+  "TTAN": {
+    "ai": false,
+    "bucket": "Enterprise SaaS",
+    "note": "ServiceTitan — vertical trades SaaS. NEW Q2 2026."
+  },
+  "NTRA": {
+    "ai": false,
+    "bucket": "Healthcare/Diagnostics",
+    "note": "Natera — genetic testing/diagnostics. NEW Q2 2026."
+  },
+  "WIX": {
+    "ai": false,
+    "bucket": "Enterprise SaaS",
+    "note": "Wix — website SaaS. ADD Q2 2026. CURRENTLY UNRESOLVED ticker; binds on CUSIP resolution."
   }
 }

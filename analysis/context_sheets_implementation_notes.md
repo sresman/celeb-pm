@@ -113,3 +113,22 @@ Tab order: `Summary` → Baker context (Holdings, AI Basket, Baskets, Flows, Opt
   the 4% line earlier and stay above, so fewer distinct re-crossings), SUBTHEME 15→15, RAMP 11→11.
 - Legacy `generate_13f_triggers.py` (imported only for helpers; not the workbook's source) docstring
   annotated to point at `build_13f_analysis.py` as the authoritative ex-reclass generator.
+
+## Iteration 5 (forward-returns Performance sheet — coherent 17-sheet workbook)
+
+- **New `tools/transcripts/trigger_forward_returns.py`**: filing-date-anchored, buy-and-hold forward
+  returns on the corrected (ex-SPCX) trigger events at 1m/1q/6m/1y/2y vs SMH and SPY. Equal-weight
+  baskets (NewPosition=named ticker; NewSubtheme=entering tickers; Cross=all subtheme tickers;
+  Ramp=narrow AI picks-and-shovels basket). An event counts for a horizon only once its window is
+  fully observed (prices cached through the Q2 filing 2026-08-14). Writes
+  `analysis/trigger_forward_returns_ex_spcx.{csv,md}` and exposes `compute_stats()`.
+- **New `Performance` sheet** in `trigger_analysis.xlsx` (2nd tab): per trigger × horizon win rate,
+  avg/median return, and excess + beat-rate vs SMH and SPY. `build_trigger_workbook.py` imports
+  `trigger_forward_returns` (which no longer imports the workbook — circular-import broken via a local
+  `build_ramp_holdings`) and renders the sheet.
+- **Read**: beats SPY at every horizon; vs SMH the edge is thin (beat-rate < 50% at most horizons) —
+  largely AI-beta. AI_BASKET_RAMP (deliberate deployment) is the only trigger that beats SMH
+  consistently. Single-regime (2020–26 AI bull); avg ≫ median (right-skewed).
+- Workbook is now **17 sheets**: Summary · Performance · 6 Baker context · 3 Leo context · 6 trigger
+  sheets — all on the ex-SPCX basis, current through Q2 2026. Trigger sheets carry the corrected event
+  counts (NewPosition 39, Cross4pct 18, Cross2pct 31) with filing-to-filing SMH returns.

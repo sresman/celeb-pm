@@ -1,0 +1,36 @@
+# Forward-returns performance — corrected trigger set (ex-SPCX basis)
+
+Prices through **2026-08-14**. Filing-date-anchored, buy-and-hold, equal-weight baskets. Excess = signal return − benchmark return over the identical window. An event counts for a horizon only if the full forward window is observed.
+
+| trigger | horizon | n | win rate | avg ret | median | exc SMH | beat SMH | exc SPY | beat SPY |
+|---|---|--:|--:|--:|--:|--:|--:|--:|--:|
+| NEW_AI_POSITION_2PCT | 1m | 37 | 46% | +4.4% | -1.0% | +2.0% | 46% | +4.1% | 43% |
+| NEW_AI_POSITION_2PCT | 1q | 37 | 70% | +12.8% | +9.6% | +1.7% | 51% | +8.4% | 68% |
+| NEW_AI_POSITION_2PCT | 6m | 37 | 70% | +32.2% | +19.4% | +7.0% | 41% | +22.1% | 62% |
+| NEW_AI_POSITION_2PCT | 1y | 34 | 68% | +37.4% | +24.3% | -11.5% | 29% | +18.3% | 56% |
+| NEW_AI_POSITION_2PCT | 2y | 22 | 77% | +117.6% | +80.4% | +13.9% | 32% | +77.2% | 64% |
+| NEW_AI_SUBTHEME | 1m | 15 | 53% | +10.0% | +1.1% | +2.7% | 33% | +7.2% | 53% |
+| NEW_AI_SUBTHEME | 1q | 14 | 64% | +15.7% | +1.3% | -2.1% | 43% | +6.2% | 50% |
+| NEW_AI_SUBTHEME | 6m | 14 | 71% | +28.4% | +29.5% | -6.0% | 29% | +11.5% | 71% |
+| NEW_AI_SUBTHEME | 1y | 14 | 79% | +46.4% | +28.8% | -11.3% | 29% | +16.5% | 64% |
+| NEW_AI_SUBTHEME | 2y | 10 | 80% | +110.3% | +59.8% | +12.2% | 40% | +65.5% | 60% |
+| AI_SUBTHEME_ACTIVE_CROSS_2PCT | 1m | 31 | 52% | +6.0% | +1.1% | +2.6% | 42% | +5.3% | 55% |
+| AI_SUBTHEME_ACTIVE_CROSS_2PCT | 1q | 29 | 66% | +12.1% | +13.2% | +0.3% | 52% | +7.1% | 59% |
+| AI_SUBTHEME_ACTIVE_CROSS_2PCT | 6m | 28 | 68% | +33.7% | +18.7% | +7.9% | 29% | +23.3% | 64% |
+| AI_SUBTHEME_ACTIVE_CROSS_2PCT | 1y | 25 | 64% | +44.8% | +19.1% | -2.4% | 28% | +25.8% | 52% |
+| AI_SUBTHEME_ACTIVE_CROSS_2PCT | 2y | 17 | 65% | +84.8% | +59.3% | -9.3% | 29% | +48.3% | 59% |
+| AI_SUBTHEME_ACTIVE_CROSS_4PCT | 1m | 18 | 56% | +4.9% | +4.0% | +1.1% | 44% | +3.5% | 50% |
+| AI_SUBTHEME_ACTIVE_CROSS_4PCT | 1q | 18 | 61% | +17.6% | +17.1% | +6.9% | 50% | +12.4% | 61% |
+| AI_SUBTHEME_ACTIVE_CROSS_4PCT | 6m | 17 | 65% | +23.9% | +15.1% | +5.7% | 41% | +14.5% | 59% |
+| AI_SUBTHEME_ACTIVE_CROSS_4PCT | 1y | 16 | 75% | +31.9% | +26.6% | -2.9% | 44% | +15.1% | 69% |
+| AI_SUBTHEME_ACTIVE_CROSS_4PCT | 2y | 13 | 77% | +117.9% | +70.0% | +30.9% | 46% | +85.0% | 69% |
+| AI_BASKET_RAMP | 1m | 11 | 64% | +5.3% | +3.0% | +1.2% | 55% | +4.1% | 64% |
+| AI_BASKET_RAMP | 1q | 11 | 82% | +15.5% | +9.1% | +3.1% | 55% | +10.2% | 64% |
+| AI_BASKET_RAMP | 6m | 10 | 90% | +24.9% | +29.2% | +3.7% | 60% | +15.9% | 70% |
+| AI_BASKET_RAMP | 1y | 10 | 80% | +66.1% | +53.2% | +19.0% | 60% | +47.6% | 70% |
+| AI_BASKET_RAMP | 2y | 8 | 75% | +135.9% | +75.8% | +47.4% | 38% | +98.2% | 62% |
+| ALL_TRIGGERS | 1m | 112 | 52% | +5.8% | +1.1% | +2.0% | 44% | +4.8% | 51% |
+| ALL_TRIGGERS | 1q | 109 | 68% | +14.1% | +9.6% | +1.8% | 50% | +8.6% | 61% |
+| ALL_TRIGGERS | 6m | 106 | 71% | +30.0% | +23.1% | +5.0% | 38% | +19.2% | 64% |
+| ALL_TRIGGERS | 1y | 99 | 71% | +42.5% | +25.3% | -4.7% | 34% | +22.4% | 60% |
+| ALL_TRIGGERS | 2y | 70 | 74% | +110.7% | +62.5% | +15.0% | 36% | +72.4% | 63% |

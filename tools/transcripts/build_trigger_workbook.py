@@ -25,8 +25,10 @@ from openpyxl.worksheet.worksheet import Worksheet  # type: ignore[import-untype
 
 try:  # runs both as a direct script and under `-m`
     from . import generate_13f_triggers as trig
+    from . import trigger_forward_returns as fr
 except ImportError:
     import generate_13f_triggers as trig  # type: ignore[import-not-found, no-redef]
+    import trigger_forward_returns as fr  # type: ignore[import-not-found, no-redef]
 
 ANALYSIS_DIR = trig.ANALYSIS_DIR
 RECLASS_PATH = ANALYSIS_DIR / "ai_basket_reclassification.json"
@@ -1326,6 +1328,76 @@ def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> 
 
 
 # --------------------------------------------------------------------------
+# Performance — forward-returns read on the corrected trigger set
+# --------------------------------------------------------------------------
+
+PERF_HEADERS = [
+    "trigger", "horizon", "n", "win_rate", "avg_return", "median_return",
+    "excess_vs_SMH", "beat_SMH", "excess_vs_SPY", "beat_SPY",
+]
+PERF_WIDTHS: list[float] = [30, 8, 5, 9, 10, 11, 12, 9, 12, 9]
+
+
+def _perf_num(cell: Any, val: str) -> None:
+    """Green/red shade a signed percent string like '+4.4%' / '-1.0%'."""
+    if val.startswith("+") and val not in ("+0.0%",):
+        cell.fill = GREEN
+    elif val.startswith("-"):
+        cell.fill = RED
+
+
+def sheet_performance(ws: Worksheet, rows: list[dict[str, Any]], last: str) -> None:
+    """Does the corrected signal make money? Filing-anchored buy-and-hold returns at
+    1m/1q/6m/1y/2y vs SMH and SPY, per trigger type. Same ex-SPCX event set as the
+    trigger sheets; equal-weight baskets; an event counts only once its window is fully
+    observed. Right-skewed — read median alongside average."""
+    ws.cell(1, 1, "Does the signal make money? — forward returns on the corrected "
+            "(ex-SPCX) trigger set").font = TITLE_FONT
+    ws.cell(2, 1, f"Filing-date-anchored, buy-and-hold, equal-weight baskets · prices through "
+            f"{last} · excess = signal − benchmark over the same window").font = NOTE_FONT
+    for i, w in enumerate(PERF_WIDTHS, 1):
+        ws.column_dimensions[get_column_letter(i)].width = w
+    r = 4
+    for c, h in enumerate(PERF_HEADERS, 1):
+        cell = ws.cell(r, c, h)
+        cell.font = HEADER_FONT
+        cell.alignment = CENTER
+    ws.freeze_panes = "A5"
+    r += 1
+    for row in rows:
+        band = row["trigger_type"] == "ALL_TRIGGERS"
+        if row["horizon"] == "1m":  # separate each trigger block
+            r += 1
+        ws.cell(r, 1, row["trigger_type"])
+        ws.cell(r, 2, row["horizon"])
+        ws.cell(r, 3, row["n"])
+        for col, key in ((4, "win_rate"), (5, "avg_return"), (6, "median_return"),
+                         (7, "avg_excess_smh"), (8, "beat_smh_rate"),
+                         (9, "avg_excess_spy"), (10, "beat_spy_rate")):
+            cell = ws.cell(r, col, row[key])
+            cell.alignment = CENTER
+            if key in ("avg_return", "median_return", "avg_excess_smh", "avg_excess_spy"):
+                _perf_num(cell, row[key])
+            if band:
+                cell.font = HEADER_FONT
+        if band:
+            ws.cell(r, 1).font = HEADER_FONT
+            ws.cell(r, 2).font = HEADER_FONT
+            ws.cell(r, 3).font = HEADER_FONT
+        r += 1
+    r += 1
+    for note in [
+        "Tradeable basket: NewPosition=named ticker; NewSubtheme=entering tickers; "
+        "Cross=all subtheme tickers; Ramp=narrow AI picks-and-shovels basket held that filing.",
+        "Read: beats SPY at every horizon; vs SMH the edge is thin (beat-rate < 50% at most "
+        "horizons) — largely AI-beta. AI_BASKET_RAMP (deliberate deployment) is the only trigger "
+        "that beats SMH consistently. Single-regime (2020–26 AI bull); avg ≫ median (right-skew).",
+    ]:
+        ws.cell(r, 1, note).font = NOTE_FONT
+        r += 1
+
+
+# --------------------------------------------------------------------------
 # Main
 # --------------------------------------------------------------------------
 
@@ -1348,6 +1420,8 @@ def main() -> int:
     leo = build_leo_context()
     write_baker_decomp_csv(baker, ANALYSIS_DIR / "atreides_q2_2026_mtm_vs_trading.csv")
     sheet_summary(wb.create_sheet("Summary"), baker, leo)
+    perf_rows, perf_last = fr.compute_stats()
+    sheet_performance(wb.create_sheet("Performance"), perf_rows, perf_last)
     sheet_baker_holdings(wb.create_sheet("Baker Holdings"), baker)
     sheet_baker_ai_basket(wb.create_sheet("Baker AI Basket"), baker)
     sheet_baker_baskets(wb.create_sheet("Baker Baskets"), baker)

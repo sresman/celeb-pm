@@ -246,7 +246,7 @@
     ],
     "source": "OBVIOUS_UNIVERSE",
     "direction": "LONG",
-    "note": "CORRECTED: Broad AI bullish thesis in 2021. SMH is the right basket \u2014 no specific beneficiary named.",
+    "note": "CORRECTED: Broad AI bullish thesis in 2021. SMH is the right basket — no specific beneficiary named.",
     "keys": [
       "scaling law",
       "pre-training.*scale",
@@ -263,7 +263,7 @@
     ],
     "source": "OBVIOUS_UNIVERSE",
     "direction": "LONG",
-    "note": "CORRECTED: Added AMD \u2014 MI300X positioned as inference alternative through 2024-2025.",
+    "note": "CORRECTED: Added AMD — MI300X positioned as inference alternative through 2024-2025.",
     "keys": [
       "reasoning model",
       "test-time compute",
@@ -284,7 +284,7 @@
     ],
     "source": "CONSTRUCTED",
     "direction": "SHORT",
-    "note": "CORRECTED: HUBS excluded \u2014 Baker was long it. Broader keywords to capture SaaS variants.",
+    "note": "CORRECTED: HUBS excluded — Baker was long it. Broader keywords to capture SaaS variants.",
     "keys": [
       "saas.*disrupt",
       "saas.*obsolete",
@@ -394,7 +394,8 @@
       "humanoid.*race",
       "robot.*brain",
       "factory robot",
-      "humanoid robot"
+      "humanoid robot",
+      "robotics will be a major real-world deployment"
     ]
   },
   "AI networking (Ethernet/InfiniBand)": {
@@ -438,7 +439,7 @@
     ],
     "source": "OBVIOUS_UNIVERSE",
     "direction": "MIXED",
-    "note": "CORRECTED: Primary impact is NVDA China revenue risk. Semcap equipment names dropped \u2014 they are victims, not a clean long or short.",
+    "note": "CORRECTED: Primary impact is NVDA China revenue risk. Semcap equipment names dropped — they are victims, not a clean long or short.",
     "keys": [
       "distill",
       "china.*ai",
@@ -495,7 +496,7 @@
     ],
     "source": "BAKER_NAMED",
     "direction": "LONG",
-    "note": "Direction shifts over time (TPU bull 2024 \u2192 TPU losing ground 2026).",
+    "note": "Direction shifts over time (TPU bull 2024 → TPU losing ground 2026).",
     "keys": [
       "\\btpu",
       "google.*cost leader",
@@ -576,7 +577,8 @@
       "tokens.*per.*watt",
       "nvidia.*extremely difficult",
       "nvidia.*dominant.*open.*source",
-      "nvidia.*frontier.*cloud"
+      "nvidia.*frontier.*cloud",
+      "500b ai compute financing"
     ]
   },
   "Target / omnichannel retail": {
@@ -643,7 +645,8 @@
       "colossus.*build",
       "xai.*data",
       "xai.*release.*blackwell",
-      "xai.*frontier"
+      "xai.*frontier",
+      "grok 4.7"
     ]
   },
   "Anthropic valuation / efficiency": {
@@ -659,7 +662,10 @@
       "anthropic.*capital.*efficient",
       "anthropic.*4x",
       "anthropic.*burning",
-      "anthropic.*extraordinary"
+      "anthropic.*extraordinary",
+      "ipo price is likely sandbagged",
+      "anthropic is already profitable",
+      "anthropic s1"
     ]
   },
   "Broad AI bullish / early innings": {
@@ -684,7 +690,8 @@
       "semiconductor.*secular demand",
       "semiconductor.*positive demand supercycle",
       "silicon.*intensive",
-      "semiconductor.*intensity"
+      "semiconductor.*intensity",
+      "demand tam for tokens"
     ]
   },
   "AI bubble not happening": {
@@ -812,7 +819,7 @@
     ],
     "source": "BAKER_NAMED",
     "direction": "SHORT",
-    "note": "Baker named MSTR explicitly. Bearish \u2014 debt-funded BTC accumulation has structural ceiling.",
+    "note": "Baker named MSTR explicitly. Bearish — debt-funded BTC accumulation has structural ceiling.",
     "keys": [
       "microstrategy.*debt",
       "microstrategy.*ceiling",
@@ -847,7 +854,8 @@
       "prefill.*inference",
       "gpu.*useful life.*7",
       "gpu.*useful life.*10",
-      "gpu.*useful life.*15"
+      "gpu.*useful life.*15",
+      "useful life than bears assume"
     ]
   },
   "Meta AI transformation": {
@@ -872,7 +880,7 @@
     ],
     "source": "BAKER_NAMED",
     "direction": "SHORT",
-    "note": "CORRECTED direction: Baker was bearish MSFT \u2014 cluster smaller than xAI, capex flinch, OpenAI talent loss. Direction SHORT so MSFT decline = thesis working.",
+    "note": "CORRECTED direction: Baker was bearish MSFT — cluster smaller than xAI, capex flinch, OpenAI talent loss. Direction SHORT so MSFT decline = thesis working.",
     "keys": [
       "microsoft.*flinch",
       "microsoft.*cluster.*smaller",
@@ -891,7 +899,8 @@
       "coding.*ultimate",
       "human language.*programming",
       "code generation.*killer",
-      "coding.*dominant.*high.*value"
+      "coding.*dominant.*high.*value",
+      "cursor has accumulated enough coding tokens"
     ]
   },
   "Inflation macro framework": {
@@ -942,7 +951,9 @@
     "keys": [
       "open.*source.*bullish.*compute",
       "open.*source.*bullish.*hardware",
-      "open.*source.*not bearish"
+      "open.*source.*not bearish",
+      "open-source models are a strategic gift",
+      "frontier tokens more valuable"
     ]
   },
   "AI destroying application layer value": {
@@ -1100,5 +1111,55 @@
       "crypto exchange"
     ],
     "exclude": []
+  },
+  "Merchant silicon alternative (Broadcom/AMD)": {
+    "tickers": [
+      "AVGO",
+      "AMD"
+    ],
+    "source": "MANUAL_2026AUG_SWEEP",
+    "direction": "LONG",
+    "note": "Baker (a16z 2026-07-14): AVGO+AMD going to market together as a combined merchant-silicon alternative to Nvidia's full stack.",
+    "keys": [
+      "going to market together as a combined alternative"
+    ]
+  },
+  "Google AI distribution moat": {
+    "tickers": [
+      "GOOGL"
+    ],
+    "source": "MANUAL_2026AUG_SWEEP",
+    "direction": "LONG",
+    "note": "Baker (a16z 2026-07-14): Google's consumer distribution (Search AI Overviews, Gemini-in-Chrome) as an underappreciated AI moat.",
+    "keys": [
+      "largest ai traffic destination",
+      "gemini natively into chrome"
+    ]
+  },
+  "Legacy software bottom / PE take-privates": {
+    "tickers": [
+      "WDAY"
+    ],
+    "source": "MANUAL_2026AUG_SWEEP",
+    "direction": "LONG",
+    "note": "Baker (All-In 2026-08-14): open-source AI a tailwind for legacy software; PE bid for Workday signals software has bottomed.",
+    "keys": [
+      "pe bid for workday",
+      "software has bottomed"
+    ]
+  },
+  "Datacenter power equipment": {
+    "tickers": [
+      "GEV",
+      "CAT",
+      "CMI",
+      "SIEGY"
+    ],
+    "source": "MANUAL_2026AUG_SWEEP",
+    "direction": "LONG",
+    "note": "Baker (All-In 2026-08-14): AI datacenter energy buildout solvable via turbine capacity/natural gas — turbine & genset makers.",
+    "keys": [
+      "turbine capacity, natural gas"
+    ]
   }
 }
