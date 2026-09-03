@@ -71,7 +71,8 @@ SA_BASKETS_PATH = ANALYSIS_DIR / "sa_theme_baskets.json"
 
 # Positions that entered the 13F via an IPO (pre-existing private holding becoming a
 # reportable security), NOT via market purchase. Excluded from net-buying/MTM totals.
-IPO_RECLASS_TICKERS = {"SPCX"}
+# SPCX (SpaceX) + CBRS (Cerebras): 2026 IPOs of pre-existing crossover holdings.
+IPO_RECLASS_TICKERS = {"SPCX", "CBRS"}
 
 
 def ex_reclass_scale_by_fd() -> dict[str, float]:
@@ -160,6 +161,8 @@ def build_ramp_holdings() -> dict[str, list[tuple[str, float]]]:
     for r in trig._read_csv(views / "position_lifecycles.csv"):
         if r["security_type"] != "COMMON" or r["change_type"] == "EXIT":
             continue
+        if (r.get("ticker") or "") in IPO_RECLASS_TICKERS:
+            continue  # IPO reclassifications are not thesis deployment
         is_ai, bucket = trig.resolve_ai(reclass, r["ticker"], r["filing_date"], r["theme"])
         if is_ai and bucket not in RAMP_EXCLUDED_BUCKETS:
             holdings.setdefault(r["filing_date"], []).append(
@@ -646,13 +649,13 @@ def build_baker_context() -> dict[str, Any]:
             "is_ai": is_ai, "ai_bucket": bucket, "basket": prim,
         })
 
-    spcx = next((h for h in holdings if h["ticker"] in IPO_RECLASS_TICKERS), None)
+    reclass_holdings = [h for h in holdings if h["is_reclass"]]
     common_total = sum(h["value"] for h in holdings)
     opt_notional = sum(o["value"] for o in options)
     return {
         "holdings": holdings, "options": options, "exits": exits,
         "theme_idx": theme_idx, "reclass": reclass, "overlay": overlay,
-        "spcx_reclass_value": spcx["value"] if spcx else 0.0,
+        "reclass_value": sum(h["value"] for h in reclass_holdings),  # SPCX + CBRS
         "equity_value": common_total, "options_notional": opt_notional,
         "total_reported": common_total + opt_notional,
     }
@@ -838,7 +841,9 @@ def sheet_baker_ai_basket(ws: Worksheet, ctx: dict[str, Any]) -> None:
                 wt += (trig._f(lr["weight_pct"]) or 0.0) * scale.get(lr["filing_date"], 1.0)
         hist[p] = wt
 
-    ai = [h for h in ctx["holdings"] if h["is_ai"]]
+    # Exclude IPO reclassifications (CBRS) — they carry a memo weight on a different
+    # denominator and are not thesis AI bets; the trailing history already excludes them.
+    ai = [h for h in ctx["holdings"] if h["is_ai"] and not h["is_reclass"]]
     ai.sort(key=lambda r: r["value"], reverse=True)
     ai_value = sum(h["value"] for h in ai)
     ai_wt = sum(h["weight_eo"] or 0.0 for h in ai)
@@ -954,7 +959,7 @@ def sheet_baker_baskets(ws: Worksheet, ctx: dict[str, Any]) -> None:
         r += 1
     # Memo: IPO-reclass positions, shown as % of TOTAL equity, excluded from the above.
     for m in memo:
-        cell = ws.cell(r, 1, f"[memo] {m['basket']} — SPCX (IPO reclass)")
+        cell = ws.cell(r, 1, f"[memo] {m['basket']} — {m['ticker']} (IPO reclass)")
         cell.fill = CALLOUT_FILL
         c2 = ws.cell(r, 2, m["wt_q2"] / 100.0)
         c2.number_format = ALLOC_FMT
@@ -1259,9 +1264,9 @@ def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> 
     b_new = [h for h in bh if h["change_type"] == "NEW" and not h["is_reclass"]]
     b_net_trade_ex = sum(h["trade"] or 0.0 for h in bh) + sum(e["trade"] for e in baker["exits"])
     b_net_mtm = sum(h["mtm"] or 0.0 for h in bh)
-    spcx = next((h for h in bh if h["is_reclass"]), None)
-    spcx_value = baker["spcx_reclass_value"]
-    b_net_trade_asfiled = b_net_trade_ex + spcx_value  # add SPCX back as if it were a buy
+    reclass_rows = sorted((h for h in bh if h["is_reclass"]), key=lambda h: h["value"], reverse=True)
+    reclass_value = baker["reclass_value"]  # SPCX + CBRS
+    b_net_trade_asfiled = b_net_trade_ex + reclass_value  # add reclassifications back as if bought
     b_ai_wt = sum(h["weight_eo"] or 0.0 for h in bh if h["is_ai"])
 
     # Leopold aggregates
@@ -1303,22 +1308,22 @@ def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> 
     num(12, "# NEW (genuine) / # EXIT", f"{len(b_new)} / {len(baker['exits'])}",
         f"{len(l_new)} / {len(l_exit)}")
 
-    # --- SpaceX IPO callout (Baker) ---
+    # --- IPO-reclassification callout (Baker) ---
     r = 14
-    ws.cell(r, 1, "⚠ SpaceX (SPCX) IPO disclosure — read before the ramp number").font = SECTION_FONT
+    names = " + ".join(f"{h['ticker']} ${h['value']/1e9:,.2f}B" for h in reclass_rows)
+    ws.cell(r, 1, "⚠ IPO-reclassification disclosure — read before the ramp number").font = SECTION_FONT
     for c in range(1, 5):
         ws.cell(r, c).fill = CALLOUT_FILL
     lines = [
-        f"SPCX is a ${spcx_value/1e9:,.2f}B position "
-        f"({(spcx['weight_rep'] if spcx else 0):.1f}% of the book) labeled IPO_RECLASSIFICATION — it "
-        "entered the 13F because SpaceX IPO'd in Q2 2026, converting a pre-existing private holding",
-        "into a reportable security. It was NOT freshly bought in the market, so it is excluded from "
-        "every net-buying total on these sheets (Holdings, Baskets, Flows).",
-        f"Net trading AS-FILED (SPCX counted as a buy):   ${b_net_trade_asfiled/1e9:,.2f}B",
-        f"Net trading EX-SpaceX (true market flow):   ${b_net_trade_ex/1e9:,.2f}B  "
-        f"→ {'net BUYER' if b_net_trade_ex > 0 else 'net SELLER'} once SPCX is stripped.",
-        "Ex-SpaceX, the AI book was self-funded (sold Astera −$1.04B to fund Cerebras/CoreWeave/"
-        "Amphenol); genuinely new capital went to SPCX + the QQQ hedge, not the AI names.",
+        f"{len(reclass_rows)} positions labeled IPO_RECLASSIFICATION ({names}) entered the 13F at "
+        "their 2026 IPOs — pre-existing private crossover holdings becoming reportable, NOT market",
+        f"purchases (${reclass_value/1e9:,.2f}B combined). They are excluded from every net-buying "
+        "total and from the thesis-book denominator on these sheets (Holdings, Baskets, Flows).",
+        f"Net trading AS-FILED (reclassifications counted as buys):   ${b_net_trade_asfiled/1e9:,.2f}B",
+        f"Net trading EX-RECLASS (true market flow):   ${b_net_trade_ex/1e9:,.2f}B  "
+        f"→ net {'BUYER' if b_net_trade_ex > 0 else 'SELLER'} once SPCX + CBRS are stripped.",
+        "The AI book was self-funded (sold Astera −$1.04B to fund CoreWeave/Amphenol/etc.); genuinely "
+        "new market capital went to the QQQ hedge, not the AI names.",
     ]
     for i, ln in enumerate(lines, 1):
         cell = ws.cell(r + i, 1, ln)

@@ -132,3 +132,20 @@ Tab order: `Summary` → Baker context (Holdings, AI Basket, Baskets, Flows, Opt
 - Workbook is now **17 sheets**: Summary · Performance · 6 Baker context · 3 Leo context · 6 trigger
   sheets — all on the ex-SPCX basis, current through Q2 2026. Trigger sheets carry the corrected event
   counts (NewPosition 39, Cross4pct 18, Cross2pct 31) with filing-to-filing SMH returns.
+
+## Iteration 6 (add CBRS to IPO_RECLASS_TICKERS)
+
+- `IPO_RECLASS_TICKERS = {"SPCX", "CBRS"}` in all three modules. CBRS (Cerebras) is the same case as
+  SPCX: a pre-IPO crossover holding that became 13(f)-reportable at its 2026 IPO, not a market buy.
+- Same treatment: change_type IPO_RECLASSIFICATION, MTM/Trading blank, excluded from the ex-reclass
+  denominator (now ex-SPCX **and** ex-CBRS = $5.79B), from net-buying totals, and from the AI-basket
+  roll-up; shown as a `[memo]` row (% of total equity). `narrow()` in compute_net_buying now excludes
+  reclass tickers so CBRS's buying isn't counted; `build_ramp_holdings` (both copies) skips them.
+  Summary `reclass_value` is the SUM of reclass positions and the callout is generalized to both names.
+- **Net deployment shifted −$0.67B → −$1.35B** (removing CBRS's +$687M "buy" deepens the net selling);
+  as-filed $4.00B; combined carve-out $5.36B. AI-basket weight recomputed to 71.4% of the thesis book.
+- Triggers: NEW_AI_POSITION_2PCT 39→**38** (CBRS event dropped); clean CSV = 113 events. **Forward
+  returns unchanged** — CBRS's only event (Q2 2026 filing) has no observed forward window yet, so the
+  historical backtest is identical; the correction is go-forward.
+- Minor known-issue: `IPO_RECLASS_TICKERS` is duplicated across three modules (build_13f_analysis,
+  build_trigger_workbook, trigger_forward_returns). Fine for now; centralize if a 4th consumer appears.

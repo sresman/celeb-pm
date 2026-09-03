@@ -75,3 +75,36 @@ Full per-decision detail in `docs/implementation_notes/view_position_lifecycle_i
 - **⚠️ TO PERSIST SMH into stored `returns.json` + view CSVs, re-run the full pipeline:**
   `.venv/bin/python -m celebpm.pipeline 0001777813 --data-root data` (SMH.US already price-cached). This
   change adds only the computation; stored per-investor artifacts are not auto-refreshed.
+
+## 2026-09-03 — Trigger-analysis workbook: ex-reclass denominator + forward returns (branch `trigger-denominator-ex-spcx`)
+
+Analysis layer only (`tools/transcripts/`, `analysis/`); the `src/celebpm` pipeline is untouched.
+
+- **DECISION — weight all AI-signal triggers + context sheets on thesis-investable equity (COMMON ex
+  IPO-reclassification), not total book.** WHY: SpaceX (SPCX) entered the 13F via its Q2-2026 IPO at ~33% of
+  total book, and Cerebras (CBRS) likewise — both pre-existing private crossover holdings becoming
+  reportable, NOT market purchases. On a total-book denominator they compressed every AI subtheme's weight
+  below the fixed 4%/2% cross thresholds, and it worsens each quarter as their marks rise. Ex-reclass
+  weights sum to 100% per period and thresholds behave as originally calibrated. `IPO_RECLASS_TICKERS =
+  {SPCX, CBRS}`.
+- **Reclass treatment:** change_type `IPO_RECLASSIFICATION`; MTM/Trading = None (excluded from every
+  net-buying/MTM total and from `net_buying_pct`'s denominator + `narrow()` numerator); dropped from the
+  trigger universe and the ramp/AI baskets; shown as `[memo]` rows (% of total equity) on the context sheets.
+- **Basis is consistent across the whole workbook** — triggers, context sheets (Holdings Q1/Q2/Δ, AI-basket
+  roll-up + trailing history, Baskets theme-allocation summary, Flows, Summary) all use the same ex-reclass
+  denominator; verified CBRS = 10.61%→memo, Σ thesis = 100%.
+- **DECISION — forward-returns performance is filing-anchored buy-and-hold, EW baskets, at 1m/1q/6m/1y/2y vs
+  SMH and SPY** (`trigger_forward_returns.py`, `compute_stats()` reused by the workbook's Performance sheet).
+  An event counts for a horizon only once its window is fully observed (prices through the Q2 filing).
+  Tradeable basket per trigger: NewPosition=named ticker; NewSubtheme=entering tickers; Cross=all subtheme
+  tickers; Ramp=narrow AI picks-and-shovels basket.
+- **Finding (honest read):** signal beats SPY at every horizon but is ~in line with SMH (largely AI-beta);
+  AI_BASKET_RAMP (deliberate deployment) is the only trigger that beats SMH consistently. Single regime
+  (2020–26 AI bull), right-skewed (avg ≫ median). Ex-reclass net deployment = −$1.35B (net seller) vs $4.00B
+  as-filed.
+- **Denominator is analysis-layer config** (module-level `IPO_RECLASS_TICKERS`), duplicated across three
+  tool modules — acceptable; centralize if a 4th consumer appears.
+- **Committed shared inputs** the corrected workbook depends on (Q2-current): `ai_basket_reclassification.json`,
+  `theme_baskets_v3.json`, `filing_to_filing_returns_universal.csv`, `thesis_timeline_v2_flat.json`,
+  `sa_q2_2026_mtm_vs_trading.csv`. These also carry the two-podcast-run changes; folded in so the artifact is
+  reproducible. Broader two-podcast corpus (audits/extractions/transcripts/manifests) left uncommitted.

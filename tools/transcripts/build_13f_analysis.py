@@ -62,7 +62,9 @@ THRESHOLDS = [2.0, 4.0]
 # so a single mega-reclassification (SpaceX = ~33% of total book) does not compress every
 # AI subtheme's weight below the fixed thresholds — and worsen as its mark rises. All
 # weights below are therefore % of thesis-investable equity (COMMON, ex-reclass).
-IPO_RECLASS_TICKERS = {"SPCX"}
+# SPCX (SpaceX) + CBRS (Cerebras): pre-IPO crossover holdings that became 13(f)-reportable
+# at their 2026 IPOs, not market purchases.
+IPO_RECLASS_TICKERS = {"SPCX", "CBRS"}
 
 
 def ex_reclass_denoms(positions: list[dict[str, Any]]) -> tuple[dict[str, float], dict[str, float]]:
@@ -303,8 +305,8 @@ def compute_net_buying(
         rec[2] = r["ticker"]
 
     def narrow(ticker: Any, fd: str) -> bool:
-        if not ticker:
-            return False
+        if not ticker or ticker in IPO_RECLASS_TICKERS:
+            return False  # IPO reclassifications are not deployment; exclude from net buying
         is_ai, bucket = trig.resolve_ai(reclass, ticker, fd, "")
         return bool(is_ai) and bucket not in RAMP_EXCLUDED_BUCKETS
 

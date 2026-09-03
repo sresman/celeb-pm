@@ -39,6 +39,7 @@ except ImportError:
 ANALYSIS_DIR = trig.ANALYSIS_DIR
 RECLASS_PATH = ANALYSIS_DIR / "ai_basket_reclassification.json"
 RAMP_EXCLUDED_BUCKETS = {"AI/Hyperscaler", "AI/EV"}  # narrow picks-and-shovels basket
+IPO_RECLASS_TICKERS = {"SPCX", "CBRS"}  # not thesis deployment; kept out of signal baskets
 PRICE_CACHE_DIR = ANALYSIS_DIR / "eod_prices"
 TRIGGERS_IN = ANALYSIS_DIR / "13f_signal_triggers_clean.csv"
 OUT_CSV = ANALYSIS_DIR / "trigger_forward_returns_ex_spcx.csv"
@@ -122,6 +123,8 @@ def build_ramp_holdings() -> dict[str, list[str]]:
     holdings: dict[str, list[str]] = {}
     for r in trig._read_csv(trig.find_views_dir() / "position_lifecycles.csv"):
         if r["security_type"] != "COMMON" or r["change_type"] == "EXIT":
+            continue
+        if (r.get("ticker") or "") in IPO_RECLASS_TICKERS:
             continue
         is_ai, bucket = trig.resolve_ai(reclass, r["ticker"], r["filing_date"], r["theme"])
         if is_ai and bucket not in RAMP_EXCLUDED_BUCKETS:
