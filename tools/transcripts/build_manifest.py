@@ -20,7 +20,15 @@ from .common import relpath
 MANIFEST_GLOB = "_manifest*.json"
 
 # Columns surfaced in the master manifest.
-FIELDS = ["date", "source", "label", "host", "topic", "filepath", "quality", "status", "url"]
+# subject_role added 2026-09-08: the attribution audit needs the subject's role
+# on each recording, and the manifest is the only place that covers ALL 48
+# appearances — targets.py splits them across five lists (YOUTUBE_VIDEOS,
+# RSS_TARGETS, COLOSSUS_EPISODES, TEXT_TARGETS, WEB_TARGETS + CNBC_TARGET), and
+# three appearances (sohn_australia_2021_coinbase, cnbc_squawk_spacex_debut_2026jun,
+# cnbc_spacex_drawdown_2026jul) are acquired outside those lists entirely.
+# Reading role/host from the manifest instead of targets.py removes a whole class
+# of "which list did I forget to check" bug.
+FIELDS = ["date", "source", "label", "host", "topic", "filepath", "quality", "status", "url", "subject_role"]
 
 
 def _load_step_rows() -> list[dict[str, Any]]:

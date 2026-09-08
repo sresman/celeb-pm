@@ -160,6 +160,16 @@ def _build_v2_entry(row: dict[str, Any], audit: dict[str, Any]) -> dict[str, Any
         "time_horizon": t.get("time_horizon"),
         "contrarian": t.get("contrarian"),
         "quote_fragment": t.get("quote_fragment"),
+        # Attribution, carried through from extraction (2026-09-08). The timeline
+        # is built from an explicit field list, so a new extraction field is
+        # SILENTLY DROPPED unless it is added here — which is what happened to
+        # speaker_attribution on its first pass: the extractor emitted it, the
+        # timeline discarded it, and no downstream consumer could have filtered
+        # on it even if it had wanted to. Defaults describe the pre-rewrite
+        # corpus honestly: unaudited theses are "indeterminate", not "subject".
+        "speaker_attribution": t.get("speaker_attribution", "indeterminate"),
+        "speaker_name": t.get("speaker_name", ""),
+        "attribution_evidence": t.get("attribution_evidence", ""),
         "tickers_named_original": t.get("tickers_named", []),
         "tickers_direct": tickers_direct,
         "tickers_subject": tickers_subject,

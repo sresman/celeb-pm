@@ -19,12 +19,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import time
 from pathlib import Path
 from typing import Any
 
 import anthropic
 import dotenv
+
+
 
 from . import targets
 from .common import relpath
@@ -37,6 +40,8 @@ MAX_TRANSCRIPT_CHARS = 150_000
 SLEEP_BETWEEN = 2.0  # seconds, polite pacing on top of SDK auto-retry
 INPUT_COST_PER_MTOK = 3.0
 OUTPUT_COST_PER_MTOK = 15.0
+
+_log = logging.getLogger(__name__)
 
 ANALYSIS_DIR = targets.REPO_ROOT / "analysis"
 EXTRACTIONS_DIR = ANALYSIS_DIR / "thesis_extractions"
@@ -155,6 +160,23 @@ def extract_one(
     out_path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
     row["status"] = "ok"
     row["counts"] = _counts(data)
+
+    # Low-yield guard. A prompt revision on 2026-09-08 caused 7 of 10 episodes to
+    # return a SINGLE thesis with status "ok" and no truncation — the model had
+    # quietly reprioritised attribution over coverage. Nothing in the pipeline
+    # noticed, because a well-formed one-thesis response is valid. Dense
+    # investment talk yields roughly one thesis per 4-6k transcript characters,
+    # so flag anything under a conservative floor rather than letting it pass.
+    n_theses = len(data.get("theses", []))
+    floor = max(3, len(body) // 12_000)
+    if n_theses < floor:
+        row["status"] = "low_yield"
+        row["low_yield"] = f"{n_theses} theses from {len(body):,} chars (floor {floor})"
+        _log.warning(
+            "LOW YIELD: %s returned %d theses from %d chars (expected >= %d) — "
+            "check the prompt before trusting this output",
+            row.get("label", "?"), n_theses, len(body), floor,
+        )
     if resp.stop_reason == "max_tokens":
         row.setdefault("warnings", []).append("hit max_tokens even after retry")
     return row
