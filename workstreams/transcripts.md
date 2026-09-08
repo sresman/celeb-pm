@@ -16,6 +16,51 @@ Branch: **`gavin-baker-transcript-corpus`** (not yet merged to main).
 
 ---
 
+## Current State (as of 2026-09-08) — ATTRIBUTION AUDIT; CORPUS 614 THESES
+
+**Found: the corpus attributed other speakers' claims to Baker.** `extract_theses`
+reads an undifferentiated transcript (YouTube auto-captions mark speaker changes
+with `>>` but never name anyone; 19 of 47 transcripts have no markers at all), the
+prompt opened *"a transcript of Gavin Baker"* and asked for *"Baker's
+alpha-relevant commentary"*, and the thesis schema had no speaker field. Nothing
+in the pipeline could catch a co-host's claim being booked as Baker's.
+
+**New tool: `tools/transcripts/audit_attribution.py`** — a non-destructive second
+pass that attributes each thesis to `subject` / `other` / `indeterminate` from a
+focused transcript window, writing to `analysis/attribution_audit/` only. Measured
+over all 47 appearances (~$1.32): **73% of named-ticker slots attribute to Baker,
+11% to another speaker, 16% indeterminate**; on panel episodes contamination ran
+44%. Confirmed case — All-In 2026-08-14 T14, `AMZN`, *"I have a very big position
+in Amazon and I keep increasing it every year"* → **Jason Calacanis**, which
+passes a naive holdings check because Atreides does hold AMZN.
+
+**Two appearances removed from the corpus** (dated comments in `targets.py`,
+attribution records preserved outside the audit tree):
+- Limitless/Bankless 2026-05-28 — **Baker is not on it**; two hosts discussing him
+  in the third person. 14 theses / 19 ticker slots.
+- Heller House 2026-06-08 — **Baker is the interviewer**; 96% of words are SpaceX
+  CFO Bret Johnsen's, questions span turn 2..83 of 96. 11 theses. NOTE: the
+  operator had already caught this in the 6-new task via 15 `cluster_overrides`
+  (2026-07-22) that null its themes — those are now orphaned on a dead date and
+  deliberately left as a record.
+
+**Metadata repaired.** `host` was wrong or absent across the corpus (All-In
+2026-08-14 listed Chamath and Friedberg, who are never mentioned once in the
+transcript). Rosters re-derived from transcript openings; every appearance now
+carries `host` + `subject_role` (30 guest / 16 panelist / 3 secondary / 1
+unknown), sourced via `metadata_by_label()` across **all five** target lists plus
+`CNBC_TARGET` plus a new `SUPPLEMENTARY_METADATA` block for the three appearances
+acquired outside them.
+
+**Corpus: 48 appearances, 614 theses, 705 named-ticker slots**, timeline coherent
+with extractions. `mypy` clean (45 files).
+
+**NOT done — returns are HELD.** The two-of-two audit passes, the `audit_theses`
+rewiring to read attribution from the audit, the `subject`-only filtering layer,
+and the aggregate before/after comparison. v10 is NOT regenerated.
+
+---
+
 ## Current State (as of 2026-08-10)
 
 > Branch **`main`** (committed + pushed: `e57de51` v8, `98442d3` v9).
@@ -196,6 +241,26 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 
 ## Immediate Next Steps
 
+**From 2026-09-08 (attribution audit) — do these in order; returns are held:**
+1. Clear/park `analysis/_attribution_audit_precorpus_restore/` (46 files audited
+   against the PRE-restore corpus — stale, do not trust).
+2. Run `audit_attribution --all --force` TWICE over the current 614-thesis corpus,
+   keeping the two passes separately; disagreement between passes → `indeterminate`
+   (operator decision, two-of-two agreement test).
+3. Rewire `audit_theses.py` to read `speaker_attribution` from the audit output
+   (label-keyed) rather than from the extraction. The field is already carried into
+   the timeline; only the SOURCE needs changing.
+4. Build the filtering layer in `theme_returns_v2` + `build_repeat_mention_events`:
+   **`subject` only** counts as Baker. `indeterminate` and `other` stay in the
+   corpus tagged, excluded from BAKER_NAMED (operator decision).
+5. Aggregate comparison — repeat-mention counts and basket membership BEFORE vs
+   AFTER filtering. This is the number the operator wants, not per-thesis accuracy:
+   if BAKER_NAMED's composition barely moves, the contamination was noise around a
+   stable signal.
+6. Then regenerate v10.
+
+
+
 **From 2026-08-10 (2-new-appearances + regex fix):** v9 is live on `main` (pushed). Optional
 follow-ups, none blocking: (a) drop the 3 now-redundant tpu/dram/cien cluster_overrides (SD-REGEX-2);
 (b) harden the corpus tooling — make `write_step_manifest` merge-by-id so `fetch_youtube <ids>` can't
@@ -253,6 +318,28 @@ baskets → EODHD prices → returns → `step4_signal_events_v3.csv`; `--force-
 ---
 
 ## Settled Decisions (key rules)
+
+**Added 2026-09-08:**
+- **Attribution belongs in a SEPARATE audit pass, never in the extraction schema.**
+  Adding attribution fields to `EXTRACTION_SCHEMA` and rewriting the prompt
+  collapsed extraction yield on ~50% of episodes (2024-08-27: 20 theses → 1).
+  `audit_attribution.py` achieves the same result for ~$1.32 with zero corpus risk.
+- **`extraction_prompt.SYSTEM_PROMPT` is structurally fragile.** One added sentence
+  plus three user-template lines dropped an episode from 21 theses to 1, with the
+  content re-routed into `meta_views`. Change it by minimal diff only and verify
+  thesis counts against baseline on a sample large enough to see a 50% failure rate
+  — two episodes cannot.
+- **Only `theses` is consumed downstream.** `explicit_recommendations`,
+  `catalysts`, `sector_rankings`, `risk_warnings` and `meta_views` are write-only,
+  so a claim routed elsewhere is functionally deleted.
+- **Never key on `date` or on a `host` string.** Date is not unique (2026-05-12
+  holds two records of one Sohn event) and All-In host strings are byte-identical
+  across episodes; a `replace(count=1)` on either shuffles data between entries.
+  Key on `label` or the entry's dict key.
+- **`targets.py` has FIVE target lists plus `CNBC_TARGET` plus
+  `SUPPLEMENTARY_METADATA`.** Reading only `YOUTUBE_VIDEOS` + `RSS_TARGETS` gives
+  15 appearances an empty participants field.
+
 
 1. **YouTube via `yt-dlp`**, not `youtube-transcript-api` (latter uninstalled + IP-block-prone).
 2. **Structured outputs enforce the schema** (`output_config.format`) → guaranteed-valid JSON; the

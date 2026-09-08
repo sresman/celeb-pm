@@ -273,3 +273,134 @@ Treat as triage input, not ground truth.
   captured as NEW_AI_SUBTHEME. Operator's 2.7%/6.7% figures are a different basis than 13F equity-only.
 - **Minor**: the `15.0`/`1000.0` units-detection constants in `compute_net_buying` are inline magic
   numbers (documented); could be promoted to module constants.
+
+---
+
+## 2026-09-08 — Speaker attribution
+
+### SD-ATTR-1 — The problem, and why nothing caught it
+
+`extract_theses` receives an undifferentiated transcript. YouTube auto-captions
+mark a speaker change with `>>` but never name anyone, and 19 of 47 transcripts
+carry no markers at all — a panel arrives as one prose block. The prompt opened
+"a transcript of Gavin Baker" and asked for "Baker's alpha-relevant commentary",
+actively priming attribution to him, and the thesis schema had no speaker field.
+Three layers with no way to represent "someone else said this".
+
+Measured over all 47 appearances: **73% of named-ticker slots attribute to Baker,
+11% to another speaker, 16% indeterminate.** Panel episodes: 44% contamination.
+Solo episodes were NOT clean either — 21% — because an interviewer with
+substantive views (or a co-guest) reads the same as the subject.
+
+Canonical case: All-In 2026-08-14 T14, `AMZN`, *"I have a very big position in
+Amazon and I keep increasing it every year"* → Jason Calacanis. It survives a
+naive "does Baker hold AMZN?" check because Atreides does hold AMZN (2.07% of
+equity, 2026-06-30). The tell is rhetorical register, not holdings.
+
+### SD-ATTR-2 — Attribution goes in a separate pass, NOT the extraction schema
+
+**Decision: `audit_attribution.py`, a non-destructive second pass. Extraction is
+untouched.**
+
+The obvious design — add `speaker_attribution` to `EXTRACTION_SCHEMA` and teach
+the prompt about multi-speaker transcripts — was tried across five prompt
+revisions and **collapsed extraction yield on roughly half the corpus**
+(2024-08-27: 20 theses → 1; 2024-12-07: 17 → 1; 2022-01-25: 17 → 1). A bisect
+isolated it:
+
+    original prose + original schema    -> 20 theses
+    original prose + attribution fields -> 21 theses   (schema change is free)
+    rewritten prose + same fields       ->  1 thesis   (prose was the cause)
+
+but a subsequent 22-episode run showed ~50% collapse even on the "good" config,
+so the schema route was abandoned entirely and the corpus restored from git.
+
+The audit pass gets the same result for ~$1.32, keys per thesis on a focused
+transcript window, writes only to `analysis/attribution_audit/`, and cannot
+damage the corpus. It caught both canonical cases (Calacanis on AMZN; Johnsen on
+Heller House) with cited cues.
+
+### SD-ATTR-3 — `indeterminate` does not count as Baker
+
+Operator decision. Theses stay in the corpus tagged (so it is reversible), but
+the filtering layer treats **only `subject`** as Baker. Rationale: BAKER_NAMED's
+alpha rests on Baker's specificity, so "probably him" is not good enough. Cost:
+16% of named-ticker slots.
+
+### SD-ATTR-4 — Two-of-two agreement test
+
+Operator decision. Run the audit twice; disagreement between passes →
+`indeterminate`. Motivated by observed per-thesis instability: the same config
+attributed the AMZN thesis to Calacanis in one draw and did not flag it in the
+next. Inline attribution reliably reduces contamination but does not reliably
+catch any SPECIFIC instance.
+
+### SD-ATTR-5 — Two appearances are not appearances
+
+- **Limitless/Bankless 2026-05-28 — REMOVED.** Baker is not on it. Title "What
+  The Best AI Investors Are Buying Right Now"; opens "Gavin Baker is one of the
+  most prolific AI investors that almost no one has heard of. He spent the last
+  20 years..." — third person throughout, two hosts, and it garbles Atreides as
+  "a Trade Desk Management". Audit: 14/14 theses `other`, 19/19 tickers.
+- **Heller House 2026-06-08 — REMOVED.** Baker is the interviewer. 97 turns, 6
+  question-shaped (367 words) vs 91 answer-shaped (8,297) → 96% Johnsen;
+  questions span turn 2..83 of 96; corporate "we/our/us" 228 in answers vs 10 in
+  questions. Cost: 4 of 11 theses were genuinely Baker's framing claims
+  (TMUS/T/VZ, NVDA) and went with it.
+  **PRIOR ART:** the operator had already caught this in the 6-new task via 15
+  `cluster_overrides` (2026-07-22, note "Heller House = Baker interviewing SpaceX
+  CFO Johnsen") nulling each thesis's theme. Those overrides are now orphaned on
+  a date that no longer exists — left in place deliberately as a record of the
+  decision.
+
+### SD-ATTR-6 — Only `theses` is consumed downstream
+
+`explicit_recommendations`, `catalysts`, `sector_rankings`, `risk_warnings` and
+`meta_views` are written by `extract_theses` and read by NOTHING. Pre-existing,
+not introduced. Consequence: a claim routed to `meta_views` instead of `theses`
+is functionally deleted, which is what made the failed prompt rewrites so
+damaging.
+
+`explicit_recommendations` holds **154 items across 42 of 48 appearances**, and
+on unmodified episodes **76% name a ticker the theses do not**. It is directional
+("buy Nvidia, high_conviction"; "avoid Apple") — arguably stronger signal than a
+ticker inside a structural argument. Wiring it up is ADDITIVE (new events), not
+corrective, so it belongs after returns unblock; it also needs ticker resolution
+for the free-text `target` field and a `direction` concept the event model lacks.
+
+### SD-ATTR-7 — Keying rules (learned the hard way, three times)
+
+- **Never key on `date`.** Not unique: 2026-05-12 holds two records of one Sohn
+  event (the YouTube talk and Khaira's write-up). A date-keyed map silently drops
+  one, which invalidated one appearance in the first audit run.
+- **Never key on a `host` string.** All-In host strings are byte-identical across
+  episodes, so `replace(count=1)` hit the first occurrence every time and
+  **shuffled rosters between episodes** (Travis Kalanick landed on 2025-03-29).
+- **Never key on `label` with `str.find`** where labels repeat across lists: the
+  ILTB labels exist in both `COLOSSUS_EPISODES` and `RSS_TARGETS`, which produced
+  duplicate `subject_role` keys on six Colossus entries.
+- Key on the entry's dict key, or on `label` scoped to one list.
+
+### SD-ATTR-8 — Metadata sources
+
+`targets.py` has **five** target lists (`YOUTUBE_VIDEOS`, `RSS_TARGETS`,
+`COLOSSUS_EPISODES`, `TEXT_TARGETS`, `WEB_TARGETS`) plus `CNBC_TARGET`, plus the
+new `SUPPLEMENTARY_METADATA` for three appearances acquired outside all of them
+(`sohn_australia_2021_coinbase`, `cnbc_squawk_spacex_debut_2026jun`,
+`cnbc_spacex_drawdown_2026jul`). Reading only the first two — as the audit
+originally did — hands 15 appearances an empty participants field, the exact
+condition that degrades attribution. Use `audit_attribution.metadata_by_label()`.
+
+`host` was wrong across the corpus: All-In 2026-08-14 listed Chamath and
+Friedberg, who are **never mentioned once** in the transcript ("David Saxs and
+Gavin Baker are with us this week... we got a short crew"). Rosters re-derived
+from transcript openings via `fix_participants.py`; roles normalised by a
+deterministic rule (co-speaker count) because the model's own role calls were
+inconsistent across episodes of the same show.
+
+### SD-ATTR-9 — Validation sample size
+
+Operator standing note, recorded because it cost a full corpus re-extract:
+**validate on a sample large enough to see the failure you are testing for.** Two
+episodes cannot detect a 50% collapse rate. Every "fix confirmed" in this session
+that rested on one or two episodes was later falsified by a 19-22 episode run.
