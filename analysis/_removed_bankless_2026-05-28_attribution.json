@@ -1,0 +1,179 @@
+{
+  "date": "2026-05-28",
+  "source": "Limitless (Bankless) \u2014 AI supercycle; Unity as world-model builder; chips/memory/power",
+  "host": "Josh Kale & Ejaaz Ahamadeen",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "AI is in a supercycle, not a bubble \u2014 constrained by physical supply of watts and wafers, not debt-fueled speculation",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "AMZN",
+        "META",
+        "TSM"
+      ],
+      "quote": "it's not a bubble if you can't oversupply the entire market",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "The window has no speaker markers but the text is clearly a host narrating/summarizing Gavin's case in third person ('the single argument that Gavin has is...', 'his simple argument is...'), not Baker speaking himself."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Nvidia is on a path to ~$10 trillion market cap, driven by sustained demand and maintained profit margins",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "putting Nvidia on a clear path to getting close to $10 trillion",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "Turn 2 speaker refers to Gavin in third person ('Gavin was recently on two podcasts where I was listening to him speak') and addresses 'E.J.' directly, identifying this as a host turn, not Baker."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Astera Labs is a critical bottleneck-solver for AI cluster connectivity and a top portfolio position",
+      "tickers": [
+        "ALAB"
+      ],
+      "quote": "Astera Labs is the plumbing system between GPUs at scale",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "The quote fragment does not appear verbatim in the window; turn 5 where the quote is placed is a brief reaction ('Oh man, Apple's in such a good position there') by a co-host, not Baker, and the surrounding turns are host narration about Gavin in third person."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Micron is a core beneficiary of AI memory demand, with HBM supply constraints driving extraordinary margins",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "Micron, one of the largest memory makers, just eclipsed a trillion dollars",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "Turn 2 speaker discusses Micron while referring to Gavin in third person and addresses co-host 'E.J.', confirming this is a host summarizing Baker's portfolio, not Baker speaking."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Unity Software is a world-model builder for robotics and AGI training, making it a sleeper AI infrastructure play",
+      "tickers": [
+        "U"
+      ],
+      "quote": "Unity is a world model builder with deep understanding of physics",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "Turn 2 speaker says 'I feel like that one I wanted to highlight specifically for you, Josh' and refers to Gavin in third person throughout, confirming this is a host turn, not Baker."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "The AI compute stack is shifting from pre-training to post-training and inference, creating a large new investment opportunity",
+      "tickers": [
+        "NVDA",
+        "ALAB"
+      ],
+      "quote": "inference revenue opportunity is worth 5 to 10x pre-training compute",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "The quote fragment does not appear in the window; turn 5 is a brief co-host reaction and surrounding turns are host narration about Gavin in third person; no Baker speech present."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Cerebras is a high-conviction inference chip bet, with early-stage entry validated by successful IPO",
+      "tickers": [
+        "CBRS"
+      ],
+      "quote": "Cerebras IPO'd for an ungodly amount, up 40% since",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "Turn 2 discusses Cerebras while referring to Gavin in third person ('he was in Cerebras very early'), and the quote fragment does not appear in the window; this is host narration, not Baker."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Positron (inference chip startup) is a portfolio bet on the inference compute buildout",
+      "tickers": [],
+      "quote": "Positron creates inference chips, very similar to Cerebras",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "The character window has no speaker markers but the text refers to Gavin in third person ('Gavin has spoken about on his recent interviews', 'Gavin is all in on this thesis'), confirming this is a host summarizing Baker, not Baker himself."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Verticalized small language models (SLMs) running on-device are a major coming wave, with Apple as a key enabler",
+      "tickers": [
+        "AAPL"
+      ],
+      "quote": "Apple is going to be the device maker for locally run models",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "Turn 5 ('Oh man, Apple's in such a good position there. I can't wait for WWDC.') is a brief co-host reaction; surrounding turns are host narration about Gavin in third person; Baker is not speaking."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Sovereign/physical AI infrastructure deployment speed is a durable moat \u2014 companies that can build fastest win",
+      "tickers": [],
+      "quote": "speed of physical deployment itself is the moat",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "Turn 7 speaker refers to Gavin in third person ('Gavin is very strongly betting on the fact that infrastructure is hard') and uses first-person host framing ('When I think about this, my first thought is SpaceX'), confirming this is a host turn."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Orbital/space compute is an emerging frontier for AI infrastructure, with SpaceX as the critical enabler",
+      "tickers": [],
+      "quote": "orbital compute part, Starship required to get racks to orbit",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "The character window refers to Gavin in third person throughout ('what Gavin has really shifted his focus to', 'Gavin was asked this question many times') and uses host framing ('I think we want to get to the end of this'), confirming host narration, not Baker."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "TSMC supply constraint is the primary governor preventing the AI buildout from becoming a debt-fueled bubble",
+      "tickers": [
+        "TSM",
+        "ASML",
+        "NVDA"
+      ],
+      "quote": "Nvidia could sell two to three trillion of GPUs if only TSMC could supply them",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "Turn 10 speaker addresses 'EJ' directly ('EJ, if you scroll just a little bit more') and refers to Gavin in third person ('This is something that Gavin believes'), confirming this is a host turn, not Baker."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "SK Hynix's dominant HBM position gives it extraordinary pricing power, with ~70% operating margins",
+      "tickers": [
+        "000660.KS",
+        "MU"
+      ],
+      "quote": "SK Hynix has 70% operating margin, just hiking up the price",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "Turn 11 speaker refers to Gavin in third person ('it makes complete sense why Gavin is just going all in') and uses first-person host framing ('I saw a story break today'), confirming this is a host turn, not Baker."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Baker holds a large QQQ put as a broad market hedge while remaining long AI infrastructure",
+      "tickers": [
+        "QQQ"
+      ],
+      "quote": "largest position ironically is that QQQ put position, generally bearish on the market",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host (Josh Kale or Ejaaz Ahamadeen)",
+      "evidence": "Turn 12 speaker reads out Gavin's holdings in third person ('his largest position ironically is that QQQ pro position') and addresses 'EJS' directly, confirming this is a host summarizing Baker's portfolio, not Baker speaking."
+    }
+  ]
+}

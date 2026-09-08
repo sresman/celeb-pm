@@ -1,0 +1,131 @@
+{
+  "date": "2026-06-08",
+  "source": "Heller House \u2014 SpaceX CFO Bret Johnsen interview \u2014 financial mechanics, Starship timeline, orbital compute, AI business",
+  "host": "Gavin Baker (as interviewer)",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Starship rapid reusability will deliver a 10x reduction in cost per kilogram to orbit within a couple of years, enabling a step-change across all SpaceX businesses.",
+      "tickers": [],
+      "quote": "10x improvement as we get to rapid reusability with Starship",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Bret Johnsen (SpaceX CFO)",
+      "evidence": "The quote is in turn 3, a direct response to the interviewer's question in turn 2; the speaker uses 'we' referring to SpaceX and discusses SpaceX's own cost targets, consistent with the CFO being interviewed, not Baker."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Starlink is a structurally differentiated telecom product \u2014 better, faster, lower latency, and lower cost to serve \u2014 positioned to grow from 10M to hundreds of millions of customers in a ~$1.6T addressable market.",
+      "tickers": [],
+      "quote": "10 million customers can become hundreds of millions",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Bret Johnsen (SpaceX CFO)",
+      "evidence": "The passage uses 'we' and 'our' referring to SpaceX operations ('we actually haven't been in the connectivity business for that long'), identifying the speaker as the SpaceX CFO being interviewed, not Baker."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Starship V3 Starlink satellites deliver 20x the broadband capacity per launch versus Falcon, dramatically accelerating constellation build-out and Starlink revenue growth.",
+      "tickers": [],
+      "quote": "every Starship launch brings 20 times the capability of a Falcon launch",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Bret Johnsen (SpaceX CFO)",
+      "evidence": "Turn 32 speaker says 'our V3 satellites that we're about to fly' and 'our broadband business,' self-identifying as a SpaceX insider (the CFO), not Baker."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Direct-to-cell (direct-to-device) at 5G quality within two years is a new high-margin revenue stream and a structural threat to terrestrial cellular carriers.",
+      "tickers": [
+        "TMUS",
+        "T",
+        "VZ"
+      ],
+      "quote": "next generation of direct to cell will be 5G quality in the next two years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turns 54-55 appear to be Baker quoting Jensen's words about Colossus One, and the surrounding context (turns 52-55) shows Baker as the interviewer relaying a quote; however the direct-to-cell thesis quote is actually in turn 15 spoken by the CFO \u2014 the window mismatch makes this indeterminate, but the framing 'next generation of direct to cell will be 5G quality in the next two years' is in the CFO's response turn, not Baker's."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Orbital compute (racks in space) is the next major SpaceX business, requiring Starship for viability, with a target of gigawatts to eventually 100 gigawatts per year of orbital compute capacity.",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "scaling to gigawatts a year into space is a very hard challenge",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Bret Johnsen (SpaceX CFO)",
+      "evidence": "Turn 43 speaker says 'my engineers' and 'we have just been able to demonstrate scale,' self-identifying as a SpaceX executive (the CFO), not Baker."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Terrestrial AI compute hosting (colocation/cloud for third parties) is already a material business at ~$3.75B quarterly run rate, with the Anthropic deal as proof of concept for further expansion.",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "$3.75 billion run rate per quarter \u2014 top five AI infrastructure business",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 17 is a short editorial comment ('It has undoubtedly saved lives') following the CFO's turn 15 response, consistent with Baker as interviewer editorialising, and turn 76 contains the $3.75B run-rate framing which reads as Baker's napkin math ('by my math,' 'that's just my napkin math')."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Grok + Cursor acquisition creates a vertically integrated enterprise AI coding platform with access to Fortune 500 data, real-time X data, and SpaceX's compute advantage.",
+      "tickers": [],
+      "quote": "cursor working with over half the Fortune 500 and thousands of enterprise accounts",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 79 begins with Baker asking about Grock and Cursor ('Well on Grock um would love to talk about that... Just talk about cursor'), and the CFO's answer follows; the quote fragment about Fortune 500 is in the CFO's answer, but the framing thesis is Baker's setup question \u2014 however the actual quote is the CFO's words, so attribution is 'other'."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Terafab (SpaceX + Tesla + Intel semiconductor JV) is a strategic hedge against TSMC supply chain concentration risk, with SpaceX and Tesla as captive customers providing demand certainty that de-risks the foundry ramp.",
+      "tickers": [
+        "INTC"
+      ],
+      "quote": "concern is the supply chain won't be there to ramp to many many gigawatts",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Bret Johnsen (SpaceX CFO)",
+      "evidence": "Turn 82 speaker says 'being a semiconductor guy before' and 'our concern is the supply chain,' self-identifying as a SpaceX insider (the CFO), not Baker."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "TSMC supply chain concentration is a critical bottleneck for AI scaling \u2014 all major AI chips (Nvidia, Google TPU, AI5) converge on TSMC, creating systemic risk for any company trying to scale to 100 GW of compute.",
+      "tickers": [
+        "TSM"
+      ],
+      "quote": "all of a sudden you start talking about TSMC \u2014 can't diversify one layer down",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Bret Johnsen (SpaceX CFO)",
+      "evidence": "The quote is in turn 82 where the speaker uses 'our concern' and 'our target' referring to SpaceX's internal supply chain strategy, identifying the speaker as the CFO, not Baker."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "The terrestrial data center cost curve is deteriorating (power, cooling, land/regulatory costs rising) while orbital compute costs will improve, creating a long-term structural cost crossover.",
+      "tickers": [],
+      "quote": "terrestrial solutions the curve is going the other direction \u2014 everything getting more expensive",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Bret Johnsen (SpaceX CFO)",
+      "evidence": "The passage uses 'our data centers' and 'I was semiconductors before space,' self-identifying the speaker as the SpaceX CFO, not Baker."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "SpaceX's capital allocation is sequenced so that Starlink V3 cash flows fund orbital compute capex \u2014 the business model is self-financing at the critical inflection point.",
+      "tickers": [],
+      "quote": "Starlink growth is cash flows \u2014 that unlocks direct to sell right when orbital compute needs capital",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 85 contains the quote and is Baker's turn as interviewer synthesising the capital allocation logic ('one might think there was some sound business logic... the timing does seem to work out'), confirmed by the CFO's reply in turn 86 saying 'I wish I could take credit for that.'"
+    }
+  ]
+}
