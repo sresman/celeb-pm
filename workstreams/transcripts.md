@@ -12,7 +12,60 @@ structured-thesis extraction layer over it, for later cross-referencing of his s
 investment theses against his 13F filings. All code in `tools/transcripts/`; all data in
 `transcripts/` + `analysis/`. Independent of `src/celebpm`.
 
-Branch: **`gavin-baker-transcript-corpus`** (not yet merged to main).
+Branch: **`main`**. `trigger-denominator-ex-spcx` fast-forwarded into it on
+2026-09-15 and was deleted; all transcripts work now lands on `main` directly.
+
+---
+
+## Current State (as of 2026-09-15) — RETURNS UN-HELD; v10 REGENERATED ON SUBJECT
+
+**The operator flipped the default to `subject` and unheld returns.** v10 is
+regenerated off `main` with prices refreshed through 2026-09-14. This closes the
+decision that had blocked the workstream since 2026-09-08.
+
+- **`--attribution` now defaults to `subject`** in both `theme_returns_v2` and
+  `build_repeat_mention_events` (`DEFAULT_ATTRIBUTION`). The filter keeps
+  **467/614 theses** (105 indeterminate + 42 other excluded). Output paths are
+  suffixed for any *non-default* mode, so `--attribution all` writes
+  `_all`-suffixed files and a comparison run cannot overwrite the deliverable.
+  Docstrings and `--help` were corrected — they still described the pre-flip
+  polarity, including `_mode_path`'s claim that a filtered run must not
+  overwrite the unfiltered deliverable, which is now backwards.
+- **Branch resolved.** `trigger-denominator-ex-spcx` was a strict fast-forward of
+  `main` (merge-base == `origin/main` tip, zero commits on main the branch
+  lacked), so it landed as a ref update and the branch was deleted local +
+  origin.
+- **The run.** `theme_returns_v2 --force-refetch` (78 tickers, fresh through
+  2026-09-14) → 139 events, 258 clustered / 209 unclustered. Then
+  `build_repeat_mention_events` on the **warm cache** — it imports the same
+  `fetch_prices` over the same `UNIVERSE`, so a second forced refetch would
+  re-pull the identical 78 tickers (SD-ATTR-21). → 205 mention rows, 151 repeat
+  mentions.
+- **Deliverable: `analysis/step4_signal_events_v10_with_returns_extended.{csv,xlsx}`**
+  (2 sheets: `signal_events` 205 rows, `slice_summary` 3). v9 and
+  `step4_signal_events_v10_2026-08-16_preattribution.*` preserved.
+- **What the fresh prices changed.** Row identity is identical to the
+  cached-price run; 145 of 155 changed cells are `INSUFFICIENT_DATA` → a computed
+  value, as the 2025-12-09 cohort crossed 9m and the 2026-06-11/12 cohorts
+  crossed 1q. The other 10 are second-decimal adjusted-close revisions.
+
+| slice | n | ret_1y | winrate_1y | 9m before → after |
+| --- | ---: | ---: | ---: | --- |
+| signal (meets criteria) | 38 | **228.53** | 100% | 107.99 → **100.14** (92.3% → 85.7%) |
+| control (no criteria) | 112 | 29.68 | 47.1% | 13.59 → **23.38** (57.7% → 64.5%) |
+
+**1y did not move.** The newly-computable 9m cohort narrows the signal-vs-control
+gap at that horizon without closing it — quote 9m with that in mind.
+
+**`000660.KS` (SK Hynix) returns `NO_DATA` from EODHD and always has.** The four
+rows carrying it in `resolved_basket` have identical returns pre- and
+post-refetch, so the forced refetch caused no regression and the equal-weight
+basket simply drops it — but the three DRAM overrides adding it to `MU` have
+never contributed anything, consistent with the "0 return impact" note from
+2026-07-22. Needs a different symbol or a KRX-covering subscription tier to
+actually participate. `CRSO` is `NO_DATA` by design (private).
+
+Detail + SD-ATTR-20…21: `analysis/attribution_implementation_notes.md`.
 
 ---
 
@@ -322,17 +375,21 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 
 ## Immediate Next Steps
 
-**From 2026-09-08 (attribution + locator fix) — blocked on ONE operator decision:**
+**From 2026-09-15 — nothing is blocked.** The default is `subject`, returns are
+un-held, v10 is on `main`. Open items, in rough priority order:
 
-**Read `analysis/attribution_filter_comparison.md`, then say whether to flip the
-default to `subject`.** That is the only thing standing between here and returns.
-The filter now costs −18.7% of named-ticker slots, −16.9% of scored rows and
-−14.0% of meets-criteria (roughly half what it cost before the locator fix). If
-you accept it: change `default="all"` to `default="subject"` in the
-`--attribution` argument of BOTH `theme_returns_v2.py` and
-`build_repeat_mention_events.py`, then unhold returns and regenerate v10.
+1. **The 9m horizon shifted under the refetch** (signal 107.99 → 100.14, control
+   13.59 → 23.38). Worth a look before the 9m number goes anywhere external; 1y
+   is unaffected.
+2. **`000660.KS` has never contributed to a basket.** Decide whether SK Hynix
+   belongs in the DRAM baskets enough to warrant a symbol change or a KRX data
+   tier, or whether the three overrides should drop it.
+3. **The residual caveats below still stand** — they were accepted as the cost of
+   the filter, not resolved.
+4. `explicit_recommendations` is still unwired (154 items / 42 appearances);
+   `analysis/basket_reresolution_v2.csv` triage is still open from 2026-07-22.
 
-Residual caveats to weigh first:
+**Caveats accepted when the filter was adopted (2026-09-15) — not fixed:**
 - 105 theses are still `indeterminate` and excluded. 71 are genuine ambiguity
   (mostly the 19 transcripts with no `>>` markers); 34 are still placement
   failures carrying 25 named tickers. A looser rule (`subject` +
