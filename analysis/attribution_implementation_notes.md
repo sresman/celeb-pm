@@ -496,3 +496,26 @@ so it landed as a ref update, not a merge. v10 therefore runs off `main`.
 **Pre-run commit.** The working tree carried 15 modified tracked files (including
 both pipeline modules) and ~80 untracked artifacts. Committed before the run, so
 the diff the run produces is exactly the run's effect.
+
+**Run result (2026-09-15).** `theme_returns_v2 --force-refetch`: 467/614 theses
+kept, 258 clustered / 209 unclustered, 139 signal events; prices refreshed for 78
+tickers through **2026-09-14**. `build_repeat_mention_events` (warm cache): 205
+mention rows, 151 repeat mentions → `analysis/step4_signal_events_v10_with_returns_extended.{csv,xlsx}`.
+
+Against the pre-run (cached-price) outputs, **row identity is byte-identical** —
+same 205 rows, same 139 events. 155 cells moved, 145 of them
+`INSUFFICIENT_DATA` → a computed value: the 2025-12-09 cohort at 9m and the
+2026-06-11/12 cohorts at 1q crossed their horizons with the fresher data. The
+other 10 are second-decimal shifts from adjusted-close revisions.
+
+Effect on the slices: 1y is unchanged (signal `ret_1y` 228.53, 100% winrate,
+n=38). 9m moved in both directions — signal 107.99 → **100.14** (winrate 92.3% →
+85.7%), control 13.59 → **23.38** (57.7% → 64.5%). The newly-computable 9m cohort
+narrows the signal-vs-control gap at that horizon without closing it.
+
+`CRSO` and `000660.KS` (SK Hynix) return `NO_DATA` from EODHD. CRSO is documented
+as expected (private). **000660.KS was already `NO_DATA` before this run** — the
+four rows carrying it in `resolved_basket` have identical returns pre- and
+post-refetch, so the forced refetch caused no regression; the equal-weight basket
+simply drops it. The DRAM overrides that add it to `MU` remain inert, as noted on
+2026-07-22.
