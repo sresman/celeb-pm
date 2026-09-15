@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-14",
+  "source": "a16z Podcast \u2014 Is AI a bubble? Data centers, GPUs, and the AI economy",
+  "thesis_id": "T3",
+  "summary": "Broadcom and AMD are effectively going to market together as a combined alternative to Nvidia's full-stack offering.",
+  "summary_extended": "Baker argues that Broadcom and AMD have formed an effective go-to-market partnership targeting hyperscalers as a combined alternative to Nvidia's vertically integrated AI networking and compute stack. Broadcom provides an open Ethernet-based fabric (competing with Nvidia's NVLink/InfiniBand) alongside custom ASICs designed for specific hyperscaler workloads, while AMD serves as a plug-in fallback compute option if those custom ASICs underperform or fail to meet performance targets. Baker cites Meta as an example hyperscaler that is engaging with this Broadcom-led open ecosystem. However, Baker expresses personal skepticism that most ASIC programs will ultimately succeed, suggesting the partnership represents a meaningful but likely insufficient challenge to Nvidia's dominant integrated stack, tempering any strongly bullish read-through for either Broadcom or AMD.",
+  "detail": "Broadcom is offering hyperscalers (e.g., Meta) an open Ethernet-based fabric to compete with Nvidia's NVLink/InfiniBand, paired with custom ASICs. AMD serves as the plug-in fallback if the ASIC underperforms. This partnership is a meaningful but ultimately likely insufficient challenge to Nvidia's integrated stack.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker describes the dynamic clearly but expresses personal skepticism that most ASIC programs will succeed, tempering the bullish read-through for Broadcom/AMD.",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "custom silicon"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Broadcom and AMD are effectively going to market together",
+  "tickers_named_original": [
+    "AVGO",
+    "AMD",
+    "NVDA",
+    "META"
+  ],
+  "tickers_direct": [
+    "AVGO",
+    "AMD",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "AVGO",
+    "AMD"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Broadcom is the primary subject of this thesis \u2014 it is the architect of the open Ethernet fabric and custom ASIC offering that forms the core of the alternative stack being described."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "AMD is explicitly named as the fallback compute partner in this go-to-market arrangement, making it a direct subject of the thesis about the combined alternative to Nvidia."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is the incumbent whose integrated NVLink/InfiniBand and GPU stack this partnership is trying to displace. Baker's skepticism that the ASIC programs will succeed implicitly reinforces Nvidia's competitive moat, making it a direct beneficiary of the thesis's pessimistic conclusion."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta is cited only as an example hyperscaler customer engaging with the Broadcom ecosystem. The thesis is about the semiconductor/infrastructure dynamic between AVGO, AMD, and NVDA \u2014 Meta is not a subject of or financial beneficiary of this specific thesis."
+    }
+  ]
+}

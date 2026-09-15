@@ -1,14 +1,14 @@
 {
   "model": "claude-sonnet-4-6",
-  "theses_reaudited": 18,
-  "ok": 0,
+  "theses_reaudited": 19,
+  "ok": 1,
   "skipped": 18,
   "errors": [],
   "tickers_removed": 12,
-  "tickers_kept": 77,
-  "total_input_tokens": 0,
-  "total_output_tokens": 0,
-  "estimated_cost_usd": 0.0,
+  "tickers_kept": 83,
+  "total_input_tokens": 1662,
+  "total_output_tokens": 391,
+  "estimated_cost_usd": 0.0109,
   "rows": [
     {
       "index": 35,
@@ -260,6 +260,19 @@
       "output_tokens": 0,
       "n_before": 4,
       "n_after": 4,
+      "removed": []
+    },
+    {
+      "index": 559,
+      "date": "2026-07-14",
+      "thesis_id": "T1",
+      "criteria": "A+B",
+      "output": "analysis/thesis_reaudits/2026-07-14_a16z_ai_bubble_datacenters_2026jul_T1.json",
+      "status": "ok",
+      "input_tokens": 1662,
+      "output_tokens": 391,
+      "n_before": 6,
+      "n_after": 6,
       "removed": []
     }
   ]

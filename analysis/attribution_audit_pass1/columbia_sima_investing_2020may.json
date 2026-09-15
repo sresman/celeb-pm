@@ -1,0 +1,152 @@
+{
+  "label": "columbia_sima_investing_2020may",
+  "date": "2020-05-07",
+  "source": "Columbia SIMA \u2014 COVID-19 market impact, technology investing, video games, venture capital",
+  "host": "David, Danielle, Ben (Gavin Baker panelist)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T6",
+      "summary": "TikTok is a genuine structural threat to Instagram/Facebook, with measurable impact on Instagram engagement visible in February 2020 data",
+      "tickers": [
+        "FB"
+      ],
+      "quote": "big impact in February in a lot of measurable ways on Instagram",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Jensen Huang and Nvidia represent a top-5 all-time technology CEO/company combination; semiconductor executives have historically compounded wealth by simply holding Nvidia stock",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Jensen... absolutely top 5 technology CEO of all time",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "COVID-19 created a rare long/short opportunity set where obvious trades (long stay-at-home, short travel/leisure) were massively mispriced and generated outsized alpha",
+      "tickers": [
+        "AMZN",
+        "NFLX",
+        "WMT",
+        "KR",
+        "CLX",
+        "ZM"
+      ],
+      "quote": "you could generate almost a lifetime's worth of alpha by doing the most obvious thing",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker references 'our trader' and describes first-person portfolio decisions during COVID, and the intro text identifies Gavin Baker as the panelist being interviewed; the extended monologue matches Baker's self-described investment approach and references his appearance on Patrick's podcast."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Video games are social networks and will be the foundational platform layer for the personal Metaverse",
+      "tickers": [
+        "ATVI",
+        "EA",
+        "TTWO",
+        "EPIC"
+      ],
+      "quote": "video games are going to be the platform for the personal Metaverse",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker uses first-person fund/investor framing ('I always thought games were social networks'), references Bobby Kotick telling 'me' directly, and the intro confirms Baker is the sole panelist being interviewed in this moderated format."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Video game content owners/publishers have more leverage than platforms as cloud gaming proliferates because the game content market lacks the long tail that made Spotify/Netflix models work",
+      "tickers": [
+        "ATVI",
+        "EA",
+        "TTWO"
+      ],
+      "quote": "content is always king... the underlying content owners have way more leverage",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "David",
+      "evidence": "This window is the opening introduction where the host (David) welcomes Gavin Baker and introduces him as 'founder of CIO of the tradies management' \u2014 the quoted thesis content about content owners having leverage appears in Baker's voice elsewhere, but this window is the host's intro segment."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Free-to-play is an inherently superior business model for video games because virtual good persistence drives higher monetization",
+      "tickers": [
+        "ATVI",
+        "EA",
+        "TTWO"
+      ],
+      "quote": "all the world's biggest video games are free to play... inherently superior business model",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The window contains the host intro but the thesis about free-to-play business models is consistent with Baker's extended discussion of video games throughout the transcript; the intro window is shared but the thesis content is attributable to Baker's known speaking turns."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Edge computing will proliferate into retail stores and restaurants, driven by AI-powered in-store experiences requiring local compute that cannot be served from the cloud due to latency constraints",
+      "tickers": [
+        "AMZN",
+        "NVDA"
+      ],
+      "quote": "there's going to be a lot of compute power in those stores",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker uses first-person expert framing ('that is something that I am thinking a lot about'), references 'if you're a gamer like me', and discusses edge computing as a fund CIO-level thesis, consistent with Baker as the sole panelist."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Marketplace businesses (Uber, DoorDash, Airbnb) have low barriers to entry but high barriers to scale; once market structure stabilizes they will be great businesses",
+      "tickers": [
+        "UBER",
+        "LYFT",
+        "ABNB",
+        "DASH"
+      ],
+      "quote": "scale is the most durable competitive advantage",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker references Bruce Greenwald as 'another Columbia professor' and discusses marketplace businesses with fund-manager framing; the monologue is continuous with Baker's other identified speaking turns in this panel."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "The Vision Fund model of 'creating winners with capital' was fundamentally flawed; venture capital is returning to normal where top-decile VC returns are highly persistent",
+      "tickers": [],
+      "quote": "you cannot create winners with capital... the fundamental underlying thesis of the vision fund",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'I was lucky enough to make those mistakes in a more forgiving environment in 2013 2014 2015', referencing Baker's known tenure doing VC at Fidelity, and uses first-person fund investor framing throughout."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "COVID-19 will separate 'winter CEOs' from 'summer CEOs' \u2014 companies run by decisive leaders who cut early will emerge structurally stronger",
+      "tickers": [],
+      "quote": "we're gonna see who is a summer CEO and who is a winter CEO",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'I talked about this on Patrick's podcast' and references the summer/winter CEO analogy, which Baker is known to have discussed; this is a direct self-reference to a prior Baker appearance."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "The market cannot find a true clearing price until companies provide forward guidance; quantitative strategies are sidelined without accurate forward numbers",
+      "tickers": [],
+      "quote": "we will get a true market price when companies begin reporting and guiding",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker references 'having lived through six of them' (bear markets) in a fund manager context and uses first-person portfolio framing throughout, consistent with Baker as the sole panelist in this moderated interview format."
+    }
+  ]
+}

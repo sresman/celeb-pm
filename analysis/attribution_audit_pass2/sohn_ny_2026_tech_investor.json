@@ -1,0 +1,102 @@
+{
+  "label": "sohn_ny_2026_tech_investor",
+  "date": "2026-05-12",
+  "source": "Sohn NY 2026 \u2014 Tech investing fireside",
+  "host": "Jas (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Current memory cycle is unlike prior cycles \u2014 may be the first true capacity cycle since the mid-1990s, making it too early to sell memory stocks",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "this may be the first true capacity cycle",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker references being 'the Micron analyst in the year 2000,' attending their analyst day, and being 'a veteran of many many memory cycles' \u2014 self-identification consistent with Baker's biography; the intro in turn 0 names Gavin Baker as the guest and Jas as host, so extended analytical monologue is Baker's."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "TSMC's deliberate capacity restraint will prevent an AI bubble and sustain a prolonged upcycle in leading-edge wafer supply",
+      "tickers": [
+        "TSM",
+        "NVDA"
+      ],
+      "quote": "they're simply not expanding capacity as fast as Jensen wants",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The quote window shows turn 2 contains only 'Thank you, and and let me introduce you, Jas' \u2014 the actual TSMC capacity-restraint thesis text ('they're simply not expanding capacity as fast as Jensen wants') appears in turn 11, which has no speaker marker in the provided window for T2; the quote fragment does not appear in the turns shown."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Trainium is the most underestimated Nvidia alternative in 2026, analogous to what TPUs were in 2025",
+      "tickers": [
+        "AMZN",
+        "GOOGL",
+        "NVDA"
+      ],
+      "quote": "Trainium is for sure the most underestimated",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'I owned one of those' (referring to TPU-related investments visible on a 13F) and 'I do feel like I've have some credibility to say this' \u2014 self-referential fund-positioning language identifying Baker as the speaker in this analytical monologue responding to Jas's question."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Neo/specialist clouds (CoreWeave, Crusoe, Nebius, Lambda) represent a durable business model, not a transitional arbitrage",
+      "tickers": [
+        "CRWV",
+        "NBIS"
+      ],
+      "quote": "it is durable and the hyper scalers for a long time were stuck in a cost mentality",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker references 'we have a large position in Crusoe' and 'I could have invested over $50 million in the round' \u2014 fund-positioning self-identification consistent with Baker as CIO of Atreides, responding to Jas's question about neo-cloud durability."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Orbital/space-based compute will become commercially viable within 2 years and take meaningful market share by end of decade",
+      "tickers": [],
+      "quote": "it becomes clear that it is possible going to work and economical in the next 2 years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 16 contains the quote and is preceded by Jas's question about orbital compute in turn 15 and followed by Baker continuing the orbital compute discussion in turn 17; turn 17 ends with 'Gavin, we're out of time' confirming Baker was speaking in the preceding turns."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Terrestrial data center power, cooling, and industrial infrastructure names face structural short risk as orbital compute approaches",
+      "tickers": [],
+      "quote": "very painful for a lot of the companies in the power cooling spaces",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 17 contains the 'very painful for a lot of the companies in the power cooling spaces' language and ends with 'Gavin, we're out of time, but thank you' \u2014 confirming Baker was the speaker in turn 17."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "AI frontier model pricing is shifting from flat-rate subscriptions to usage-based with overage, which is wildly bullish for AI revenue and token pricing",
+      "tickers": [],
+      "quote": "wildly bullish for AI wildly bullish for the pricing of these frontier tokens",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 13 is a long analytical monologue responding to Jas's question (turn 13 begins with 'You and we were talking about this backstage' \u2014 Jas framing a question to Baker), and the usage-based pricing thesis with 'wildly bullish for AI' language is part of Baker's extended answer confirmed by the intro establishing Baker as the guest."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Coding/code generation is not just the killer app for AI but may be the ultimate AI application and the shortest path to AGI",
+      "tickers": [],
+      "quote": "coding may be the shortest path to ASI and AGI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The coding-as-path-to-AGI thesis appears in the same continuous monologue as T3 and T4, with the speaker saying 'to answer your specific question' \u2014 Baker responding to Jas's question, consistent with the fireside format where Baker is the sole expert guest."
+    }
+  ]
+}

@@ -134,7 +134,13 @@ def main() -> int:
         )
         tin += resp.usage.input_tokens
         tout += resp.usage.output_tokens
-        parsed = json.loads("".join(b.text for b in resp.content if getattr(b, "type", "") == "text"))
+        parsed = json.loads(
+            "".join(
+                str(getattr(b, "text", ""))
+                for b in resp.content
+                if getattr(b, "type", "") == "text"
+            )
+        )
         props[date] = {
             "key": entry["key"], "kind": entry["kind"], "label": entry.get("label", ""),
             "source": entry.get("source", ""), "current_host": entry.get("host", ""),

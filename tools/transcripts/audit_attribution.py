@@ -43,7 +43,6 @@ Usage::
 from __future__ import annotations
 
 import argparse
-import difflib
 import json
 import re
 import time
@@ -59,11 +58,29 @@ ANALYSIS_DIR = targets.REPO_ROOT / "analysis"
 OUT_DIR = ANALYSIS_DIR / "attribution_audit"
 LOG_PATH = ANALYSIS_DIR / "_attribution_audit_log.json"
 TIMELINE_FLAT = ANALYSIS_DIR / "thesis_timeline_v2_flat.json"
+EXTRACTION_DIR = ANALYSIS_DIR / "thesis_extractions"
 MASTER_MANIFEST = targets.REPO_ROOT / "transcripts" / "_master_manifest.json"
 
 MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 8192
 SLEEP_BETWEEN = 2.0
+# Explicit per-request timeout. Without one, pass 2 of 2026-09-08 sat on a single
+# stalled request for 55 minutes with the process alive and no output — the SDK
+# default is generous and the manual retry below doubles it. 180s is well clear of
+# the slowest observed episode (a16z 2026-08-31, 543 turns, ~40s).
+API_TIMEOUT_SECONDS = 180.0
+
+# Quote-location tuning. Pass 3 scores a quote against windows of each turn using
+# character n-grams; NGRAM_N=4 is short enough to survive a garbled word and long
+# enough not to match on noise. LOCATE_MIN_SCORE is calibrated against the quotes
+# that pass 1 can place exactly — see the calibration note in the implementation
+# notes (2026-09-08).
+NGRAM_N = 4
+MIN_MATCH_WINDOW_CHARS = 160
+MIN_SHINGLE_CHARS = 12
+LOCATE_MIN_SCORE = 0.70  # calibrated: worst cross-episode false positive scored
+#                          0.66; true positives under 35% simulated caption
+#                          garbling bottomed out at 0.81 (5th pct). 0.70 is the gap.
 INPUT_COST_PER_MTOK = 3.0
 OUTPUT_COST_PER_MTOK = 15.0
 
@@ -187,38 +204,105 @@ def _norm(text: str) -> str:
     return re.sub(r"[^a-z0-9 ]+", " ", text.lower())
 
 
+def _squash(text: str) -> str:
+    """Collapse whitespace runs. Matching-only — never use where offsets matter.
+
+    ``_norm`` substitutes each punctuation character with a single space and is
+    deliberately LENGTH-PRESERVING, because ``_char_window`` maps a position found
+    in the normalised string back onto the raw one. That leaves runs of spaces
+    wherever the quote had punctuation the caption track does not, which silently
+    broke exact substring matching: "Nvidia, and AMD" normalises to
+    "nvidia  and amd" (two spaces) and will not match "nvidia and amd".
+    """
+    return " ".join(text.split())
+
+
+def _char_ngrams(text: str, n: int = NGRAM_N) -> set[str]:
+    """Character n-grams. Garble-tolerant: a mangled proper noun costs only the
+    handful of n-grams spanning it, not the whole match."""
+    if len(text) < n:
+        return {text} if text else set()
+    return {text[i : i + n] for i in range(len(text) - n + 1)}
+
+
+def _window_containment(q_grams: set[str], text: str, win: int) -> float:
+    """Best fraction of ``q_grams`` found in any ``win``-sized window of ``text``.
+
+    Windowing is the point. Plain containment over a whole turn lets a long
+    rambling turn score highly just by containing a lot of everything, which is
+    how the previous difflib sweep placed quotes on plausible-but-wrong turns. A
+    window sized to the quote can only score high if the quote's material is
+    actually concentrated somewhere in the turn.
+    """
+    if not q_grams:
+        return 0.0
+    if len(text) <= win:
+        return len(q_grams & _char_ngrams(text)) / len(q_grams)
+    best = 0.0
+    step = max(1, win // 2)
+    for start in range(0, len(text) - win + step, step):
+        seg = text[start : start + win]
+        score = len(q_grams & _char_ngrams(seg)) / len(q_grams)
+        if score > best:
+            best = score
+            if best >= 0.999:
+                break
+    return best
+
+
 def locate_turn(turns: list[str], quote: str) -> int | None:
     """Index of the turn containing ``quote``, or None.
 
-    Three passes, loosening each time, because auto-captions garble proper nouns:
-    exact normalised substring, then the longest word-shingle that appears exactly
-    once, then a difflib similarity sweep with a conservative threshold.
+    Three passes, loosening each time, because auto-captions garble proper nouns
+    ("ampiers" for Ampere, "Grock" for Grok) and the extracted quote is often
+    re-punctuated relative to the caption track.
+
+    1. exact squashed-normalised substring — perfect precision when it fires;
+    2. the longest word-shingle occurring in exactly one turn;
+    3. windowed character-n-gram containment, which tolerates garbling.
+
+    Returning None is a valid, LOUD answer: the caller reports the thesis as
+    ``indeterminate`` with ``quote_not_located`` rather than guessing. That is
+    strictly better than a confident placement on the wrong turn, which produces
+    an ``indeterminate`` verdict that looks like genuine ambiguity but is really
+    bad input — the failure mode that dominated the 2026-09-08 audit.
     """
     if not quote.strip():
         return None
-    normed = [_norm(t) for t in turns]
-    q = _norm(quote)
+    normed = [_squash(_norm(t)) for t in turns]
+    q = _squash(_norm(quote))
+    if not q:
+        return None
 
+    # Pass 1 — exact substring.
     for i, t in enumerate(normed):
-        if q and q in t:
+        if q in t:
             return i
 
-    words = [w for w in q.split() if len(w) > 3]
-    for size in (6, 5, 4, 3):
-        for start in range(0, max(0, len(words) - size) + 1):
+    # Pass 2 — longest word-shingle that occurs exactly once across all turns.
+    words = [w for w in q.split() if len(w) > 2]
+    for size in (8, 6, 5, 4, 3):
+        if len(words) < size:
+            continue
+        for start in range(len(words) - size + 1):
             shingle = " ".join(words[start : start + size])
-            if len(shingle) < 12:
+            if len(shingle) < MIN_SHINGLE_CHARS:
                 continue
             hits = [i for i, t in enumerate(normed) if shingle in t]
             if len(hits) == 1:
                 return hits[0]
 
-    best_ratio, best_idx = 0.0, None
+    # Pass 3 — windowed character-n-gram containment.
+    q_grams = _char_ngrams(q)
+    if not q_grams:
+        return None
+    win = max(2 * len(q), MIN_MATCH_WINDOW_CHARS)
+    best_score, best_idx = 0.0, None
     for i, t in enumerate(normed):
-        ratio = difflib.SequenceMatcher(None, q, t[:400]).quick_ratio()
-        if ratio > best_ratio:
-            best_ratio, best_idx = ratio, i
-    return best_idx if best_ratio >= 0.55 else None
+        score = _window_containment(q_grams, t, win)
+        if score > best_score:
+            best_score, best_idx = score, i
+    return best_idx if best_score >= LOCATE_MIN_SCORE else None
 
 
 def _char_window(text: str, quote: str) -> str:
@@ -318,33 +402,23 @@ def metadata_by_label() -> dict[str, tuple[str, str]]:
     return out
 
 
-def host_by_date() -> dict[str, str]:
-    """Legacy date-keyed host map. Prefer ``metadata_by_label``: date is not
-    unique (2026-05-12 holds two records of one Sohn event)."""
-    by_label = metadata_by_label()
-    manifest = json.loads(MASTER_MANIFEST.read_text(encoding="utf-8"))
-    return {
-        str(r["date"]): by_label.get(str(r.get("label", "")), ("", ""))[0]
-        for r in manifest
-        if r.get("date")
-    }
+def label_by_date_source() -> dict[tuple[str, str], str]:
+    """(date, timeline-source) -> label, built from the extraction files.
 
-
-def transcript_by_date() -> dict[str, str]:
-    """date -> transcript path.
-
-    NOTE: date is NOT a unique key. 2026-05-12 carries two records of the same
-    Sohn NY event — the YouTube talk and Khaira's write-up — so a date-keyed map
-    silently keeps one. This is retained for the episode-selection path (which
-    only needs *a* transcript per date) but anything per-appearance must key on
-    ``label`` instead; see ``transcript_by_label``.
+    The flat timeline carries no ``label``, only ``date`` and a composed
+    ``source`` of the form ``"{metadata.source} — {metadata.topic}"`` (see
+    ``audit_theses``). The extraction JSONs carry both halves plus the label in
+    their filename, so this reconstructs the join. Verified 47/47 against the
+    614-thesis timeline.
     """
-    rows = json.loads(MASTER_MANIFEST.read_text(encoding="utf-8"))
-    return {
-        str(r["date"]): str(r["filepath"])
-        for r in rows
-        if isinstance(r, dict) and r.get("filepath") and r.get("date")
-    }
+    out: dict[tuple[str, str], str] = {}
+    for path in sorted(EXTRACTION_DIR.glob("*.json")):
+        meta = json.loads(path.read_text(encoding="utf-8")).get("metadata", {})
+        source = str(meta.get("source", "") or "")
+        topic = str(meta.get("topic", "") or "")
+        composed = f"{source} — {topic}" if topic else source
+        out[(str(meta.get("date", ""))[:10], composed)] = path.stem[11:]
+    return out
 
 
 def transcript_by_label() -> dict[str, tuple[str, str]]:
@@ -363,19 +437,39 @@ def classify(host: str) -> str:
     return "panel" if PANEL_HINT.search(host) else "solo"
 
 
-def select_dates(mode: str, only: Iterable[str] | None) -> list[tuple[str, str, str]]:
-    """Return (date, host, kind) for the episodes to audit."""
-    hosts = host_by_date()
+def select_episodes(
+    mode: str, only: Iterable[str] | None
+) -> list[tuple[str, str, str, str, str]]:
+    """Return (label, date, source, host, kind) for the episodes to audit.
+
+    Keyed on ``label``, never on ``date``. 2026-05-12 holds TWO appearances of
+    the one Sohn NY event — Khaira's write-up (4 theses) and the YouTube
+    fireside (8) — whose thesis_ids collide on T1..T4. A date-keyed pass bundled
+    all 12 into a single call against whichever transcript the date map happened
+    to keep, so up to 8 quotes could not be located and the output file could not
+    be joined back to an appearance. ``--dates`` still filters on date and now
+    selects both appearances that share one.
+    """
+    meta = metadata_by_label()
+    labels = label_by_date_source()
     timeline = json.loads(TIMELINE_FLAT.read_text(encoding="utf-8"))
-    dates = sorted({str(r.get("date", ""))[:10] for r in timeline if r.get("date")})
-    picked: list[tuple[str, str, str]] = []
-    for date in dates:
-        host = hosts.get(date, "")
-        kind = classify(host)
+
+    groups: dict[tuple[str, str], None] = {}
+    for row in timeline:
+        groups[(str(row.get("date", ""))[:10], str(row.get("source", "")))] = None
+
+    picked: list[tuple[str, str, str, str, str]] = []
+    for date, source in sorted(groups):
         if only is not None and date not in set(only):
             continue
+        label = labels.get((date, source), "")
+        if not label:
+            print(f"  WARNING: no label for ({date}, {source[:50]}) — skipped")
+            continue
+        host, _role = meta.get(label, ("", "unknown"))
+        kind = classify(host)
         if mode == "all" or kind in ("panel", "unknown"):
-            picked.append((date, host, kind))
+            picked.append((label, date, source, host, kind))
     return picked
 
 
@@ -470,6 +564,7 @@ def summarise(episodes: list[dict[str, Any]]) -> dict[str, Any]:
         contaminated = row["other"] + row["indeterminate"]
         per_episode.append(
             {
+                "label": ep.get("label", ""),
                 "date": ep["date"],
                 "source": ep["source"],
                 "kind": ep["kind"],
@@ -541,39 +636,68 @@ def main() -> int:
         help="select episodes and locate quotes; make no API calls",
     )
     parser.add_argument("--force", action="store_true", help="re-audit existing outputs")
+    parser.add_argument(
+        "--out-dir", type=Path, default=None,
+        help=f"write episode files here instead of {OUT_DIR.name}/",
+    )
+    parser.add_argument(
+        "--only", type=Path, default=None,
+        help="JSON list of [label, thesis_id] pairs. Audits ONLY those theses and "
+             "MERGES them into the existing episode file, leaving every other "
+             "verdict untouched. Implies --force for the selected theses.",
+    )
     args = parser.parse_args()
 
     dotenv.load_dotenv(targets.REPO_ROOT / ".env", override=True)
     timeline = json.loads(TIMELINE_FLAT.read_text(encoding="utf-8"))
-    paths = transcript_by_date()
-    picked = select_dates("all" if args.all else "risk", args.dates)
+    paths = transcript_by_label()
+    picked = select_episodes("all" if args.all else "risk", args.dates)
 
-    by_date: dict[str, list[dict[str, Any]]] = {}
+    by_group: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for row in timeline:
-        by_date.setdefault(str(row.get("date", ""))[:10], []).append(row)
+        key = (str(row.get("date", ""))[:10], str(row.get("source", "")))
+        by_group.setdefault(key, []).append(row)
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir = (args.out_dir or OUT_DIR).resolve()
+    only: dict[str, set[str]] | None = None
+    if args.only is not None:
+        only = {}
+        for label, thesis_id in json.loads(args.only.read_text(encoding="utf-8")):
+            only.setdefault(str(label), set()).add(str(thesis_id))
+        print(
+            f"targeted re-audit: {sum(len(v) for v in only.values())} theses "
+            f"across {len(only)} episodes -> {out_dir}"
+        )
+
+    out_dir.mkdir(parents=True, exist_ok=True)
     client = None
     if not args.dry_run:
         import anthropic
 
-        client = anthropic.Anthropic(api_key=load_api_key(), max_retries=3)
+        client = anthropic.Anthropic(
+            api_key=load_api_key(), max_retries=3, timeout=API_TIMEOUT_SECONDS
+        )
 
     episodes: list[dict[str, Any]] = []
     total_in = total_out = 0
     unlocated = 0
 
-    for n, (date, host, kind) in enumerate(picked, 1):
-        rows = by_date.get(date, [])
-        rel = paths.get(date)
-        if not rel:
-            print(f"[{n}/{len(picked)}] {date} — no transcript on file; skipped")
+    for n, (label, date, source, host, kind) in enumerate(picked, 1):
+        rows = by_group.get((date, source), [])
+        entry = paths.get(label)
+        if entry is None:
+            print(f"[{n}/{len(picked)}] {label} — no transcript on file; skipped")
             continue
-        source = str(rows[0].get("source", "")) if rows else ""
-        out_path = OUT_DIR / f"{date}.json"
-        if out_path.exists() and not args.force and not args.dry_run:
+        rel = entry[1]
+        out_path = out_dir / f"{label}.json"
+        if only is not None:
+            wanted = only.get(label, set())
+            rows = [r for r in rows if str(r.get("thesis_id")) in wanted]
+            if not rows:
+                continue
+        elif out_path.exists() and not args.force and not args.dry_run:
             episodes.append(json.loads(out_path.read_text(encoding="utf-8")))
-            print(f"[{n}/{len(picked)}] {date} — skipped_exists")
+            print(f"[{n}/{len(picked)}] {label} — skipped_exists")
             continue
 
         turns = split_turns(_strip_timestamps((targets.REPO_ROOT / rel).read_text(encoding="utf-8")))
@@ -596,7 +720,7 @@ def main() -> int:
                 items.append({**payload, "window": build_window(turns, idx, quote)})
 
         print(
-            f"[{n}/{len(picked)}] {date} {kind:<8} theses={len(rows):>3} "
+            f"[{n}/{len(picked)}] {label[:44]:<44} {kind:<8} theses={len(rows):>3} "
             f"located={len(items):>3} unlocated={len(missing):>2} turns={len(turns):>4}"
         )
         if args.dry_run:
@@ -639,14 +763,24 @@ def main() -> int:
                 )
             time.sleep(SLEEP_BETWEEN)
 
-        record = {
-            "date": date,
-            "source": source,
-            "host": host,
-            "kind": kind,
-            "model": MODEL,
-            "results": results,
-        }
+        if only is not None and out_path.exists():
+            # Merge: replace only the re-audited theses, preserve the file's order
+            # and every verdict this run did not look at.
+            existing = json.loads(out_path.read_text(encoding="utf-8"))
+            fresh = {str(r["thesis_id"]): r for r in results}
+            merged = [fresh.pop(str(r["thesis_id"]), r) for r in existing.get("results", [])]
+            merged.extend(fresh.values())
+            record = {**existing, "results": merged}
+        else:
+            record = {
+                "label": label,
+                "date": date,
+                "source": source,
+                "host": host,
+                "kind": kind,
+                "model": MODEL,
+                "results": results,
+            }
         out_path.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
         episodes.append(record)
 
@@ -667,7 +801,7 @@ def main() -> int:
         + "\n",
         encoding="utf-8",
     )
-    print(f"  -> {LOG_PATH}\n  -> {OUT_DIR}/<date>.json")
+    print(f"  -> {LOG_PATH}\n  -> {out_dir}/<label>.json")
     return 0
 
 

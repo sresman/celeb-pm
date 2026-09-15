@@ -1,0 +1,184 @@
+{
+  "label": "aleph_semis_globalwarming_2025oct",
+  "date": "2025-10-22",
+  "source": "Invested by Aleph \u2014 Semiconductors, China/Taiwan fabs, global warming (China's Not Getting Taiwan's Fabs)",
+  "host": "Michael Eisenberg (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Scaled foundation model companies are dramatically better investments post-reasoning models due to emergence of data flywheel",
+      "tickers": [
+        "GOOGL",
+        "MSFT"
+      ],
+      "quote": "scaled foundation model companies are much better investments post-reasoning",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 1 is confirmed as Baker responding to Eisenberg's question, and the T1 quote appears in the immediately following turn continuing Baker's extended monologue on reasoning models and flywheels."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "XAI and Google have the most unique data among frontier labs, giving them structural training advantages",
+      "tickers": [
+        "GOOGL"
+      ],
+      "quote": "Google and XAI having the most unique data",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 1 is Baker's reply (confirmed by direct address 'You still think that's true?' in turn 0 intro), and the quote 'Google and XAI having the most unique data' appears in turn 1."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Nvidia is extremely difficult to displace as the dominant accelerator platform; attempts to out-GPU the GPU are largely a fool's errand",
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "GOOGL",
+        "AMZN"
+      ],
+      "quote": "very hard to out-Nvidia Nvidia",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage contains 'my firm I should say is an investor in Cerebras' and references Baker's personal history at Fidelity as a semiconductor analyst, self-identifying as Baker throughout."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Niche SRAM-architecture chip companies (Cerebras, Groq) can carve out viable positions by doing something fundamentally different from GPUs",
+      "tickers": [],
+      "quote": "Cerebras and Groq have an SRAM architecture that can do something fundamentally different",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous passage as T3 containing 'my firm I should say is an investor in Cerebras and Groq,' directly self-identifying Baker as the speaker."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Next Silicon is doing something fundamentally differentiated in the accelerator space and represents a niche opportunity",
+      "tickers": [],
+      "quote": "Next Silicon doing something fundamentally different",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "No speaker markers in the transcript window and the quote fragment 'Next Silicon doing something fundamentally different' does not appear in the provided text, making attribution impossible."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "SpaceX is the highest risk-adjusted return (Sharpe ratio) asset available in any market, public or private",
+      "tickers": [],
+      "quote": "SpaceX is probably the highest risk-adjusted return available in the markets",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 68 contains 'my personal opinion it's the highest sharp ratio asset you can buy' and 'my friend Antonio,' consistent with Baker's voice; turn 72 closes with 'Gavin thank you so much' confirming Baker spoke in turns 68-71."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Exposure to frontier AI labs (OpenAI, Anthropic, XAI, Google DeepMind) is a must-have in a portfolio",
+      "tickers": [
+        "GOOGL"
+      ],
+      "quote": "you want to have exposure to the frontier labs",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 71 is Baker's turn confirmed by turn 72 outro 'Gavin thank you so much for doing this,' and the quote appears in turn 71."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Semiconductors (public and private) are structurally advantaged because AI makes global GDP inexorably more silicon-intensive",
+      "tickers": [],
+      "quote": "AI makes global GDP inexorably more silicon intensive",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 71 is Baker's (confirmed by turn 72 farewell to Gavin), and the quote 'AI makes global GDP inexorably more silicon intensive' appears there."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Intel has a real path to recovery under Lip-Bu Tan with US government support, and American-made wafers could command ~100% price premium",
+      "tickers": [
+        "INTC",
+        "TSM"
+      ],
+      "quote": "you could probably charge close to a 100% premium for American wafers",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 20 contains the quote and is followed by turn 21 which begins 'Yes. Why?' indicating the interviewer asking Baker to elaborate, confirming Baker spoke in turn 20."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "US semiconductor export controls on China are working and have extended the Western lead to potentially multi-decade",
+      "tickers": [
+        "ASML",
+        "AMAT",
+        "KLAC",
+        "LRCX"
+      ],
+      "quote": "we really did stop them and slow them down. We have a multi-decade lead",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage opens 'I respectfully disagree with Bill' and contains detailed semiconductor supply chain analysis consistent with Baker's established expertise and voice throughout the episode."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Global warming is a solved problem due to solar and battery economics; the world will run on sunlight within one to two generations",
+      "tickers": [],
+      "quote": "I genuinely believe global warming is a solved problem",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Michael Eisenberg",
+      "evidence": "Turn 0 is the host intro/teaser reel; it says 'I'm joined today by Gavin Baker' introducing him as a guest, so the 'I genuinely believe global warming is a solved problem' line is the host speaking before Baker arrives."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Humanoid robots will be ubiquitous in homes and factories within 10 years",
+      "tickers": [
+        "TSLA"
+      ],
+      "quote": "humanoid robots will be everywhere in houses and factories",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 54 begins with 'Give me your 10-year AI prediction' (interviewer prompt) and the response including 'humanoid robots will be everywhere' is Baker's answer, confirmed by turn 55 referencing 'Gavin Baker' in third person."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Artificial superintelligence (ASI) will arrive within 10 years; economic returns are unknowable but the trajectory is supportive",
+      "tickers": [],
+      "quote": "we will have artificial superintelligence in 10 years",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 0 is the host's intro teaser reel mixing host statements and previewed guest quotes; 'we will have artificial superintelligence in 10 years' could be a teaser of Baker's words or the host's own view, making attribution uncertain from this window alone."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Edge AI / on-device AI is a meaningful risk to the centralized data center boom",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "130 IQ AI on your iPhone locally \u2014 a risk to the current data center boom",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 54 is Baker's response to the interviewer's '10-year AI prediction' prompt, confirmed by turn 55 referencing 'Gavin Baker' in third person."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Israeli venture semis and cyber are attractive because founders are experienced operators (age ~50) with proven track records, unlike typical software startups",
+      "tickers": [],
+      "quote": "in semiconductors often you're investing in a 50-year-old who ran a division",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 71 is Baker's (confirmed by turn 72 farewell 'Gavin thank you so much'), and the quote about investing in a 50-year-old semiconductor founder appears there."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "date": "2026-06-07",
+  "source": "All-In Podcast \u2014 Liquidity Summit: secondary markets eating the IPO",
+  "host": "All-In Liquidity Summit panel (Gerstner, Rodriguez)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Secondary markets for late-stage private companies have become a structural, permanent feature of the capital markets ecosystem, now exceeding 2021 peak volumes and competing with IPOs and M&A as primary exit mechanisms.",
+      "tickers": [],
+      "quote": "secondary transactions double the 21 peak in terms of secondary transactions",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 164 contains only a sentence fragment continuing a prior turn; no speaker cues identify who is speaking in this window."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Companies staying private longer is a structural trend that is net negative for price discovery and governance quality, but secondary markets are a necessary palliative.",
+      "tickers": [],
+      "quote": "I don't think there is actually a good reason to stay private longer",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 11 has no direct address or self-identification cue to distinguish Baker from another panelist."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Long-only mutual funds (Fidelity, Baillie Gifford, Capital Research, Wellington, T. Rowe) are at or near their self-imposed private allocation caps (3-7%), creating a massive wave of pent-up demand that will be unleashed when large private companies go public and exit the illiquid bucket.",
+      "tickers": [
+        "SpaceX"
+      ],
+      "quote": "hundreds of billions of dollars of new late stage demand coming back to the market",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 106 has no direct address or self-identification; cannot determine if Baker or another panelist is speaking."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Arista Networks and Drivetrain (Driveats/Drivets) are high-conviction positions in the AI networking infrastructure supercycle thesis \u2014 reinventing networking for disaggregated AI inference workloads.",
+      "tickers": [
+        "ANET"
+      ],
+      "quote": "reinvent networking and Arya and driveets are coming at it in a very different way",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 161 contains only a geographic description with no speaker cues linking it to Baker or anyone else."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Zipline is a high-conviction private investment in autonomous drone delivery \u2014 a sector that had a false start but now works, with a path to dramatically lower delivery costs and massive consumption uplift.",
+      "tickers": [
+        "Zipline (private)"
+      ],
+      "quote": "Atreides is also involved in Zipline",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 75 ('We are selling into this') has no direct address or self-identification to confirm Baker as speaker."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Sierra (Brett Taylor's company) is an attractive private investment in agent-native enterprise software \u2014 building Salesforce-equivalent sales, marketing, and customer service agents from the ground up.",
+      "tickers": [],
+      "quote": "Sierra Brett Taylor's company agent native",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "Turn 151 references personal retail-style holdings ('I owned some Coinbase, I owned some Robin Hood') and turn 163 addresses 'Jason' directly, consistent with a host/co-investor persona rather than a fund CIO."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Revolut is an attractive private secondary investment \u2014 a next-generation neobank with a modern tech stack, 10s of millions of customers, 14 lines of business, expanding from Europe to the US.",
+      "tickers": [],
+      "quote": "Revolut share prices in these secondary markets I got kind of curious",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "Turn 151 uses first-person retail framing ('I owned some Coinbase, I owned some Robin Hood') and the prior turn 163 addresses 'Jason,' identifying this speaker as Jason rather than Baker."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Neurobotics (European AI-powered logistics robotics company based in Germany) is a private investment opportunity \u2014 quiet, well-funded, $100M revenue, operating outside the high-visibility Silicon Valley ecosystem.",
+      "tickers": [],
+      "quote": "Neurobotics in Europe AI powered logistics robotics",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 159 is a brief confirmatory reply with no speaker cues to distinguish Baker from another panelist."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Vast Space is an attractive private investment in commercial space stations, benefiting from SpaceX's falling launch costs.",
+      "tickers": [
+        "VAST"
+      ],
+      "quote": "Vast which is building space stations and we think they're going to win",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "Turn 163 opens with 'Jason, well, I...' indicating the prior speaker addressed Jason, and the turn itself uses 'we did uh direct on the cap table and SPV' in a personal angel/host investor style; 'my my at trades' appears to be a garbled reference by Baker mid-turn, but the Vast thesis framing ('we did...SPV') precedes Baker's interjection and belongs to Jason."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Venture firms without material exposure to trillion-dollar-plus private companies (SpaceX, Anthropic, OpenAI) face serious franchise risk and are engaging in undisciplined 'call option' behavior to compensate.",
+      "tickers": [
+        "SpaceX",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "quote": "venture firms who don't have exposure behave in strange ways franchise risk",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 0 is an intro/music segment with no identifiable speaker; no cues link this to Baker."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Current technology valuations (public and private) are fully valued to stretched \u2014 not a bubble like 1999/2000, but more analogous to 2021, with risk of 10-20% public market correction translating to 30-40% drawdowns in high-beta names.",
+      "tickers": [],
+      "quote": "everything in the world of technology is pretty fully valued",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "Turn 127 references 'Gav and I' as third-party, meaning the speaker is not Baker; retail-investor framing and host-style editorialising further confirm this is a co-host (Jason Calacanis) speaking about Baker."
+    }
+  ]
+}

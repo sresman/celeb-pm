@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast \u2014 Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "thesis_id": "T6",
+  "summary": "GPU compute has a much longer useful life than bears assume \u2014 Ampere GPUs from 2020 are being rented profitably through 2029, implying 9-year asset lives",
+  "summary_extended": "Baker argues that GPU compute assets have a far longer useful life than bears assume, citing the specific data point that CoreWeave is renting Ampere-generation GPUs (released in 2020) at economically profitable rates for 2029 delivery \u2014 implying a 9-year asset life. This directly validates Nvidia's residual value guarantee thesis, which underpins GPU-backed financing structures, and suggests the market has been too pessimistic about GPU depreciation curves. Baker draws an analogy to aircraft financing, arguing that GPU-backed debt should be underwritten with similar confidence to long-lived physical assets rather than treated as rapidly obsolete technology. The implication is that Nvidia's business model and CoreWeave's capital-intensive GPU leasing model are more durable than feared, and that GPU-backed financing vehicles are structurally sound investments. Baker also notes architectural diversity across Chinese open-source models (Qwen, Kimi, DeepSeek, GLM) as additional evidence that GPU flexibility extends asset longevity across diverse workloads.",
+  "detail": "Baker cites CoreWeave renting Ampere GPUs at economically profitable rates for 2029 delivery. This validates Nvidia's residual value guarantee thesis and makes GPU-backed financing more like aircraft financing than feared. Architectural diversity across Chinese open-source models (Qwen, Kimi, DeepSeek, GLM) further supports GPU flexibility and longevity.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites a specific data point (CoreWeave/Ampere/2029) and draws a structural conclusion about asset life",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "AI financing/capital markets"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "Ampere that came out in 2020 is going to have a 9-year life",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "CRWV"
+  ],
+  "tickers_subject": [
+    "NVDA",
+    "CRWV"
+  ],
+  "tickers_implied_original": [
+    "CRWV",
+    "TSM",
+    "MU",
+    "SKHX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis directly validates Nvidia's residual value guarantee thesis and the durability of its GPU business model \u2014 Nvidia is a primary subject of this structural claim about GPU asset life."
+    },
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "CoreWeave is the specific company Baker cites as renting Ampere GPUs profitably through 2029, making it a direct subject of the thesis about GPU asset longevity and GPU-backed financing viability."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "TSMC manufactures Nvidia GPUs but the thesis is about GPU asset life and financing structures, not semiconductor fabrication. TSMC is not a subject of or beneficiary from this specific claim."
+    },
+    {
+      "ticker": "MU",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Micron is a memory supplier but the thesis is specifically about GPU compute asset longevity and financing \u2014 memory dynamics are not the subject of this thesis and Micron does not directly benefit from longer GPU asset lives."
+    },
+    {
+      "ticker": "SKHX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SK Hynix is a HBM/memory supplier and not US-listed; the thesis is about GPU asset life and financing, not memory supply chains. Tangential and should be removed."
+    }
+  ]
+}

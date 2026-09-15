@@ -1,0 +1,152 @@
+{
+  "label": "tbpn_spacex_sovereign_ai_2026jun",
+  "date": "2026-06-15",
+  "source": "TBPN \u2014 SpaceX IPO, token path, sovereign AI won't reach frontier",
+  "host": "Foxy (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "SpaceX near-term value is driven by terrestrial compute gigawatt ramp and Grok/cursor adoption, not long-duration space optionality",
+      "tickers": [],
+      "quote": "how quickly can they bring on terrestrial compute",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 17 introduces the two variables thesis ('I think there are two variables'), and turn 19 continues it; turn 16 references someone else doing 'the work on SpaceX,' suggesting the speaker in 17/19 is not Baker but a co-host or co-guest driving the SpaceX discussion."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "SpaceX ordered 20% of Rubin GPUs; Rubin is a more drop-in replacement than Blackwell, enabling faster data center ramp",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "ordered 20% of the Reubins and the Reubin is an epic chip",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 51 contains the quote but no direct address or self-identification cue is present in the window to distinguish Baker from another participant."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "EV/net PP&E is an increasingly important valuation metric; installed physical assets on Earth will appreciate in value",
+      "tickers": [],
+      "quote": "EV to net PP&E as a valuation metric",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 65 contains the EV/net PP&E thesis but no speaker identification cue appears in the surrounding turns."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Meta's EV/net PP&E multiple reflects extreme market skepticism about monetizing its asset base; outcome uncertain but Zuckerberg has proven ability to pivot",
+      "tickers": [
+        "META"
+      ],
+      "quote": "market has an immense amount of skepticism about their ability to monetize",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 66 follows directly from turn 65 with no speaker change marker or identification cue visible in the window."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Being a 'token factory' is sufficient as a business model for the next 5-10 years; the world needs more token factories",
+      "tickers": [
+        "CRWV"
+      ],
+      "quote": "being a token factory is more than enough for the next 5 to 10 years",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 57 contains the quote but no direct address or self-identification cue distinguishes Baker from another participant in this window."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "CDNs like Cloudflare are partially in the token path but currently deliver less than 1% (possibly <10bps) of global tokens consumed",
+      "tickers": [
+        "NET",
+        "FSLY",
+        "AKAM"
+      ],
+      "quote": "CDNs are delivering less than 1% of them",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 111 contains the CDN token-delivery thesis but no speaker identification cue is present in the surrounding turns."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "The 'bottleneck trade' in AI supply chain is nearing its end; the next game is identifying companies with enduring franchise value",
+      "tickers": [],
+      "quote": "the bottleneck trade is kind of nearing its end",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "host",
+      "evidence": "Turn 124 contains the quote and is a continuous monologue by someone asking questions and editorialising ('bottleneck bros as they are called'), consistent with a host role rather than Baker as CIO; no direct address or self-identification links this turn to Baker."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Orbital/space compute becomes economically compelling once Starship is reusable, potentially cheaper than terrestrial compute on a per-gigawatt basis",
+      "tickers": [
+        "SpaceX"
+      ],
+      "quote": "you can put a gig into space for 30 billion and a gig on earth is 60 billion",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turns 133-135 contain the orbital compute math but no direct address or self-identification cue distinguishes Baker from another speaker."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Sovereign AI for most countries will be fine-tuned open-source models run in local data centers, not frontier model development; China will fall further behind",
+      "tickers": [],
+      "quote": "sovereign AI at the frontier I don't see it",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turns 150-153 contain the sovereign AI thesis but no speaker identification cue is present in the window."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "China's AI advantage via distillation of Western frontier models is eroding as labs lock down reasoning traces and stop releasing frontier models openly",
+      "tickers": [],
+      "quote": "all that goes away if people stop releasing these models at the frontier",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 160 contains the distillation thesis but no direct address or self-identification cue is present to attribute it to Baker specifically."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Retail investors have been a more powerful market force over the last 3.5 years than at any point including the 2000 bubble, and are likely outperforming most professional managers",
+      "tickers": [],
+      "quote": "retail is probably outperforming the overwhelming majority of professional money managers",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 97 contains the retail outperformance thesis but no speaker identification cue distinguishes Baker from another participant in this window."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "SpaceX supply/demand dynamics are favorable post-IPO due to employee ownership concentration and prior liquidity opportunities reducing overhang",
+      "tickers": [],
+      "quote": "10,000 SpaceX employees bought on the IPO",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 100 contains the SpaceX employee IPO thesis but no direct address or self-identification cue is present in the window."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "OpenAI cutting Codex pricing signals the endgame is approaching; coding tokens are so valuable that labs must acquire them at scale to maintain RSI feedback loops",
+      "tickers": [],
+      "quote": "coding tokens are so valuable and if you don't have enough you may not get into this RSI loop",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turns 72-74 contain the OpenAI Codex pricing thesis but no speaker identification cue distinguishes Baker from another participant."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "date": "2020-07-27",
+  "source": "Koyfin Investing Wizards \u2014 AI tailwind for semiconductors",
+  "host": "Rob Koyfman (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "AI has dramatically higher semiconductor intensity than human-written software, driving a multi-decade structural demand uplift for the entire semiconductor industry",
+      "tickers": [],
+      "quote": "semiconductor intensity of software is going to go up significantly, by 4 to 6x",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker uses 'this matters to me as an investor' and 'I believe' framing consistent with Baker's CIO voice; the intro in T3/T5/T6 windows confirms Baker is the guest and Rob Koyfman is the host, and this extended monologue matches Baker's register throughout."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Nvidia holds a durable leadership position in AI training GPUs, protected by CUDA software ecosystem and the historical pattern of digital processor market incumbents never being unseated",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "you've never really seen a number one unseated in digital processor markets",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from same speaker as T1 with 'I had an interesting kind of observation' self-attribution and investor framing consistent with Baker as identified guest."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "ASML is the single most critical company in the semiconductor supply chain; continued EUV progress is essential to sustaining Moore's Law and all downstream AI compute scaling",
+      "tickers": [
+        "ASML"
+      ],
+      "quote": "if you could pick one company on this planet... almost all human progress depends on this company",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Intro window explicitly names 'Gavin Baker, founding founder of a Trellis Management' as guest; 'Awesome to be here, Rob' confirms Baker is responding, and the ASML thesis quote appears in his extended answer."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "AMD has a rare simultaneous architectural and manufacturing process advantage over Intel in server CPUs, with better supply capacity than during its last advantage cycle (~2003-2005)",
+      "tickers": [
+        "AMD",
+        "INTC",
+        "TSM"
+      ],
+      "quote": "AMD has an architectural advantage, but because of Taiwan Semi, they also have a manufacturing process technology advantage",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Extended technical monologue on AMD/Intel manufacturing with 'I'd say' and investor framing consistent with Baker as the identified guest speaker throughout the episode."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Intel faces a structural competitive crisis having lost its 50-year manufacturing lead due to the EUV bet and process execution failures; recovery depends on 10nm server CPU execution in late 2020",
+      "tickers": [
+        "INTC",
+        "AMD",
+        "TSM"
+      ],
+      "quote": "Intel lost a 50-year leadership position... because of a bet around EUV",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Intro window confirms Baker is the guest; the Intel manufacturing thesis is part of his extended technical discussion consistent with his CIO register."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "AMD is at an architectural disadvantage in GPUs relative to Nvidia, with Nvidia's 12nm GPU outperforming AMD's 7nm GPU \u2014 a striking indicator of the depth of Nvidia's architectural lead",
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "INTC"
+      ],
+      "quote": "Nvidia's 12 nanometer GPU was actually faster than AMD's 7 nanometer GPU, which is just simply astonishing",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Intro window confirms Baker is the guest; the GPU architecture comparison quote fits his detailed semiconductor analyst background and CIO register."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "The semiconductor industry is entering a positive demand supercycle from AI intensity, following two prior negative demand shocks (smartphone replacing PC; cloud/virtualization increasing utilization), in a now highly consolidated market structure",
+      "tickers": [
+        "XLNX"
+      ],
+      "quote": "positive demand shock from the AI intensity... just as almost every semiconductor market has really consolidated",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker references 'this means to me as an investor' and 'I am going to write a lot of this up in a medium post at some point, Rob' \u2014 direct address to Rob confirms this is Baker speaking."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "High-ROIC technology companies have stopped mean-reverting for ~15 years due to increasing returns to scale, network effects, and data-driven AI moats \u2014 making them structurally different from historical competitive dynamics",
+      "tickers": [
+        "GOOGL"
+      ],
+      "quote": "really high ROIC companies are maintaining those ROICs with no sign of those ROICs falling",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'I I forget which consult' and uses first-person investor framing throughout; continuous monologue from Baker responding to Rob's question about mean reversion."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Internet platform businesses are natural monopolies of a historically unprecedented kind \u2014 data-driven AI quality moats mean even unlimited capital cannot replicate their competitive position",
+      "tickers": [
+        "GOOGL",
+        "AMZN",
+        "MSFT"
+      ],
+      "quote": "these internet businesses are natural monopolies, the likes of which the world has never seen",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from same speaker as T8 with 'the statement I made about mean reversion' self-referencing Baker's own prior point."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "ARM-based server CPU startups represent a credible threat to both Intel and AMD in the data center, with some having 'truly great design teams'",
+      "tickers": [
+        "MRVL",
+        "INTC"
+      ],
+      "quote": "some of these ARM server CPU startups have truly great design teams",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Intro window confirms Baker is the guest; ARM server CPU thesis fits his semiconductor CIO register and the episode's consistent Baker monologue pattern."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Semiconductor investing is a 'lost art' among technology investors who have focused on software/internet for a decade, creating a potential mispricing opportunity in semis",
+      "tickers": [],
+      "quote": "semiconductor investing is a little bit of a lost art",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'I was a semiconductor analyst back in the year 2000' and 'I am going to write a lot of this up in a medium post at some point, Rob' \u2014 self-identification and direct address to Rob confirm this is Baker."
+    }
+  ]
+}

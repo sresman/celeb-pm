@@ -404,3 +404,69 @@ Operator standing note, recorded because it cost a full corpus re-extract:
 **validate on a sample large enough to see the failure you are testing for.** Two
 episodes cannot detect a 50% collapse rate. Every "fix confirmed" in this session
 that rested on one or two episodes was later falsified by a 19-22 episode run.
+
+### SD-ATTR-10 — The attribution audit is keyed on `label`, never `date`
+
+SD-ATTR-7 recorded the keying rule; the audit itself still broke it. Its episode
+selection, transcript lookup and output filename were all date-keyed, with an
+unused `transcript_by_label()` sitting beside them. 2026-05-12 holds two
+appearances of one Sohn NY event (Khaira write-up, 4 theses; YouTube fireside, 8)
+whose thesis_ids collide on T1..T4 — so 12 theses went into one call against one
+transcript and produced one unjoinable output file. Fixed before either pass was
+paid for. **The rule is not enforced anywhere; check it by hand in any new module
+that touches the corpus.**
+
+### SD-ATTR-11 — Attribution is overlaid at timeline rebuild, not stored in the audits
+
+`rebuild_timelines()` reassembles the timeline from the 614 per-thesis files in
+`analysis/thesis_audits/`, not from `_build_v2_entry()`. Fields added to that
+function therefore only reach the timeline for theses re-audited afterwards —
+which is why last session's `speaker_attribution` never appeared. The fix loads
+`attribution_resolved.json` and merges at rebuild time. Consequence, deliberate:
+re-running the ~$2.50 attribution audit never triggers the ~$2.29 thesis audit,
+and the per-thesis audit files stay untouched. Also added `appearance_label` to
+every timeline row and a `--rebuild-only` flag.
+
+### SD-ATTR-12 — The filter ships defaulted OFF
+
+`--attribution {all,subject}` on both `theme_returns_v2` and
+`build_repeat_mention_events`, defaulting to `all`. The operator's rule is
+`subject`-only, but the workflow rule (2026-07-14) is analysis → operator
+verifies → only then deliverables. A filter that changes v9/v10 the moment
+anyone re-runs the pipeline would violate that, so the default stays at the
+pre-attribution behaviour until sign-off. Filtered runs write `_subject`-suffixed
+files so the two can coexist. Flipping the default is one word in each module.
+
+### SD-ATTR-13 — Vocabulary is translated once, in the reconciler
+
+`audit_attribution` emits `baker`; the corpus and the filtering layer speak
+`subject`/`other`/`indeterminate`. The map lives in
+`reconcile_attribution.VERDICT_MAP` and nowhere else, keeping the investor-
+specific word out of everything downstream of the audit (CLAUDE.md's
+investor-agnostic rule).
+
+### SD-ATTR-14 — Every API client in this tree needs an explicit timeout
+
+`audit_attribution` built its client with `max_retries=3` and no `timeout`, and
+wraps a bare `except Exception` around a second attempt. Pass 2 sat on one
+stalled request for **55 minutes** with the process alive and no output. Added
+`API_TIMEOUT_SECONDS = 180.0`. Recovery cost nothing because the module is
+idempotent — re-running **without** `--force` skipped the 41 finished episodes
+and still produced a complete summary.
+
+Two corollaries worth generalising:
+- **Always run these with `python -u`.** Stdout redirected to a file is
+  block-buffered, so a long run shows nothing until it exits and a hang is
+  indistinguishable from slowness.
+- `audit_theses.py` has the same un-timed client construction. Not changed this
+  session (out of scope), but it will hang the same way.
+
+### SD-ATTR-15 — Two-of-two agreement came in at 95%, and the disagreement is harmless
+
+583 of 614 agreed. Critically, `subject`→`subject` held 416 of pass 1's 422 calls
+(98.6%): when a pass says the subject spoke, that is stable. The churn is
+`other`↔`indeterminate` (17 of 31 disagreements), a distinction the filter does
+not act on since both are excluded. So the rule costs 6 theses / 10 named tickers
+and buys a defensible floor — a good trade. The rule does **not** protect against
+correlated error: the 5 cold-open false positives are seen identically by both
+passes.

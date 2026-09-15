@@ -1,0 +1,382 @@
+{
+  "date": "2026-05-20",
+  "source": "Invest Like the Best (YouTube) \u2014 Watts and wafers",
+  "host": "Patrick O'Shaughnessy",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Anthropic's ARR growth is the most extraordinary revenue ramp in the history of capitalism, adding the combined ARR of Palantir, Snowflake, and Databricks in one month",
+      "tickers": [],
+      "quote": "Anthropic added their combined businesses in 1 month",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 0 is a continuous monologue with no speaker change marker, and the content uses first-person CIO framing ('Forget my career') consistent with Baker's known views on AI revenue ramps discussed across the episode."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "The March/April 2026 NASDAQ selloff was a buying opportunity in AI \u2014 valuations reached historically cheap levels relative to the market while AI fundamentals were accelerating",
+      "tickers": [],
+      "quote": "tech essentially got as cheap as it's been versus the rest of the market",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers in this window, but the passage uses 'I became a believer,' 'I do a lot of pro national security investing,' and 'I do have access to people' \u2014 first-person CIO register consistent with Baker throughout the episode; the question 'What do you make of the multiples' mid-window signals a host interjection, placing the surrounding analysis in Baker's voice."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Anthropic is structurally more capital-efficient than OpenAI, with dramatically lower cost per token and likely positive gross margins on inference today",
+      "tickers": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "quote": "Anthropic probably starts generating cash this year",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers, but 'I'm sure is at very positive gross margins,' 'I can Anthropic probably starts generating cash,' and 'I think it's wise' are first-person analytical CIO framing; the prior turn references 'Krishna's awesome, we just had him on' which is host voice, placing the response in Baker's voice."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Anthropic has deliberately deprecated Claude's intelligence due to compute constraints \u2014 it generates 70% fewer tokens for the same question than previously, masking true demand",
+      "tickers": [],
+      "quote": "Claude is generating 70% less tokens for the exact same question",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 8 is the quote turn; turn 7 is a long Baker monologue (self-identified by 'I took action,' 'I read it') with no intervening speaker change, making turn 8 a continuation of Baker's speech."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "The Strait of Hormuz closure is net positive for America's relative manufacturing competitiveness, particularly for AI infrastructure, due to natural gas price dynamics",
+      "tickers": [
+        "EQT"
+      ],
+      "quote": "natural gas in Asia, Europe, everywhere else doubled or tripled",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers, but 'I became a believer,' 'I do do a lot of pro national security investing,' and 'I do have access to people who are experts' are first-person CIO register; the Strait of Hormuz analysis is embedded in a long analytical passage consistent with Baker's voice throughout the episode."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Capitalism will solve the power/watts shortage for AI data centers by 2027-2028, with orbital compute as the longer-term solution",
+      "tickers": [
+        "GEV"
+      ],
+      "quote": "watts shortage will probably begin to alleviate 27, 28",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers in this window; the passage opens with what appears to be a host transition ('Let's get to the Watson wafers part') followed by analytical content using 'I think capitalism is going to solve,' 'I think the watts shortage will probably begin to alleviate' \u2014 first-person CIO register consistent with Baker."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Orbital compute (racks in space connected by lasers) is a real and near-term solution to terrestrial power/cooling constraints, not science fiction",
+      "tickers": [],
+      "quote": "racks in space connected with lasers into a virtual data center",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I would like to redefine orbital compute,' 'I don't think that this is super bearish,' and 'I think it's worth thinking long and hard' are first-person analytical CIO framing consistent with Baker's voice in surrounding turns."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Companies in the power production and cooling ecosystem that are massively ramping capacity face risk from orbital compute becoming real just as that capacity hits",
+      "tickers": [
+        "GEV",
+        "ETN",
+        "VRT",
+        "PWR"
+      ],
+      "quote": "massively ramping capacity just as orbital compute is very real",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I do think if you are in this ecosystem... I think it's worth thinking long and hard about that' is first-person CIO analytical framing continuous with the orbital compute discussion attributed to Baker."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "TSMC's capacity discipline is the single most important variable in preventing an AI infrastructure bubble",
+      "tickers": [
+        "TSM",
+        "NVDA"
+      ],
+      "quote": "Taiwan Semi's capacity decisions \u2014 the single thing to watch for a bubble",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 38 (the quote turn) contains 'Yeah. I'm getting' which is a short response consistent with Baker answering turn 37's host prompt 'The diversity breakdown thing?'; turn 39 continues with 'know of anyone like me' \u2014 first-person CIO framing placing the analytical content in Baker's voice."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "TerraFab (SpaceX/Tesla joint venture with Intel partnership) will succeed in building a leading US semiconductor fab, potentially disrupting the TSMC/Intel/Samsung dynamic",
+      "tickers": [
+        "INTC",
+        "ASML",
+        "KLAC",
+        "LRCX",
+        "AMAT"
+      ],
+      "quote": "A teams at the wafer fab equipment companies will be here",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 38 is the quote turn, a short Baker response to host turn 37; the surrounding long analytical passage in turn 39 uses 'I think,' 'I don't know of anyone like me' \u2014 CIO register consistent with Baker, and the TSMC/TerraFab analysis flows from Baker's established wafer discussion."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Economic returns at the AI model layer are overwhelmingly concentrated at the frontier, which is surprising and may continue \u2014 this is the most important question for AI investors",
+      "tickers": [
+        "Anthropic",
+        "OpenAI",
+        "xAI"
+      ],
+      "quote": "overwhelming majority of economic returns come from frontier tokens",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I do think it's the fascinating,' 'I think this is one of the most important questions,' 'I'm much more open-minded' are first-person CIO analytical framing consistent with Baker's voice throughout the episode."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Google has lost its per-cost-token leadership due to conservative TPU v8 design decisions, shifting the Pareto frontier to Anthropic, OpenAI, and xAI",
+      "tickers": [
+        "GOOGL",
+        "AVGO"
+      ],
+      "quote": "Google dominated the Pareto frontier 9 months ago \u2014 now it's Anthropic, OpenAI, xAI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'Google losing their per cost token leadership as a result of making very conservative design decisions' is embedded in a continuous analytical passage using 'I think' first-person CIO framing consistent with Baker."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "The shift from all-you-can-eat to usage-based pricing at AI frontier labs is a major bullish catalyst for OpenAI and Anthropic revenue, likely driving both well above $200B ARR in 2026",
+      "tickers": [],
+      "quote": "OpenAI and Anthropic exceed well over $200B in ARR this year",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I was a telecom analyst in '05 to '07' is a self-identifying biographical detail consistent with Baker's known background, and 'I think this shift to usage-based pricing is probably why you will see' is first-person CIO framing."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "The disaggregation of prefill and inference extends GPU useful lives to 10-15 years, which is structurally positive for private credit GPU financing and lowers the cost of the AI buildout",
+      "tickers": [
+        "CRWV"
+      ],
+      "quote": "GPUs are going to have 10 or 15-year lives",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 30 is the quote turn; turn 29 is a host question 'What do you mean by the private credit?' directed at the prior speaker, and turn 30 responds 'Well, just, you know' \u2014 classic answer-to-host-question pattern placing turn 30 in Baker's voice."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Hyperscalers with large installed CPU fleets are underappreciated beneficiaries of the agentic AI world, where CPUs are more important than previously thought",
+      "tickers": [
+        "AMZN",
+        "MSFT",
+        "GOOGL"
+      ],
+      "quote": "CPUs are way more important than they were in an agentic world",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 30 is the quote turn containing both the GPU useful life thesis and the CPU thesis; host question in turn 29 establishes Baker as the respondent, and 'my friend Jamin from Coatue' is a first-person social reference consistent with Baker."
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "Cross-sectional AI valuations are deeply inconsistent \u2014 semi-cap equipment at 40x annualized earnings vs. DRAM at mid-single digit P/E cannot both be correct",
+      "tickers": [
+        "NVDA",
+        "GEV",
+        "MU"
+      ],
+      "quote": "semi-cap at 40x next quarter's earnings and DRAM at mid-single digit \u2014 can't both be true",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 39 contains 'know of anyone like me who's not really bullish on DRAM' \u2014 first-person self-referential CIO framing; turn 38 is Baker's short response to host turn 37, establishing Baker as the speaker in turn 39."
+    },
+    {
+      "thesis_id": "T17",
+      "summary": "DRAM companies are deeply undervalued relative to semi-cap equipment companies, and Baker knows of no one else who is bearish on DRAM \u2014 a sign of dangerous consensus on semi-cap",
+      "tickers": [
+        "MU",
+        "ALAB"
+      ],
+      "quote": "I don't know of anyone who's not really bullish on DRAM",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 39 uses 'I don't know of anyone like me who's not really bullish on DRAM' \u2014 explicit first-person self-identification as a DRAM bear, consistent with Baker's CIO role; host turn 37 and Baker's turn 38 establish the speaker chain."
+    },
+    {
+      "thesis_id": "T18",
+      "summary": "Astera Labs is a high-conviction long that has been miscategorized as a 'copper loser' in market baskets, when it is structurally a beneficiary of both copper and optical connectivity",
+      "tickers": [
+        "ALAB"
+      ],
+      "quote": "Astera was in a lot of copper loser baskets \u2014 definitionally cannot be a copper loser",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 40 contains 'I first invested in the series C' regarding Astera \u2014 a first-person investment history self-identification that is CIO-register and consistent with Baker's known Astera position; turn 39 establishes Baker as the prior speaker."
+    },
+    {
+      "thesis_id": "T19",
+      "summary": "The AI trade's internal cross-sectional correlations broke down in January 2026, requiring much more fine-grained factor analysis \u2014 you can no longer hedge memory with semi-cap or NAND",
+      "tickers": [
+        "MU",
+        "WDC",
+        "STX"
+      ],
+      "quote": "cross-sectional correlations within AI really fell apart in January",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I'm very factor aware,' 'you couldn't hedge your memory anymore' and the detailed factor/basket analysis is first-person CIO portfolio construction register consistent with Baker throughout the episode."
+    },
+    {
+      "thesis_id": "T20",
+      "summary": "Nvidia will keep open-source models a certain time frame behind the frontier as a strategic decision, and Jensen could reach near-frontier model quality with Nvidia's own model whenever he chooses",
+      "tickers": [
+        "NVDA",
+        "META"
+      ],
+      "quote": "Jensen is going to keep open source a certain time frame behind the frontier",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I do think Jensen is going to keep open source a certain time frame behind the frontier' and 'I just think Chinese open source' are first-person analytical CIO framing continuous with Baker's established voice in surrounding turns."
+    },
+    {
+      "thesis_id": "T21",
+      "summary": "Cerebras has done something genuinely hard and different (wafer-scale computing) that gives it a defensible niche, and the Cerebras IPO will catalyze a wave of semiconductor startup funding",
+      "tickers": [
+        "CBRS"
+      ],
+      "quote": "Cerebras did something hard and fundamentally different \u2014 wafer scale computing",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; the chip startup analysis uses 'I think this is good and healthy,' 'I think probably Trainium is doing the best' \u2014 first-person CIO analytical framing consistent with Baker's voice in the wafers discussion throughout the episode."
+    },
+    {
+      "thesis_id": "T22",
+      "summary": "For AI chip startups, the only viable path is to make different AND hard tradeoffs \u2014 trying to make a better GPU is a losing strategy against Nvidia",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "1% market share is going to be worth 100 billion",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'My firm was a was a um ventur-' is a self-referential mention of Baker's firm, and 'my rule of thumb is 1% market share is going to be worth 100 billion' is first-person CIO framing consistent with Baker."
+    },
+    {
+      "thesis_id": "T23",
+      "summary": "Google remains in a strong structural position despite losing Pareto frontier leadership, due to its massive installed compute base, YouTube data advantage for robotics, and GCP growth",
+      "tickers": [
+        "GOOGL"
+      ],
+      "quote": "Google has the most compute of everyone \u2014 biggest installed base",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I am a little surprised,' 'I'm very curious to see,' 'I give him a lot of credit' are first-person analytical CIO framing consistent with Baker's voice; the hyperscaler competitive analysis flows continuously from Baker's established discussion."
+    },
+    {
+      "thesis_id": "T24",
+      "summary": "Meta is in a better competitive position than a year ago due to Zuckerberg's AI-first transformation and the impressive Muse model, though still behind Google in absolute terms",
+      "tickers": [
+        "META"
+      ],
+      "quote": "Zuckerberg making Meta an AI first company \u2014 only true internet giant to have done that",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I give him a lot of credit for that,' 'I give him a lot of credit for paying up' are first-person analytical framing consistent with Baker's CIO voice in the surrounding hyperscaler discussion."
+    },
+    {
+      "thesis_id": "T25",
+      "summary": "Amazon is in a strong position due to Trainium, real P&L efficiencies from robotics in retail over the next 18 months, and underappreciated Nova models",
+      "tickers": [
+        "AMZN"
+      ],
+      "quote": "real P&L efficiencies from robotics over the next 18 months in their retail business",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I actually think Nova their internal models are not where Muse is but they're better than they get credit for' is first-person analytical CIO framing continuous with Baker's hyperscaler analysis in surrounding text."
+    },
+    {
+      "thesis_id": "T26",
+      "summary": "Microsoft flinched on AI capex in early 2025 and is now making the right but risky decision to use compute for internal products rather than selling to OpenAI \u2014 this is underappreciated by the market",
+      "tickers": [
+        "MSFT"
+      ],
+      "quote": "Microsoft flinched for a moment in early 25 \u2014 if you flinch, you lose position",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I think Microsoft flinched,' 'I give him a lot of credit,' 'I am a little skeptical' are first-person analytical CIO framing consistent with Baker's voice; turn 38 establishes Baker as the active speaker in this section."
+    },
+    {
+      "thesis_id": "T27",
+      "summary": "Nvidia and Amazon are the most deeply engaged with AI startups, giving them a significant long-term competitive advantage over AMD, Microsoft, and Meta who show near-zero startup engagement",
+      "tickers": [
+        "NVDA",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "AMD",
+        "MSFT",
+        "META"
+      ],
+      "quote": "essentially zero engagement with startups from AMD, Microsoft, and Meta",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I just wonder about that decision,' 'I think it's going to end up being a pretty big advantage' are first-person CIO analytical framing; the startup engagement observation flows continuously from Baker's Microsoft/hyperscaler analysis."
+    },
+    {
+      "thesis_id": "T28",
+      "summary": "AI has net destroyed trillions of dollars of value at the application layer, and value creation is concentrated in companies with the highest ratio of utilized GPUs per human",
+      "tickers": [],
+      "quote": "trillions of dollars of value has been destroyed by AI at the application layer",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; 'I do think it's a little it's something we need to be aware of,' 'I am more and more worried about personal safety' are first-person CIO framing consistent with Baker's analytical voice throughout the episode."
+    },
+    {
+      "thesis_id": "T29",
+      "summary": "The 'turbo quad' Google memory optimization paper was a non-event for DRAM demand despite causing market volatility \u2014 Baker found no AI engineer who believed it would impact DRAM demand",
+      "tickers": [
+        "MU",
+        "GOOGL"
+      ],
+      "quote": "unable to find a single AI engineer who believed turbo quad would impact DRAM demand",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers; the passage uses 'I think this is one of the most important questions,' 'I'm much more open-minded' \u2014 first-person CIO analytical framing; the turbo quad reference is embedded in Baker's established model-layer analysis."
+    },
+    {
+      "thesis_id": "T30",
+      "summary": "Violation of Richard Sutton's bitter lesson (more compute always beats human algorithmic ingenuity) is the single biggest risk to the entire AI trade, but is more likely to come from ASI than human engineers",
+      "tickers": [],
+      "quote": "violation of Richard Sutton's bitter lesson is the biggest risk to all of AI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 39 contains 'violation of Richard Sutton's bitter lesson is for sure the biggest risk to this trade' in a long analytical passage following Baker's established turn 38 response; first-person CIO framing consistent with Baker throughout."
+    }
+  ]
+}

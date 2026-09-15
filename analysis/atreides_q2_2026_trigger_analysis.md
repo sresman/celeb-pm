@@ -37,7 +37,7 @@ Because the portfolio ~tripled, the classifier reports **0 ACTIVE_ADD and only 1
 
 **Ramp trigger: FIRES at +36% net deployment** (threshold 5%). This is deliberate capital deployment, not price drift.
 
-> Note: the repo's *automated* narrow-AI ramp (`build_13f_analysis.py`) did **not** fire for 2026-08-14, because (a) SpaceX is space/orbital, outside the "picks-and-shovels" AI basket by design, and (b) the new AI tickers (CBRS, and CRWV's new weight) aren't yet in `ai_basket_reclassification.json`. To make the automated AI triggers correct for Q2, the reclass file needs the new tickers added (open item, below).
+> **Why the automated AI-basket ramp does *not* fire (and shouldn't).** With Q2's new tickers now added to `ai_basket_reclassification.json`, the narrow "picks-and-shovels" AI basket's share-based **net deployment for Q2 is −$48M (−0.3% of book)** — gross AI buying of $1,108M (Cerebras $687M, CoreWeave +$131M, Amphenol $113M, Cipher $88M, PDF $47M, Akamai +$27M) almost exactly offset by $1,156M of AI trims, dominated by **Astera Labs −$1,038M**. In other words the **AI-infra rotation was self-funded — he sold Astera to fund Cerebras/CoreWeave/Amphenol.** The genuinely new $5.17B of net capital went to **SpaceX (space/orbital, excluded from the AI basket) + the QQQ hedge**, not to the AI book. So the portfolio-wide ramp fires (+36%) while the AI-specific ramp is flat — both are correct and the contrast is the point.
 
 ---
 

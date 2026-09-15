@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T3",
+  "summary": "Frontier lab revenue is substantially self-determined by management decisions on compute allocation between training and inference, creating unusual public-market risk",
+  "summary_extended": "Baker argues that frontier AI lab revenue is fundamentally self-determined by management decisions on compute allocation, creating a structural dynamic that public equity markets are not yet equipped to price. He illustrates with a specific numerical example: a lab with 10GW of compute allocating 8GW to inference at $60B/GW generates $480B in annualized revenue, but if that same lab shifts 8GW to training, revenue collapses to roughly $120B \u2014 a decision driven entirely by internal research priorities rather than market demand. Beyond compute allocation, revenue is further controlled by which model checkpoint the lab chooses to release and where it prices on the capability-cost Pareto frontier, giving management levers over revenue that have no analog in internet or cloud businesses where infrastructure and revenue were structurally decoupled. Baker frames this as a high-conviction structural risk for public-market investors in any frontier lab that eventually IPOs, as traditional revenue forecasting models will systematically misunderstand this dynamic. The implication is that investors must develop new frameworks for valuing frontier labs rather than applying internet or SaaS comparables.",
+  "detail": "Baker illustrates: a lab with 10GW allocating 8GW to inference at $60B/GW = $480B annualized revenue. If they shift to 8GW training, revenue drops to $120B. Labs would make this decision based on research breakthroughs. Revenue is also controlled by which checkpoint they release and where they price on the Pareto curve. This is structurally different from internet/cloud companies where revenue and infrastructure were decoupled.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this something 'public markets are going to really have to get used to' and walks through specific numerical examples",
+  "themes": [
+    "frontier model economics",
+    "AI lab IPOs",
+    "public market dynamics"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "a lot of the revenue is kind of under their control based on what checkpoint they release",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": []
+}

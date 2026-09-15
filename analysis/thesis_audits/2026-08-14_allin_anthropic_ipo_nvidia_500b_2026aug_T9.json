@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast \u2014 Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "thesis_id": "T9",
+  "summary": "Grok 4.6 is Pareto-dominant on quality/cost and represents a genuine third frontier lab \u2014 most investors are not pricing Grok into SpaceX valuation",
+  "summary_extended": "Baker argues that Grok 4.6, developed under the xAI/SpaceX umbrella, is Pareto-dominant on the quality-versus-cost frontier \u2014 outperforming Claude Fable 5 on quality at lower cost \u2014 and represents a genuine third frontier AI lab alongside OpenAI and Anthropic. He contends that virtually no SpaceX investors are pricing Grok's AI revenue potential into SpaceX's valuation, creating a significant mispricing opportunity. Baker draws an explicit analogy to Anthropic's revenue trajectory from $1B to $50B ARR, implying Grok could follow a similar monetization ramp, and notes that Grok 4.7 (a larger model with 1.5T+ parameters) is expected within weeks, which could further extend the quality lead. The investment implication is that investors evaluating SpaceX should materially increase the weight they assign to xAI/Grok as a revenue driver, and that the current market is undervaluing this optionality.",
+  "detail": "Baker shows Pareto frontier chart where Grok 4.6 is ahead of Claude Fable 5 on quality at lower cost. He notes very few SpaceX investors discuss Grok at all despite it being Pareto-dominant on multiple measures. He draws analogy to Anthropic's revenue ramp from $1B to $50B and implies Grok could follow similar trajectory. Grok 4.7 (larger model, 1.5T+ parameters) coming in weeks.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly says 'maybe people should start to consider Grok when they think about SpaceX' and calls it 'Pareto dominant' \u2014 this is a direct investment implication",
+  "themes": [
+    "AI frontier models",
+    "space/orbital compute",
+    "AI monetization"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "very few investors talk about Grok at all...Pareto dominant on a lot of measures",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SpaceX"
+  ],
+  "tickers_subject": [
+    "SpaceX"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (pre-IPO)",
+    "ANTH (pre-IPO)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SpaceX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly about SpaceX being mispriced because investors are not accounting for Grok/xAI's AI revenue potential within the SpaceX valuation \u2014 SpaceX is the direct subject of the investment thesis."
+    },
+    {
+      "ticker": "ANTH",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Anthropic is referenced only as an analogy for revenue ramp trajectory ($1B to $50B ARR), not as a beneficiary or subject of this thesis. It is a comparator, not an investment implication here, and is pre-IPO with no US-listed equity to trade."
+    }
+  ]
+}

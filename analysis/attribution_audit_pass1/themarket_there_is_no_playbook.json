@@ -1,0 +1,50 @@
+{
+  "label": "themarket_there_is_no_playbook",
+  "date": "2022-04-08",
+  "source": "The Market (themarket.ch) \u2014 There is no playbook; inflation, tech earnings power",
+  "host": "Christoph Gisiger",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Inflation is the single most important variable for financial markets in 2022",
+      "tickers": [],
+      "quote": "the one thing that matters is inflation",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "Turn 0 is an article/episode summary that explicitly names Gavin Baker, founder of Atreides Management, as the source of the quoted view on inflation."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Technology sector earnings power remains durable even in an inflationary environment",
+      "tickers": [],
+      "quote": "rising prices would mean for the sector",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "Turn 0 explicitly attributes all views in the summary to Gavin Baker, founder of Atreides Management."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Semiconductor super-cycle has further to run despite near-term macro headwinds",
+      "tickers": [],
+      "quote": "super-cycle in the semiconductor industry",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "Turn 0 explicitly attributes all views in the summary, including the semiconductor super-cycle thesis, to Gavin Baker."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Record new stock issuances (IPOs/SPACs) are creating attractive entry-point opportunities",
+      "tickers": [],
+      "quote": "record number of new stock issues is creating attractive opportunities",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "Turn 0 explicitly attributes all views in the summary, including the new stock issuances opportunity thesis, to Gavin Baker."
+    }
+  ]
+}

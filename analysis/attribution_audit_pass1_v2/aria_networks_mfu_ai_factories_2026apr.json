@@ -1,0 +1,80 @@
+{
+  "label": "aria_networks_mfu_ai_factories_2026apr",
+  "date": "2026-04-16",
+  "source": "Aria Networks \u2014 MFU as defining AI-factory metric; lowest-cost token producer wins via high-performance infra",
+  "host": "Mansour (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "AI is the first major tech sector where being the lowest-cost producer of the core output (tokens/intelligence) is the decisive competitive advantage",
+      "tickers": [],
+      "quote": "at no point in my career has a big winner been the low-cost producer",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Mansour directly introduces Baker to the stage and asks him the question; the quote is in Baker's reply beginning 'Yeah, absolutely.'"
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "GPU/XPU utilization in AI factories is critically low (30\u201345% for training, lower for inference), making network infrastructure the primary bottleneck and value creation opportunity",
+      "tickers": [],
+      "quote": "if you take your utilization from 40 to 80, you've dropped your cost per token in half",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Mansour or another panelist",
+      "evidence": "Turn 9 contains the quote and is a continuation of a multi-speaker exchange; turn 8 appears to be a different speaker (likely a host/panelist) responding 'Yes. Well, that's indeed\u2026', and turn 9 follows with technical detail consistent with an Aria Networks/infra company representative rather than Baker."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Spending more on everything surrounding the accelerator (especially networking) is the correct path to lowest cost per token \u2014 counterintuitively, cheapest infra is not the answer",
+      "tickers": [],
+      "quote": "the way you get the lowest cost per token is you spend a lot on everything around the accelerator",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 5 contains the quote and uses 'in my days following manufacturing industries' \u2014 a career-history self-reference consistent with Baker as a long-tenured fund manager, and turn 6 ('that's why I invested') reads as a different speaker reacting to Baker's remarks."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Data center scarcity (regulatory constraints in 7 states) makes maximizing utilization of existing AI factories economically imperative",
+      "tickers": [],
+      "quote": "seven states have bills to make it illegal to build data centers",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Mansour or another panelist",
+      "evidence": "The quote is in turn 9, the same turn as T2/T5; turn 8 is a separate speaker's affirmation, placing turn 9 with a different (non-Baker) participant continuing the technical discussion."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "The shift from training to distributed inference dramatically increases the importance and value of network infrastructure, particularly for agentic and interactive workloads",
+      "tickers": [],
+      "quote": "the network becomes even more of a bottleneck",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Mansour or another panelist",
+      "evidence": "Same turn 9 as T2/T4; the speaker in turn 9 is distinct from Baker who spoke in turn 5, based on turn alternation and the intervening reaction turns 6-8."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Inference economics make tokenomics explicit and essential in a way training never did \u2014 inference is the competitive battleground where cost per token determines winners",
+      "tickers": [],
+      "quote": "inference makes costs important in a way they never were before",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 13 contains the quote and uses 'I believe Dylan coined' \u2014 a first-person attribution referencing another participant by name, consistent with Baker as a guest commentator; turn 14 then responds 'Right. That's indeed\u2026' indicating a different speaker reacting to Baker."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Latency (time to first token and inter-token latency) is a direct revenue driver for AI inference products, analogous to Google's 100ms = 1% revenue rule",
+      "tickers": [],
+      "quote": "every 100 millisecond delay in Google search results cost them 1% of revenue",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 15 contains the quote but is a multi-voice turn with interjections ('Right.', 'Exactly.') making it impossible to isolate a single speaker; no direct address or self-identification cue is present."
+    }
+  ]
+}

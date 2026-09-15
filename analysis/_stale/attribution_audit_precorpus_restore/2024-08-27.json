@@ -1,0 +1,237 @@
+{
+  "date": "2024-08-27",
+  "source": "Invest Like the Best \u2014 AI, semiconductors, and the robotic frontier (EP.385)",
+  "host": "Patrick O'Shaughnessy (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Scaling laws will continue until disproven by a new GPU generation that fails to produce commensurate model quality improvements",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "the only way you get irrefutable evidence scaling laws are slowing",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "NVIDIA's CUDA software moat is quantifiable via MAMF metric: NVIDIA runs at ~83% vs AMD's MI300 at ~60% and early MI250 at ~10-25%",
+      "tickers": [
+        "NVDA",
+        "AMD"
+      ],
+      "quote": "NVIDIA GPUs run it per his testing, 83%... AMD is running a 25",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T19",
+      "summary": "Growth equity and Series C investing is evolving toward a private equity operational value-add model as information advantages disappear",
+      "tickers": [],
+      "quote": "series C and growth equity is heading the way of private equity",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "XAI's 100,000-GPU coherent cluster gives it a ~1-year lead over other labs, forcing competitors to urgently replicate",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "XAI is going to have arguably a one-year advantage, which is untenable",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The T14 window contains Patrick O'Shaughnessy's intro explicitly naming 'My guest this week is Gavin Baker,' and the long analytical monologue in T2's window ('I do think...XAI is going to have arguably a one-year advantage') matches Baker's CIO register with self-referential framing ('the equation I described')."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Model Flops Utilization (MFU) decomposed into MAMF \u00d7 SFU \u00d7 checkpoint frequency \u00d7 PUE is the key efficiency equation determining which AI labs win",
+      "tickers": [],
+      "quote": "exoflops per second per dollar of capex per watt of electricity",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage uses first-person analytical framing ('I just thought of this morning') and references 'the equation I described,' consistent with Baker's established voice throughout the episode; the T14 window confirms Baker is the guest."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Networking, storage, and memory are the most underinvested and highest-opportunity layers in AI infrastructure because GPU speed has outpaced the rest of the data center 50x vs 4-5x",
+      "tickers": [
+        "ANET",
+        "MU",
+        "PSTG"
+      ],
+      "quote": "SFU is at 30 percent. Wow, that's a great place to invest",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'What I am doing is really focusing on companies that improve that equation' and 'that is where I am targeting my dollars,' self-identifying as a fund manager making allocation decisions, consistent with Baker as CIO of Atreides."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Synthetic data solves the training data scarcity problem, extending the runway for scaling laws",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "it does look like synthetic data works. No one understands why",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The monologue continues the same analytical thread as T2/T20 with identical framing and vocabulary ('the equation I described'), and the T14 window confirms Baker is the sole guest."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Inference will increasingly shift to on-device (edge) compute, with DRAM capacity on phones becoming the key differentiating spec",
+      "tickers": [
+        "AAPL",
+        "MU"
+      ],
+      "quote": "what you will most care about is the amount of DRAM you have on your phone",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage flows continuously from Baker's infrastructure analysis with first-person investment framing ('I do think the subcomponents of that equation...are really helpful to investors'), consistent with Baker's CIO register."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Apple is uniquely advantaged in the AI era via its iOS distribution chokehold, mirroring how it monetized Google Search",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "quote": "Apple will charge companies to be in their router",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage is a direct continuation of the same monologue thread with identical analytical register; the Apple router thesis is framed as an investment conclusion ('many, many investment conclusions flow from this'), consistent with Baker as CIO."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Tesla FSD is on the same scaling law trajectory as LLMs and is approaching a step-function improvement that will be 'abjectly humiliating' to skeptics within 6-18 months",
+      "tickers": [
+        "TSLA"
+      ],
+      "quote": "abjectly humiliating to everyone who is an FSD skeptic in the next 12 to 18 months",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'I haven't never been willing to make a prediction like that before,' a first-person self-referential statement from someone with a long track record, consistent with Baker as the guest expert; T14 confirms Baker is the guest."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Humanoid robots will dominate robotics because the physical world is optimized for humans and manufacturing scale creates cost advantages over specialized robots",
+      "tickers": [
+        "TSLA"
+      ],
+      "quote": "humanoid robots are going to be a generalizable form of robotics",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from T9 with same analytical voice; speaker says 'I'm reasonably bullish on Optimus' and 'I do think robotics may end up advantaging incumbents,' consistent with Baker's CIO investment framing."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Non-humanoid robotics startups will not produce category-defining outcomes; incumbents with data, compute, and capital will dominate",
+      "tickers": [],
+      "quote": "good luck to all these non-humanoid startup robot companies",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Direct continuation of T10 monologue with identical voice and framing; 'I hope you get Lycos or CMG or Myspace type venture outcome' is an investment-history reference consistent with Baker's long-tenure investor register."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "AI application layer startups are extremely difficult to invest in with conviction due to lack of defensibility and the Chase Coleman 1% statistic",
+      "tickers": [],
+      "quote": "investing there today feels really hard to me",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'What I am doing is really focusing on companies that improve that equation' and 'that is where I am targeting my dollars,' explicitly self-identifying as the fund manager making allocation decisions, i.e., Baker."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Traditional SaaS companies face existential disruption from AI-first thin-wrapper competitors attacking labor budgets rather than software budgets",
+      "tickers": [],
+      "quote": "going after labor budgets. It's very intellectually interesting to me",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker references 'Vishry' as an external source ('I heard this from Vistria') and frames conclusions as his own investment analysis, consistent with Baker as the guest expert sharing third-party insights."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Hyperscaler ROIC has increased despite rising capex, disproving the AI ROI skeptic narrative",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "quote": "ROIC has gone up for all of these companies since they ramped CapEx",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The T14 window contains Patrick O'Shaughnessy's explicit host introduction: 'My guest this week is Gavin Baker,' confirming Baker is the guest speaker for the episode; the thesis content follows Baker's analytical register."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Power/energy infrastructure near shale gas fields will be an intermediate-term solution to AI data center power constraints",
+      "tickers": [],
+      "quote": "giant data centers in shale gas fields with power plants on those fields",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous analytical monologue with Baker's established voice and framing ('the equation I described earlier'); T14 window confirms Baker is the guest and Patrick O'Shaughnessy is the host."
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "Solar and battery economics will solve climate change within Baker's lifetime, making emissions concerns for the next generation largely moot",
+      "tickers": [],
+      "quote": "global warming is a big problem. It is a solved problem",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'emissions are going to collapse in my lifetime' and 'assuming I could live a little bit longer because of AI,' first-person statements about personal longevity consistent with Baker as the guest; the following turn ('Well, here we are') is a brief host response."
+    },
+    {
+      "thesis_id": "T17",
+      "summary": "LLMs represent the biggest meta-shift in investing history, potentially allowing fundamental investors to recapture alpha share from quantitative investors over a 5-10 year window",
+      "tickers": [],
+      "quote": "fundamental investors share of the alpha in the market goes up",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'I am hopeful that there is a five to 10 year period here where if you're a fundamental investor, like me' and references 'the tool I'm using is called Intel Pro,' explicitly self-identifying as a fundamental investor, consistent with Baker as CIO of Atreides."
+    },
+    {
+      "thesis_id": "T18",
+      "summary": "BCI (Brain-Computer Interface) will be the next true compute platform after smartphones, with augmented reality glasses as the intermediate step",
+      "tickers": [
+        "META"
+      ],
+      "quote": "BCI may be the next true way we interact with computers after phones",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker references 'I first started meeting with Tesla executives back in 2011, 2012' and discusses Jensen/Elon as subjects he has observed over time, consistent with Baker's long-tenure investor perspective confirmed by T14 intro."
+    },
+    {
+      "thesis_id": "T20",
+      "summary": "XAI has a structural data advantage via X platform data and Elon's cross-company ecosystem, making it a durable AI competitor regardless of model commoditization",
+      "tickers": [],
+      "quote": "XAI will kind of be an intelligence layer that cuts across Elon's ecosystem",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Direct continuation of the same analytical monologue as T2/T6 with identical framing ('the equation I described,' 'I would think over time XAI will kind of be'), consistent with Baker as the sole guest confirmed in T14."
+    }
+  ]
+}

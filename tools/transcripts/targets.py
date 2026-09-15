@@ -8,7 +8,7 @@ this module only -- they contain no embedded URLs or IDs of their own.
 from __future__ import annotations
 
 from pathlib import Path
-from typing import TypedDict
+from typing import NotRequired, TypedDict
 
 # --------------------------------------------------------------------------
 # Paths
@@ -50,6 +50,7 @@ class YoutubeTarget(TypedDict):
     source: str
     host: str
     topic: str
+    subject_role: NotRequired[str]  # "guest" | "panelist" | "secondary" | "unknown"; set by fix_participants
 
 
 class ScrapeTarget(TypedDict):
@@ -59,6 +60,7 @@ class ScrapeTarget(TypedDict):
     source: str
     host: str
     topic: str
+    subject_role: NotRequired[str]  # "guest" | "panelist" | "secondary" | "unknown"; set by fix_participants
 
 
 class SearchTarget(TypedDict):
@@ -70,6 +72,7 @@ class SearchTarget(TypedDict):
     topic: str
     url: str
     kind: str  # "html" | "pdf"
+    subject_role: NotRequired[str]  # "guest" | "panelist" | "secondary" | "unknown"; set by fix_participants
 
 
 class RssTarget(TypedDict):
@@ -80,6 +83,7 @@ class RssTarget(TypedDict):
     source: str
     host: str
     topic: str
+    subject_role: NotRequired[str]  # "guest" | "panelist" | "secondary" | "unknown"; set by fix_participants
 
 
 # --------------------------------------------------------------------------

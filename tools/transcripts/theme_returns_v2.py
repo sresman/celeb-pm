@@ -17,6 +17,7 @@ Standalone of ``src/celebpm`` (imports nothing from it).
 
 Usage:
     python -m tools.transcripts.theme_returns_v2 [--force-refetch]
+                                                 [--attribution {subject,all}]
 """
 
 from __future__ import annotations
@@ -121,6 +122,50 @@ OVERRIDE_FLAGS = (
     "is_derisk_signal", "is_thesis_reversal", "is_thesis_close",
     "exclude_from_long_stats",
 )
+
+
+SUBJECT_ATTRIBUTION = "subject"
+ATTRIBUTION_MODES = ("all", "subject")
+# Operator decision 2026-09-09: only `subject` counts as the subject's own claim.
+DEFAULT_ATTRIBUTION = "subject"
+
+
+def filter_by_attribution(
+    theses: list[dict[str, Any]], mode: str
+) -> tuple[list[dict[str, Any]], dict[str, int]]:
+    """Keep only theses the attribution audit assigned to the subject.
+
+    ``mode="subject"`` is the default (operator, 2026-09-09) and implements the
+    operator's rule (2026-09-08): only ``subject`` counts as the subject's own
+    claim — ``other`` and ``indeterminate`` stay in the corpus, tagged, but are
+    excluded from the named-ticker population the strategy rests on.
+    ``mode="all"`` is the pre-attribution behaviour, retained for before/after
+    comparison; because output paths are suffixed for any non-default mode, an
+    ``all`` run writes ``_all``-suffixed files and cannot overwrite the
+    deliverable.
+
+    Theses with no ``speaker_attribution`` at all count as ``indeterminate``,
+    never as ``subject``: an unaudited corpus must not be silently promoted.
+    """
+    if mode not in ATTRIBUTION_MODES:
+        raise SystemExit(f"unknown attribution mode {mode!r}; expected one of {ATTRIBUTION_MODES}")
+    counts: dict[str, int] = {}
+    for t in theses:
+        v = str(t.get("speaker_attribution") or "indeterminate")
+        counts[v] = counts.get(v, 0) + 1
+    if mode == "all":
+        return list(theses), counts
+    kept = [
+        t
+        for t in theses
+        if str(t.get("speaker_attribution") or "indeterminate") == SUBJECT_ATTRIBUTION
+    ]
+    return kept, counts
+
+
+def describe_attribution(counts: dict[str, int], kept: int, total: int, mode: str) -> str:
+    parts = ", ".join(f"{k} {v}" for k, v in sorted(counts.items()))
+    return f"Attribution [{mode}]: {parts} -> {kept}/{total} theses kept."
 
 
 def load_overrides() -> dict[str, list[dict[str, Any]]]:
@@ -527,11 +572,20 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--force-refetch", action="store_true",
                         help="Re-pull every ticker from EODHD even if cached.")
+    parser.add_argument("--attribution", choices=ATTRIBUTION_MODES,
+                        default=DEFAULT_ATTRIBUTION,
+                        help="'subject' (default) keeps only theses the "
+                             "attribution audit assigned to the subject; 'all' "
+                             "is the pre-attribution behaviour and writes to "
+                             "_all-suffixed paths.")
     args = parser.parse_args()
 
     api_key = load_api_key()
     baskets = json.loads(BASKETS_JSON.read_text())
-    theses = json.loads(TIMELINE_JSON.read_text())
+    all_theses = json.loads(TIMELINE_JSON.read_text())
+    theses, attribution_counts = filter_by_attribution(all_theses, args.attribution)
+    print(describe_attribution(
+        attribution_counts, len(theses), len(all_theses), args.attribution))
     print(f"Loaded {len(theses)} theses, {len(baskets)} themes.")
 
     # Step 1: cluster
@@ -591,11 +645,16 @@ def main() -> None:
 
     # Step 6: sort + write
     events.sort(key=lambda e: (e["date"], e["theme"]))
-    with OUTPUT_CSV.open("w", newline="") as f:
+    out_csv = (
+        OUTPUT_CSV
+        if args.attribution == DEFAULT_ATTRIBUTION
+        else OUTPUT_CSV.with_name(f"{OUTPUT_CSV.stem}_{args.attribution}{OUTPUT_CSV.suffix}")
+    )
+    with out_csv.open("w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=OUTPUT_FIELDS)
         writer.writeheader()
         writer.writerows(events)
-    print(f"\nWrote {len(events)} signal events → {OUTPUT_CSV}")
+    print(f"\nWrote {len(events)} signal events → {out_csv}")
 
     _print_summary(events, clustered, unclustered)
 

@@ -1,0 +1,194 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast \u2014 Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "host": "Chamath, Jason, Sacks, Friedberg (Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Anthropic's revenue ramp is unprecedented but the $2T IPO price is likely sandbagged; true market-clearing valuation is $3-4T",
+      "tickers": [
+        "ANTH"
+      ],
+      "quote": "two trillion I'm a little skeptical...probably where it could trade",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The quote window (turns 284-288) shows no direct address to Baker and no self-identification; the speaker discusses Anthropic/SpaceX compute deals but cannot be tied to Baker specifically."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Anthropic 2027 exit ARR will be $400-500B, above Wall Street consensus by 25-30%",
+      "tickers": [
+        "ANTH"
+      ],
+      "quote": "I'll take a 25 to 30% over on that",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 170 directly addresses 'Gavin Baker' with the over/under question, and turn 171 is the immediate reply taking the over \u2014 that reply is Baker's."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Anthropic is already profitable/cash-generative; macro bears assuming subsidized tokens are factually wrong",
+      "tickers": [
+        "ANTH"
+      ],
+      "quote": "overwhelming majority of tokens are profitable for everyone in the chain",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The passage uses CIO-register framing ('I've been working on,' labor-cost TAM model, defending AI profitability against macro bears) and flows from context where Baker was the named guest being questioned; no speaker markers but register and content strongly suggest Baker."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Anthropic S1 will be the most important demand signal for the entire AI infrastructure food chain",
+      "tickers": [
+        "ANTH",
+        "NVDA",
+        "TSM",
+        "MU"
+      ],
+      "quote": "Anthropic right now is the pace car",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "Turn 223 begins 'Yeah, I'll say...' and references 'Gavin' in the third person ('a throttle Gavin if you will'), confirming the speaker is not Baker but addressing him."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Nvidia's $500B AI compute financing platform is strategically brilliant \u2014 removes the financing constraint on TAM and creates a capital-light royalty/revenue-share business",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Nvidia could become a very large cloud with a capital light business",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 221 contains the quote but no direct address or self-identification links it to Baker; the prior turns (218-220) show no clear attribution cue."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "GPU compute has a much longer useful life than bears assume \u2014 Ampere GPUs from 2020 are being rented profitably through 2029, implying 9-year asset lives",
+      "tickers": [
+        "NVDA",
+        "CRWV"
+      ],
+      "quote": "Ampere that came out in 2020 is going to have a 9-year life",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The quote window (turns 176-180) shows no speaker markers or direct address that would identify the speaker as Baker or anyone else."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "The primary risk to the AI capex supercycle is a compute glut/overbuild (dark GPUs), not demand destruction \u2014 but political headwinds ironically insure against this outcome",
+      "tickers": [
+        "CRWV"
+      ],
+      "quote": "political headwinds almost guarantee there's not an overbuild",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Same window as T6 (turns 176-180); no attribution cues present to identify the speaker."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Open-source AI models make frontier tokens MORE valuable, not less \u2014 frontier intelligence can orchestrate open-source models, increasing its own value",
+      "tickers": [
+        "ANTH"
+      ],
+      "quote": "frontier tokens are 65 to 85% of the economic value",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host/other panelist",
+      "evidence": "Turn 161 contains casual banter ('Go direct% man. Go direct. Protect yourself.') about Zuckerberg \u2014 not investment thesis language \u2014 and the surrounding turns (158-162) are clearly host/panelist social commentary, not Baker's CIO register."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Grok 4.6 is Pareto-dominant on quality/cost and represents a genuine third frontier lab \u2014 most investors are not pricing Grok into SpaceX valuation",
+      "tickers": [
+        "SpaceX"
+      ],
+      "quote": "very few investors talk about Grok at all...Pareto dominant on a lot of measures",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "host/Jason Calacanis",
+      "evidence": "Turn 169 is a response to turn 167-168 where the host directly addresses 'Gavin Baker' by name, meaning turn 169 is Baker's reply \u2014 but the quote fragment 'very few investors talk about Grok' does not appear in turn 169; the window does not contain that quote, making this thesis misattributed to this window; the turn 169 speaker is Baker but the quoted fragment is not present here."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "SpaceX AI strategy has a call/put option structure: frontier model success is the call, compute rental revenue is the put \u2014 both are valuable",
+      "tickers": [
+        "SpaceX"
+      ],
+      "quote": "call option is to catch up...put option of just selling the compute",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote 'call option is to catch up...put option of just selling the compute' does not appear in turns 169-170 which is the marked window; the window shows Baker responding to a revenue question, not discussing SpaceX options structure \u2014 the thesis quote appears in turn 286-287 where attribution is indeterminate."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Open-source AI is a structural tailwind for legacy software companies \u2014 PE bid for Workday signals software has bottomed",
+      "tickers": [
+        "WDAY"
+      ],
+      "quote": "open source is a godsend for the American software industry",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 299 contains the Workday/open-source thesis and ends with 'Gavin' being addressed in turn 300 ('what would you call them, Gavin?'), confirming the speaker of turn 299 is Baker."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "AI demand TAM for tokens is $1T+ in the US alone based on labor cost analogy \u2014 corporations will spend 5-10% of employee salary equivalents on tokens",
+      "tickers": [],
+      "quote": "no world in which corporations won't spend 5 or 10% of salaries on tokens",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "Turn 108 contains political commentary ('I do not want Dario Amod or Anthropic deciding what's in my best interests') \u2014 retail/personal framing and political editorializing typical of a host, not Baker's CIO register; no labor-cost TAM argument appears in this window."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Energy infrastructure buildout for AI data centers is solvable \u2014 turbine capacity, natural gas, and capitalism will meet demand; political headwinds are the real constraint",
+      "tickers": [
+        "GEV",
+        "CAT",
+        "CMI",
+        "SIEGY"
+      ],
+      "quote": "turbine blades...now running 24-hour shifts...capitalism will solve those problems",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "Turn 129 ('They're suffering from delusions of grandeur. Period. Full stop.') is political editorializing about effective altruists, not energy infrastructure investment thesis; the surrounding turns are clearly host commentary."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Grok 4.7 (larger model, weeks away) will be significantly more capable than 4.6 and could further close the gap with frontier labs",
+      "tickers": [
+        "SpaceX"
+      ],
+      "quote": "Grock 4.7 that should be significantly more capable is coming in a few short weeks",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 273 directly addresses 'Gavin' and turn 274-276 are his replies; turn 276 contains the Grok 4.7 quote, confirming Baker is the speaker."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Amazon's DSP model creates political/regulatory risk that Amazon should proactively address \u2014 long-term shareholder view",
+      "tickers": [
+        "AMZN"
+      ],
+      "quote": "I have a very big position in Amazon and I keep increasing it every year",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "Turn 244 contains 'I have a very big position in Amazon and I keep increasing it every year' \u2014 retail/personal holding framing combined with political editorializing ('socialism is playing') is characteristic of a host, not a fund CIO; the extended monologue in turns 241-244 is consistent with Jason Calacanis's known style."
+    }
+  ]
+}

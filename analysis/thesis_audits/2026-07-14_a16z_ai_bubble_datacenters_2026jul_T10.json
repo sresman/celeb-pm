@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-14",
+  "source": "a16z Podcast \u2014 Is AI a bubble? Data centers, GPUs, and the AI economy",
+  "thesis_id": "T10",
+  "summary": "Robotics will be a major real-world deployment wave, dominated by Tesla vs. Chinese competitors, mirroring the EV competitive dynamic.",
+  "summary_extended": "Baker argues that humanoid robotics represents the next major real-world AI deployment wave, and that the humanoid form factor will dominate over other robot designs because humanoids can be trained using existing YouTube videos and human motion-capture demonstrations \u2014 a massive data advantage that other form factors lack. He cites Tesla's Optimus robot videos as genuinely impressive even to professional robotics experts, suggesting the technology is further along than skeptics believe. Baker frames the competitive landscape as a two-horse race between Tesla and Chinese robotics companies, explicitly drawing a parallel to the EV market dynamic where Tesla faced aggressive Chinese competition. The investment implication is a long position in Tesla as the primary Western-listed beneficiary of the humanoid robotics wave, with no specific financial targets or timelines given beyond a long-term horizon.",
+  "detail": "Baker views humanoid robotics as the winning form factor because humanoids can learn from YouTube videos and human demonstration (motion capture). He cites Optimus videos as genuinely impressive to robotics experts. The competitive structure mirrors Tesla vs. Chinese automakers in EVs.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says 'very real' and expresses conviction on humanoid form factor winning, but gives no specific financial or timeline precision.",
+  "themes": [
+    "robotics",
+    "AI hardware"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "it's going to be Tesla versus the Chinese",
+  "tickers_named_original": [
+    "TSLA"
+  ],
+  "tickers_direct": [
+    "TSLA"
+  ],
+  "tickers_subject": [
+    "TSLA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "TSLA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Tesla's Optimus humanoid robot program is explicitly named and cited as the primary Western competitor in the humanoid robotics race; Tesla is the direct subject of this thesis."
+    }
+  ]
+}

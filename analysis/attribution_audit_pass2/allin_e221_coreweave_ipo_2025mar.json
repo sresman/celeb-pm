@@ -1,0 +1,127 @@
+{
+  "label": "allin_e221_coreweave_ipo_2025mar",
+  "date": "2025-03-29",
+  "source": "All-In Podcast \u2014 E221: AI cold war, Signalgate, CoreWeave IPO, tariffs",
+  "host": "Jason, Friedberg (Gavin Baker panelist)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Nvidia's AR buildup is a transient artifact of the Hopper-to-Blackwell product transition, not a structural concern",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "if that trend continues past the July quarter then I would say concern",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is part of a long technical explanation responding to a direct question addressed to Gavin ('Gavin can I ask you...'), and the speaker self-identifies with CIO-level analysis of Nvidia's product transition."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Nvidia's investment in neoclouds like CoreWeave was strategically rational \u2014 it diversified the buyer base and reduced hyperscaler pricing power",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "the big three hyperscalers incremental share of revenue went down and that was nothing but good",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The host intro explicitly names 'our guy Gavin Baker' and the subsequent 'yeah so we I guess maybe take them in reverse order' is Baker's direct response to a question addressed to him about Nvidia's balance sheet."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "We are not overbuilt in AI compute today; demand continues to outstrip supply",
+      "tickers": [
+        "NVDA",
+        "MU"
+      ],
+      "quote": "we're definitely not overbuilt yet since deep seek came out",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote follows a direct question to Gavin about CoreWeave/overbuilding, and the response begins with substantive market analysis consistent with Baker's CIO role, immediately after the host's intro of Baker."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Blackwell will be a highly successful product cycle driven by a prisoners' dilemma dynamic among hyperscalers",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Blackwell is going to be a very successful product cycle there is a little bit of a prisoners dilemma",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote appears in the same continuous response block as T3, following 'so any other thoughts Gavin on the core weave IPO' and Baker's 'yeah I would say' reply, with the prisoners' dilemma framing consistent with his prior turn."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "CoreWeave may be significantly underappreciated \u2014 running large GPU clusters at scale is genuinely hard and not a commodity",
+      "tickers": [
+        "CRWV"
+      ],
+      "quote": "it may not be the commodity that everyone thinks it is",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is part of Baker's direct response to 'any other thoughts Gavin on the core weave IPO' \u2014 the 'yeah I would say' opener and the extended CoreWeave analysis are all in Baker's turn before Friedberg is addressed."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "AI agents are the key ROI unlock for AI infrastructure spend; compute will be the rate-limiting factor in agent adoption",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "the ROI on AI and Blackwell is going to be very high",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is in a response to a direct question addressed to Gavin about Manus/agents, and the speaker says 'look I do think' then delivers the ROI/compute thesis before the host pivots to 'freeberg your thoughts'."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Anthropic's Model Context Protocol (MCP) will become an industry standard, significantly accelerating agent adoption",
+      "tickers": [],
+      "quote": "model context protocol that openai just adopted I think it will become a standard",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The MCP thesis is in the same turn as T6, part of Baker's response to the Gavin-directed question about agents, before the host explicitly redirects to 'freeberg your thoughts'."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "China's probability of building a competitive GPU alternative to Nvidia is near-zero in 5 years but non-trivial over 10 years",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "I think zero I think it's really really hard but over 10 years who knows",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote answers 'what are the chances they succeed in your mind Gavin' \u2014 a direct address to Baker \u2014 making this unambiguously his response."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Export controls on GPUs create a cat-and-mouse dynamic that is ultimately difficult to enforce given the value density of modern GPUs",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "it's always going to be kind of a game of cat and mouse until you get some sort of grand bargain",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The cat-and-mouse quote precedes a direct question 'should we be doing that Gavin', indicating the prior speaker explaining the enforcement difficulty is Baker, consistent with turn alternation."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Deregulation is the highest-confidence policy lever for economic growth; tariffs carry execution risk but the administration will adapt if they fail",
+      "tickers": [],
+      "quote": "every time they say the word tariff they need to say the word deregulation two or three times",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is in a response to 'Gavin let's get back to this original question' and the speaker says 'well one I think' then delivers the deregulation thesis, and a subsequent speaker says 'what Gavin said' confirming attribution."
+    }
+  ]
+}

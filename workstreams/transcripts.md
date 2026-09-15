@@ -16,7 +16,88 @@ Branch: **`gavin-baker-transcript-corpus`** (not yet merged to main).
 
 ---
 
-## Current State (as of 2026-09-08) — ATTRIBUTION AUDIT; CORPUS 614 THESES
+## Current State (as of 2026-09-08, latest) — LOCATOR FIXED; FILTER COST ~15-19%
+
+**The quote locator was the dominant cost of the attribution filter, not
+contamination.** Fixed, corpus re-audited on the affected slice, comparison
+regenerated. Default still NOT flipped — awaiting the operator.
+
+- **`locate_turn` had two defects** (SD-ATTR-17). (a) `_norm` substitutes each
+  punctuation char with a space without collapsing runs, so any quote with
+  punctuation the caption lacks failed exact matching outright; fixed with a
+  matching-only `_squash()` (`_norm` must stay length-preserving for
+  `_char_window`). (b) the pass-3 fallback used `difflib.quick_ratio()` — an
+  order-insensitive character-multiset *upper bound* — against only `t[:400]`,
+  which is what placed quotes on plausible-but-wrong turns. Replaced with
+  windowed character-4-gram containment, threshold **0.70** calibrated against
+  simulated caption garbling (positives p05 = 0.81) and a cross-episode negative
+  control (max 0.66).
+  **Located rate 560/614 (91.2%) -> 599/614 (97.6%)**; 62 quotes silently
+  relocated to a different turn.
+- **Targeted re-audit** of the 119 window-changed theses (not just the 81 that
+  merely looked broken — 32 of the rest carried decided verdicts formed on
+  discredited windows). Run twice, merged into `*_v2` pass copies via new
+  `--only` / `--out-dir`. Agreement 95.0% -> **96.2%**. $0.90 total.
+- **Attribution now: 467 subject (76%) / 42 other (7%) / 105 indeterminate (17%)**
+  on theses; **573 / 36 / 96** on the 705 named-ticker slots (81% subject, up
+  from 70%). On the re-audited slice, 64% of named tickers resolved to subject.
+- **Filter cost roughly halved**: named-ticker slots −18.7% (was −30.2%), scored
+  rows −16.9% (was −29.6%), meets-criteria −14.0% (was −24.4%), themes lost 10 -> 7.
+  26 of 61 themes are untouched. `TSMC capacity discipline` — the diagnostic case
+  — is fully recovered, all three theses now `subject`.
+- **Residual indeterminate is now mostly genuine**: placement failures fell from
+  81 theses / 88 tickers to 34 / 25; 71 of the remaining 105 are real ambiguity,
+  largely the 19 transcripts with no `>>` speaker markers.
+- **`audit_theses.py` client timeout added** (SD-ATTR-19), matching
+  `audit_attribution`.
+
+**Reads as a stable signal with a bounded contamination haircut, not a materially
+different corpus.** Returns still held; v10 not regenerated; default still `all`.
+
+Detail: `analysis/attribution_implementation_notes.md`, SD-ATTR-17…19.
+
+---
+
+## Current State (as of 2026-09-08, mid-session) — ATTRIBUTION WIRED END-TO-END; RETURNS STILL HELD
+
+**Both audit passes are run, reconciled, and wired into the timeline.** The
+attribution plumbing described as missing below is now in place.
+
+- **`audit_attribution` was keyed on `date`, not `label`** — fixed before
+  spending. 2026-05-12 holds two appearances of one Sohn NY event whose
+  thesis_ids collide on T1..T4; the date-keyed path bundled all 12 theses into
+  one call against one transcript and wrote an unjoinable output file. Now
+  label-keyed throughout (`select_episodes`, `label_by_date_source`,
+  `{label}.json`).
+- **Two passes, 95.0% agreement** (583/614). Resolved by the operator's
+  two-of-two rule: **416 subject (68%) / 56 other (9%) / 142 indeterminate
+  (23%)** on theses; **492 / 56 / 157** on the 705 named-ticker slots.
+  `subject`→`subject` held 416 of 422 — the subject verdict is stable; the churn
+  is `other`↔`indeterminate`, a distinction the filter does not act on.
+  → `analysis/attribution_resolved.json`, `tools/transcripts/reconcile_attribution.py`.
+- **Timeline rewired.** `audit_theses.rebuild_timelines()` overlays attribution
+  from the resolved file (614/614 matched) and adds `appearance_label`. The
+  overlay happens at rebuild, not in the per-thesis audit files, so re-running
+  attribution never re-runs the expensive thesis audit. New `--rebuild-only`.
+- **Filtering layer in** `theme_returns_v2` + `build_repeat_mention_events`:
+  `--attribution {all,subject}`, **defaulting to `all`** so no deliverable moves
+  before sign-off; filtered runs write `_subject`-suffixed outputs.
+- **Aggregate comparison done** (`analysis/attribution_filter_comparison.md`,
+  no returns computed): theses 614→416, mention rows 257→179, repeat mentions
+  196→128, meets-criteria 86→65, scored rows 142→100, basket universe 71→61.
+  **The "contamination is noise around a stable signal" hypothesis does not hold
+  in aggregate — about a third goes away.** But the loss is non-uniform: the
+  ticker-anchored themes are untouched (DRAM/HBM 10→10, Reasoning 7→7, Trainium
+  5→5, Metaverse 5→5) while panel-narrative themes take the hit (SpaceX 17→10,
+  Orbital 13→7, AI-bubble-not-happening 7→2). Ten themes vanish.
+
+**AWAITING OPERATOR READ. Returns stay held; v10 not regenerated.**
+
+Detail + decisions SD-ATTR-10…14: `analysis/attribution_implementation_notes.md`.
+
+---
+
+## Current State (as of 2026-09-08, earlier) — ATTRIBUTION AUDIT; CORPUS 614 THESES
 
 **Found: the corpus attributed other speakers' claims to Baker.** `extract_theses`
 reads an undifferentiated transcript (YouTube auto-captions mark speaker changes
@@ -241,25 +322,62 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 
 ## Immediate Next Steps
 
-**From 2026-09-08 (attribution audit) — do these in order; returns are held:**
-1. Clear/park `analysis/_attribution_audit_precorpus_restore/` (46 files audited
-   against the PRE-restore corpus — stale, do not trust).
-2. Run `audit_attribution --all --force` TWICE over the current 614-thesis corpus,
-   keeping the two passes separately; disagreement between passes → `indeterminate`
-   (operator decision, two-of-two agreement test).
-3. Rewire `audit_theses.py` to read `speaker_attribution` from the audit output
-   (label-keyed) rather than from the extraction. The field is already carried into
-   the timeline; only the SOURCE needs changing.
-4. Build the filtering layer in `theme_returns_v2` + `build_repeat_mention_events`:
-   **`subject` only** counts as Baker. `indeterminate` and `other` stay in the
-   corpus tagged, excluded from BAKER_NAMED (operator decision).
-5. Aggregate comparison — repeat-mention counts and basket membership BEFORE vs
-   AFTER filtering. This is the number the operator wants, not per-thesis accuracy:
-   if BAKER_NAMED's composition barely moves, the contamination was noise around a
-   stable signal.
-6. Then regenerate v10.
+**From 2026-09-08 (attribution + locator fix) — blocked on ONE operator decision:**
 
+**Read `analysis/attribution_filter_comparison.md`, then say whether to flip the
+default to `subject`.** That is the only thing standing between here and returns.
+The filter now costs −18.7% of named-ticker slots, −16.9% of scored rows and
+−14.0% of meets-criteria (roughly half what it cost before the locator fix). If
+you accept it: change `default="all"` to `default="subject"` in the
+`--attribution` argument of BOTH `theme_returns_v2.py` and
+`build_repeat_mention_events.py`, then unhold returns and regenerate v10.
 
+Residual caveats to weigh first:
+- 105 theses are still `indeterminate` and excluded. 71 are genuine ambiguity
+  (mostly the 19 transcripts with no `>>` markers); 34 are still placement
+  failures carrying 25 named tickers. A looser rule (`subject` +
+  `indeterminate`) is one line in `filter_by_attribution`.
+- 5 `other` verdicts rest on the quote landing in turn 0 with the model reading
+  it as a host intro; podcasts also cold-open with a replayed *guest* clip. Both
+  passes see the same cue, so two-of-two does not catch it.
+- The two Sohn write-ups (`subject_role: secondary`) are a third party's
+  rendering of Baker's words — every quote is paraphrase, and the audit reads
+  them as his. Unresolved since 2026-09-08.
+
+**Superseded — kept for the reasoning:**
+
+1. **READ `analysis/attribution_filter_comparison.md`.** The `subject`-only
+   filter removes ~30% of the corpus and ~30% of scored rows. It is not the
+   "barely moves" outcome the hypothesis expected, so the call on whether to
+   adopt it is yours. Three things to weigh:
+   (a) the ticker-anchored themes are untouched (DRAM/HBM, Reasoning, Trainium,
+   Metaverse all unchanged) — the loss is concentrated in panel-narrative themes;
+   (b) `TSMC capacity discipline` vanishes entirely, which looks wrong given it
+   is a real Baker theme elsewhere — worth a spot-check before accepting;
+   (c) **most of the `indeterminate` bucket is a bug, not ambiguity** — see
+   SD-ATTR-16. Of 142 indeterminate theses, 54 had `quote_not_located` and a
+   further 27 were shown the *wrong transcript turn* by `locate_turn`'s fuzzy
+   fallback; only 61 are genuine ambiguity. That is 88 of 157 indeterminate
+   named tickers lost to a locator failure. The three theses in the vanished
+   TSMC theme are all this. Recommend fixing the locator before flipping the
+   default, since the filter's cost is currently dominated by this rather than
+   by contamination.
+2. **Decide the default.** `--attribution` defaults to `all` in both
+   `theme_returns_v2` and `build_repeat_mention_events` so nothing moved without
+   sign-off. Flipping the default to `subject` is a one-word change in each.
+3. **Then unhold returns and regenerate v10** — `--attribution <chosen>` writes
+   `_subject`-suffixed outputs when filtered, so v9 stays intact for comparison.
+
+Open flags carried forward:
+- 5 of 71 `other` verdicts rest on the quote landing in turn 0 and the model
+  reading turn 0 as a host intro. Podcasts also cold-open with a replayed *guest*
+  clip; `bg2_spacex_ipo_2026jun` T1 and `iltb_gpus_tpus_..._2025dec` T8 look like
+  that. ~1% of named tickers, conservative direction, not fixed.
+- `cnbc_sharpe_angle_spacs_2021aug` — 6/6 quotes unlocatable in the Whisper
+  transcript, so all 6 theses force to `indeterminate`. Pre-existing.
+- The two Sohn write-ups (`subject_role: secondary`) are a third party's
+  rendering of Baker's words, so every quote is paraphrase; the audit reads them
+  as Baker. Still unresolved from the previous session.
 
 **From 2026-08-10 (2-new-appearances + regex fix):** v9 is live on `main` (pushed). Optional
 follow-ups, none blocking: (a) drop the 3 now-redundant tpu/dram/cien cluster_overrides (SD-REGEX-2);

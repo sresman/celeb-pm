@@ -1,0 +1,200 @@
+{
+  "date": "2026-06-27",
+  "source": "All-In Podcast \u2014 E278: AI memory crunch, Micron blowout, NYC socialists, SpaceX float (w/ Kalanick)",
+  "host": "Chamath, Jason, Sacks, Friedberg",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "DRAM is the single most important bottleneck in AI infrastructure, not other components",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "DRAM is the most important bottleneck simply because memory capacity",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The host directly addresses 'Gavin' with the question about Micron, and the response beginning 'No. Well, one DRAM is the most important bottleneck' is Baker's reply."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "DRAM will represent 30-40% of all hyperscaler capex next year",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "DRAM is probably going to be 30 to 40% of all hyperscaler capex next year",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from Baker following the direct address to 'Gavin' by the host; same unbroken speaker turn containing the DRAM capex estimate."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "HBM/AI-grade DRAM producers are cross-sectionally cheap relative to the rest of AI",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "these stocks still trade cross-sectionally cheap relative to the rest of AI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous Baker monologue following the direct 'Gavin' address; no speaker change indicated before this quote."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Micron's new supply agreements with floor pricing above prior cycle gross margin peaks are potentially transformational for the DRAM industry",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "floor pricing in these new contracts is ahead of prior cycle peaks from a gross margin perspective",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous Baker monologue following the direct 'Gavin' address; SDA floor pricing analysis is part of the same unbroken turn."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Only three companies can manufacture AI-grade HBM DRAM; new entrants cannot replicate this capability",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "for the DRAM you need in these AI servers, there are three companies that can make it",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous Baker monologue following the direct 'Gavin' address; three-company HBM claim is part of the same unbroken turn."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "CXMT (Chinese DRAM producer going public) will flood consumer-grade DRAM market but cannot address AI-grade DRAM shortage",
+      "tickers": [
+        "AAPL",
+        "MU"
+      ],
+      "quote": "CXMT is going public in China. They may be the cure for Apple's ills",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous Baker monologue following the direct 'Gavin' address; CXMT analysis is part of the same unbroken turn."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "The future of enterprise AI is composable models combining open-weight and frontier models, shifting economic value from frontier labs to infrastructure",
+      "tickers": [
+        "NVDA",
+        "VRT"
+      ],
+      "quote": "open-source models just shift economic value from the margins of the frontier labs to the infrastructure",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 128 is Baker's reply in a back-and-forth where he was the prior substantive speaker on distillation; self-referential framing ('I profoundly believe') and CIO-level portfolio construction language confirm Baker."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Nvidia is effectively the American open-source AI champion and could release a frontier open-weight model whenever it chooses",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Nvidia is the American open source champion. They can release GLM 5.2 or better whenever they want",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 143 begins 'Can I just say one thing? Nvidia is the American open source champion' \u2014 Baker interjects directly after the host addresses 'Sax' in turn 142, consistent with Baker jumping in before Sacks responds."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Frontier model companies building their own chips create a dangerous incentive for Nvidia to launch a competing AI model company",
+      "tickers": [
+        "NVDA",
+        "AVGO"
+      ],
+      "quote": "don't be surprised if Nvidia starts an OpenAI competitor",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 149 explicitly says 'You heard it here first on allin. Sax, did you want to jump in there?' \u2014 the speaker addresses Sacks, identifying the prior speaker as Baker."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Orbital/space-based compute will become cost-competitive with terrestrial data centers within 3-4 years as Starship becomes reusable",
+      "tickers": [],
+      "quote": "when Starship is reusable, it's going to cost $5 billion to put a gigawatt of compute into space",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 178 is a detailed technical response to the host's question in turn 177; the host then addresses 'Gavin' in the surrounding context and the orbital compute math is consistent with Baker's CIO register."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Terrestrial data center capacity that does get built will become extremely valuable ('hope diamonds') as contestation rates rise",
+      "tickers": [
+        "EQIX",
+        "DLR",
+        "IRON",
+        "VRT"
+      ],
+      "quote": "whatever is left on the ground will be incredibly valuable. It'll be a diamond",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 40 is a brief conversational remark about book avatars with no investment content; the surrounding turns show no connection to the quote fragment about 'hope diamonds' or terrestrial data centers."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Disaggregation of inference into prefill and decode phases will extend the useful life of older Nvidia GPUs (H100s, A100s) by 7-12 years",
+      "tickers": [
+        "NVDA",
+        "CBRS"
+      ],
+      "quote": "we're going to be using GPUs for seven years, 10 years, 12 years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 233 begins 'and to riff and to riff on like what Chamas said' \u2014 Baker references Chamath by name as a third party, identifying himself as a different speaker; CIO-level infrastructure analysis confirms Baker."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Anthropic is worth approximately $3 trillion as a public company today",
+      "tickers": [],
+      "quote": "Anthropic is worth $3 trillion today",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 240 ends with 'I know we're in uncharted territory, Gavin' \u2014 the host directly addresses Baker, and the reply 'I think Anthropic is worth $3 trillion today' is Baker's response."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Cerebras' key investment variable is megawatt capacity addition speed, not competitive positioning or demand",
+      "tickers": [
+        "CBRS"
+      ],
+      "quote": "how many megawatts can they bring on? Because we know what they're going to monetize at",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "No speaker markers but the monologue uses 'as an investor, I think what matters here' and 'I'm focused on as an investor' \u2014 self-identification as an investor/CIO; continuous with Baker's prior Cerebras discussion."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Chinese AI models (GLM 5.2) have achieved near-frontier capability through distillation of US model outputs, challenging the assumption of a durable US lead",
+      "tickers": [],
+      "quote": "how good GLM 5.2 is has challenged some of my beliefs",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 122 ends with 'Gavin, in other words...' \u2014 the host directly addresses Baker, and turn 123 is Baker's reply beginning 'I do think how good GLM 5.2 is has challenged some of my beliefs.'"
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "SpaceX IPO lockup short thesis is likely wrong due to prior liquidity access and employee buying at IPO",
+      "tickers": [],
+      "quote": "everybody who's a SpaceX investor or employee has had a chance to sell every 6 months for the last 10 years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 249 is followed by turn 250 where the host says 'but Gavin, one thing though' \u2014 directly addressing Baker, confirming turn 249 was Baker's statement about SpaceX lockup."
+    }
+  ]
+}

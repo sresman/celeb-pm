@@ -1,0 +1,40 @@
+{
+  "label": "themarket_inflation_matters",
+  "date": "2021-09-13",
+  "source": "The Market (themarket.ch) \u2014 The one thing that matters is inflation",
+  "host": "Christoph Gisiger",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Semiconductors represent a uniquely transformative technology with secular demand growth driven by AI",
+      "tickers": [],
+      "quote": "semiconductors are the closest thing to magic in the modern world",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "Turn 0 is an article/interview header that explicitly names Gavin Baker as the source of the quote 'Semiconductors Are the Closest Thing to Magic In the Modern World'."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "AI will drive a significant surge in semiconductor demand",
+      "tickers": [],
+      "quote": "anticipates a surge in demand due to the rise of artificial intelligence",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "Turn 0 explicitly attributes the anticipation of AI-driven demand surge to Gavin Baker by name in the introductory header."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Taiwan's geopolitical importance will surpass that of Middle Eastern oil producers in the 1970s due to semiconductor concentration",
+      "tickers": [],
+      "quote": "Taiwan could become geopolitically even more important than oil rich countries of the Middle East in the 1970s",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "Turn 0 explicitly attributes the Taiwan geopolitical thesis to Gavin Baker by name in the introductory header."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "date": "2023-04-21",
+  "source": "All-In Podcast \u2014 E125: SpaceX Starship launch, Fox News settlement, AI/Reddit",
+  "host": "David Sacks, David Friedberg, Chamath Palihapitiya, Jason Calacanis, Antonio Gracias (Gavin Baker panelist)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T4",
+      "summary": "AI wave will generate 10x more value than the internet era, but the index of AI investments will lose money while a handful of winners accrue extraordinary gains",
+      "tickers": [],
+      "quote": "10 times the value generated in this phase than we saw during the internet",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "AI co-pilots for professional verticals (coding, legal, medical, architecture) will produce multiple unicorns",
+      "tickers": [],
+      "quote": "co-pilot for coders or co-pilot for doctors or lawyers or Architects",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "Starship achieves ~50x reduction in cost-per-kg to orbit vs Falcon 9, representing a step-function change in launch economics",
+      "tickers": [],
+      "quote": "roughly a 50x huge change in this massively changes needed economics",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Antonio Gracias",
+      "evidence": "The quote about '50x' cost reduction appears in a passage where Antonio Gracias is explaining Starship's significance; a later turn explicitly says 'as Gavin just said' referencing the 50x figure, confirming it was attributed to Gavin Baker in a different turn, but the quoted fragment in this window is spoken by Gracias before that callback."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Starship enables Starlink to deploy ~20x more satellites per launch, creating a near-monopoly in next-gen satellite internet",
+      "tickers": [
+        "VSAT",
+        "SATS"
+      ],
+      "quote": "the only company that actually has the capability to build and to launch is SpaceX",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Chamath Palihapitiya",
+      "evidence": "The passage about SpaceX monopoly and Starlink disruption uses 'zombie corns' and 'I think' framing consistent with Chamath; the prior turn has Jason Calacanis asking about Starlink and the response is a long monologue by another panelist, and the style/content matches Chamath's known speaking patterns on this show."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Starship disrupts trans-Pacific and trans-Atlantic air cargo routes within 5-10 years",
+      "tickers": [
+        "FDX",
+        "UPS"
+      ],
+      "quote": "there will be no more trans-pacific or transatlantic cargo flights",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The transcript explicitly names 'Kevin' (Gavin) just before the quote: 'Kevin yeah there will be no more trans-pacific or transatlantic cargo flights,' directly attributing the statement to Gavin Baker."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "~70-80% of late-stage private tech companies (Series C+) are worth less than their preference stack \u2014 a reckoning has not yet begun",
+      "tickers": [],
+      "quote": "70 of publicly traded companies that went public in the last three years are trading below the cash",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Chamath Palihapitiya",
+      "evidence": "The speaker says 'this number comes from what I shared a few months ago' and uses 'zombie corns,' a term associated with Chamath, and the framing is first-person ownership of a previously shared statistic consistent with Chamath's prior episodes."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "AI enables 2-3 person startups to do the work of 20-30 people, compressing capital requirements and disrupting traditional VC fund deployment models",
+      "tickers": [],
+      "quote": "a two or three person company can now do the work of 20 to 30 people",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Chamath Palihapitiya",
+      "evidence": "The quote is in the same continuous monologue as T5, attributed to Chamath via 'zombie corns' and 'what I shared a few months ago' self-identification earlier in the same turn."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Reddit, Stack Overflow, and other large proprietary data corpus owners will successfully monetize their data for AI training",
+      "tickers": [],
+      "quote": "Reddit announced plans to start charging companies that use its data to train AI models",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "The speaker introduces the Reddit story with 'well Reddit announced plans' and references 'we talked about this on this show before' and 'your thoughts shamoth,' identifying the speaker as the host Jason Calacanis who is directing the conversation."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Crypto is effectively banned in the US; regulatory crackdown will drive innovation offshore, harming American competitiveness",
+      "tickers": [
+        "COIN"
+      ],
+      "quote": "crypto's dead in America",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "The speaker says 'crypto's dead in America' as a host-style declarative transition and then immediately asks 'is it a scapegoat or was it a round find out moment... in your mind,' confirming this is the host Jason Calacanis framing the topic for others."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Fox News faces existential financial risk from sequential defamation lawsuits that could deplete half its cash balance",
+      "tickers": [
+        "FOX"
+      ],
+      "quote": "Fox I think has only four billion of cash so they just spent 20 some odd percent",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Chamath Palihapitiya",
+      "evidence": "The speaker says 'Fox I think has only four billion of cash' and frames it as a shareholder governance question with 'if I were a shareholder,' consistent with Chamath's investor/business analysis style and his role as a panelist on this show."
+    }
+  ]
+}

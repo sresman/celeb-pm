@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T14",
+  "summary": "Hyperscalers should be valued on EV/net PP&E as an AI-era price-to-book analog, with some showing obvious inefficiencies",
+  "summary_extended": "Baker argues that the correct valuation framework for hyperscalers in the AI era is EV divided by net PP&E, treating net PP&E as a proxy for compute capacity \u2014 effectively an AI-era price-to-book ratio where the market is pricing what it believes each company will monetize from its compute fleet. He states he 'increasingly' uses this lens, suggesting it is a recent and deliberate analytical shift rather than a passing observation. Critically, Baker flags 'pretty obvious inefficiencies' across the hyperscaler group on this metric, implying that some names are materially mispriced relative to others on a compute-value basis. The investment implication is a relative-value trade within the hyperscaler cohort \u2014 buying the names with lower EV/net PP&E (underpriced compute) and potentially underweighting those with higher multiples \u2014 though Baker does not name specific winners or losers. No specific numbers or target multiples are cited, but the framework is actionable as a screening tool across the major cloud/AI infrastructure operators.",
+  "detail": "Baker says he increasingly looks at hyperscalers on EV to net PP&E because net PP&E is compute, and the market is effectively pricing what it thinks they'll monetize their compute fleet at. He notes 'some pretty obvious inefficiencies' in this metric across the group \u2014 implying relative value opportunities.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker describes this as his current analytical framework ('I increasingly look at') and flags 'pretty obvious inefficiencies' without naming specific names",
+  "themes": [
+    "AI datacenter infrastructure",
+    "public market valuation"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "I increasingly look at these hyperscalers on EV to net PP&E",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MSFT",
+    "GOOGL",
+    "AMZN"
+  ],
+  "tickers_subject": [
+    "MSFT",
+    "GOOGL",
+    "AMZN"
+  ],
+  "tickers_implied_original": [
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Microsoft is one of the core hyperscalers (Azure) with substantial net PP&E from AI datacenter buildout; the EV/net PP&E framework directly applies to it as a valuation subject."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Alphabet/Google Cloud is a primary hyperscaler with massive compute PP&E; the thesis directly applies as a valuation framework for this company."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon Web Services is the largest cloud provider with the most significant net PP&E among hyperscalers; the EV/net PP&E framework is directly applicable."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta is not a hyperscaler in the cloud-services sense \u2014 it does not sell compute to third parties. While it has large PP&E from AI infrastructure, Baker's framework is about monetizing compute fleets via cloud/AI services, which is not Meta's model. Meta is likely bleed-over from adjacent AI capex discussion."
+    }
+  ]
+}

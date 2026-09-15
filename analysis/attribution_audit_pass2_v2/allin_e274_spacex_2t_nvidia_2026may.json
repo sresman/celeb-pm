@@ -1,0 +1,227 @@
+{
+  "label": "allin_e274_spacex_2t_nvidia_2026may",
+  "date": "2026-05-22",
+  "source": "All-In Podcast \u2014 E274: SpaceX $2T case, Nvidia shock selloff",
+  "host": "Chamath, Jason, Friedberg (Gavin Baker panelist)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "AI inference revenue is approaching $200-400B ARR across major LLM providers by end of 2026, validating ROI on GPU spend",
+      "tickers": [
+        "GOOGL",
+        "META",
+        "AMZN",
+        "MSFT"
+      ],
+      "quote": "200, 300, 400 billion dollars of ARR at the end of this year",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 18 directly addresses 'Gavin' and asks for his take, and turn 19 containing the quote is the immediate reply."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Anthropic turning profitable is a watershed moment for the entire AI investment narrative",
+      "tickers": [],
+      "quote": "now profitable, which I think really changes the moment",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The window shows only very short turns with no speaker identification cues around turn 314."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Recursive self-improvement and continual learning are the two remaining frontiers for AI capability, and unlocking them could make current 10x/year improvement estimates look conservative",
+      "tickers": [],
+      "quote": "10Xing every year might seem conservative if that comes to pass",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 23 continues the same speaker from turn 19 (Baker, established by direct address in turn 18), and the self-referential framing matches Baker's CIO register."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "SpaceX's Elon Web Services (EWS) data center business can grow dramatically faster than previously contemplated, with the Anthropic $15B/year contract as proof of concept",
+      "tickers": [],
+      "quote": "15 billion dollars from Anthropic is extraordinary",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 163 directly addresses 'Gavin' and asks for his take on the S1, and turn 164 containing the quote is the immediate reply."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Cursor's Composer 2.5 being Pareto dominant after only 3-4 weeks of RL on Colossus 2 is an existence proof that proprietary coding data + massive compute = decisive model quality advantage",
+      "tickers": [],
+      "quote": "Composer 2.5 is literally well outside the Pareto frontier after three weeks",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 168 continues from Baker's established speaking turn (post direct address in turn 163), with CIO-level technical analysis of Cursor data and model evals."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "xAI (Grok) is now on the Pareto frontier of frontier models and the release of Grok Build (harness/runtime) is a critical missing piece that makes the model dramatically more useful",
+      "tickers": [],
+      "quote": "the harness is essentially as important as the model",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 182 continues Baker's analytical thread on frontier models and harnesses, consistent with his established speaking role from turn 164 onward."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "The AI market is cross-sectionally inefficient: power/cooling/optical names and memory/Nvidia cannot both be correctly valued simultaneously",
+      "tickers": [
+        "MU",
+        "NVDA"
+      ],
+      "quote": "The AI market is cross-sectionally inefficient right now",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 239 references 'what I was trying to say' indicating self-attribution, and the CIO-level cross-sectional valuation analysis is consistent with Baker's register established earlier."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Memory makers (DRAM/HBM producers) are deeply undervalued at 3-5x PE relative to the AI capex cycle",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "memory makers at three to five times PE",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 239 contains the quote but no direct address or self-identification links it specifically to Baker versus another panelist in this window."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Nvidia is growing faster than hyperscaler CapEx and faster than Broadcom's AI semiconductor revenue, disproving the ASIC share-gain narrative",
+      "tickers": [
+        "NVDA",
+        "AVGO"
+      ],
+      "quote": "Nvidia's AI business is growing faster than Broadcom's",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 245 continues from turn 239 (Baker's established turn) with detailed Nvidia vs Broadcom segment analysis typical of a fund CIO."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Nvidia's $20B CPU business guidance makes it overnight one of the world's largest CPU manufacturers, an underappreciated growth vector",
+      "tickers": [
+        "NVDA",
+        "INTC"
+      ],
+      "quote": "overnight you're one of the world's largest CPU manufacturers",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 264 follows turn 262 which introduces the CPU business point, and turn 228 directly addresses 'Gavin' for the Nvidia section, establishing Baker as the speaker."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "GPU useful lives of 10-15 years (enabled by disaggregated inference with domain-specific accelerators) validate neo-cloud amortization schedules and financing structures",
+      "tickers": [
+        "CRWV",
+        "NVDA"
+      ],
+      "quote": "those older GPUs have a useful life for 10 or 15 years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 279 directly addresses 'Gavin' and turn 281 containing the quote is the immediate reply."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "SpaceX's terrestrial data center business alone (Colossus 3, 4, etc.) could reach $100-200B in revenue by 2030-2032, justifying the $2T valuation on that segment alone",
+      "tickers": [],
+      "quote": "terrestrial data centers alone are 100 or 200 billion dollars of revenue by 2030",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Chamath",
+      "evidence": "No speaker markers are present, but the framing ('I'm buying it', 'he's the guy', Tesla merger thesis) matches Chamath's known investor perspective and rhetorical style, not Baker's CIO register."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Orbital/space-based compute is real and will hit SpaceX's bottom line in second half of 2028 to first half of 2030",
+      "tickers": [],
+      "quote": "second half of 28 to first half of 2030 would be my point prediction",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 204 directly asks 'Gavin' about space data centers hitting SpaceX's bottom line, and turn 227 containing the quote is Baker's reply."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Rapid reusability of Starship (multiple flights per day) is 1-2 years away and will create an insurmountable mass-to-orbit advantage for SpaceX",
+      "tickers": [],
+      "quote": "rapid reusability means you can fly the same rocket multiple times per day",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 204 directly addresses 'Gavin' asking about space data centers, and turn 207 is Baker's continued response explaining rapid reusability."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Selling depreciated Nvidia GPUs to China reduces the probability of China developing a more power-hungry alternative AI ecosystem and is stabilizing for US AI leadership",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "selling depreciated Nvidia GPUs to China lowers the odds of them developing their own alternative ecosystem",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 349 directly addresses 'Gavin' asking for his thoughts on Nvidia selling chips to China, and turn 350 containing the quote is the immediate reply."
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "The Strait of Hormuz closure is relatively good for America and Trump's policy goals due to US energy self-sufficiency, and is a forcing function for reindustrialization",
+      "tickers": [],
+      "quote": "every day the Strait of Hormuz is closed is relatively good for America",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 332 follows turn 330 in the same analytical thread about the Strait of Hormuz; the 'relative thinker' framing and macro geopolitical analysis is consistent with Baker's established speaking role in this section."
+    },
+    {
+      "thesis_id": "T17",
+      "summary": "AI fundamentals may be seasonal (summer slowdown), but the structural bull case remains intact alongside rising rates",
+      "tickers": [],
+      "quote": "AI fundamentals also appear a little seasonal",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 334 follows Baker's established speaking context in the geopolitical/macro section, and the AI seasonality observation fits a fund CIO's market commentary register."
+    },
+    {
+      "thesis_id": "T18",
+      "summary": "Nvidia trades in stairstep patterns once it becomes the largest company in the world \u2014 multiple compresses then re-rates to a new floor",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "you tend to trade by observation at stairstep patterns",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 258 contains the quote but no direct address, self-identification, or clear turn-alternation pattern in this window to attribute it to Baker versus another panelist."
+    },
+    {
+      "thesis_id": "T19",
+      "summary": "IPPs (independent power producers) are reasonably valued within the AI power theme, unlike power equipment, cooling, and optical names which may be overvalued",
+      "tickers": [
+        "VST",
+        "NRG",
+        "CEG"
+      ],
+      "quote": "IPPs are actually quite reasonably valued",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 239 is the same turn as T7/T8, directly attributed to Baker, and the IPP valuation comment is part of the same cross-sectional analysis."
+    }
+  ]
+}

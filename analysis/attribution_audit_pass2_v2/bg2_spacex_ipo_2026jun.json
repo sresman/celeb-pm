@@ -1,0 +1,223 @@
+{
+  "label": "bg2_spacex_ipo_2026jun",
+  "date": "2026-06-11",
+  "source": "BG2 Pod \u2014 SpaceX IPO, AI capex, Cursor",
+  "host": "Andrew Fox, Clark Tang, Brad Gerstner (Gavin Baker panelist)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "SpaceX is a must-own for institutional investors as the best single bet on both the AI and space future",
+      "tickers": [
+        "SPCE-IPO"
+      ],
+      "quote": "must buy, a must own, a set it and forget it",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Brad Gerstner",
+      "evidence": "Turn 0 contains the host's intro monologue naming 'GB in the house, Gavin Baker from a Treaties' as a guest, then pivoting to 'here we go... BG2 is back' \u2014 the quote precedes the intro and is the host's framing, not Baker's words."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "SpaceX's terrestrial AI compute business is monetizing at dramatically higher rates than peers and is the most underappreciated near-term revenue driver",
+      "tickers": [
+        "GOOGL"
+      ],
+      "quote": "they just signed Google at 50 per gigawatt",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Andrew Fox",
+      "evidence": "Turn 101 begins 'Yeah. Yeah, so I mean...' and is addressed to by turn 100 'Walk us through the economic case' directed at someone other than Baker; turn 98 suggests Foxy or Clark should lay out the math, and the speaker in 101 is responding to that prompt."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Orbital/space compute represents a 5x CapEx cost reduction vs terrestrial and is a long-term call option on SpaceX",
+      "tickers": [
+        "SpaceX"
+      ],
+      "quote": "$5 billion per gigawatt of CapEx to put these in space",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Andrew Fox",
+      "evidence": "Turn 122 continues the same speaker thread from turn 120 laying out orbital compute math, which was introduced in turn 98 as Foxy or Clark's analysis; the voice continues uninterrupted from turn 101."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Cursor acquisition dramatically advances XAI/SpaceX's frontier model capability and is the most underappreciated upside in the SpaceX IPO",
+      "tickers": [
+        "SpaceX",
+        "xAI",
+        "Cursor"
+      ],
+      "quote": "the thing that's least talked about... could be the biggest upside surprise",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 134 is directly preceded by turn 133 from another speaker, and turn 134 opens with Baker-register language ('to me is if I had to say'); the host in turn 134 then addresses 'Clark' at the end, confirming the speaker is Baker."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Frontier AI models continue to capture ~90%+ of economic value despite open-source models consuming the majority of tokens",
+      "tickers": [
+        "GOOGL"
+      ],
+      "quote": "frontier might be 90% of the economic value",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 218 interrupts turn 217's host framing with a correction ('That has been decisively wrong') and uses fund-CIO register; turn 219 continues the same thought, consistent with Baker speaking."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Open-source AI success is bullish for compute/hardware providers, not bearish for the AI ecosystem",
+      "tickers": [],
+      "quote": "the better open source does, the better it is for compute providers",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 219 continues directly from turn 218 in the same speaker voice, making the compute-bullish argument in a CIO register consistent with Baker."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Nvidia is highly likely to become the world's dominant open-source AI provider and could rapidly enter frontier cloud computing if economics shift",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Nvidia can join the frontier and become one of the world's largest cloud computing companies",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 245 follows turn 243 in the same speaker thread making a point about Nvidia's optionality, and turn 246 pivots to 'Clark, walk us through this chart,' confirming the prior speaker was not Clark and consistent with Baker."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Nvidia is maintaining and potentially gaining GPU market share despite ASIC competition, contrary to consensus expectations",
+      "tickers": [
+        "NVDA",
+        "AVGO"
+      ],
+      "quote": "Nvidia is accelerating and they just continue to out execute their competitors",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Brad Gerstner",
+      "evidence": "Turn 250 opens 'Yeah, I was just shocked. I mean, I'm I'm out here. I did a board meeting with one of our companies' \u2014 first-person portfolio company reference and 'out here' (Silicon Valley host framing) points to Gerstner, not Baker."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "In a power-constrained world, tokens-per-watt advantage makes Nvidia superior to alternatives even at higher cost",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "more tokens per watt, which is literally revenue with Nvidia",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 254 continues from turn 252 in the same speaker thread making a tokens-per-watt argument in CIO register; turn 255 shifts to a new speaker, bracketing turn 254 as Baker."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Long-running agentic AI models represent a step-change in intelligence utilization that makes current benchmarks obsolete and dramatically increases compute demand",
+      "tickers": [
+        "NVDA",
+        "SMCI",
+        "ANET"
+      ],
+      "quote": "however bullish I was on compute before then, I'm just a lot more bullish",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 197 uses 'my takeaway was however bullish I was on compute before' \u2014 first-person CIO framing \u2014 and follows turns 194-196 that appear to be Baker elaborating on a thought."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Global AI inference revenue will exceed $200B in 2026 and reach $300B+ by 2027, making the CapEx/revenue math work",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META"
+      ],
+      "quote": "I think we end this year well over 200 billion in inference revenue",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 271 opens 'I think I think we end this year well over 200 billion in inference revenue' in CIO register, following turn 270 'From your mouth to God's' addressed to Baker by the host."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "AI compute monetization rates per gigawatt are increasing, not deflating, contrary to consensus expectations entering 2026",
+      "tickers": [],
+      "quote": "monetization rates per watt are increasing",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 285 uses 'I think' CIO-register framing about monetization rates and references 'deals signed by SpaceX and others,' consistent with Baker's analytical voice following his prior turns."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Starlink direct-to-cell and broadband can 5x revenue to ~$50B by 2028, representing only 0.3% penetration of global telecom market",
+      "tickers": [],
+      "quote": "50 billion, that's 0.3% penetration of the global telecom market",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 58 opens 'It's the fastest, it's lowest latency and I do think once they get to rapid reusability' and uses 'I'd frame it up' \u2014 CIO framing; turn 56 begins 'I have um I I travel with Starlink. I'm a big video gamer' which sounds more like a host, but turn 58 is a continuation that shifts to analytical framing consistent with Baker."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "SpaceX's data center design is fundamentally differentiated from first principles, not a commodity, giving it durable competitive advantage",
+      "tickers": [],
+      "quote": "he designed something fundamentally different... 122 days",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 82 opens 'And I do not share that belief' and references 'I did actually ask the team' about data center design \u2014 direct first-person engagement with SpaceX management consistent with Baker as a large shareholder and CIO."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "SpaceX has secured up to 20% of early Vera Rubin GPU allocation, giving it a compute lead into the next GPU generation",
+      "tickers": [],
+      "quote": "secured maybe up to 20% of Vera Rubin capacity",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Clark Tang",
+      "evidence": "Turn 135 is Clark's direct response to Baker's question in turn 134 ('Any thoughts, Clark, on what you think is being overlooked'), and the speaker says 'I I would say' referencing 'a lot of my conversations' about Vera Rubin allocation."
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "The 'finding the next bottleneck' trade in semiconductors is over; many bottleneck stocks have gone 'straight up a cliff' and need to rest or correct",
+      "tickers": [
+        "NVDA",
+        "AVGO"
+      ],
+      "quote": "finding the next bottleneck... that game is over",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 312 directly addresses 'Gavin' and asks how he runs the book; turn 313 is Baker's reply, and turn 315 continues his thread with the bottleneck quote."
+    },
+    {
+      "thesis_id": "T17",
+      "summary": "SpaceX IPO post-listing drawdown risk is real but the lock-up and employee liquidity history mitigate selling pressure",
+      "tickers": [],
+      "quote": "utterly unprecedented and we'll see",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 183 continues the argument from turn 181 about SpaceX employee liquidity history in a CIO analytical register; the host in turn 184 responds 'Yeah, I know. It's a great point' and then addresses 'Gavin' later, suggesting Baker was speaking in 183."
+    },
+    {
+      "thesis_id": "T18",
+      "summary": "Coding is the fastest path to AGI/ASI and will continue to be the dominant high-value AI use case capturing frontier model revenue",
+      "tickers": [
+        "ANTH",
+        "XAI"
+      ],
+      "quote": "coding may be the fastest path to AGI and ASI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 96 opens 'The founder of Replit. It he called it bitter lesson adjacent that coding may be the fastest path to AGI' and uses 'I think' CIO register throughout; turn 93 directed the question to Baker ('give us your thoughts, Gavin') and turn 94 begins Baker's response."
+    }
+  ]
+}

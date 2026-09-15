@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast — Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "thesis_id": "T12",
+  "summary": "AI demand TAM for tokens is $1T+ in the US alone based on labor cost analogy — corporations will spend 5-10% of employee salary equivalents on tokens",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "MSFT",
+    "GOOGL",
+    "META"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "Baker's thesis is a TAM-sizing argument about corporate token spend. While MSFT is an obvious beneficiary, Baker did not specifically name Microsoft in connection with this particular thesis. The thesis explicitly notes that specific beneficiaries are Anthropic (pre-IPO) and OpenAI (private), with hyperscalers mentioned generically. MSFT was not specifically called out as a direct beneficiary of this exact TAM argument."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "Same reasoning as MSFT — Baker did not specifically name Google/Alphabet in connection with this particular TAM-sizing thesis. The thesis summary notes frontier model providers and hyperscalers generically, but Baker's specific named beneficiaries were Anthropic and OpenAI (both private). GOOGL was not specifically connected to this exact claim."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Meta was not specifically named by Baker in connection with this thesis. The first-pass audit itself noted it was 'not original' and flagged it as insufficiently unambiguous. Meta's primary monetization is advertising, not token sales, and Baker did not specifically connect Meta to this TAM-sizing argument."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast \u2014 Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "thesis_id": "T13",
+  "summary": "Energy infrastructure buildout for AI data centers is solvable \u2014 turbine capacity, natural gas, and capitalism will meet demand; political headwinds are the real constraint",
+  "summary_extended": "Baker argues that the physical energy infrastructure challenge for AI data centers is fundamentally solvable through American capitalism and engineering ingenuity, and that investors should not fear the power buildout as a bottleneck. He cites specific evidence: turbine manufacturers including GE Vernova, Siemens Energy, Caterpillar, and Cummins are already running 24-hour production shifts to meet demand, and repurposing jet engines from retired aircraft as turbines has become a growing business line. Natural gas is the primary near-term fuel source, with solar and nuclear viable over longer horizons. Baker's contrarian structural view is that the real constraint on AI data center buildout is not physical or engineering capacity but rather regulatory and political headwinds \u2014 meaning the investment risk is misdiagnosed by the market, and the companies supplying turbines and power generation equipment are well-positioned as direct beneficiaries of sustained demand.",
+  "detail": "Baker argues America's capitalism and engineering capacity will solve the physical buildout challenge. Turbine manufacturers (GE Vernova, Siemens Energy, Caterpillar, Cummins) are running 24-hour shifts. Jet engines being repurposed from old planes as turbines is a growing business. Natural gas is the near-term fuel. Solar/nuclear viable longer term. The real constraint is regulatory/political, not physical.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker speaks with conviction about specific companies and mechanisms, frames it as a structural view",
+  "themes": [
+    "power/energy",
+    "AI datacenter infrastructure",
+    "regulatory/political risk"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "turbine blades...now running 24-hour shifts...capitalism will solve those problems",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "GEV",
+    "CAT",
+    "CMI",
+    "SIEGY"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "GEV",
+    "SIEGY",
+    "CAT",
+    "CMI"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "GEV",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "GE Vernova is explicitly named as a turbine manufacturer running 24-hour shifts to meet AI data center power demand \u2014 a direct beneficiary of the energy infrastructure buildout thesis."
+    },
+    {
+      "ticker": "CAT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Caterpillar is explicitly named as a turbine/generator manufacturer running 24-hour shifts for AI data center power demand, making it a direct beneficiary."
+    },
+    {
+      "ticker": "CMI",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Cummins is explicitly named as a turbine/generator manufacturer running 24-hour shifts for AI data center power demand, making it a direct beneficiary."
+    },
+    {
+      "ticker": "SIEGY",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Siemens Energy is explicitly named as a turbine manufacturer benefiting from AI data center power demand, though it is a German-listed ADR rather than a primary US listing \u2014 still the most direct representation available for US investors."
+    }
+  ]
+}

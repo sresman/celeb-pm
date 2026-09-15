@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T16",
+  "summary": "Meta has significantly outpaced Google/Gemini in frontier model capability and deserves credit for returning to competitiveness from a position of weakness",
+  "summary_extended": "Baker argues that Meta has executed a remarkable turnaround in frontier AI model capability, going from being effectively out of the competitive race roughly 12 months ago to now being significantly ahead of Google's Gemini in model capability \u2014 a shift he describes as 'unimaginable' just a year prior. He credits Meta's team with doing 'a great job' and frames this as a genuine competitive repositioning, not a marginal improvement. Baker also notes that Grok has emerged as a third credible frontier model alongside OpenAI and Anthropic, suggesting the frontier is not collapsing to a single winner. The investment implication is that Meta's AI capability trajectory is underappreciated relative to the prior narrative of Google dominance, and that GOOGL faces a more serious competitive threat in AI than the market may have priced in \u2014 while META deserves a re-rating as a credible frontier AI leader.",
+  "detail": "Baker notes that a year ago Gemini was ascendant and Meta was out of the game. Now Llama/Meta is significantly ahead of Gemini from a capability perspective. This was unimaginable 12 months ago. Baker gives Meta 'a lot of credit' and says they've 'done a great job.' Grok is now a third credible frontier model alongside OpenAI and Anthropic.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as fact based on capability comparisons; no hedging language",
+  "themes": [
+    "frontier model economics",
+    "AI ecosystem"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "Meta would be significantly ahead of them from a capability perspective",
+  "tickers_named_original": [
+    "META",
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "META",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "META",
+    "GOOGL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Meta's turnaround in frontier model capability; META is the central subject of the claim and the primary investment implication."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google/Gemini is the explicit competitive benchmark being displaced; the thesis directly implies GOOGL faces a more serious AI competitive threat than previously understood, making it a direct subject of the competitive dynamic described."
+    }
+  ]
+}

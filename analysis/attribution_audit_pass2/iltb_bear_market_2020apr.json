@@ -1,0 +1,193 @@
+{
+  "label": "iltb_bear_market_2020apr",
+  "date": "2020-04-02",
+  "source": "Invest Like the Best \u2014 Investing through a bear market (EP.167)",
+  "host": "Patrick O'Shaughnessy (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T2",
+      "summary": "Bear markets follow FIFO principle \u2014 first stocks sold are first to be bought back; aggressive/levered names lead recovery",
+      "tickers": [
+        "NFLX",
+        "BKNG",
+        "DPZ"
+      ],
+      "quote": "bear markets work on a FIFO principle, not a LIFO principle",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Omnichannel physical retailers (Walmart, Target, Costco, Kroger) are the biggest e-commerce beneficiaries of COVID",
+      "tickers": [
+        "WMT",
+        "TGT",
+        "COST",
+        "KR"
+      ],
+      "quote": "building years of e-commerce experience, muscle know-how in months",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "Peak valuation spreads within sectors create historically rich alpha opportunity for active and long/short investors",
+      "tickers": [],
+      "quote": "statistically has rich of an opportunity set as we have seen",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The intro explicitly names Gavin Baker as the guest and the quote follows immediately after Patrick's intro framing, with Baker speaking in first person about his experience ('I did live through 001, 02') and CIO-register language about alpha and long/short investing."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Software revenue is not truly recurring; software spend will be cut in this recession unlike 2008-09",
+      "tickers": [],
+      "quote": "there is no such thing as truly recurring revenue",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage uses first-person CIO framing ('I have been thinking a lot about', 'I don't see any way around that') and self-identifies with Atreides-level analysis of IT spend; the prior turn is Patrick asking Baker a direct question about software."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Work-from-home enabling software companies are near-term beneficiaries but face demand reversal when offices reopen",
+      "tickers": [
+        "ZM",
+        "WORK"
+      ],
+      "quote": "any software company that enables work from home is struggling to keep up",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage explicitly references 'tell Gavin exactly what you just told me', confirming Baker is the speaker receiving and then relaying the dentist anecdote, and continues in his voice discussing Zoom with 'we are not involved with Zoom'."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Zoom has become a verb and may evolve into a privacy-friendly social network / messaging platform",
+      "tickers": [
+        "ZM"
+      ],
+      "quote": "Zoom has become a verb... companies that become verbs generally do well",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The transcript window for T5 only shows the podcast intro/ad copy and does not contain the quote fragment itself, but the quote ('Zoom has become a verb') appears in the T4 and T6 windows where Baker is clearly the speaker."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Large tech incumbents (Apple, Google, Facebook) missed a generational opportunity in video communication due to inferior UI/UX",
+      "tickers": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "ZM"
+      ],
+      "quote": "they've already missed one of the biggest changes to come out of this recession",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage is a continuous monologue from Baker (established in T4 window) discussing Zoom UI/UX and large tech incumbents, with no speaker change marker and consistent CIO register throughout."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Pure-play e-commerce incumbents face a more competitive landscape post-COVID as omnichannel retailers go all-in",
+      "tickers": [
+        "AMZN"
+      ],
+      "quote": "dramatically more competitive in 2021 than it was even in 2019",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage begins with 'Sometimes what you don't do is as important as what you do' and continues in Baker's established voice discussing e-commerce portfolio positioning; Patrick's prior turn asks Baker what he is paying attention to on the long side."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Quick service restaurants with drive-throughs will be among the first and biggest beneficiaries of economic reopening",
+      "tickers": [
+        "MCD",
+        "QSR",
+        "WEN",
+        "YUM"
+      ],
+      "quote": "first thing people are going to do... go to quick service restaurants with a drive-through",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The transcript window for T9 only shows the podcast intro/ad copy, but the quote fragment about quick service restaurants appears in the T8 window where Baker is the confirmed speaker in a continuous monologue."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "TikTok is for the first time meaningfully impacting incumbent social networks and may represent a generational social network shift",
+      "tickers": [
+        "META",
+        "SNAP"
+      ],
+      "quote": "TikTok has begun to have an impact on incumbent social networks for the first time",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The transcript window for T10 only shows the podcast intro/ad copy, but the TikTok observation appears at the end of Baker's continuous monologue in the T8 window ('In addition to Zoom, I think watching TikTok...')."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Video games are foundational to the metaverse and will become platforms with identity, payments, and social layers",
+      "tickers": [
+        "MSFT",
+        "SNE",
+        "RBLX"
+      ],
+      "quote": "video games are going to be foundational to the metaverse",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage uses first-person conviction language ('I am becoming more and more convinced', 'I think') in a continuous monologue about metaverse/video games with no speaker change, consistent with Baker's established voice in surrounding turns."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Discord is a potential metaverse platform foundational asset that could bridge work and play like Zoom",
+      "tickers": [],
+      "quote": "Discord is something that could easily come out of this as a platform foundational to metaverse",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The Discord thesis is embedded in the same continuous monologue as T11 with no speaker change, and uses Baker's characteristic framing ('I think an asset that is very interesting is Discord')."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Valuation regime shift from EV/Sales to GAAP P/E is the single biggest risk for growth investors",
+      "tickers": [],
+      "quote": "biggest single risk to me is a regime shift in valuations",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage explicitly uses 'something that I think a lot about as a growth investor' and 'The biggest single risk to me is a regime shift in valuations', clearly Baker's first-person CIO voice responding to Patrick's closing question."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Space-as-a-service / co-working model faces structural challenge post-COVID due to density and health concerns",
+      "tickers": [],
+      "quote": "that model is going to have to really change in a world where containment is a priority",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage uses Baker's established analytical voice discussing WeWork/space-as-a-service with CIO-register framing ('I think', 'I could say with absolute certainty') in a continuous monologue with no speaker change markers."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Days-of-solvency-at-zero-revenue is the new critical liquidity metric replacing Altman Z-score and debt/EBITDA",
+      "tickers": [],
+      "quote": "days of solvency with zero revenue is the equation being run everywhere",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The transcript window for T15 only shows the podcast intro/ad copy and does not contain the quote fragment, but the liquidity metric framing is consistent with Baker's CIO register established throughout the episode."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T6",
+  "summary": "AI token demand is at extreme early innings \u2014 fewer than 10 million true heavy-paying users out of 1.5 billion knowledge workers; supply is massively constrained relative to addressable demand",
+  "summary_extended": "Baker argues that AI token demand is in the extreme early innings, with fewer than 10 million genuine heavy-paying users out of a potential 1.5 billion knowledge workers \u2014 meaning the market is barely 1% penetrated on the demand side. He supports this with granular internal and portfolio data: Atreides' own token consumption grew 100x from March to August 2026, AI-native a16z portfolio companies spend 10%+ of human compensation on tokens versus ~1% for old-economy leaders, and a single enterprise tool like Grockbot could 10-20x a company's token spend in one month. The power-law dynamic within enterprises \u2014 where top engineers consume 10-100x the median \u2014 means aggregate demand will compound far faster than linear adoption curves suggest. The investment implication is that compute supply is massively constrained relative to addressable demand, making infrastructure providers (particularly GPU and data center capacity) the clearest near-term beneficiaries, while the thesis is explicitly not winner-take-all at the frontier-lab layer.",
+  "detail": "Baker estimates fewer than 10M genuine heavy token consumers (taking the under on 30M). Power law within enterprises: highest-spending engineers use 10-100x median. AI-native a16z portfolio companies spend 10%+ of human compensation on tokens; old-economy leaders spend ~1%. Atreides internal token consumption up 100x from March to August 2026. Grockbot Enterprise access may 10-20x their spend in a single month.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses his own firm's data (100x token growth) and portfolio company data as primary evidence; speaks with high conviction",
+  "themes": [
+    "AI demand",
+    "token economics",
+    "enterprise AI adoption"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "one and a half billion knowledge workers...we're nowhere on the demand side and we're massively supply constrained",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "META",
+    "GOOGL",
+    "MSFT",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of GPU compute that underpins AI token generation capacity; a thesis centered on extreme supply constraint relative to token demand makes NVDA a direct and unambiguous beneficiary as the primary infrastructure provider."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "META is a frontier AI lab and large token consumer/producer, but this thesis is about aggregate demand vs. supply dynamics and infrastructure constraints \u2014 META is not specifically the subject or a uniquely identified beneficiary of this structural imbalance thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "GOOGL operates cloud and frontier AI infrastructure, but the thesis does not specifically identify GOOGL as a beneficiary; it is a general AI player that appears in adjacent context rather than being a direct subject or unambiguous beneficiary of this specific demand/supply thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT is a major AI infrastructure and cloud player but is not specifically called out as a beneficiary of this token demand thesis; its inclusion appears to be contamination from adjacent AI themes rather than a direct implication of this thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMZN AWS is a cloud compute provider but is not specifically identified as a beneficiary in this thesis; like MSFT and GOOGL, its inclusion appears to be broad AI theme contamination rather than a direct implication of the supply-constraint argument."
+    }
+  ]
+}

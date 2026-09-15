@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast \u2014 Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "thesis_id": "T7",
+  "summary": "The primary risk to the AI capex supercycle is a compute glut/overbuild (dark GPUs), not demand destruction \u2014 but political headwinds ironically insure against this outcome",
+  "summary_extended": "Baker argues that the primary bear case for the AI capex supercycle is not demand destruction but rather a 'dark fiber'-style compute glut \u2014 an oversupply of GPUs and data center capacity that crashes spot compute prices below the $30\u201350 per watt levels that have been underwritten by infrastructure investors. However, he contends this risk is structurally self-limiting because the same regulatory and political headwinds (permitting difficulties, grid interconnection delays, local opposition) that frustrate data center construction act as a natural governor on supply, preventing overbuild relative to exponentially growing AI compute demand. The irony, Baker notes, is that the political friction most view as a headwind actually insures the capex cycle against its own worst-case outcome. The investment implication is that the AI infrastructure buildout is more durable than bears expect, supporting continued investment in data center and power infrastructure plays.",
+  "detail": "Baker identifies the 'dark fiber' scenario as the key bear case: oversupply of compute crashing spot prices below the $30-50/watt levels underwritten. However, he argues the regulatory/political headwinds making data center construction difficult act as a natural governor, preventing overbuild relative to exponentially growing demand.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly frames this as the biggest risk and then explains why it's self-limiting \u2014 a nuanced structural view held with conviction",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy",
+    "regulatory/political risk"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "political headwinds almost guarantee there's not an overbuild",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRWV"
+  ],
+  "tickers_subject": [
+    "CRWV"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "CRWV",
+    "TSM",
+    "MU"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "This thesis is about the macro supply/demand dynamics of the AI capex cycle and the political governor on overbuild \u2014 it is not specifically about Nvidia's business or revenues. Nvidia appears as a contextual backdrop (GPUs are the compute being discussed) but is not the direct subject or a uniquely identified beneficiary of this structural argument. Remove."
+    },
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "CoreWeave is a hyperscale GPU cloud operator whose business model is directly underwritten at the $30\u201350/watt compute pricing Baker references. The 'dark fiber' overbuild scenario would directly impair CRWV's economics; Baker's argument that political headwinds prevent this overbuild is directly bullish for CRWV's underwritten contracts and valuation."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "TSMC is a semiconductor manufacturer, not a data center infrastructure operator. The overbuild/dark-GPU thesis concerns compute capacity utilization and spot pricing, not wafer fabrication economics. TSMC's inclusion appears to be bleed-in from adjacent AI supply chain discussion. Remove."
+    },
+    {
+      "ticker": "MU",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Micron is a memory manufacturer with no direct exposure to the data center compute glut / spot pricing dynamics Baker is describing. Its inclusion appears to be contamination from adjacent memory or HBM theses in the same transcript. Remove."
+    }
+  ]
+}

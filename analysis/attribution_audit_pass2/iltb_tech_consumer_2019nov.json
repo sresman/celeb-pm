@@ -1,0 +1,246 @@
+{
+  "label": "iltb_tech_consumer_2019nov",
+  "date": "2019-11-26",
+  "source": "Invest Like the Best \u2014 Tech and consumer growth investing (EP.149)",
+  "host": "Patrick O'Shaughnessy (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T6",
+      "summary": "Artificial intelligence is in the bottom of the first inning and will be the next major platform wave, enabled by mobile-generated data.",
+      "tickers": [
+        "GOOGL"
+      ],
+      "quote": "we are at the bottom of the first inning in the AI revolution",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Data quantity is the single most predictive variable of AI quality, creating compounding moats for dominant-scale internet platforms.",
+      "tickers": [
+        "GOOGL",
+        "MSFT"
+      ],
+      "quote": "for every order of magnitude increase in data, the quality of the AI doubles",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "We are entering peak disruption analogous to the peak Industrial Revolution, with 30-40 more years of rapid technological change ahead.",
+      "tickers": [],
+      "quote": "we may be just entering peak disruption",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The intro explicitly names Gavin Baker as the guest and the quote follows directly after Patrick's opening question, with Baker responding in first person about his investment philosophy and historical framework."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Apple's used iPhone resale value creates a structural pricing advantage over Android that is underappreciated.",
+      "tickers": [
+        "AAPL"
+      ],
+      "quote": "Apple can charge the consumer more but actually have a lower effective price",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is part of a continuous monologue by Baker explaining Apple's business model after Patrick asks him about Apple as a growth investor; Baker self-identifies with 'I think' and 'Apple was actually kind of foundational to the way I evolved as an investor.'"
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "The iPhone is becoming an edge server for a constellation of wearable devices including AirPods and future AR glasses.",
+      "tickers": [
+        "AAPL"
+      ],
+      "quote": "the iPhone is becoming an edge server of sorts for wearable devices",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is embedded in Baker's multi-part Apple thesis response ('The second thing that's happened is the iPhone is becoming an edge server'), continuing his answer to Patrick's question about Apple."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Apple's hiring of Google's head of search signals a potential entry into search advertising, making Apple a credible Google competitor.",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "quote": "Apple had a chance to compete with Google in search",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is part of Baker's same Apple monologue ('this meant to me that Apple had a chance'), with Baker speaking in first person about his investment reasoning."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Intel's loss of semiconductor manufacturing leadership to TSMC in 2018 was a structural inflection point creating a 20-30% competitiveness swing for fabless chip designers.",
+      "tickers": [
+        "INTC",
+        "TSM",
+        "AAPL"
+      ],
+      "quote": "Taiwan Semi got to the node before Intel",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The Intel/TSMC analysis follows Patrick's question 'What about the story behind Intel?' and Baker responds with a detailed technical explanation in first person, consistent with his CIO role."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Autonomous vehicles will have larger economic impact on retail real estate and urban/suburban living patterns than on the core automotive industry.",
+      "tickers": [],
+      "quote": "cities may have a bigger impact than within the core automotive industry",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote appears in a passage where Baker is discussing autonomous vehicles and their lateral impacts, using 'I think' framing consistent with his analytical voice throughout the episode."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "The metaverse is inevitable: a majority of people will spend a majority of waking hours in virtual worlds within our lifetimes.",
+      "tickers": [],
+      "quote": "inevitable that a majority of people will spend a majority of waking hours in virtual worlds",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker uses 'I think it is inevitable' and 'I've written a lot about' in the same passage, self-identifying as the author of prior metaverse writing, consistent with his known public commentary."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Dominant video game franchises will become the platform layer of the metaverse, analogous to operating systems.",
+      "tickers": [
+        "ATVI",
+        "EA"
+      ],
+      "quote": "dominant video game franchises today become the platforms within the metaverse",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is part of Baker's extended video game/metaverse thesis ('That's part of how I try to put it into the portfolio today'), with explicit portfolio construction language identifying him as the fund manager."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "AR platform dominance will accrue to dominant mobile OS providers (Apple, Google), not Facebook/Meta.",
+      "tickers": [
+        "AAPL",
+        "GOOGL",
+        "FB"
+      ],
+      "quote": "it is highly likely that the dominant phone operating systems will be the dominant AR providers",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote follows Patrick's question about AR implementation and Baker responds with 'Within AR, if I am right that mobile phones are going to become edge servers... it is highly likely,' using his own conditional framing."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Video games are not hit-driven businesses; they are social networks with highly persistent franchise value.",
+      "tickers": [
+        "ATVI",
+        "EA",
+        "TTWO"
+      ],
+      "quote": "big misperception in public markets that these are hit-driven businesses",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker says 'I play video games the way a lot of my peers play golf' and 'I think a big misperception in public markets,' using first-person self-identification and fund manager register throughout."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Video game monetization will converge upward toward cable TV levels ($0.85-$0.90/hr) and potentially to passionate sports fan levels ($2-3/hr), from current $0.08-0.50/hr.",
+      "tickers": [],
+      "quote": "inevitable that monetization is going to increase",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The monetization convergence thesis is embedded in Baker's continuous video game monologue with 'I would just argue' and 'I think it's inevitable,' consistent with his analytical voice."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Global video game population will eventually encompass all humans on Earth, driven by mobile and Fortnite as new entry points.",
+      "tickers": [],
+      "quote": "everyone on Planet Earth will play video games in one form or another in my lifetime",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote 'Everyone on Planet Earth will play video games in one form or another in my lifetime. It's a statement I'm reasonably confident about making' is first-person Baker speaking in his established monologue on video games."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Facebook's advertising revenue share was structurally undervalued in 2012 relative to its share of consumer time spent.",
+      "tickers": [
+        "FB"
+      ],
+      "quote": "I was very confident that 23% of advertising revenue would go to 36%",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker explicitly says 'I was very confident' and 'I made Facebook a big position,' using fund positioning language that identifies him as the speaker describing his 2012 investment thesis."
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "Top-decile ROICs are more persistent than historically, driven by regulatory capture and scale advantages compounded by AI feedback loops, undermining value investing mean reversion.",
+      "tickers": [],
+      "quote": "top decile ROICs are dramatically more persistent than they were even 10 or 15 years ago",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage uses 'I think' repeatedly and discusses portfolio-level reasoning about ROIC persistence, consistent with Baker's CIO register; Patrick's question about value investing precedes this response."
+    },
+    {
+      "thesis_id": "T17",
+      "summary": "Breaking up large tech companies would likely be value-accretive due to elimination of conglomerate discount and improved capital allocation.",
+      "tickers": [
+        "GOOGL",
+        "FB",
+        "AMZN",
+        "AAPL"
+      ],
+      "quote": "I could get comfortable with them being broken up",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker says 'I could get comfortable with them being broken up' in first person, responding to Patrick's question about antitrust headwinds for large tech companies Baker has discussed."
+    },
+    {
+      "thesis_id": "T18",
+      "summary": "Alternative data has become table stakes for fundamental investors but is not a source of sustained competitive advantage for most funds.",
+      "tickers": [],
+      "quote": "it is very difficult to get a sustained competitive advantage from alternative data",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker uses 'I think it is very difficult' and 'I'm here to tell you' in first person, responding to Patrick's direct question about alternative data in the investing process."
+    },
+    {
+      "thesis_id": "T19",
+      "summary": "Physical retail with exclusive supply, high cash-paying customers, and digital sophistication is structurally resilient against Amazon.",
+      "tickers": [],
+      "quote": "Amazon bought Whole Foods and yet your average retailer went down 10% to 20%",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker says 'I made public equity video games a very large position in my fund' and describes his retail investment framework in first person with explicit fund manager language."
+    },
+    {
+      "thesis_id": "T20",
+      "summary": "Netflix faces structural headwinds from rising competitive intensity increasing customer acquisition costs and eliminating pricing power.",
+      "tickers": [
+        "NFLX"
+      ],
+      "quote": "we were short Netflix",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker explicitly says 'Here at Atreides, we were short Netflix,' directly self-identifying as the Atreides CIO describing a fund position."
+    }
+  ]
+}

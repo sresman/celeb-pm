@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast \u2014 Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "thesis_id": "T10",
+  "summary": "SpaceX AI strategy has a call/put option structure: frontier model success is the call, compute rental revenue is the put \u2014 both are valuable",
+  "summary_extended": "Baker and Sacks articulate that SpaceX's massive compute cluster buildout creates a dual-option structure for the company: the 'call option' is the possibility of becoming a genuine frontier AI lab by leveraging its own compute to train competitive models, while the 'put option' is the ability to monetize that compute by renting it to frontier labs (such as Anthropic) at attractive spot market prices if the frontier model effort underperforms. Baker highlights a specific structural detail \u2014 Elon Musk has a 90-day cancellation clause in SpaceX's compute agreement with Anthropic, allowing SpaceX to reclaim capacity and redirect it to spot-market rentals if compute prices rise, providing downside protection. The thesis implies that as long as GPU compute remains supply-constrained, SpaceX's position is highly advantageous regardless of which outcome materializes. The investment implication is primarily relevant to SpaceX as a pre-IPO asset, with no clear publicly traded equity that is the direct subject or unambiguous beneficiary of this specific structural thesis.",
+  "detail": "Baker and Sacks articulate that SpaceX's massive compute clusters give it a call option (become a true frontier lab) and a put option (sell compute to frontier labs at attractive spot prices). Elon has a 90-day cancellation clause with Anthropic, meaning he can reclaim compute if spot prices rise. If compute remains supply-constrained, this is highly advantageous.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly endorses this framing and adds the 90-day clause detail as a structural advantage",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "AI frontier models"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "call option is to catch up...put option of just selling the compute",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SpaceX"
+  ],
+  "tickers_subject": [
+    "SpaceX"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (pre-IPO)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SpaceX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX is the explicit subject of the call/put option thesis \u2014 its compute clusters, frontier model ambitions, and rental revenue strategy are the entire focus of the thesis. SpaceX remains pre-IPO and is not a US-listed equity, but it was in the original implied list and is correctly the direct subject."
+    }
+  ]
+}

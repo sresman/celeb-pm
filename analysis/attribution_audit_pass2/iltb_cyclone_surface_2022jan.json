@@ -1,0 +1,202 @@
+{
+  "label": "iltb_cyclone_surface_2022jan",
+  "date": "2022-01-25",
+  "source": "Invest Like the Best \u2014 The cyclone under the surface (EP.260)",
+  "host": "Patrick O'Shaughnessy (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T17",
+      "summary": "Apple is likely to enter search, and mobile OS platforms will collide with other tech ecosystems as the metaverse develops",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "quote": "Apple is going to do search...they're eventually going to do it",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "Mid-cap tech growth stocks are at or below 2018 trough multiples despite better fundamentals, creating a compelling entry point",
+      "tickers": [],
+      "quote": "as bullish as I've ever been on these names that are down 60% to 70%",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The extended monologue uses first-person CIO register ('I'm addicted to the 52-week low list', 'I always buy early, I always sell early') and self-referential portfolio framing consistent with Baker; the surrounding text is a continuous answer to a macro question directed at the guest."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Supply-chain-driven goods inflation is transitory and will normalize; wage inflation is the real risk to watch",
+      "tickers": [],
+      "quote": "I am so relaxed about that...capitalism is amazing at solving problems",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage is a continuous first-person answer ('I am so relaxed about that', 'I think inflation is the only thing that matters') in response to a host question about themes mattering for market returns, consistent with Baker as the guest respondent."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Persistent wage inflation would be severely negative for all equities, but tech would be relatively better positioned",
+      "tickers": [],
+      "quote": "tech companies today, they're super asset-like...highest ROICs...massive pricing power",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "This is part of the same continuous monologue as T1/T2, with the speaker explicitly referencing 'I am right now as bullish' and 'I'm wired differently' \u2014 CIO self-identification consistent with Baker answering the host's question about wage inflation."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Software is the 'consumer staple of tech' \u2014 fundamentals will be most resilient in a slowing economy",
+      "tickers": [],
+      "quote": "software is the consumer staple of tech...best relative fundamentals",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The quote 'software is the consumer staple of tech' appears in the substantive guest answer section of the transcript, but the window shown is dominated by ad copy and intro boilerplate, reducing confidence; the framing matches Baker's known views and register."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Infrastructure software is preferred over application software due to structural risk from hyperscaler competition",
+      "tickers": [
+        "TWLO",
+        "DDOG"
+      ],
+      "quote": "big bias towards infrastructure companies relative to application software",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker says 'I do have a big bias towards infrastructure companies relative to application software companies' and 'I was wrong' referencing a prior podcast appearance \u2014 self-referential guest register consistent with Baker."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "SMB-focused application software is relatively shielded from hyperscaler build-your-own risk",
+      "tickers": [],
+      "quote": "SMBs are not going to be able to roll their own apps in AWS",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker says 'I don't own any of these, but if you are going to own an application software company, I have a bias towards ones that serve SMBs' \u2014 explicit portfolio positioning language from the guest, consistent with Baker."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "AI has structurally changed cybersecurity, enabling scale advantages for the first time and allowing companies to break through the historical $15-20B market cap ceiling",
+      "tickers": [],
+      "quote": "AI has changed that...scale is good for you...for the first time ever",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The quote appears in the substantive guest-answer section of the transcript following the infrastructure/app software discussion, consistent with Baker's continuous monologue, but the window is dominated by ad/intro boilerplate reducing direct evidence."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Semiconductor industry faces a near-term inventory cycle downturn despite long-term structural demand upgrade",
+      "tickers": [],
+      "quote": "relatively cautious on semis...massive inventory cycle...economy slowing",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The quote 'relatively cautious on semis' appears in the actual transcript content of T9's window as part of Baker's continuous semi discussion, but T8's own window is dominated by ad/intro boilerplate; the framing matches Baker's CIO register."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Semiconductor industry has structurally shifted to ~3x nominal GDP growth rate from ~2x, driven by AI and EV/AV content",
+      "tickers": [],
+      "quote": "used to grow at 2x nominal GDP to one that probably now is a 3x nominal GDP grower",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage is a detailed first-person analysis of semiconductor inventory cycles ending with 'I would say relatively cautious on simis', followed by the host asking a new question \u2014 clear guest-answer register consistent with Baker."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Internet advertising and e-commerce companies face a double headwind of COVID hangover and economic slowdown; search is the exception",
+      "tickers": [
+        "GOOGL"
+      ],
+      "quote": "real legitimate fundamental weakness in almost all of the internet names, maybe with the exception of search",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker says 'I would just say internet broadly speaking is just suffering from a COVID hangover' and 'maybe if I say this on the podcast, somebody will do this' \u2014 first-person guest register in a continuous answer, consistent with Baker."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "The metaverse is real and coming, but today's true metaverses are video games (Roblox, Fortnite, World of Warcraft, Destiny, Minecraft)",
+      "tickers": [
+        "RBLX",
+        "MSFT",
+        "AAPL",
+        "GOOGL",
+        "SNE"
+      ],
+      "quote": "the only real metaverse is today...video games...real metaverses where commerce happens",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker says 'I spend a lot of time in that. You still got to play that, Patrick' \u2014 directly addressing Patrick O'Shaughnessy by name, confirming this is the guest (Baker) speaking."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Microsoft's acquisition of Activision is a strategic metaverse/gaming platform play, and Microsoft has the most compelling AR/VR asset collection of any company",
+      "tickers": [
+        "MSFT",
+        "ATVI"
+      ],
+      "quote": "almost certainly going to have the most pure AR VR revenue of any company",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous with T11, same speaker addressing Patrick by name in prior turn; the analysis of Microsoft's AR/VR assets is in the guest-answer register consistent with Baker."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Large internet/cloud/advertising platforms are levered royalties on global GDP with a structural tailwind from the rising share of revenue that companies spend with them",
+      "tickers": [
+        "GOOGL",
+        "META",
+        "AMZN",
+        "MSFT"
+      ],
+      "quote": "every year, the world moves towards them",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from the same speaker who addressed Patrick by name in T11; the cohort analysis framing and 'I go back to our first podcast' self-reference confirm this is Baker speaking."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Private market valuations will cool if public market weakness persists 6-9 months; public multiples are the ultimate reality for private valuations",
+      "tickers": [],
+      "quote": "public multiples are the ultimate reality...private valuations will cool off",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The quote about private valuations cooling appears in the substantive content section but T14's window is dominated by ad/intro boilerplate; the framing matches Baker's CIO register discussing public vs private multiples."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "The value-over-growth rotation thesis is weaker today than post-2001 because there is no comparable demand impulse (China/BRICs industrialization) to drive value earnings",
+      "tickers": [],
+      "quote": "I just don't see any comparable demand impulse for a lot of these traditional smokestack industries",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker says 'Patrick, another point I just want to make about value versus growth' \u2014 directly addressing the host by name, confirming this is Baker (the guest) speaking."
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "Free cash flow generation is the key differentiator within growth tech in the current environment; market is beginning to price this distinction",
+      "tickers": [],
+      "quote": "big line in the sand for me...two, two and a half, 3% free cash flow yield looking out to 23",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The quote matches Baker's known FCF-yield framework discussed throughout the episode, but T16's window is dominated by ad/intro boilerplate with no direct speaker cues visible."
+    }
+  ]
+}

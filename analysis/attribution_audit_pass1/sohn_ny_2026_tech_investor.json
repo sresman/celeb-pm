@@ -1,0 +1,102 @@
+{
+  "label": "sohn_ny_2026_tech_investor",
+  "date": "2026-05-12",
+  "source": "Sohn NY 2026 \u2014 Tech investing fireside",
+  "host": "Jas (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Current memory cycle is unlike prior cycles \u2014 may be the first true capacity cycle since the mid-1990s, making it too early to sell memory stocks",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "this may be the first true capacity cycle",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker references being 'the Micron analyst in the year 2000,' 'a veteran of many many memory cycles,' and uses first-person CIO framing consistent with Baker's known background; the intro in turn 0 names Gavin Baker as the guest and the monologue is a continuous answer to a question posed to him."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "TSMC's deliberate capacity restraint will prevent an AI bubble and sustain a prolonged upcycle in leading-edge wafer supply",
+      "tickers": [
+        "TSM",
+        "NVDA"
+      ],
+      "quote": "they're simply not expanding capacity as fast as Jensen wants",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jas",
+      "evidence": "Turn 2 contains 'Thank you, and let me introduce you, Jas' \u2014 this is Baker's first words after the applause, meaning the quote about TSMC capacity restraint ('they're simply not expanding capacity as fast as Jensen wants') appears in turn 11, which precedes turn 13 where Jas is speaking; turn 11 is Baker's extended answer, but the tagged quote window shows turns 0-3 where turn 2 is Baker's brief intro line \u2014 the actual TSMC thesis quote is not in this window's marked turn 2, making the window misleading; however turn 11 in T7's window contains the TSMC capacity quote and is clearly Baker's continuous monologue answer, so this thesis is baker."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Trainium is the most underestimated Nvidia alternative in 2026, analogous to what TPUs were in 2025",
+      "tickers": [
+        "AMZN",
+        "GOOGL",
+        "NVDA"
+      ],
+      "quote": "Trainium is for sure the most underestimated",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker says 'I owned one of those' referring to TPU-related investments and references his 13F, indicating a fund manager speaking; the surrounding text shows a Q&A pattern where the question about Trainium/TPUs is posed and then answered at length with first-person fund positioning language consistent with Baker."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Neo/specialist clouds (CoreWeave, Crusoe, Nebius, Lambda) represent a durable business model, not a transitional arbitrage",
+      "tickers": [
+        "CRWV",
+        "NBIS"
+      ],
+      "quote": "it is durable and the hyper scalers for a long time were stuck in a cost mentality",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker references 'we have a large position in Crusoe' and 'I was a retail analyst in the year 2005,' self-identifying as a fund CIO with portfolio positions, consistent with Baker's background described in the intro."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Orbital/space-based compute will become commercially viable within 2 years and take meaningful market share by end of decade",
+      "tickers": [],
+      "quote": "it becomes clear that it is possible going to work and economical in the next 2 years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 16 is a direct answer to the orbital compute timing question posed in the prior turn, and turn 17 ends with 'Gavin, we're out of time' \u2014 confirming the speaker in turns 16-17 is Gavin Baker."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Terrestrial data center power, cooling, and industrial infrastructure names face structural short risk as orbital compute approaches",
+      "tickers": [],
+      "quote": "very painful for a lot of the companies in the power cooling spaces",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 17 contains this thesis and ends with 'Gavin, we're out of time, but thank you,' confirming the speaker of turn 17 is Baker."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "AI frontier model pricing is shifting from flat-rate subscriptions to usage-based with overage, which is wildly bullish for AI revenue and token pricing",
+      "tickers": [],
+      "quote": "wildly bullish for AI wildly bullish for the pricing of these frontier tokens",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 13 is a long monologue answering a question from Jas (the host), using first-person investment framing ('I do think') and referencing Jensen/GTC in a CIO analytical register; turn alternation places this as Baker's answer following Jas's question in turn 11's closing lines."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Coding/code generation is not just the killer app for AI but may be the ultimate AI application and the shortest path to AGI",
+      "tickers": [],
+      "quote": "coding may be the shortest path to ASI and AGI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage 'to answer your specific question' signals this is a direct answer by Baker, and the surrounding text shows the same continuous Baker monologue with first-person fund references ('I owned one of those') confirming the speaker throughout this window."
+    }
+  ]
+}

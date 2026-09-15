@@ -39,6 +39,10 @@ from .common import relpath
 MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 2048
 SLEEP_BETWEEN = 2.0  # seconds, polite pacing on top of SDK auto-retry
+# Explicit per-request timeout. Without one an audit can hang indefinitely on a
+# single stalled connection — audit_attribution did exactly that on 2026-09-08,
+# sitting 55 minutes with the process alive and no output (SD-ATTR-14).
+API_TIMEOUT_SECONDS = 180.0
 INPUT_COST_PER_MTOK = 3.0
 OUTPUT_COST_PER_MTOK = 15.0
 
@@ -50,6 +54,7 @@ AUDITS_DIR = ANALYSIS_DIR / "thesis_audits"
 TIMELINE_V1 = ANALYSIS_DIR / "thesis_timeline.json"
 TIMELINE_V2 = ANALYSIS_DIR / "thesis_timeline_v2.json"
 TIMELINE_V2_FLAT = ANALYSIS_DIR / "thesis_timeline_v2_flat.json"
+ATTRIBUTION_RESOLVED = ANALYSIS_DIR / "attribution_resolved.json"
 LOG_PATH = ANALYSIS_DIR / "_audit_log.json"
 
 
@@ -160,16 +165,15 @@ def _build_v2_entry(row: dict[str, Any], audit: dict[str, Any]) -> dict[str, Any
         "time_horizon": t.get("time_horizon"),
         "contrarian": t.get("contrarian"),
         "quote_fragment": t.get("quote_fragment"),
-        # Attribution, carried through from extraction (2026-09-08). The timeline
-        # is built from an explicit field list, so a new extraction field is
-        # SILENTLY DROPPED unless it is added here — which is what happened to
-        # speaker_attribution on its first pass: the extractor emitted it, the
-        # timeline discarded it, and no downstream consumer could have filtered
-        # on it even if it had wanted to. Defaults describe the pre-rewrite
-        # corpus honestly: unaudited theses are "indeterminate", not "subject".
-        "speaker_attribution": t.get("speaker_attribution", "indeterminate"),
-        "speaker_name": t.get("speaker_name", ""),
-        "attribution_evidence": t.get("attribution_evidence", ""),
+        # Attribution placeholders. The extraction schema does NOT carry these —
+        # that route was tried and abandoned (it collapsed thesis yield on ~50%
+        # of episodes). The real values are overlaid in rebuild_timelines() from
+        # analysis/attribution_resolved.json, the two-of-two reconciliation of
+        # audit_attribution. Defaults describe an unaudited thesis honestly:
+        # "indeterminate", never "subject".
+        "speaker_attribution": "indeterminate",
+        "speaker_name": "",
+        "attribution_evidence": "",
         "tickers_named_original": t.get("tickers_named", []),
         "tickers_direct": tickers_direct,
         "tickers_subject": tickers_subject,
@@ -247,12 +251,68 @@ def audit_one(
     return log
 
 
+def load_resolved_attribution() -> dict[tuple[str, str], dict[str, str]]:
+    """(label, thesis_id) -> attribution, from the two-of-two reconciliation.
+
+    Returns {} when the file is absent, which leaves every thesis at the
+    "indeterminate" default rather than silently asserting Baker.
+    """
+    if not ATTRIBUTION_RESOLVED.exists():
+        return {}
+    payload = json.loads(ATTRIBUTION_RESOLVED.read_text(encoding="utf-8"))
+    return {
+        (str(r["label"]), str(r["thesis_id"])): {
+            "speaker_attribution": str(r.get("speaker_attribution", "indeterminate")),
+            "speaker_name": str(r.get("speaker_name", "")),
+            "attribution_evidence": str(r.get("pass1", {}).get("evidence", "")),
+        }
+        for r in payload.get("attributions", [])
+    }
+
+
+def _label_from_audit_stem(stem: str, date: str, thesis_id: str) -> str:
+    """Recover the appearance label from ``{date}_{label}_{thesis_id}``.
+
+    The per-thesis audit files are the rebuild's source of truth and they carry
+    no label field, but the filename does — and label is the only safe join key
+    for attribution (thesis_id repeats across appearances; 2026-05-12 holds two
+    appearances whose ids collide on T1..T4).
+    """
+    body = stem[len(date) + 1 :] if date and stem.startswith(f"{date}_") else stem
+    suffix = f"_{thesis_id}"
+    return body[: -len(suffix)] if thesis_id and body.endswith(suffix) else body
+
+
 def rebuild_timelines() -> int:
-    """Reassemble thesis_timeline_v2.json + _flat.json from all on-disk audits."""
-    entries = [
-        json.loads(p.read_text(encoding="utf-8"))
-        for p in sorted(AUDITS_DIR.glob("*.json"))
-    ]
+    """Reassemble thesis_timeline_v2.json + _flat.json from all on-disk audits.
+
+    Attribution is overlaid here rather than baked into the per-thesis audit
+    files, so re-running the attribution audit never requires re-running the
+    (far more expensive) thesis audit, and the corpus stays non-destructive.
+    """
+    resolved = load_resolved_attribution()
+    entries: list[dict[str, Any]] = []
+    matched = 0
+    for p in sorted(AUDITS_DIR.glob("*.json")):
+        entry = json.loads(p.read_text(encoding="utf-8"))
+        label = _label_from_audit_stem(
+            p.stem, str(entry.get("date", "")), str(entry.get("thesis_id", ""))
+        )
+        entry["appearance_label"] = label
+        attribution = resolved.get((label, str(entry.get("thesis_id", ""))))
+        if attribution is not None:
+            entry.update(attribution)
+            matched += 1
+        else:
+            entry.setdefault("speaker_attribution", "indeterminate")
+            entry.setdefault("speaker_name", "")
+            entry.setdefault("attribution_evidence", "")
+        entries.append(entry)
+    if resolved:
+        print(
+            f"  attribution: {matched}/{len(entries)} theses matched "
+            f"({len(resolved)} resolved records on file)"
+        )
     entries.sort(key=_thesis_sort_key)
     payload = json.dumps(entries, indent=2, ensure_ascii=False) + "\n"
     # v2.json mirrors v1's flat chronological shape; _flat.json is the identical
@@ -270,9 +330,21 @@ def main(argv: list[str] | None = None) -> int:
         "--single", type=int, default=None,
         help="0-based index into the sorted timeline",
     )
+    parser.add_argument(
+        "--rebuild-only", action="store_true",
+        help="Reassemble the timelines from the on-disk audits (re-applying the "
+             "attribution overlay) without auditing anything. No API key needed.",
+    )
     args = parser.parse_args(argv)
 
-    client = anthropic.Anthropic(api_key=load_api_key(), max_retries=3)
+    if args.rebuild_only:
+        total = rebuild_timelines()
+        print(f"Rebuilt {total} timeline entries from {relpath(AUDITS_DIR)}.")
+        return 0
+
+    client = anthropic.Anthropic(
+        api_key=load_api_key(), max_retries=3, timeout=API_TIMEOUT_SECONDS
+    )
     AUDITS_DIR.mkdir(parents=True, exist_ok=True)
 
     rows = load_source_theses()

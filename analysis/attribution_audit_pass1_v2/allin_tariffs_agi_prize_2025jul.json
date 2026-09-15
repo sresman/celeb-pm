@@ -1,0 +1,178 @@
+{
+  "label": "allin_tariffs_agi_prize_2025jul",
+  "date": "2025-07-17",
+  "source": "All-In Podcast \u2014 Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
+  "host": "Jason, Dave, Chamath, Friedberg (Gavin Baker panelist)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Tariffs on semiconductors would undermine US AI leadership and are likely to be avoided or carved out",
+      "tickers": [],
+      "quote": "hard to win in AI if we put tariffs on semiconductors",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 25 directly addresses 'Gavin' with the question, and turn 26 containing the quote is the immediate reply."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Trump's sensitivity to stock market performance acts as a dampening mechanism on tariff escalation",
+      "tickers": [],
+      "quote": "he clearly cares and is clearly very sensitive to market feedback",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 31 directly addresses 'Gavin' and references 'as you talked about earlier, Gavin, he does seem to care about the market,' confirming the prior turn 30 quote is Baker's."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Firing Jerome Powell would be a policy mistake and the market's 1% reaction underestimates the true downside",
+      "tickers": [],
+      "quote": "I worry that the market only went down 1%",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The surrounding text in turn 31 explicitly addresses 'Gavin' for macro thoughts, and the passage self-identifies with '25 years I've been a tech investor' register consistent with Baker as CIO; turn 30 is confirmed Baker's and this passage continues in the same voice."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "The US fiscal deficit now materially matters for the first time in decades due to structurally higher interest rates",
+      "tickers": [],
+      "quote": "the deficit finally matters after really never mattering in my political lifetime",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The surrounding turns 37-39 contain no direct address or self-identification cues, and the speaker in turn 40 cannot be identified from the window alone."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Grok 4 represents the largest AI model leapfrog seen in years, trained on Hopper, and sets a high bar before Blackwell-trained models arrive",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "roughly twice as good as the state-of-the-art Google OpenAI and Anthropic models",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 52 explicitly directs the question to 'Gavin' asking about language models, and turn 53 containing the quote is the direct response."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Blackwell-trained models (Grok 5, OpenAI o5, next Gemini) will represent a significant step-function improvement over current Hopper-trained models",
+      "tickers": [
+        "NVDA",
+        "GOOGL"
+      ],
+      "quote": "trained on Blackwell and I think that will be a really big step function",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 52 directly addresses 'Gavin' for his view on language models, and turn 53 contains the quote with self-referential CIO framing ('25 years I've been a tech investor') confirming Baker is speaking."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Being the lowest-cost token producer will be the defining competitive advantage in AI \u2014 a structural shift from prior tech cycles",
+      "tickers": [],
+      "quote": "being the lowcost producer is really going to matter in AI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 71 contains explicit self-identification: '25 years I've been a tech investor' and CIO-level portfolio framing, and the prior turn 70 flows into Baker's voice after he was addressed."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "The total addressable market for AI is at least $10 trillion in market cap, anchored by ~$1 trillion in annual revenue from productivity gains alone",
+      "tickers": [],
+      "quote": "the trillion dollars a year in revenue because of AI seems quite reasonable",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is in turn 71, the same continuous Baker turn identified by '25 years I've been a tech investor' self-identification and CIO register."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Software/coding is the first sector with proven, generalized AI productivity impact \u2014 developers are getting 5-10% more productive per month",
+      "tickers": [
+        "MSFT"
+      ],
+      "quote": "the impact it has had on coding is undeniable",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 61 follows turn 60 which echoes a point, and turn 62 addresses 'Gavin' confirming the prior speaker in turn 61 was Baker."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "XAI and Apple are natural strategic partners \u2014 the best industrial logic among all possible AI distribution deals",
+      "tickers": [
+        "AAPL"
+      ],
+      "quote": "XAI and Apple are natural partners",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 80 directly addresses 'Gavin' asking if he played with the Perplexity browser, confirming turn 79 (containing the XAI/Apple thesis) was Baker speaking."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Distribution, not model quality, wins AI market share \u2014 Grok 4's benchmark lead does not guarantee commercial dominance",
+      "tickers": [
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "quote": "the best product doesn't always win in technology",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 75 ends with 'and Gavin, I don't know if you think...' and turn 76 is Baker's direct response containing the quote, confirmed by the direct address."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "H20 chip export license restoration to China is good for America and Nvidia \u2014 banning them was a mistake",
+      "tickers": [
+        "NVDA",
+        "AMD"
+      ],
+      "quote": "devilishly clever because it's two years ahead of chips from Huawei",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 139 contains 'Gavin can explain' followed immediately by Baker's voice ('Yeah, it is...') and turn 140 says 'G, you said it so well,' confirming Baker spoke the quoted content."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Huawei's Cloud Matrix 384 (fiber-optic interconnect) is a credible threat to US AI chip dominance if China has unconstrained power",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Huawei Cloud Matrix 384 uses fiber optics instead of copper",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same turn 139 as T12; 'Gavin can explain' cues Baker's response which includes the Huawei Cloud Matrix 384 description, confirmed by turn 140 praising 'G.'"
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Electricity generation is the binding constraint on US AI dominance and closing the gap with China is urgent",
+      "tickers": [],
+      "quote": "electrical production is fundamental to AI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 107 explicitly addresses 'Gavin' and turn 108 contains the quote beginning 'Yeah, absolutely,' confirming Baker is the speaker."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Stablecoins entrench rather than threaten US dollar dominance \u2014 Baker reversed a prior concern",
+      "tickers": [],
+      "quote": "I just had not thought of them that way",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 141 opens with 'Can I just say one thing on crypto?' and contains 'I was always worried about stable coins' with first-person reflection, and the prior turn 140 addressed 'G,' confirming Baker is speaking."
+    }
+  ]
+}

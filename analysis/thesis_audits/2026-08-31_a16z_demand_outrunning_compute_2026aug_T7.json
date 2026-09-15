@@ -1,0 +1,50 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T7",
+  "summary": "Compute supply will be structurally undersupplied through at least 2028, driven by political/regulatory delays and fundamental material constraints",
+  "summary_extended": "Baker argues that AI compute will be structurally undersupplied through at least 2028, making him far more concerned about massive undersupply than the consensus overbuild narrative. He supports this view by noting that all forecast datacenter builds through 2028 are already fully committed with no available capacity, and those builds face additional delays from political and regulatory dynamics. Binding material constraints \u2014 specifically citing copper, wafers, and other raw materials \u2014 compound the supply problem alongside rising real rates. The investment implication is that token prices could rise dramatically rather than deflate, with Andreessen Horowitz citing a potential 10x increase in token costs; this environment favors infrastructure providers and commodity suppliers tied to datacenter buildout over the consensus deflationary AI narrative. Baker frames this as a contrarian structural view where the primary risk is not overbuilding but chronic underinvestment relative to demand.",
+  "detail": "Baker states there is no available capacity with all forecast builds through 2028, and those builds are now likely delayed due to political dynamics. He is more worried about massive undersupply than overbuild. Copper, Watson wafers, and other raw materials are becoming binding constraints. Rising real rates and regulation compound the supply problem. This could lead to token price increases (Andreessen Horowitz cited a potential 10x token cost increase) rather than the consensus deflation narrative.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'Oh yeah. For through 28' without hedging; frames undersupply as his primary macro concern vs. consensus overbuild worry",
+  "themes": [
+    "AI datacenter infrastructure",
+    "power/energy",
+    "semiconductor supply chain",
+    "commodities"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "everybody's worried about over supply. I'm more worried about massively under supply",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "FCX",
+    "SCCO"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "FCX",
+    "SCCO"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "The thesis is about structural compute undersupply driven by material constraints and political delays \u2014 not specifically about Nvidia. While Nvidia benefits from AI demand broadly, this thesis is about supply-chain bottlenecks (copper, wafers) and capacity delays, not GPU pricing power specifically. NVDA is a tangential bleed-in from adjacent AI infrastructure discussion."
+    },
+    {
+      "ticker": "FCX",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly cites copper as a binding material constraint on datacenter buildout. Freeport-McMoRan is the largest US-listed copper producer and directly benefits from structural copper demand driven by AI infrastructure undersupply."
+    },
+    {
+      "ticker": "SCCO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Southern Copper is a major US-listed copper producer and, like FCX, directly benefits from Baker's thesis that copper is a binding constraint on compute supply through 2028."
+    }
+  ]
+}

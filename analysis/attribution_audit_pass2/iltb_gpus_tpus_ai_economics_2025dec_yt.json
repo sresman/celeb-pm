@@ -1,0 +1,313 @@
+{
+  "label": "iltb_gpus_tpus_ai_economics_2025dec_yt",
+  "date": "2025-12-09",
+  "source": "Invest Like the Best (YouTube) \u2014 GPUs, TPUs, economics of AI (Nvidia vs Google)",
+  "host": "Patrick O'Shaughnessy (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Gemini 3 confirmed pre-training scaling laws remain intact, which is bullish for next-generation model quality on Blackwell hardware",
+      "tickers": [
+        "NVDA",
+        "GOOGL"
+      ],
+      "quote": "Gemini 3 was very important because it showed scaling laws for pre-training are intact",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 24 is Patrick asking Baker a direct question about Gemini 3, and turn 25 (the quote turn) begins with 'Yeah. Well, I do think...' \u2014 a direct response from the guest, Baker."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Reasoning models (RLVR + test-time compute) bridged an ~18-month gap in AI progress caused by Blackwell delays, and these two new scaling laws are still in early innings",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "reasoning kind of bridged this 18-month gap, reasoning kind of saved AI",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 210 contains only 'and I think that's good you know like smoother and longer is good' with no direct address or self-identification cue in the window to confirm speaker."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Google has a temporary but significant cost advantage as the lowest-cost token producer due to TPU v6/v7 while Blackwell was delayed",
+      "tickers": [
+        "GOOGL"
+      ],
+      "quote": "Google has been sucking the economic oxygen out of the AI ecosystem",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 233 contains only a sentence fragment 'So, they couldn't go to this one-year cadence if the rest everything was not' with no speaker identification cue in the window."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "GB300 will shift cost leadership from Google/TPU to Nvidia GPU users, fundamentally changing competitive dynamics in AI",
+      "tickers": [
+        "NVDA",
+        "GOOGL",
+        "META"
+      ],
+      "quote": "companies that use the GB300s are going to be the low-cost producer of tokens",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 60 contains only 'And and of course, they're not going to do that because of competitive concerns' with no direct address or self-identification in the window to confirm speaker."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "XAI will release the first Blackwell-trained model in early 2026, giving it a significant competitive advantage",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "I think the first Blackwell model will come from XAI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 36 establishes Baker is speaking about Google's cost advantage and Blackwell models, and turn 38 continues the same monologue with 'I think the first Blackwell model will come from XAI,' consistent with Baker's CIO voice and self-referential framing."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Rubin (next Nvidia GPU after Blackwell) will significantly widen the gap between Nvidia GPUs and TPUs/other ASICs",
+      "tickers": [
+        "NVDA",
+        "AVGO",
+        "GOOGL"
+      ],
+      "quote": "when Rubin comes out, the gap is going to expand significantly versus TPUs",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 129 contains only 'Those black wheels are only being used for training bars staying flat eyes going up' \u2014 a fragmented auto-caption line with no speaker identification cue in the window."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Google will eventually bring TPU design fully in-house (eliminating Broadcom), making this inevitable on economic grounds",
+      "tickers": [
+        "AVGO",
+        "GOOGL"
+      ],
+      "quote": "the economics make it absolutely inevitable",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 202 contains only 'seems like OpenAI is tailor made to' \u2014 a fragment with no speaker identification cue in the window."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Most ASICs other than Trainium and TPU will fail; only those with multi-generation experience will be competitive",
+      "tickers": [
+        "NVDA",
+        "AMZN",
+        "GOOGL"
+      ],
+      "quote": "I will be surprised if there are a lot of ASICs other than Trainium and TPU",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Patrick O'Shaughnessy",
+      "evidence": "Turn 0 and 1 are clearly the host's intro monologue describing Baker in third person ('he is encyclopedic'), and turn 2 is Baker's first reply; the quote window is the host's intro, not Baker's words."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Data centers in space are superior to Earth-based data centers on every first-principles dimension and represent the most important development in the next 3-4 years",
+      "tickers": [],
+      "quote": "in every way, data centers in space are superior to data centers on earth",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 12 contains only 'Yeah. Everything Andre Carpathy writes, you have to read it three times' \u2014 a brief affirmation with no direct address or self-identification to confirm which speaker."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Power scarcity is structurally bullish for the most compute-efficient chips (Nvidia GPUs), making price irrelevant when watts are the binding constraint",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "if watts are the constraint, the TCO of your compute is absolutely irrelevant",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 181 contains only 'That's like the total if you think about it from a total cost perspective' \u2014 a fragment with no speaker identification cue in the window."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Natural gas and solar are the only realistic near-term power solutions for AI data centers; nuclear cannot be built fast enough in the US",
+      "tickers": [
+        "CAT"
+      ],
+      "quote": "the solutions are natural gas and solar",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 215 ends with Baker's voice discussing nuclear constraints and turn 216 continues seamlessly with 'the solutions are natural gas and solar' in the same analytical CIO register, with no speaker change marker between them."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "SaaS companies are making an existential mistake by refusing to embrace AI agent economics at lower gross margins",
+      "tickers": [
+        "MSFT",
+        "CRM",
+        "NOW",
+        "HUBS",
+        "GTLB",
+        "TEAM"
+      ],
+      "quote": "this is a life or death decision and essentially everyone except Microsoft is failing it",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 263 contains 'This is a life or death decision. And essentially everyone except Microsoft is failing it' in a continuous monologue from Baker about SaaS companies' strategic failure, consistent with his CIO framing throughout the episode."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Reasoning models have created a data flywheel for frontier AI labs that is beginning to generate increasing returns to scale, widening the moat of the top 4 labs",
+      "tickers": [
+        "META"
+      ],
+      "quote": "reasoning fundamentally changed the industry dynamics of frontier labs",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 141 continues Baker's extended monologue from turns 138-139 about foundation models and reasoning flywheels, with no speaker change marker and consistent CIO analytical voice."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "OpenAI is a high-cost token producer due to paying margins to third-party compute providers, creating a structural disadvantage",
+      "tickers": [
+        "MSFT",
+        "GOOGL"
+      ],
+      "quote": "OpenAI is a high-cost producer of tokens",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 171 continues directly from turn 170 where Baker is discussing OpenAI's compute cost disadvantage, with 'They are a high-cost producer of tokens' in the same analytical voice and no speaker change marker."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Anthropic is burning dramatically less cash than OpenAI while growing faster, benefiting from Google/Amazon TPU and Trainium access",
+      "tickers": [
+        "GOOGL",
+        "AMZN",
+        "NVDA"
+      ],
+      "quote": "Anthropic is burning dramatically less cash than OpenAI and growing faster",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 173 begins with 'Yeah. Well, just the 1.4 $4 trillion in spending commitments' and continues with 'Anthropic is burning dramatically less cash than OpenAI and growing faster' \u2014 Baker's analytical CIO voice continuing his monologue about competitive AI dynamics."
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "Edge AI running pruned frontier models on-device is the primary bear case for cloud AI compute demand",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "quote": "edge AI is by far the most plausible and scariest bear case",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 140 contains only 'but they just had increasing returns to scale because of that' \u2014 a sentence fragment with no speaker identification cue; the quote fragment about 'edge AI' does not appear in the provided window at all."
+    },
+    {
+      "thesis_id": "T17",
+      "summary": "TSMC is being too conservative in capacity expansion, acting as a governor on the AI buildout but potentially making a strategic mistake",
+      "tickers": [
+        "TSM",
+        "INTC"
+      ],
+      "quote": "Taiwan Semi is in the process of making a mistake",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 196 contains 'that Tesla, SpaceX and XAI kind of converging' \u2014 a fragment that could be Baker quoting Elon or Baker's own words, with no clear speaker identification cue."
+    },
+    {
+      "thesis_id": "T18",
+      "summary": "A true DRAM capacity cycle (not seen since the late 1990s) could emerge as a natural governor and risk to AI buildout",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "if we get our first true DRAM cycle since the late 90s",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 237 contains 'something that could slow all this down and be a natural governor is if we get our first true DRAM cycle since the late' in Baker's analytical CIO voice, continuing his monologue about semiconductor ecosystem dynamics."
+    },
+    {
+      "thesis_id": "T19",
+      "summary": "Semiconductor venture capital has returned with force and is necessary for Nvidia's annual GPU cadence to be achievable",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "not even Nvidia can do it alone",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 235 begins 'because not even Nvidia can do it alone' continuing Baker's monologue from turn 234 where he references 'my little firm' \u2014 a clear self-identification as Baker."
+    },
+    {
+      "thesis_id": "T20",
+      "summary": "Tesla, SpaceX, and XAI are converging into a mutually reinforcing competitive ecosystem",
+      "tickers": [
+        "TSLA"
+      ],
+      "quote": "Tesla, SpaceX, and XAI converging",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 197 elaborates on the Tesla/SpaceX/XAI convergence thesis in Baker's analytical CIO voice, though turn 196 is ambiguous as it may be quoting Elon; turn 197 is clearly Baker's own analysis."
+    },
+    {
+      "thesis_id": "T21",
+      "summary": "Nuclear and quantum computing public equities are in bubble territory; the best players are not publicly investable",
+      "tickers": [],
+      "quote": "two really clear bubbles in nuclear and quantum",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 267 contains 'you have two really clear bubbles' in Baker's analytical investor voice, continuing from turn 266 where the host asks Baker about bubbles, making turn 267 Baker's direct response."
+    },
+    {
+      "thesis_id": "T22",
+      "summary": "Fortune 500 companies with strong technology adoption cultures will be early AI beneficiaries; CH Robinson is an early proof point",
+      "tickers": [
+        "CHRW"
+      ],
+      "quote": "CH Robinson quoting 100% of requests in seconds because of AI",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Patrick O'Shaughnessy",
+      "evidence": "Turn 116 contains 'What are the building blocks of usefulness in your mind?' \u2014 a direct question to Baker, identifying the speaker as the host Patrick O'Shaughnessy, not Baker."
+    },
+    {
+      "thesis_id": "T23",
+      "summary": "China made a strategic error by restricting Blackwell access; the gap between American frontier labs and Chinese AI will widen significantly",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "the gap between American frontier labs and Chinese open source is going to blow out because of Blackwell",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The window has no speaker markers but the content is a continuous analytical monologue in Baker's CIO voice about geopolitics and Blackwell, consistent with his established speaking pattern throughout the episode."
+    },
+    {
+      "thesis_id": "T24",
+      "summary": "AI ROI is empirically positive and unambiguous based on ROIC data from public GPU spenders",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "quote": "the ROIC of the big public spenders on GPUs is higher than before they ramped spending",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 129 contains only a fragmented auto-caption line 'Those black wheels are only being used for training bars staying flat eyes going up' with no speaker identification cue; the specific quote fragment about ROIC does not appear in the provided window."
+    }
+  ]
+}

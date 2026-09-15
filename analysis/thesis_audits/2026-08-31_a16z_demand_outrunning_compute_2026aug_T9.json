@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T9",
+  "summary": "SpaceX is a multi-trillion dollar opportunity even without orbital compute, via Starlink mobile (wireless + broadband ~$2T TAM), rapidly growing AI/AR revenue base, and cloud business",
+  "summary_extended": "Baker argues that SpaceX is likely to become the first $20+ trillion dollar company, driven by multiple compounding revenue streams that extend well beyond its launch business. The core thesis rests on Starlink mobile addressing an $800\u2013900B wireless and broadband market within a ~$2T total addressable market, combined with rapidly growing X advertising revenue (for which Atreides claims proprietary telemetry data) and an emerging AI/AR product suite including Grok-based applications. Baker draws an explicit analogy to Google's strategy of bundling cloud infrastructure with advertising, envisioning a Starlink/Grok/X-advertising bundle as a similarly self-reinforcing ecosystem. Even in a bear case where SpaceX fails to execute on first-party AI applications, Baker contends the pure infrastructure business \u2014 satellite broadband, orbital compute, launch \u2014 remains a multi-trillion dollar asset, making the downside case still compelling.",
+  "detail": "Starlink mobile addresses ~$800-900B wireless + broadband market, total ~$2T addressable. X ads are growing (Atreides has telemetry). Baker envisions a Starlink/Grockbot/X-advertising bundle analogous to Google bundling cloud with ads. Even in a scenario where SpaceX fumbles first-party AI applications, it remains a massive infrastructure business. Baker implies SpaceX is the first candidate for a $20T+ company.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'I know which one's going to be the first 20 trillion dollar company' (implied SpaceX); speaks without hedging on multiple revenue streams",
+  "themes": [
+    "space/orbital compute",
+    "AI infrastructure",
+    "telecommunications"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "I know which one's going to be the first 20 trillion dollar company",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SPACEX"
+  ],
+  "tickers_subject": [
+    "SPACEX"
+  ],
+  "tickers_implied_original": [
+    "SPACEX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPACEX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX is the explicit and sole subject of this thesis; Baker directly names it as the likely first $20T+ company and builds the entire investment case around its multiple revenue streams."
+    }
+  ]
+}

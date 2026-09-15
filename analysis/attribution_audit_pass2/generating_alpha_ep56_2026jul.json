@@ -1,0 +1,187 @@
+{
+  "label": "generating_alpha_ep56_2026jul",
+  "date": "2026-07-08",
+  "source": "Generating Alpha \u2014 Ep.56: career arc, semis, NVDA/Tesla, AI infra cycles",
+  "host": "Amir Fischer (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "We are not in a valuation bubble in tech; multiples have compressed and tech now trades at a discount to staples",
+      "tickers": [],
+      "quote": "tech's at the same multiple it was at five or six years ago",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The quote appears in turn 22 which has no speaker markers and the surrounding window (turns 19-23) does not contain direct address or self-identification to confirm Baker vs. host."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "AI capex build is funded by cash flows not debt, which is a critical distinction that reduces systemic crash risk vs. prior tech bubbles",
+      "tickers": [],
+      "quote": "whether or not that build out is funded out of debt or cash flows",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Same turn 22 window as T1; no speaker markers or direct address cues available to attribute the quote."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Watts and wafers shortage may prevent an AI overbuild/bubble, alongside the psychological scars of the dot-com bubble",
+      "tickers": [
+        "TSM"
+      ],
+      "quote": "fundamentally short watts and wafers and no prior...that shortage may prevent an overbuild",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The character window contains first-person fund-CIO framing ('I'm very valuation conscious', 'I'm optimistic and hopeful') and references to 'my' investing perspective, consistent with Baker's known register; no speaker markers but content and voice match Baker throughout."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "TSMC's manufacturing lead is durable and self-reinforcing; catching up is extremely difficult",
+      "tickers": [
+        "TSM"
+      ],
+      "quote": "TSMC is still a bottleneck...if you're ahead, you have a big advantage",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue in the same character window as T3 with consistent first-person CIO voice and self-referential investing commentary attributable to Baker."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "ROI on Blackwell will be very high; current ROI 'divot' is temporary and training-driven",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "the ROI on Blackwell is going to be very high",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Quote is in turn 22 with no speaker markers; surrounding turns 19-23 do not provide direct address or self-identification to confirm attribution."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Agentic AI has arrived; early model checkpoints confirm the transition",
+      "tickers": [
+        "MSFT"
+      ],
+      "quote": "agentic AI's here",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The character window contains explicit self-identification ('I'm very valuation conscious', 'I'm extremely disciplined on valuation', 'a bubble's a nightmare. Like nobody wants that') in a continuous CIO-register monologue consistent with Baker."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "As AI eats the world, silicon eats the world \u2014 semiconductor intensity of AI is structurally higher than deterministic software",
+      "tickers": [],
+      "quote": "as AI eats the world, silicon is going to eat the world",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Continuous first-person monologue in the same character window referencing 'my first love' (semiconductors) and personal investment history with Tesla and Nvidia, consistent with Baker's known biography."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "AI world models will reduce AAA game development costs by ~90%, benefiting platform holders and harming game developers",
+      "tickers": [
+        "MSFT",
+        "SONY",
+        "NTDOY",
+        "RBLX"
+      ],
+      "quote": "AI world models are going to lower the cost of developing a game by 90%",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 33 is a direct reply to Amir's question addressed to the guest (turn 32 says 'I'm interested in where you think human creativity remains irreplaceable'), and turn 1 confirms Baker is the guest responding to Amir."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "AI rendering of video games on-device (replacing local GPU) is not viable in the next 5-7 years",
+      "tickers": [
+        "QCOM",
+        "AAPL"
+      ],
+      "quote": "render a video game on the phone instead of the GPU...in the next 5 to 7 years is ridiculous",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Quote is in turn 33, the same guest-reply turn as T8, confirmed as Baker by the host-to-guest question structure in turn 32 and Baker's identification in turn 1."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Nvidia is one of the most exceptional companies Baker has followed for 25 years; Jensen Huang is among the two or three most exceptional people he has ever met",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "literally following Nvidia closely for the last 25 years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Character window contains first-person narrative about personally following Nvidia for 25 years and Tesla for 15 years, matching Baker's known career history at Fidelity covering these names."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Tesla is structurally superior to ICE vehicles on safety, performance, handling, and cost trajectory; Elon accelerated EV adoption by 20-30 years",
+      "tickers": [
+        "TSLA"
+      ],
+      "quote": "safer, they're faster, they handle better...they have more storage space",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Continuous first-person monologue in the same character window as T3/T4 with CIO-register voice and personal investment history consistent with Baker."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Hock Tan's model of entering drained profit pools and raising prices, combined with exceptional talent retention, is a durable competitive strategy",
+      "tickers": [
+        "AVGO"
+      ],
+      "quote": "find a profit pool that has been drained...enter that and jack prices up",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 13 is a direct continuation of Baker's speech (turn 11 is his monologue about early career; turn 13 follows turn 12 laughter) and contains self-referential first-person narrative about meeting Hock Tan and Jensen Huang as a young analyst, matching Baker's known biography."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Neuralink represents a potential major unlock for human-AI coexistence by solving the human IO bottleneck",
+      "tickers": [],
+      "quote": "Neuralink, if it fixes that IO problem...that'll be a big unlock",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Quote is in turn 22 with no speaker markers; surrounding turns 19-23 provide no direct address or self-identification to confirm attribution."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "The most AI-exposed mega-caps are at attractive valuations despite market simultaneously fearing AI job displacement",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "META",
+        "AMZN"
+      ],
+      "quote": "most AI exposed mega caps at pretty attractive valuations",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Character window contains explicit first-person CIO framing ('I'm very valuation conscious', 'I'm extremely disciplined on valuation') in a continuous monologue; the Citrine scenario reference and valuation commentary are consistent with Baker's known public statements."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Supply-demand framework applied to semiconductor inventories is a reliable early warning system for sector downturns",
+      "tickers": [],
+      "quote": "customer inventories and days inventory were at all-time highs...finished goods were at all-time high",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Character window contains first-person narrative about publishing a note at DLJ in February 2000 and Rajiv calling out 'Gavin Baker' by name, directly identifying the speaker as Baker."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "date": "2026-05-12",
+  "source": "HedgeFundAlpha (writeup) \u2014 Baker & Khaira fireside writeup",
+  "host": "Jas (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Memory cycle dynamics represent the most important investment judgment call Baker has faced in his career",
+      "tickers": [
+        "MU",
+        "HXSCL"
+      ],
+      "quote": "most important judgment call of his career",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker uses first-person 'I was actually the Micron analyst in the year 2000' and 'I would argue,' consistent with Baker's biography and CIO register; no speaker markers but content is clearly a continuous Baker monologue responding to a question."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Taiwan Semiconductor's capital discipline deserves defense and is underappreciated by the market",
+      "tickers": [
+        "TSM"
+      ],
+      "quote": "defense of Taiwan Semiconductor's capital discipline",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 11 contains 'they're simply not expanding capacity as fast as Jensen wants' in a continuous monologue with self-referential Fidelity/Taiwan history consistent with Baker; turn 13 is the host's follow-up question."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Amazon's Trainium chips are the most underestimated AI play in the market",
+      "tickers": [
+        "AMZN"
+      ],
+      "quote": "Amazon's Trainium chips are the most underestimated AI play",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'Trainium is for sure the most underestimated' appears in a no-marker window but follows a host question ('which of these is most underestimated') and uses 'I owned one of those' referencing a 13F \u2014 CIO register consistent with Baker."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Orbital compute represents a meaningful emerging investment theme",
+      "tickers": [],
+      "quote": "closed it on orbital compute",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'we have a large position in Crusoe' and 'I could have invested over $50 million' are fund-CIO register; the interlocutor says 'I'm very happy you put 7 and 1/2 billion in' confirming the other speaker is Jas (the host/investor), making this turn Baker."
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "Current memory cycle is unlike prior cycles \u2014 may be the first true capacity cycle since the mid-1990s, making it too early to sell memory stocks",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "this may be the first true capacity cycle",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker uses first-person 'I was actually the Micron analyst in the year 2000' and 'I would argue,' consistent with Baker's biography and CIO register; no speaker markers but content is clearly a continuous Baker monologue responding to a question."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "TSMC's deliberate capacity restraint will prevent an AI bubble and sustain a prolonged upcycle in leading-edge wafer supply",
+      "tickers": [
+        "TSM",
+        "NVDA"
+      ],
+      "quote": "they're simply not expanding capacity as fast as Jensen wants",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 11 contains 'they're simply not expanding capacity as fast as Jensen wants' in a continuous monologue with self-referential Fidelity/Taiwan history consistent with Baker; turn 13 is the host's follow-up question."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Trainium is the most underestimated Nvidia alternative in 2026, analogous to what TPUs were in 2025",
+      "tickers": [
+        "AMZN",
+        "GOOGL",
+        "NVDA"
+      ],
+      "quote": "Trainium is for sure the most underestimated",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'Trainium is for sure the most underestimated' appears in a no-marker window but follows a host question ('which of these is most underestimated') and uses 'I owned one of those' referencing a 13F \u2014 CIO register consistent with Baker."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Neo/specialist clouds (CoreWeave, Crusoe, Nebius, Lambda) represent a durable business model, not a transitional arbitrage",
+      "tickers": [
+        "CRWV",
+        "NBIS"
+      ],
+      "quote": "it is durable and the hyper scalers for a long time were stuck in a cost mentality",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'we have a large position in Crusoe' and 'I could have invested over $50 million' are fund-CIO register; the interlocutor says 'I'm very happy you put 7 and 1/2 billion in' confirming the other speaker is Jas (the host/investor), making this turn Baker."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Orbital/space-based compute will become commercially viable within 2 years and take meaningful market share by end of decade",
+      "tickers": [],
+      "quote": "it becomes clear that it is possible going to work and economical in the next 2 years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 16 directly contains the quote and follows a host question in turn 15 about orbital compute timing; turn 17 continues the same speaker's monologue, and 'Gavin, we're out of time' in turn 17 confirms Baker was speaking in turn 16."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Terrestrial data center power, cooling, and industrial infrastructure names face structural short risk as orbital compute approaches",
+      "tickers": [],
+      "quote": "very painful for a lot of the companies in the power cooling spaces",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Same window as T1-T4 intro turns \u2014 turn 2 is only Baker's greeting; the thesis content about terrestrial data center shorts is not present in this window, making attribution indeterminate from this fragment alone."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "AI frontier model pricing is shifting from flat-rate subscriptions to usage-based with overage, which is wildly bullish for AI revenue and token pricing",
+      "tickers": [],
+      "quote": "wildly bullish for AI wildly bullish for the pricing of these frontier tokens",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Jas",
+      "evidence": "Turn 13 begins with 'You and we were talking about this backstage' and frames a question about OpenAI/Anthropic revenue \u2014 this is the host (Jas) setting up a question for Baker, not Baker speaking."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Coding/code generation is not just the killer app for AI but may be the ultimate AI application and the shortest path to AGI",
+      "tickers": [],
+      "quote": "coding may be the shortest path to ASI and AGI",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "In the no-marker window, 'coding may be the shortest path to ASI and AGI' appears in a continuous response following a host question, with 'I do think' framing and CIO-register commentary consistent with Baker's voice throughout the segment."
+    }
+  ]
+}

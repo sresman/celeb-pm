@@ -1,0 +1,192 @@
+{
+  "date": "2020-04-02",
+  "source": "Invest Like the Best \u2014 Investing through a bear market (EP.167)",
+  "host": "Patrick O'Shaughnessy (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T2",
+      "summary": "Bear markets follow FIFO principle \u2014 first stocks sold are first to be bought back; aggressive/levered names lead recovery",
+      "tickers": [
+        "NFLX",
+        "BKNG",
+        "DPZ"
+      ],
+      "quote": "bear markets work on a FIFO principle, not a LIFO principle",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Omnichannel physical retailers (Walmart, Target, Costco, Kroger) are the biggest e-commerce beneficiaries of COVID",
+      "tickers": [
+        "WMT",
+        "TGT",
+        "COST",
+        "KR"
+      ],
+      "quote": "building years of e-commerce experience, muscle know-how in months",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "Peak valuation spreads within sectors create historically rich alpha opportunity for active and long/short investors",
+      "tickers": [],
+      "quote": "statistically has rich of an opportunity set as we have seen",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The intro explicitly names Gavin Baker as the guest and the quote follows directly from first-person CIO framing ('my experience', 'if you're focused on alpha') consistent with Baker's role; the passage begins with 'You said this is absolutely unprecedented market' addressed to Baker, making the long analytical response his."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Software revenue is not truly recurring; software spend will be cut in this recession unlike 2008-09",
+      "tickers": [],
+      "quote": "there is no such thing as truly recurring revenue",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage is a continuous analytical monologue from Baker (identified as guest in intro) discussing software spend in recessions with CIO-level portfolio framing ('I have been thinking a lot about', 'I don't see any way around that'), consistent with Baker's known views on software."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Work-from-home enabling software companies are near-term beneficiaries but face demand reversal when offices reopen",
+      "tickers": [
+        "ZM",
+        "WORK"
+      ],
+      "quote": "any software company that enables work from home is struggling to keep up",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage continues Baker's software monologue with 'I should say we are not involved with Zoom' \u2014 the 'we' is a fund reference (Atreides), a self-identification cue pointing to Baker as speaker."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Zoom has become a verb and may evolve into a privacy-friendly social network / messaging platform",
+      "tickers": [
+        "ZM"
+      ],
+      "quote": "Zoom has become a verb... companies that become verbs generally do well",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The transcript window only shows the ad and intro re-run without a clear speaker marker for the quote, but the Zoom-as-verb thesis is embedded in the same continuous Baker monologue identified in T4; however the window itself is thin, so confidence is medium."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Large tech incumbents (Apple, Google, Facebook) missed a generational opportunity in video communication due to inferior UI/UX",
+      "tickers": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "ZM"
+      ],
+      "quote": "they've already missed one of the biggest changes to come out of this recession",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote 'they've already missed one of the biggest changes' is in the same continuous analytical passage where Baker said 'we are not involved with Zoom' \u2014 same speaker turn, CIO register throughout."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Pure-play e-commerce incumbents face a more competitive landscape post-COVID as omnichannel retailers go all-in",
+      "tickers": [
+        "AMZN"
+      ],
+      "quote": "dramatically more competitive in 2021 than it was even in 2019",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage uses first-person analytical framing ('I've thought long and hard about that', 'I am beginning to think about') consistent with Baker's CIO register, continuing the same speaker turn from the software/e-commerce discussion."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Quick service restaurants with drive-throughs will be among the first and biggest beneficiaries of economic reopening",
+      "tickers": [
+        "MCD",
+        "QSR",
+        "WEN",
+        "YUM"
+      ],
+      "quote": "first thing people are going to do... go to quick service restaurants with a drive-through",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "The transcript window only shows the ad and intro re-run without a direct speaker marker for this quote; the thesis is investment-flavoured and consistent with Baker's views expressed in T8, but the window is thin, so confidence is medium."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "TikTok is for the first time meaningfully impacting incumbent social networks and may represent a generational social network shift",
+      "tickers": [
+        "META",
+        "SNAP"
+      ],
+      "quote": "TikTok has begun to have an impact on incumbent social networks for the first time",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Same issue as T9 \u2014 window shows only ad/intro re-run; the TikTok observation appears in the same analytical passage as T8 ('In addition to Zoom, I think watching TikTok') suggesting Baker, but the window itself is thin."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Video games are foundational to the metaverse and will become platforms with identity, payments, and social layers",
+      "tickers": [
+        "MSFT",
+        "SNE",
+        "RBLX"
+      ],
+      "quote": "video games are going to be foundational to the metaverse",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage uses first-person conviction framing ('I am becoming more and more convinced', 'I think', 'we have a lot of data') in a continuous analytical monologue consistent with Baker as the identified guest speaker discussing metaverse/gaming."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Discord is a potential metaverse platform foundational asset that could bridge work and play like Zoom",
+      "tickers": [],
+      "quote": "Discord is something that could easily come out of this as a platform foundational to metaverse",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote 'Discord is something that could easily come out of this as a platform' is in the same continuous Baker monologue on metaverse; the preceding line 'You're very friendly with the benchmark guys' is addressed to Patrick (the host), confirming the speaker of the Discord thesis is Baker."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Valuation regime shift from EV/Sales to GAAP P/E is the single biggest risk for growth investors",
+      "tickers": [],
+      "quote": "biggest single risk to me is a regime shift in valuations",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'The biggest single risk to me is a regime shift in valuations' uses first-person CIO framing ('I think a lot about', 'really try and mitigate this risk') in a continuous Baker monologue responding to Patrick's closing question."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Space-as-a-service / co-working model faces structural challenge post-COVID due to density and health concerns",
+      "tickers": [],
+      "quote": "that model is going to have to really change in a world where containment is a priority",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage is a continuous analytical monologue with CIO framing ('I think WeWork has probably been unfairly maligned', 'I kind of conceptualize') consistent with Baker as the identified guest; no speaker break is indicated."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Days-of-solvency-at-zero-revenue is the new critical liquidity metric replacing Altman Z-score and debt/EBITDA",
+      "tickers": [],
+      "quote": "days of solvency with zero revenue is the equation being run everywhere",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The transcript window only shows the ad and intro re-run with no surrounding context for the quote itself, making it impossible to confirm the speaker from this window alone."
+    }
+  ]
+}

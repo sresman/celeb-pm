@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T8",
+  "summary": "Orbital/space-based compute is a credible and underappreciated solution to terrestrial compute supply constraints, with economics that flip favorably upon Starship reusability",
+  "summary_extended": "Baker argues that space-based compute is a credible, underappreciated solution to terrestrial AI compute supply constraints, with economics that become superior to ground-based data centers once Starship reusability is achieved. The cost structure he outlines is: roughly $50B per gigawatt of compute capacity, of which ~$35B is chips (identical cost to terrestrial), while the remaining ~$15B for power, cooling, and labor \u2014 which is inflationary and increasingly scarce on Earth \u2014 drops to near-zero in orbit via solar power and radiative cooling. With Starship reusability bringing launch costs below $1B, the total economics flip favorably versus terrestrial alternatives. Baker notes that Elon Musk and Jensen Huang co-designed a 'Rubin rack' (approximately airplane-sized, ~72 chips) targeting a Q4 2027 launch (Baker assumes 2028 with slippage), and characterizes this as 'swing capacity' at minimum, with potential to become a much larger fraction of global compute. Training workloads will remain Earth-based due to latency and interconnect constraints, but inference and other workloads are viable candidates for orbital deployment.",
+  "detail": "SpaceX orbital data centers: roughly airplane-sized racks (~72 chips), sun-synchronous orbit with radiator in shadow for cooling. Cost breakdown: ~$35B of $50B/GW is chips (same as terrestrial), ~$15B is power/cooling/labor which is inflationary on Earth but near-zero in space (solar + radiator). With Starship reusability, launch cost drops below $1B, making orbital economics superior. Elon and Jensen co-designed a 'Rubin rack' launching Q4 2027 (call it 2028 with slippage). Baker views this as 'swing capacity' at minimum, potentially larger. Training will remain on Earth due to latency/interconnect requirements.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker says 'it feels clear to me at a minimum it will be swing capacity' and walks through detailed cost math; dismisses physics objections by citing SpaceX engineering depth",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "an increasing fraction of the world's compute is going to be in orbit",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "SPACEX"
+  ],
+  "tickers_subject": [
+    "SPACEX"
+  ],
+  "tickers_implied_original": [
+    "SPACEX"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVIDIA chips (specifically the Rubin rack co-designed with Jensen Huang) are the compute units being deployed in orbital data centers; NVDA is a direct beneficiary as orbital compute demand represents incremental chip demand on top of terrestrial demand, and the thesis explicitly names Jensen and the Rubin architecture."
+    },
+    {
+      "ticker": "SPACEX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "SpaceX is the central subject of this thesis \u2014 its Starship reusability is the key economic enabler, and SpaceX is the operator of the orbital data center concept described. The entire investment thesis hinges on SpaceX's launch cost trajectory and engineering execution. However, SpaceX is not US-listed, so it cannot be traded as a public equity."
+    }
+  ]
+}

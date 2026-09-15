@@ -1,0 +1,48 @@
+{
+  "date": "2025-05-28",
+  "source": "HedgeFundAlpha (writeup) \u2014 SK Hynix / HBM pitch",
+  "host": "Sohn Montreal 2025",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "AI's shift from training to inference is driving rapid and accelerating growth in memory demand, particularly HBM.",
+      "tickers": [
+        "000660.KS",
+        "MU"
+      ],
+      "quote": "rapid growth in memory demand driven by AI's shift from training to inference",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "The transcript window explicitly names 'Gavin Baker, CIO and Managing Partner of Atreides Management' as the speaker sharing these insights at the 2025 Sohn Montreal Conference, and a self-referential turn confirms Baker thanked the Sohn Foundation and set the conversational tone."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "SK Hynix is the dominant HBM supplier and offers ~3x upside as the primary beneficiary of AI inference-driven memory demand.",
+      "tickers": [
+        "000660.KS",
+        "MU"
+      ],
+      "quote": "3X Upside Riding the AI Inference Wave with a Dominant HBM Supplier",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "The article headline and body directly attribute the '3X Upside' HBM thesis to Gavin Baker of Atreides Management presenting at Sohn Montreal 2025, with no other speaker indicated."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Reasoning models (advanced inference-time compute scaling) are a structural catalyst for HBM demand growth beyond what consensus expects.",
+      "tickers": [
+        "000660.KS",
+        "MU"
+      ],
+      "quote": "advancements in reasoning models and high-bandwidth memory are reshaping the semiconductor landscape",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "The same turn explicitly attributes the reasoning-models-and-HBM insight to Gavin Baker by name, noting his two decades of technology investing experience as context for the claim."
+    }
+  ]
+}

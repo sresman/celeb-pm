@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast — Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "thesis_id": "T8",
+  "summary": "Open-source AI models make frontier tokens MORE valuable, not less — frontier intelligence can orchestrate open-source models, increasing its own value",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "ANTH",
+    "GOOGL",
+    "MSFT"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "ANTH",
+      "action": "KEEP",
+      "reasoning": "Anthropic is the explicit subject of this thesis — Baker's argument about frontier model value capture is directly tied to frontier model providers like Anthropic, and the source episode references the Anthropic IPO context. This is the clearest direct connection."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "While Google DeepMind operates at the frontier, Baker did not specifically name GOOGL as a beneficiary of this exact thesis about frontier tokens capturing 65-85% of economic value. This ticker was added inferentially in a prior pass, not because Baker specifically connected Alphabet to this thesis. Per the strict test, inferred beneficiaries must be removed."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "REMOVE",
+      "reasoning": "Microsoft was not specifically named by Baker in connection with this thesis about frontier token value capture vs. open-source commoditization. Its inclusion was inferential — based on its OpenAI relationship — rather than a direct statement by Baker linking MSFT to this specific claim. Must be removed under strict audit rules."
+    }
+  ]
+}

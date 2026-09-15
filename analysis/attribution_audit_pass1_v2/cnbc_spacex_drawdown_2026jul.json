@@ -1,0 +1,125 @@
+{
+  "label": "cnbc_spacex_drawdown_2026jul",
+  "date": "2026-07-20",
+  "source": "CNBC \u2014 SpaceX IPO drawdown, AI infrastructure, open source models, frontier AI",
+  "host": "CNBC",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T7",
+      "summary": "Grok 4.5 is on or outside the Pareto frontier of intelligence-per-dollar and was underreacted to by markets",
+      "tickers": [],
+      "quote": "market really underreacted to grok 4.5... on the Pareto frontier",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The transcript opens with 'Gavin Baker is back. Welcome back to you.' followed by 'Thank you for having me,' establishing Baker as the guest; the Pareto frontier / Grok 4.5 thesis is expressed in the guest voice consistent with Baker's CIO register."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Kimi K3 release is wildly bullish for all compute and AI infrastructure, not bearish for US AI",
+      "tickers": [
+        "NVDA",
+        "SMCI",
+        "CRWV"
+      ],
+      "quote": "market reacted in exactly the wrong way to Kimmy K3... wildly bullish for all of compute",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same transcript window with Baker identified as the returning guest at the top; the Kimi K3 thesis naming NVDA/SMCI/CRWV in a fund-CIO framing is consistent with Baker's voice as the sole guest respondent."
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "SpaceX's terrestrial compute buildout is massively underestimated by consensus and represents a hidden revenue driver",
+      "tickers": [],
+      "quote": "three gigs next year... that's a hundred and fifty billion dollars of revenue not in the model",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The transcript opens with 'Gavin Baker is back. Welcome back to you.' and Baker is directly addressed; the substantive SpaceX compute thesis follows his reply turns, with first-person framing ('I looked at the consensus') consistent with Baker as the analyst guest."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Open source AI models shift margin from the model layer to the infrastructure layer, making compute infrastructure more valuable",
+      "tickers": [
+        "NVDA",
+        "CRWV"
+      ],
+      "quote": "open source models fundamentally just shift margin percentage from the model layer to the infrastructure layer",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The host explicitly asks 'What's your thesis?' and the answer beginning 'So open source models fundamentally just shift margin percentage...' is Baker's direct reply, confirmed by the prior direct address to Baker."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "We are structurally short compute; this is the dominant macro fact for AI investing",
+      "tickers": [],
+      "quote": "if you believe like I do that we are structurally short compute",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The phrase 'if you believe like I do that we are structurally short compute' is first-person self-identification embedded in Baker's reply to the host's 'What's your thesis?' question."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "US frontier AI models (Anthropic, OpenAI) retain durable competitive advantage at the enterprise level despite open source competition",
+      "tickers": [
+        "Anthropic",
+        "OpenAI",
+        "xAI"
+      ],
+      "quote": "enormous return to being at the frontier of intelligence",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The 'enormous return to being at the frontier of intelligence' passage is a continuation of Baker's answer to the host's thesis question, with the host interjecting short follow-up questions throughout, consistent with Baker holding the floor."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Token efficiency and cost per token will be the defining competitive metric in AI, not raw intelligence",
+      "tickers": [],
+      "quote": "intelligence per dollar is what matters... token efficiency cost per token matters",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The transcript window opens with Baker being welcomed by name; the 'intelligence per dollar is what matters' framing is part of Baker's extended analytical monologue in the same conversational turn."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "NVIDIA's Motron open-source model is being throttled but could rapidly reach frontier quality, making NVIDIA a potential open-source AI leader",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "NVIDIA their new Motron model is actually really good... throttling it to a degree",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The NVIDIA Motron discussion ('I do think you will see... NVIDIA their new Motron model is actually really good') is followed immediately by the host asking 'do you have a position in video' and Baker confirming 'I do', identifying him as the speaker of the preceding thesis."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "SpaceX's ability to bring on power cheaply and fast is its core competitive moat and the key variable for valuation",
+      "tickers": [
+        "SpaceX"
+      ],
+      "quote": "Jensen said the speed in which you bring on a gigawatt is literally cost",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker is confirmed as the guest throughout; the 'Jensen said the speed in which you bring on a gigawatt is literally cost' line is part of Baker's extended answer, and the host closes with 'Yes, Kevin, please come back' addressing Baker (Kevin is the host's name for the guest per context)."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "SpaceX short interest from private holders hedging and NY hedge fund short cases creates technical overhang but not a fundamental concern",
+      "tickers": [],
+      "quote": "graveyard of funds that shut down because they're Tesla short",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The 'graveyard of funds that shut down because they're Tesla short' passage is a direct continuation of Baker's answer about SpaceX short interest, consistent with his CIO register and the established turn pattern where Baker holds extended analytical turns."
+    }
+  ]
+}

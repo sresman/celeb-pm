@@ -1,0 +1,172 @@
+{
+  "label": "vspartners_global_tech_2021nov",
+  "date": "2021-11-30",
+  "source": "VS Partners / Financial Times Global Seattle Symposium \u2014 Global technology investment: hype, hope, reality",
+  "host": "Vanessa Xu (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T12",
+      "summary": "US-China tech rivalry is net positive for mega-cap internet companies in both countries",
+      "tickers": [],
+      "quote": "probably positive for the mega cap internet companies in both countries",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "SaaS companies have fundamentally better business models than dot-com era companies \u2014 current valuations are not bubble-like",
+      "tickers": [],
+      "quote": "today's giant companies are generally trading at 20 to 25 times earnings",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "5G is the most overhyped technology trend \u2014 it enables no new applications unlike 3G or 4G",
+      "tickers": [],
+      "quote": "5g just does not enable anything new and foundational",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The intro names Gavin Baker as the guest; Vanessa Xu asks about overhyped trends and the reply beginning 'yeah we for sure want to avoid sob stories' flows directly into the 5G critique, consistent with Baker answering as the interviewee throughout."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "AI is the dominant structural force in technology \u2014 scale of training data is the only thing that matters",
+      "tickers": [],
+      "quote": "the only thing that matters in ai is scale",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The passage is a continuous monologue from the same speaker who answered the 5G question; self-referential CIO framing ('the only thing that matters in ai is scale') and portfolio-level analysis matches Baker as the sole guest respondent."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "AI-driven scaling laws will dramatically increase semiconductor intensity of the global economy",
+      "tickers": [],
+      "quote": "semiconductor intensity of the world is going to go up a lot",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous with T2 monologue; the semiconductor intensity thesis flows directly from Baker's AI scaling-law explanation in the same unbroken speaker turn."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Blockchain/crypto is a genuine structural trend that counteracts AI centralization \u2014 bullish on the cycle",
+      "tickers": [],
+      "quote": "we're at the early stages of a powerful new blockchain driven cycle",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous monologue as T2/T3; blockchain-AI interaction framing is part of Baker's extended answer to Vanessa Xu's question about technology trends."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "The metaverse is a real long-term trend \u2014 majority of people will spend majority of waking hours in virtual worlds",
+      "tickers": [],
+      "quote": "a majority of people will spend a majority of waking hours in virtual worlds",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The intro establishes a two-person format (Vanessa Xu interviewing Gavin Baker); the metaverse thesis appears in Baker's extended answer turn, consistent with his role as the sole guest."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "SpaceX / Starlink is the only investable space company \u2014 dramatically lower launch costs will reshape the world",
+      "tickers": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "quote": "there is spacex and then there's really no one else",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Vanessa Xu explicitly asks 'how do you express your view in your actual portfolio' and the reply 'well so it is from a space perspective there is spacex and then there's really no one else' is Baker's direct answer."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "EV SPACs are worthless \u2014 no hope of competing against Tesla, Chinese EV leaders, or legacy OEM incumbents",
+      "tickers": [
+        "TSLA"
+      ],
+      "quote": "almost every ev spec these are silly companies these are not real companies",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The speaker says 'i've said kind of publicly many times almost every ev spec these are silly companies,' a self-attribution cue consistent with Baker's known public statements, in his continuous guest-answer turn."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Tesla is the dominant global EV incumbent \u2014 one of the best companies in the world led by possibly the best CEO",
+      "tickers": [
+        "TSLA"
+      ],
+      "quote": "one of the best companies in the world led by one of the maybe the best ceo",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous with T7 in the same speaker turn; the Tesla characterisation is embedded in Baker's EV SPAC critique monologue with no speaker change marker."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Chinese EV companies are genuinely impressive and competitive \u2014 not to be dismissed",
+      "tickers": [],
+      "quote": "what some of these chinese companies have accomplished is also very impressive",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The intro establishes Baker as the sole guest; the Chinese EV praise appears in his continuous answer turn about EV competition, consistent with his known coverage of Chinese tech."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Crossover investing (public + private) is the future of tech investing \u2014 will grow from 3-4% to 50%+ of private unicorn market cap",
+      "tickers": [],
+      "quote": "crossover firms only have three to four percent of it and i think that's going to well over 50 percent",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The intro establishes Baker as the sole guest respondent; crossover investing thesis with specific statistics ('three to four percent\u2026 well over 50 percent') reflects CIO-level portfolio construction framing typical of Baker."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Leading-edge semiconductor manufacturing is a critical geopolitical chokepoint \u2014 only 5 countries can do it",
+      "tickers": [
+        "ASML",
+        "LRCX",
+        "KLAC",
+        "AMAT"
+      ],
+      "quote": "you need to buy these big machines from a dutch company called asml",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Vanessa Xu asks about US-China tech rivalry and Baker replies 'yeah it's a good question'; the ASML/semiconductor chokepoint thesis is in his direct answer, confirmed by the closing 'thank you so much gavin' attribution."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Breaking up big tech would likely be bullish, not bearish \u2014 conglomerate discount embedded in mega-caps",
+      "tickers": [],
+      "quote": "i don't think a breakup would be a kind of a negative scenario",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The breakup-as-bullish thesis is in a continuous guest-answer turn responding to Vanessa Xu's antitrust question; CIO-level conglomerate-discount framing and the closing 'thank you so much gavin' confirm Baker as speaker."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Meme stocks can permanently change company destinies via reflexivity \u2014 dangerous to short or dismiss",
+      "tickers": [],
+      "quote": "markets can change reality and some of the meme stocks their destinies were permanently changed",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The meme-stock reflexivity thesis is embedded in Baker's continuous EV/speculation monologue; the intro and two-person format confirm he is the only guest respondent."
+    }
+  ]
+}

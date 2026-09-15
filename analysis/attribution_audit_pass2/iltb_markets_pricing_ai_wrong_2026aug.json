@@ -1,0 +1,250 @@
+{
+  "label": "iltb_markets_pricing_ai_wrong_2026aug",
+  "date": "2026-08-04",
+  "source": "Invest Like the Best \u2014 Why the markets are pricing AI wrong: July 2026 AI/semis selloff, private inference cloud, old-GPU repricing, ~$700B Blackwell/Rubin credit gap",
+  "host": "Patrick O'Shaughnessy (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "July 2026 AI/semis selloff was a sentiment-driven overreaction ('2022 in a month') with no negative quantitative fundamentals to justify it",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "July as 2022 in a month... every metric is accelerating",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 18 responds to turn 17 'Nothing' with 'Nothing. In fact, every metric is accelerating' \u2014 the prior turn 4 explicitly names 'Gavin' and attributes the forward PE / fundamentals framing to Baker, confirming this voice is Baker's."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Public markets are missing the AI demand picture because they lack visibility into private inference clouds and private frontier labs",
+      "tickers": [],
+      "quote": "missing these private companies... Anthropic pumping out significant free cash flow",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers in this window, but the first-person analytical framing ('I just think', 'you're missing these private companies') and fund-CIO register discussing private company cash flows is consistent with Baker; the extended monologue matches his known speaking style across the episode."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Contracted GPU compute is trading at a massive discount to spot market; as contracts roll off and reprice higher, hyperscaler operating cash flows will accelerate sharply",
+      "tickers": [
+        "MSFT",
+        "META",
+        "AMZN",
+        "GOOGL"
+      ],
+      "quote": "contracted base of installed compute trading at a massive discount to current spot",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Same unbroken monologue as T2 with no speaker change markers; first-person analytical voice ('I think you're going to see a lot of acceleration') and portfolio-level framing consistent with Baker throughout."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Hyperscaler operating cash flows are already accelerating and consensus is modeling them to monetize Blackwell/Rubin at Ampere-era rates \u2014 a ~$700B underestimate",
+      "tickers": [
+        "MSFT",
+        "META",
+        "AMZN",
+        "GOOGL"
+      ],
+      "quote": "more like 2 trillion of operating cash flow... takes 700 billion of credit demand out",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 38 quote ('It's so important to understand what the financing will be like') is sandwiched between ad reads (turns 35-37) and a follow-up in turn 39; no direct address or self-identification cue to distinguish Baker from O'Shaughnessy."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Open-source token growth taking share from frontier models is neutral-to-positive for AI infrastructure demand, not negative",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "a token is a token... takes the same amount of flops, memory, watts",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Patrick O'Shaughnessy",
+      "evidence": "Turn 202 quote ('That would not be the market's interpretation of SpaceX today') is a short editorial comment that functions as a host transition/reaction, not a fund-CIO thesis statement, and turn 203 begins 'No, no' suggesting the prior speaker was not Baker."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Credit risk to the AI buildout is real but likely overstated given the operating cash flow acceleration thesis",
+      "tickers": [
+        "META"
+      ],
+      "quote": "if we need credit to fund this buildout, this is a significant negative",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 42 uses explicit first-person self-reflection ('I'm like, after this month, I'm super open... I really went deep on credit') and fund-manager framing, strongly identifying Baker as the speaker."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Nvidia is at its lowest forward P/E in 10 years, implying the market believes it is significantly over-earning \u2014 Baker disagrees",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Nvidia's at its lowest forward PE of the last 10 years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 4 directly names 'Gavin' and attributes the Nvidia lowest forward PE observation to him; turn 70 quote is part of the same Baker monologue continuing from that named turn."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Memory LTAs (long-term agreements) are structurally sticky due to game-theoretic dynamics \u2014 breaking them risks losing competitive allocation in a supply-constrained world",
+      "tickers": [
+        "MU",
+        "HYNIX",
+        "SAMSUNG"
+      ],
+      "quote": "break the LTA... you just lost share... you might blow up your entire business",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Extended unbroken monologue with no speaker markers; first-person analytical framing ('I think for the next several years market shares are going to be determined by supply chain allocations') and game-theory portfolio reasoning consistent with Baker's register throughout the episode."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Nvidia's 'credit wrapper with revenue share' business model is highly underappreciated and could create a massive royalty-based cloud business",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "credit wrapper with a revenue share... could lead to a really giant cloud business through royalties",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Same continuous monologue window as T8 with no speaker change; fund-CIO framing discussing Nvidia's business model evolution is consistent with Baker."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "SK Hynix should replicate Nvidia's credit wrapper / revenue share model to capture upside from the AI compute buildout",
+      "tickers": [
+        "MU",
+        "HYNIX"
+      ],
+      "quote": "if I were CEO of Hynix, I'd do the exact same thing Nvidia's doing",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 110 directly addresses 'if you were the CEO of Hynix' and turn 111 replies 'I'd do the exact same thing Nvidia's doing right now' \u2014 the reply to a direct question posed to Baker is Baker's answer."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "SpaceX (Grok/xAI compute) is significantly undervalued in public markets; the compute buildout optionality is not in estimates",
+      "tickers": [
+        "SPACEX"
+      ],
+      "quote": "very little is built in to that stock for the amount of compute they might bring on",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 38 quote is in the same ad-read boundary zone as T4 with no speaker identification cues; cannot distinguish Baker from O'Shaughnessy."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Orbital/space-based compute is becoming increasingly real and is underappreciated by public markets",
+      "tickers": [
+        "SPACEX"
+      ],
+      "quote": "orbital compute feels more real every day",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 211 uses 'I did spend a lot of time at Starbase' \u2014 a self-identification cue placing the speaker as someone who visited Starbase, consistent with Baker's known travel; turn 208 also uses first-person fund framing ('from my perspective')."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "SRAM-based accelerators disaggregated from HBM DRAM will significantly improve AI inference ROI and are underappreciated",
+      "tickers": [],
+      "quote": "SRAM-based accelerators... ROI on adding these to the existing install base",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 190 is a direct response to turn 189 ('What have we missed') addressed to Baker, and the detailed technical thesis on SRAM accelerators with first-person framing ('I think something that is missing') confirms Baker as speaker."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Continual learning and sample-efficient learning breakthroughs could reduce training compute demand but are unlikely to be net negative for AI infrastructure",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "very close to solving continual learning and sample-efficient learning",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 73 is a direct response to turn 72 which asks Baker ('What's your sense... have you learned anything interesting') \u2014 the reply 'Yeah, I am very curious' confirms Baker is the speaker."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Private inference clouds (Fireworks, Base10, Modal) are growing nearly as fast as frontier labs with very little cash burn \u2014 extraordinary business models",
+      "tickers": [],
+      "quote": "growing almost as fast as frontier labs... burning very little cash",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 158 continues a dialogue where Baker is the primary analytical voice; first-person framing ('I've been really surprised') and fund-CIO register discussing inference cloud business models matches Baker throughout the episode."
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "AI adoption is in extremely early innings globally; compute shortage exists with only ~500K people using generative AI out of 8 billion",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "500,000 people using generative AI... we're in an acute compute shortage",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 124 replies 'I mean, essentially everyone out here is more bullish than me, man' to turn 123 which asks Baker directly ('Have you met anyone... that you would say is like way more bullish than you')."
+    },
+    {
+      "thesis_id": "T17",
+      "summary": "AI-native companies are substituting tokens for labor at scale, with token spend reaching 20-50% of total comp at leading companies",
+      "tickers": [],
+      "quote": "token spend as percent of total comp... 20%, 25%... I've heard 50%",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Patrick O'Shaughnessy",
+      "evidence": "Turn 202 quote ('That would not be the market's interpretation of SpaceX today') is a short host-style editorial interjection; turn 203 begins with Baker's 'No, no' rebuttal, confirming turn 202 was not Baker."
+    },
+    {
+      "thesis_id": "T18",
+      "summary": "China's DUV machine development is a real phase transition but the market overreacted; it will take decades to close the gap with EUV",
+      "tickers": [
+        "ASML",
+        "KLAC",
+        "LRCX",
+        "AMAT"
+      ],
+      "quote": "DUV machine is like a propeller plane, EUV is like a jet turbine... 25 years behind",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 7 ('We're basically you and I are basically on a model release cadence') is a reply to turn 5 which directly addresses 'Gavin', confirming Baker is the speaker in this exchange; turn 4 also names Gavin explicitly."
+    },
+    {
+      "thesis_id": "T19",
+      "summary": "Regulatory risk is the single biggest tail risk to AI \u2014 the industry has done a terrible job of PR and data center moratoria could spread",
+      "tickers": [],
+      "quote": "regulation just has to be the biggest risk... New York making a data center moratorium",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 164 is a direct response to turn 163 ('What's the worst thing that could happen in AI?') with first-person framing ('I think regulatory has to be the biggest risk... I was excited to be here this week') confirming Baker as speaker."
+    },
+    {
+      "thesis_id": "T20",
+      "summary": "Claude/LLM homogenization of investment analysis is creating artificial volatility cycles and breakdown of market diversity",
+      "tickers": [],
+      "quote": "Claude is kind of Walter Cronkite for the stock market... everyone just believes whatever it says",
+      "speaker_attribution": "other",
+      "attribution_confidence": "medium",
+      "likely_speaker": "Patrick O'Shaughnessy",
+      "evidence": "Turn 183 quote ('World Series. Here's what a data center does...') is a short host-style riff completing turn 182 ('Here's the virtues') in a back-and-forth where O'Shaughnessy is editorialising about PR strategy, not Baker delivering a fund thesis."
+    }
+  ]
+}

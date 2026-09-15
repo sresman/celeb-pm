@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T12",
+  "summary": "Nvidia is likely to release a competitive open-source frontier model, funded by its chip cash flows, potentially becoming the dominant American open-source model",
+  "summary_extended": "Baker argues that Nvidia is likely to release a competitive open-source frontier model in the near future, funded by its massive chip cash flows, and that this model will probably become the dominant American open-source AI model. He points to Nvidia's acquisition of Poolside \u2014 a company with strong American open-source AI talent \u2014 as deliberate preparation for this move, and notes that Jensen Huang could trivially fund a $50\u2013100B training run given Nvidia's revenue base. The strategic logic is self-reinforcing for Nvidia: open-source models compress token margins, which drives higher token consumption, which in turn increases demand for Nvidia compute. Baker also notes that Google may pursue a parallel strategy, funding open-source training runs using TPU cash flows to entrench its own hardware ecosystem. The investment implication is that Nvidia's dominance in AI compute is further reinforced regardless of whether open or closed models win, while Google's long-term positioning in AI infrastructure may be underappreciated.",
+  "detail": "Baker says 'in the very near future' the best open-source model will probably be an Nvidia model. Poolside acquisition was made for this reason \u2014 Poolside had strong American open-source talent. It is 'trivial' for Jensen to fund a $50-100B training run. Open source winning is good for Nvidia because lower margins on tokens = more token consumption = more compute demand. Google's long-term play may also be funding open-source training runs with TPU cash flows.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker says 'I think probably in the very near near future that's going to be an NVIDIA model' \u2014 stated as expectation not certainty",
+  "themes": [
+    "open source AI",
+    "semiconductor supply chain",
+    "frontier model economics"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "in the very near future that's going to be an NVIDIA model",
+  "tickers_named_original": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Nvidia releasing a frontier open-source model funded by chip cash flows; Nvidia is the central subject and primary beneficiary of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly discusses Google pursuing an analogous strategy of funding open-source training runs with TPU cash flows, making GOOGL a direct participant in and beneficiary of the same structural thesis, not merely a tangential mention."
+    }
+  ]
+}

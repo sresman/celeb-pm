@@ -1,0 +1,120 @@
+{
+  "label": "allin_e125_spacex_starship_2023apr",
+  "date": "2023-04-21",
+  "source": "All-In Podcast \u2014 E125: SpaceX Starship launch, Fox News settlement, AI/Reddit",
+  "host": "David Sacks, David Friedberg, Chamath Palihapitiya, Jason Calacanis, Antonio Gracias (Gavin Baker panelist)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T4",
+      "summary": "AI wave will generate 10x more value than the internet era, but the index of AI investments will lose money while a handful of winners accrue extraordinary gains",
+      "tickers": [],
+      "quote": "10 times the value generated in this phase than we saw during the internet",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The transcript window contains no speaker markers and the quote does not appear in the visible text, making attribution impossible from this window alone."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "AI co-pilots for professional verticals (coding, legal, medical, architecture) will produce multiple unicorns",
+      "tickers": [],
+      "quote": "co-pilot for coders or co-pilot for doctors or lawyers or Architects",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The transcript window contains no speaker markers and the quote does not appear in the visible text, making attribution impossible from this window alone."
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "Starship achieves ~50x reduction in cost-per-kg to orbit vs Falcon 9, representing a step-function change in launch economics",
+      "tickers": [],
+      "quote": "roughly a 50x huge change in this massively changes needed economics",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Antonio Gracias",
+      "evidence": "The quote about '50x' cost reduction is attributed to Gavin Baker by Antonio Gracias in the next window ('as Gavin just said we've had you know 50x kind of reduction in cost'), but in this window the speaker is Antonio Gracias giving the launch overview; however the intro names Gavin Baker as the one who said it, so the original speaker of the 50x thesis is Baker \u2014 but in this window the words appear to come from Antonio Gracias's explanation. Cross-referencing T3 window: 'as Gavin just said we've had you know 50x kind of reduction in cost' confirms Baker said it, but the quote fragment here is spoken by Antonio in this window."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Starship enables Starlink to deploy ~20x more satellites per launch, creating a near-monopoly in next-gen satellite internet",
+      "tickers": [
+        "VSAT",
+        "SATS"
+      ],
+      "quote": "the only company that actually has the capability to build and to launch is SpaceX",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Chamath Palihapitiya",
+      "evidence": "The extended monologue about SpaceX monopoly, FCC licenses, and competitors being inconsistent matches Chamath's known speaking style and the passage flows from Jason Calacanis's Starlink question; the 'only company that actually has the capability' quote is part of a long analytical turn by Chamath."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Starship disrupts trans-Pacific and trans-Atlantic air cargo routes within 5-10 years",
+      "tickers": [
+        "FDX",
+        "UPS"
+      ],
+      "quote": "there will be no more trans-pacific or transatlantic cargo flights",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The T3 window explicitly attributes the cargo thesis to 'Kevin' (Gavin Baker): 'Kevin yeah there will be no more trans-pacific or transatlantic cargo flights' \u2014 'Kevin' is a transcription error for 'Gavin'."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "~70-80% of late-stage private tech companies (Series C+) are worth less than their preference stack \u2014 a reckoning has not yet begun",
+      "tickers": [],
+      "quote": "70 of publicly traded companies that went public in the last three years are trading below the cash",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "David Friedberg",
+      "evidence": "The speaker explains preference stacks to the audience in a teaching register, coins the term 'zombie corns,' and references 'what I shared a few months ago' about 70% of public companies trading below cash raised \u2014 this matches Friedberg's prior episodes and analytical style, not Baker's CIO register."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "AI enables 2-3 person startups to do the work of 20-30 people, compressing capital requirements and disrupting traditional VC fund deployment models",
+      "tickers": [],
+      "quote": "a two or three person company can now do the work of 20 to 30 people",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Chamath Palihapitiya",
+      "evidence": "The speaker references 'we tried this experiment seven years ago this thing called Capital as a service' \u2014 this is a known Chamath/Social Capital initiative, directly self-identifying the speaker as Chamath."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Reddit, Stack Overflow, and other large proprietary data corpus owners will successfully monetize their data for AI training",
+      "tickers": [],
+      "quote": "Reddit announced plans to start charging companies that use its data to train AI models",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "The speaker introduces the Reddit story as a host transition ('well Reddit announced plans...your thoughts shamoth'), uses first-person journalism background framing, and addresses Chamath by name \u2014 consistent with Jason Calacanis hosting."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Crypto is effectively banned in the US; regulatory crackdown will drive innovation offshore, harming American competitiveness",
+      "tickers": [
+        "COIN"
+      ],
+      "quote": "crypto's dead in America",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jason Calacanis",
+      "evidence": "The speaker says 'crypto's dead in America' as a host-style declarative transition and then solicits Sacks's opinion ('Saks is it a round find out moment'), consistent with Jason Calacanis's host role."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Fox News faces existential financial risk from sequential defamation lawsuits that could deplete half its cash balance",
+      "tickers": [
+        "FOX"
+      ],
+      "quote": "Fox I think has only four billion of cash so they just spent 20 some odd percent",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Chamath Palihapitiya",
+      "evidence": "The speaker says 'Fox I think has only four billion of cash so they just spent 20 some odd percent' and references being a shareholder perspective analyst \u2014 this analytical financial framing with specific cash figures matches Chamath's known commentary style on this episode."
+    }
+  ]
+}

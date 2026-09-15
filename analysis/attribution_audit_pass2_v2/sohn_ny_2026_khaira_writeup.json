@@ -1,0 +1,57 @@
+{
+  "label": "sohn_ny_2026_khaira_writeup",
+  "date": "2026-05-12",
+  "source": "HedgeFundAlpha (writeup) \u2014 Baker & Khaira fireside writeup",
+  "host": "Sohn NY 2026",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Memory cycle dynamics represent the most important investment judgment call Baker has faced in his career",
+      "tickers": [
+        "MU",
+        "HXSCL"
+      ],
+      "quote": "most important judgment call of his career",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "Gavin Baker",
+      "evidence": "The writeup explicitly attributes the 'most important judgment call of his career' phrasing to Baker by name in the summary paragraph."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Taiwan Semiconductor's capital discipline deserves defense and is underappreciated by the market",
+      "tickers": [
+        "TSM"
+      ],
+      "quote": "defense of Taiwan Semiconductor's capital discipline",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The writeup lists this thesis as a topic covered in the session but does not explicitly attribute the 'defense of Taiwan Semiconductor's capital discipline' to Baker versus Khaira; both are co-participants."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Amazon's Trainium chips are the most underestimated AI play in the market",
+      "tickers": [
+        "AMZN"
+      ],
+      "quote": "Amazon's Trainium chips are the most underestimated AI play",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The writeup lists the Trainium thesis as a topic covered in the session but does not explicitly name which of the two participants (Baker or Khaira) made this argument; Khaira as an AI-focused principal investor at Blackstone could equally have advanced it."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Orbital compute represents a meaningful emerging investment theme",
+      "tickers": [],
+      "quote": "closed it on orbital compute",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The writeup only notes the conversation 'closed on orbital compute' without attributing the theme to either Baker or Khaira specifically."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T1",
+  "summary": "AI demand is broadly accelerating across all major players in July-August 2026, contradicting public equity drawdowns",
+  "summary_extended": "Baker argues that AI demand is broadly and unambiguously accelerating across all major players as of July-August 2026, contradicting the significant drawdowns seen in public AI-related equities during the same period. His evidence is unusually direct: he personally canvassed every relevant contact he could reach and asked for a single quantitative data point showing deterioration \u2014 and found none. Specific acceleration was noted at OpenAI, in open-source AI adoption, and most dramatically at xAI's Grok/Grockbot product. Baker frames the divergence between accelerating fundamentals and falling stock prices as a clear mispricing and a high-conviction buying opportunity in public AI equities. He does not specify a single company as the thesis subject \u2014 the claim is macro-level across the AI ecosystem, making broad-based AI infrastructure and platform beneficiaries the implied investment targets.",
+  "detail": "Baker asked every contact for one quantitative data point getting worse and found none. OpenAI accelerated, open source accelerated more, Grok/Grockbot had dramatic acceleration. Public AI stocks are in significant drawdowns despite fundamentals accelerating \u2014 a disconnect Baker views as an opportunity.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states he asked 'everyone' and found zero negative data points; frames it as a personal high-conviction view held through summer 2026",
+  "themes": [
+    "AI demand",
+    "frontier model growth",
+    "public market mispricing"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "public stocks have kind of fallen out of bed...things are broadly accelerating",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "META"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "META",
+    "GOOGL",
+    "MSFT"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of AI compute infrastructure; if AI demand is broadly accelerating and outrunning compute supply, NVDA is the most direct and unambiguous beneficiary of that demand surge among US-listed equities."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker specifically cited open-source AI acceleration, and META is the primary driver of open-source frontier models (Llama series); META is also a major AI platform and infrastructure spender that benefits from and contributes to the acceleration trend he describes."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While GOOGL is a major AI player, Baker's thesis names OpenAI, open source, and Grok as the specific acceleration vectors \u2014 none of which are GOOGL products. GOOGL is not specifically cited as a subject or direct beneficiary of the named acceleration data points, making it tangential to this specific thesis rather than a direct subject or beneficiary."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "MSFT is a major AI investor and OpenAI partner, but Baker's thesis is about demand acceleration as a macro signal and mispricing opportunity \u2014 MSFT is not specifically named or implied as a direct subject or unique beneficiary distinct from the general AI ecosystem. Its inclusion appears to be bleed-in from adjacent context rather than a direct implication of this thesis."
+    }
+  ]
+}

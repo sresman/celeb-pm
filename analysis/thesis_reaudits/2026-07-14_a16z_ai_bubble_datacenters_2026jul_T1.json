@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-14",
+  "source": "a16z Podcast — Is AI a bubble? Data centers, GPUs, and the AI economy",
+  "thesis_id": "T1",
+  "summary": "We are not in an AI bubble today; GPU utilization and hyperscaler ROIC expansion distinguish this era from the 2000 telecom bubble.",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "NVDA",
+    "CSCO",
+    "GOOGL",
+    "META",
+    "MSFT",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Nvidia by citing its ~40x trailing earnings multiple as evidence against bubble-level valuations, and the 'no dark GPUs' claim directly references demand for Nvidia's product. Nvidia is the central subject of this specific thesis."
+    },
+    {
+      "ticker": "CSCO",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly used Cisco as the historical bubble analog, citing its 150–180x trailing earnings peak and the dark fiber overcapacity. Cisco is the direct comparative subject of this thesis, not merely mentioned in passing."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically cited the major hyperscalers — the largest GPU spenders — as having seen ~10 percentage point ROIC increases and contributing to the collective ~$300B FCF and ~$500B cash figures. Google/Alphabet is one of the named hyperscalers directly connected to this anti-bubble argument."
+    },
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Meta is explicitly among the largest GPU spenders Baker references when building his collective financial metrics (ROIC expansion, FCF, cash) as evidence against a bubble. Baker specifically connected hyperscaler GPU spenders to this thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Microsoft is one of the major hyperscalers Baker specifically references as a GPU-deploying company with ROIC expansion and strong FCF, directly supporting his anti-bubble thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Amazon (AWS) is one of the major hyperscalers Baker specifically references as a GPU-deploying company contributing to the collective financial metrics central to his anti-bubble argument."
+    }
+  ]
+}

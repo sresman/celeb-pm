@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast \u2014 Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "thesis_id": "T11",
+  "summary": "Open-source AI is a structural tailwind for legacy software companies \u2014 PE bid for Workday signals software has bottomed",
+  "summary_extended": "Baker argues that the proliferation of open-source AI models is structurally beneficial for legacy enterprise software companies, because a world dominated by 1-3 closed frontier model providers would create dangerous dependency risk and margin compression for software vendors, whereas open-source alternatives give software companies negotiating leverage and model optionality. He contrasts this with the bearish scenario where a handful of frontier labs extract most of the value from the software stack, suggesting open-source disrupts that dynamic in software's favor. As a real-time signal that the market may have overcorrected on software valuations, Baker points to Silver Lake's reported interest in acquiring Workday as evidence that sophisticated PE buyers see enterprise software as oversold. The investment implication is that enterprise software names \u2014 with Workday as the clearest named example \u2014 may represent a buying opportunity, and that the open-source AI trend should be monitored as a structural tailwind for the sector rather than a headwind. No specific price targets or timeframes were cited, though the PE bid dynamic suggests a near-to-medium-term catalyst for re-rating.",
+  "detail": "Baker argues a world with 1-3 dominant frontier model providers is bad for software, but open-source proliferation is a 'godsend' for the American software industry. Silver Lake's potential Workday bid signals PE sees software as oversold. Open-source reduces model dependency risk for software companies.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker makes the structural argument clearly but the Workday/Silver Lake point is breaking news he's reacting to in real time rather than a pre-formed thesis",
+  "themes": [
+    "enterprise software",
+    "open-source AI",
+    "private equity/M&A"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "open source is a godsend for the American software industry",
+  "tickers_named_original": [
+    "WDAY"
+  ],
+  "tickers_direct": [
+    "WDAY"
+  ],
+  "tickers_subject": [
+    "WDAY"
+  ],
+  "tickers_implied_original": [
+    "BX",
+    "KKR",
+    "APO"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "WDAY",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Workday is the specific company named as the subject of the PE bid thesis and the clearest example of an enterprise software company that would benefit from the open-source tailwind argument."
+    },
+    {
+      "ticker": "BX",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Silver Lake, not Blackstone, is the PE firm reportedly bidding for Workday. BX has no direct role in this thesis and appears to have been added erroneously as a generic PE name."
+    },
+    {
+      "ticker": "KKR",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "KKR is not mentioned in connection with the Workday bid or the open-source software thesis; it is a generic PE name that bled in tangentially."
+    },
+    {
+      "ticker": "APO",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Apollo is not mentioned in connection with the Workday bid or the open-source software thesis; it is a generic PE name that bled in tangentially."
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "date": "2022-03-25",
+  "source": "On The Tape / RiskReversal \u2014 Fear is the market killer",
+  "host": "Dan Nathan, Danny Moses, Guy (Gavin Baker panelist)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T18",
+      "summary": "Bitcoin/crypto acted as digital gold and wealth preservation for Russians during the ruble crisis \u2014 validates store-of-value thesis in crisis scenarios",
+      "tickers": [
+        "BTC"
+      ],
+      "quote": "Crypto did its job...it preserved wealth. It did act as digital gold",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript"
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "Supply chain-driven inflation is largely over; capitalism solves these problems quickly",
+      "tickers": [],
+      "quote": "That's over. High confidence capitalism is really good at solving those problems",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The long monologue beginning 'First, I just want to say, as I said on Patrick's podcast...' is a direct response to a host question addressed to the guest, and the guest is named 'Gavin' in a nearby turn ('Gavin, if you're Moby Dick')."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Wage inflation is the most dangerous and historically destructive component of inflation; outcome is highly uncertain",
+      "tickers": [],
+      "quote": "wage price spiral...historically over the long arc of history destroyed societies",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from the same speaker as T1, directly addressed as 'Gavin' shortly after in the same window."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Commodity inflation is the newest and most geopolitically-driven inflation component; capitalism will solve it but more slowly",
+      "tickers": [],
+      "quote": "capitalism is also very good at solving these problems. Just takes longer",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous monologue as T1/T2, with 'Gavin' address appearing shortly after in the transcript window."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Technology is a structural disinflationary force that is NOT changing, regardless of deglobalization",
+      "tickers": [],
+      "quote": "technology and that's not changing. That is fundamentally not changing",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous monologue responding to host question; speaker is addressed as 'Gavin' in the immediately following turn."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Metals preferred over oil and gas as a commodity investment due to shallower decline curves and cleaner long-term demand picture",
+      "tickers": [],
+      "quote": "I probably have a bias for metals over energy",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'I will say I have always had a bias for metals over oil and gas' follows a host question directed to 'Guy' but the framing 'I am certainly no expert on energy' and 'I have not thought a lot about it in a while' matches Baker's CIO register, and the host then redirects to 'Guy' separately ('I'm a metals guy as well'), indicating the metals-over-energy quote precedes that redirect and is Baker's."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Solar and battery technology will displace all energy forms except nuclear within 50-70 years; this is mathematical inevitability",
+      "tickers": [],
+      "quote": "Solar voltaic cells are compounding in efficiency at something like 8 to 10% a year",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The solar/battery compounding thesis ('Solar voltaic cells are compounding in efficiency at something like 8 to 10% a year') is part of the same extended guest monologue responding to the ESG question, with 'Gavin' named just before this section."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "ESG framework likely needs redefinition post-Ukraine; political sustainability of anti-drilling stance is weakening",
+      "tickers": [],
+      "quote": "is it really ESG...to massively raise the prices of gasoline, all these daily necessities",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'Is it really ESG...to massively raise the prices of gasoline' is part of the same continuous guest monologue where the speaker is identified as Gavin in the preceding turn."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "American energy industry has become more financially disciplined (like airlines post-restructuring), but wildcatters are filling the gap",
+      "tickers": [],
+      "quote": "wildcatters are picking up the slack and they're small independent operations",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'In a prior life, I invested in energy commodities, metals for 8 and 1/2 years' is a self-identification cue; the wildcatter/airline analogy follows as part of Baker's extended answer to the host's energy question."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "The Fed is a 'sideshow' but may have lost control by waiting too long; a wage-price spiral would force Volcker-style hikes",
+      "tickers": [],
+      "quote": "maybe by waiting, they have lost some control and events have overtaken them",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'I said on an earlier podcast, Dan referenced it that the Fed was a sideshow' is a self-referential cue identifying the speaker as the guest (Baker), consistent with Dan Nathan referencing Baker's prior podcast appearance."
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Market is already pricing in rate cuts in 2023-2024, implying a recession scenario is embedded in bond markets",
+      "tickers": [],
+      "quote": "market is already pricing in rate cuts in either '23 or '24",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'I believe the market is already pricing in rate cuts in either 23 or 24' continues the same guest monologue immediately following the Fed-sideshow statement attributed to Baker."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Current tech environment is fundamentally different from 2000 bubble \u2014 real revenues, real FCF, no capex bubble, no excess capacity",
+      "tickers": [],
+      "quote": "Today, everything is real and there's no capex bubble",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'I was there for 2000 I was an analyst at the time' is a self-identification consistent with Baker's known background as a tech analyst; the extended tech-vs-2000 comparison follows as his answer."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "Bias toward software due to recurring revenue and high ROIC; prefer either deeply cheap on EV/Sales or positive FCF yield",
+      "tickers": [],
+      "quote": "I for sure still have a bias toward software",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'I for sure still have a bias toward software' and reference to 'that podcast I talked about a bias for software' self-identifies the speaker as the returning guest (Baker) referencing his prior Patrick O'Shaughnessy appearance."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Many tech companies that announced 2022 'investment years' will walk back those plans in Q1 earnings due to stock price pressure and talent retention concerns",
+      "tickers": [],
+      "quote": "a majority of companies that announce plans for 2022 to be an investment year...will talk those plans back",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Host says 'you tweeted this last week' and 'you suspect a majority of companies...' directing the tweet attribution to the guest (Baker), who then elaborates on it."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "SaaS companies have demonstrated extraordinary P&L control \u2014 can take FCF margins up 80-100 points in 2-3 quarters when motivated",
+      "tickers": [],
+      "quote": "SaaS companies in the last two quarters take free cash flow margins up 80 to 90 points",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'I first saw this with SuccessFactors, which I owned in 07, 08, 09' is a first-person portfolio ownership reference consistent with Baker as CIO, continuing his answer on SaaS P&L control."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Streaming industry will consolidate to a few large global players; scale and network effects favor the largest incumbents",
+      "tickers": [
+        "NFLX",
+        "DIS"
+      ],
+      "quote": "highly likely that the two largest will remain standing",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'Well, for sure you want to be long content. The streaming industry will consolidate' is a direct answer to the host's question about Netflix, continuing Baker's guest monologue."
+    },
+    {
+      "thesis_id": "T16",
+      "summary": "Video game companies have strategic value exceeding financial value; consolidation in gaming will accelerate driven by subscription model dynamics",
+      "tickers": [
+        "MSFT",
+        "ATVI",
+        "RBLX",
+        "SNE"
+      ],
+      "quote": "strategic value of these companies are higher than the financial value",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'I've had a positive thesis on the video games' and 'I think you have to' are first-person portfolio/thesis statements continuing Baker's answer on streaming/gaming consolidation."
+    },
+    {
+      "thesis_id": "T17",
+      "summary": "Web3 infrastructure layer is the most attractive area within crypto/Web3 investing",
+      "tickers": [],
+      "quote": "infrastructure is where I'm probably most excited about in Web 3.0",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'infrastructure is where I'm probably most excited about in Web 3.0' and 'I've been doing tech now for 22 years' are self-identifying statements from the guest responding to the Web3 question directed at Baker."
+    },
+    {
+      "thesis_id": "T19",
+      "summary": "Private market valuations are adjusting in real-time with a shorter lag than historical 6-9 months due to more crossover investors",
+      "tickers": [],
+      "quote": "real-time valuations have adjusted, are adjusting, and are continuing to adjust",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'So, historically, there was a 6-to-9-month lag' and 'Today, real-time valuations have adjusted' follow a host question about Baker's 20-year experience, and 'I can't help myself. I'm addicted to buying weakness' is a first-person portfolio behavior statement."
+    },
+    {
+      "thesis_id": "T20",
+      "summary": "Semiconductors remain an exciting area for venture investing; Baker has 22 years of comfort investing in semis",
+      "tickers": [],
+      "quote": "love investing in semiconductors, there's a lot of exciting thing happening at semis in venture",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "'I've been doing tech now for 22 years, love investing in semiconductors' is a direct self-identification by Baker as the speaker in his Web3/venture answer."
+    },
+    {
+      "thesis_id": "T21",
+      "summary": "China faces a binary choice between West and Russia with massive economic consequences; Baker's base case is China chooses the West for economic self-interest",
+      "tickers": [],
+      "quote": "economics so strongly argue for not creating a semi-permanent rupture with the West",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The host addresses 'Gavin' directly just before this passage ('So, Gavin, at the top of this...') and Baker responds with 'Yeah, and by the way, it's Indiana Jones and the Last Crusade' before giving the China thesis."
+    }
+  ]
+}

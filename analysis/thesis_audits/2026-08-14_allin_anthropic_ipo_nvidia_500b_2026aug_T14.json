@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-14",
+  "source": "All-In Podcast \u2014 Anthropic $2T IPO, Zuck's AI manifesto, Nvidia $500B AI financing, Grok 4.6 / SpaceX AI strategy",
+  "thesis_id": "T14",
+  "summary": "Grok 4.7 (larger model, weeks away) will be significantly more capable than 4.6 and could further close the gap with frontier labs",
+  "summary_extended": "Baker argues that xAI's Grok 4.6, while already competitive, is a relatively small model at 1\u20131.5 trillion parameters, and that the forthcoming Grok 4.7 \u2014 a significantly larger model expected within weeks \u2014 represents a meaningful near-term catalyst for xAI's competitive positioning against frontier labs like Anthropic and OpenAI. He points to the model size increase as the primary driver of expected capability gains, drawing on the well-established scaling law relationship between parameter count and performance. Additionally, Baker highlights organizational tailwinds at SpaceX/xAI, including a management reshuffling that brings in SpaceX operational talent and the Cursor team, suggesting execution capacity is improving alongside model ambition. The investment implication is primarily relevant to SpaceX/xAI as a pre-IPO entity, with no directly tradeable US-listed equity as the clear beneficiary; investors would need to access this thesis via private markets or secondary vehicles.",
+  "detail": "Baker notes Grok 4.6 is a relatively small model at 1-1.5T parameters. Grok 4.7, a larger model, is coming in a few short weeks and should be significantly more capable. Combined with SpaceX management reshuffling (SpaceX aces + Cursor team), the trajectory is strongly upward.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker states this as a near-term known catalyst but acknowledges it's forward-looking and model releases can disappoint",
+  "themes": [
+    "AI frontier models",
+    "space/orbital compute"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "Grock 4.7 that should be significantly more capable is coming in a few short weeks",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "SpaceX"
+  ],
+  "tickers_subject": [
+    "SpaceX"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (pre-IPO)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SpaceX",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about xAI's Grok model trajectory and SpaceX/xAI organizational changes; SpaceX is the direct subject, though it remains pre-IPO and not US-listed on a public exchange."
+    }
+  ]
+}

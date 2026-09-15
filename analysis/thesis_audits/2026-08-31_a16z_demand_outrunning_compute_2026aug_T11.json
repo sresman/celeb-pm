@@ -1,0 +1,87 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T11",
+  "summary": "The future of enterprise AI is a hybrid/multi-model architecture \u2014 own fine-tuned open-source model plus one or two frontier models behind a router \u2014 not a single dominant frontier model",
+  "summary_extended": "Baker argues that the future enterprise AI architecture will be a hybrid/multi-model ensemble \u2014 enterprises will take the best available open-source base model (likely an Nvidia-developed model given its Poolside acquisition), apply reinforcement learning and supervised fine-tuning on their own proprietary data, and then route tasks to frontier models (e.g., Gemini, Grok, Claude) only for high-level planning while using the owned, fine-tuned model for execution. His core reasoning is that sharing proprietary enterprise context with frontier labs is 'hazardous for financial health,' particularly as zero-data-retention policy shifts make this riskier, creating a structural incentive for enterprises to own and control their own intelligence layer. Baker cites real-world instantiations already emerging \u2014 Grockbot using Gemini 3.7 Flash plus Grok 4.6 plus Opus behind a router, as well as Cursor, Harvey, and Fireworks Nexus \u2014 as evidence this architecture is not theoretical but already in production. The investment implication is that this is bullish for Microsoft (as an enterprise AI platform and distribution layer), application software companies that can embed proprietary workflows, and potentially Nvidia (whose open-source model could become the dominant fine-tuning base), while being structurally negative for pure frontier model providers who depend on deep enterprise data access and lock-in.",
+  "detail": "Baker predicts enterprises will take the best open-source base model (likely an Nvidia model in the near future, given Poolside acquisition), do RL and supervised fine-tuning on proprietary data, then route to frontier models for planning while using the owned model for execution. This is good for Microsoft, application software companies, and Fireworks (Nexus product). Sharing proprietary enterprise context with frontier labs is 'hazardous for financial health' especially given ZDR policy shifts. Grockbot already uses Gemini 3.7 Flash + Grok 4.6 + Opus behind a router as a real-world example.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'a very likely future to me' and cites multiple real-world instantiations (Grockbot, Cursor, Harvey, Fireworks Nexus)",
+  "themes": [
+    "enterprise AI",
+    "open source AI",
+    "AI infrastructure",
+    "application software"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "the future is an ensemble of models...you want to own and control your intelligence",
+  "tickers_named_original": [
+    "NVDA",
+    "MSFT"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "MSFT",
+    "META"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "GOOGL",
+    "META",
+    "PLTR",
+    "CRM",
+    "WDAY",
+    "SNOW"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker specifically names Nvidia's Poolside acquisition as the likely source of the dominant open-source base model enterprises will fine-tune, making Nvidia a direct beneficiary of this architecture as the provider of the foundational model layer."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Baker explicitly names Microsoft as a beneficiary of the hybrid/multi-model enterprise architecture, likely due to its enterprise distribution, Azure infrastructure, and ability to serve as the orchestration and deployment layer."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Gemini is mentioned only as one of the frontier models used in the Grockbot example, not as a structural beneficiary \u2014 in fact, the thesis implies frontier model providers like Google face risk from enterprises reducing dependence on them. Remove."
+    },
+    {
+      "ticker": "META",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Meta's Llama series is the leading open-source model family and is the most likely candidate for the open-source base model enterprises fine-tune in this architecture. Baker's thesis directly implies the open-source model provider benefits, and Meta is the unambiguous US-listed leader here."
+    },
+    {
+      "ticker": "PLTR",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Palantir is not mentioned or clearly implied in this thesis. While it operates in enterprise AI, the thesis does not specifically implicate it as a subject or beneficiary. Remove."
+    },
+    {
+      "ticker": "CRM",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Salesforce is not specifically named or clearly implied as a beneficiary of the hybrid model architecture thesis. Its inclusion appears to be bleed from adjacent enterprise software themes. Remove."
+    },
+    {
+      "ticker": "WDAY",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Workday is not mentioned or clearly implied in this thesis. Remove as contamination from adjacent enterprise software themes."
+    },
+    {
+      "ticker": "SNOW",
+      "classification": "TANGENTIAL",
+      "was_original": false,
+      "reasoning": "Snowflake is not mentioned or clearly implied in this thesis. Remove as contamination from adjacent data/cloud themes."
+    }
+  ]
+}

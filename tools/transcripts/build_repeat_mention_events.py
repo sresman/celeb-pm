@@ -26,6 +26,7 @@ Three-way slice (repeat mentions, excluding thesis-close/reversal rows):
 
 Usage:
     python -m tools.transcripts.build_repeat_mention_events [--force-refetch]
+                                                            [--attribution {subject,all}]
 """
 
 from __future__ import annotations
@@ -34,6 +35,7 @@ import argparse
 import bisect
 import csv
 import json
+from pathlib import Path
 from typing import Any
 
 from openpyxl import Workbook  # type: ignore[import-untyped]
@@ -41,6 +43,8 @@ from openpyxl.styles import Font  # type: ignore[import-untyped]
 
 from . import targets
 from .theme_returns_v2 import (
+    ATTRIBUTION_MODES,
+    DEFAULT_ATTRIBUTION,
     CALENDAR_SYMBOL,
     INSUFFICIENT_DATA,
     NO_BASKET,
@@ -54,7 +58,9 @@ from .theme_returns_v2 import (
     apply_cluster_overrides,
     apply_event_override,
     cluster_theses,
+    describe_attribution,
     fetch_prices,
+    filter_by_attribution,
     find_event_override,
     is_stance_reversal,
     load_api_key,
@@ -65,8 +71,8 @@ from .theme_returns_v2 import (
 ANALYSIS_DIR = targets.REPO_ROOT / "analysis"
 TIMELINE_JSON = ANALYSIS_DIR / "thesis_timeline_v2_flat.json"
 BASKETS_JSON = ANALYSIS_DIR / "theme_baskets_v3.json"
-OUTPUT_CSV = ANALYSIS_DIR / "step4_signal_events_v9_with_returns_extended.csv"
-OUTPUT_XLSX = ANALYSIS_DIR / "step4_signal_events_v9_with_returns_extended.xlsx"
+OUTPUT_CSV = ANALYSIS_DIR / "step4_signal_events_v10_with_returns_extended.csv"
+OUTPUT_XLSX = ANALYSIS_DIR / "step4_signal_events_v10_with_returns_extended.xlsx"
 
 HORIZONS: dict[str, int] = {
     "1m": 21, "1q": 63, "6m": 126, "9m": 189, "1y": 252, "18m": 378, "2y": 504,
@@ -261,7 +267,17 @@ def _slice_groups(rows: list[dict[str, Any]]) -> list[tuple[str, list[dict[str, 
             ("3_control_no_criteria", g3)]
 
 
-def write_xlsx(rows: list[dict[str, Any]]) -> None:
+def _mode_path(base: Path, mode: str) -> Path:
+    """Only the default attribution mode writes the deliverable path.
+
+    Any other mode is suffixed, so a comparison run can never overwrite it.
+    """
+    if mode == DEFAULT_ATTRIBUTION:
+        return base
+    return base.with_name(f"{base.stem}_{mode}{base.suffix}")
+
+
+def write_xlsx(rows: list[dict[str, Any]], out_xlsx: Path) -> None:
     wb = Workbook()
     ws = wb.active
     ws.title = "signal_events"
@@ -283,17 +299,26 @@ def write_xlsx(rows: list[dict[str, Any]]) -> None:
         st = _slice_stats(grp)
         ss.append([name] + [st.get(c, "") for c in cols[1:]])
     ss.freeze_panes = "B2"
-    wb.save(OUTPUT_XLSX)
+    wb.save(out_xlsx)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--force-refetch", action="store_true")
+    parser.add_argument("--attribution", choices=ATTRIBUTION_MODES,
+                        default=DEFAULT_ATTRIBUTION,
+                        help="'subject' (default) keeps only theses the "
+                             "attribution audit assigned to the subject; 'all' "
+                             "is the pre-attribution behaviour and writes to "
+                             "_all-suffixed paths.")
     args = parser.parse_args()
 
     api_key = load_api_key()
     baskets = json.loads(BASKETS_JSON.read_text())
-    theses = json.loads(TIMELINE_JSON.read_text())
+    all_theses = json.loads(TIMELINE_JSON.read_text())
+    theses, attribution_counts = filter_by_attribution(all_theses, args.attribution)
+    print(describe_attribution(
+        attribution_counts, len(theses), len(all_theses), args.attribution))
     overrides = load_overrides()
     print(f"Loaded {len(theses)} theses, {len(baskets)} themes, "
           f"{len(overrides['cluster_overrides'])} cluster + "
@@ -334,14 +359,16 @@ def main() -> None:
         r.update(compute_returns_7h(r["date"], basket, r["basket_direction"], skip, prices, calendar))
 
     rows.sort(key=lambda e: (e["date"], e["theme"]))
-    with OUTPUT_CSV.open("w", newline="") as f:
+    out_csv = _mode_path(OUTPUT_CSV, args.attribution)
+    out_xlsx = _mode_path(OUTPUT_XLSX, args.attribution)
+    with out_csv.open("w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=OUTPUT_FIELDS)
         writer.writeheader()
         writer.writerows(rows)
-    print(f"Wrote {len(rows)} rows → {OUTPUT_CSV}")
+    print(f"Wrote {len(rows)} rows → {out_csv}")
 
-    write_xlsx(rows)
-    print(f"Wrote xlsx → {OUTPUT_XLSX}")
+    write_xlsx(rows, out_xlsx)
+    print(f"Wrote xlsx → {out_xlsx}")
 
     for name, grp in _slice_groups(rows):
         st = _slice_stats(grp)

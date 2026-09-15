@@ -1,0 +1,191 @@
+{
+  "label": "allin_2025_predictions_2025jan",
+  "date": "2025-01-04",
+  "source": "All-In Podcast \u2014 2025 predictions (bestie guest Gavin Baker)",
+  "host": "Jason Calacanis, Chamath, David Sacks, David Friedberg (Gavin Baker panelist)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T9",
+      "summary": "Big businesses that use AI thoughtfully will be the primary winners in the near term due to test-time compute advantages",
+      "tickers": [],
+      "quote": "if you're a big business and you can pay a million dollars to let an AI think for 6 weeks",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The transcript shows a direct address 'Gavin what do you got' immediately before the speaker says 'profoundly agree' and then delivers the big-businesses-as-AI-winners thesis including the quoted fragment about paying a million dollars to let AI think for 6 weeks."
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "Waymo is a major potential deal target or IPO candidate in 2025 given rapid market share gains",
+      "tickers": [
+        "GOOGL",
+        "UBER",
+        "LYFT"
+      ],
+      "quote": "waymo is now a 22% market share of rides in SF which is the same as Lyft",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The transcript window for T11 is only the intro segment where Jason introduces Gavin Baker; the quote fragment about Waymo's 22% market share does not appear in this window, making attribution impossible."
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "America could print 5%+ real GDP growth at some point in the next four years due to AI productivity and deregulation",
+      "tickers": [],
+      "quote": "America will print at least one year of greater than 5% GDP growth real GDP growth",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The transcript window for T13 is the same intro segment and does not contain the quote fragment about 5% real GDP growth, so no speaker can be identified from this window."
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "High bandwidth memory (HBM) producers are the best performing asset of 2025 due to persistent compute scarcity",
+      "tickers": [
+        "MU"
+      ],
+      "quote": "high bandwidth memory is a bigger part of in cogs on gpus than Taiwan Semi",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The host directly addresses 'Gavin what would be the best performing asset of 2025' and the HBM answer immediately follows, with Baker self-identifying via fund-CIO framing about HBM in GPU COGS."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Inference compute and test-time compute will cause a second GPU/accelerator shortage in 2025 analogous to 2023",
+      "tickers": [
+        "NVDA",
+        "MU"
+      ],
+      "quote": "we are going to run out of gpus accelerators compute in 2025 the same way we did in 23",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote about running out of GPUs/accelerators in 2025 appears in Baker's extended remarks during the best-performing-asset segment after being directly called on by the host."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Enterprise application software (SaaS) will be the worst performing asset class of 2025 as AI agents displace them",
+      "tickers": [
+        "CRM",
+        "NOW",
+        "WDAY"
+      ],
+      "quote": "enterprise application software I think is going to be in a lot of pain",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Host says 'worst performing asset of 2025 Gavin' and Baker's answer about enterprise application software immediately follows, confirmed by Chamath then saying 'I think Gavin just absolutely nailed it.'"
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Frontier AI labs will stop releasing leading-edge models publicly to prevent knowledge distillation and IP theft",
+      "tickers": [],
+      "quote": "frontier labs stop releasing their leading edge models to prevent knowledge distillation",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The turn begins with Baker responding to Chamath's contrarian take, self-identifies with 'my most cont belief' and 'as far as a specific prediction for 25,' and Freeberg's turn follows after Baker's remarks."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Government service providers / federal contractors are the biggest business losers of 2025 due to DOGE scrutiny",
+      "tickers": [
+        "ACN",
+        "CTSH",
+        "INFY"
+      ],
+      "quote": "you do not want to have the United States government at any level is over 35% of your revenue",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Host directly asks 'biggest business loser for 2025 what's your prediction Gavin Baker' and the government service providers answer immediately follows."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Traditional auto OEMs are uninvestable and will be forced into mega-mergers as Tesla and Chinese EVs dominate",
+      "tickers": [
+        "STLA",
+        "VWAGY",
+        "HMC",
+        "NSANY",
+        "TSLA"
+      ],
+      "quote": "they're going to lose their Chinese business because they don't make competitive products anymore",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Host asks 'Gavin you got a spread trade are you short these names' and Baker responds agreeing with Chamath and adding 'they're going to lose their Chinese business,' confirming Baker as speaker."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "The full-stack AI provider (owning compute + model) will be the ultimate AI winner; renting compute is a structural disadvantage",
+      "tickers": [
+        "GOOGL",
+        "AMZN",
+        "MSFT"
+      ],
+      "quote": "the ultimate AI winner will be the one with the lowest cost of infrastructure",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Host asks 'Gavin what do you think to be the biggest business deal in 2025' and Baker's M&A/Intel/full-stack AI answer follows, ending with 'the ultimate AI winner will be the one with the lowest cost of infrastructure.'"
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "AI will make more progress per quarter in 2025 than it did per year in 2023-2024 due to three multiplicative scaling axes",
+      "tickers": [],
+      "quote": "AI is going to make more progress per quarter in 2025 than it did per year in 23 and 24",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Host says 'Gavin what do you got' for most anticipated 2025 trend and Baker's answer about AI making more progress per quarter immediately follows, with self-referential 'I sent you a chart.'"
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "FSD is crossing into mainstream adoption and Tesla's autonomous driving will compound at an accelerating rate in 2025",
+      "tickers": [
+        "TSLA"
+      ],
+      "quote": "FSD works today and it's going to cross into mainstream adoption",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "The transcript window is the show intro with no speaker markers near the FSD quote; cannot determine who spoke it from this window."
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "M&A wave is coming after four years of regulatory suppression; Intel will be subject to a significant deal",
+      "tickers": [
+        "INTC"
+      ],
+      "quote": "something will happen with Intel and that will be big and hopefully it's good for America",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Host asks 'Gavin what do you think to be the biggest business deal in 2025' and Baker's answer about M&A wave and Intel immediately follows in the same turn."
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "AI will amplify economic inequality significantly in the near term before potentially democratizing opportunity",
+      "tickers": [],
+      "quote": "AI is going to really amplify inequality for some period of time",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote 'AI is going to really amplify inequality for some period of time' follows Freeberg's socialist-movements prediction with Baker adding 'I totally agree I think AI\u2026' in a turn that uses CIO-register framing about test-time compute advantage."
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Zipline autonomous drones are a compelling investment in last-mile delivery for suburban America",
+      "tickers": [],
+      "quote": "autonomous drones they really are the best way to deliver almost anything to suburban America",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker says 'there's a company called zipline which my firm is an investor in' immediately before the autonomous drones quote, confirming Baker as speaker via self-identification of fund investment."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast \u2014 AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T18",
+  "summary": "Fireworks AI's Nexus product is the best current instantiation of the hybrid multi-model enterprise architecture",
+  "summary_extended": "Baker argues that Fireworks AI's Nexus product is currently the best broad instantiation of the hybrid multi-model enterprise architecture, which he views as the dominant future paradigm for enterprise AI deployment. Nexus enables enterprises to select a frontier model, fine-tune an open-source model on proprietary data via reinforcement learning, and route between them transparently \u2014 a capability set Baker sees as uniquely comprehensive. He notes that Fireworks CEO Lynn articulated this vision before Palantir's Karp and Microsoft's Nadella adopted similar language, suggesting Fireworks has a conceptual and product lead. The investment implication is complicated by Fireworks being a private company; Baker names Goldman Sachs, Morgan Stanley, JP Morgan, Fidelity, and a16z as target enterprise customers but does not present a direct public-equity trade. The thesis is primarily informational about a private company's product leadership, with Palantir and Microsoft cited only as lagging adopters of the same architectural language rather than as primary beneficiaries.",
+  "detail": "Baker calls Fireworks Nexus 'the best broad instantiation' of the hybrid model future outside of Grockbot, Cursor, and Harvey. Nexus allows enterprises to choose frontier model, fine-tune open-source model on proprietary data via RL, and route transparently. Baker cites Goldman Sachs, Morgan Stanley, JP Morgan, Fidelity, a16z as target customers. Lynn (Fireworks CEO) was the first to articulate this vision before Karp (Palantir) and Nadella (Microsoft) adopted similar language.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker names it specifically as 'the best broad instantiation' \u2014 clear positive view but private company",
+  "themes": [
+    "enterprise AI",
+    "AI infrastructure",
+    "open source AI"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "the best broad instantiation of that today...is actually just the Fireworks Nexus product",
+  "tickers_named_original": [
+    "PLTR",
+    "MSFT"
+  ],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "GS",
+    "MS",
+    "JPM"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "PLTR",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Palantir is cited only as a company whose CEO later adopted similar architectural language to Fireworks \u2014 it is not the subject of the thesis nor a beneficiary; if anything it is positioned as a follower, not a leader in this framing"
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft's Nadella is mentioned only as having adopted similar language after Fireworks CEO Lynn, making MSFT a contextual reference rather than a subject or beneficiary of this thesis"
+    },
+    {
+      "ticker": "GS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Goldman Sachs is named as a potential Fireworks Nexus customer, not as an equity beneficiary of the thesis; customer status does not make it a direct beneficiary in an investment sense"
+    },
+    {
+      "ticker": "MS",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Morgan Stanley is named as a potential Fireworks Nexus customer only; same reasoning as GS \u2014 customer mention does not constitute investment beneficiary status"
+    },
+    {
+      "ticker": "JPM",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "JP Morgan is named as a potential Fireworks Nexus customer only; same reasoning as GS and MS \u2014 no investment thesis implication for JPM itself"
+    }
+  ]
+}

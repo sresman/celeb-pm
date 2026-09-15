@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-14",
+  "source": "a16z Podcast \u2014 Is AI a bubble? Data centers, GPUs, and the AI economy",
+  "thesis_id": "T14",
+  "summary": "AI consumer business models will shift toward outcome-based affiliate fees, compressing the systematic advertiser overpayment inefficiency that sustained Google's ad business.",
+  "summary_extended": "Baker argues that Google's advertising business has long benefited from a structural inefficiency: advertisers systematically overvalue the organic retention of customers they acquire, causing them to persistently overpay for ad placements. Google never built a true marketplace that would have corrected this mispricing, allowing the inefficiency to persist and inflate its ad revenue. As AI agents emerge with outcome-based affiliate fee models, Baker contends these models will close the feedback loop between ad spend and actual customer value, squeezing out the overpayment premium that has historically padded Google's economics. The investment implication is a long-term structural headwind to GOOGL's advertising revenue and margins, though Baker acknowledges timing remains uncertain. No specific numerical targets or timeframes are cited, but the thesis is framed as an inevitable structural shift rather than a near-term catalyst.",
+  "detail": "Google never built a marketplace because advertisers systematically overvalue organic customer retention post-acquisition, leading to persistent overpayment. AI agents with affiliate fee models will close this loop and squeeze out that inefficiency. This is a structural headwind to Google's advertising economics long-term.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker presents this as a logical structural argument but acknowledges uncertainty on timing.",
+  "themes": [
+    "consumer internet",
+    "software/SaaS disruption",
+    "AI model competition"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "that inefficiency will be squeezed out",
+  "tickers_named_original": [
+    "GOOGL"
+  ],
+  "tickers_direct": [
+    "GOOGL"
+  ],
+  "tickers_subject": [
+    "GOOGL"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about the structural headwind to Google's advertising economics from AI-driven affiliate fee models displacing the inefficiency that sustained Google's ad business."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "label": "cnbc_squawk_spacex_debut_2026jun",
+  "date": "2026-06-12",
+  "source": "CNBC Squawk on the Street \u2014 SpaceX public-debut day: orbital compute economics, compute shortage, IPO",
+  "host": "CNBC (Quintanilla/Faber/Eisen)",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "SpaceX's rapid entry into cloud computing positions it as a major hyperscaler within weeks of launch",
+      "tickers": [
+        "SPCE",
+        "ORCL"
+      ],
+      "quote": "fourth largest cloud ahead of Oracle and they did that in one month",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote follows a host question directed at Baker ('What does Elon need to do...') and Baker is directly named and introduced as the guest; 'My firm participated in the IPO' self-identifies him as the speaker throughout this turn."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Orbital compute will be structurally cheaper than terrestrial compute once Starship is reusable, making space the dominant long-term compute platform",
+      "tickers": [
+        "SPXC"
+      ],
+      "quote": "costs 30 billion to put a gigawatt of compute in space relative to 60 billion",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The orbital compute cost math ('costs 30 billion to put a gigawatt of compute in space relative to 60 billion') follows a host question addressed to 'Gavin' and is answered in the same continuous turn where Baker says 'Yeah I think orbital compute is going to become a reality.'"
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "SpaceX's gigawatt terrestrial compute buildout is a near-term high-IRR business that should be valued like Amazon's early capex cycle",
+      "tickers": [
+        "SPXC"
+      ],
+      "quote": "55 percent IRR on their Colossus one data center",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Baker is introduced by name and the 55% IRR reference ('per my friends at Altimeters calculation') is in his first substantive answer, consistent with his CIO register and self-identification via 'My firm participated in the IPO' later in the same turn."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "The global compute shortage is severe and worsening, supporting pricing power for all compute providers including neoclouds",
+      "tickers": [
+        "CRWV",
+        "NVDA"
+      ],
+      "quote": "severe compute shortage that is almost growing more severe by the day",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote follows a host question ('is this a situation where there's enough to go around') and the response beginning 'Yeah I think we are in a severe compute shortage' is in Baker's voice, consistent with the continuous guest turn throughout the window."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Terrestrial data centers will never be decommissioned \u2014 once built they retain value \u2014 but orbital compute may dominate new installations within 10-20 years",
+      "tickers": [
+        "EQIX",
+        "DLR"
+      ],
+      "quote": "overwhelming majority of compute installed for planet earth happens in outer space",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The statement about terrestrial data centers never being decommissioned and orbital compute dominating in 10-20 years is in the same continuous Baker turn answering the host's neocloud question, with no speaker change indicated."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Starlink V3 and direct-to-cell are key milestones gating the orbital compute timeline; Starship reusability is the critical enabling technology",
+      "tickers": [
+        "SPXC"
+      ],
+      "quote": "reusing Starship such that we can put Starlink V3 satellites up into space",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The Starlink V3 / Starship reusability framing appears in Baker's answer to the host's question about SpaceX's path as a public company, within the same unbroken guest turn where Baker self-identifies via 'My firm participated in the IPO.'"
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "GPU scarcity gives SpaceX a structural advantage in securing Nvidia allocations because Jensen Huang prioritizes customers who will use GPUs immediately",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "seller of GPUs IE Jensen likes to give them to people who are going to use them",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The Jensen/GPU allocation point is part of Baker's continuous answer to the host's question about SpaceX's valuation path, in the same turn where he self-identifies as a long-term investor whose firm participated in the IPO."
+    }
+  ]
+}

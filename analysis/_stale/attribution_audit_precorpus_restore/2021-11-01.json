@@ -1,0 +1,143 @@
+{
+  "date": "2021-11-01",
+  "source": "Graham & Doddsville (Columbia Business School) \u2014 Investor interview with Gavin Baker, CIO of Atreides Management (Issue 43, Fall 2021)",
+  "host": "Columbia Business School",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "5G is not a meaningful enabler of new use cases and represents a cost treadmill for incumbents",
+      "tickers": [
+        "T",
+        "VZ",
+        "TMUS"
+      ],
+      "quote": "5G changes nothing at all",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote follows 'GB:' speaker tag directly in the transcript, and the surrounding text repeatedly labels sections as 'Gavin Baker, Atreides Management'."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Dish Network is an interesting investment due to structural telecom pricing dynamics favoring new entrants",
+      "tickers": [
+        "DISH",
+        "T",
+        "VZ"
+      ],
+      "quote": "newest network is always the best network because it is empty",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is part of the same 'GB:' response to the G&D question about Dish in the Atreides 13F, with 'Gavin Baker, Atreides Management' headers throughout."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Apple's IDFA change permanently expands Apple's advertising business at the expense of third-party ad platforms",
+      "tickers": [
+        "AAPL",
+        "META"
+      ],
+      "quote": "Apple will probably have a permanently bigger advertising business",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote follows a 'GB:' speaker tag in response to G&D's question about Apple's IDFA change, consistent with Baker's identified responses throughout the transcript."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Internet advertising platforms must evolve toward marketplace/transaction models to build durability",
+      "tickers": [
+        "META",
+        "SNAP",
+        "PINS",
+        "TWTR"
+      ],
+      "quote": "advertising was a hell of a drug for these companies for so long",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is within a 'GB:' tagged response to G&D's question about advertising platforms needing to get closer to transactions, with Baker's name headers surrounding the passage."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "COVID permanently accelerated omni-channel retail, strongly favoring best-in-breed retailers with accessible store footprints",
+      "tickers": [
+        "WMT",
+        "TGT",
+        "HD",
+        "LOW"
+      ],
+      "quote": "COVID forced these companies to truly become omni-channel",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote appears in a 'GB:' tagged response to G&D's question about omni-channel retail, and is even pulled as a direct Baker quote in the sidebar: 'COVID forced these companies to truly become omni-channel...'"
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Starlink is a significant disruptor to leveraged telecom and broadband companies globally",
+      "tickers": [
+        "VSAT",
+        "SATS",
+        "LUMN"
+      ],
+      "quote": "Starlink \u2013 which is going to be very disruptive to a lot of companies",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The Starlink quote appears in a 'GB:' tagged response about crossover investing examples, with self-referential framing ('as a venture investor, I have spent a lot of time with ORAN')."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "AI/ML accelerator startups in 2019-2020 were not close to disrupting incumbent GPU providers",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "how far away they were from actually disrupting GPUs",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is within a 'GB:' tagged response about crossover investing value, referencing Baker's own due diligence on AI accelerator startups and their threat to GPU providers."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Technology investing has a durable 10-20 year cycle structure; cloud/internet cycle still has legs",
+      "tickers": [],
+      "quote": "there do tend to be these very durable 10-to-20-year cycles in tech",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote follows a 'GB:' speaker tag in response to a question about tech specialization, with 'Gavin Baker, Atreides Management' headers and self-referential language throughout."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Consumer and technology sectors have fully merged and must be analyzed together",
+      "tickers": [
+        "ABNB",
+        "MAR",
+        "NFLX",
+        "DIS",
+        "AMZN",
+        "WMT"
+      ],
+      "quote": "consumer and tech have fully merged",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is within a 'GB:' tagged response and is pulled verbatim as a Baker sidebar quote: 'consumer and tech have fully merged. How can you look at Airbnb without doing Marriott?'"
+    },
+    {
+      "thesis_id": "T10",
+      "summary": "Retail participation in markets is a permanent structural change that professional investors must adapt to",
+      "tickers": [],
+      "quote": "retail participation in the market is a permanent change",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote is pulled as a direct Baker sidebar quote ('I do think retail participation in the market is a permanent change') and appears in a 'GB:' tagged response context throughout the transcript."
+    }
+  ]
+}
