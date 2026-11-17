@@ -1298,6 +1298,17 @@ def _top_n_concentration(values: list[float], total: float, n: int = 10) -> floa
     return 100.0 * top / total if total else 0.0
 
 
+def reclass_share_trade(h: dict[str, Any]) -> float:
+    """Dollar value of an IPO-reclass position's share change this quarter, at the
+    quarter-end 13F mark. A position with no prior shares (the IPO quarter) counts in full."""
+    shares = h.get("shares") or 0.0
+    value = h.get("value") or 0.0
+    delta = h.get("shares_delta")
+    if delta is None:  # NEW this quarter (no prior row) -> whole position
+        return float(value)
+    return float(delta) * (value / shares if shares else 0.0)
+
+
 def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> None:
     ws.cell(1, 1, f"{PERIOD_LABEL} 13F — two-manager snapshot").font = TITLE_FONT
     ws.cell(2, 1, "Baker = Atreides Management  ·  Leopold = Situational Awareness  ·  filing-date marks").font = NOTE_FONT
@@ -1310,7 +1321,11 @@ def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> 
     b_net_mtm = sum(h["mtm"] or 0.0 for h in bh)
     reclass_rows = sorted((h for h in bh if h["is_reclass"]), key=lambda h: h["value"], reverse=True)
     reclass_value = baker["reclass_value"]  # SPCX + CBRS
-    b_net_trade_asfiled = b_net_trade_ex + reclass_value  # add reclassifications back as if bought
+    # As-filed = ex-reclass flow + the reclass names' own share change this quarter at the
+    # quarter-end 13F mark. In the IPO quarter the whole position is new (prior shares = 0),
+    # so this equals its full value; afterwards it is only the actual share add/trim.
+    reclass_trades = {h["ticker"]: reclass_share_trade(h) for h in reclass_rows}
+    b_net_trade_asfiled = b_net_trade_ex + sum(reclass_trades.values())
     b_ai_wt = sum(h["weight_eo"] or 0.0 for h in bh if h["is_ai"])
 
     # Leopold aggregates
@@ -1342,7 +1357,8 @@ def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> 
 
     money(5, "Equity book value", baker["equity_value"], leo["equity_value"])
     money(6, "Options notional (informational only; in no total)", baker["options_notional"], None)
-    num(7, "# equity positions", len(bh), len(lc))
+    num(7, "# equity positions (held at quarter-end)", len(bh),
+        sum(1 for h in lc if (h["q2_value"] or 0.0) > 0))
     pct(8, "Top-10 concentration (equity)",
         _top_n_concentration([h["value"] for h in bh], baker["equity_value"]),
         _top_n_concentration([h["q2_value"] or 0.0 for h in lc], leo["equity_value"]))
@@ -1363,7 +1379,9 @@ def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> 
         "their 2026 IPOs — pre-existing private crossover holdings becoming reportable, NOT market",
         f"purchases (${reclass_value/1e9:,.2f}B combined). They are excluded from every net-buying "
         "total and from the thesis-book denominator on these sheets (Holdings, Baskets, Flows).",
-        f"Net trading AS-FILED (reclassifications counted as buys):   ${b_net_trade_asfiled/1e9:,.2f}B",
+        f"Net trading AS-FILED (reclass names' share changes counted as trades: "
+        + ", ".join(f"{t} ${v/1e6:+,.0f}M" for t, v in reclass_trades.items())
+        + f"):   ${b_net_trade_asfiled/1e9:,.2f}B",
         f"Net trading EX-RECLASS (true market flow):   ${b_net_trade_ex/1e9:,.2f}B  "
         f"→ net {'BUYER' if b_net_trade_ex > 0 else 'SELLER'} once SPCX + CBRS are stripped.",
         f"Net mark-to-market (price moves), ex-reclass:   ${b_net_mtm/1e9:,.2f}B.",
