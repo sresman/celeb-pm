@@ -58,15 +58,23 @@ DOLLAR_FMT = "#,##0"
 SIGNED_DOLLAR_FMT = "#,##0;(#,##0)"
 
 # --- Context-sheet inputs (Baker = Atreides; Leopold = Situational Awareness) ---
-BAKER_PERIOD = "2026-06-30"
-BAKER_PRIOR_PERIOD = "2026-03-31"
-BAKER_FILING_DATE = "2026-08-14"
-BAKER_HISTORY_PERIODS = ["2025-09-30", "2025-12-31", "2026-03-31", "2026-06-30"]
+BAKER_PERIOD = "2026-09-30"
+BAKER_PRIOR_PERIOD = "2026-06-30"
+BAKER_FILING_DATE = "2026-11-16"
+BAKER_HISTORY_PERIODS = ["2025-12-31", "2026-03-31", "2026-06-30", "2026-09-30"]
+# Display labels for the current / prior quarter (sheet titles + column headers).
+PERIOD_LABEL = "Q3 2026"
+CUR_Q = "Q3"
+PRIOR_Q = "Q2"
 THEME_BASKETS_PATH = ANALYSIS_DIR / "theme_baskets_v3.json"
 THESIS_PATH = ANALYSIS_DIR / "thesis_timeline_v2_flat.json"
 BAKER_OVERLAY_PATH = ANALYSIS_DIR / "baker_basket_overlay.json"
 TICKER_CLASS_PATH = trig.REPO_ROOT / "data" / "ticker_classifications.json"
-SA_CSV = ANALYSIS_DIR / "sa_q2_2026_mtm_vs_trading.csv"
+SA_CSV = ANALYSIS_DIR / "sa_q3_2026_mtm_vs_trading.csv"
+# Column-name prefixes in SA_CSV for the prior / current quarter (e.g. "q2_shares", "q3_shares").
+SA_PRIOR_COL = "q2"
+SA_CUR_COL = "q3"
+BAKER_DECOMP_CSV = ANALYSIS_DIR / "atreides_q3_2026_mtm_vs_trading.csv"
 SA_BASKETS_PATH = ANALYSIS_DIR / "sa_theme_baskets.json"
 
 # Positions that entered the 13F via an IPO (pre-existing private holding becoming a
@@ -671,9 +679,9 @@ def build_leo_context() -> dict[str, Any]:
         rows.append({
             "ticker": ticker, "company": company, "display": ticker or company,
             "security_type": r["security_type"], "status": r["status"],
-            "q1_shares": trig._f(r["q1_shares"]), "q2_shares": trig._f(r["q2_shares"]),
+            "q1_shares": trig._f(r[f"{SA_PRIOR_COL}_shares"]), "q2_shares": trig._f(r[f"{SA_CUR_COL}_shares"]),
             "share_delta": trig._f(r["share_delta"]), "share_delta_pct": trig._f(r["share_delta_pct"]),
-            "q1_value": trig._f(r["q1_value"]), "q2_value": trig._f(r["q2_value"]),
+            "q1_value": trig._f(r[f"{SA_PRIOR_COL}_value"]), "q2_value": trig._f(r[f"{SA_CUR_COL}_value"]),
             "value_delta": trig._f(r["value_delta"]),
             "mtm": trig._f(r["mtm_component"]), "trade": trig._f(r["trading_component"]),
             "recon_gap": trig._f(r["recon_gap"]), "note": r.get("note", ""),
@@ -777,7 +785,7 @@ def _section(ws: Worksheet, row: int, span: int, text: str) -> None:
 
 HOLDINGS_HEADERS = [
     "ticker", "company", "shares", "market_value",
-    "wt_Q1%", "wt_Q2%", "Δwt_pp", "wt_book%",
+    f"wt_{PRIOR_Q}%", f"wt_{CUR_Q}%", "Δwt_pp", "wt_book%",
     "shares_Δ", "shares_Δ%", "value_Δ$", "MTM_$", "Trading_$", "decomp",
     "change_type", "basket", "also_in", "theme", "cum_ret%",
 ]
@@ -853,7 +861,7 @@ def sheet_baker_ai_basket(ws: Worksheet, ctx: dict[str, Any]) -> None:
     gross_sell = (sum(h["trade"] for h in ai if (h["trade"] or 0.0) < 0)
                   + sum(e["trade"] for e in ctx["exits"] if e["is_ai"]))
 
-    ws.cell(1, 1, "AI / tech-infrastructure basket — Q2 2026").font = TITLE_FONT
+    ws.cell(1, 1, f"AI / tech-infrastructure basket — {PERIOD_LABEL}").font = TITLE_FONT
     r = 3
     for label, val, money in [
         ("AI basket market value", ai_value, True),
@@ -869,7 +877,8 @@ def sheet_baker_ai_basket(ws: Worksheet, ctx: dict[str, Any]) -> None:
         else:
             _put_pct(ws, r, 3, val)
         r += 1
-    ws.cell(r, 1, "Self-funded rotation: gross AI buys ≈ AI trims (Astera-funded Cerebras/CoreWeave).").font = NOTE_FONT
+    ws.cell(r, 1, f"Gross AI buys ${gross_buy/1e6:,.0f}M vs gross AI sells ${gross_sell/1e6:,.0f}M "
+            "(share-based; price moves excluded).").font = NOTE_FONT
     r += 2
 
     _section(ws, r, 5, "Trailing AI-basket weight (ex-SPCX, thesis book)")
@@ -928,9 +937,9 @@ def sheet_baker_baskets(ws: Worksheet, ctx: dict[str, Any]) -> None:
     order = sorted(groups, key=lambda b: (b == "Unassigned", -wt_q2(b)))
 
     # ---- PRIMARY: theme allocation summary ----
-    ws.cell(1, 1, "Baker — theme allocation (Q2 2026), % of thesis-investable equity "
+    ws.cell(1, 1, f"Baker — theme allocation ({PERIOD_LABEL}), % of thesis-investable equity "
             "(ex-SPCX), sorted by current weight").font = TITLE_FONT
-    sum_heads = ["basket", "wt_Q2%", "wt_Q1%", "Δwt_pp", "# held", "net_trade_$"]
+    sum_heads = ["basket", f"wt_{CUR_Q}%", f"wt_{PRIOR_Q}%", "Δwt_pp", "# held", "net_trade_$"]
     sum_widths: list[float] = [40, 10, 10, 10, 8, 16]
     for i, w in enumerate(sum_widths, 1):
         ws.column_dimensions[get_column_letter(i)].width = w
@@ -968,7 +977,7 @@ def sheet_baker_baskets(ws: Worksheet, ctx: dict[str, Any]) -> None:
         r += 1
     ws.cell(r, 1, "Weights are % of thesis-investable equity (COMMON ex IPO-reclass), the same "
             "basis as the triggers. [memo] SPCX = % of TOTAL equity. Δwt includes since-exited "
-            "names in Q1; SPCX excluded from net_trade.").font = NOTE_FONT
+            f"names in {PRIOR_Q}; SPCX excluded from net_trade.").font = NOTE_FONT
     r += 3
 
     # ---- SECONDARY: per-basket position detail ----
@@ -985,7 +994,7 @@ def sheet_baker_baskets(ws: Worksheet, ctx: dict[str, Any]) -> None:
         members = sorted(groups[name]["held"], key=lambda x: x["value"], reverse=True)
         exited = sorted(groups[name]["exited"], key=lambda x: x["prior_value"], reverse=True)
         _section(ws, r, len(heads),
-                 f"{name}   —   wt {wt_q2(name):.1f}% (Q1 {wt_q1(name):.1f}%, "
+                 f"{name}   —   wt {wt_q2(name):.1f}% ({PRIOR_Q} {wt_q1(name):.1f}%, "
                  f"Δ {wt_q2(name)-wt_q1(name):+.1f}pp) · {len(members)} held"
                  + (f" · {len(exited)} exited" if exited else ""))
         r += 1
@@ -1122,7 +1131,7 @@ def sheet_baker_exits_new(ws: Worksheet, ctx: dict[str, Any]) -> None:
         r += 1
     r += 1
     _section(ws, r, len(heads),
-             f"IPO reclassification — {len(reclass_rows)} (entered the 13F at IPO, NOT a Q2 buy)")
+             f"IPO reclassification — {len(reclass_rows)} (entered the 13F at IPO; excluded from flows)")
     for row_h in reclass_rows:
         r += 1
         cell = ws.cell(r, 1, row_h["ticker"] or row_h["cusip"])
@@ -1255,7 +1264,7 @@ def _top_n_concentration(values: list[float], total: float, n: int = 10) -> floa
 
 
 def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> None:
-    ws.cell(1, 1, "Q2 2026 13F — two-manager snapshot").font = TITLE_FONT
+    ws.cell(1, 1, f"{PERIOD_LABEL} 13F — two-manager snapshot").font = TITLE_FONT
     ws.cell(2, 1, "Baker = Atreides Management  ·  Leopold = Situational Awareness  ·  filing-date marks").font = NOTE_FONT
 
     # Baker aggregates. SPCX carries trade=None (IPO reclassification), so these sums
@@ -1322,8 +1331,7 @@ def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> 
         f"Net trading AS-FILED (reclassifications counted as buys):   ${b_net_trade_asfiled/1e9:,.2f}B",
         f"Net trading EX-RECLASS (true market flow):   ${b_net_trade_ex/1e9:,.2f}B  "
         f"→ net {'BUYER' if b_net_trade_ex > 0 else 'SELLER'} once SPCX + CBRS are stripped.",
-        "The AI book was self-funded (sold Astera −$1.04B to fund CoreWeave/Amphenol/etc.); genuinely "
-        "new market capital went to the QQQ hedge, not the AI names.",
+        f"Net mark-to-market (price moves), ex-reclass:   ${b_net_mtm/1e9:,.2f}B.",
     ]
     for i, ln in enumerate(lines, 1):
         cell = ws.cell(r + i, 1, ln)
@@ -1423,7 +1431,7 @@ def main() -> int:
     # --- Context sheets first (foundation), triggers after ---
     baker = build_baker_context()
     leo = build_leo_context()
-    write_baker_decomp_csv(baker, ANALYSIS_DIR / "atreides_q2_2026_mtm_vs_trading.csv")
+    write_baker_decomp_csv(baker, BAKER_DECOMP_CSV)
     sheet_summary(wb.create_sheet("Summary"), baker, leo)
     perf_rows, perf_last = fr.compute_stats()
     sheet_performance(wb.create_sheet("Performance"), perf_rows, perf_last)
