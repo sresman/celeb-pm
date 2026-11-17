@@ -182,3 +182,73 @@ Smaller exits: KEEL, SEI, WhiteFiber, TE, HIVE, BW, PUMP, VSH, CBRS, TSM calls a
 Reply with any edits, or "approve as proposed". Please also say:
 - (a) INNIO's ticker, if you know it
 - (b) whether to map the 25 historical unresolved names now or leave that for later (I recommend later)
+
+---
+
+# Addendum (2026-11-16, after operator approval)
+
+Approved and applied: the six Q3 mappings (NBIS, CRDO, ONON, TBLA, BTDR, IREN), the CREDO→CRDO key rename, every Decision 2 entry, and no IPO reclassifications. INNIO stays unresolved.
+
+## Older unresolved CUSIPs — mapping verification
+
+The real count was **24**, not 25: 31 unresolved, minus the 6 Q3 mappings, minus INNIO.
+
+**Check:** every period the position was held, EODHD's close on the period end (or the last trading day before it) vs. the 13F value ÷ shares. Value units are auto-detected (pre-2023 filings report in $ thousands). A match is within 2%.
+
+**22 mapped** (`source: "manual"` in `data/cusip_ticker_map.json`; every held period matches):
+
+| CUSIP | Company | Ticker | Periods matched |
+|---|---|---|---|
+| 69120X107 | Owlet | OWLT | 4/4 |
+| 83542D102 | Sonder Holdings | SOND | 6/6 |
+| 902104108 | II-VI (now Coherent; old CUSIP) | IIVI | 3/3 |
+| G0370L124 | Altimeter Growth Corp (units) | AGCUU | 4/4 |
+| G19550113 | Catalyst Partners Acquisition (units) | CPARU | 7/7 |
+| G29018101 | dLocal | DLO | 4/4 |
+| G39387108 | GlobalFoundries | GFS | 2/2 |
+| G4124C109 | Grab Holdings | GRAB | 3/3 |
+| G4124C117 | Grab Holdings (warrants) | GRABW | 1/1 |
+| G65163100 | Joby Aviation | JOBY | 17/17 |
+| G66721104 | Norwegian Cruise Line | NCLH | 2/2 |
+| G6683N103 | Nu Holdings | NU | 5/5 |
+| G68707101 | PagSeguro Digital | PAGS | 2/2 |
+| G6964L107 | Paysafe | PSFE | 1/1 |
+| G7997R103 | Seagate Technology (Leopold) | STX | 1/1 |
+| G96115103 | WhiteFiber (Leopold) | WYFI | 3/3 |
+| M6191J100 | JFrog | FROG | 3/3 |
+| M87915274 | Tower Semiconductor (Leopold) | TSEM | 2/2 |
+| M98068105 | Wix.com | WIX | 5/5 |
+| N07059210 | ASML Holding (both managers) | ASML | 3/3 |
+| N14506104 | Elastic | ESTC | 12/12 |
+| V7780T103 | Royal Caribbean | RCL | 1/1 |
+
+**2 left unmapped:**
+
+| CUSIP | Company | Tried | Result |
+|---|---|---|---|
+| 09077J107 | Bird Global | BRDS | Off by exactly 25× in all 3 periods. EODHD's series looks adjusted for Bird's 2023 1-for-25 reverse split. |
+| 85572U102 | Starry Group | STRY | No EODHD data (delisted 2023). |
+
+Both were sub-$1M positions in 2021–22.
+
+Like the Q3 mappings, these entries live in gitignored `data/cusip_ticker_map.json`. This table is the tracked record.
+
+## Older mappings — AI-basket proposals (awaiting approval; NOT applied)
+
+### Something to decide first: Elastic is already counted as AI
+
+`data/ticker_classifications.json` already had `ESTC → theme "AI/Data Infrastructure"`. Once ESTC resolved, the subtheme and new-position triggers (which fall back to that theme) started counting it as AI from **2020** on. That adds 6 events, all ESTC: 2020-05 new subtheme and cross 2%/4%; 2021-08 cross 2% and new 2% position; 2023-08 cross 2% and new 2% position. It also reshapes the 2024-05 "AI/Data Infrastructure" crosses. The ramp's net-buying numbers are unchanged, because the ramp filter reads only `ai_basket_reclassification.json`.
+
+### Proposed entries for `analysis/ai_basket_reclassification.json`
+
+Existing buckets only.
+
+| Ticker | Held by (size) | Proposed | Reason |
+|---|---|---|---|
+| ESTC | Baker 2019–2025 (peak ~$130M) | `date_segments`: before 2023-01-01 → `ai:false`, `Enterprise SaaS`; from 2023-01-01 → `ai:true`, `AI/Data Infrastructure` | Same date-split approach as NTNX. 2019–22 Elastic was search/observability SaaS. The vector-search/AI pitch dates from 2023, consistent with MDB (AI at its May 2024 entry) and SNOW (Feb 2025). **Effect:** drops the four 2020 and 2021 ESTC events; keeps 2023-08 and 2024-05. |
+| ASML | Baker Q4 2024–Q1 2025 ($204M → $13M); Leopold Q1 2026 ($494M) | `ai:true`, `Semiconductor Supply Chain` | Lithography toolmaker, same bucket as LRCX. It enters the ramp basket, so the Q4 2024 and Q1 2025 ramp math changes. |
+| GFS | Baker Q4 2024 ($16M), Q1 2026 ($21M) | `ai:true`, `Semiconductor Manufacturing` | Foundry, same as INTC. Baker's overlay already puts it in this bucket by CUSIP. |
+| IIVI | Baker 2021 (~$100M at peak) | `ai:false`, `Semiconductor Supply Chain` | Optical/compound-semi materials before the AI narrative. Same reasoning as NET's 2020 entry (`ai:false`, "pre-AI narrative"). Today's COHR (new CUSIP) stays AI as-is. |
+| STX, TSEM, WYFI | Leopold only | Consistency only: STX `ai:true` `AI/Datacenter Storage`; TSEM `ai:true` `Semiconductor Manufacturing`; WYFI `ai:true` `AI/Datacenter Compute` | **No effect on any output.** The AI basket file is only read for Baker. For Leopold, they'd go in `sa_theme_baskets.json` as tickers: STX and TSEM → `Memory / semis`, WYFI → `Neoclouds` (WhiteFiber is already matched there by company-name alias). |
+
+**No AI entry proposed** for OWLT, SOND, AGCUU, CPARU, DLO, GRAB/GRABW, JOBY, NCLH, NU, PAGS, PSFE, FROG, WIX, RCL. These are consumer, fintech, travel, SPAC and dev-tool names, and absence correctly makes them non-AI. WIX already has `ai:false`. JFrog would mirror GTLB (`ai:false`), so no entry is needed.
