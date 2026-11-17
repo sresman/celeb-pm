@@ -35,6 +35,8 @@ Because the portfolio ~tripled, the classifier reports **0 ACTIVE_ADD and only 1
 | **NET deliberate buying** | **+$5,166M** | **+36.0%** |
 | Full exits (funded the buying; not counted as "selling") | $1,074M / 18 names | — |
 
+> **Correction (2026-11-17):** full exits are selling. Counting them, as the spec intended, this as-filed portfolio-wide figure becomes **+$5,166M − $1,074M = +$4,092M (+28.5%)**, which is still above 5%. Both numbers on this page are superseded by the ex-SPCX/CBRS basis adopted 2026-09-03: Q2 ex-reclass net trading is **−$1.26B** (net seller; corrected from −$1.35B on 2026-11-16 when option exits were removed). The narrow AI ramp for Q2, on the current pipeline with exits counted, is **−18.43% (−$1,067M)**, versus −12.51% with exits excluded. It does not fire either way.
+
 **Ramp trigger: FIRES at +36% net deployment** (threshold 5%). This is deliberate capital deployment, not price drift.
 
 > **Why the automated AI-basket ramp does *not* fire (and shouldn't).** With Q2's new tickers now added to `ai_basket_reclassification.json`, the narrow "picks-and-shovels" AI basket's share-based **net deployment for Q2 is −$48M (−0.3% of book)** — gross AI buying of $1,108M (Cerebras $687M, CoreWeave +$131M, Amphenol $113M, Cipher $88M, PDF $47M, Akamai +$27M) almost exactly offset by $1,156M of AI trims, dominated by **Astera Labs −$1,038M**. In other words the **AI-infra rotation was self-funded — he sold Astera to fund Cerebras/CoreWeave/Amphenol.** The genuinely new $5.17B of net capital went to **SpaceX (space/orbital, excluded from the AI basket) + the QQQ hedge**, not to the AI book. So the portfolio-wide ramp fires (+36%) while the AI-specific ramp is flat — both are correct and the contrast is the point.

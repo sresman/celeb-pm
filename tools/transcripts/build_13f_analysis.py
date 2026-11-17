@@ -269,20 +269,18 @@ def compute_net_buying(
       shares up   -> gross_buying  += delta_shares * current_price_per_share  (tickers_bought)
       shares down -> gross_selling += delta_shares * current_price_per_share  (tickers_sold)
       new         -> gross_buying  += current_value                           (tickers_new)
-      exited      -> listed in tickers_exited (NOT counted as selling; see below)
+      exited      -> gross_selling += prior_value                             (tickers_exited)
     net = gross_buying - gross_selling, expressed as % of total portfolio value
     (all positions, current period). Dollar figures are normalized to whole dollars:
     value_reported is in $thousands for pre-2023 filings and whole $ afterward, detected
     per filing via the max implied price/share (>= $15 => already dollars, else x1000).
 
-    DEVIATION from the task's written spec: full exits (held prior, absent now) are
-    NOT counted as selling. The spec text says "exited positions: selling += prior_value",
-    but that yields May-2025 +$381M / May-2026 -$402M; excluding exits reproduces the
-    stated verification targets exactly (May-2025 +$561,990,623 ~= +$562M; May-2026
-    -$122M net-selling => no fire). See implementation notes. Flip `COUNT_EXITS` to
-    restore spec-literal behavior. (tickers_exited is display-only and unaffected.)
+    Full exits (held prior, absent now) count as selling at their prior-quarter value,
+    as the spec says ("exited positions: selling += prior_value"). An earlier build
+    excluded them only to match check figures that turned out to exclude exits; that
+    was a bug, not a decision, and was corrected 2026-11-17.
     """
-    COUNT_EXITS = False
+    COUNT_EXITS = True  # spec: a full exit is selling at its prior-quarter value
     positions = json.loads((views_dir.parent / "positions.json").read_text(encoding="utf-8"))
     periods = sorted({r["period"] for r in positions})
     prior_of = {p: (periods[i - 1] if i > 0 else None) for i, p in enumerate(periods)}

@@ -249,6 +249,10 @@ from the same CSVs), so the "append, don't overwrite" intent holds.
   is decisive that the reference figures excluded exits. Implemented with `COUNT_EXITS = False` (flip
   to restore spec-literal). Note the two verification VERDICTS (May-2025 fires, May-2026 doesn't) hold
   under either setting — only the dollar magnitudes change.
+  **RESOLVED 2026-11-17 — reverted to the spec.** This was a bug, not a decision: the check figures
+  happened to exclude exits. `COUNT_EXITS = True` now; a full exit is selling at its prior-quarter value
+  (May-2025 = +$381M, as the spec rule gives). Ramp events 12 → 9 (2023-11-14, 2024-11-14, 2026-11-16
+  no longer fire). Guard: `tests/test_ramp_net_buying.py`.
 - **Verification:** May-2025 FIRES (net +$562M, 17.06%); May-2026 does NOT (net −$122M). Population:
   OLD weight-drift {2020-08-14,2021-06-01,2022-02-14,2022-11-14,2023-02-14,2023-11-14,2024-05-15,
   **2024-08-14**,2025-05-15,**2026-05-18**} → NEW net-buying drops 2024-08-14 & 2026-05-18 (passive
@@ -267,8 +271,8 @@ after ai_weight_current and before the composition/return blocks. Only those two
 
 - tickers_bought/sold = HELD positions whose share count rose/fell (Δshares×current price),
   sorted by $ desc, formatted "TICK +$NNM" / "TICK -$NNM". tickers_new = brand-new positions
-  (tickers only, $-sorted). tickers_exited = held-prior/gone (display only; not counted in
-  selling, per the net-buying deviation). New positions are NOT in tickers_bought (separate).
+  (tickers only, $-sorted). tickers_exited = held-prior/gone (counted in selling at prior
+  value since 2026-11-17; display list unchanged). New positions are NOT in tickers_bought (separate).
 - **Units:** value_reported is $thousands pre-2023, whole-$ after (verified: max implied
   price/share <$3.5 pre-2023-Q4 vs >$400 after). `compute_net_buying` detects per filing
   (max implied price ≥$15 => dollars, else ×1000) and normalizes all $ outputs to real

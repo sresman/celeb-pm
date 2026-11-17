@@ -144,3 +144,13 @@ Analysis layer only (`tools/transcripts/`, `analysis/`); the `src/celebpm` pipel
 - **Leopold MTM CSV method** (no in-repo generator, same as Q2): EODHD close at both period ends;
   MTM = prior_sh × (p_cur − p_prior), trading = Δsh × p_cur, recon_gap = value_delta − MTM − trading;
   NEW = all trading at the 13F value; options = N/A (notional only). Rows sorted by |value_delta|.
+- **BUG FIXED (2026-11-17) — ramp now counts full exits as selling** (`COUNT_EXITS = True` in
+  `build_13f_analysis.compute_net_buying`), as the original spec said. The old exclusion only matched
+  check figures that turned out to exclude exits; it was never a decision. Ramp events 12 → 9: 2023-11-14
+  (+9.52% → +4.36%), 2024-11-14 (+10.48% → −3.41%) and **Q3 2026 (+7.04% → +2.20%)** no longer fire.
+  Guard: `tests/test_ramp_net_buying.py`. Latent issue: an exit's prior value is in the prior filing's
+  units; the one $k→$ switch (2023-02-14) had no AI exits, so there's no effect today.
+- **Baker Holdings sheet: traded weight change on two bases (2026-11-17).** traded_Δwt_pp = Trading_$ ÷
+  current-quarter common equity, (a) ex SPCX/CBRS and (b) entire portfolio. SPCX/CBRS count their actual
+  share change as trading on (b) only, and none in their IPO quarter. Exits listed as rows; total row checks
+  Σ traded = net trading ÷ denominator (Q3: +6.630 pts ex; +4.423 pts entire).

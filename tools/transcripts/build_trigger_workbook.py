@@ -1573,8 +1573,10 @@ def sheet_performance(ws: Worksheet, rows: list[dict[str, Any]], last: str) -> N
         "Tradeable basket: NewPosition=named ticker; NewSubtheme=entering tickers; "
         "Cross=all subtheme tickers; Ramp=narrow AI picks-and-shovels basket held that filing.",
         "Read: beats SPY at every horizon; vs SMH the edge is thin (beat-rate < 50% at most "
-        "horizons) — largely AI-beta. AI_BASKET_RAMP (deliberate deployment) is the only trigger "
-        "that beats SMH consistently. Single-regime (2020–26 AI bull); avg ≫ median (right-skew).",
+        "horizons) — largely AI-beta. AI_BASKET_RAMP (deliberate deployment, exits counted as "
+        "selling) is the only trigger with positive average excess vs SMH at every horizon, but "
+        "its SMH beat rate is near or below 50% at the short and long ends. "
+        "Single-regime (2020–26 AI bull); avg ≫ median (right-skew).",
     ]:
         ws.cell(r, 1, note).font = NOTE_FONT
         r += 1

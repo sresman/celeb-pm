@@ -1,5 +1,7 @@
 # Atreides (Gavin Baker) — Q3 2026 13F Trigger Analysis
 
+> **Updated 2026-11-17:** the ramp now counts full exits as selling, as the spec intended (`COUNT_EXITS = True`). Under the corrected rule the Q3 ramp is **+2.20% and does not fire**. It read +7.04% before the fix.
+
 **Filing:** 13F-HR, accession `0001777813-26-000013`, period **2026-09-30**, filed **2026-11-16**
 **Baseline:** Q2 2026 (`0001777813-26-000009`, period 2026-06-30)
 **Ingested via:** `python -m celebpm.pipeline 0001777813 --data-root data` (28 filings parsed, 0 skipped)
@@ -8,7 +10,7 @@
 
 ---
 
-## Headline: a real AI ramp under a flat book
+## Headline: an AI rotation under a flat book, not a ramp
 
 | Metric | Q2 2026 | Q3 2026 | Change |
 |---|---|---|---|
@@ -19,7 +21,7 @@
 | SPCX + CBRS (IPO-reclass memo) | $5.36B | $4.75B | marks down |
 
 **Signals this quarter:**
-- **AI_BASKET_RAMP fires: +7.04%** of thesis-investable equity (threshold 5%).
+- **AI_BASKET_RAMP does not fire: +2.20%** of thesis-investable equity (threshold 5%). Full exits now count as selling.
 - **AI/Datacenter Compute crosses 4%**: 3.96% → 7.40%, driven by Nebius.
 - **NEW_AI_POSITION_2PCT: Microsoft** at 2.36% (hyperscaler re-entry; last held Q4 2025).
 
@@ -42,6 +44,13 @@ The IPO-reclass names are excluded from every figure above. Their own share chan
 
 ### Ramp, by name (points of $5,987M thesis equity)
 
+| Bucket | $ | pts |
+|---|---|---|
+| Gross buying (adds + new) | +$1,027M | +17.15 |
+| Trims | −$605M | −10.11 |
+| Full exits (APH, SMTC, CIFR) | −$290M | −4.84 |
+| **Net** | **+$131M** | **+2.20** → no fire |
+
 | Name | $ | pts |
 |---|---|---|
 | ALAB (add) | +$442M | +7.38 |
@@ -57,11 +66,14 @@ The IPO-reclass names are excluded from every figure above. Their own share chan
 | CRDO | −$55M | −0.92 |
 | U | −$103M | −1.72 |
 | MU (711K → 304K sh) | −$434M | −7.25 |
-| **Net** | **+$421M** | **+7.04** |
+| APH (exit) | −$113M | −1.88 |
+| SMTC (exit) | −$89M | −1.49 |
+| CIFR (exit) | −$88M | −1.47 |
+| **Net** | **+$131M** | **+2.20** |
 
-Exits of AI names (APH −$113M, SMTC −$89M, CIFR −$88M) are not counted in the ramp; the existing rule has `COUNT_EXITS = False`. **The ramp depends on the Q3 Nebius/Credo ticker mappings:** without them the ramp is +2.93% and does not fire.
+The three AI exits (APH −$113M, SMTC −$89M, CIFR −$88M, together −4.84 pts) take net AI buying from +7.04% to +2.20%. Before the exits fix, the Nebius/Credo ticker mappings decided whether Q3 fired (+2.93% without them, +7.04% with). Under the corrected rule it doesn't fire either way.
 
-**Read:** the AI book rotated toward networking (Astera) and neoclouds (Nebius), funded by Micron. Memory fell from 14.2% to 5.4% of the thesis book, while Neoclouds rose from 4.0% to 7.4%. Outside AI, Baker opened Figma (4.5%), On Holding (3.2%) and Carvana (2.6%), and exited Alphabet common while buying GOOGL calls.
+**Read:** the AI book rotated toward networking (Astera) and neoclouds (Nebius), funded by Micron and three AI exits; net new AI capital was small (+$131M). Memory fell from 14.2% to 5.4% of the thesis book, while Neoclouds rose from 4.0% to 7.4%. Outside AI, Baker opened Figma (4.5%), On Holding (3.2%) and Carvana (2.6%), and exited Alphabet common while buying GOOGL calls.
 
 ---
 
@@ -119,3 +131,4 @@ Directionally: the index/semis hedges (QQQ and SMH puts) got larger, alongside u
 - **Q3 ticker mappings** (manual, verified against EODHD 9/30 closes): NBIS, CRDO, ONON, TBLA (Baker), BTDR, IREN (Leopold). INNIO (`N52A8C105`, $6.5M) remains unresolved. The 24 older foreign CUSIPs stay unresolved by design; the one visible this quarter is Wix's exit.
 - **One past trigger changed** because Credo now has a ticker: `NEW_AI_POSITION_2PCT` for CRDO on 2026-05-18 (Q1 2026). Nebius changed no past events.
 - **Fix applied this cycle:** option exits had been counted in equity money-flow totals. Q2's published ex-reclass net trading moves from **−$1.35B to −$1.26B** (the RBLX and U call exits, −$90M notional, are removed). Q3 is computed on the corrected basis.
+- **Ramp rule corrected (2026-11-17):** full exits now count as selling. Across history the ramp goes from 12 to 9 events: 2023-11-14, 2024-11-14 and 2026-11-16 no longer fire.
