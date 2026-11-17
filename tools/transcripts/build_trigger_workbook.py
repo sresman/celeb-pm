@@ -441,6 +441,18 @@ def partition_exits(changes: list[dict[str, Any]], period: str
     return equity, option
 
 
+def reclass_basis_trade(c: dict[str, Any] | None, p: dict[str, Any]) -> float | None:
+    """Entire-portfolio trading $ for an IPO-reclass name: its share change this quarter
+    at the quarter-end 13F mark. None in the IPO quarter (no prior position): entering
+    the 13F at IPO is not trading on either basis."""
+    if c is None or not c.get("prior_shares"):
+        return None
+    shares = p.get("shares") or 0.0
+    value = p.get("value_reported") or 0.0
+    delta = (c.get("current_shares") or 0.0) - (c.get("prior_shares") or 0.0)
+    return float(delta) * (value / shares if shares else 0.0)
+
+
 def decomp_label(mtm: float | None, trade: float | None, change_type: str) -> str:
     if change_type == "NEW":
         return "NEW — buy"
@@ -565,6 +577,7 @@ def build_baker_context() -> dict[str, Any]:
     ex_q1 = _denom(BAKER_PRIOR_PERIOD, True) or 1.0
     ex_q2 = _denom(BAKER_PERIOD, True) or 1.0
     equity_q2 = _denom(BAKER_PERIOD, False) or 1.0  # incl SPCX, for the SPCX memo weight
+    equity_q1 = _denom(BAKER_PRIOR_PERIOD, False) or 1.0  # entire-portfolio basis, prior quarter
     q1_val = {
         p["cusip"]: (p["value_reported"] or 0.0)
         for p in positions
@@ -624,16 +637,30 @@ def build_baker_context() -> dict[str, Any]:
             q1v = q1_val.get(p["cusip"])
             wt_q1 = (100.0 * q1v / ex_q1) if q1v is not None else None
             wt_delta = wt_q2 - (wt_q1 or 0.0)
+        # Entire-portfolio basis (all common incl. SPCX/CBRS). Trading on this basis:
+        # reclass names count their actual share change at the quarter-end mark, except
+        # in their IPO quarter (no prior row), when the entry is not trading at all.
+        if is_reclass:
+            trade_all = reclass_basis_trade(c, p)
+        else:
+            trade_all = trade
+        q1_all = q1_val.get(p["cusip"])
+        wt_all_q1 = (100.0 * q1_all / equity_q1) if (st == "COMMON" and q1_all is not None) else None
+        wt_all_q2 = (100.0 * cur_val / equity_q2) if st == "COMMON" else None
         row = {
             "ticker": ticker, "cusip": p["cusip"], "company": company,
             "display": ticker or company or p["cusip"],
             "security_type": st, "put_call": p.get("put_call", ""),
             "shares": p["shares"], "value": p["value_reported"],
             "weight_eo": wt_q2,
-            # % of ALL common equity incl. IPO-reclass names; never a total-book weight
-            # (the 13F reported weight's denominator includes option notional).
-            "weight_eq_all": (100.0 * cur_val / equity_q2) if st == "COMMON" else None,
             "wt_q1": wt_q1, "wt_q2": wt_q2, "wt_delta_pp": wt_delta,
+            # Weight change from Baker's trading, in points of each basis's current-quarter
+            # common equity (never a total-book weight: option notional is in neither).
+            "traded_wt_ex_pp": (100.0 * trade / ex_q2) if (trade is not None and not is_reclass) else None,
+            "wt_all_q1": wt_all_q1, "wt_all_q2": wt_all_q2,
+            "wt_all_delta_pp": (wt_all_q2 - (wt_all_q1 or 0.0)) if wt_all_q2 is not None else None,
+            "trade_all": trade_all,
+            "traded_wt_all_pp": (100.0 * trade_all / equity_q2) if trade_all is not None else None,
             "shares_delta": c["shares_delta"] if c else None,
             "shares_delta_pct": c["shares_delta_pct"] if c else None,
             "value_delta": value_delta,
@@ -670,10 +697,16 @@ def build_baker_context() -> dict[str, Any]:
         is_ai, bucket = trig.resolve_ai(reclass, ticker, BAKER_FILING_DATE, ex_theme) if ticker else (False, None)
         prim = primary_basket(ticker, c["cusip"], ex_theme, overlay, overlay_cusip,
                               reclass, BAKER_FILING_DATE)
+        ex_is_reclass = ticker in IPO_RECLASS_TICKERS
         exits.append({
             "ticker": ticker, "cusip": c["cusip"], "security_type": c["security_type"],
             "display": ticker or c["cusip"],
-            "prior_value": c["prior_value_reported"], "trade": trade,
+            "prior_value": c["prior_value_reported"], "prior_shares": c["prior_shares"],
+            "trade": trade,
+            "wt_all_q1": (100.0 * (q1_val.get(c["cusip"]) or 0.0) / equity_q1)
+                         if c["cusip"] in q1_val else None,
+            "traded_wt_ex_pp": None if ex_is_reclass else 100.0 * trade / ex_q2,
+            "traded_wt_all_pp": 100.0 * trade / equity_q2,
             # Prior-quarter weight on the thesis-investable basis.
             "wt_q1": (100.0 * (q1_val.get(c["cusip"]) or 0.0) / ex_q1)
                      if c["cusip"] in q1_val else None,
@@ -688,6 +721,8 @@ def build_baker_context() -> dict[str, Any]:
         "theme_idx": theme_idx, "reclass": reclass, "overlay": overlay,
         "reclass_value": sum(h["value"] for h in reclass_holdings),  # SPCX + CBRS
         "equity_value": common_total, "options_notional": opt_notional,  # notional: informational only
+        # Current-quarter denominators of the two weight bases on the Holdings sheet.
+        "ex_equity_cur": ex_q2, "all_equity_cur": equity_q2,
     }
 
 
@@ -805,48 +840,130 @@ def _section(ws: Worksheet, row: int, span: int, text: str) -> None:
 # Baker context sheets
 # --------------------------------------------------------------------------
 
+EX_TAG = "(ex SPCX/CBRS)"
+ALL_TAG = "(entire)"
 HOLDINGS_HEADERS = [
     "ticker", "company", "shares", "market_value",
-    f"wt_{PRIOR_Q}%", f"wt_{CUR_Q}%", "Δwt_pp", "wt_eq_incl_reclass%",
+    f"wt_{PRIOR_Q}% {EX_TAG}", f"wt_{CUR_Q}% {EX_TAG}", f"Δwt_pp {EX_TAG}", f"traded_Δwt_pp {EX_TAG}",
+    f"wt_{PRIOR_Q}% {ALL_TAG}", f"wt_{CUR_Q}% {ALL_TAG}", f"Δwt_pp {ALL_TAG}", f"traded_Δwt_pp {ALL_TAG}",
     "shares_Δ", "shares_Δ%", "value_Δ$", "MTM_$", "Trading_$", "decomp",
     "change_type", "basket", "also_in", "theme", "cum_ret%",
 ]
-HOLDINGS_WIDTHS: list[float] = [10, 30, 13, 16, 9, 9, 9, 9, 13, 10, 15, 15, 15,
-                                14, 20, 28, 40, 20, 10]
+HOLDINGS_WIDTHS: list[float] = [10, 30, 13, 16, 11, 11, 11, 13, 11, 11, 11, 13, 13, 10, 15, 15, 15,
+                                22, 20, 28, 40, 20, 10]
+SHADE_PP = 0.05  # |Δwt| above this (points) is shaded green/red
+
+
+def _put_signed_pp(ws: Worksheet, row: int, col: int, v: float | None) -> None:
+    _put_pct(ws, row, col, v, RET_FMT)
+    if v is not None:
+        if v > SHADE_PP:
+            ws.cell(row, col).fill = GREEN
+        elif v < -SHADE_PP:
+            ws.cell(row, col).fill = RED
 
 
 def sheet_baker_holdings(ws: Worksheet, ctx: dict[str, Any]) -> None:
+    """Holdings + exits with weight change on two bases: ex SPCX/CBRS (thesis book, the
+    trigger basis) and the entire portfolio (all common). traded_Δwt_pp = Trading_$ /
+    that basis's current-quarter common equity. Options are in neither basis."""
     _headers(ws, HOLDINGS_HEADERS, HOLDINGS_WIDTHS, freeze_cols=2)
-    for row, h in enumerate(ctx["holdings"], 2):
+    row = 1
+    for h in ctx["holdings"]:
+        row += 1
         ws.cell(row, 1, h["ticker"])
         ws.cell(row, 2, h["company"])
         ws.cell(row, 3, h["shares"]).number_format = DOLLAR_FMT
         _put_dollars(ws, row, 4, h["value"])
-        _put_pct(ws, row, 5, h["wt_q1"])
-        _put_pct(ws, row, 6, h["wt_q2"])
-        _put_pct(ws, row, 7, h["wt_delta_pp"], RET_FMT)
-        # shade the allocation-change cell like the other signed columns
-        d = h["wt_delta_pp"]
-        if d is not None:
-            dcell = ws.cell(row, 7)
-            if d > 0.05:
-                dcell.fill = GREEN
-            elif d < -0.05:
-                dcell.fill = RED
-        _put_pct(ws, row, 8, h["weight_eq_all"])
+        if not h["is_reclass"]:  # ex SPCX/CBRS basis: reclass names are blank
+            _put_pct(ws, row, 5, h["wt_q1"])
+            _put_pct(ws, row, 6, h["wt_q2"])
+            _put_signed_pp(ws, row, 7, h["wt_delta_pp"])
+            _put_signed_pp(ws, row, 8, h["traded_wt_ex_pp"])
+        _put_pct(ws, row, 9, h["wt_all_q1"])
+        _put_pct(ws, row, 10, h["wt_all_q2"])
+        _put_signed_pp(ws, row, 11, h["wt_all_delta_pp"])
+        _put_signed_pp(ws, row, 12, h["traded_wt_all_pp"])
         if h["shares_delta"] is not None:
-            ws.cell(row, 9, h["shares_delta"]).number_format = SIGNED_DOLLAR_FMT
-        _put_pct(ws, row, 10, h["shares_delta_pct"], RET_FMT)
-        _put_dollars(ws, row, 11, h["value_delta"], signed=True)
-        _put_dollars(ws, row, 12, h["mtm"], signed=True)
-        _put_dollars(ws, row, 13, h["trade"], signed=True)
-        ws.cell(row, 14, "IPO reclass — not a buy" if h["is_reclass"]
-                else decomp_label(h["mtm"], h["trade"], h["change_type"]))
-        ws.cell(row, 15, h["change_type"])
-        ws.cell(row, 16, h["basket"])
-        ws.cell(row, 17, ", ".join(h["also_in"]))
-        ws.cell(row, 18, h["theme"])
-        _put_pct(ws, row, 19, h["cum_return"], RET_FMT)
+            ws.cell(row, 13, h["shares_delta"]).number_format = SIGNED_DOLLAR_FMT
+        _put_pct(ws, row, 14, h["shares_delta_pct"], RET_FMT)
+        _put_dollars(ws, row, 15, h["value_delta"], signed=True)
+        _put_dollars(ws, row, 16, h["mtm"], signed=True)
+        if h["is_reclass"]:
+            _put_dollars(ws, row, 17, h["trade_all"], signed=True)
+            ws.cell(row, 18, "IPO reclass — entry not a buy" if h["trade_all"] is None
+                    else "IPO-reclass share change (entire basis only)")
+        else:
+            _put_dollars(ws, row, 17, h["trade"], signed=True)
+            ws.cell(row, 18, decomp_label(h["mtm"], h["trade"], h["change_type"]))
+        ws.cell(row, 19, h["change_type"])
+        ws.cell(row, 20, h["basket"])
+        ws.cell(row, 21, ", ".join(h["also_in"]))
+        ws.cell(row, 22, h["theme"])
+        _put_pct(ws, row, 23, h["cum_return"], RET_FMT)
+    for e in sorted(ctx["exits"], key=lambda e: e["trade"]):
+        row += 1
+        ws.cell(row, 1, e["ticker"] or e["cusip"])
+        ws.cell(row, 2, "[EXIT]")
+        ws.cell(row, 3, 0).number_format = DOLLAR_FMT
+        _put_dollars(ws, row, 4, 0.0)
+        if e["traded_wt_ex_pp"] is not None:
+            _put_pct(ws, row, 5, e["wt_q1"])
+            _put_pct(ws, row, 6, 0.0)
+            _put_signed_pp(ws, row, 7, -(e["wt_q1"] or 0.0))
+            _put_signed_pp(ws, row, 8, e["traded_wt_ex_pp"])
+        _put_pct(ws, row, 9, e["wt_all_q1"])
+        _put_pct(ws, row, 10, 0.0)
+        _put_signed_pp(ws, row, 11, -(e["wt_all_q1"] or 0.0))
+        _put_signed_pp(ws, row, 12, e["traded_wt_all_pp"])
+        if e.get("prior_shares") is not None:
+            ws.cell(row, 13, -e["prior_shares"]).number_format = SIGNED_DOLLAR_FMT
+        _put_pct(ws, row, 14, -100.0, RET_FMT)
+        _put_dollars(ws, row, 15, -(e["prior_value"] or 0.0), signed=True)
+        _put_dollars(ws, row, 16, 0.0, signed=True)
+        _put_dollars(ws, row, 17, e["trade"], signed=True)
+        ws.cell(row, 18, "EXIT — sell")
+        ws.cell(row, 19, "EXIT")
+        ws.cell(row, 20, e["basket"])
+
+    tot = holdings_traded_totals(ctx)
+    row += 1
+    ws.cell(row, 1, "TOTAL").font = SECTION_FONT
+    _put_pct(ws, row, 7, tot["d_ex"], RET_FMT)
+    _put_pct(ws, row, 8, tot["traded_ex_pp"], RET_FMT)
+    _put_pct(ws, row, 11, tot["d_all"], RET_FMT)
+    _put_pct(ws, row, 12, tot["traded_all_pp"], RET_FMT)
+    _put_dollars(ws, row, 17, tot["net_all"], signed=True)
+    for i, (label, net, den, pp) in enumerate([
+        (EX_TAG, tot["net_ex"], ctx["ex_equity_cur"], tot["traded_ex_pp"]),
+        (ALL_TAG, tot["net_all"], ctx["all_equity_cur"], tot["traded_all_pp"]),
+    ], 2):
+        ws.cell(row + i, 1, f"Check {label}: net trading ${net/1e6:,.1f}M ÷ common equity "
+                f"${den/1e6:,.1f}M = {100.0 * net / den:+.3f} pts; Σ traded_Δwt = {pp:+.3f} pts"
+                ).font = NOTE_FONT
+    ws.cell(row + 4, 1, "traded_Δwt_pp = Trading_$ ÷ that basis's current-quarter common equity. "
+            "Trading_$ on SPCX/CBRS rows counts only on the entire basis (none in their IPO quarter). "
+            "Options are in neither basis.").font = NOTE_FONT
+
+
+def holdings_traded_totals(ctx: dict[str, Any]) -> dict[str, float]:
+    """Σ traded weight change and Σ Δwt per basis over holdings + exits, plus each
+    basis's net trading $. Σ traded_Δwt must equal net trading ÷ that basis's equity."""
+    hs, es = ctx["holdings"], ctx["exits"]
+    net_ex = (sum(h["trade"] or 0.0 for h in hs if not h["is_reclass"])
+              + sum(e["trade"] for e in es if e["traded_wt_ex_pp"] is not None))
+    net_all = sum(h["trade_all"] or 0.0 for h in hs) + sum(e["trade"] for e in es)
+    return {
+        "net_ex": net_ex, "net_all": net_all,
+        "traded_ex_pp": (sum(h["traded_wt_ex_pp"] or 0.0 for h in hs)
+                         + sum(e["traded_wt_ex_pp"] or 0.0 for e in es)),
+        "traded_all_pp": (sum(h["traded_wt_all_pp"] or 0.0 for h in hs)
+                          + sum(e["traded_wt_all_pp"] for e in es)),
+        "d_ex": (sum(h["wt_delta_pp"] or 0.0 for h in hs if not h["is_reclass"])
+                 - sum(e["wt_q1"] or 0.0 for e in es if e["traded_wt_ex_pp"] is not None)),
+        "d_all": (sum(h["wt_all_delta_pp"] or 0.0 for h in hs)
+                  - sum(e["wt_all_q1"] or 0.0 for e in es)),
+    }
 
 
 def sheet_baker_ai_basket(ws: Worksheet, ctx: dict[str, Any]) -> None:
