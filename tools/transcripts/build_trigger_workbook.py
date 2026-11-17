@@ -427,6 +427,20 @@ def decompose(
     return ps * (p2 - p1), (cs - ps) * p2
 
 
+def partition_exits(changes: list[dict[str, Any]], period: str
+                    ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Split a period's EXIT change rows into (common-stock exits, option exits).
+    Only the first list may feed equity money-flow totals, weights or baskets;
+    options are informational only (their notional is never a position size)."""
+    equity: list[dict[str, Any]] = []
+    option: list[dict[str, Any]] = []
+    for c in changes:
+        if c["period"] != period or c["change_type"] != "EXIT":
+            continue
+        (equity if c["security_type"] == "COMMON" else option).append(c)
+    return equity, option
+
+
 def decomp_label(mtm: float | None, trade: float | None, change_type: str) -> str:
     if change_type == "NEW":
         return "NEW — buy"
@@ -615,7 +629,10 @@ def build_baker_context() -> dict[str, Any]:
             "display": ticker or company or p["cusip"],
             "security_type": st, "put_call": p.get("put_call", ""),
             "shares": p["shares"], "value": p["value_reported"],
-            "weight_eo": wt_q2, "weight_rep": p.get("weight_pct_reported"),
+            "weight_eo": wt_q2,
+            # % of ALL common equity incl. IPO-reclass names; never a total-book weight
+            # (the 13F reported weight's denominator includes option notional).
+            "weight_eq_all": (100.0 * cur_val / equity_q2) if st == "COMMON" else None,
             "wt_q1": wt_q1, "wt_q2": wt_q2, "wt_delta_pp": wt_delta,
             "shares_delta": c["shares_delta"] if c else None,
             "shares_delta_pct": c["shares_delta_pct"] if c else None,
@@ -631,10 +648,17 @@ def build_baker_context() -> dict[str, Any]:
         (holdings if st == "COMMON" else options).append(row)
     holdings.sort(key=lambda r: r["value"], reverse=True)
 
+    equity_exit_changes, option_exit_changes = partition_exits(changes, BAKER_PERIOD)
+    # Options are informational only: closed option lines are listed on the Options
+    # sheet, never fed into any equity money-flow total, weight or basket.
+    option_exits = [
+        {"ticker": c.get("ticker") or "", "cusip": c["cusip"], "security_type": c["security_type"],
+         "display": c.get("ticker") or c["cusip"], "prior_notional": c["prior_value_reported"],
+         "prior_shares": c["prior_shares"]}
+        for c in option_exit_changes
+    ]
     exits: list[dict[str, Any]] = []
-    for c in changes:
-        if c["period"] != BAKER_PERIOD or c["change_type"] != "EXIT":
-            continue
+    for c in equity_exit_changes:
         ticker = c.get("ticker") or ""
         _, trade = decompose(
             c["prior_shares"], c["prior_value_reported"],
@@ -650,10 +674,9 @@ def build_baker_context() -> dict[str, Any]:
             "ticker": ticker, "cusip": c["cusip"], "security_type": c["security_type"],
             "display": ticker or c["cusip"],
             "prior_value": c["prior_value_reported"], "trade": trade,
-            # Q1 weight on the thesis-investable basis; COMMON only (an option exit may
-            # carry the underlying's cusip and would otherwise double-count its weight).
+            # Prior-quarter weight on the thesis-investable basis.
             "wt_q1": (100.0 * (q1_val.get(c["cusip"]) or 0.0) / ex_q1)
-                     if c["security_type"] == "COMMON" and c["cusip"] in q1_val else None,
+                     if c["cusip"] in q1_val else None,
             "is_ai": is_ai, "ai_bucket": bucket, "basket": prim,
         })
 
@@ -661,11 +684,10 @@ def build_baker_context() -> dict[str, Any]:
     common_total = sum(h["value"] for h in holdings)
     opt_notional = sum(o["value"] for o in options)
     return {
-        "holdings": holdings, "options": options, "exits": exits,
+        "holdings": holdings, "options": options, "exits": exits, "option_exits": option_exits,
         "theme_idx": theme_idx, "reclass": reclass, "overlay": overlay,
         "reclass_value": sum(h["value"] for h in reclass_holdings),  # SPCX + CBRS
-        "equity_value": common_total, "options_notional": opt_notional,
-        "total_reported": common_total + opt_notional,
+        "equity_value": common_total, "options_notional": opt_notional,  # notional: informational only
     }
 
 
@@ -785,7 +807,7 @@ def _section(ws: Worksheet, row: int, span: int, text: str) -> None:
 
 HOLDINGS_HEADERS = [
     "ticker", "company", "shares", "market_value",
-    f"wt_{PRIOR_Q}%", f"wt_{CUR_Q}%", "Δwt_pp", "wt_book%",
+    f"wt_{PRIOR_Q}%", f"wt_{CUR_Q}%", "Δwt_pp", "wt_eq_incl_reclass%",
     "shares_Δ", "shares_Δ%", "value_Δ$", "MTM_$", "Trading_$", "decomp",
     "change_type", "basket", "also_in", "theme", "cum_ret%",
 ]
@@ -811,7 +833,7 @@ def sheet_baker_holdings(ws: Worksheet, ctx: dict[str, Any]) -> None:
                 dcell.fill = GREEN
             elif d < -0.05:
                 dcell.fill = RED
-        _put_pct(ws, row, 8, h["weight_rep"])
+        _put_pct(ws, row, 8, h["weight_eq_all"])
         if h["shares_delta"] is not None:
             ws.cell(row, 9, h["shares_delta"]).number_format = SIGNED_DOLLAR_FMT
         _put_pct(ws, row, 10, h["shares_delta_pct"], RET_FMT)
@@ -1101,9 +1123,22 @@ def sheet_baker_options(ws: Worksheet, ctx: dict[str, Any]) -> None:
         pc = (o["put_call"] or o["security_type"]).upper()
         ws.cell(row, 7, "downside hedge / bearish" if pc == "PUT" else
                 "upside / bullish" if pc == "CALL" else "")
-    note = len(opts) + 3
-    ws.cell(note, 1, "Notional = underlying market value, not premium/capital-at-risk. "
-            "Options are a directional signal only and are excluded from equity weights.").font = NOTE_FONT
+    r = len(opts) + 3
+    closed = sorted(ctx["option_exits"], key=lambda o: o["prior_notional"] or 0.0, reverse=True)
+    if closed:
+        _section(ws, r, len(heads), f"Closed this quarter — {len(closed)} option line(s) (prior notional)")
+        for o in closed:
+            r += 1
+            ws.cell(r, 1, o["display"])
+            ws.cell(r, 3, o["security_type"])
+            _put_dollars(ws, r, 4, o["prior_notional"])
+            ws.cell(r, 5, o["prior_shares"]).number_format = DOLLAR_FMT
+            ws.cell(r, 6, "EXIT")
+        r += 2
+    ws.cell(r, 1, "INFORMATIONAL ASIDE. Options never enter any total, weight, trigger or signal, "
+            "and notional is never a position size.").font = SECTION_FONT
+    ws.cell(r + 1, 1, "Notional = underlying market value, not premium/capital-at-risk; "
+            "13F carries no strike or expiry.").font = NOTE_FONT
 
 
 def sheet_baker_exits_new(ws: Worksheet, ctx: dict[str, Any]) -> None:
@@ -1306,7 +1341,7 @@ def sheet_summary(ws: Worksheet, baker: dict[str, Any], leo: dict[str, Any]) -> 
         ws.cell(row, 4, lval)
 
     money(5, "Equity book value", baker["equity_value"], leo["equity_value"])
-    money(6, "Options notional", baker["options_notional"], None)
+    money(6, "Options notional (informational only; in no total)", baker["options_notional"], None)
     num(7, "# equity positions", len(bh), len(lc))
     pct(8, "Top-10 concentration (equity)",
         _top_n_concentration([h["value"] for h in bh], baker["equity_value"]),
