@@ -195,10 +195,10 @@
     "bucket": "AI/Datacenter Power",
     "note": "Innio (Jenbacher gas engines) — prime/backup power for datacenters. NEW Q2 2026. CURRENTLY UNRESOLVED ticker (position carries ticker=None); entry binds once the CUSIP resolves."
   },
-  "CREDO": {
+  "CRDO": {
     "ai": true,
     "bucket": "AI/Datacenter Networking",
-    "note": "Credo — AECs/SerDes, copper interconnect for AI clusters (the 'copper vs fiber' side of Baker's optical thesis). ADD Q2 2026. CURRENTLY UNRESOLVED ticker; binds on CUSIP resolution."
+    "note": "Credo — AECs/SerDes, copper interconnect for AI clusters (the 'copper vs fiber' side of Baker's optical thesis). ADD Q2 2026, TRIM Q3 2026. Key renamed CREDO->CRDO 2026-11-16 (CUSIP G25457105 now manually mapped to CRDO)."
   },
   "SPCX": {
     "ai": false,
@@ -234,5 +234,30 @@
     "ai": false,
     "bucket": "Enterprise SaaS",
     "note": "Wix — website SaaS. ADD Q2 2026. CURRENTLY UNRESOLVED ticker; binds on CUSIP resolution."
+  },
+  "FIG": {
+    "ai": false,
+    "bucket": "Enterprise SaaS",
+    "note": "Figma — collaborative design SaaS (AI features, but classified as SaaS consistent with ADBE/GTLB). NEW Q3 2026 (4.5% of ex-reclass equity)."
+  },
+  "NBIS": {
+    "ai": true,
+    "bucket": "AI/Datacenter Compute",
+    "note": "Nebius — GPU neocloud, same bucket as CRWV. Held Q1 2026+; big ADD Q3 2026. CUSIP N97284108 manually mapped to NBIS 2026-11-16."
+  },
+  "ADSK": {
+    "ai": false,
+    "bucket": "Enterprise SaaS",
+    "note": "Autodesk — design/engineering SaaS; same call as FIG. NEW Q3 2026."
+  },
+  "TTMI": {
+    "ai": true,
+    "bucket": "Semiconductor Supply Chain",
+    "note": "TTM Technologies — PCBs/substrates for AI servers and networking; same treatment as ROG. NEW Q3 2026."
+  },
+  "HUT": {
+    "ai": true,
+    "bucket": "AI/Datacenter Power",
+    "note": "Hut 8 — bitcoin miner converting powered sites to AI/HPC; same call as CIFR. NEW Q3 2026."
   }
 }

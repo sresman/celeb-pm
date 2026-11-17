@@ -7,28 +7,28 @@
     "match_order": "ticker first, then company alias (case-insensitive substring)"
   },
   "AI datacenter / power": {
-    "tickers": ["BE", "TE", "SEI", "BW", "PUMP", "PSIX", "KEEL", "APLD"],
+    "tickers": ["BE", "TE", "SEI", "BW", "PUMP", "PSIX", "KEEL", "APLD", "FRMI"],
     "companies": [],
     "direction": "LONG",
     "source": "OPERATOR_NAMED + EMERGED",
     "note": "Datacenter power/energy + datacenter operators: BE (Bloom fuel cells), TE (T1 Energy), SEI (Solaris Energy Infra), BW (Babcock & Wilcox), PUMP (ProPetro), PSIX (Power Solutions Intl), KEEL (Keel Infrastructure), APLD (Applied Digital datacenter operator)."
   },
   "Crypto miners → AI/HPC": {
-    "tickers": ["CORZ", "RIOT", "CLSK", "IREN", "HIVE", "1B2"],
+    "tickers": ["CORZ", "RIOT", "CLSK", "IREN", "HIVE", "1B2", "BTDR"],
     "companies": ["IREN LIMITED", "BITDEER"],
     "direction": "LONG",
     "source": "OPERATOR_NAMED",
     "note": "Bitcoin miners pivoting to AI/HPC hosting: CORZ (Core Scientific), RIOT, CLSK (CleanSpark), IREN, HIVE, 1B2 (Bitfarms), Bitdeer."
   },
   "Memory / semis": {
-    "tickers": ["MU", "SNDK", "TSM", "STM", "NVDA", "AMD", "AVGO", "INTC", "GLW", "VSH"],
+    "tickers": ["MU", "SNDK", "TSM", "STM", "NVDA", "AMD", "AVGO", "INTC", "GLW", "VSH", "DRAM"],
     "companies": ["ASML HLDG"],
     "direction": "LONG",
     "source": "OPERATOR_NAMED + EMERGED",
     "note": "Operator-named core: MU, SNDK, TSM, STM. Emerged: NVDA, AMD, AVGO, INTC, GLW (Corning), VSH (Vishay), ASML. Memory bottleneck + logic/foundry/analog semis."
   },
   "Neoclouds": {
-    "tickers": ["CRWV", "SHAZ"],
+    "tickers": ["CRWV", "SHAZ", "NBIS"],
     "companies": ["NEBIUS GROUP", "WHITEFIBER"],
     "direction": "LONG",
     "source": "OPERATOR_NAMED + EMERGED",
