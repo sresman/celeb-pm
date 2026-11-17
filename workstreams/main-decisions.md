@@ -108,3 +108,39 @@ Analysis layer only (`tools/transcripts/`, `analysis/`); the `src/celebpm` pipel
   `theme_baskets_v3.json`, `filing_to_filing_returns_universal.csv`, `thesis_timeline_v2_flat.json`,
   `sa_q2_2026_mtm_vs_trading.csv`. These also carry the two-podcast-run changes; folded in so the artifact is
   reproducible. Broader two-podcast corpus (audits/extractions/transcripts/manifests) left uncommitted.
+
+## 2026-11-16 — Q3 2026 13F refresh (branch `q3-2026-13f`)
+
+- **DECISION — Q3 refresh adds Q3 under existing rules only; no history changes beyond what Q3 requires.**
+  The operator approved six manual CUSIP→ticker mappings needed for the Q3 books (NBIS, CRDO, ONON, TBLA, BTDR,
+  IREN; each verified by EODHD 2026-09-30 close vs 13F value/shares) and **rejected** mapping the 24 older
+  unresolved foreign CUSIPs (ASML, ESTC, WIX, GFS, ...) on this branch. That commit (3916971) was reverted.
+  Reason: mapping them rewrites the backtest; that's a separate task. Notably, mapping ESTC would make it AI
+  from 2020 via a pre-existing `ticker_classifications.json` theme ("AI/Data Infrastructure"). INNIO stays
+  unresolved (no EODHD ticker found).
+- **Manual mappings live in gitignored `data/cusip_ticker_map.json`** (`source: "manual"`, never overwritten by
+  the resolver). Same for `data/ticker_classifications.json` additions. Tracked record:
+  `analysis/q3_2026_classification_review.md`.
+- **Why the mappings mattered:** `build_13f_analysis.narrow()` drops ticker-less positions, so the Nebius add
+  (64K → 1.13M sh, +$252M) was invisible to the ramp. Without the mappings the Q3 ramp is +2.93% (no fire);
+  with them +7.04% (fires). The `CREDO` AI-basket key could never bind; it's renamed `CRDO`.
+- **Q3 classifications (operator-approved):** FIG and ADSK `ai:false` Enterprise SaaS (same as ADBE/GTLB);
+  NBIS `ai:true` AI/Datacenter Compute; TTMI `ai:true` Semiconductor Supply Chain (same as ROG); HUT `ai:true`
+  AI/Datacenter Power (same as CIFR). SA baskets: DRAM → Memory / semis, FRMI → AI datacenter / power.
+  No new IPO reclassifications; `IPO_RECLASS_TICKERS` stays `{SPCX, CBRS}`.
+- **RULE (operator clarification) — options are informational only, everywhere.** They never enter any total,
+  weight, trigger or signal for either manager, and notional is never a position size.
+- **BUG FIXED — option exits were counted as equity selling.** `build_baker_context` decomposed option EXITs at
+  full notional into `exits`, feeding Summary net trading, AI Basket gross selling and the decomp CSV.
+  Fix: `partition_exits()` routes option exits to `option_exits` (shown on the Baker Options sheet only).
+  Guard: `tests/test_trigger_workbook_options.py`. The Baker Holdings `wt_book%` column (13F reported weight,
+  whose denominator includes option notional) became `wt_eq_incl_reclass%`.
+  **Q2's published ex-reclass net trading changes from −$1.35B to −$1.26B** (RBLX/U call exits, −$90M, removed).
+- **Summary "as-filed" net trading** now adds each IPO-reclass name's actual share change at the quarter-end
+  mark (`reclass_share_trade`), i.e. the full position only in its IPO quarter. Q3: SPCX +$11M, CBRS +$67M.
+  Reclass names remain excluded from net deployment. Leopold's "# equity positions" counts held positions only.
+- **Workbook period is config:** `BAKER_PERIOD/PRIOR/FILING_DATE/HISTORY_PERIODS`, `PERIOD_LABEL/CUR_Q/PRIOR_Q`,
+  `SA_CSV` + `SA_PRIOR_COL/SA_CUR_COL`, `BAKER_DECOMP_CSV`. Next quarter means changing these values only.
+- **Leopold MTM CSV method** (no in-repo generator, same as Q2): EODHD close at both period ends;
+  MTM = prior_sh × (p_cur − p_prior), trading = Δsh × p_cur, recon_gap = value_delta − MTM − trading;
+  NEW = all trading at the 13F value; options = N/A (notional only). Rows sorted by |value_delta|.
