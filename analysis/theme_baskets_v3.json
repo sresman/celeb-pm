@@ -112,7 +112,10 @@
       "flinty old men",
       "morris chang",
       "tsmc.*prevent.*bubble",
-      "tsmc.*governor"
+      "tsmc.*governor",
+      "slower for longer",
+      "supply constraints are a feature",
+      "zero interest rate.*overbuild"
     ]
   },
   "Power / watts as binding constraint": {
@@ -578,7 +581,9 @@
       "nvidia.*extremely difficult",
       "nvidia.*dominant.*open.*source",
       "nvidia.*frontier.*cloud",
-      "500b ai compute financing"
+      "500b ai compute financing",
+      "nvda.*moat",
+      "nvidia at current valuation is cheap"
     ]
   },
   "Target / omnichannel retail": {
@@ -646,7 +651,8 @@
       "xai.*data",
       "xai.*release.*blackwell",
       "xai.*frontier",
-      "grok 4.7"
+      "grok 4.7",
+      "xai.*revenue"
     ]
   },
   "Anthropic valuation / efficiency": {
@@ -665,7 +671,8 @@
       "anthropic.*extraordinary",
       "ipo price is likely sandbagged",
       "anthropic is already profitable",
-      "anthropic s1"
+      "anthropic s1",
+      "anthropic is an exceptional company"
     ]
   },
   "Broad AI bullish / early innings": {
@@ -691,7 +698,12 @@
       "semiconductor.*positive demand supercycle",
       "silicon.*intensive",
       "semiconductor.*intensity",
-      "demand tam for tokens"
+      "demand tam for tokens",
+      "capex cycle is not peaking",
+      "low valuation multiples.*peak spending",
+      "big cards to turn over",
+      "elasticity of token demand",
+      "ai demand remains fundamentally strong"
     ]
   },
   "AI bubble not happening": {
@@ -707,7 +719,9 @@
       "gpu utilization.*dark fiber",
       "fundamentally different from 2000",
       "not.*1999",
-      "power.*wafer.*prevent.*overbuild"
+      "power.*wafer.*prevent.*overbuild",
+      "signal no overbuild",
+      "railroad buildout than the telecom overbuild"
     ]
   },
   "Frontier model concentration": {
@@ -953,7 +967,9 @@
       "open.*source.*bullish.*hardware",
       "open.*source.*not bearish",
       "open-source models are a strategic gift",
-      "frontier tokens more valuable"
+      "frontier tokens more valuable",
+      "open-weight ai models",
+      "open-source ai ecosystem.*compute demand"
     ]
   },
   "AI destroying application layer value": {
@@ -1160,6 +1176,18 @@
     "note": "Baker (All-In 2026-08-14): AI datacenter energy buildout solvable via turbine capacity/natural gas — turbine & genset makers.",
     "keys": [
       "turbine capacity, natural gas"
+    ]
+  },
+  "Enterprise on-prem AI factories": {
+    "tickers": [
+      "DELL"
+    ],
+    "source": "BAKER_NAMED",
+    "direction": "LONG",
+    "note": "Enterprise on-premise AI factories as undercounted compute demand. Baker cited Dell AI-factory unit counts (Sourcery 2026-11-19). Added 2026-11-20.",
+    "keys": [
+      "enterprise on-premise",
+      "ai factories"
     ]
   }
 }

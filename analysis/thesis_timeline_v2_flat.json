@@ -30186,19 +30186,19 @@
     "attribution_evidence": "Same continuous Baker monologue responding to the direct 'Gavin' address; no speaker change in the window.",
     "attribution_cue_type": "not_recorded",
     "tickers_named_original": [
-      "TSMC"
+      "TSM"
     ],
     "tickers_direct": [
-      "TSMC"
+      "TSM"
     ],
     "tickers_subject": [],
     "tickers_implied_original": [],
     "ticker_audit": [
       {
-        "ticker": "TSMC",
+        "ticker": "TSM",
         "classification": "DIRECT_BENEFICIARY",
         "was_original": true,
-        "reasoning": "TSMC is the primary constrained wafer supplier Baker references; a slower, sustained AI capex cycle directly benefits TSMC as the dominant foundry, extending the duration of elevated demand without the risk of a sharp overbuild and subsequent collapse in orders."
+        "reasoning": "TSMC is the primary constrained wafer supplier Baker references; a slower, sustained AI capex cycle directly benefits TSMC as the dominant foundry, extending the duration of elevated demand without the risk of a sharp overbuild and subsequent collapse in orders. [2026-11-20: malformed ticker TSMC corrected to TSM by operator-approved curation.]"
       }
     ],
     "appearance_label": "tomorrowx_opening_session_2026nov"

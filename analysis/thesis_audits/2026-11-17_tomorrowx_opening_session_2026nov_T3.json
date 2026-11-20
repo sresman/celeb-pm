@@ -1,9 +1,9 @@
 {
   "date": "2026-11-17",
-  "source": "TomorrowX Summit (iConnections) \u2014 Opening session: retail as most powerful market force, AI buildout railroad vs telecom, P(doom) vs P(boom)",
+  "source": "TomorrowX Summit (iConnections) — Opening session: retail as most powerful market force, AI buildout railroad vs telecom, P(doom) vs P(boom)",
   "thesis_id": "T3",
   "summary": "Slower, more sustained AI capex growth is preferable to a sharp spike and crash; current supply constraints are a feature, not a bug",
-  "summary_extended": "Baker argues that the current constraints on AI infrastructure buildout \u2014 high real interest rates, wider credit spreads, a shortage of power (watts), and a shortage of wafer capacity \u2014 are collectively acting as a natural governor on the pace of AI capital expenditure, and that this is a net positive for the cycle's longevity. He contends that every prior technology buildout (railroads, telecom) ended in a destructive overbuild and crash, and that the current supply-side friction is preventing a repeat of that pattern. His preferred macro scenario is 'slower for longer, slower smoother for longer,' meaning sustained, moderate capex growth rather than a sharp spike followed by collapse. The investment implication is that companies exposed to AI infrastructure \u2014 particularly those constrained by wafer supply \u2014 are better positioned for durable, multi-year demand rather than a boom-bust cycle. TSMC is the clearest named beneficiary as the dominant constrained wafer supplier, but Baker's thesis is structural and macro-level rather than a specific stock call.",
+  "summary_extended": "Baker argues that the current constraints on AI infrastructure buildout — high real interest rates, wider credit spreads, a shortage of power (watts), and a shortage of wafer capacity — are collectively acting as a natural governor on the pace of AI capital expenditure, and that this is a net positive for the cycle's longevity. He contends that every prior technology buildout (railroads, telecom) ended in a destructive overbuild and crash, and that the current supply-side friction is preventing a repeat of that pattern. His preferred macro scenario is 'slower for longer, slower smoother for longer,' meaning sustained, moderate capex growth rather than a sharp spike followed by collapse. The investment implication is that companies exposed to AI infrastructure — particularly those constrained by wafer supply — are better positioned for durable, multi-year demand rather than a boom-bust cycle. TSMC is the clearest named beneficiary as the dominant constrained wafer supplier, but Baker's thesis is structural and macro-level rather than a specific stock call.",
   "detail": "Baker argues that high real interest rates, wider spreads, a shortage of watts (power), and a shortage of wafers are naturally slowing the buildout. He views this as ironically positive because it prevents the overbuild that has historically followed every prior technology cycle. He explicitly says 'we want slower for longer, slower smoother for longer.'",
   "confidence": "high_conviction",
   "confidence_evidence": "Stated emphatically and repeatedly; Baker frames it as his preferred macro scenario for the AI cycle",
@@ -20,19 +20,19 @@
   "attribution_evidence": "",
   "attribution_cue_type": "not_recorded",
   "tickers_named_original": [
-    "TSMC"
+    "TSM"
   ],
   "tickers_direct": [
-    "TSMC"
+    "TSM"
   ],
   "tickers_subject": [],
   "tickers_implied_original": [],
   "ticker_audit": [
     {
-      "ticker": "TSMC",
+      "ticker": "TSM",
       "classification": "DIRECT_BENEFICIARY",
       "was_original": true,
-      "reasoning": "TSMC is the primary constrained wafer supplier Baker references; a slower, sustained AI capex cycle directly benefits TSMC as the dominant foundry, extending the duration of elevated demand without the risk of a sharp overbuild and subsequent collapse in orders."
+      "reasoning": "TSMC is the primary constrained wafer supplier Baker references; a slower, sustained AI capex cycle directly benefits TSMC as the dominant foundry, extending the duration of elevated demand without the risk of a sharp overbuild and subsequent collapse in orders. [2026-11-20: malformed ticker TSMC corrected to TSM by operator-approved curation.]"
     }
   ]
 }

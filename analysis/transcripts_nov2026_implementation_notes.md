@@ -105,3 +105,23 @@ CNBC files, which no fetcher covers.
 - The proposal (keys, two new themes, TSMC→TSM in the opening-session T3 audit
   file) was simulated read-only: all 25 placed, 0 existing theses gained or lost.
   Only mention 2: ALAB / copper vs fiber (Sourcery T9; basket ALAB). Awaiting approval.
+
+## 2026-11-20 — Curation applied, v12 built (operator-approved)
+
+- Re-audit committed as `e9363c7`.
+- `theme_baskets_v3.json`: the keyword additions as proposed (7 themes), plus a new
+  theme "Enterprise on-prem AI factories" (DELL, BAKER_NAMED, LONG). The retail
+  theme was NOT created (operator decision), so Opening T8 stays unthemed.
+- TSMC → TSM fixed by hand in
+  `thesis_audits/2026-11-17_tomorrowx_opening_session_2026nov_T3.json`
+  (ticker lists + ticker_audit, with a note), then `--rebuild-only`.
+- v12: output constant bumped v11→v12 in `build_repeat_mention_events.py`,
+  following the v10→v11 precedent. `theme_returns_v2 --force-refetch` and
+  `build_repeat_mention_events --force-refetch`; prices through 2026-11-19 (CRSO and
+  000660.KS NO_DATA as always). 234 mention rows (v11 218), 177 repeat, 80
+  meet criteria. Rows before 2026-10-27 differ from v11 only in
+  `total_theme_mentions` and the All-In 2025-08-09 `tickers_direct` display.
+- Correction to the proposal: Broad AI bullish is NO_BASKET for every mention
+  because of the existing theme-level event override (operator 2026-07-16, "never-a-trade").
+  The proposal's "SMH" was wrong. Opening T1/T5/T6 and Sourcery T1 therefore carry no basket.
+- All new rows: returns INSUFFICIENT_DATA (prices end 2026-11-19; 1m needs ~2026-12-17).
