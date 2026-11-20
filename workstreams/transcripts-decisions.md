@@ -495,3 +495,24 @@ passes.
   "new appearances only" run must diff `thesis_audits/` afterwards. On
   2026-11-20 it picked up 6 never-re-audited existing theses; reverted and held for
   the operator.
+
+## 2026-11-20 (late) — Nov curation, v12
+
+- **Unclustered theses are placed with `theme_baskets_v3.json` keyword additions, not
+  `cluster_overrides`.** `apply_cluster_overrides` iterates `assignments[from_theme]`, so
+  it cannot pick up a thesis that matched no theme. Keys are specific summary phrases
+  (precedent: 'anthropic s1', 'grok 4.7'). Before applying, simulate them read-only
+  and confirm that no existing thesis gains or loses a theme (done: 0 collateral).
+- **The deferred re-audits were applied** (operator). The `reaudit_tickers` catch-up is
+  part of the standard sequence; thesis tickers affect only the `tickers_direct`
+  display and FIRST_MENTION_WITH_TICKERS, never the basket (that comes from the theme).
+- **Malformed tickers are fixed in the thesis audit file** (ticker lists + ticker_audit
+  entry with a dated note), then `audit_theses --rebuild-only`. No override
+  rewrites thesis tickers. First case: TSMC → TSM.
+- **Retail-as-market-force stays unthemed** (operator): no tradeable expression.
+- **Supply-constraint / "slower for longer" theses belong in TSMC capacity discipline**
+  (basket NVDA, AVGO, MU, not TSM), not in AI bubble not happening.
+- **Version bump = the output-path constant in `build_repeat_mention_events.py`**
+  (v10→v11→v12 precedent).
+- Broad AI bullish is NO_BASKET for every mention (theme-level override, 2026-07-16).
+  Assigning theses there adds mention rows but never a tradeable signal.

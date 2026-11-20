@@ -17,6 +17,28 @@ Branch: **`main`**. `trigger-denominator-ex-spcx` fast-forwarded into it on
 
 ---
 
+## Current State (as of 2026-11-20, late) — v12 BUILT (Nov curation applied)
+
+**Deliverable: `analysis/step4_signal_events_v12_with_returns_extended.{csv,xlsx}`**
+(234 mention rows / 177 repeat / 80 meet criteria; v11 left on disk). Branch
+`transcripts-nov-2026` pushed, NOT merged: `e9363c7` re-audit catch-up, `0ded55d` v12.
+
+- **6 deferred ticker re-audits applied.** Display-only effect on v11: "AI capex ROI
+  positive" 2025-08-09 `tickers_direct` → META, MSFT. a16z 2026-08-31 T1 → NVDA
+  (it is in no theme).
+- **Nov curation:** keyword additions to 7 existing themes. New theme "Enterprise
+  on-prem AI factories" (DELL). TSMC → TSM. Opening T8 (retail as a market force)
+  is deliberately unthemed (operator). All other 24 new theses are themed.
+- **Signals since 2026-10-27:** mention 2 = ALAB / copper vs fiber 2026-11-19
+  (basket ALAB). TomorrowX opening (iConnections) fires HC_HIGH_PROFILE_VENUE on
+  AI bubble not happening (SMH), TSMC capacity discipline (NVDA, AVGO, MU),
+  and Broad AI bullish (NO_BASKET via the never-a-trade override). New rows have
+  no returns yet (prices end 2026-11-19).
+- **NOT done in this v12:** the v11 curation backlog (TBPN Oct 11/14 and All-In
+  7/9 subject theses still unthemed), the roster cleanup, and the cue-instrument re-audit
+  that the 2026-10-28 plan had slotted as "v12". The operator named this build v12.
+  The next build is v13.
+
 ## Current State (as of 2026-11-20) — NOV 2026 APPEARANCES ADDED; STOPPED BEFORE BASKET CURATION
 
 Branch **`transcripts-nov-2026`** (pushed, NOT merged): `ee84d1e` v11 committed
@@ -424,20 +446,17 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 
 ## Immediate Next Steps
 
-**From 2026-11-20 — basket curation now covers v11 + Nov 2026 together.**
+**From 2026-11-20 (late) — v12 built; Nov curation done.**
 
-1. **Operator: review/merge `transcripts-nov-2026`.**
-2. **Decide on the 6 deferred ticker re-audits** (All-In 2025-08-09 T3:
-   drop GOOGL, AMZN; a16z 2026-08-31 T1: drop NVDA, META; 4 no-ops). If applied,
-   re-run `reaudit_tickers` (it redoes them for ~$0.05) before returns.
-3. **Curation for the Nov theses** (see handoff 2026-11-20-transcripts): 17 of 25
-   match no theme regex, most of them by meaning existing themes ("Open source AI
-   bullish for hardware", "AI bubble not happening", "Nvidia GPU moat",
-   "Anthropic valuation", "xAI competitive position"). Genuinely new: enterprise
-   on-prem AI factories (DELL), retail-as-market-force. Tickers: `DELL` and `TSM`
-   are in no basket, and `TSMC` is a malformed ticker (should be `TSM`).
+1. **Operator: review/merge `transcripts-nov-2026`** (v12 deliverable on it).
+2. **v11 curation backlog still open:** 11 of 14 TBPN Oct and 7 of 9 All-In
+   2025-08-09 subject theses match no theme (GPU-compute contango, in-the-money
+   compute contracts, Anthropic S-1, DGX Pod, Apple AI strategy).
+3. **The roster cleanup + cue-instrument re-audit below are now "v13"**. The plan's
+   label "v12" was used by the operator for this build.
+4. Re-run returns after ~2026-12-17 to give the Nov rows a 1m return.
 
-**From 2026-10-28 — v12 is the next run (operator-specified). In order:**
+**From 2026-10-28 — next run (planned as v12, now v13; operator-specified). In order:**
 
 1. **Corpus-wide roster cleanup FIRST.** Audit every `host` in `targets.py`
    against its own transcript (first-name-only / garbled / unknown entries:
