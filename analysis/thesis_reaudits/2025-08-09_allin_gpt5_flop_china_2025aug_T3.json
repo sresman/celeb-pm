@@ -1,0 +1,35 @@
+{
+  "date": "2025-08-09",
+  "source": "All-In Podcast — GPT-5 underwhelms, AI TAM/ROIC/energy, China's advantage, tariffs, Nvidia chip smuggling, Apple buybacks and AI strategy",
+  "thesis_id": "T3",
+  "summary": "AI capex is generating measurable positive ROIC for hyperscalers, unlike the dot-com era, making the current investment cycle fundamentally different and more sustainable.",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "META",
+    "MSFT",
+    "GOOGL",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "META",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly cited Meta's revenue acceleration and improved ad targeting ROI as the primary empirical evidence for his ROIC thesis. Meta is the direct subject of this specific argument."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker specifically referenced Microsoft Copilot adoption statistics as evidence of enterprise AI monetization and positive ROIC, directly connecting MSFT to this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Alphabet/Google in connection with this ROIC thesis. It was added by inference as a 'hyperscaler' — exactly the kind of sector-based reasoning the audit rules prohibit. Baker's specific evidence was Meta and Microsoft Copilot; GOOGL was not named."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Amazon in connection with this ROIC thesis. Like GOOGL, it was added by inference as a hyperscaler. The critical test requires Baker to have specifically connected this ticker to this exact claim, which he did not."
+    }
+  ]
+}

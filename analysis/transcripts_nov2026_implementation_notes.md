@@ -86,3 +86,22 @@ CNBC files, which no fetcher covers.
   `attribution_resolved_cue.json`, feeds nothing): agrees on all 25.
 - Stopped before basket curation. `theme_baskets_v3.json` and
   `manual_overrides.json` untouched; no returns run.
+
+## 2026-11-20 — Re-audit applied (operator-approved), curation proposal (pending)
+
+- Re-ran `reaudit_tickers` (no args) + `audit_theses --rebuild-only`: 6 ok, 17 skipped,
+  ~$0.05. Timeline changes on 2 existing theses, `tickers_direct` only:
+  All-In 2025-08-09 T3 `META, MSFT, GOOGL, AMZN` → `META, MSFT`;
+  a16z 2026-08-31 T1 `NVDA, META` → `NVDA` (the earlier note said `[]`; that was
+  wrong). The 21 other audit files gain only attribution overlay fields that
+  match the timeline. Correction: `tickers_subject` did not change on either.
+- v11 effect: one mention event, "AI capex ROI positive" 2025-08-09 (mention 3),
+  `tickers_direct` display column only. Baskets resolve from the theme, not the
+  thesis, so no basket, return or criterion changes. a16z T1 is in no theme.
+- Convention finding: `cluster_overrides` need a `from_theme`, so they cannot pick
+  up an unclustered thesis. For a thesis that matched no theme, the convention is
+  a keyword addition in `theme_baskets_v3.json` (the v11 precedent:
+  'anthropic s1', 'grok 4.7').
+- The proposal (keys, two new themes, TSMC→TSM in the opening-session T3 audit
+  file) was simulated read-only: all 25 placed, 0 existing theses gained or lost.
+  Only mention 2: ALAB / copper vs fiber (Sourcery T9; basket ALAB). Awaiting approval.

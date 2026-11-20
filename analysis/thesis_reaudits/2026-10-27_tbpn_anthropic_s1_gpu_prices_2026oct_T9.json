@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-27",
+  "source": "TBPN — Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
+  "thesis_id": "T9",
+  "summary": "Hyperscaler and neo-cloud revenue growth will continuously accelerate as underpriced contracts reprice to market and spot exposure increases",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "AMZN",
+    "MSFT",
+    "GOOGL",
+    "CRWV"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Amazon Web Services is one of the largest hyperscalers and Baker specifically named hyperscalers as the direct beneficiaries of the contract repricing and accelerating cloud revenue growth thesis."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Microsoft Azure is a major hyperscaler explicitly included in Baker's thesis about legacy underpriced contracts repricing and accelerating cloud revenue growth."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Google Cloud is a major hyperscaler explicitly included in Baker's thesis about spot-market exposure increases and accelerating cloud revenue growth."
+    },
+    {
+      "ticker": "CRWV",
+      "action": "KEEP",
+      "reasoning": "CoreWeave is explicitly named as a neo-cloud provider and Baker specifically included neo-cloud providers alongside hyperscalers as direct beneficiaries of the repricing and revenue acceleration thesis."
+    }
+  ]
+}

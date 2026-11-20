@@ -17,8 +17,7 @@
   "quote_fragment": "public stocks have kind of fallen out of bed...things are broadly accelerating",
   "tickers_named_original": [],
   "tickers_direct": [
-    "NVDA",
-    "META"
+    "NVDA"
   ],
   "tickers_subject": [],
   "tickers_implied_original": [
@@ -36,9 +35,9 @@
     },
     {
       "ticker": "META",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": true,
-      "reasoning": "Baker specifically cited open-source AI acceleration, and META is the primary driver of open-source frontier models (Llama series); META is also a major AI platform and infrastructure spender that benefits from and contributes to the acceleration trend he describes."
+      "reasoning": "Baker specifically cited open-source AI acceleration, and META is the primary driver of open-source frontier models (Llama series); META is also a major AI platform and infrastructure spender that benefits from and contributes to the acceleration trend he describes. [RE-AUDIT: Baker cited open-source AI acceleration as one data point, and META is the primary open-source frontier model provider. However, Baker's thesis is a macro-level demand acceleration signal and mispricing opportunity in public AI equities broadly \u2014 he did not specifically name META as a direct beneficiary or subject of this thesis. The open-source reference was an evidence data point, not a company-specific investment claim. META's inclusion appears to be inference rather than a specific connection Baker drew between META's stock and this thesis.]"
     },
     {
       "ticker": "GOOGL",
@@ -52,5 +51,10 @@
       "was_original": true,
       "reasoning": "MSFT is a major AI investor and OpenAI partner, but Baker's thesis is about demand acceleration as a macro signal and mispricing opportunity \u2014 MSFT is not specifically named or implied as a direct subject or unique beneficiary distinct from the general AI ecosystem. Its inclusion appears to be bleed-in from adjacent context rather than a direct implication of this thesis."
     }
-  ]
+  ],
+  "appearance_label": "a16z_demand_outrunning_compute_2026aug",
+  "speaker_attribution": "subject",
+  "speaker_name": "",
+  "attribution_evidence": "Turn 7 directly addresses 'Gavin' and asks if he found a bearish case; turn 8 is the reply containing the quote.",
+  "attribution_cue_type": "not_recorded"
 }

@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast — AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T5",
+  "summary": "Compute infrastructure paybacks are sub-one-year, making this one of the best capital deployment opportunities Baker has seen in his career",
+  "criteria": "A",
+  "tickers_direct_before": [
+    "NVDA",
+    "NBIS",
+    "CRWV",
+    "BX",
+    "KKR",
+    "APO"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly states that alternative asset managers are financing 'Nvidia GPUs' at low cost — Nvidia is the specific hardware at the center of the payback math. The thesis is built around demand for Nvidia compute, making it a direct and specific connection."
+    },
+    {
+      "ticker": "NBIS",
+      "action": "KEEP",
+      "reasoning": "Nebius is explicitly named as one of the two companies whose disclosures underpin the 9-10 month payback calculation. It is a direct subject of this thesis."
+    },
+    {
+      "ticker": "CRWV",
+      "action": "KEEP",
+      "reasoning": "CoreWeave is explicitly named alongside Nebius as the source of the payback math. It is a direct subject of this thesis."
+    },
+    {
+      "ticker": "BX",
+      "action": "KEEP",
+      "reasoning": "Blackstone is specifically named by Baker as one of the alternative asset managers financing Nvidia GPUs at low cost, enabling the leveraged equity structure central to this thesis."
+    },
+    {
+      "ticker": "KKR",
+      "action": "KEEP",
+      "reasoning": "KKR is specifically named by Baker as one of the three alternative asset managers providing low-cost GPU financing, directly connected to the financing structure described in this thesis."
+    },
+    {
+      "ticker": "APO",
+      "action": "KEEP",
+      "reasoning": "Apollo is specifically named by Baker as one of the three alternative asset managers providing low-cost GPU financing, directly connected to the financing structure described in this thesis."
+    }
+  ]
+}

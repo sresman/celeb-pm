@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast — AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T1",
+  "summary": "AI demand is broadly accelerating across all major players in July-August 2026, contradicting public equity drawdowns",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "META"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "NVDA is the dominant supplier of AI compute infrastructure. Baker's thesis is explicitly that AI demand is outrunning compute supply — NVDA is the most direct and specific beneficiary of that exact claim. While Baker did not say 'buy NVDA' by name in this thesis, the thesis is literally about compute supply being outrun by demand, and NVDA is the primary compute supplier. This is a genuine direct connection, not sector bleed."
+    },
+    {
+      "ticker": "META",
+      "action": "REMOVE",
+      "reasoning": "Baker cited open-source AI acceleration as one data point, and META is the primary open-source frontier model provider. However, Baker's thesis is a macro-level demand acceleration signal and mispricing opportunity in public AI equities broadly — he did not specifically name META as a direct beneficiary or subject of this thesis. The open-source reference was an evidence data point, not a company-specific investment claim. META's inclusion appears to be inference rather than a specific connection Baker drew between META's stock and this thesis."
+    }
+  ]
+}

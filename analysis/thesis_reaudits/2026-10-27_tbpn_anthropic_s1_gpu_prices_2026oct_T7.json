@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-27",
+  "source": "TBPN — Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
+  "thesis_id": "T7",
+  "summary": "GPU cluster operational execution is a major differentiator — only a handful of operators can reliably energize and run large clusters",
+  "criteria": "A+B",
+  "tickers_direct_before": [
+    "CRWV",
+    "AMZN",
+    "MSFT",
+    "GOOGL",
+    "NBIS"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "CRWV",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named CoreWeave as one of the proven GPU cluster operators and specifically highlighted it as the primary publicly listed pure-play beneficiary of this operational execution thesis."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named AWS (Amazon) as one of the proven hyperscaler operators that can reliably energize and run large GPU clusters, directly connecting it to this thesis about operational competence concentration."
+    },
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Azure (Microsoft) as one of the proven hyperscaler operators that can reliably energize and run large GPU clusters, directly connecting it to this thesis about operational competence concentration."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Baker specifically named Google Cloud as one of the proven hyperscaler operators that can reliably energize and run large GPU clusters, directly connecting it to this thesis about operational competence concentration."
+    },
+    {
+      "ticker": "NBIS",
+      "action": "KEEP",
+      "reasoning": "Baker explicitly named Nebius as a proven GPU cluster operator, and it is US-listed (NASDAQ: NBIS), making it a direct subject of this thesis about operational execution as a differentiator."
+    }
+  ]
+}

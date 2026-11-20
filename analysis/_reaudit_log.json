@@ -1,14 +1,14 @@
 {
   "model": "claude-sonnet-4-6",
-  "theses_reaudited": 19,
-  "ok": 1,
-  "skipped": 18,
+  "theses_reaudited": 23,
+  "ok": 6,
+  "skipped": 17,
   "errors": [],
-  "tickers_removed": 12,
-  "tickers_kept": 83,
-  "total_input_tokens": 1662,
-  "total_output_tokens": 391,
-  "estimated_cost_usd": 0.0109,
+  "tickers_removed": 14,
+  "tickers_kept": 98,
+  "total_input_tokens": 8927,
+  "total_output_tokens": 1533,
+  "estimated_cost_usd": 0.0498,
   "rows": [
     {
       "index": 35,
@@ -126,7 +126,23 @@
       ]
     },
     {
-      "index": 328,
+      "index": 314,
+      "date": "2025-08-09",
+      "thesis_id": "T3",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2025-08-09_allin_gpt5_flop_china_2025aug_T3.json",
+      "status": "ok",
+      "input_tokens": 1485,
+      "output_tokens": 257,
+      "n_before": 4,
+      "n_after": 2,
+      "removed": [
+        "GOOGL",
+        "AMZN"
+      ]
+    },
+    {
+      "index": 340,
       "date": "2025-10-30",
       "thesis_id": "T2",
       "criteria": "B",
@@ -141,7 +157,7 @@
       ]
     },
     {
-      "index": 334,
+      "index": 346,
       "date": "2025-10-30",
       "thesis_id": "T8",
       "criteria": "B",
@@ -154,7 +170,7 @@
       "removed": []
     },
     {
-      "index": 352,
+      "index": 364,
       "date": "2025-12-09",
       "thesis_id": "T12",
       "criteria": "A",
@@ -167,7 +183,7 @@
       "removed": []
     },
     {
-      "index": 414,
+      "index": 433,
       "date": "2026-05-20",
       "thesis_id": "T10",
       "criteria": "A",
@@ -180,7 +196,7 @@
       "removed": []
     },
     {
-      "index": 419,
+      "index": 438,
       "date": "2026-05-20",
       "thesis_id": "T15",
       "criteria": "B",
@@ -193,7 +209,7 @@
       "removed": []
     },
     {
-      "index": 431,
+      "index": 450,
       "date": "2026-05-20",
       "thesis_id": "T27",
       "criteria": "A",
@@ -206,35 +222,7 @@
       "removed": []
     },
     {
-      "index": 454,
-      "date": "2026-05-28",
-      "thesis_id": "T1",
-      "criteria": "A",
-      "output": "analysis/thesis_reaudits/2026-05-28_limitless_unity_world_models_2026may_T1.json",
-      "status": "skipped_exists",
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "n_before": 5,
-      "n_after": 5,
-      "removed": [
-        "NVDA"
-      ]
-    },
-    {
-      "index": 467,
-      "date": "2026-05-28",
-      "thesis_id": "T14",
-      "criteria": "C",
-      "output": "analysis/thesis_reaudits/2026-05-28_limitless_unity_world_models_2026may_T14.json",
-      "status": "skipped_exists",
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "n_before": 1,
-      "n_after": 1,
-      "removed": []
-    },
-    {
-      "index": 500,
+      "index": 494,
       "date": "2026-06-11",
       "thesis_id": "T11",
       "criteria": "B",
@@ -250,7 +238,7 @@
       ]
     },
     {
-      "index": 557,
+      "index": 551,
       "date": "2026-07-08",
       "thesis_id": "T14",
       "criteria": "B",
@@ -263,16 +251,83 @@
       "removed": []
     },
     {
-      "index": 559,
+      "index": 553,
       "date": "2026-07-14",
       "thesis_id": "T1",
       "criteria": "A+B",
       "output": "analysis/thesis_reaudits/2026-07-14_a16z_ai_bubble_datacenters_2026jul_T1.json",
-      "status": "ok",
-      "input_tokens": 1662,
-      "output_tokens": 391,
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0,
       "n_before": 6,
       "n_after": 6,
+      "removed": []
+    },
+    {
+      "index": 613,
+      "date": "2026-08-31",
+      "thesis_id": "T1",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2026-08-31_a16z_demand_outrunning_compute_2026aug_T1.json",
+      "status": "ok",
+      "input_tokens": 1492,
+      "output_tokens": 243,
+      "n_before": 2,
+      "n_after": 1,
+      "removed": [
+        "META"
+      ]
+    },
+    {
+      "index": 617,
+      "date": "2026-08-31",
+      "thesis_id": "T5",
+      "criteria": "A",
+      "output": "analysis/thesis_reaudits/2026-08-31_a16z_demand_outrunning_compute_2026aug_T5.json",
+      "status": "ok",
+      "input_tokens": 1583,
+      "output_tokens": 322,
+      "n_before": 6,
+      "n_after": 6,
+      "removed": []
+    },
+    {
+      "index": 626,
+      "date": "2026-08-31",
+      "thesis_id": "T14",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2026-08-31_a16z_demand_outrunning_compute_2026aug_T14.json",
+      "status": "ok",
+      "input_tokens": 1483,
+      "output_tokens": 218,
+      "n_before": 3,
+      "n_after": 3,
+      "removed": []
+    },
+    {
+      "index": 639,
+      "date": "2026-10-27",
+      "thesis_id": "T7",
+      "criteria": "A+B",
+      "output": "analysis/thesis_reaudits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T7.json",
+      "status": "ok",
+      "input_tokens": 1502,
+      "output_tokens": 285,
+      "n_before": 5,
+      "n_after": 5,
+      "removed": []
+    },
+    {
+      "index": 641,
+      "date": "2026-10-27",
+      "thesis_id": "T9",
+      "criteria": "B",
+      "output": "analysis/thesis_reaudits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T9.json",
+      "status": "ok",
+      "input_tokens": 1382,
+      "output_tokens": 208,
+      "n_before": 4,
+      "n_after": 4,
       "removed": []
     }
   ]

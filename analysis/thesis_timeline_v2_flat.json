@@ -14236,9 +14236,7 @@
     ],
     "tickers_direct": [
       "META",
-      "MSFT",
-      "GOOGL",
-      "AMZN"
+      "MSFT"
     ],
     "tickers_subject": [
       "META",
@@ -14260,15 +14258,15 @@
       },
       {
         "ticker": "GOOGL",
-        "classification": "DIRECT_BENEFICIARY",
+        "classification": "TANGENTIAL",
         "was_original": false,
-        "reasoning": "Baker's thesis is about hyperscalers broadly generating positive ROIC on AI capex; Alphabet is the third major hyperscaler with significant AI infrastructure spend and ad-targeting AI monetization analogous to Meta, making it a clear direct beneficiary of this structural argument even if not named explicitly."
+        "reasoning": "Baker's thesis is about hyperscalers broadly generating positive ROIC on AI capex; Alphabet is the third major hyperscaler with significant AI infrastructure spend and ad-targeting AI monetization analogous to Meta, making it a clear direct beneficiary of this structural argument even if not named explicitly. [RE-AUDIT: Baker did not specifically name Alphabet/Google in connection with this ROIC thesis. It was added by inference as a 'hyperscaler' — exactly the kind of sector-based reasoning the audit rules prohibit. Baker's specific evidence was Meta and Microsoft Copilot; GOOGL was not named.]"
       },
       {
         "ticker": "AMZN",
-        "classification": "DIRECT_BENEFICIARY",
+        "classification": "TANGENTIAL",
         "was_original": false,
-        "reasoning": "Amazon/AWS is the largest cloud hyperscaler and a primary AI infrastructure investor; Baker's structural claim about hyperscaler ROIC improvement from AI capex unambiguously applies to AMZN as one of the handful of companies in this category."
+        "reasoning": "Amazon/AWS is the largest cloud hyperscaler and a primary AI infrastructure investor; Baker's structural claim about hyperscaler ROIC improvement from AI capex unambiguously applies to AMZN as one of the handful of companies in this category. [RE-AUDIT: Baker did not specifically name Amazon in connection with this ROIC thesis. Like GOOGL, it was added by inference as a hyperscaler. The critical test requires Baker to have specifically connected this ticker to this exact claim, which he did not.]"
       }
     ],
     "appearance_label": "allin_gpt5_flop_china_2025aug"
@@ -28028,8 +28026,7 @@
     "quote_fragment": "public stocks have kind of fallen out of bed...things are broadly accelerating",
     "tickers_named_original": [],
     "tickers_direct": [
-      "NVDA",
-      "META"
+      "NVDA"
     ],
     "tickers_subject": [],
     "tickers_implied_original": [
@@ -28047,9 +28044,9 @@
       },
       {
         "ticker": "META",
-        "classification": "DIRECT_BENEFICIARY",
+        "classification": "TANGENTIAL",
         "was_original": true,
-        "reasoning": "Baker specifically cited open-source AI acceleration, and META is the primary driver of open-source frontier models (Llama series); META is also a major AI platform and infrastructure spender that benefits from and contributes to the acceleration trend he describes."
+        "reasoning": "Baker specifically cited open-source AI acceleration, and META is the primary driver of open-source frontier models (Llama series); META is also a major AI platform and infrastructure spender that benefits from and contributes to the acceleration trend he describes. [RE-AUDIT: Baker cited open-source AI acceleration as one data point, and META is the primary open-source frontier model provider. However, Baker's thesis is a macro-level demand acceleration signal and mispricing opportunity in public AI equities broadly — he did not specifically name META as a direct beneficiary or subject of this thesis. The open-source reference was an evidence data point, not a company-specific investment claim. META's inclusion appears to be inference rather than a specific connection Baker drew between META's stock and this thesis.]"
       },
       {
         "ticker": "GOOGL",

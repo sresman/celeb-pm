@@ -15,9 +15,9 @@
   "time_horizon": "medium_term",
   "contrarian": true,
   "quote_fragment": "economic return thus far has been here, GPUs are used so intensively they melt",
-  "speaker_attribution": "indeterminate",
+  "speaker_attribution": "subject",
   "speaker_name": "",
-  "attribution_evidence": "",
+  "attribution_evidence": "Turn 81 ends with 'I think there's a good question for Gavin' and turn 83 opens 'which is really interesting observation Gavin', bracketing turn 82 as Baker's speech.",
   "attribution_cue_type": "not_recorded",
   "tickers_named_original": [
     "META",
@@ -25,9 +25,7 @@
   ],
   "tickers_direct": [
     "META",
-    "MSFT",
-    "GOOGL",
-    "AMZN"
+    "MSFT"
   ],
   "tickers_subject": [
     "META",
@@ -49,15 +47,16 @@
     },
     {
       "ticker": "GOOGL",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Baker's thesis is about hyperscalers broadly generating positive ROIC on AI capex; Alphabet is the third major hyperscaler with significant AI infrastructure spend and ad-targeting AI monetization analogous to Meta, making it a clear direct beneficiary of this structural argument even if not named explicitly."
+      "reasoning": "Baker's thesis is about hyperscalers broadly generating positive ROIC on AI capex; Alphabet is the third major hyperscaler with significant AI infrastructure spend and ad-targeting AI monetization analogous to Meta, making it a clear direct beneficiary of this structural argument even if not named explicitly. [RE-AUDIT: Baker did not specifically name Alphabet/Google in connection with this ROIC thesis. It was added by inference as a 'hyperscaler' \u2014 exactly the kind of sector-based reasoning the audit rules prohibit. Baker's specific evidence was Meta and Microsoft Copilot; GOOGL was not named.]"
     },
     {
       "ticker": "AMZN",
-      "classification": "DIRECT_BENEFICIARY",
+      "classification": "TANGENTIAL",
       "was_original": false,
-      "reasoning": "Amazon/AWS is the largest cloud hyperscaler and a primary AI infrastructure investor; Baker's structural claim about hyperscaler ROIC improvement from AI capex unambiguously applies to AMZN as one of the handful of companies in this category."
+      "reasoning": "Amazon/AWS is the largest cloud hyperscaler and a primary AI infrastructure investor; Baker's structural claim about hyperscaler ROIC improvement from AI capex unambiguously applies to AMZN as one of the handful of companies in this category. [RE-AUDIT: Baker did not specifically name Amazon in connection with this ROIC thesis. Like GOOGL, it was added by inference as a hyperscaler. The critical test requires Baker to have specifically connected this ticker to this exact claim, which he did not.]"
     }
-  ]
+  ],
+  "appearance_label": "allin_gpt5_flop_china_2025aug"
 }

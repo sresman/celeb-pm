@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-31",
+  "source": "a16z Podcast — AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
+  "thesis_id": "T14",
+  "summary": "Hyperscalers should be valued on EV/net PP&E as an AI-era price-to-book analog, with some showing obvious inefficiencies",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "MSFT",
+    "GOOGL",
+    "AMZN"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "MSFT",
+      "action": "KEEP",
+      "reasoning": "Microsoft/Azure is a core hyperscaler and a direct subject of the EV/net PP&E valuation framework Baker describes. As one of the major cloud/AI infrastructure operators with substantial datacenter PP&E, it is a primary subject of this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "KEEP",
+      "reasoning": "Alphabet/Google Cloud is a primary hyperscaler and direct subject of the EV/net PP&E framework. Baker's discussion of 'pretty obvious inefficiencies' across the hyperscaler group directly implicates Alphabet as one of the names being screened on this metric."
+    },
+    {
+      "ticker": "AMZN",
+      "action": "KEEP",
+      "reasoning": "Amazon Web Services is the largest cloud provider and a direct subject of the EV/net PP&E valuation framework. As the dominant hyperscaler by compute infrastructure, it is a primary subject of this thesis."
+    }
+  ]
+}
