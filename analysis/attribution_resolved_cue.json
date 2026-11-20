@@ -1,0 +1,1049 @@
+{
+  "generated": "2026-10-28T15:24:57+00:00",
+  "pass1_dir": "analysis/attribution_audit_cue_pass1",
+  "pass2_dir": "analysis/attribution_audit_cue_pass2",
+  "rule": "two-of-two agreement; disagreement resolves to indeterminate",
+  "summary": {
+    "subject_by_cue": {
+      "naming": {
+        "theses": 7,
+        "tickers": 7
+      },
+      "structural": {
+        "theses": 5,
+        "tickers": 5
+      },
+      "continuity": {
+        "theses": 10,
+        "tickers": 17
+      },
+      "style": {
+        "theses": 5,
+        "tickers": 1
+      }
+    },
+    "total": {
+      "theses": 34,
+      "tickers": 41,
+      "subject": 27,
+      "tickers_subject": 30,
+      "other": 3,
+      "tickers_other": 8,
+      "indeterminate": 4,
+      "tickers_indeterminate": 3
+    },
+    "pass1_only": {
+      "theses": 34,
+      "tickers": 41,
+      "subject": 27,
+      "tickers_subject": 30,
+      "other": 3,
+      "tickers_other": 8,
+      "indeterminate": 4,
+      "tickers_indeterminate": 3
+    },
+    "agreement_rate": 0.9706,
+    "agreed": 33,
+    "disagreed": 1,
+    "confusion": {
+      "indeterminate->indeterminate": 3,
+      "indeterminate->subject": 1,
+      "other->other": 3,
+      "subject->subject": 27
+    },
+    "episodes": [
+      {
+        "label": "allin_gpt5_flop_china_2025aug",
+        "date": "2025-08-09",
+        "source": "All-In Podcast — GPT-5 underwhelms, AI TAM/ROIC/energy, China's advantage, tariffs, Nvidia chip smuggling, Apple buybacks and AI strategy",
+        "host": "Jason Calacanis, David Friedberg, Ben Shapiro, Phil Deutsch (Gavin Baker panelist)",
+        "kind": "panel",
+        "theses": 12,
+        "tickers": 16,
+        "subject": 9,
+        "tickers_subject": 7,
+        "other": 2,
+        "tickers_other": 8,
+        "indeterminate": 1,
+        "tickers_indeterminate": 1
+      },
+      {
+        "label": "aria_networks_deep_networking_wrapup_2026apr",
+        "date": "2026-04-16",
+        "source": "Aria Networks — Closing conversation: Deep Networking and token economics; Aria vs Arista's rise in the cloud era; NeoCloud and accelerator vendors",
+        "host": "Mansour Karam (Gavin Baker guest)",
+        "kind": "panel",
+        "theses": 7,
+        "tickers": 7,
+        "subject": 4,
+        "tickers_subject": 5,
+        "other": 1,
+        "tickers_other": 0,
+        "indeterminate": 2,
+        "tickers_indeterminate": 2
+      },
+      {
+        "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+        "date": "2026-10-27",
+        "source": "TBPN — Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
+        "host": "John Coogan, Jordi Hays (Gavin Baker guest)",
+        "kind": "panel",
+        "theses": 15,
+        "tickers": 18,
+        "subject": 14,
+        "tickers_subject": 18,
+        "other": 0,
+        "tickers_other": 0,
+        "indeterminate": 1,
+        "tickers_indeterminate": 0
+      }
+    ]
+  },
+  "attributions": [
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T1",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Grok 4 represents a larger generational leap than GPT-5, marking the first time OpenAI has failed to release a decisively superior model after a competitor's frontier release.",
+      "quote": "first time OpenAI has not been able to clearly beat a competitor",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 69 directly addresses 'Gavin' and asks for his thoughts; turn 70 and 72 are the continuous reply containing the quote.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 69 directly addresses 'Gavin' and asks for his thoughts; turn 70 and 72 are the continuous reply containing the quote.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T10",
+      "speaker_attribution": "subject",
+      "cue_type": "style",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Stable policy is a prerequisite for business and economic growth; Trump's tendency to generate headlines through policy changes creates a structural headwind to investment confidence.",
+      "quote": "business capitalism economic growth does best with stable policy",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Turn 195 follows host pressure turns 192-194 asking for a specific answer; the macro policy framing and reference to 'what Phil says goes to my point' suggests Baker distinguishing himself from Phil Deutsch.",
+        "cue_type": "style"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Turn 195 follows host pressure turns 192-194 asking for a specific answer; the macro policy framing and reference to 'what Phil says goes to my point' suggests Baker distinguishing himself from Phil Deutsch.",
+        "cue_type": "style"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T11",
+      "speaker_attribution": "subject",
+      "cue_type": "style",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Trump showed his hand in April — he is sensitive to market reactions and will reverse course if tariffs are clearly not working, providing a downside circuit breaker.",
+      "quote": "he showed that he will change it, he looked into the abyss",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Same turn 195 as T10; the analytical framing about market signals and policy reversals fits Baker's CIO register, and the turn references Phil's prior point suggesting Baker is the speaker.",
+        "cue_type": "style"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Same turn 195 as T10; the analytical framing about market signals and policy reversals fits Baker's CIO register, and the turn references Phil's prior point suggesting Baker is the speaker.",
+        "cue_type": "style"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T12",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Deep Seek employees in China are subject to CCP surveillance and isolation from Americans, confirming China views AI as an existential national security competition.",
+      "quote": "if you work for Deep Seek, you are not allowed to be in the same room as an American",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 115 directly addresses 'Gavin' and asks him a question; turn 116 begins 'Yeah. Well, they for sure believe it's existential' as Baker's direct reply.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 115 directly addresses 'Gavin' and asks him a question; turn 116 begins 'Yeah. Well, they for sure believe it's existential' as Baker's direct reply.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T2",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "xAI's Grok 5 is likely to be a major leap given it has the largest Blackwell cluster, and Baker is optimistic about its competitive positioning.",
+      "quote": "they have the largest Blackwell cluster, I'm optimistic for Grok 5",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Same turn 72 as T1, directly following the address to Gavin in turn 69; speaker also says 'my firm is a shareholder of XAI'.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Same turn 72 as T1, directly following the address to Gavin in turn 69; speaker also says 'my firm is a shareholder of XAI'.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T3",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "META",
+        "MSFT",
+        "GOOGL",
+        "AMZN"
+      ],
+      "summary": "AI capex is generating measurable positive ROIC for hyperscalers, unlike the dot-com era, making the current investment cycle fundamentally different and more sustainable.",
+      "quote": "economic return thus far has been here, GPUs are used so intensively they melt",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 81 ends with 'I think there's a good question for Gavin' and turn 83 opens 'which is really interesting observation Gavin', bracketing turn 82 as Baker's.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 81 ends with 'I think there's a good question for Gavin' and turn 83 opens 'which is really interesting observation Gavin', bracketing turn 82 as Baker's.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T4",
+      "speaker_attribution": "other",
+      "cue_type": "structural",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "VST",
+        "CEG",
+        "ETR",
+        "NRG"
+      ],
+      "summary": "AI demand for energy is a larger and more durable structural driver than the Inflation Reduction Act, creating a massive new demand signal for power infrastructure.",
+      "quote": "energy implications of AI are probably bigger than the Inflation Reduction Act",
+      "pass1": {
+        "speaker_attribution": "other",
+        "confidence": "high",
+        "likely_speaker": "Phil Deutsch",
+        "evidence": "Turn 85 follows turn 83-84 which are attributed to Baker; turn 86 continues with Phil Deutsch discussing energy investments and SMRs, and turn 85 introduces the energy topic in Phil's voice after Baker's turn ends.",
+        "cue_type": "structural"
+      },
+      "pass2": {
+        "speaker_attribution": "other",
+        "confidence": "high",
+        "likely_speaker": "Phil Deutsch",
+        "evidence": "Turn 85 follows turn 83-84 which are attributed to Baker; turn 86 continues with Phil Deutsch discussing energy investments and SMRs, and turn 85 introduces the energy topic in Phil's voice after Baker's turn ends.",
+        "cue_type": "structural"
+      },
+      "speaker_name": "Phil Deutsch"
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T5",
+      "speaker_attribution": "other",
+      "cue_type": "style",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NNE",
+        "SMR",
+        "CEG",
+        "VST"
+      ],
+      "summary": "Small modular reactors (SMRs) and nuclear energy are experiencing a renaissance driven by hyperscaler demand, not government policy, making them a compelling investment area.",
+      "quote": "dollars flowed when the market spoke and the hyperscalers said they wanted SMRs",
+      "pass1": {
+        "speaker_attribution": "other",
+        "confidence": "high",
+        "likely_speaker": "Phil Deutsch",
+        "evidence": "Turn 155 speaker says 'we as well others have investments there' in energy/SMR space, consistent with Phil Deutsch who was introduced as an energy investor; turn 79 establishes Phil Deutsch as the energy expert on the panel.",
+        "cue_type": "style"
+      },
+      "pass2": {
+        "speaker_attribution": "other",
+        "confidence": "high",
+        "likely_speaker": "Phil Deutsch",
+        "evidence": "Turn 155 speaker says 'we as well others have investments there' in energy/SMR space, consistent with Phil Deutsch who was introduced as an energy investor; turn 79 establishes Phil Deutsch as the energy expert on the panel.",
+        "cue_type": "style"
+      },
+      "speaker_name": "Phil Deutsch"
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T6",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "Nvidia GPU smuggling into China via third-country routing is real but not strategically decisive — the volumes are too small to matter relative to US hyperscaler cluster sizes.",
+      "quote": "a billion dollars worth of GPUs, not enough to really move the needle",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 216 directly addresses 'Gavin' asking for his take on GPU smuggling; turn 217 and 219 are his continuous reply.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 216 directly addresses 'Gavin' asking for his take on GPU smuggling; turn 217 and 219 are his continuous reply.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T7",
+      "speaker_attribution": "indeterminate",
+      "cue_type": "none",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "Resuming sales of downgraded Nvidia chips (H20/B50-equivalent) to China was the right policy move — legalizing a lower-potency product reduces black market demand for the high-end chips.",
+      "quote": "very smart to resume the H20s, legalizing drugs reduces the drug",
+      "pass1": {
+        "speaker_attribution": "indeterminate",
+        "confidence": "low",
+        "likely_speaker": "",
+        "evidence": "quote_not_located in transcript",
+        "cue_type": "none"
+      },
+      "pass2": {
+        "speaker_attribution": "indeterminate",
+        "confidence": "low",
+        "likely_speaker": "",
+        "evidence": "quote_not_located in transcript",
+        "cue_type": "none"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T8",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "summary": "Apple is dramatically underperforming in AI and has wasted capital on buybacks that could have funded competitive AI infrastructure, representing a strategic failure.",
+      "quote": "shocked at their inaction and inaptitude in AI, products are terrible",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Turn 229 begins a thought about Apple buybacks and AI inaction that continues into turn 231 with the quote; the analytical framing about capital allocation is consistent with Baker's CIO register, and turn 232 appears to be a different speaker reacting.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Turn 229 begins a thought about Apple buybacks and AI inaction that continues into turn 231 with the quote; the analytical framing about capital allocation is consistent with Baker's CIO register, and turn 232 appears to be a different speaker reacting.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T9",
+      "speaker_attribution": "subject",
+      "cue_type": "structural",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "summary": "Apple's best remaining opportunity is augmented reality glasses, which plays to its hardware/software integration strengths, but the company needs to start executing.",
+      "quote": "would shock me if they do not have the best augmented reality glasses in three or four years",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Turn 241 follows turn 240 where Phil Deutsch passes ('not my area'), and turn 242 addresses 'Freed' suggesting turn 241 was not Friedberg; the analytical investment framing fits Baker.",
+        "cue_type": "structural"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Turn 241 follows turn 240 where Phil Deutsch passes ('not my area'), and turn 242 addresses 'Freed' suggesting turn 241 was not Friedberg; the analytical investment framing fits Baker.",
+        "cue_type": "structural"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T1",
+      "speaker_attribution": "indeterminate",
+      "cue_type": "none",
+      "agreement": false,
+      "note": "disagreement:indeterminate|subject",
+      "tickers": [
+        "ANET",
+        "CRWV"
+      ],
+      "summary": "AI cluster networking is the primary bottleneck and value driver for inference revenue, not just a cost-reduction tool",
+      "quote": "we can materially improve your revenue on the inference side",
+      "pass1": {
+        "speaker_attribution": "indeterminate",
+        "confidence": "low",
+        "likely_speaker": "",
+        "evidence": "Turn 4 contains multiple voices with no speaker markers; the quote could be Baker or Mansour Karam responding to a question, and the >> cues are absent.",
+        "cue_type": "none"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Turn 3 addresses 'Mansour' directly, making the reply in turn 4 Baker's; the turn contains investor-register framing ('we can materially improve your revenue on the inference side') consistent with Baker responding to Mansour's demo.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T2",
+      "speaker_attribution": "indeterminate",
+      "cue_type": "none",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Aria Networks is the Arista of the AI era — a first-principles networking company purpose-built for AI clusters",
+      "quote": "it really does feel like the Arista IPO to me",
+      "pass1": {
+        "speaker_attribution": "indeterminate",
+        "confidence": "low",
+        "likely_speaker": "",
+        "evidence": "Turn 9 contains the quote but no speaker marker distinguishes Baker from Mansour Karam; both are present and discussing Aria/Arista.",
+        "cue_type": "none"
+      },
+      "pass2": {
+        "speaker_attribution": "indeterminate",
+        "confidence": "low",
+        "likely_speaker": "",
+        "evidence": "Turn 9 contains both Mansour-style product pitch ('we're actually building the networking company') and Baker-style investment analogy ('it really does feel like the Arista IPO to me'); the two voices are interleaved without clear speaker markers, making attribution genuinely ambiguous.",
+        "cue_type": "none"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T3",
+      "speaker_attribution": "subject",
+      "cue_type": "style",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "CRWV"
+      ],
+      "summary": "GPU-per-hour pricing model will be displaced by token-based pricing, rewarding NeoCloud operators with superior networking",
+      "quote": "GPU per hour pricing model is going to go away, straight token pricing",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Speaker self-identifies as a Crusoe, Coreweave, and Nebia shareholder and references personal investment history consistent with Baker as a fund CIO; the framing is investor-perspective throughout.",
+        "cue_type": "style"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "The long monologue begins with 'Well, [snorts]' answering a host question directed at the guest; self-identification as shareholder of Crusoe, Coreweave, and Nebia ('I'm a Crusoe shareholder') is consistent with Baker as fund CIO disclosing positions, not a company founder.",
+        "cue_type": "style"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T4",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "CRWV"
+      ],
+      "summary": "Coreweave's networking investment is the core source of its competitive advantage and premium pricing power",
+      "quote": "we invest more in networking than anyone else",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Same continuous monologue as T3; speaker recounts personal early relationship with Coreweave founders and investor framing consistent with Baker.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Same continuous monologue as T3; the quote 'we invest more in networking than anyone else' is Baker paraphrasing Coreweave's answer to his own question, framed as an investor recounting a conversation, consistent with Baker's CIO register.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T5",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "CRWV"
+      ],
+      "summary": "NeoCloud differentiation is difficult; early adoption of superior networking technology is a critical window for competitive advantage",
+      "quote": "it's not that easy to differentiate and you have a window here",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Continuous with T3 and T4 in the same unbroken monologue; shareholder disclosures and investor framing point to Baker.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Continuous with T3/T4 monologue; shareholder disclosures and investor framing throughout confirm this is the same Baker turn.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T6",
+      "speaker_attribution": "other",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Elon Musk's Colossus cluster success (100,000 XPUs coherent) was driven by extreme focus on networking quality",
+      "quote": "nobody thought you could get more than 40,000 XPUs coherent",
+      "pass1": {
+        "speaker_attribution": "other",
+        "confidence": "medium",
+        "likely_speaker": "Mansour Karam",
+        "evidence": "Turn 15 is followed by turn 16 where the speaker says 'thank you, Gavin,' implying Gavin (Baker) is a separate person from the turn 15 speaker; turn 16 also references 'our team members' with Aria branding, consistent with Mansour Karam.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "other",
+        "confidence": "medium",
+        "likely_speaker": "Mansour Karam",
+        "evidence": "Turn 15 uses 'we' in a product/engineering context ('we're network engineers at heart', 'we deliver all this optimization') and turn 16 closes with 'thank you, Gavin', confirming turn 15 is Mansour speaking, not Baker.",
+        "cue_type": "naming"
+      },
+      "speaker_name": "Mansour Karam"
+    },
+    {
+      "label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T7",
+      "speaker_attribution": "subject",
+      "cue_type": "structural",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "ANET"
+      ],
+      "summary": "Technological discontinuities combined with first-principles thinking are the pattern behind outsized investment returns",
+      "quote": "technological discontinuity encounters first principles thinking",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 6 host directly addresses 'you were an early investor in Arista, you were an early investor in Nvidia' and the reply 'I actually think it's when a technological discontinuity encounters first principles thinking' is Baker's answer to that direct question about his investment pattern.",
+        "cue_type": "structural"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 6 host addresses Baker by implication ('you were an early investor in Arista, you were an early investor in Nvidia') and the answer 'Yeah, I I actually think it's when a technological discontinuity encounters first principles thinking' is the direct reply, confirmed by first-person investment framing.",
+        "cue_type": "structural"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T1",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Anthropic S-1 was a clear upside surprise on unit economics, cash burn, and customer diversification",
+      "quote": "the Anthropic S1 was pretty clearly an upside surprise",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 3 directly addresses 'Gavin' and turn 4 is his reply; turn 6 containing the quote follows immediately in the same speaker's voice.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 3 directly addresses 'Gavin' and turn 4 is his reply; turn 6 containing the quote follows immediately in the same speaker's voice.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T10",
+      "speaker_attribution": "indeterminate",
+      "cue_type": "none",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "SpaceX and Anthropic IPOs will unlock significant mutual fund buying power for private AI markets",
+      "quote": "going public is actually going to free up a huge amount of buying power in private markets",
+      "pass1": {
+        "speaker_attribution": "indeterminate",
+        "confidence": "low",
+        "likely_speaker": "",
+        "evidence": "quote_not_located in transcript",
+        "cue_type": "none"
+      },
+      "pass2": {
+        "speaker_attribution": "indeterminate",
+        "confidence": "low",
+        "likely_speaker": "",
+        "evidence": "quote_not_located in transcript",
+        "cue_type": "none"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T11",
+      "speaker_attribution": "subject",
+      "cue_type": "style",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "UAE sovereign wealth funds (MGX, Mubadala) are the most aggressive and front-footed sovereign AI investors",
+      "quote": "UAE in particular has been extremely front-footed with all their sovereigns",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 227 contains 'at Trafigura, we co-led Crusoe with Mubadala' — a self-identification of Baker's firm's investment activity — immediately before the quoted turn 229.",
+        "cue_type": "style"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 227 contains 'at Trafigura, we co-led Crusoe with Mubadala' — a self-identification of Baker's firm's investment activity — immediately before the quoted turn 229.",
+        "cue_type": "style"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T12",
+      "speaker_attribution": "subject",
+      "cue_type": "structural",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "AI has already delivered real-world drug repurposing breakthroughs; biology is a major near-term AI application",
+      "quote": "AI has already saved a lot of lives",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 127 is a host question to Baker; turn 128 is the direct reply beginning 'Yeah, I mean, we'll see...' with first-person fund framing.",
+        "cue_type": "structural"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 127 is a host question to Baker; turn 128 is the direct reply beginning 'Yeah, I mean, we'll see...' with first-person fund framing.",
+        "cue_type": "structural"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T13",
+      "speaker_attribution": "subject",
+      "cue_type": "style",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Rare earth refining (not mining) is the key bottleneck; chemical process innovation is the investable angle",
+      "quote": "the problem with rare earths is not that they're rare, it's that refining them is a very dirty process",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 209 contains 'we have spent a lot of time' and 'we've invested in a company' — clear self-identification of Baker's fund's activity.",
+        "cue_type": "style"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 209 contains 'we have spent a lot of time' and 'we've invested in a company' — clear self-identification of Baker's fund's activity.",
+        "cue_type": "style"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T14",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "Anthropic (private)"
+      ],
+      "summary": "Anthropic re-accelerated in October 2026 after losing market share in summer 2026",
+      "quote": "they are reaccelerating and gaining share",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 184 begins 'I called it like I saw it in the summer' establishing Baker as speaker; turn 186 is a direct continuation of that same speaker.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 184 begins 'I called it like I saw it in the summer' establishing Baker as speaker; turn 186 is a direct continuation of that same speaker.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T15",
+      "speaker_attribution": "subject",
+      "cue_type": "structural",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "xAI",
+        "Cursor"
+      ],
+      "summary": "Grok Bot (post cursor/xAI integration) is the most impactful AI productivity tool for investment professionals",
+      "quote": "Grok Bot is the most impactful AI product to me",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 50 is a host question; turn 51 is the direct reply beginning 'I mean as a user' with 'our firm' self-identification.",
+        "cue_type": "structural"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 50 is a host question; turn 51 is the direct reply beginning 'I mean as a user' with 'our firm' self-identification.",
+        "cue_type": "structural"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T2",
+      "speaker_attribution": "subject",
+      "cue_type": "structural",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Enterprise AI adoption is still very early — earlier than Baker previously thought",
+      "quote": "very early. Maybe earlier than I thought we were",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 13 is a host question directed at the prior speaker (Baker, established by naming in turn 3); turn 14 is the direct reply.",
+        "cue_type": "structural"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 13 is a host question directed at the prior speaker (Baker, established by naming in turn 3); turn 14 is the direct reply.",
+        "cue_type": "structural"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T3",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Open-weight model inference clouds (Fireworks, Base10, Together, Modal, Cognition) are growing faster than OpenAI or Anthropic",
+      "quote": "growing faster than either Open AI or Anthropic",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 37 continues Baker's established voice from the same conversation thread; self-referential fund knowledge ('my firm is an investor') appears in nearby turn 73, confirming Baker is the active speaker.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 37 continues Baker's established voice from the same conversation thread; self-referential fund knowledge ('my firm is an investor') appears in nearby turn 73, confirming Baker is the active speaker.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T4",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "CRWV"
+      ],
+      "summary": "The GPU compute spot market has shifted from backwardation to contango — forward compute prices are rising, not falling",
+      "quote": "the compute market is now in contango",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 72 is a host question addressed to Baker ('you've maintained a sort of bullishness'); turn 73 containing the quote is the direct reply, and includes 'my firm is an investor in them' self-identification.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 72 is a host question addressed to Baker ('you've maintained a sort of bullishness'); turn 73 containing the quote is the direct reply, and includes 'my firm is an investor in them' self-identification.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T5",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "CRWV",
+        "NBIS"
+      ],
+      "summary": "Companies that locked in long-term compute contracts before May 2026 are deeply in-the-money and could sell at 3-5x premium",
+      "quote": "you could sell them all at a three, four, or five x premium",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 108 directly quotes Sarah Friar and contextualizes it with Baker's analytical framing; continuity from Baker's established voice in surrounding turns about compute contracts.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 108 directly quotes Sarah Friar and contextualizes it with Baker's analytical framing; continuity from Baker's established voice in surrounding turns about compute contracts.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T6",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "CRWV"
+      ],
+      "summary": "SpaceX's spot-market GPU rental strategy (short-term contracts, prepayments) is superior to CoreWeave's long-term off-take model",
+      "quote": "willing to sell on the spot market, we can have paybacks well under a year",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 88 begins 'I don't think Elon...' in Baker's established voice; turn 90 is a direct continuation of that same speaker's reasoning.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 88 begins 'I don't think Elon...' in Baker's established voice; turn 90 is a direct continuation of that same speaker's reasoning.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T7",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "CRWV",
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "NBIS"
+      ],
+      "summary": "GPU cluster operational execution is a major differentiator — only a handful of operators can reliably energize and run large clusters",
+      "quote": "running a Formula One team, it's like really hard",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 96 begins the Formula 1 analogy in Baker's established voice; turn 98 is a direct continuation of the same speaker's turn.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 96 begins the Formula 1 analogy in Baker's established voice; turn 98 is a direct continuation of the same speaker's turn.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T8",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "NVIDIA's DGX Pod (pre-assembled 7-rack unit) will reduce cluster energization time and remove working capital drag from the market",
+      "quote": "DGX Pod, which is going to make it a lot easier",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 98 is a continuation of Baker's established monologue from turn 96; same speaker throughout the uninterrupted block.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 98 is a continuation of Baker's established monologue from turn 96; same speaker throughout the uninterrupted block.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T9",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "CRWV"
+      ],
+      "summary": "Hyperscaler and neo-cloud revenue growth will continuously accelerate as underpriced contracts reprice to market and spot exposure increases",
+      "quote": "pretty continuous acceleration in the sum of the big hyperscalers cloud revenue growth",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 235 continues Baker's established analytical voice in an uninterrupted block; the fund-level framing ('I do think') is consistent with Baker's prior turns.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 235 continues Baker's established analytical voice in an uninterrupted block; the fund-level framing ('I do think') is consistent with Baker's prior turns.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    }
+  ]
+}

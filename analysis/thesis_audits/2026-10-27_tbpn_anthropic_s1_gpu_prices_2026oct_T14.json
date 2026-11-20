@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-27",
+  "source": "TBPN \u2014 Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
+  "thesis_id": "T14",
+  "summary": "Anthropic re-accelerated in October 2026 after losing market share in summer 2026",
+  "summary_extended": "Baker argues that Anthropic, after losing AI market share in summer 2026 (a call he claims to have made correctly), is now re-accelerating and gaining share as of October 2026. He bases this view on his read of Anthropic's S-1 filing, specifically inferring that the blank October ARR field was intentionally left empty to be filled with a strong, momentum-confirming number at the time of the IPO or filing completion. The investment implication is that Anthropic is regaining competitive positioning against rivals like OpenAI in the AI lab landscape, suggesting its valuation trajectory is positive. However, since both Anthropic and OpenAI remain private companies, there are no directly actionable US-listed equity plays implied by this specific thesis.",
+  "detail": "Baker states he called Anthropic losing share in summer 2026 and is now calling re-acceleration and share gains in October. He implies the blank October ARR field in the S-1 was intentionally left for a strong number to be revealed, suggesting continued momentum.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly says he called both the share loss and the re-acceleration, and provides the S-1 blank-field inference",
+  "themes": [
+    "AI software/applications",
+    "AI lab economics"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "they are reaccelerating and gaining share",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "Anthropic (private)"
+  ],
+  "tickers_subject": [
+    "Anthropic (private)"
+  ],
+  "tickers_implied_original": [
+    "Anthropic (private)",
+    "OpenAI (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "Anthropic (private)",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Anthropic's market share trajectory and S-1 filing dynamics \u2014 it is the direct subject."
+    },
+    {
+      "ticker": "OpenAI (private)",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "OpenAI is referenced only as an implicit competitive backdrop for Anthropic's share gains, but the thesis does not make a specific claim about OpenAI's business or imply a tradeable position in it. Both are private, and OpenAI is not the subject of the thesis."
+    }
+  ]
+}

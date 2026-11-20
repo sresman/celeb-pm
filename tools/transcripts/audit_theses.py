@@ -174,6 +174,7 @@ def _build_v2_entry(row: dict[str, Any], audit: dict[str, Any]) -> dict[str, Any
         "speaker_attribution": "indeterminate",
         "speaker_name": "",
         "attribution_evidence": "",
+        "attribution_cue_type": "not_recorded",
         "tickers_named_original": t.get("tickers_named", []),
         "tickers_direct": tickers_direct,
         "tickers_subject": tickers_subject,
@@ -265,6 +266,7 @@ def load_resolved_attribution() -> dict[tuple[str, str], dict[str, str]]:
             "speaker_attribution": str(r.get("speaker_attribution", "indeterminate")),
             "speaker_name": str(r.get("speaker_name", "")),
             "attribution_evidence": str(r.get("pass1", {}).get("evidence", "")),
+            "attribution_cue_type": str(r.get("cue_type", "not_recorded")),
         }
         for r in payload.get("attributions", [])
     }
@@ -307,6 +309,7 @@ def rebuild_timelines() -> int:
             entry.setdefault("speaker_attribution", "indeterminate")
             entry.setdefault("speaker_name", "")
             entry.setdefault("attribution_evidence", "")
+            entry.setdefault("attribution_cue_type", "not_recorded")
         entries.append(entry)
     if resolved:
         print(

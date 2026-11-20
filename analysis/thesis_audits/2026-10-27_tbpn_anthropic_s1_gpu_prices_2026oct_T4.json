@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-27",
+  "source": "TBPN \u2014 Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
+  "thesis_id": "T4",
+  "summary": "The GPU compute spot market has shifted from backwardation to contango \u2014 forward compute prices are rising, not falling",
+  "summary_extended": "Baker argues that the GPU compute spot market has structurally shifted from backwardation to contango, meaning forward prices for compute capacity are now higher than spot prices \u2014 the opposite of what the prevailing public market narrative assumes. He cites Carmen Lee, founder of Silica Data (a Baker portfolio company), who made this observation at GTC, and corroborates it with anecdotes from other portfolio companies that are shocked by the premium they must pay to secure GPU clusters for mid-to-late 2027 delivery versus current spot rates. This directly contradicts the consensus view that new supply coming online will compress compute prices over time, suggesting instead that demand is outpacing supply on a forward basis. The investment implication is that GPU infrastructure providers and cloud compute suppliers with locked-in future capacity stand to benefit, while the 'supply glut' bear thesis on AI infrastructure is likely wrong. Baker presents this as a high-conviction, contrarian structural view grounded in real-time market pricing data rather than analyst projections.",
+  "detail": "Baker cites Silica Data (portfolio company) founder Carmen Lee's statement at GTC that the compute market is now in contango. Companies in Baker's portfolio trying to secure clusters for mid-to-late 2027 are shocked by how much more they must pay for future delivery vs. spot. This contradicts the public market narrative that supply coming online will compress prices.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites specific authoritative data source (Carmen Lee/Silica Data at GTC), corroborates with portfolio company anecdotes, and states 'we're not in backwardation anymore' definitively",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "GPU compute pricing"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "the compute market is now in contango",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "CRWV"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVIDIA (NVDA)",
+    "CoreWeave (CRWV)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant supplier of GPUs whose pricing dynamics are directly described by this thesis. A contango compute market implies sustained or rising demand for NVIDIA GPUs well into 2027, directly benefiting NVDA's revenue and pricing power."
+    },
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "CoreWeave is a GPU cloud provider that owns and leases compute clusters. A contango market where forward compute prices are rising directly benefits CoreWeave as a holder of future compute capacity, making its inventory more valuable over time."
+    }
+  ]
+}

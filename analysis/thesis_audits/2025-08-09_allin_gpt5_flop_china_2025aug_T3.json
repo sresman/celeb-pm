@@ -1,0 +1,63 @@
+{
+  "date": "2025-08-09",
+  "source": "All-In Podcast \u2014 GPT-5 underwhelms, AI TAM/ROIC/energy, China's advantage, tariffs, Nvidia chip smuggling, Apple buybacks and AI strategy",
+  "thesis_id": "T3",
+  "summary": "AI capex is generating measurable positive ROIC for hyperscalers, unlike the dot-com era, making the current investment cycle fundamentally different and more sustainable.",
+  "summary_extended": "Baker argues that the current AI investment cycle is fundamentally different from the dot-com bubble because hyperscalers are generating measurable, positive, and improving ROIC on their AI capex \u2014 not destroying capital. He cites Meta specifically as evidence: the company's revenue has accelerated and its ad targeting ROI has improved materially since AI investments began, demonstrating that AI spending is translating into real business outcomes. He contrasts this with the dot-com era, where capital was sunk into dark fiber that sat unutilized for years, whereas today AI GPUs are used so intensively they overheat \u2014 a physical signal that demand exceeds supply and capacity is not being wasted. Baker also references Microsoft Copilot adoption statistics as additional evidence of enterprise monetization. The investment implication is that the AI capex cycle is sustainable and that the major hyperscalers investing heavily in AI infrastructure are not in a bubble but rather in a high-ROIC compounding cycle, making them attractive medium-term holdings.",
+  "detail": "Baker argues that return on invested capital for major AI-investing public companies has actually increased since they began making AI investments. He cites Meta's revenue acceleration and improved ad targeting ROI as evidence. He contrasts this with the dot-com era where capital went into dark fiber that was unutilized, whereas AI GPUs are used so intensively they overheat \u2014 meaning demand exceeds supply.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker makes this argument with specific examples (Meta revenue beat, Microsoft Copilot stats), uses ROIC framing, and explicitly contrasts with dot-com to make a structural point. Repeated and elaborated.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "hyperscaler capex",
+    "AI monetization"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "economic return thus far has been here, GPUs are used so intensively they melt",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [
+    "META",
+    "MSFT"
+  ],
+  "tickers_direct": [
+    "META",
+    "MSFT",
+    "GOOGL",
+    "AMZN"
+  ],
+  "tickers_subject": [
+    "META",
+    "MSFT"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "META",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker explicitly cites Meta's revenue acceleration and improved ad targeting ROI as the primary evidence for his ROIC thesis, making Meta a direct subject of this specific argument."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Baker references Microsoft Copilot statistics as evidence of AI monetization and positive ROIC, making MSFT a direct subject of this thesis alongside META."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Baker's thesis is about hyperscalers broadly generating positive ROIC on AI capex; Alphabet is the third major hyperscaler with significant AI infrastructure spend and ad-targeting AI monetization analogous to Meta, making it a clear direct beneficiary of this structural argument even if not named explicitly."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Amazon/AWS is the largest cloud hyperscaler and a primary AI infrastructure investor; Baker's structural claim about hyperscaler ROIC improvement from AI capex unambiguously applies to AMZN as one of the handful of companies in this category."
+    }
+  ]
+}

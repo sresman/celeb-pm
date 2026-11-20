@@ -1,22 +1,23 @@
 {
   "model": "claude-sonnet-4-6",
   "transcripts_processed": 1,
-  "ok": 0,
-  "skipped": 1,
+  "ok": 1,
+  "skipped": 0,
   "errors": [],
-  "total_input_tokens": 0,
-  "total_output_tokens": 0,
-  "estimated_cost_usd": 0.0,
+  "total_input_tokens": 6349,
+  "total_output_tokens": 2650,
+  "estimated_cost_usd": 0.0588,
   "rows": [
     {
-      "label": "iltb_tech_consumer_2019nov",
-      "date": "2019-11-26",
-      "source": "Invest Like the Best",
-      "filepath": "transcripts/whisper/2019-11-26_iltb_tech_consumer_2019nov.txt",
-      "output": "analysis/thesis_extractions/2019-11-26_iltb_tech_consumer_2019nov.json",
-      "status": "skipped_exists",
-      "input_tokens": 0,
-      "output_tokens": 0
+      "label": "aria_networks_deep_networking_wrapup_2026apr",
+      "date": "2026-04-16",
+      "source": "Aria Networks",
+      "filepath": "transcripts/youtube/2026-04-16_aria_networks_deep_networking_wrapup_2026apr_0ZHX7J6vXT4.txt",
+      "output": "analysis/thesis_extractions/2026-04-16_aria_networks_deep_networking_wrapup_2026apr.json",
+      "status": "ok",
+      "input_tokens": 6349,
+      "output_tokens": 2650,
+      "counts": "7 theses, 3 recommendations, 3 catalysts"
     }
   ]
 }

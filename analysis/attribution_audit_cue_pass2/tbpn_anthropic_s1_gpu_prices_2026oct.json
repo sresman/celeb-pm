@@ -1,0 +1,201 @@
+{
+  "label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+  "date": "2026-10-27",
+  "source": "TBPN \u2014 Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
+  "host": "John Coogan, Jordi Hays (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T10",
+      "summary": "SpaceX and Anthropic IPOs will unlock significant mutual fund buying power for private AI markets",
+      "tickers": [],
+      "quote": "going public is actually going to free up a huge amount of buying power in private markets",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "quote_not_located in transcript",
+      "cue_type": "none"
+    },
+    {
+      "thesis_id": "T1",
+      "summary": "Anthropic S-1 was a clear upside surprise on unit economics, cash burn, and customer diversification",
+      "tickers": [],
+      "quote": "the Anthropic S1 was pretty clearly an upside surprise",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 3 directly addresses 'Gavin' and turn 4 is his reply; turn 6 containing the quote follows immediately in the same speaker's voice.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Enterprise AI adoption is still very early \u2014 earlier than Baker previously thought",
+      "tickers": [],
+      "quote": "very early. Maybe earlier than I thought we were",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 13 is a host question directed at the prior speaker (Baker, established by naming in turn 3); turn 14 is the direct reply.",
+      "cue_type": "structural"
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Open-weight model inference clouds (Fireworks, Base10, Together, Modal, Cognition) are growing faster than OpenAI or Anthropic",
+      "tickers": [],
+      "quote": "growing faster than either Open AI or Anthropic",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 37 continues Baker's established voice from the same conversation thread; self-referential fund knowledge ('my firm is an investor') appears in nearby turn 73, confirming Baker is the active speaker.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "The GPU compute spot market has shifted from backwardation to contango \u2014 forward compute prices are rising, not falling",
+      "tickers": [
+        "NVDA",
+        "CRWV"
+      ],
+      "quote": "the compute market is now in contango",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 72 is a host question addressed to Baker ('you've maintained a sort of bullishness'); turn 73 containing the quote is the direct reply, and includes 'my firm is an investor in them' self-identification.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Companies that locked in long-term compute contracts before May 2026 are deeply in-the-money and could sell at 3-5x premium",
+      "tickers": [
+        "CRWV",
+        "NBIS"
+      ],
+      "quote": "you could sell them all at a three, four, or five x premium",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 108 directly quotes Sarah Friar and contextualizes it with Baker's analytical framing; continuity from Baker's established voice in surrounding turns about compute contracts.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "SpaceX's spot-market GPU rental strategy (short-term contracts, prepayments) is superior to CoreWeave's long-term off-take model",
+      "tickers": [
+        "CRWV"
+      ],
+      "quote": "willing to sell on the spot market, we can have paybacks well under a year",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 88 begins 'I don't think Elon...' in Baker's established voice; turn 90 is a direct continuation of that same speaker's reasoning.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "GPU cluster operational execution is a major differentiator \u2014 only a handful of operators can reliably energize and run large clusters",
+      "tickers": [
+        "CRWV",
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "NBIS"
+      ],
+      "quote": "running a Formula One team, it's like really hard",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 96 begins the Formula 1 analogy in Baker's established voice; turn 98 is a direct continuation of the same speaker's turn.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "NVIDIA's DGX Pod (pre-assembled 7-rack unit) will reduce cluster energization time and remove working capital drag from the market",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "DGX Pod, which is going to make it a lot easier",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 98 is a continuation of Baker's established monologue from turn 96; same speaker throughout the uninterrupted block.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Hyperscaler and neo-cloud revenue growth will continuously accelerate as underpriced contracts reprice to market and spot exposure increases",
+      "tickers": [
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "CRWV"
+      ],
+      "quote": "pretty continuous acceleration in the sum of the big hyperscalers cloud revenue growth",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 235 continues Baker's established analytical voice in an uninterrupted block; the fund-level framing ('I do think') is consistent with Baker's prior turns.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T11",
+      "summary": "UAE sovereign wealth funds (MGX, Mubadala) are the most aggressive and front-footed sovereign AI investors",
+      "tickers": [],
+      "quote": "UAE in particular has been extremely front-footed with all their sovereigns",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 227 contains 'at Trafigura, we co-led Crusoe with Mubadala' \u2014 a self-identification of Baker's firm's investment activity \u2014 immediately before the quoted turn 229.",
+      "cue_type": "style"
+    },
+    {
+      "thesis_id": "T12",
+      "summary": "AI has already delivered real-world drug repurposing breakthroughs; biology is a major near-term AI application",
+      "tickers": [],
+      "quote": "AI has already saved a lot of lives",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 127 is a host question to Baker; turn 128 is the direct reply beginning 'Yeah, I mean, we'll see...' with first-person fund framing.",
+      "cue_type": "structural"
+    },
+    {
+      "thesis_id": "T13",
+      "summary": "Rare earth refining (not mining) is the key bottleneck; chemical process innovation is the investable angle",
+      "tickers": [],
+      "quote": "the problem with rare earths is not that they're rare, it's that refining them is a very dirty process",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 209 contains 'we have spent a lot of time' and 'we've invested in a company' \u2014 clear self-identification of Baker's fund's activity.",
+      "cue_type": "style"
+    },
+    {
+      "thesis_id": "T14",
+      "summary": "Anthropic re-accelerated in October 2026 after losing market share in summer 2026",
+      "tickers": [
+        "Anthropic (private)"
+      ],
+      "quote": "they are reaccelerating and gaining share",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 184 begins 'I called it like I saw it in the summer' establishing Baker as speaker; turn 186 is a direct continuation of that same speaker.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T15",
+      "summary": "Grok Bot (post cursor/xAI integration) is the most impactful AI productivity tool for investment professionals",
+      "tickers": [
+        "xAI",
+        "Cursor"
+      ],
+      "quote": "Grok Bot is the most impactful AI product to me",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 50 is a host question; turn 51 is the direct reply beginning 'I mean as a user' with 'our firm' self-identification.",
+      "cue_type": "structural"
+    }
+  ]
+}

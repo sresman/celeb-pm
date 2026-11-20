@@ -1,0 +1,299 @@
+# label: aria_networks_deep_networking_wrapup_2026apr
+# source: Aria Networks
+# date: 2026-04-16
+# url: https://www.youtube.com/watch?v=0ZHX7J6vXT4
+# youtube_id: 0ZHX7J6vXT4
+# sub_lang: en-orig
+# actual_title: Why Aria Is to AI What Arista Was to Cloud | Gavin Baker & Mansour Karam
+
+[00:01] [music]
+[00:13] >> I watched The Last Samurai recently. I
+[00:15] don't know if anybody's seen it, but
+[00:16] it's about um
+[00:18] you know, a
+[00:19] master samurai colliding with a machine
+[00:21] gun. Um and I feel like I'm a samurai
+[00:24] and I'm not going to lose a fight with
+[00:25] katana. But the machine gun is here and
+[00:27] it's AI. And Stefan just said that I I
+[00:30] didn't we need to figure out how to be
+[00:31] 1000X investors.
+[00:33] So
+[00:34] >> [laughter]
+[00:34] >> So like let's add that to the mission
+[00:35] statement. No, but seriously, Mansour, I
+[00:37] am like I was really excited before.
+[00:40] Holy that was awesome. Yeah.
+[00:43] >> we're doing this at the scale of the
+[00:44] largest
+[00:46] AI factories. What do you think the cost
+[00:48] impact is on that equation that you laid
+[00:50] out earlier? You know, it's actually
+[00:52] very interesting. I was um
+[00:55] MFU is a training centric
+[00:58] um
+[00:59] kind of metric.
+[01:01] Um
+[01:02] and it goes back to, you know, training
+[01:03] does not generate revenue.
+[01:05] And I would actually just humbly submit,
+[01:07] I was just thinking watching this, that
+[01:09] hey, we can reduce your cost for
+[01:11] training. But more importantly, if we
+[01:13] double the utilization of your AI
+[01:15] factory, we're literally going to double
+[01:16] your revenues. That's exactly Like that
+[01:18] is that is the sale on the inference
+[01:21] side. Indeed. Like we'll save you money
+[01:23] we your training runs, they'll they'll
+[01:25] be more reliable, you'll have to
+[01:27] checkpoint less, um they'll cost less,
+[01:30] you'll get more out of your um XPUs.
+[01:33] But on the inference side, forget
+[01:35] everything else, we can materially
+[01:37] improve your revenue.
+[01:38] >> Right. And you had those those
+[01:40] slides there, but I mean this is
+[01:42] this is amazing.
+[01:43] Yeah.
+[01:43] >> Excellent. Well,
+[01:44] um maybe just shifting gear a bit or or
+[01:47] maybe on the investment side, right?
+[01:48] Like you were an early investor in
+[01:50] Arista, you were an early investor in
+[01:52] Nvidia. Clearly, you saw something far
+[01:55] way beyond before the market saw it.
+[01:59] What do you see are you know the the
+[02:01] patterns here and maybe also what's do
+[02:05] you see as the differences with very
+[02:06] curious. Yeah,
+[02:09] I I actually think it's when a
+[02:10] technological discontinuity encounters
+[02:13] first principles thinking and it's just
+[02:15] that simple. Well said. Yeah, [snorts]
+[02:19] and so
+[02:20] GPUs were you know a technological
+[02:22] discontinuity for for graphics for a
+[02:24] long time. And then we realized graphics
+[02:26] math was very similar to deep learning
+[02:28] and kind of Jensen went all all in on
+[02:29] that. Um
+[02:32] you know, it's in some ways EVs and
+[02:34] Tesla that was like a technological
+[02:36] discontinuity and a lot of the people
+[02:38] who are trying to build EVs before were
+[02:40] building them the same way and Elon
+[02:41] said, "Wow, that's crazy. Let's put the
+[02:43] battery at the bottom of the car. Then
+[02:44] we'll have a lower center of gravity.
+[02:46] The car will handle better."
+[02:47] >> First principle First principles
+[02:49] thinking.
+[02:50] Um
+[02:52] and here we have a technological
+[02:53] discontinuity
+[02:55] that I don't think anyone has really
+[02:56] applied first principles thinking to
+[02:58] yet. And I think
+[02:59] part of this is because
+[03:02] everyone involved in standing up these
+[03:04] clusters has been almost too busy to
+[03:08] optimize.
+[03:09] >> exactly right. Yeah, you just
+[03:11] like just get it in the ground, get that
+[03:14] get get get the data center built, get
+[03:16] the cooling, get the power.
+[03:18] And now we have hundreds of billions of
+[03:20] dollars of unoptimized factories.
+[03:22] >> Stranded. Stranded. Yeah, I mean there
+[03:24] there's you know, there's
+[03:26] you know, if you know, if Anthropic's
+[03:30] new cloud and cloud providers were using
+[03:32] our AM, maybe they wouldn't have 30
+[03:33] billion in revenue, they'd be at 60.
+[03:36] And it is it is literally that order of
+[03:38] magnitude
+[03:40] of importance. But it also it is really
+[03:43] it does really feel like the Arista
+[03:45] IPO to me.
+[03:46] You know, the Arista IPO pitch was you
+[03:48] know, really simple.
+[03:51] You know,
+[03:52] I guess I guess we have some some people
+[03:53] my age in the room, but everybody thinks
+[03:55] iOS is, you know, Apple, but the
+[03:58] original iOS was Cisco and they just
+[03:59] came in and they said, you know, hey,
+[04:01] this was built for a different era, the
+[04:03] cloud is here, we have EOS, it's
+[04:05] purpose-built from, you know, kind of
+[04:08] first principles, ground up for the age
+[04:10] of the cloud, not, you know, the age of,
+[04:12] you know, the
+[04:13] the enterprise or the first, you know,
+[04:15] the early days of what you used to be
+[04:17] called web 1.0.
+[04:18] >> Right. Um, and this is we're doing the
+[04:21] same thing.
+[04:22] You know, there's more traffic on the
+[04:24] backplane of an NVL-72 than there is in,
+[04:27] you know, over the entire internet. And
+[04:29] obviously
+[04:31] um, a operating system built for the
+[04:34] former is not going to work for the
+[04:36] latter, particularly when they collide,
+[04:38] which they do with agents. Um, so I
+[04:40] think it's really exciting. I think it's
+[04:41] awesome. Yeah,
+[04:42] we're we're actually building the
+[04:44] networking company for the AI era.
+[04:47] >> Absolutely. Right. Right. Excellent. So,
+[04:49] I have one last question. We have uh,
+[04:51] many neo clouds, uh, hyper scalers,
+[04:55] accelerator vendors here in the room.
+[04:58] Uh, do you have what message do you have
+[05:00] for them? Why should they pay attention
+[05:03] to what we showed them today? Well,
+[05:05] [snorts] I would just say it's very
+[05:06] simple. My friend Dylan at the top of
+[05:08] his
+[05:09] What is it called? The cloud rankings?
+[05:10] What's it called? Clustered back. At
+[05:12] [laughter] the top of Clustered back is
+[05:14] Coreweave and they're the only platinum
+[05:16] ones. And um, we've known I've known
+[05:18] Corey for a long time. Um, it was kind
+[05:20] of a bunch of New York hedge fund guys
+[05:22] who funded it. So, I countered it very,
+[05:24] very early in its life. And just like,
+[05:26] why are you good? And the answer is
+[05:28] always very simple. We invest more in
+[05:31] networking than anyone else.
+[05:33] And
+[05:34] where that comes through today in their
+[05:36] business model, which is still a little
+[05:38] training centric, is that they can
+[05:40] charge a higher price per GPU hour than
+[05:42] anyone else.
+[05:43] Because you're getting more flops per
+[05:45] GPU hour from Coreweave because they in
+[05:49] gold plate or maybe in since they're
+[05:50] platinum they platinum plate the
+[05:52] network. Um
+[05:54] but I actually think kind of the GPU per
+[05:56] hour pricing model is going to go away
+[05:59] and we're just going to go to a straight
+[06:01] token pricing model.
+[06:03] And so instead of you know kind of the
+[06:06] MFU indirectly, you know, revenues and
+[06:09] costs in this equation are just exactly
+[06:12] two sides of the same coin. Instead of
+[06:15] you know the the higher MFU leading to
+[06:17] lower costs, better training
+[06:19] performance, higher GPU hour, here if
+[06:21] you invest in modern networking you are
+[06:25] going to literally get more revenue out
+[06:28] of your assets.
+[06:29] And I would just say it's not um
+[06:32] you know, a lot of the neo clouds are
+[06:33] running you know, very similar stacks.
+[06:35] Like Coreweave bought Weights & Biases.
+[06:38] You know, Crusoe bought what was that
+[06:39] Israeli company?
+[06:41] Aterro. Yeah. People are trying to dif-
+[06:44] trying to differentiate. By the way, I'm
+[06:45] I'm a Crusoe shareholder. Somebody from
+[06:47] Crusoe is in here. I'm a Crusoe,
+[06:48] Coreweave, and Nebia shareholder. I love
+[06:50] you all. Um
+[06:52] but um
+[06:54] it's not that easy to differentiate and
+[06:58] you have a window here where there is a
+[07:00] disruptive new networking technology
+[07:03] that's going to let you get dramatically
+[07:05] more revenue out of your assets
+[07:07] and it's much better to be one of the
+[07:10] first people to adopt this than one of
+[07:12] the last. Right. Because if you adopt
+[07:15] this more, you drive more utilization
+[07:17] out of that factory, you drive more
+[07:18] revenue, you're going to be able to buy
+[07:20] more GPUs, more of the Aria boxes,
+[07:24] um
+[07:25] and just it's going to you know, this is
+[07:26] a scale business.
+[07:28] So I'd say uh fortune favors the bold.
+[07:31] Be bold. Right. I mean, it's not easy to
+[07:34] get this structure.
+[07:35] >> engineers generally don't want to be
+[07:37] bold.
+[07:38] >> [laughter]
+[07:38] >> But I think but but this is but has has
+[07:42] um
+[07:43] has uh DJ Che just said, this is your
+[07:45] this is your chance for greatness. This
+[07:47] is your chance to be that 1,000 X
+[07:49] engineer.
+[07:49] >> Right, and that's really an important
+[07:50] point because like we're network
+[07:52] engineers at heart, but we also
+[07:54] understand AI really well. So, what you
+[07:57] saw here today is the capabilities and
+[07:59] you could see it, we could let it rip,
+[08:01] but we're also being cautious and we're
+[08:04] being safe so that at the end, what's
+[08:07] critical is that we deliver all this
+[08:09] optimization and ensure that the network
+[08:12] stays up, right? So, this is always
+[08:13] going to be It's kind of an autopilot on
+[08:15] a plane. You absolutely need it to be
+[08:17] safe, right? And that's incorporated in
+[08:19] there. Yeah, it was it was so mission
+[08:21] critical that Elon for Colossus 1
+[08:23] insisted on re-plugging and unplugging
+[08:27] every cable. He understood exactly how
+[08:29] it all
+[08:30] um work together.
+[08:32] How the job should be done cuz he wanted
+[08:34] to be able to lay it out in his mind
+[08:36] because he quickly identified the
+[08:37] network as the most important part of
+[08:40] the cluster. And I think that is why
+[08:42] they brought up, you know, nobody
+[08:43] thought you could get more than 40,000
+[08:45] XPUs
+[08:47] coherent with I guess back then it was
+[08:50] maybe Tomahawk 5 level technology. And
+[08:53] they got 100,000
+[08:54] XPUs coherent and it's cuz they really
+[08:57] focused on the network. And now we have
+[08:59] the Tomahawk 6 and million XPU cluster
+[09:03] clusters on the way. Yep, indeed.
+[09:05] Excellent. Well, it's not easy to get
+[09:07] the structural advantage, but you know,
+[09:08] the network is one area where you
+[09:10] actually can. 100%?
+[09:12] >> Yeah, and so we are you know, we were we
+[09:15] delivered general availability last
+[09:17] week. Um we are already shipping. Uh we
+[09:21] have orders. Um if you're in this
+[09:23] audience if you haven't you're not
+[09:25] working with us yet, please come come
+[09:26] find me, find Chris, find DJ, find
+[09:31] anyone here with a with a red uh Arista
+[09:33] logo. That would be one of our team
+[09:35] members. We'd love uh to talk to you.
+[09:38] Uh and with that, I think there will be
+[09:40] some dessert. There's going to be more
+[09:42] drinks, and please stay here and
+[09:44] socialize. I know we didn't do a Q&A,
+[09:46] but I do think we're running late. So,
+[09:48] what we'll do is that we will take
+[09:50] questions, right? Uh you know, please
+[09:53] find us if you have any questions. We'll
+[09:54] be We'd love to answer them for you. So,
+[09:56] thank you again, everyone.
+[09:59] Uh and again, thank you, Gavin.
+[10:00] >> Thank you for the tour. Super excited.
+[10:02] Thank you all for a big year.
+[10:03] >> [applause]

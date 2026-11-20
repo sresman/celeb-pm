@@ -1,17 +1,17 @@
 {
   "model": "claude-sonnet-4-6",
-  "theses_selected": 614,
-  "ok": 0,
-  "skipped": 614,
+  "theses_selected": 648,
+  "ok": 7,
+  "skipped": 641,
   "errors": [],
-  "tickers_removed_tangential": 492,
-  "tickers_added": 150,
-  "avg_summary_len": 133.1,
-  "avg_summary_extended_len": 1030.3,
-  "timeline_v2_entries": 614,
-  "total_input_tokens": 0,
-  "total_output_tokens": 0,
-  "estimated_cost_usd": 0.0,
+  "tickers_removed_tangential": 499,
+  "tickers_added": 161,
+  "avg_summary_len": 133.2,
+  "avg_summary_extended_len": 1028.0,
+  "timeline_v2_entries": 648,
+  "total_input_tokens": 8870,
+  "total_output_tokens": 2313,
+  "estimated_cost_usd": 0.0613,
   "rows": [
     {
       "date": "2019-11-26",
@@ -2822,6 +2822,114 @@
       "output_tokens": 0
     },
     {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T1.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T2.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T3.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T4.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T5.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T6.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T7.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T8.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T9.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T10.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T11.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2025-08-09",
+      "source_label": "allin_gpt5_flop_china_2025aug",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2025-08-09_allin_gpt5_flop_china_2025aug_T12.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
       "date": "2025-10-22",
       "source_label": "aleph_semis_globalwarming_2025oct",
       "thesis_id": "T1",
@@ -3486,6 +3594,69 @@
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_deep_networking_wrapup_2026apr_T1.json",
+      "status": "ok",
+      "input_tokens": 1270,
+      "output_tokens": 438
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_deep_networking_wrapup_2026apr_T2.json",
+      "status": "ok",
+      "input_tokens": 1274,
+      "output_tokens": 333
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_deep_networking_wrapup_2026apr_T3.json",
+      "status": "ok",
+      "input_tokens": 1248,
+      "output_tokens": 295
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_deep_networking_wrapup_2026apr_T4.json",
+      "status": "ok",
+      "input_tokens": 1259,
+      "output_tokens": 288
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_deep_networking_wrapup_2026apr_T5.json",
+      "status": "ok",
+      "input_tokens": 1276,
+      "output_tokens": 288
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_deep_networking_wrapup_2026apr_T6.json",
+      "status": "ok",
+      "input_tokens": 1288,
+      "output_tokens": 319
+    },
+    {
+      "date": "2026-04-16",
+      "source_label": "aria_networks_deep_networking_wrapup_2026apr",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2026-04-16_aria_networks_deep_networking_wrapup_2026apr_T7.json",
+      "status": "ok",
+      "input_tokens": 1255,
+      "output_tokens": 352
     },
     {
       "date": "2026-04-16",
@@ -5535,6 +5706,141 @@
       "source_label": "a16z_demand_outrunning_compute_2026aug",
       "thesis_id": "T20",
       "output": "analysis/thesis_audits/2026-08-31_a16z_demand_outrunning_compute_2026aug_T20.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T1.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T2.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T3.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T4.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T5.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T6.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T7.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T8.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T9.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T10",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T10.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T11",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T11.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T12",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T12.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T13",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T13.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T14",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T14.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-10-27",
+      "source_label": "tbpn_anthropic_s1_gpu_prices_2026oct",
+      "thesis_id": "T15",
+      "output": "analysis/thesis_audits/2026-10-27_tbpn_anthropic_s1_gpu_prices_2026oct_T15.json",
       "status": "skipped_exists",
       "input_tokens": 0,
       "output_tokens": 0

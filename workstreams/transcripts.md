@@ -17,6 +17,36 @@ Branch: **`main`**. `trigger-denominator-ex-spcx` fast-forwarded into it on
 
 ---
 
+## Current State (as of 2026-10-28) — v11 BUILT; STOPPED BEFORE BASKET CURATION
+
+**Deliverable: `analysis/step4_signal_events_v11_with_returns_extended.{csv,xlsx}`**
+(218 mention rows / 162 repeat; v10 left on disk). Corpus 48 → **51 appearances,
+648 theses**. Uncommitted. Full detail: `analysis/v11_implementation_notes.md`.
+
+- **Added:** TBPN 2026-10-27 Baker segment `crdg4X5BZPc` (the four fomo alerts
+  were one appearance — full show + segment × podcast + YouTube; segment is the
+  full show's Baker chapter, 2,487s vs 2,488s); All-In 2025-08-09 `NpJ4RYSdVK4`
+  (pre-seed gap; roster is a fivesome — Chamath and Sacks absent); Aria
+  2026-04-16 closing session `0ZHX7J6vXT4` (separate conversation from the
+  existing Aria clip: 0% shared 8-grams).
+- **June TBPN host corrected** ("Foxy" is an Atreides analyst in the room, not a
+  host) and re-audited: **0 → 9 subject theses on identical transcript cues.**
+  Roster metadata is load-bearing for attribution; two-of-two cannot see it.
+- **Fetch fixes:** a YouTube 429 was recorded as `no_captions` (now
+  `rate_limited`; audit found zero past episodes lost to it); `en` caption tracks
+  can be machine translations — `en-orig` is now tried first (All-In had served
+  word salad; corpus scan found no other case).
+- **Cue-type instrument** (`audit_attribution --cue-type`) exists, writes only to
+  `attribution_audit_cue_pass{1,2}/` → `attribution_resolved_cue.json`, feeds
+  nothing. v11 verdicts are all on the original instrument.
+
+| slice | v10 n | v10 1y | v11 n | v11 1y | what moved it |
+| --- | ---: | ---: | ---: | ---: | --- |
+| signal | 38 | 228.53 | 39 | **215.24** | 1y: price refresh only; n: June re-audit |
+| control | 112 | 29.68 | 122 | **37.66** | +1.69 prices, +6.29 All-In (one semicap row) |
+
+---
+
 ## Current State (as of 2026-09-15) — RETURNS UN-HELD; v10 REGENERATED ON SUBJECT
 
 **The operator flipped the default to `subject` and unheld returns.** v10 is
@@ -375,6 +405,26 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 
 ## Immediate Next Steps
 
+**From 2026-10-28 — v12 is the next run (operator-specified). In order:**
+
+1. **Corpus-wide roster cleanup FIRST.** Audit every `host` in `targets.py`
+   against its own transcript (first-name-only / garbled / unknown entries:
+   "Jas", "Guy", "Ron", Sohn AU 2020 `unknown`, and any All-In entry assumed to
+   be the usual four). Correct them. The June TBPN case (0 → 9) is the measured
+   example of how large the roster effect can be on one episode.
+2. **Then re-audit the full corpus on the cue-type instrument**, against the
+   corrected metadata, in one deliberate pass. Report the shift vs stored
+   verdicts at thesis AND named-ticker level — how many move, which direction.
+   Before that run, add a self-identification cue category (or fold it into
+   `naming` explicitly) — the cue instrument filed "my firm is an investor" as
+   `style` twice in TBPN Oct, which would overstate `style`.
+3. The paired sample for the instrument change already exists for the 3 new
+   episodes (`attribution_resolved.json` vs `attribution_resolved_cue.json`)
+   plus the 5-episode scratch validation recorded in the notes.
+4. **Basket curation (deferred, not started):** 11 of 14 TBPN Oct and 7 of 9
+   All-In subject theses match no theme regex (GPU-compute contango, in-the-money
+   compute contracts, Anthropic S-1, DGX Pod, Apple AI strategy).
+
 **From 2026-09-15 — nothing is blocked.** The default is `subject`, returns are
 un-held, v10 is on `main`. Open items, in rough priority order:
 
@@ -504,6 +554,14 @@ baskets → EODHD prices → returns → `step4_signal_events_v3.csv`; `--force-
   content re-routed into `meta_views`. Change it by minimal diff only and verify
   thesis counts against baseline on a sample large enough to see a 50% failure rate
   — two episodes cannot.
+- **The attribution audit prompt is a measuring instrument too** (operator,
+  2026-10-28). Any change to it — including one that only appears to add an output
+  field — changes the verdicts, not just their labels. No change to it ships
+  without a before-and-after measured on enough episodes to see the shift, and no
+  run mixes two versions of it in the numbers that feed the returns. Measured case:
+  adding `cue_type` moved ~19% of verdicts vs a 6.5% pass-to-pass baseline (77
+  theses). `audit_attribution --cue-type` is therefore a separate instrument with
+  its own output dirs. See `analysis/v11_implementation_notes.md`.
 - **Only `theses` is consumed downstream.** `explicit_recommendations`,
   `catalysts`, `sector_rankings`, `risk_warnings` and `meta_views` are write-only,
   so a claim routed elsewhere is functionally deleted.

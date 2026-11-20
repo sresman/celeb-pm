@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-27",
+  "source": "TBPN \u2014 Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
+  "thesis_id": "T9",
+  "summary": "Hyperscaler and neo-cloud revenue growth will continuously accelerate as underpriced contracts reprice to market and spot exposure increases",
+  "summary_extended": "Baker argues that the combined cloud revenue growth of major hyperscalers and neo-cloud providers will experience a sustained, near-continuous acceleration over the medium term, driven by three structural tailwinds: legacy underpriced contracts repricing to current market rates, increasing spot-market exposure adding higher-margin incremental revenue, and the high incremental margins of cloud infrastructure meaning operating cash flow closely tracks revenue growth. He specifically notes that the 2027 capex buildout can be largely self-financed from internally generated cash flow, reducing dependence on external capital markets. Baker states he believes external financing requirements are near or at their peak, implying the business model becomes increasingly self-sustaining. The investment implication is to own the major hyperscalers and neo-cloud providers as both revenue growth and free cash flow generation accelerate simultaneously, creating a compounding earnings dynamic.",
+  "detail": "Baker expects a sustained acceleration in the sum of hyperscaler cloud revenue growth plus neo-cloud revenue, driven by: (1) legacy underpriced contracts repricing higher, (2) more spot-market exposure being added, (3) high incremental margins meaning operating cash flow follows revenue. He believes the 2027 buildout can be largely self-financed from cash flow.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states 'pretty continuous acceleration' and 'I don't know if we've seen the peak of external financing, but I think we're getting close'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "cloud infrastructure business models",
+    "hyperscaler capex"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "pretty continuous acceleration in the sum of the big hyperscalers cloud revenue growth",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "AMZN",
+    "MSFT",
+    "GOOGL",
+    "CRWV"
+  ],
+  "tickers_subject": [
+    "AMZN",
+    "MSFT",
+    "GOOGL",
+    "CRWV"
+  ],
+  "tickers_implied_original": [
+    "Amazon (AMZN)",
+    "Microsoft (MSFT)",
+    "Alphabet (GOOGL)",
+    "CoreWeave (CRWV)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AMZN",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Amazon Web Services is one of the largest hyperscaler cloud businesses and is a direct subject of the thesis about accelerating cloud revenue growth and repricing dynamics."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Microsoft Azure is a major hyperscaler and direct subject of the thesis about legacy contract repricing and accelerating cloud revenue growth."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Google Cloud is a major hyperscaler and direct subject of the thesis about accelerating cloud revenue growth and spot-market exposure increases."
+    },
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "CoreWeave is the primary US-listed neo-cloud provider and is explicitly part of the thesis as a direct beneficiary of spot-market repricing and accelerating neo-cloud revenue growth."
+    }
+  ]
+}

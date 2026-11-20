@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-27",
+  "source": "TBPN \u2014 Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
+  "thesis_id": "T6",
+  "summary": "SpaceX's spot-market GPU rental strategy (short-term contracts, prepayments) is superior to CoreWeave's long-term off-take model",
+  "summary_extended": "Baker argues that SpaceX developed a structurally superior GPU compute business model by reasoning from first principles: rather than locking in long-term off-take agreements, SpaceX sells GPU capacity on the spot market, enabling sub-one-year paybacks and collecting large customer prepayments that reduce capital risk. In contrast, CoreWeave committed to vast compute capacity under long-term fixed-price contracts that are now priced well below current spot market rates, meaning CoreWeave is effectively leaving significant revenue on the table and faces margin compression relative to what spot pricing would yield. Baker frames this not as speculation but as a structural conclusion about business model design, noting that CoreWeave itself recognizes the error and is actively attempting to shift its contract mix toward greater spot market exposure. The investment implication is cautious on CoreWeave's long-term economics relative to more flexible, spot-oriented competitors, though no explicit buy or sell recommendation is made. No specific financial figures beyond 'sub-one-year paybacks' are cited, and SpaceX remains private, limiting direct investability of the superior model.",
+  "detail": "Baker argues SpaceX reasoned from first principles to a better financing model: sell on spot market, achieve sub-one-year paybacks, collect large prepayments. CoreWeave locked in vast compute at long-term fixed prices now well below market. CoreWeave is aware of this and trying to shift toward more spot exposure.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as a structural conclusion, not speculation, and notes CoreWeave is actively trying to correct the mistake",
+  "themes": [
+    "AI datacenter infrastructure",
+    "GPU compute pricing",
+    "cloud infrastructure business models"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "willing to sell on the spot market, we can have paybacks well under a year",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [
+    "CoreWeave"
+  ],
+  "tickers_direct": [
+    "CRWV"
+  ],
+  "tickers_subject": [
+    "CRWV"
+  ],
+  "tickers_implied_original": [
+    "SpaceX (private)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "CoreWeave is the direct subject of this thesis \u2014 Baker is critiquing its long-term off-take contract model as structurally inferior and noting it is trying to correct this mistake."
+    }
+  ]
+}

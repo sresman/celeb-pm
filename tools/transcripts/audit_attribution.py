@@ -43,6 +43,7 @@ Usage::
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import re
 import time
@@ -100,6 +101,18 @@ PANEL_HINT = re.compile(
 )
 
 ATTRIBUTION_VALUES = ("baker", "other", "indeterminate")
+
+# What a verdict RESTS ON, strongest first (operator, 2026-10-28). The two-of-two
+# rule cannot see roster-driven error — both passes read the same participants
+# line and agree by construction (June TBPN moved 0 -> 9 subject on a host-field
+# fix with identical cues). Recording the cue makes contamination sliceable by
+# evidence strength, so "should style-only verdicts count" becomes a filter.
+#   naming     — the subject is named, or addressed and answers
+#   structural — answers a host's setup question, or an equivalent turn cue
+#   continuity — continues an adjacent turn already judged to be one speaker's
+#   style      — register, first person, subject-matter expertise, nothing else
+#   none       — no cue (indeterminate)
+CUE_TYPES = ("naming", "structural", "continuity", "style", "none")
 
 AUDIT_SCHEMA: dict[str, Any] = {
     "type": "object",
@@ -164,6 +177,34 @@ this audit exists to detect, so bias toward "indeterminate" when the window is t
 Set likely_speaker to a name when you can (e.g. "Jason Calacanis"), otherwise "" for \
 baker/indeterminate or a role ("host") for other. evidence: one short sentence citing \
 the specific cue. Output valid JSON only."""
+
+
+# --------------------------------------------------------------------------- #
+# The cue-field instrument (--cue-type). A SEPARATE measuring device, not an
+# upgrade: on a 77-thesis sample it moved ~19% of verdicts against a 6.5%
+# pass-to-pass baseline (analysis/v11_implementation_notes.md, 2026-10-28). The
+# original SYSTEM_PROMPT + AUDIT_SCHEMA above produce every verdict that feeds
+# the returns; the cue version writes to its own directories and feeds nothing
+# until the corpus is re-audited on it in one deliberate pass. Never mix the two
+# in one resolved file.
+# --------------------------------------------------------------------------- #
+
+CUE_OUT_DIR = ANALYSIS_DIR / "attribution_audit_cue"
+
+AUDIT_SCHEMA_CUE: dict[str, Any] = copy.deepcopy(AUDIT_SCHEMA)
+_cue_item = AUDIT_SCHEMA_CUE["properties"]["attributions"]["items"]
+_cue_item["properties"]["cue_type"] = {"type": "string", "enum": list(CUE_TYPES)}
+_cue_item["required"].append("cue_type")
+
+SYSTEM_PROMPT_CUE = SYSTEM_PROMPT + """
+
+cue_type: the STRONGEST kind of cue your verdict actually rests on —
+  "naming"     — a speaker is named, or addressed by name and the reply follows
+  "structural" — the turn answers a host's setup question, or a similar turn-order cue
+  "continuity" — the turn continues an adjacent turn you already attributed
+  "style"      — register, first person or subject-matter expertise, and nothing else
+  "none"       — no cue (use for indeterminate)
+Report what the verdict rests on, not what would ideally be there."""
 
 
 # --------------------------------------------------------------------------- #
@@ -507,14 +548,19 @@ def build_user_content(
     return "\n".join(parts)
 
 
-def call_api(client: Any, user_content: str) -> Any:
+def call_api(client: Any, user_content: str, *, cue: bool = False) -> Any:
     return client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         temperature=0,
-        system=SYSTEM_PROMPT,
+        system=SYSTEM_PROMPT_CUE if cue else SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_content}],
-        output_config={"format": {"type": "json_schema", "schema": AUDIT_SCHEMA}},
+        output_config={
+            "format": {
+                "type": "json_schema",
+                "schema": AUDIT_SCHEMA_CUE if cue else AUDIT_SCHEMA,
+            }
+        },
     )
 
 
@@ -646,6 +692,11 @@ def main() -> int:
              "MERGES them into the existing episode file, leaving every other "
              "verdict untouched. Implies --force for the selected theses.",
     )
+    parser.add_argument(
+        "--cue-type", action="store_true",
+        help="run the cue-field instrument (adds cue_type; default out dir "
+             f"{CUE_OUT_DIR.name}/). Its verdicts must NOT feed the returns.",
+    )
     args = parser.parse_args()
 
     dotenv.load_dotenv(targets.REPO_ROOT / ".env", override=True)
@@ -658,7 +709,7 @@ def main() -> int:
         key = (str(row.get("date", ""))[:10], str(row.get("source", "")))
         by_group.setdefault(key, []).append(row)
 
-    out_dir = (args.out_dir or OUT_DIR).resolve()
+    out_dir = (args.out_dir or (CUE_OUT_DIR if args.cue_type else OUT_DIR)).resolve()
     only: dict[str, set[str]] | None = None
     if args.only is not None:
         only = {}
@@ -733,16 +784,17 @@ def main() -> int:
                 "attribution_confidence": "low",
                 "likely_speaker": "",
                 "evidence": "quote_not_located in transcript",
+                **({"cue_type": "none"} if args.cue_type else {}),
             }
             for m in missing
         ]
         if items and client is not None:
             content = build_user_content(date, source, host, kind, items)
             try:
-                resp = call_api(client, content)
+                resp = call_api(client, content, cue=args.cue_type)
             except Exception:
                 time.sleep(30)
-                resp = call_api(client, content)
+                resp = call_api(client, content, cue=args.cue_type)
             total_in += resp.usage.input_tokens
             total_out += resp.usage.output_tokens
             parsed = json.loads(response_text(resp))
@@ -759,6 +811,11 @@ def main() -> int:
                         "attribution_confidence": a["attribution_confidence"] if a else "low",
                         "likely_speaker": a["likely_speaker"] if a else "",
                         "evidence": a["evidence"] if a else "model returned no row",
+                        **(
+                            {"cue_type": a["cue_type"] if a else "none"}
+                            if args.cue_type
+                            else {}
+                        ),
                     }
                 )
             time.sleep(SLEEP_BETWEEN)

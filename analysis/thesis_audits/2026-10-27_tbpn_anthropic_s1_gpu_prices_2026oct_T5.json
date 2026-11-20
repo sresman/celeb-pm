@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-27",
+  "source": "TBPN \u2014 Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
+  "thesis_id": "T5",
+  "summary": "Companies that locked in long-term compute contracts before May 2026 are deeply in-the-money and could sell at 3-5x premium",
+  "summary_extended": "Baker argues that companies which locked in long-term GPU compute contracts before May 2026 at roughly $10\u201315 per watt are now sitting on deeply in-the-money positions, with those contracts tradeable at a 3\u20135x premium in the current market. He attributes this specific claim to Nextdoor CFO Sarah Friar, who reportedly stated this as a literal observation rather than a rough estimate. The thesis is that a structural contango exists in the GPU compute market \u2014 early buyers of capacity effectively made a leveraged bet on AI infrastructure demand that has since been validated by surging prices. The investment implication is that publicly traded independent compute providers and cloud lessors who secured capacity early are the primary beneficiaries, as they can either monetize the premium directly or benefit from dramatically higher realized margins on contracted capacity. Baker frames this as an arbitrage opportunity that rewards early-mover compute buyers, with CRWV and NBIS as the key US-listed public vehicles exposed to this dynamic.",
+  "detail": "Baker references Nextdoor CFO Sarah Friar's literal statement that compute contracted before May 2026 could be sold at a 3-4-5x premium today. Contracts signed at ~$10-15/watt are now worth vastly more. This creates a structural arbitrage for early compute buyers and validates the contango thesis.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker attributes the 3-5x premium claim to Sarah Friar as a literal statement, not a figure of speech",
+  "themes": [
+    "AI datacenter infrastructure",
+    "GPU compute pricing"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "you could sell them all at a three, four, or five x premium",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRWV",
+    "NBIS"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "CoreWeave (CRWV)",
+    "Crusoe (private)",
+    "Nebius (NBIS)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "CoreWeave is a large-scale independent GPU cloud provider that secured significant compute capacity early; it is a direct beneficiary of the contango thesis as its contracted capacity would be worth multiples of its original cost basis."
+    },
+    {
+      "ticker": "NBIS",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nebius is a US-listed AI infrastructure and GPU cloud company that built out compute capacity; it is a plausible direct beneficiary of early compute contracts being in-the-money, though less certain than CRWV."
+    }
+  ]
+}

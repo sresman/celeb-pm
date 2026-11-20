@@ -142,6 +142,17 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "source": "All-In Podcast", "host": "Jason, Dave, Chamath, Friedberg (Gavin Baker panelist)", "subject_role": "panelist",
         "topic": "Markets: pricing in tariffs, Trump vs Powell, the $10 trillion AGI prize",
     },
+    # Added 2026-10-28. Never in the corpus: it predates the monitor's seed, so
+    # nothing alerted on it. Roster from the transcript intro (02:00-06:00): Jason
+    # moderates a "fivesome" — Freeberg, Baker, Ben Shapiro, Phil Deutsch (NGP
+    # Energy Technology Partners). Chamath and Sacks bailed 90 minutes before
+    # recording, so the usual four-bestie roster is WRONG here. The chapter list
+    # misspells Deutsch as "Deutch".
+    "NpJ4RYSdVK4": {
+        "label": "allin_gpt5_flop_china_2025aug", "date": "2025-08-09",
+        "source": "All-In Podcast", "host": "Jason Calacanis, David Friedberg, Ben Shapiro, Phil Deutsch (Gavin Baker panelist)", "subject_role": "panelist",
+        "topic": "GPT-5 underwhelms, AI TAM/ROIC/energy, China's advantage, tariffs, Nvidia chip smuggling, Apple buybacks and AI strategy",
+    },
     # BG2 Pod
     "Tx9jT2c6e3U": {
         "label": "bg2_spacex_ipo_2026jun", "date": "2026-06-11",
@@ -157,8 +168,17 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
     # TBPN / Technology Brothers
     "PW5n3ZnEJN0": {
         "label": "tbpn_spacex_sovereign_ai_2026jun", "date": "2026-06-15",
-        "source": "TBPN", "host": "Foxy (Gavin Baker guest)", "subject_role": "guest",
+        "source": "TBPN", "host": "John Coogan, Jordi Hays (Gavin Baker guest; Atreides analyst Andrew 'Foxy' Fox in room)", "subject_role": "guest",
         "topic": "SpaceX IPO, token path, sovereign AI won't reach frontier",
+    },
+    # Added 2026-10-28. The Baker segment, NOT the full show (OV1QfQ3C29Q): the
+    # segment's 2,487s equals the full show's Baker chapter (1:21:12-2:02:40),
+    # and the other ~2/3 of the full show is unrelated guests. Ingesting both
+    # would double-count every ticker. Same choice as PW5n3ZnEJN0 above.
+    "crdg4X5BZPc": {
+        "label": "tbpn_anthropic_s1_gpu_prices_2026oct", "date": "2026-10-27",
+        "source": "TBPN", "host": "John Coogan, Jordi Hays (Gavin Baker guest)", "subject_role": "guest",
+        "topic": "Anthropic S-1, GPU prices, SpaceX, AI agents; infrastructure/bio/energy outlook",
     },
     # Heller House / Mission Control.
     # NOTE (2026-07-22): a prior file (2026-02-15_heller_house_spacex_cfo_2026) was
@@ -298,6 +318,15 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "label": "aria_networks_mfu_ai_factories_2026apr", "date": "2026-04-16",
         "source": "Aria Networks", "host": "Mansour (Gavin Baker guest)", "subject_role": "guest",
         "topic": "MFU (Model Flop Utilization) as the defining AI-factory metric; lowest-cost token producer wins → deploy highest-performance infra, not cheapest",
+    },
+    # Added 2026-10-28. The event's CLOSING session — a separate conversation from
+    # MmNWwIYFBeI above, which ends "we're going to bring you back on stage to wrap
+    # up at the end". Caption overlap with it: 0.2% of 5-grams, 0% of 8-grams.
+    # Baker joined Aria's board that week (said on stage in MmNWwIYFBeI).
+    "0ZHX7J6vXT4": {
+        "label": "aria_networks_deep_networking_wrapup_2026apr", "date": "2026-04-16",
+        "source": "Aria Networks", "host": "Mansour Karam (Gavin Baker guest)", "subject_role": "guest",
+        "topic": "Closing conversation: Deep Networking and token economics; Aria vs Arista's rise in the cloud era; NeoCloud and accelerator vendors",
     },
     # ---- Added 2026-08-15 (full-sweep task). Baker is a GUEST/bestie among the
     # All-In hosts ("Gavin Baker joins the show" @0:00) — extraction must attribute

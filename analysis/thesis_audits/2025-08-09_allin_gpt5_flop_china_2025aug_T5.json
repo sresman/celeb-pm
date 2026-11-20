@@ -1,0 +1,57 @@
+{
+  "date": "2025-08-09",
+  "source": "All-In Podcast \u2014 GPT-5 underwhelms, AI TAM/ROIC/energy, China's advantage, tariffs, Nvidia chip smuggling, Apple buybacks and AI strategy",
+  "thesis_id": "T5",
+  "summary": "Small modular reactors (SMRs) and nuclear energy are experiencing a renaissance driven by hyperscaler demand, not government policy, making them a compelling investment area.",
+  "summary_extended": "Baker argues that the SMR and nuclear energy renaissance is being driven by hyperscaler demand commitments rather than government subsidies or policy, representing a structural shift in how capital flows into the nuclear sector. He contends that when major cloud and AI infrastructure companies made concrete, near-term energy procurement commitments specifically requesting SMRs, private capital followed immediately \u2014 a market-driven catalyst distinct from prior nuclear investment waves. He cites the current administration's executive orders reducing nuclear regulatory burden as a secondary, reinforcing tailwind rather than the primary driver. Baker references X-energy (a private company backed by NGP's Phil Deutsch) as a specific example of where capital is flowing, though he does not claim a personal position. The investment implication is that publicly listed SMR and nuclear-adjacent companies stand to benefit from this structural demand pull, though Baker stops short of naming specific public equity positions.",
+  "detail": "Baker argues the SMR/nuclear investment wave was catalyzed by hyperscalers making concrete, immediate energy commitments \u2014 not subsidies. He notes the current administration's executive orders reducing nuclear regulatory burden as a secondary catalyst. He references X-energy as a company in this space that Phil Deutsch's firm NGP has invested in.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker endorses the thesis but does not name it as a personal position. He frames it as a structural observation about capital flows. Moderate confidence given he doesn't claim direct ownership.",
+  "themes": [
+    "nuclear/SMR",
+    "power/energy",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "dollars flowed when the market spoke and the hyperscalers said they wanted SMRs",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NNE",
+    "SMR",
+    "CEG",
+    "VST"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NNE",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Nano Nuclear Energy is a US-listed pure-play SMR company that is an unambiguous direct beneficiary of the hyperscaler-driven SMR demand thesis Baker describes."
+    },
+    {
+      "ticker": "SMR",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "NuScale Power (ticker SMR) is the most prominent US-listed SMR developer and a direct beneficiary of the structural demand Baker describes from hyperscalers committing to SMR procurement."
+    },
+    {
+      "ticker": "CEG",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Constellation Energy is a major US-listed nuclear operator that directly benefits from hyperscaler demand for nuclear power, consistent with Baker's thesis about capital flowing to nuclear energy driven by AI datacenter demand."
+    },
+    {
+      "ticker": "VST",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Vistra Corp is a US-listed power generator with nuclear assets that benefits from the hyperscaler-driven energy demand thesis Baker articulates, though its nuclear exposure is narrower than CEG."
+    }
+  ]
+}

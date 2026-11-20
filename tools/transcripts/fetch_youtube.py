@@ -24,9 +24,12 @@ from typing import Any
 from . import targets
 from .common import json3_to_text, relpath, write_step_manifest, write_transcript
 
-# Candidate sub-language tags to try, in order. YouTube auto-captions are
-# usually 'en'; some videos expose 'en-orig' or a manual 'en' track instead.
-SUB_LANG_CANDIDATES = ["en", "en-orig", "en-US", "en-GB"]
+# Candidate sub-language tags to try, in order. 'en-orig' FIRST: when present it
+# is YouTube's original-language ASR, whereas 'en' can be a MACHINE TRANSLATION
+# from a mis-detected source language. NpJ4RYSdVK4 (All-In 2025-08-09) served an
+# 'en' track of translated word salad ("I To Freiburg One thing I have to say")
+# while 'en-orig' held the real English captions (2026-10-28).
+SUB_LANG_CANDIDATES = ["en-orig", "en", "en-US", "en-GB"]
 
 
 def _output_path(vid_id: str, meta: targets.YoutubeTarget) -> Path:
@@ -67,6 +70,8 @@ def _download_caption(vid_id: str, sub_lang: str, dest_dir: Path) -> str | None:
         return matches[0].read_text(encoding="utf-8")
     if proc.returncode != 0 and "Sign in to confirm" in proc.stderr:
         raise RuntimeError("bot_wall")  # surfaced to caller for cookie fallback
+    if "HTTP Error 429" in proc.stderr:
+        raise RuntimeError("rate_limited")  # captions exist; YouTube throttled us
     return None
 
 
@@ -106,6 +111,9 @@ def fetch_one(vid_id: str, meta: targets.YoutubeTarget, *, force: bool) -> dict[
             except RuntimeError as exc:
                 if str(exc) == "bot_wall":
                     row["status"] = "bot_wall (retry with --cookies-from-browser)"
+                    return row
+                if str(exc) == "rate_limited":
+                    row["status"] = "rate_limited (HTTP 429; retry later)"
                     return row
                 raise
             if raw_json3:

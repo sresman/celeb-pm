@@ -1,0 +1,50 @@
+{
+  "date": "2026-04-16",
+  "source": "Aria Networks \u2014 Closing conversation: Deep Networking and token economics; Aria vs Arista's rise in the cloud era; NeoCloud and accelerator vendors",
+  "thesis_id": "T7",
+  "summary": "Technological discontinuities combined with first-principles thinking are the pattern behind outsized investment returns",
+  "summary_extended": "Baker articulates a repeatable investment framework: outsized returns come when a technological discontinuity is approached from first principles rather than incrementally. He cites his own successful investments in Nvidia (GPUs repurposed from graphics math to deep learning) and Arista (Ethernet-first architecture for cloud networking) as historical proof points, and adds Tesla's battery-floor placement as another example of first-principles engineering unlocking a discontinuity. Baker implies that AI networking represents the current live instance of this pattern, and that the opportunity has not yet been fully exploited \u2014 positioning Aria Networks as the present-day analog to what Arista was in the cloud era. The investment implication is that identifying companies attacking a genuine technological discontinuity from first principles, rather than iterating on legacy architectures, is the reliable source of multi-year compounding returns.",
+  "detail": "Baker articulates his investment framework: GPUs (graphics math \u2192 deep learning), Tesla EVs (battery placement), and now AI networking all follow the same pattern \u2014 a technological discontinuity that someone approaches from first principles rather than incrementally. He implies Aria fits this pattern and that the AI networking discontinuity has not yet been fully exploited.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly states this is 'just that simple' and applies it consistently across multiple historical examples including his own successful investments in Arista and Nvidia.",
+  "themes": [
+    "investment framework",
+    "disruptive technology",
+    "AI datacenter infrastructure",
+    "networking"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "technological discontinuity encounters first principles thinking",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [
+    "NVDA",
+    "ANET"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "ANET"
+  ],
+  "tickers_subject": [
+    "NVDA",
+    "ANET"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nvidia is explicitly cited as a historical proof-of-concept for the framework \u2014 GPUs repurposed from graphics to deep learning is the canonical first-principles discontinuity example Baker uses to validate the thesis. It is a direct subject of the framework illustration, not merely tangential."
+    },
+    {
+      "ticker": "ANET",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Arista is explicitly cited as Baker's prior successful application of this exact framework in networking (cloud-era Ethernet-first architecture), making it a direct subject of the thesis as a historical analog to the current AI networking opportunity."
+    }
+  ]
+}

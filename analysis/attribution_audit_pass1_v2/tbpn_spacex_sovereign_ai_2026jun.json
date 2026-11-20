@@ -2,7 +2,7 @@
   "label": "tbpn_spacex_sovereign_ai_2026jun",
   "date": "2026-06-15",
   "source": "TBPN \u2014 SpaceX IPO, token path, sovereign AI won't reach frontier",
-  "host": "Foxy (Gavin Baker guest)",
+  "host": "John Coogan, Jordi Hays (Gavin Baker guest; Atreides analyst Andrew 'Foxy' Fox in room)",
   "kind": "panel",
   "model": "claude-sonnet-4-6",
   "results": [
@@ -13,8 +13,8 @@
       "quote": "how quickly can they bring on terrestrial compute",
       "speaker_attribution": "other",
       "attribution_confidence": "medium",
-      "likely_speaker": "host/other participant",
-      "evidence": "Turn 19 follows a back-and-forth where turn 16 appears to be a different speaker setting up the topic; no direct address to Baker and the framing 'I think there are two variables' in turn 17 precedes the quote without clear Baker identification."
+      "likely_speaker": "host",
+      "evidence": "Turn 16 references 'he did the work on SpaceX' suggesting the prior speaker (Baker) presented SpaceX analysis, and turn 17 begins a new speaker's framing; turn 19 continues that thread but the alternation pattern and 'I'm not sure the story is as far out as you made it seem' in turn 16 suggests Baker made the long-duration case and this speaker is pushing back with near-term variables."
     },
     {
       "thesis_id": "T2",
@@ -23,20 +23,20 @@
         "NVDA"
       ],
       "quote": "ordered 20% of the Reubins and the Reubin is an epic chip",
-      "speaker_attribution": "other",
-      "attribution_confidence": "medium",
-      "likely_speaker": "host/other participant",
-      "evidence": "Turn 51 follows turn 50 which is a brief affirmation, and turn 52 continues with related detail; no self-identification as Baker and turn alternation suggests a non-Baker speaker given prior context."
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 51 contains the quote but no direct address or self-identification cue is present in the window to distinguish Baker from a co-host."
     },
     {
       "thesis_id": "T3",
       "summary": "EV/net PP&E is an increasingly important valuation metric; installed physical assets on Earth will appreciate in value",
       "tickers": [],
       "quote": "EV to net PP&E as a valuation metric",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
       "likely_speaker": "",
-      "evidence": "Turn 65 contains the quote but no direct address or self-identification cue is present in the surrounding window to distinguish Baker from another participant."
+      "evidence": "Turn 65 uses 'I am increasingly looking at EV to net PP&E as a valuation metric' \u2014 fund-manager framing of a portfolio lens is consistent with Baker as CIO, and the analytical register matches his role."
     },
     {
       "thesis_id": "T4",
@@ -45,10 +45,10 @@
         "META"
       ],
       "quote": "market has an immense amount of skepticism about their ability to monetize",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
       "likely_speaker": "",
-      "evidence": "Turn 66 follows directly from turn 65 with no speaker change marker or identifying cue, making attribution indeterminate."
+      "evidence": "Turn 66 continues directly from turn 65 in the same analytical voice discussing Meta's EV/PP&E multiple, with no speaker-change marker between them."
     },
     {
       "thesis_id": "T5",
@@ -57,10 +57,10 @@
         "CRWV"
       ],
       "quote": "being a token factory is more than enough for the next 5 to 10 years",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
       "likely_speaker": "",
-      "evidence": "Turn 57 contains the quote but no direct address or self-identification is present; the surrounding turns show a multi-party discussion without clear speaker identification."
+      "evidence": "Turn 57 'My thought is that being a token factory is more than enough' uses first-person conviction framing typical of Baker's CIO register, and turn 58 responds affirmingly suggesting a different speaker follows."
     },
     {
       "thesis_id": "T6",
@@ -71,10 +71,10 @@
         "AKAM"
       ],
       "quote": "CDNs are delivering less than 1% of them",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
       "likely_speaker": "",
-      "evidence": "Turn 111 contains the quote but no direct address or self-identification cue distinguishes Baker from another participant in this window."
+      "evidence": "Turn 111 uses 'my gut is' \u2014 a personal analytical hedge consistent with Baker's register \u2014 and the quantitative framing (basis points of global tokens) fits a fund CIO rather than a host."
     },
     {
       "thesis_id": "T7",
@@ -82,9 +82,9 @@
       "tickers": [],
       "quote": "the bottleneck trade is kind of nearing its end",
       "speaker_attribution": "other",
-      "attribution_confidence": "medium",
+      "attribution_confidence": "low",
       "likely_speaker": "host",
-      "evidence": "Turn 124 contains the quote and is a continuous monologue by someone asking questions and editorialising ('people are obviously searching', 'Maybe it's just sand'), consistent with a host role rather than Baker as CIO; no direct address or self-identification links this turn to Baker."
+      "evidence": "Turn 124 is a long rambling turn mixing editorial commentary ('bottleneck bros as they are called') with the thesis, and the discursive style including the land/sand tangent reads more like a host editorialising than Baker's analytical register; attribution is uncertain."
     },
     {
       "thesis_id": "T8",
@@ -93,60 +93,60 @@
         "SpaceX"
       ],
       "quote": "you can put a gig into space for 30 billion and a gig on earth is 60 billion",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
       "likely_speaker": "",
-      "evidence": "Turn 135 contains detailed orbital compute math but no direct address or self-identification cue is present to attribute to Baker versus another participant."
+      "evidence": "Turns 133-135 contain detailed cost-per-gigawatt arithmetic ('60 billion to bring on a gig terrestrially') consistent with Baker's quantitative CIO framing, and turn 133 begins 'I do think the math for orbital compute' in first person."
     },
     {
       "thesis_id": "T9",
       "summary": "Sovereign AI for most countries will be fine-tuned open-source models run in local data centers, not frontier model development; China will fall further behind",
       "tickers": [],
       "quote": "sovereign AI at the frontier I don't see it",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
       "likely_speaker": "",
-      "evidence": "Turns 150-153 contain the quote but no direct address or self-identification cue is present to confirm Baker as the speaker."
+      "evidence": "Turn 150 begins 'So I think what sovereign AI will look like' and turn 153 closes 'I think that's where sovereign AI ends up' \u2014 sustained first-person analytical framing across multiple turns with no speaker-change marker, consistent with Baker."
     },
     {
       "thesis_id": "T10",
       "summary": "China's AI advantage via distillation of Western frontier models is eroding as labs lock down reasoning traces and stop releasing frontier models openly",
       "tickers": [],
       "quote": "all that goes away if people stop releasing these models at the frontier",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
       "likely_speaker": "",
-      "evidence": "Turn 160 contains the quote but no direct address or self-identification cue distinguishes Baker from another participant in this window."
+      "evidence": "Turn 160 continues the same analytical thread from turns 158-159 about Chinese distillation with 'man, all that goes away if people stop releasing these models' \u2014 the 'man' interjection and analytical continuity match Baker's voice in surrounding turns."
     },
     {
       "thesis_id": "T11",
       "summary": "Retail investors have been a more powerful market force over the last 3.5 years than at any point including the 2000 bubble, and are likely outperforming most professional managers",
       "tickers": [],
       "quote": "retail is probably outperforming the overwhelming majority of professional money managers",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
       "likely_speaker": "",
-      "evidence": "Turn 97 contains the quote but no direct address or self-identification cue is present; the prior turn 94 references 'retail's moment' in a way consistent with a host framing."
+      "evidence": "Turn 95 begins 'Well, so a few things' responding to the prior host turn (turn 94), and turn 97 continues with 'I think retail is probably outperforming' \u2014 direct response pattern and fund-manager framing confirm Baker."
     },
     {
       "thesis_id": "T12",
       "summary": "SpaceX supply/demand dynamics are favorable post-IPO due to employee ownership concentration and prior liquidity opportunities reducing overhang",
       "tickers": [],
       "quote": "10,000 SpaceX employees bought on the IPO",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
       "likely_speaker": "",
-      "evidence": "Turn 100 contains the quote but no direct address or self-identification cue is present to attribute to Baker versus another participant."
+      "evidence": "Turn 100 continues Baker's response thread from turns 97-99 with detailed IPO supply/demand analysis ('10,000 SpaceX employees bought on the IPO') consistent with his CIO register and the ongoing turn alternation."
     },
     {
       "thesis_id": "T13",
       "summary": "OpenAI cutting Codex pricing signals the endgame is approaching; coding tokens are so valuable that labs must acquire them at scale to maintain RSI feedback loops",
       "tickers": [],
       "quote": "coding tokens are so valuable and if you don't have enough you may not get into this RSI loop",
-      "speaker_attribution": "indeterminate",
-      "attribution_confidence": "low",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
       "likely_speaker": "",
-      "evidence": "Turns 72-75 contain the quote but no direct address or self-identification cue distinguishes Baker from another participant in this window."
+      "evidence": "Turn 72 begins 'Look, I think a few things' \u2014 a characteristic Baker opener seen elsewhere \u2014 and the analytical framing about endgame dynamics and RSI loops fits his CIO register across turns 72-75."
     }
   ]
 }

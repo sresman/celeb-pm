@@ -43,6 +43,12 @@ OUT_PATH = ANALYSIS_DIR / "attribution_resolved.json"
 VERDICT_MAP = {"baker": "subject", "other": "other", "indeterminate": "indeterminate"}
 VERDICTS = ("subject", "other", "indeterminate")
 
+# Strongest first; must match audit_attribution.CUE_TYPES. Audit files written
+# before the field existed (pre-2026-10-28) carry no cue_type -> NOT_RECORDED,
+# which is kept distinct from "none" so a backfill can find them.
+CUE_ORDER = ("naming", "structural", "continuity", "style", "none")
+NOT_RECORDED = "not_recorded"
+
 Key = tuple[str, str]
 
 
@@ -85,6 +91,27 @@ def _verdict(row: dict[str, Any] | None) -> str:
     return VERDICT_MAP.get(raw, "indeterminate")
 
 
+def _cue(row: dict[str, Any] | None) -> str:
+    if row is None:
+        return NOT_RECORDED
+    raw = str(row.get("cue_type", ""))
+    return raw if raw in CUE_ORDER else NOT_RECORDED
+
+
+def _resolved_cue(resolved: str, agreement: bool, ca: str, cb: str) -> str:
+    """The WEAKER of the two passes' cues when they agree on the verdict.
+
+    Two-of-two on the verdict says nothing about how well-grounded it is, so the
+    cue takes the conservative side too. A verdict forced to indeterminate by
+    disagreement rests on no cue at all.
+    """
+    if NOT_RECORDED in (ca, cb):
+        return NOT_RECORDED
+    if not agreement:
+        return "none"
+    return max(ca, cb, key=CUE_ORDER.index) if resolved != "indeterminate" else "none"
+
+
 def reconcile(
     p1: dict[Key, dict[str, Any]], p2: dict[Key, dict[str, Any]]
 ) -> list[dict[str, Any]]:
@@ -110,6 +137,7 @@ def reconcile(
                 "label": label,
                 "thesis_id": thesis_id,
                 "speaker_attribution": resolved,
+                "cue_type": _resolved_cue(resolved, agreement, _cue(a), _cue(b)),
                 "agreement": agreement,
                 "note": note,
                 "tickers": list(seed.get("tickers") or []),
@@ -120,12 +148,14 @@ def reconcile(
                     "confidence": str((a or {}).get("attribution_confidence", "")),
                     "likely_speaker": str((a or {}).get("likely_speaker", "")),
                     "evidence": str((a or {}).get("evidence", "")),
+                    "cue_type": _cue(a),
                 },
                 "pass2": {
                     "speaker_attribution": vb,
                     "confidence": str((b or {}).get("attribution_confidence", "")),
                     "likely_speaker": str((b or {}).get("likely_speaker", "")),
                     "evidence": str((b or {}).get("evidence", "")),
+                    "cue_type": _cue(b),
                 },
                 # The speaker name only survives when both passes agree it is not
                 # Baker AND they name the same person; otherwise it is noise.
@@ -173,8 +203,19 @@ def summarise(
         pass1_only["tickers"] += n
         pass1_only[f"tickers_{v1}"] += n
 
+    # Evidence strength behind the SUBJECT set — the population the filter keeps.
+    subject_by_cue: dict[str, dict[str, int]] = {}
+    for r in records:
+        if r["speaker_attribution"] == "subject":
+            b = subject_by_cue.setdefault(str(r["cue_type"]), {"theses": 0, "tickers": 0})
+            b["theses"] += 1
+            b["tickers"] += len(r["tickers"])
+
     agreed = sum(1 for r in records if r["agreement"])
     return {
+        "subject_by_cue": {
+            k: subject_by_cue[k] for k in (*CUE_ORDER, NOT_RECORDED) if k in subject_by_cue
+        },
         "total": total,
         "pass1_only": pass1_only,
         "agreement_rate": round(agreed / len(records), 4) if records else 0.0,
@@ -221,6 +262,9 @@ def print_report(summary: dict[str, Any]) -> None:
         f"{t['subject'] - p1['subject']:+d} subject theses, "
         f"{t['tickers_subject'] - p1['tickers_subject']:+d} subject named tickers"
     )
+    print("\n  subject verdicts by cue type (weaker of the two passes):")
+    for k, b in summary["subject_by_cue"].items():
+        print(f"    {k:<34}{b['theses']:>5} theses {b['tickers']:>5} named tickers")
     print("\n  pass1 -> pass2 confusion:")
     for k, n in summary["confusion"].items():
         print(f"    {k:<34}{n:>5}")

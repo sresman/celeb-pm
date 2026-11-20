@@ -1,0 +1,39 @@
+{
+  "date": "2026-04-16",
+  "source": "Aria Networks \u2014 Closing conversation: Deep Networking and token economics; Aria vs Arista's rise in the cloud era; NeoCloud and accelerator vendors",
+  "thesis_id": "T3",
+  "summary": "GPU-per-hour pricing model will be displaced by token-based pricing, rewarding NeoCloud operators with superior networking",
+  "summary_extended": "Baker argues that the current GPU-per-hour pricing model for AI compute will be displaced by straight token-based pricing, representing a fundamental shift in how NeoCloud operators monetize their infrastructure. Under token pricing, networking quality becomes a direct revenue determinant rather than a cost center \u2014 operators whose networking enables more tokens processed per GPU per unit time will earn proportionally more revenue from the same hardware. This creates a structural advantage for NeoCloud operators who invest in superior networking, as better interconnect and fabric efficiency translates directly into higher token throughput and thus higher revenue per asset. Baker presents this as a high-conviction forward prediction, implying that the market has not yet fully priced in the competitive differentiation that networking quality will drive among NeoCloud operators. The investment implication is to favor NeoCloud operators with best-in-class networking infrastructure, as they will outperform peers on a per-GPU revenue basis once token pricing becomes the industry standard.",
+  "detail": "Baker predicts the industry transitions from GPU-hour pricing to straight token pricing. Under token pricing, networking quality directly determines revenue per asset \u2014 operators with better networking earn more tokens per GPU, making networking investment a direct revenue lever rather than a cost item.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a forward prediction with conviction: 'the GPU per hour pricing model is going to go away and we're just going to go to a straight token pricing model.'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "token economics",
+    "NeoCloud",
+    "inference infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "GPU per hour pricing model is going to go away, straight token pricing",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "CRWV"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "CRWV"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "CoreWeave is a leading NeoCloud operator and a direct beneficiary of the token pricing thesis \u2014 if networking quality determines token throughput and thus revenue, CoreWeave's infrastructure investments position it to capture outsized revenue per GPU under the new pricing model."
+    }
+  ]
+}
