@@ -43,7 +43,7 @@ Next spec sections (Phase 2): ~~§View 2 Conviction Tracker~~ DONE (`docs/specs/
 
 ## Immediate Next Steps
 
-0. **Operator: merge `q3-2026-13f`** (8 commits incl. one revert pair) or request changes. See `handoffs/2026-11-16-main.md` for known issues (Summary AI-weight includes CBRS memo weight; 24 older foreign CUSIPs unresolved; EODHD key leaks in `build_13f_analysis.py` fetch warnings).
+0. **Operator: merge `q3-2026-13f`** (11 commits incl. one revert pair) or request changes. See `handoffs/2026-11-20-main.md` for known issues (Summary AI-weight includes CBRS memo weight; 24 older foreign CUSIPs unresolved; EODHD key leaks in `build_13f_analysis.py` fetch warnings).
 1. **Operator confirm SD-4** — View 1 summary stats are written to a sibling `new_ideas_summary.json` rather than as footer rows in `new_ideas.csv`. Confirm acceptable, or request footer rows (small follow-up).
 2. **(Optional) run the second investor** — `python -m celebpm.pipeline 0001777813 --data-root data` (Atreides, 26 quarters; first end-to-end run that exercises EODHD at volume + the OpenFIGI no-key rate limit).
 3. **Phase 2** — View 2 (Conviction) DONE; View 3 (Position Lifecycle) DONE. Next: **View 4** (Exit Signals / Survivors per spec): sibling builders in `views.py` + writers in `view_io.py`, consuming the existing `changes.json`/`returns.json`/`positions.json` over the same build+write wiring pattern.
