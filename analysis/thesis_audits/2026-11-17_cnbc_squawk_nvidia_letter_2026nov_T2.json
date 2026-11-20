@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-17",
+  "source": "CNBC Squawk on the Street \u2014 Jensen Huang statement, Baker/Gerstner letter urging slow Nvidia CEO process, AI cycle not peaking in 2026, export controls vs Huawei ecosystem",
+  "thesis_id": "T2",
+  "summary": "The AI capex cycle is not peaking in 2026 and will continue to grow through 2027 and 2028",
+  "summary_extended": "Baker argues that the AI capital expenditure cycle will not peak in 2026 and will instead continue growing through 2027 and 2028, making this a multi-year structural investment theme rather than a near-term bubble. His primary real-time evidence is that GPU spot prices rose in October 2026 (sourced from Silicon Data and The Horn), which he interprets as a direct signal that compute capacity has not been overbuilt and demand remains robust. He further cites David Solomon's comments at the same conference as corroborating macro-level validation of continued AI investment. The investment implication is to remain long on AI infrastructure beneficiaries, particularly Nvidia as the dominant GPU supplier, rather than rotating out of the theme on peak-cycle fears. Baker frames this as a contrarian view against consensus expectations that 2026 marks the top of the AI capex wave.",
+  "detail": "Baker explicitly states he does not believe 2026 is the peak of the AI investment cycle. He cites GPU spot prices rising in October (per Silicon Data and The Horn) as real-time evidence that compute has not been overbuilt. He expects AI investment to continue growing, supported by David Solomon's comments at the same conference.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a firm belief, cites real-time data (GPU prices rising in October), and extends the growth view explicitly to 2027 and 2028.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "I do not think 2026 is the peak",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nvidia is the dominant GPU supplier and the primary equity expression of the AI capex cycle thesis. Rising GPU spot prices directly reflect demand for Nvidia's products, making it the central beneficiary of Baker's view that the cycle continues through 2027-2028."
+    }
+  ]
+}

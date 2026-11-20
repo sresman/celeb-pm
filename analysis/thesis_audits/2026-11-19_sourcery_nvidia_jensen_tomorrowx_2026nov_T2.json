@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-19",
+  "source": "Sourcery with Molly O'Shea \u2014 Nvidia CEO succession, AI selloff, enterprise AI demand, Starship, orbital compute",
+  "thesis_id": "T2",
+  "summary": "Enterprise on-premise AI adoption (AI factories) is a massive, undercounted source of compute demand",
+  "summary_extended": "Baker argues that enterprise on-premise AI adoption \u2014 what he calls 'AI factories' \u2014 represents a massive and systematically undercounted source of GPU compute demand that the market is ignoring when it questions the ROI on AI capex. He cites a specific data point from Michael Dell at a conference: Dell sold 3,200 AI factories in the combined 2024-2025 period, then accelerated to 3,300 in just the last 9 months of 2026, implying over 6,000 discrete enterprises have now purchased GPU server clusters and are running open-source AI workloads on-premise. Baker's key insight is that this demand is structurally invisible to the market because it does not show up in the frontier AI hyperscaler revenue figures analysts use to assess whether AI capex is generating returns. The investment implication is that GPU and AI infrastructure demand is far broader and more durable than consensus believes, and that companies supplying enterprise AI server hardware \u2014 most directly Dell \u2014 are beneficiaries of a demand wave the market is underpricing.",
+  "detail": "Michael Dell disclosed that Dell sold 3,200 AI factories in 2024-2025 combined, then 3,300 in just the last 9 months of 2026 \u2014 over 6,000 discrete enterprises buying GPU servers and running open-source AI. This demand does not appear in frontier AI revenue figures the market uses to assess ROI on capex.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites specific, named data points from Michael Dell directly at the conference, framing it as 'really important' and a key flaw in the market's ROI calculation.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "enterprise AI adoption",
+    "open-source AI ecosystem"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "3,300 in the last 9 months, over 6,000 discrete enterprises",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "DELL",
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "DELL"
+  ],
+  "tickers_implied_original": [
+    "DELL",
+    "NVDA",
+    "AMD"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "DELL",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Dell is the direct subject of the thesis \u2014 Baker cites Michael Dell's own disclosure of AI factory unit sales as the primary evidence, and Dell is the company selling these enterprise GPU server clusters."
+    },
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "NVDA is the dominant GPU supplier for enterprise AI factories; 6,000+ enterprises buying GPU server clusters directly drives Nvidia GPU demand, making it a clear and unambiguous direct beneficiary of this thesis."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD makes GPUs that could theoretically appear in some AI factories, but Baker's thesis is specifically about Dell's disclosed unit sales and does not reference AMD. AMD's share in enterprise AI server deployments is not cited or implied, making this a tangential inclusion."
+    }
+  ]
+}

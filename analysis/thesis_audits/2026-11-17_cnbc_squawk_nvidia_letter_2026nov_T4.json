@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-17",
+  "source": "CNBC Squawk on the Street \u2014 Jensen Huang statement, Baker/Gerstner letter urging slow Nvidia CEO process, AI cycle not peaking in 2026, export controls vs Huawei ecosystem",
+  "thesis_id": "T4",
+  "summary": "A 'slower for longer' AI infrastructure buildout is the optimal scenario for investors, analogous to the railroad era rather than the internet bubble",
+  "summary_extended": "Baker argues that the optimal investment scenario for AI infrastructure is a 'slower for longer' buildout analogous to the 60-year railroad era, rather than a compressed boom-bust cycle like the late 1990s internet bubble. He contends that current supply constraints \u2014 specifically power and watts shortages in America, capacity limitations at TSMC, Micron, SK Hynix, Samsung, laser companies, and substrate companies \u2014 are a healthy feature of the cycle rather than a problem to be solved. These bottlenecks prevent the kind of rapid overbuild that historically leads to catastrophic valuation collapses, and Baker frames this as a core investment philosophy rather than a tactical call. The implication is that investors should remain long AI infrastructure names with confidence that the cycle is not peaking in 2026, as the structural constraints ensure a prolonged, durable buildout. No specific entry or exit targets are cited, but the thesis supports sustained exposure to the AI semiconductor and datacenter supply chain over a multi-decade horizon.",
+  "detail": "Baker argues that current supply constraints (power/watts shortage in America, capacity limitations at TSMC, Micron, SK Hynix, Samsung, laser companies, substrate companies) are healthy because they prevent a rapid overbuild. He explicitly prefers a 60-year railroad-style buildout over a compressed internet-bubble-style cycle. Constraints are a feature, not a bug.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as a core investment philosophy and explicitly names the railroad analogy as his preferred scenario. He lists specific supply chain bottlenecks as evidence.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "power/energy"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "best scenario is more like the railroads, a 60 year build out",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "MU",
+    "TSM"
+  ],
+  "tickers_subject": [
+    "MU",
+    "TSM"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Baker explicitly names Micron as one of the capacity-constrained supply chain bottlenecks underpinning the thesis. Micron is a direct subject of the supply constraint argument and a direct beneficiary of a prolonged buildout cycle."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": false,
+      "reasoning": "Baker explicitly names TSMC as a capacity-constrained node in the AI supply chain. However, TSM is Taiwan-listed; its US ADR trades as TSM and is US-listed, so it qualifies. It is a direct subject of the supply constraint thesis."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-17",
+  "source": "CNBC Squawk on the Street \u2014 Jensen Huang statement, Baker/Gerstner letter urging slow Nvidia CEO process, AI cycle not peaking in 2026, export controls vs Huawei ecosystem",
+  "thesis_id": "T6",
+  "summary": "SpaceX is a strong long-term holding with continued fundamental strength and Orbital Compute as a 2028 catalyst",
+  "summary_extended": "Baker expresses high conviction in SpaceX as a long-term holding, describing it as the only entity outside of chips to have decisively beaten China in a strategic technology domain. He views SpaceX's competitive position against traditional data center developers as 'almost unfair,' suggesting a structural advantage in the emerging orbital compute market. Baker specifically identifies Orbital Compute \u2014 the concept of deploying compute infrastructure in low-Earth orbit \u2014 as a major catalyst he expects to materialize in 2028, which he sees as significant for both SpaceX and American technological leadership. The investment implication is to hold SpaceX as a private market position with a multi-year horizon, with 2028 as the key inflection point for the Orbital Compute thesis to begin validating.",
+  "detail": "Baker is optimistic about SpaceX, noting it is the only team to have decisively beaten China outside of chips. He sees SpaceX competing with data center developers as 'almost unfair.' He identifies Orbital Compute as a real and exciting opportunity he expects to materialize in 2028, which he views as a significant catalyst for SpaceX and America.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker describes himself as 'very optimistic' about SpaceX, cites strong recent and upcoming quarters, and gives a specific 2028 timeline for Orbital Compute.",
+  "themes": [
+    "space/orbital compute",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "Orbital Compute is going to be a reality in 2028",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "SPCE"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "SPCE",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "SPCE is Virgin Galactic (now Virgin Galactic Holdings), a space tourism company that is entirely unrelated to SpaceX, which is a private company. SpaceX has no US-listed equity ticker. SPCE was incorrectly implied as a proxy for SpaceX and should be removed. There is no US-listed equity that is a direct proxy for SpaceX itself."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-19",
+  "source": "Sourcery with Molly O'Shea \u2014 Nvidia CEO succession, AI selloff, enterprise AI demand, Starship, orbital compute",
+  "thesis_id": "T1",
+  "summary": "AI demand remains fundamentally strong despite stock market pricing implying imminent demand weakness",
+  "summary_extended": "Baker argues that the market is making a fundamentally flawed calculation when it prices AI infrastructure stocks as if demand is about to collapse: it compares roughly $2 trillion in hyperscaler capex against only the visible frontier AI revenues from closed-source players like Anthropic, OpenAI, and Grok (totaling roughly $120-200B), while completely ignoring the massive and fast-growing open-source AI ecosystem. As evidence, Baker cites a conversation with Fireworks AI, whose top customer grew 13x in just 9-10 months of 2026, illustrating explosive open-source token demand that is largely invisible in headline revenue figures. He further notes that open-source tokens carry lower margins, meaning they actually drag more compute per dollar of revenue, amplifying physical infrastructure demand beyond what closed-source metrics suggest. The investment implication is that there is a significant disconnect between strong underlying AI compute fundamentals and what semiconductor and datacenter infrastructure stocks are currently pricing in, representing a buying opportunity in AI infrastructure names. Baker draws on 27 years of semiconductor investing experience to assert this 'discontinuity between really strong fundamentals and what stocks are discounting.'",
+  "detail": "Baker argues the market is making a flawed calculation by comparing ~$2T in hyperscaler capex only against visible frontier AI revenues (~$120-200B from Anthropic, OpenAI, Grok, etc.), while ignoring the massive open-source AI ecosystem. Fireworks AI's top customer grew 13x in 9-10 months of 2026, and open-source tokens carry lower margins, dragging more compute demand with them.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly calls the market calculation 'flawed,' cites specific data points from conference conversations, and draws on 27 years of semiconductor investing experience to assert a 'discontinuity between really strong fundamentals and what stocks are discounting.'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "open-source AI ecosystem"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "discontinuity between really strong fundamentals and what stocks are discounting",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "AVGO"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is the dominant supplier of AI compute infrastructure (GPUs) and is the primary beneficiary of sustained or accelerating AI datacenter demand, which is the core of Baker's thesis. The thesis directly implies continued strong demand for Nvidia's products."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While AMD competes in AI accelerators, Baker's thesis does not specifically reference AMD, and AMD's share of AI training/inference compute is marginal relative to Nvidia. There is no unambiguous implication that AMD specifically benefits from this open-source demand thesis."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Broadcom is involved in custom AI silicon (XPUs) for hyperscalers, but Baker's thesis is specifically about the open-source AI demand being undercounted and the resulting compute demand surge. Broadcom is not unambiguously implied as a direct beneficiary of this specific argument."
+    }
+  ]
+}

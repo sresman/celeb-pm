@@ -1,0 +1,125 @@
+{
+  "label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
+  "date": "2026-11-19",
+  "source": "Sourcery with Molly O'Shea \u2014 Nvidia CEO succession, AI selloff, enterprise AI demand, Starship, orbital compute",
+  "host": "Molly O'Shea (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "AI demand remains fundamentally strong despite stock market pricing implying imminent demand weakness",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "discontinuity between really strong fundamentals and what stocks are discounting",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 22-23 is a continuous monologue referencing 'atrades portfolio company' (self-identification as Atreides CIO) and 'I've been investing in semis since the year 2000', answered after a host setup question in turn 21.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "Enterprise on-premise AI adoption (AI factories) is a massive, undercounted source of compute demand",
+      "tickers": [
+        "DELL",
+        "NVDA"
+      ],
+      "quote": "3,300 in the last 9 months, over 6,000 discrete enterprises",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous turn 23 monologue containing Atreides self-identification; continuity from turn 22 which references 'atrades portfolio company'.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Open-source AI ecosystem is a structurally large and growing source of compute demand that the market underestimates",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "lower margins on open source tokens drags more compute demand with it",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous turn 23 monologue with Atreides self-identification and 27-year semis investing claim.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Nvidia at current valuation is cheap even assuming low single-digit to low double-digit revenue growth",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "grow 8%, 5%, 10% a year \u2014 it's a cheap stock",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous turn 23 monologue; direct continuity from prior Atreides self-identification in the same turn.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Jensen Huang's removal from Nvidia is a major risk to Nvidia's competitive position and American AI leadership",
+      "tickers": [
+        "NVDA",
+        "TSM"
+      ],
+      "quote": "I've been doing this 27 years and I've met one Jensen",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 24 directly answers host question in turn 23 about Nvidia news scenarios; speaker says 'I've been doing this 27 years' and references co-writing a letter with Brad Gersner, consistent with Baker's known public actions.",
+      "cue_type": "structural"
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "US export control policy shift (post-Jensen) risks accelerating Huawei's AI hardware ecosystem development",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Huawei hardware is going to be used by every Chinese AI lab, it might get better really fast",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Speaker says 'I have known him for 27 years' referring to Jensen, directly continuing Baker's established voice from turn 24 where he said 'I've been doing this 27 years and I've met one Jensen'.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "SpaceX's Starship rapid reusability enables orbital compute and Starlink Direct-to-Cell, representing transformative value creation",
+      "tickers": [],
+      "quote": "first orbital compute satellites in 2027, you needed Starship for that",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "No speaker markers in window, but the register (fund CIO discussing SpaceX national security, orbital compute, Starlink) and first-person framing ('I think SpaceX is doing a lot of good things') is consistent with Baker's established voice in adjacent turns; no contrary cue.",
+      "cue_type": "style"
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Grok/xAI's first-party AI revenue is approaching ~$10B and growing very rapidly, significantly underappreciated",
+      "tickers": [],
+      "quote": "getting pretty close to 10 billion, very high margin revenue growing really really fast",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 44 follows turn 43 where the prior speaker says '100%' affirming Grockbot use, and turn 42 is a host question; turn 44 speaker provides fund-CIO-level revenue estimate framing ('third party data', 'high margin revenue'), consistent with Baker.",
+      "cue_type": "structural"
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Astera Labs business has accelerated since earnings two weeks ago",
+      "tickers": [
+        "ALAB"
+      ],
+      "quote": "since they reported earnings two weeks ago business has accelerated",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 16 answers host question in turn 15 ('What are the main themes?') and references conversations with named executives including 'Jindra the CEO of Astera', consistent with Baker's role as a conference attendee and Atreides CIO; turn 14 lists Baker's conversations.",
+      "cue_type": "structural"
+    }
+  ]
+}

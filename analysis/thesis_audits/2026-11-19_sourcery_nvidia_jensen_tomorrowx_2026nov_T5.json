@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-19",
+  "source": "Sourcery with Molly O'Shea \u2014 Nvidia CEO succession, AI selloff, enterprise AI demand, Starship, orbital compute",
+  "thesis_id": "T5",
+  "summary": "Jensen Huang's removal from Nvidia is a major risk to Nvidia's competitive position and American AI leadership",
+  "summary_extended": "Baker argues that Jensen Huang's removal as Nvidia CEO represents a severe and underappreciated risk to Nvidia's competitive moat and to American AI leadership broadly. He co-authored a public letter with Brad Gerstner to the Nvidia board urging a slow, deliberate succession process and consideration of reinstating Jensen, citing three specific risks of permanent removal: Jensen's irreplaceable Asian supply chain relationships (including handshake deals with TSMC that provide preferred pricing and volume allocations with no formal contract), his role as the leading advocate for American open-source AI, and the risk that Jensen could join or advise a competitor. Baker draws on a 27-year personal relationship with Jensen dating to 2000 to vouch for his character and patriotism, framing this as one of his highest-conviction current views. The investment implication is that Nvidia's competitive position is more CEO-dependent than the market appreciates, and permanent removal of Jensen would be a material negative for NVDA shareholders.",
+  "detail": "Baker co-authored a letter with Brad Gerstner to the Nvidia board urging a slow, deliberate approach and consideration of reinstating Jensen as CEO. Key risks of permanent removal: (1) Jensen's unparalleled Asian supply chain relationships (no contract with TSMC, handshake deals, preferred pricing/volume); (2) Jensen as the leading advocate for American open-source AI; (3) risk that Jensen joins a competitor. Baker has known Jensen since 2000 and vouches for his patriotism.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker co-authored a public letter to the board, speaks from 27 years of personal relationship with Jensen, and frames this as one of his most important current views.",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "geopolitics/national security"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "I've been doing this 27 years and I've met one Jensen",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "TSM"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "TSM"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Nvidia's CEO succession risk and the impact on Nvidia's competitive position \u2014 NVDA is the direct subject."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "The thesis highlights Jensen's unique handshake relationship with TSMC as a key source of Nvidia's supply chain advantage; TSM is directly implicated as a beneficiary of this relationship and its continuity, though it is secondary to NVDA in this thesis. However, TSM's preferred treatment of Nvidia is a function of Jensen's personal relationship, so TSM is more of a context provider than a beneficiary \u2014 reclassifying as TANGENTIAL since TSM does not benefit from Jensen staying or leaving; the thesis is about NVDA's risk, not TSM's."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "TSM is referenced as context for Jensen's supply chain relationships but does not benefit or suffer materially from the CEO succession outcome in a way that creates an investment thesis around TSM itself. Removing as a standalone actionable ticker for this thesis."
+    }
+  ]
+}

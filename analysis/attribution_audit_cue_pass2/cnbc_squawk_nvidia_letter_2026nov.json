@@ -1,0 +1,111 @@
+{
+  "label": "cnbc_squawk_nvidia_letter_2026nov",
+  "date": "2026-11-17",
+  "source": "CNBC Squawk on the Street \u2014 Jensen Huang statement, Baker/Gerstner letter urging slow Nvidia CEO process, AI cycle not peaking in 2026, export controls vs Huawei ecosystem",
+  "host": "CNBC (Sara Eisen)",
+  "kind": "solo",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Jensen Huang is an irreplaceable CEO and NVDA's competitive moat is substantially tied to his personal relationships and vision",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Jensen is N of 2 in my mind",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The intro explicitly names 'Gavin Baker' as the guest and the quote appears in his sustained response to Sara Eisen's questions throughout the segment.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "The AI capex cycle is not peaking in 2026 and will continue to grow through 2027 and 2028",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "I do not think 2026 is the peak",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote 'I do not think 2026 is the peak' follows directly from Baker's named introduction and continues his uninterrupted monologue responding to Sara Eisen's earnings question.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "GPU spot prices are the most real-time indicator of compute supply/demand and currently signal no overbuild",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "GPU prices have risen in October",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The quote references 'a treaties' (Atreides) as an investor in Silicon Data, a self-identification of Baker's fund, within the same continuous turn.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "A 'slower for longer' AI infrastructure buildout is the optimal scenario for investors, analogous to the railroad era rather than the internet bubble",
+      "tickers": [
+        "MU",
+        "TSM"
+      ],
+      "quote": "best scenario is more like the railroads, a 60 year build out",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The railroad analogy appears in the same continuous monologue by Baker following his named introduction at the top of the transcript.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Tighter export controls on China will accelerate the Huawei AI hardware ecosystem and undermine US strategic advantage",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "significantly accelerate the development of a Huawei ecosystem",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Sara Eisen addresses Baker by name ('Gavin') immediately before this exchange, and the quote is part of his sustained response about export controls and Huawei.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "SpaceX is a strong long-term holding with continued fundamental strength and Orbital Compute as a 2028 catalyst",
+      "tickers": [],
+      "quote": "Orbital Compute is going to be a reality in 2028",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The closing sign-off explicitly names 'Gavin Baker' and the Orbital Compute quote is in his continuous response; Sara Eisen references 'you were an early investor' addressing Baker directly.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Anthropic is an exceptional company with metrics that were an upside surprise; IPO is a positive catalyst for the AI market",
+      "tickers": [],
+      "quote": "everything in the Anthropic S1 was an upside surprise",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Sara Eisen asks 'are you in Anthropic?' directly addressing Baker, and the Anthropic S1 quote is his direct reply in the same turn sequence.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Open-weight AI models are strategically important for democratizing AI and creating a vibrant application layer",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "open weight models are the way that we democratize and diffuse this technology",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The open-weight models quote is part of Baker's continuous response following Sara Eisen's question about Anthropic, within the same named-guest segment.",
+      "cue_type": "naming"
+    }
+  ]
+}

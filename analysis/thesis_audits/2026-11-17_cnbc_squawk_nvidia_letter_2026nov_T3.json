@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-17",
+  "source": "CNBC Squawk on the Street \u2014 Jensen Huang statement, Baker/Gerstner letter urging slow Nvidia CEO process, AI cycle not peaking in 2026, export controls vs Huawei ecosystem",
+  "thesis_id": "T3",
+  "summary": "GPU spot prices are the most real-time indicator of compute supply/demand and currently signal no overbuild",
+  "summary_extended": "Baker argues that GPU spot prices serve as the most real-time, empirical indicator of compute supply and demand dynamics, and that current data directly contradicts the prevailing overbuild narrative. He references Silicon Data \u2014 a company in which Atreides is invested \u2014 and a competitor called 'The Horn' as data sources showing GPU spot prices rose in October 2026, meaning demand is actively absorbing new supply rather than accumulating as excess inventory. This is a structural, data-driven pillar of Baker's broader thesis that the AI infrastructure buildout cycle is not peaking in 2026. The investment implication is that concerns about AI capex overbuild are premature, supporting continued long exposure to AI infrastructure beneficiaries such as GPU manufacturers and hyperscalers. No specific price levels or percentage moves were cited, but the directional signal \u2014 rising prices in October \u2014 is presented as high-conviction empirical evidence.",
+  "detail": "Baker references Silicon Data (a company Atreides is invested in) and a competitor called 'The Horn' as sources showing GPU prices rose in October. Rising GPU prices indicate demand is absorbing supply, contradicting the overbuild narrative. This is a structural data point Baker uses to underpin his AI cycle thesis.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker cites specific data sources and frames this as a real-time empirical check on the overbuild thesis, not speculation.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": true,
+  "quote_fragment": "GPU prices have risen in October",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Nvidia is the dominant supplier of GPUs whose spot prices Baker is referencing. Rising GPU spot prices directly benefit Nvidia by confirming sustained demand for its products and undermining the overbuild narrative that would pressure its valuation. This is an unambiguous implied beneficiary of the thesis."
+    }
+  ]
+}

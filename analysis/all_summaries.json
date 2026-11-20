@@ -1,7 +1,7 @@
 {
   "generated": "",
-  "transcript_count": 51,
-  "thesis_count": 648,
+  "transcript_count": 54,
+  "thesis_count": 673,
   "transcripts": [
     {
       "file": "2019-11-26_iltb_tech_consumer_2019nov.json",
@@ -21616,6 +21616,835 @@
             "topic": "AI PR and public perception",
             "view": "AI industry is severely underperforming on public narrative despite real positive impact",
             "detail": "Baker rates AI industry at -5/100 on PR despite AI already saving lives through drug repurposing; industry needs to tell these stories to build public support for data center buildout and reindustrialization"
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-11-17_cnbc_squawk_nvidia_letter_2026nov.json",
+      "date": "2026-11-17",
+      "source": "CNBC Squawk on the Street",
+      "thesis_count": 8,
+      "data": {
+        "metadata": {
+          "source": "CNBC Squawk on the Street",
+          "date": "2026-11-17",
+          "host": "Sara Eisen",
+          "topic": "Jensen Huang statement, Baker/Gerstner letter urging slow Nvidia CEO process, AI cycle not peaking in 2026, export controls vs Huawei ecosystem",
+          "duration_estimate_min": 20
+        },
+        "theses": [
+          {
+            "id": "T1",
+            "summary": "Jensen Huang is an irreplaceable CEO and NVDA's competitive moat is substantially tied to his personal relationships and vision",
+            "detail": "Baker argues Jensen is 'N of 2' alongside Elon Musk as exceptional CEOs. His supply chain relationships in Taiwan (buildings and highways lit up in Taipei) represent a real competitive advantage that cannot easily be replicated. Baker implies NVDA's long-term competitive position is at risk without Jensen, and the stock move since his departure reflects the market's verdict.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker uses superlatives ('N of 2'), has known Jensen 30 years, explicitly says 'there is no one' who could replace him, and frames it as a core investment thesis for remaining a shareholder.",
+            "tickers_named": [
+              "NVDA"
+            ],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": false,
+            "quote_fragment": "Jensen is N of 2 in my mind"
+          },
+          {
+            "id": "T2",
+            "summary": "The AI capex cycle is not peaking in 2026 and will continue to grow through 2027 and 2028",
+            "detail": "Baker explicitly states he does not believe 2026 is the peak of the AI investment cycle. He cites GPU spot prices rising in October (per Silicon Data and The Horn) as real-time evidence that compute has not been overbuilt. He expects AI investment to continue growing, supported by David Solomon's comments at the same conference.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker states this as a firm belief, cites real-time data (GPU prices rising in October), and extends the growth view explicitly to 2027 and 2028.",
+            "tickers_named": [
+              "NVDA"
+            ],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": true,
+            "quote_fragment": "I do not think 2026 is the peak"
+          },
+          {
+            "id": "T3",
+            "summary": "GPU spot prices are the most real-time indicator of compute supply/demand and currently signal no overbuild",
+            "detail": "Baker references Silicon Data (a company Atreides is invested in) and a competitor called 'The Horn' as sources showing GPU prices rose in October. Rising GPU prices indicate demand is absorbing supply, contradicting the overbuild narrative. This is a structural data point Baker uses to underpin his AI cycle thesis.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker cites specific data sources and frames this as a real-time empirical check on the overbuild thesis, not speculation.",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain"
+            ],
+            "time_horizon": "near_term",
+            "contrarian": true,
+            "quote_fragment": "GPU prices have risen in October"
+          },
+          {
+            "id": "T4",
+            "summary": "A 'slower for longer' AI infrastructure buildout is the optimal scenario for investors, analogous to the railroad era rather than the internet bubble",
+            "detail": "Baker argues that current supply constraints (power/watts shortage in America, capacity limitations at TSMC, Micron, SK Hynix, Samsung, laser companies, substrate companies) are healthy because they prevent a rapid overbuild. He explicitly prefers a 60-year railroad-style buildout over a compressed internet-bubble-style cycle. Constraints are a feature, not a bug.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker frames this as a core investment philosophy and explicitly names the railroad analogy as his preferred scenario. He lists specific supply chain bottlenecks as evidence.",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain",
+              "power/energy"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": true,
+            "quote_fragment": "best scenario is more like the railroads, a 60 year build out"
+          },
+          {
+            "id": "T5",
+            "summary": "Tighter export controls on China will accelerate the Huawei AI hardware ecosystem and undermine US strategic advantage",
+            "detail": "Baker argues the prior bipartisan policy of allowing less powerful GPUs to be sold to China was working \u2014 it slowed the development of a Huawei-led alternative ecosystem while preserving US compute advantage. Tighter controls will force all Chinese AI labs to standardize on Huawei hardware, rapidly improving it, and that hardware could then be shared with Russia, North Korea, and Iran with no US ability to shut it off. He frames this as a dangerous geopolitical miscalculation.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker states this as a firm policy view with specific geopolitical consequences named. He frames it as a known risk, not speculation.",
+            "tickers_named": [
+              "NVDA"
+            ],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain",
+              "geopolitics/export controls"
+            ],
+            "time_horizon": "medium_term",
+            "contrarian": true,
+            "quote_fragment": "significantly accelerate the development of a Huawei ecosystem"
+          },
+          {
+            "id": "T6",
+            "summary": "SpaceX is a strong long-term holding with continued fundamental strength and Orbital Compute as a 2028 catalyst",
+            "detail": "Baker is optimistic about SpaceX, noting it is the only team to have decisively beaten China outside of chips. He sees SpaceX competing with data center developers as 'almost unfair.' He identifies Orbital Compute as a real and exciting opportunity he expects to materialize in 2028, which he views as a significant catalyst for SpaceX and America.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker describes himself as 'very optimistic' about SpaceX, cites strong recent and upcoming quarters, and gives a specific 2028 timeline for Orbital Compute.",
+            "tickers_named": [],
+            "tickers_implied": [
+              "SPCE"
+            ],
+            "themes": [
+              "space/orbital compute",
+              "AI datacenter infrastructure"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": false,
+            "quote_fragment": "Orbital Compute is going to be a reality in 2028"
+          },
+          {
+            "id": "T7",
+            "summary": "Anthropic is an exceptional company with metrics that were an upside surprise; IPO is a positive catalyst for the AI market",
+            "detail": "Baker says everything in the Anthropic S1 was an upside surprise and the metrics are exceptional. He describes it as 'clearly a really special company' that has executed extremely well. He views the Anthropic IPO as healthy for the broader AI market. He is conflicted out of investing due to his XAI position but is clearly bullish on the company.",
+            "confidence": "moderate",
+            "confidence_evidence": "Baker expresses strong qualitative enthusiasm but cannot invest due to conflict. He stops short of a direct buy recommendation and declines to state his order intentions.",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "frontier AI models"
+            ],
+            "time_horizon": "medium_term",
+            "contrarian": false,
+            "quote_fragment": "everything in the Anthropic S1 was an upside surprise"
+          },
+          {
+            "id": "T8",
+            "summary": "Open-weight AI models are strategically important for democratizing AI and creating a vibrant application layer",
+            "detail": "Baker argues strongly for open-weight models as essential for American values, individual choice, and preventing monopolization of AI value systems by one or two closed-model providers. He frames open-weight models as the mechanism for diffusing AI technology and enabling a rich application ecosystem. He mentions Jensen/Nvidia as a potential creator of an American open-source AI.",
+            "confidence": "moderate",
+            "confidence_evidence": "Baker expresses this as a personal and investment belief but does not name specific investable beneficiaries beyond a general reference to Nvidia.",
+            "tickers_named": [
+              "NVDA"
+            ],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "frontier AI models",
+              "open-source AI"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": false,
+            "quote_fragment": "open weight models are the way that we democratize and diffuse this technology"
+          }
+        ],
+        "explicit_recommendations": [
+          {
+            "direction": "hold",
+            "target": "NVDA",
+            "reasoning": "Baker is an existing shareholder who says it is 'very hard' to remain a shareholder without Jensen but stops short of selling. He is waiting for facts to emerge from the investigation before making a decision.",
+            "confidence": "moderate"
+          },
+          {
+            "direction": "buy",
+            "target": "SpaceX (private)",
+            "reasoning": "Baker is very optimistic about SpaceX fundamentals, its competitive position vs China, and the Orbital Compute catalyst in 2028. He describes competing with data center developers as 'almost unfair.'",
+            "confidence": "high_conviction"
+          }
+        ],
+        "sector_rankings": [
+          {
+            "preferred": "AI infrastructure / compute (slower-for-longer buildout)",
+            "over": "Rapid-cycle internet-bubble-style AI buildout",
+            "reasoning": "Baker explicitly prefers a railroad-style 60-year buildout over a compressed bubble cycle, arguing supply constraints are healthy and prevent overbuild."
+          },
+          {
+            "preferred": "Open-weight AI models",
+            "over": "Closed frontier models (monopolistic)",
+            "reasoning": "Baker argues open-weight models democratize AI, create application layer value, and preserve diverse value systems, making them strategically superior for both America and investors."
+          },
+          {
+            "preferred": "US AI hardware ecosystem (Nvidia-led)",
+            "over": "Huawei-led alternative ecosystem",
+            "reasoning": "Baker argues the US lead in AI hardware is the most critical strategic advantage and that tighter export controls risk accelerating Huawei's ecosystem to the point where it becomes uncontrollable."
+          }
+        ],
+        "risk_warnings": [
+          {
+            "target": "NVDA without Jensen Huang",
+            "nature": "structural_risk",
+            "detail": "Baker says it is 'really hard to imagine' Nvidia without Jensen, calls him N of 2 globally, and implies the stock and competitive position would look 'very, very different' in 2-3 years without him. The stock move since Jensen's departure is cited as market confirmation."
+          },
+          {
+            "target": "US AI strategic advantage",
+            "nature": "geopolitical",
+            "detail": "Baker warns that tighter export controls will force Chinese AI labs to standardize on Huawei hardware, rapidly improving it, and that hardware could be shared with Russia, North Korea, and Iran with no US ability to shut it off \u2014 reversing the current strategic advantage."
+          },
+          {
+            "target": "AI infrastructure buildout",
+            "nature": "timing",
+            "detail": "Baker warns that a ZIRP-like environment with rapid capacity expansion across TSMC, Micron, SK Hynix, Samsung, laser companies, and substrate companies would risk a true overbuild. Current supply constraints are healthy precisely because they prevent this."
+          },
+          {
+            "target": "Nvidia earnings guidance reset",
+            "nature": "timing",
+            "detail": "Baker notes AI stocks are pricing in a big guidance cut from Nvidia three months after prior guidance was given, and acknowledges new administrations sometimes want to set a different bar \u2014 implying near-term guidance risk."
+          }
+        ],
+        "catalysts": [
+          {
+            "event": "Nvidia earnings report",
+            "timing": "2026-11-17 (tonight)",
+            "impact": "Potential guidance recalibration; Baker views any reset as healthy and a precondition for the Anthropic IPO to be well-received by the market.",
+            "beneficiaries": [
+              "NVDA",
+              "Anthropic"
+            ],
+            "losers": []
+          },
+          {
+            "event": "Jensen Huang congressional testimony",
+            "timing": "December 1, 2026",
+            "impact": "Key facts about Jensen's knowledge of Megaspeed sales and his cooperation with investigations will emerge, potentially clearing him and enabling a board reconsideration of his return as CEO.",
+            "beneficiaries": [
+              "NVDA"
+            ],
+            "losers": []
+          },
+          {
+            "event": "Anthropic IPO",
+            "timing": "Thursday (approximately 2026-11-20)",
+            "impact": "Baker views the IPO as a positive catalyst for the broader AI market, providing a valuation benchmark and market confidence signal.",
+            "beneficiaries": [
+              "Anthropic",
+              "AI sector broadly"
+            ],
+            "losers": []
+          },
+          {
+            "event": "Tighter US export controls on China AI chips",
+            "timing": "Near-term (new administration policy)",
+            "impact": "Will accelerate Huawei ecosystem development, force Chinese labs off Nvidia hardware, and reduce US ability to control AI hardware reaching adversaries.",
+            "beneficiaries": [
+              "Huawei",
+              "Chinese AI labs"
+            ],
+            "losers": [
+              "NVDA",
+              "US strategic AI advantage"
+            ]
+          },
+          {
+            "event": "SpaceX Orbital Compute becoming operational",
+            "timing": "2028",
+            "impact": "Baker expects Orbital Compute to be a significant new revenue stream for SpaceX, competing directly with terrestrial data center developers.",
+            "beneficiaries": [
+              "SpaceX"
+            ],
+            "losers": [
+              "Traditional data center developers"
+            ]
+          }
+        ],
+        "meta_views": [
+          {
+            "topic": "AI cycle duration",
+            "view": "Multi-decade buildout, not a bubble",
+            "detail": "Baker explicitly rejects the 2026 peak narrative and frames the AI infrastructure buildout as analogous to the railroad era \u2014 a 60-year cycle. He cites rising GPU spot prices in October as real-time evidence against overbuild."
+          },
+          {
+            "topic": "Supply constraints in AI infrastructure",
+            "view": "Healthy and desirable",
+            "detail": "Baker argues that power shortages, semiconductor capacity limits (TSMC, Micron, SK Hynix, Samsung, laser/substrate companies), and other bottlenecks are slowing the buildout in a healthy way, preventing the kind of rapid overbuild that caused the dot-com bust."
+          },
+          {
+            "topic": "Export controls policy",
+            "view": "Current tighter controls are counterproductive and dangerous",
+            "detail": "Baker argues the prior bipartisan policy of allowing less powerful GPU sales to China was working and should have been maintained. Tighter controls will accelerate Huawei's ecosystem and remove US leverage over AI hardware reaching adversaries."
+          },
+          {
+            "topic": "CEO succession at Nvidia",
+            "view": "Board should take a slow, deliberate process and allow facts to emerge before deciding",
+            "detail": "Baker and Brad Gerstner wrote a letter urging the board not to rush the CEO selection. Baker believes Jensen will be cleared of national security concerns and should be given a second chance if so. He notes David Solomon and all shareholders/employees he has spoken to support the letter."
+          },
+          {
+            "topic": "Nvidia competitive moat",
+            "view": "Jensen's personal relationships and vision are a core, hard-to-replicate competitive advantage",
+            "detail": "Baker cites Jensen's supply chain relationships (evidenced by Taipei buildings/highways lit up in his support), his CUDA/AI bet, and his handshake deal-making as advantages no successor can easily replicate."
+          },
+          {
+            "topic": "Open-source vs closed AI models",
+            "view": "Open-weight models are strategically essential for America and for creating application layer value",
+            "detail": "Baker frames open-weight models as the mechanism for democratizing AI, preserving diverse value systems, and enabling a vibrant application ecosystem. He is concerned about a world with only 1-3 closed models controlling AI value systems."
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-11-17_tomorrowx_opening_session_2026nov.json",
+      "date": "2026-11-17",
+      "source": "TomorrowX Summit (iConnections)",
+      "thesis_count": 8,
+      "data": {
+        "metadata": {
+          "source": "TomorrowX Summit (iConnections)",
+          "date": "2026-11-17",
+          "host": "Sara Eisen",
+          "topic": "Opening session: retail as most powerful market force, AI buildout railroad vs telecom, P(doom) vs P(boom)",
+          "duration_estimate_min": 15
+        },
+        "theses": [
+          {
+            "id": "T1",
+            "summary": "AI equities are trading at 10-20 year low valuation multiples, implying market consensus of peak spending",
+            "detail": "Baker explicitly states AI equities are broadly at 10-15, in some cases 20-year low valuation multiples. He interprets this as the stock market pricing in peak capex spending on AI infrastructure, which he views as potentially mispriced if AI continues to become more economically useful.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker states this directly and frames it as the central investment question he is asking management teams",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain",
+              "AI software/applications"
+            ],
+            "time_horizon": "medium_term",
+            "contrarian": true,
+            "quote_fragment": "AI equities are broadly speaking at 10 15 in some cases 20-year low valuation multiples"
+          },
+          {
+            "id": "T2",
+            "summary": "The AI buildout is more likely to resemble the 60-year railroad buildout than the telecom overbuild, if AI continues to become more economically useful",
+            "detail": "Baker draws an explicit analogy: the railroad buildout lasted ~60 years at a roughly comparable percentage of GDP to current AI capex. If token demand elasticity remains positive and AI keeps getting more economically useful, the buildout continues rather than collapsing like telecom. This is the key binary he is underwriting.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker frames this as his core thesis and the primary question he asks management; he uses the railroad analogy with specificity (60 years, GDP comparison)",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": true,
+            "quote_fragment": "this buildout is much more like the railroad buildout... lasted for 60 years"
+          },
+          {
+            "id": "T3",
+            "summary": "Slower, more sustained AI capex growth is preferable to a sharp spike and crash; current supply constraints are a feature, not a bug",
+            "detail": "Baker argues that high real interest rates, wider spreads, a shortage of watts (power), and a shortage of wafers are naturally slowing the buildout. He views this as ironically positive because it prevents the overbuild that has historically followed every prior technology cycle. He explicitly says 'we want slower for longer, slower smoother for longer.'",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Stated emphatically and repeatedly; Baker frames it as his preferred macro scenario for the AI cycle",
+            "tickers_named": [
+              "TSMC"
+            ],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain",
+              "power/energy"
+            ],
+            "time_horizon": "medium_term",
+            "contrarian": true,
+            "quote_fragment": "we want slower for longer, slower smoother for longer"
+          },
+          {
+            "id": "T4",
+            "summary": "A bubble in AI is not the current state, but is the key risk to avoid; no bubble currently",
+            "detail": "Baker explicitly states 'we're certainly not in a bubble right now' and frames bubble avoidance as the paramount concern for AI bulls. The slower buildout dynamic reduces bubble risk.",
+            "confidence": "moderate",
+            "confidence_evidence": "Stated as a direct assertion but without detailed valuation support in this transcript",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure"
+            ],
+            "time_horizon": "near_term",
+            "contrarian": false,
+            "quote_fragment": "we're certainly not in a bubble right now"
+          },
+          {
+            "id": "T5",
+            "summary": "Nvidia earnings and Anthropic IPO are near-term major catalysts ('big cards to turn over') for the AI investment thesis",
+            "detail": "Baker identifies Nvidia earnings (that night) and the Anthropic IPO (the following day) as two significant near-term data points that will materially inform the market's view on AI capex trajectory and AI model monetization.",
+            "confidence": "moderate",
+            "confidence_evidence": "Mentioned as a forward-looking observation; framed as important but Baker does not give a directional call on the outcomes",
+            "tickers_named": [
+              "NVDA"
+            ],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "AI software/applications"
+            ],
+            "time_horizon": "near_term",
+            "contrarian": false,
+            "quote_fragment": "Nvidia earnings tonight and the Anthropic IPO I believe tomorrow"
+          },
+          {
+            "id": "T6",
+            "summary": "Value of compute will continue to rise if AI continues to become more economically useful; elasticity of token demand is the key variable",
+            "detail": "Baker frames 'is the elasticity of token demand still positive?' as the central question. If yes, compute value rises and the buildout continues. The value accrues across the five-layer stack: LAN/power, different chip types, compute vs. networking vs. memory vs. storage.",
+            "confidence": "moderate",
+            "confidence_evidence": "Framed as a conditional thesis dependent on token demand elasticity remaining positive; Baker does not assert it as certain",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": false,
+            "quote_fragment": "the value of compute will continue to rise"
+          },
+          {
+            "id": "T7",
+            "summary": "Zero interest rate environment would have caused a dangerous AI overbuild; higher real rates and supply constraints are preventing this",
+            "detail": "Baker explicitly contrasts the current environment with a hypothetical ZIRP world where TSMC, Micron, Samsung, and SK Hynix would be expanding capacity 200%, guaranteeing an overbuild. He cites this as the historical pattern of 400 years of capitalism. Current constraints (rates, watts, wafers) are the circuit breaker.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker states this as a structural historical observation with high conviction; names specific companies as examples",
+            "tickers_named": [],
+            "tickers_implied": [
+              "TSM",
+              "MU",
+              "Samsung (005930.KS)",
+              "SK Hynix (000660.KS)"
+            ],
+            "themes": [
+              "semiconductor supply chain",
+              "AI datacenter infrastructure",
+              "power/energy"
+            ],
+            "time_horizon": "medium_term",
+            "contrarian": true,
+            "quote_fragment": "Taiwan semi micron Samsung highex were expanding capacity 200%... we'd for sure get an overbuild"
+          },
+          {
+            "id": "T8",
+            "summary": "Retail investors are now the most powerful force in markets, displacing traditional sell-side research",
+            "detail": "Baker cites a specific anecdote: a bulge bracket bank downgraded a semiconductor capital equipment stock to strong sell with a massive price target cut, yet the stock rose 7% because a single line from a Substack/X account (Catrini) included it in a basket. He views this as a structural, durable shift in market power dynamics.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker describes this as a crystallizing moment that motivated him to build TomorrowX; he has been observing the trend for 6-7 years",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "market structure",
+              "retail investor democratization"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": true,
+            "quote_fragment": "one line from Catrini moved the market much more than this bulge bracket investment bank"
+          }
+        ],
+        "explicit_recommendations": [],
+        "sector_rankings": [
+          {
+            "preferred": "AI infrastructure (railroad analogy)",
+            "over": "Telecom-style overbuild scenario",
+            "reasoning": "Baker argues the AI buildout has structural demand support (positive token demand elasticity, economic utility) unlike the telecom buildout where assets were underutilized, making a sustained multi-decade buildout the base case"
+          },
+          {
+            "preferred": "Slower, sustained AI capex growth",
+            "over": "Rapid spike in AI capex",
+            "reasoning": "Baker explicitly prefers 'slower smoother for longer' to avoid a bubble and crash; current supply constraints (watts, wafers, rates) are achieving this desirable outcome"
+          }
+        ],
+        "risk_warnings": [
+          {
+            "target": "AI infrastructure broadly",
+            "nature": "structural_risk",
+            "detail": "Baker identifies the telecom overbuild as the bear case analog \u2014 a sharp capex spike followed by a long period of underinvestment and asset underutilization. He frames this as the key risk for AI bulls."
+          },
+          {
+            "target": "AI infrastructure broadly",
+            "nature": "timing",
+            "detail": "Baker flags that the stock market is currently pricing in peak AI spending (10-20 year low valuation multiples), meaning any evidence confirming peak capex could be severely damaging to AI equity holders."
+          },
+          {
+            "target": "Semiconductor capacity expansion",
+            "nature": "structural_risk",
+            "detail": "In a zero-rate environment, Baker warns that TSMC, Micron, Samsung, and SK Hynix expanding capacity 200% would guarantee an overbuild \u2014 the historical pattern of 400 years of capitalism. Current constraints are the only buffer."
+          }
+        ],
+        "catalysts": [
+          {
+            "event": "Nvidia earnings release",
+            "timing": "Night of 2026-11-17 (same day as transcript)",
+            "impact": "Major data point on AI capex trajectory, demand for accelerated compute, and health of the AI buildout thesis",
+            "beneficiaries": [
+              "NVDA",
+              "AI infrastructure broadly"
+            ],
+            "losers": []
+          },
+          {
+            "event": "Anthropic IPO",
+            "timing": "Day after transcript (approximately 2026-11-18)",
+            "impact": "Major signal on AI model monetization, private AI company valuations, and retail/institutional appetite for AI equity exposure",
+            "beneficiaries": [
+              "Anthropic (private)",
+              "AI software/applications sector"
+            ],
+            "losers": []
+          }
+        ],
+        "meta_views": [
+          {
+            "topic": "Retail vs. institutional market power",
+            "view": "Retail is now the most powerful force in markets",
+            "detail": "Baker has observed over 6-7 years a democratization of investing where FinTwit/X accounts, Substacks, and Reddit communities move stocks more than bulge bracket sell-side research. He views this as structural and durable, not cyclical."
+          },
+          {
+            "topic": "AI sentiment in America vs. China",
+            "view": "American fear of AI is misplaced and economically damaging",
+            "detail": "Baker and Gracias note that in China, sentiment on AI is overwhelmingly positive, while in America fear dominates. They argue the AI industry must communicate truthfully about AI's benefits to ordinary Americans to shift this dynamic."
+          },
+          {
+            "topic": "P(doom) vs P(boom)",
+            "view": "P(boom) is the correct framing; Star Trek not Terminator if society chooses it",
+            "detail": "Gracias argues that outcomes are partially self-fulfilling \u2014 fearful societies create bad outcomes, optimistic societies create good ones. The conference mission is explicitly to shift American sentiment from P(doom) to P(boom)."
+          },
+          {
+            "topic": "AI and productivity",
+            "view": "AI represents not just productivity gains but an unleashing of human creativity",
+            "detail": "Gracias distinguishes this cycle from prior productivity booms: AI enables creativity, not just efficiency. He cites the explosion in new company formation as evidence this is already happening."
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov.json",
+      "date": "2026-11-19",
+      "source": "Sourcery with Molly O'Shea",
+      "thesis_count": 9,
+      "data": {
+        "metadata": {
+          "source": "Sourcery with Molly O'Shea",
+          "date": "2026-11-19",
+          "host": "Molly O'Shea",
+          "topic": "Nvidia CEO succession, AI selloff, enterprise AI demand, Starship, orbital compute",
+          "duration_estimate_min": 22
+        },
+        "theses": [
+          {
+            "id": "T1",
+            "summary": "AI demand remains fundamentally strong despite stock market pricing implying imminent demand weakness",
+            "detail": "Baker argues the market is making a flawed calculation by comparing ~$2T in hyperscaler capex only against visible frontier AI revenues (~$120-200B from Anthropic, OpenAI, Grok, etc.), while ignoring the massive open-source AI ecosystem. Fireworks AI's top customer grew 13x in 9-10 months of 2026, and open-source tokens carry lower margins, dragging more compute demand with them.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker explicitly calls the market calculation 'flawed,' cites specific data points from conference conversations, and draws on 27 years of semiconductor investing experience to assert a 'discontinuity between really strong fundamentals and what stocks are discounting.'",
+            "tickers_named": [],
+            "tickers_implied": [
+              "NVDA",
+              "AMD",
+              "AVGO"
+            ],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain",
+              "open-source AI ecosystem"
+            ],
+            "time_horizon": "near_term",
+            "contrarian": true,
+            "quote_fragment": "discontinuity between really strong fundamentals and what stocks are discounting"
+          },
+          {
+            "id": "T2",
+            "summary": "Enterprise on-premise AI adoption (AI factories) is a massive, undercounted source of compute demand",
+            "detail": "Michael Dell disclosed that Dell sold 3,200 AI factories in 2024-2025 combined, then 3,300 in just the last 9 months of 2026 \u2014 over 6,000 discrete enterprises buying GPU servers and running open-source AI. This demand does not appear in frontier AI revenue figures the market uses to assess ROI on capex.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker cites specific, named data points from Michael Dell directly at the conference, framing it as 'really important' and a key flaw in the market's ROI calculation.",
+            "tickers_named": [],
+            "tickers_implied": [
+              "DELL",
+              "NVDA",
+              "AMD"
+            ],
+            "themes": [
+              "AI datacenter infrastructure",
+              "enterprise AI adoption",
+              "open-source AI ecosystem"
+            ],
+            "time_horizon": "medium_term",
+            "contrarian": true,
+            "quote_fragment": "3,300 in the last 9 months, over 6,000 discrete enterprises"
+          },
+          {
+            "id": "T3",
+            "summary": "Open-source AI ecosystem is a structurally large and growing source of compute demand that the market underestimates",
+            "detail": "Because open-source model tokens carry lower margins than proprietary frontier AI tokens, they require proportionally more compute per dollar of revenue. Companies like Fireworks AI that specialize and customize open-source models for enterprise use cases are growing extremely fast and represent a large aggregate demand signal invisible in frontier AI revenue metrics.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker calls this 'a huge amount of AI demand' and ties it directly to his core thesis about the market's flawed ROI calculation. Fireworks is an Atreides portfolio company, giving him direct insight.",
+            "tickers_named": [],
+            "tickers_implied": [
+              "NVDA",
+              "AMD",
+              "AVGO"
+            ],
+            "themes": [
+              "AI datacenter infrastructure",
+              "open-source AI ecosystem",
+              "semiconductor supply chain"
+            ],
+            "time_horizon": "medium_term",
+            "contrarian": true,
+            "quote_fragment": "lower margins on open source tokens drags more compute demand with it"
+          },
+          {
+            "id": "T4",
+            "summary": "Nvidia at current valuation is cheap even assuming low single-digit to low double-digit revenue growth",
+            "detail": "Baker argues that if Nvidia (and most AI stocks) grow at even 5-10% per year from current guide levels, the stock is cheap. The market is overly focused on second derivatives \u2014 peak growth rate \u2014 and may be wrong if the AI buildout resembles the railroad buildout and continues for decades.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker states explicitly 'it's a cheap stock' twice and frames the railroad analogy as a plausible multi-decade scenario. He applies this logic to 'most AI stocks.'",
+            "tickers_named": [
+              "NVDA"
+            ],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": true,
+            "quote_fragment": "grow 8%, 5%, 10% a year \u2014 it's a cheap stock"
+          },
+          {
+            "id": "T5",
+            "summary": "Jensen Huang's removal from Nvidia is a major risk to Nvidia's competitive position and American AI leadership",
+            "detail": "Baker co-authored a letter with Brad Gerstner to the Nvidia board urging a slow, deliberate approach and consideration of reinstating Jensen as CEO. Key risks of permanent removal: (1) Jensen's unparalleled Asian supply chain relationships (no contract with TSMC, handshake deals, preferred pricing/volume); (2) Jensen as the leading advocate for American open-source AI; (3) risk that Jensen joins a competitor. Baker has known Jensen since 2000 and vouches for his patriotism.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker co-authored a public letter to the board, speaks from 27 years of personal relationship with Jensen, and frames this as one of his most important current views.",
+            "tickers_named": [
+              "NVDA"
+            ],
+            "tickers_implied": [
+              "TSM"
+            ],
+            "themes": [
+              "semiconductor supply chain",
+              "AI datacenter infrastructure",
+              "geopolitics/national security"
+            ],
+            "time_horizon": "medium_term",
+            "contrarian": false,
+            "quote_fragment": "I've been doing this 27 years and I've met one Jensen"
+          },
+          {
+            "id": "T6",
+            "summary": "US export control policy shift (post-Jensen) risks accelerating Huawei's AI hardware ecosystem development",
+            "detail": "Baker argues Jensen's policy of allowing less-powerful Nvidia GPUs into China was strategically slowing Huawei's hardware development because Huawei chips weren't being used at scale. Now that Chinese AI labs are forced to use Huawei hardware exclusively, usage will drive rapid improvement. This is framed as a grave national security risk from well-intentioned but misguided Washington policy.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker makes this argument forcefully and at length, framing it as a structural geopolitical risk with direct investment implications for Nvidia's long-term competitive moat.",
+            "tickers_named": [
+              "NVDA"
+            ],
+            "tickers_implied": [],
+            "themes": [
+              "geopolitics/national security",
+              "semiconductor supply chain",
+              "AI datacenter infrastructure"
+            ],
+            "time_horizon": "long_term",
+            "contrarian": true,
+            "quote_fragment": "Huawei hardware is going to be used by every Chinese AI lab, it might get better really fast"
+          },
+          {
+            "id": "T7",
+            "summary": "SpaceX's Starship rapid reusability enables orbital compute and Starlink Direct-to-Cell, representing transformative value creation",
+            "detail": "Baker states SpaceX controls 85% of mass to orbit. Rapid reusability of Starship (including catching the upper stage) is the key enabling technology for: (1) orbital compute satellites (first launch targeted 2027 per Brad Gerstner); (2) Starlink Direct-to-Cell. SpaceX engineers have solved cooling and design challenges for orbital compute satellites \u2014 their remaining concern is Starship reusability, which is now being addressed.",
+            "confidence": "high_conviction",
+            "confidence_evidence": "Baker has spent significant time at Starbase, spoke directly with SpaceX engineers, and frames orbital compute as a near-certain outcome contingent on Starship reusability progress now being demonstrated.",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "space/orbital compute",
+              "AI datacenter infrastructure",
+              "national defense"
+            ],
+            "time_horizon": "medium_term",
+            "contrarian": false,
+            "quote_fragment": "first orbital compute satellites in 2027, you needed Starship for that"
+          },
+          {
+            "id": "T8",
+            "summary": "Grok/xAI's first-party AI revenue is approaching ~$10B and growing very rapidly, significantly underappreciated",
+            "detail": "Baker estimates based on third-party data that xAI's (SpaceX's) first-party AI business (Grokbot) is approaching $10B in revenue \u2014 high-margin and growing 'really really really fast.' He personally uses Grokbot more than X and calls it the most valuable AI tool to him, suggesting strong product-market fit beyond what is publicly appreciated.",
+            "confidence": "moderate",
+            "confidence_evidence": "Baker qualifies with 'I don't know it but if I were to have an estimate based on third party data' \u2014 moderate confidence, not direct knowledge. But he frames it as a significant underappreciated data point.",
+            "tickers_named": [],
+            "tickers_implied": [],
+            "themes": [
+              "AI datacenter infrastructure",
+              "open-source AI ecosystem"
+            ],
+            "time_horizon": "near_term",
+            "contrarian": true,
+            "quote_fragment": "getting pretty close to 10 billion, very high margin revenue growing really really fast"
+          },
+          {
+            "id": "T9",
+            "summary": "Astera Labs business has accelerated since earnings two weeks ago",
+            "detail": "Baker spoke with Chachendra (CEO of Astera Labs) at the conference, who indicated that since reporting earnings two weeks prior, business has accelerated and things have gotten better \u2014 a positive demand signal for AI connectivity infrastructure.",
+            "confidence": "moderate",
+            "confidence_evidence": "Direct conversation with Astera CEO at conference, but brief mention without elaboration on specifics.",
+            "tickers_named": [],
+            "tickers_implied": [
+              "ALAB"
+            ],
+            "themes": [
+              "AI datacenter infrastructure",
+              "semiconductor supply chain"
+            ],
+            "time_horizon": "near_term",
+            "contrarian": false,
+            "quote_fragment": "since they reported earnings two weeks ago business has accelerated"
+          }
+        ],
+        "explicit_recommendations": [
+          {
+            "direction": "buy",
+            "target": "NVDA",
+            "reasoning": "Stock is cheap even at 5-10% annual growth from current guide levels; market is mispricing by focusing on second derivatives rather than absolute earnings power; AI demand on the ground is strong.",
+            "confidence": "high_conviction"
+          },
+          {
+            "direction": "buy",
+            "target": "AI infrastructure stocks broadly",
+            "reasoning": "Strong on-the-ground demand signals from Astera Labs, Dell AI factories, Fireworks AI, SpaceX \u2014 market pricing implies imminent demand issue that Baker believes is not materializing.",
+            "confidence": "high_conviction"
+          }
+        ],
+        "sector_rankings": [
+          {
+            "preferred": "Open-source AI infrastructure / enterprise on-premise AI",
+            "over": "Frontier AI revenue as a demand proxy",
+            "reasoning": "Open-source ecosystem demand is large, fast-growing, and invisible in the market's ROI calculation; enterprise AI factories are accelerating rapidly"
+          },
+          {
+            "preferred": "Space/orbital compute",
+            "over": "Traditional terrestrial compute for certain use cases",
+            "reasoning": "SpaceX's Starship reusability solves the key bottleneck; orbital compute satellites planned for 2027; SpaceX controls 85% of mass to orbit"
+          }
+        ],
+        "risk_warnings": [
+          {
+            "target": "US AI export control policy / American AI hardware dominance",
+            "nature": "geopolitical",
+            "detail": "Post-Jensen policy shift forces Chinese AI labs onto Huawei hardware exclusively, which will accelerate Huawei's hardware improvement through usage. Baker frames this as a grave national security risk that could erode Nvidia's long-term competitive moat in China and globally."
+          },
+          {
+            "target": "NVDA",
+            "nature": "structural_risk",
+            "detail": "Permanent removal of Jensen Huang risks losing irreplaceable supply chain relationships with TSMC and Asian partners, advocacy for American open-source AI, and creates risk of Jensen joining a competitor."
+          },
+          {
+            "target": "AI capex ROI narrative",
+            "nature": "overhyped",
+            "detail": "Market's calculation comparing ~$2T capex to ~$120-200B visible frontier AI revenue is structurally flawed \u2014 it ignores the entire open-source ecosystem and 6,000+ enterprise AI factory deployments."
+          }
+        ],
+        "catalysts": [
+          {
+            "event": "Companies provide 2027 guidance",
+            "timing": "Early 2027 (earnings season)",
+            "impact": "Baker expects 2027 guides to force market to shift from voting machine to weighing machine, potentially re-rating AI stocks upward if demand remains strong",
+            "beneficiaries": [
+              "NVDA",
+              "AI infrastructure stocks",
+              "DELL",
+              "ALAB"
+            ],
+            "losers": []
+          },
+          {
+            "event": "Orbital compute satellite first launch",
+            "timing": "2027",
+            "impact": "Validates SpaceX orbital compute thesis; opens new market for AI inference in space; demonstrates Starship reusability ROI",
+            "beneficiaries": [
+              "SpaceX (private)"
+            ],
+            "losers": []
+          },
+          {
+            "event": "Nvidia independent investigation conclusion and Jensen congressional testimony",
+            "timing": "Near-term (months)",
+            "impact": "If Jensen is cleared of national security allegations, Baker expects board to consider reinstating him as CEO, which would be a significant positive catalyst for NVDA",
+            "beneficiaries": [
+              "NVDA"
+            ],
+            "losers": []
+          },
+          {
+            "event": "Starship upper stage catch / rapid reusability demonstration",
+            "timing": "Already occurring (Starship 15)",
+            "impact": "Removes key bottleneck for Starlink Direct-to-Cell and orbital compute; dramatically reduces launch costs",
+            "beneficiaries": [
+              "SpaceX (private)",
+              "Starlink ecosystem"
+            ],
+            "losers": []
+          }
+        ],
+        "meta_views": [
+          {
+            "topic": "Market psychology on AI stocks",
+            "view": "Market is in 'voting machine' phase, mispricing strong fundamentals",
+            "detail": "Baker invokes Buffett's voting/weighing machine framework \u2014 current market is emotionally focused on second derivatives (peak growth rate) rather than absolute earnings power. Expects reversion to fundamentals as 2027 guides are issued."
+          },
+          {
+            "topic": "AI ROI measurement",
+            "view": "Frontier AI revenue is the wrong denominator for measuring AI capex ROI",
+            "detail": "The correct measure must include open-source ecosystem revenue, enterprise on-premise AI deployments, and productivity gains \u2014 none of which appear in Anthropic/OpenAI revenue figures."
+          },
+          {
+            "topic": "Jensen Huang / Nvidia leadership",
+            "view": "Jensen is irreplaceable; board should take time and consider reinstatement",
+            "detail": "Baker and Brad Gerstner co-authored letter to Nvidia board. Baker has known Jensen since 2000, vouches for his patriotism, and argues his supply chain relationships and open-source advocacy are unparalleled and unreplicable."
+          },
+          {
+            "topic": "SpaceX / Elon Musk",
+            "view": "SpaceX is America's most important national defense contractor and a force for global good",
+            "detail": "Controls 85% of mass to orbit; Starlink connecting underserved global populations; orbital compute and asteroid mining as long-term theses. Baker is a close associate of Elon Musk."
+          },
+          {
+            "topic": "American open-source AI",
+            "view": "Vibrant American open-source AI ecosystem is a national security and cultural imperative",
+            "detail": "Baker argues against a world dominated by 2-3 frontier AIs with embedded value systems; open-source AI allows diversity of values and customization. Jensen was the leading industry advocate for this."
           }
         ]
       }

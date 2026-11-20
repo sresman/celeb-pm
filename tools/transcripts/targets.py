@@ -347,6 +347,35 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "source": "a16z Podcast", "host": "David George (Gavin Baker guest)", "subject_role": "guest",
         "topic": "AI demand outrunning compute supply; frontier-lab revenue is self-determined, reinvestment math, not necessarily winner-take-all",
     },
+    # ---- Added 2026-11-20 (transcripts-nov-2026 task). TomorrowX Summit,
+    # Moody Center, Austin, 2026-11-17/18; Baker is one of three co-hosts.
+    # Only sessions where Baker is a SUBJECT are registered. Sessions where he
+    # interviews someone else are excluded under the Heller House rule below
+    # (Musk w/ Gracias, Dell, Solomon, Johnsen, Feldman, Xu, Mohan, Lochmiller,
+    # Qiao, Micron). The Sourcery TomorrowX compilation cTFNOTt-jGs is
+    # also excluded: its Baker chapters repeat drpASO63CJc. ----
+    "OmEfHDQ3B6c": {
+        "label": "tomorrowx_opening_session_2026nov", "date": "2026-11-17",
+        "source": "TomorrowX Summit (iConnections)",
+        "host": "Sara Eisen (Gavin Baker, Antonio Gracias, Ron Biscardi panelists)", "subject_role": "panelist",
+        "topic": "Opening session: retail as the most powerful market force, AI buildout railroad vs telecom, P(doom) vs P(boom)",
+    },
+    # Published 2026-11-19; recorded at TomorrowX (11-17/18). Dated to
+    # publication, when it became public.
+    "drpASO63CJc": {
+        "label": "sourcery_nvidia_jensen_tomorrowx_2026nov", "date": "2026-11-19",
+        "source": "Sourcery with Molly O'Shea", "host": "Molly O'Shea (Gavin Baker guest)", "subject_role": "guest",
+        "topic": "Nvidia CEO succession and the Baker/Gerstner letter, AI selloff, enterprise AI demand (Dell, Fireworks), Starship, orbital compute",
+    },
+    # ---- NOT REGISTERED -- no recording (2026-11-20). Boston Investment
+    # Conference (15th annual), InterContinental Boston, 2026-10-29,
+    # 2:45-3:30pm ET: Gavin Baker with Ted Seides (Capital Allocators).
+    # Source: bostoninvestmentconference.com/agenda. No video, podcast episode
+    # or write-up found as of 2026-11-20. Register it here if one appears. ----
+    # ---- EXCLUDED 2026-11-20: White House / America.gov event, 2026-09-29
+    # (RSBN 388P7IFSpwE, C-SPAN nXfKDuL8Q8c). Baker MODERATED the Musk / Huang /
+    # Tom Brown panel. Same rule as the Heller House removal: Baker
+    # is the interviewer, not the subject. Operator decision 2026-11-20. ----
 }
 
 # --------------------------------------------------------------------------
@@ -466,6 +495,11 @@ SUPPLEMENTARY_METADATA: dict[str, dict[str, str]] = {
     },
     "cnbc_spacex_drawdown_2026jul": {
         "host": "CNBC",
+        "subject_role": "guest",
+    },
+    # Added 2026-11-20. Live from TomorrowX; yt-dlp audio + whisper medium.
+    "cnbc_squawk_nvidia_letter_2026nov": {
+        "host": "CNBC (Sara Eisen)",
         "subject_role": "guest",
     },
 }

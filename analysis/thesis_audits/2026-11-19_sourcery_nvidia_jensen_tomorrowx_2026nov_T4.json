@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-19",
+  "source": "Sourcery with Molly O'Shea \u2014 Nvidia CEO succession, AI selloff, enterprise AI demand, Starship, orbital compute",
+  "thesis_id": "T4",
+  "summary": "Nvidia at current valuation is cheap even assuming low single-digit to low double-digit revenue growth",
+  "summary_extended": "Baker argues that Nvidia is cheap at current valuation even under conservative growth assumptions, explicitly stating that if Nvidia grows revenues at just 5-10% per year from current guide levels, the stock is attractively priced. His reasoning is that the market is overly fixated on the second derivative \u2014 the deceleration in growth rate from peak levels \u2014 rather than the absolute level of future cash flows, which remain substantial even at low single-digit to low double-digit growth. He draws an analogy to the railroad buildout, suggesting the AI infrastructure cycle could persist for decades rather than peaking imminently, which would make current consensus pessimism structurally wrong. The investment implication is to be long NVDA (and by extension most AI stocks) against the prevailing narrative of peak AI capex, with Baker explicitly extending this cheap-on-modest-growth logic to the broader AI equity complex. No specific price targets or revenue figures are cited beyond the directional 5-10% annual growth scenario.",
+  "detail": "Baker argues that if Nvidia (and most AI stocks) grow at even 5-10% per year from current guide levels, the stock is cheap. The market is overly focused on second derivatives \u2014 peak growth rate \u2014 and may be wrong if the AI buildout resembles the railroad buildout and continues for decades.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states explicitly 'it's a cheap stock' twice and frames the railroad analogy as a plausible multi-decade scenario. He applies this logic to 'most AI stocks.'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "grow 8%, 5%, 10% a year \u2014 it's a cheap stock",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is explicitly and specifically about Nvidia's valuation being cheap even under low single-digit to low double-digit revenue growth assumptions. Baker names NVDA directly and the entire valuation argument centers on this stock."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "label": "tomorrowx_opening_session_2026nov",
+  "date": "2026-11-17",
+  "source": "TomorrowX Summit (iConnections) \u2014 Opening session: retail as most powerful market force, AI buildout railroad vs telecom, P(doom) vs P(boom)",
+  "host": "Sara Eisen (Gavin Baker, Antonio Gracias, Ron Biscardi panelists)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "AI equities are trading at 10-20 year low valuation multiples, implying market consensus of peak spending",
+      "tickers": [],
+      "quote": "AI equities are broadly speaking at 10 15 in some cases 20-year low valuation multiples",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The host directly addresses 'Gavin' by name and asks him a question; the answer beginning 'Well, um [clears throat] I think...' is Baker's direct reply.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "The AI buildout is more likely to resemble the 60-year railroad buildout than the telecom overbuild, if AI continues to become more economically useful",
+      "tickers": [],
+      "quote": "this buildout is much more like the railroad buildout... lasted for 60 years",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from Baker's named reply to the host's question; same uninterrupted turn.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "Slower, more sustained AI capex growth is preferable to a sharp spike and crash; current supply constraints are a feature, not a bug",
+      "tickers": [
+        "TSMC"
+      ],
+      "quote": "we want slower for longer, slower smoother for longer",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from Baker's named reply to the host's question; same uninterrupted turn.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "A bubble in AI is not the current state, but is the key risk to avoid; no bubble currently",
+      "tickers": [],
+      "quote": "we're certainly not in a bubble right now",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from Baker's named reply to the host's question; same uninterrupted turn.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "Nvidia earnings and Anthropic IPO are near-term major catalysts ('big cards to turn over') for the AI investment thesis",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Nvidia earnings tonight and the Anthropic IPO I believe tomorrow",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from Baker's named reply to the host's question; same uninterrupted turn.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Value of compute will continue to rise if AI continues to become more economically useful; elasticity of token demand is the key variable",
+      "tickers": [],
+      "quote": "the value of compute will continue to rise",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from Baker's named reply to the host's question; same uninterrupted turn.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Zero interest rate environment would have caused a dangerous AI overbuild; higher real rates and supply constraints are preventing this",
+      "tickers": [
+        "TSM",
+        "MU"
+      ],
+      "quote": "Taiwan semi micron Samsung highex were expanding capacity 200%... we'd for sure get an overbuild",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous monologue from Baker's named reply to the host's question; same uninterrupted turn.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "Retail investors are now the most powerful force in markets, displacing traditional sell-side research",
+      "tickers": [],
+      "quote": "one line from Catrini moved the market much more than this bulge bracket investment bank",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 4 host asks 'How so?' directed at Gavin (named in turn 2 as the idea originator), and turn 5 is Baker's direct reply containing the quote.",
+      "cue_type": "naming"
+    }
+  ]
+}

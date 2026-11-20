@@ -1,0 +1,569 @@
+# label: sourcery_nvidia_jensen_tomorrowx_2026nov
+# source: Sourcery with Molly O'Shea
+# date: 2026-11-19
+# url: https://www.youtube.com/watch?v=drpASO63CJc
+# youtube_id: drpASO63CJc
+# sub_lang: en-orig
+# actual_title: Gavin Baker: Why Nvidia Needs Jensen Huang Back as CEO
+
+[00:00] Yeah.
+[00:00] >> All right. Well, Gavin Baker, welcome to
+[00:01] Sorcery here at Tomorrowex.
+[00:04] >> Thank you for having me, Molly.
+[00:05] >> Congrats.
+[00:06] >> Thank you.
+[00:07] >> How's it going?
+[00:08] >> Well, I was going to ask you. I mean,
+[00:09] I'm How's it going for you?
+[00:11] >> It's phenomenal. We've had really great
+[00:12] conversations.
+[00:13] >> Good.
+[00:14] >> Started off with Andrew Feldman. We just
+[00:16] had Brian Armstrong. We've had a lot of
+[00:18] really awesome people.
+[00:19] >> Great.
+[00:19] >> Yeah. So, who have you talked to on
+[00:21] stage? You've been on stage all day. You
+[00:24] know, um I'm a little bit worried that
+[00:27] if I name them, I'm going to forget
+[00:29] someone. So, I would rather not name
+[00:32] >> one or two. Uh
+[00:33] >> maybe the first person you talk to.
+[00:35] >> You look I had a great conversation with
+[00:36] Michael Dell, with Chachendra, with
+[00:38] Andrew Feldman, with Lynn Chow um from
+[00:42] Fireworks. So, it's Yeah, it's been
+[00:44] awesome.
+[00:45] >> What are the main themes?
+[00:47] >> Oh, I obviously talked to SpaceX, too.
+[00:49] Um just that demand is still really
+[00:53] strong. I thought it was you know Jindra
+[00:56] the CEO of Astera since they reported
+[00:59] earnings two weeks ago business has
+[01:02] accelerated things have gotten better.
+[01:04] SpaceX demand for compute still very
+[01:07] strong. Uh I thought you know the tone
+[01:10] from Cerebras on
+[01:12] you know the state of AI demand was
+[01:14] encouraging and I think this is
+[01:15] important to hear because you know
+[01:17] [laughter]
+[01:19] >> stocks are trading like um you know the
+[01:21] world is not
+[01:23] stocks are not trading like the world's
+[01:25] ending but stocks are trading like there
+[01:27] is an imminent issue with demand and I
+[01:30] just don't think that's what we've heard
+[01:31] here today.
+[01:32] >> Well the stock market's a little
+[01:34] emotional right now. They're not very
+[01:35] practical. They're a little emotional.
+[01:38] >> Your words, not mine. [laughter]
+[01:40] >> Yeah.
+[01:40] >> So, what should we make of the market?
+[01:42] So, the market demand is good.
+[01:44] Everything's great.
+[01:46] >> I think the market is um
+[01:50] I think the market is fundamentally
+[01:52] doing a simple but from my perspective
+[01:55] slightly flawed calculation. the market
+[01:58] is is saying,
+[02:00] you know, we were spending, let's just
+[02:02] make the math easy, you know, whatever
+[02:04] it is, a trillion dollars in capex.
+[02:08] Um, let's let's say $2 trillion in
+[02:11] capex. Um, and all we have to show for
+[02:14] it is 80 billion in anthropic revenue.
+[02:19] Um, plus the open AI revenue and you
+[02:23] know, it seems like that's been reported
+[02:24] to be around 40. So that's 120 billion
+[02:27] and then like we'll generously say that
+[02:30] Grock and Muse and Gemini and all these
+[02:33] other things add up to something and you
+[02:36] still get to something under $200
+[02:38] billion and that is the return on this
+[02:40] AI investment.
+[02:42] And I think that that calculation is
+[02:45] flawed for the following reason. one we
+[02:48] heard from Lynn today and she has a
+[02:53] business that is growing really fast
+[02:55] their top customer. is 13X in the first
+[02:59] uh nine or 10 months of this year and
+[03:02] she is fundamentally serving open source
+[03:04] models that she that Fireworks is
+[03:08] customizing and specializing for their
+[03:11] customers use cases and they're from my
+[03:14] perspective they're the atrades
+[03:16] portfolio company so I think they're the
+[03:18] best one doing this but they're not but
+[03:20] they're not the only one
+[03:22] >> and I think if you add up this
+[03:24] open-source ecosystem system. It is a
+[03:27] huge amount of AI demand and because the
+[03:31] margins are lower on these open source
+[03:33] tokens, it drags more compute demand
+[03:36] with it. And then I also thought Michael
+[03:38] Dell said something really important
+[03:40] today that they sell enterprises what
+[03:44] they call an AI factory.
+[03:47] And um in the first two years of
+[03:50] offering AI factories, which is 24 and
+[03:52] 25, they sold 3,200 of them. And they've
+[03:57] sold, I believe, 3,300 in the last 9
+[04:00] months. So these are over 6,000 discrete
+[04:03] enterprises who are buying GPU servers
+[04:07] and associated equipment from Dell and
+[04:11] running open-source AI on those servers
+[04:15] and getting a return and it does not
+[04:17] show up anywhere in that calculation
+[04:18] that the market is doing. And so
+[04:23] I've been investing in semis since the
+[04:25] year 2000. Um,
+[04:29] like I've been through many cycles
+[04:33] and I've, you know, I've learned you,
+[04:35] you could be surprised,
+[04:38] but
+[04:39] it does feel like there's a little bit
+[04:41] of a discontinuity
+[04:43] between really strong fundamentals in
+[04:45] the present and on the ground and what
+[04:48] stocks are discounting.
+[04:50] And ultimately, you know, we're in a
+[04:52] voting machine phase of the market to
+[04:53] quote Warren Buffett, but ultimately the
+[04:56] market is a weighing machine. And I I
+[04:59] think as we turn the page into 27 and
+[05:03] you hear companies give their guides for
+[05:05] 2027
+[05:07] and you know the market I think the
+[05:08] market's been very focused on second
+[05:10] derivatives and the thought is once the
+[05:12] growth rate peaks it's all over
+[05:14] and that might that may be true but it
+[05:17] may also be that this is like the
+[05:19] railroad buildout and it goes for 60
+[05:21] years and like let's just say
+[05:26] Nvidia relative to whatever ide their
+[05:28] giving for the next year.
+[05:31] Let's say they grow,
+[05:34] and this goes for most AI stocks. Let's
+[05:36] say they grow 8% a year, 5% a year, 10%
+[05:40] a year. It's a cheap stock.
+[05:44] It's a cheap stock. Um, so, um, I think
+[05:50] we're in a voting machine phase and
+[05:52] we'll see when we start the weighing.
+[05:54] [laughter] Remains to be seen what's
+[05:56] going to happen with Jensen.
+[05:58] Sounds like he might be making a
+[06:00] comeback. What kind of scenarios are you
+[06:02] working through with the Nvidia news?
+[06:04] Obviously, that's had some shocks.
+[06:07] >> Um well, um my friend Brad Gersner and I
+[06:11] we did we sent a letter to the Nvidia
+[06:13] board
+[06:15] asking that they take a very slow,
+[06:18] measured, deliberate approach. There's
+[06:20] Colette is excellent. I think I met
+[06:22] Colette for the I think I first met
+[06:24] Colette when she still worked at
+[06:25] Microsoft. Colette is a superb CFO.
+[06:28] Okay. She's been in Nvidia a long time.
+[06:32] They have a strong business. There is no
+[06:35] need to rush to hire another CEO.
+[06:39] I the the letter we wrote essentially
+[06:42] asked the board to take its time be
+[06:45] thoughtful and we suggested
+[06:49] um and has all the facts emerge about
+[06:52] Jensen if appropriate to consider
+[06:55] bringing him back as CEO and the reason
+[06:58] I think that's important I've been doing
+[07:00] this 27 years and I've met one Jensen
+[07:04] and I've met one Elon
+[07:07] and you know I think, you know, I I I
+[07:11] remember the guy's name, Rick Patino.
+[07:12] When Rick Patino came to coach the
+[07:14] Celtics, he said, "Listen, Larry Bird's
+[07:16] not walking through that door anytime
+[07:18] soon. It's a new team."
+[07:20] After Michael Jordan left the Bulls,
+[07:22] they never won another championship.
+[07:24] You do not lightly let someone like this
+[07:28] walk away. And Jensen, there is nothing
+[07:31] stopping him once he's in once, you
+[07:34] know, he's going to testify to Congress.
+[07:36] Nvidia is doing independent
+[07:37] investigation and he could go be the CEO
+[07:40] of a competitor and I think this is
+[07:42] something that we should all think
+[07:43] about. Um and then fundamentally one
+[07:46] reason I was comfortable writing that
+[07:48] letter is I've known Jensen I first met
+[07:51] Jensen in the year 2000.
+[07:55] >> 2000.
+[07:55] >> Yeah. I have known him for 27 years at
+[07:59] this point. In a lot of ways I kind of
+[08:01] feel like I grew up with him. Um, I grew
+[08:04] up with him as an investor
+[08:06] and I know him really well. He is a
+[08:09] friend and I would just say, you know,
+[08:12] and I've been with Jensen all over the
+[08:13] world, many situations,
+[08:16] he the only thing I've ever heard him
+[08:18] say about China is the absolute
+[08:21] importance of America beating China. And
+[08:24] the only thing I've ever heard him say
+[08:25] about Chinese hardware is the absolute
+[08:28] importance of making sure that American
+[08:29] AI hardware dominates. And we do not let
+[08:32] an alternative Chinese AI hardware
+[08:34] ecosystem develop because that AI
+[08:37] ecosystem
+[08:39] could be given to our real adversaries,
+[08:43] Iran, North Korea, Russia,
+[08:47] and China's been working hard on this.
+[08:50] But the policies that Jensen was
+[08:52] advocating for, I think we're
+[08:55] essentially guaranteed to keep America
+[08:57] in the lead in AI for the foreseeable
+[09:00] future.
+[09:02] Now, we're going to do new policies.
+[09:05] And I think those policies carry
+[09:07] enormous risks for American national
+[09:09] security because I think the odds that
+[09:12] China, who is a formidable competitor,
+[09:14] now that they are forced to develop
+[09:16] their own ecosystem, it's not an option.
+[09:18] Before the Chinese government was trying
+[09:19] to encourage Huawei, ironically
+[09:21] restricting the imports of GPUs. Um, but
+[09:25] Nvidia GPUs, less powerful than
+[09:27] available in America, Jinset said
+[09:28] America should have the first, the best,
+[09:29] and the most were available in China and
+[09:32] the labs preferred those. That was
+[09:33] slowing down Huawei because to make the
+[09:35] hardware better, it needs to be used.
+[09:37] Now that Huawei hardware is going to be
+[09:38] used by every Chinese AI lab, I think it
+[09:42] might get better really fast. We don't
+[09:44] have Jensen leading Nvidia. And I think
+[09:47] as a result of misguided
+[09:51] policies by American patriots in
+[09:53] Washington DC who think they are doing
+[09:55] the right thing
+[09:57] they may be I think they are taking
+[09:59] grave risks with American national
+[10:01] security and just going back to Jensen
+[10:03] and one reason I felt comfortable like I
+[10:06] know a lot of CEOs I do not know a
+[10:10] single CEO who is more patriotic about
+[10:13] America than Jensen. I simply do not
+[10:16] believe he has it in him to betray our
+[10:18] country. And you know, he came here, he
+[10:21] was an immigrant from Taiwan. He came
+[10:23] here when he was nine years old. He went
+[10:25] to reform school. It was the um most was
+[10:29] the most expensive American school his
+[10:31] parents could afford. But it was a
+[10:32] reform school. He was 9 years old. He
+[10:34] had a 17-year-old roommate with knife
+[10:36] scars covered in tattoos. He worked as a
+[10:38] janitor and he stayed there all summer
+[10:40] because his parents could not afford to
+[10:41] bring him home. Think about the journey
+[10:43] he has been on from that starting Nvidia
+[10:47] to having it become the most valuable
+[10:49] company in the world. He's always quick
+[10:51] to say it's only possible in America and
+[10:54] I'm so grateful to America. So I think
+[10:58] he's a patriot and based on everything I
+[11:00] know about him in 27 years, I do not
+[11:03] believe he would ever knowingly endanger
+[11:05] our national security. I think the
+[11:07] policies he was advocating for were
+[11:09] pro-American national security and we
+[11:12] may be about to learn the wisdom of them
+[11:14] to our sugar.
+[11:16] >> What do you think the biggest unintended
+[11:19] consequences
+[11:20] are from dethroning him?
+[11:25] >> I mean there are so many um
+[11:30] I think it's very important that we have
+[11:32] a vibrant American open source
+[11:34] ecosystem. It's very important to me. I
+[11:36] do not want to live in a world dominated
+[11:38] by one, two, or three frontier AIs
+[11:41] because these AI systems are imbued with
+[11:43] value systems. And one of the things
+[11:45] that is amazing about America is the
+[11:48] rich diversity of value systems we have
+[11:50] here in America. And we have way more
+[11:54] than two or three. And the way we
+[11:58] reflect
+[11:59] American diversity and all of its rich
+[12:01] richness in this new technology is to
+[12:04] have open source AIS that we can
+[12:06] something that's very important to me. I
+[12:07] have a daughter, she's 8 months old. I
+[12:10] want to work with fireworks and I want
+[12:12] to take an American open source AI and I
+[12:15] want to fine-tune it on the books,
+[12:20] movies, and TV shows that shaped me and
+[12:23] my wife Becky as humans. Star Wars, Star
+[12:26] Trek, Dune. Maybe Becky would have some
+[12:29] [laughter] other ones.
+[12:32] >> Those really shaped you as a child at an
+[12:33] age.
+[12:34] >> 100% man. Well, [laughter] we're going
+[12:36] to You got to start early.
+[12:37] >> Oh my god.
+[12:38] >> You got to start early. Uh I read Dune
+[12:41] as a very young man. Lord of the Rings,
+[12:42] The Hobbit, you know, loyalty, courage.
+[12:45] Those are great. Perseverance.
+[12:47] [laughter] Yeah, we actually I've you
+[12:49] know uh that I see is with AI you can
+[12:50] kind of make baby versions of these
+[12:52] books and [laughter] and they're
+[12:53] actually baby but you know Shakespeare
+[12:56] Homer
+[12:57] >> like the Western canon you know
+[12:59] everything that has made Western
+[13:00] civilization and America great you know
+[13:03] the you know Greek philosophers I want a
+[13:05] Baker family AI trained uh you know on
+[13:09] these value systems on an American open
+[13:12] source AI and Jensen was the biggest
+[13:14] proponent of American open source and I
+[13:16] America needs that and I hope that the
+[13:21] industry
+[13:23] um if you know
+[13:26] I hope the industry is able to find its
+[13:29] voice until Jensen finds a place whether
+[13:32] that's back at Nvidia his CEO or CEO of
+[13:35] another company where he can be an
+[13:37] equally effective advocate but I think
+[13:40] open source and then I do just think the
+[13:44] relationships that Jiten has with the
+[13:47] Asian supply chain
+[13:50] are unparalleled. Like if you add up
+[13:52] everybody else's relationships, I don't
+[13:54] think they are his good. He's never had
+[13:56] a contract with Taiwan Semi. It's been
+[13:59] reported that Morris Cheng actually long
+[14:00] ago asked him to be the CEO of Taiwan
+[14:03] Semi. And so, um, it's going to be hard
+[14:07] to replicate somebody who can go to
+[14:09] Taiwan,
+[14:11] speak the language, the native dialect,
+[14:14] um, have a handshake, and walk out of
+[14:16] there with more volume than anyone else
+[14:18] at lower prices. And he was, you know,
+[14:22] everything in AI has become
+[14:23] controversial in America. In Taiwan,
+[14:26] Jensen like he is a living deity.
+[14:30] They're they've lit up the um not a
+[14:33] living deity to me here in America, but
+[14:35] holy in Taiwan, I think they've
+[14:38] lit up all of these buildings and these
+[14:40] highways with signs saying, "Bring
+[14:42] Jensen back."
+[14:43] >> Oh my god.
+[14:44] >> They're not doing that for anyone else.
+[14:47] Jensen is singular. So, I just I hope
+[14:50] the NVIDIA board
+[14:52] takes their time, lets all of the facts
+[14:54] come out. They're going to do an
+[14:56] investigation.
+[14:58] Judson's going to testify to Congress.
+[15:00] Jet has said he's going to cooperate
+[15:01] with everything. Let's let all these
+[15:03] facts come out and then I hope um that
+[15:06] an intelligent decision is made because
+[15:08] I will just say um
+[15:11] you know I think it's well understood. I
+[15:13] wrote the letter and people understand
+[15:14] that I've known Jens in a long time and
+[15:18] a truly vast number of people have
+[15:21] reached out to me. Nvidia employees,
+[15:24] shareholders, partners
+[15:27] saying they want to back his CEO and
+[15:31] ultimately um
+[15:34] you know if Jensen is cleared of these
+[15:36] you know this national security innuendo
+[15:39] he has not been charged with anything
+[15:42] but if this innuendo turns out to be
+[15:45] innuendo and he's innocent which is what
+[15:47] I believe um then I hope the board
+[15:50] considers bringing back a CEO.
+[15:53] because the shareholders that have
+[15:55] called me that is what they seem to
+[15:57] want.
+[15:59] >> It is quite the developing situation
+[16:01] >> indeed.
+[16:02] >> So apart from Jensen, you are very close
+[16:05] with Elon and SpaceX. So they had a very
+[16:08] big weekend. I know there was some drama
+[16:11] over on the Nvidia side, but on SpaceX's
+[16:13] side, all green lights, amazing things,
+[16:15] the launch, the catch, Starship,
+[16:17] >> Starship, [laughter] Starship
+[16:19] >> 15. So give us the latest. Um, I mean it
+[16:22] was amazing. Um,
+[16:25] you know, uh, Walter Isacson, Elon's
+[16:28] biographer, said he was in the room with
+[16:30] the SpaceX engineers where Elon said,
+[16:32] "We're going to catch this with these AR
+[16:35] the control tower arms and called them
+[16:39] Mechazilla." And the engineers, you
+[16:41] know, I guess, you know, Walter reported
+[16:43] they thought it was impossible. And
+[16:45] we've done it and
+[16:48] rapid reusability. SpaceX is the most
+[16:51] important national defense contractor
+[16:52] for America. Um
+[16:55] it is um
+[17:00] you know in war if you control the high
+[17:02] ground it's a big advantage and
+[17:05] ultimately controlling space and the
+[17:07] orbital planes that is the ultimate
+[17:10] advantage and America controls space
+[17:12] because of SpaceX. So I think it is a
+[17:14] huge moment for America. SpaceX is 85%
+[17:17] of mass from orbit. I think the reus
+[17:20] rapid reusability of Starship. It means
+[17:22] we're going to see orbital compute. Brad
+[17:23] earlier today said they're going to put
+[17:24] up the first orbital compute satellites
+[17:26] in 2027. You needed Starship for that.
+[17:29] You're going to have Starlink direct to
+[17:31] cell and that is going to be amazing.
+[17:33] And you know all these people who talk
+[17:36] about Elon, if you add up all the
+[17:38] climate activists, they've effectively,
+[17:41] I think, been ne negative for the
+[17:42] climate because they annoy people. At
+[17:44] least here [laughter] in America, Elon's
+[17:46] done more for the climate than all the
+[17:48] activists combined.
+[17:50] And then if you care about low-income
+[17:53] people, if you care about people in the
+[17:55] global south, what Starlink is doing for
+[17:59] those communities is transformative.
+[18:02] And for whatever reason, SpaceX doesn't
+[18:04] really talk about it. They'll say we
+[18:07] connected every school in Honduras or we
+[18:09] connected every school in you know the
+[18:12] you know you know the um the Amazon
+[18:16] region of Brazil. Are we saved this
+[18:18] person who was lost at sea but they are
+[18:22] tangibly saving lives and making lives
+[18:25] of the poorest people in the world
+[18:27] better by connecting them to the modern
+[18:29] world and all that comes with that
+[18:31] education healthcare knowledge
+[18:34] everything. So I think SpaceX is doing a
+[18:36] lot of good things. I think the um the
+[18:39] catching the Starship that was amazing.
+[18:42] It was a huge moment for um SpaceX. I
+[18:45] will just say having spent a lot of time
+[18:47] at Starbase, the SpaceX engineers, you
+[18:50] know, all of these experts online are
+[18:53] very skeptical about orbital compute and
+[18:55] oh the cooling and oh this. Um and you
+[18:58] know to the SpaceX engineers, they have
+[19:00] solved those problems. They're operating
+[19:03] 11,000 satellites today. Um, Starling V3
+[19:08] actually consumes a significant
+[19:11] we call it maybe 10 to 15% the power of
+[19:14] like an orbital compute satellite. It
+[19:16] has to be cooled. Um, the compute isn't
+[19:18] as densely packed but you could do
+[19:20] things different things in space. They
+[19:22] res regard the design of the orbital
+[19:24] compute satellite that in their mind I
+[19:28] think they've figured that out. what
+[19:30] they're actually stressed about is
+[19:31] Starship and um reusability
+[19:36] and so catching the upper stage of
+[19:39] Starship that's a huge step towards
+[19:42] making Starlink direct to cell orbital
+[19:44] compute all of that a reality and I also
+[19:47] think I Grockbot it's by far the most
+[19:50] valuable AI tool to me I now spend more
+[19:54] almost more time in Grockbot than I do
+[19:56] on X which I thought would never happen
+[19:57] Really?
+[19:58] >> Yeah.
+[19:59] >> Is this like a good This is like a a
+[20:00] supplement to being addicted to the
+[20:02] feed. You just use Grockbot
+[20:04] >> 100%. I cannot recommend mentally
+[20:06] healthy.
+[20:06] >> I guarantee you it would really make
+[20:08] every aspect of your professional and
+[20:10] personal life better. But I think
+[20:12] Grockbot has a lot more traction than
+[20:14] people realize. And I think when I think
+[20:17] the size of SpaceX's first party AI
+[20:20] business will probably I don't know it
+[20:23] but if I were to have an estimate based
+[20:27] on third party data I think it's getting
+[20:29] pretty close to 10 billion that's a very
+[20:31] significant amount of very high margin
+[20:33] revenue that is growing really really
+[20:35] really fast.
+[20:37] >> Awesome. So as we close out I have to
+[20:39] ask you this is my most difficult
+[20:41] question.
+[20:42] >> Ask me anything.
+[20:43] >> What is your hottest take right now?
+[20:46] Um,
+[20:50] [laughter]
+[20:51] >> I feel like I've had a lot of hot takes
+[20:53] over the last week. Um, you know, I
+[20:57] would say, um,
+[21:01] man, I can't choose a single hottest
+[21:03] take that. I mean, Grockbot's the most
+[21:05] useful AI tool, you know. Um, SpaceX is
+[21:09] going to make orbital compute, Starlink
+[21:11] Direct to sell, and asteroid mining. I
+[21:14] say asteroid mining because that hot
+[21:15] take always really upsets the gold bugs
+[21:18] really
+[21:18] >> and I enjoy the commentary for the gold
+[21:20] bugs on X.
+[21:21] >> Okay.
+[21:21] >> Um it's going to make all of that a
+[21:23] reality. Um I think Jensen is a singular
+[21:27] CEO. He deserves a benefit of the doubt.
+[21:29] This is America. We are innocent until
+[21:32] presumed guilty. Everybody gets due
+[21:34] process. He is a great American and
+[21:37] America loves nothing more than a
+[21:39] comeback and I'm excited to see his. So,
+[21:42] I don't know which of the I don't know
+[21:44] if those are hot takes or which is my
+[21:45] hottest takes, but those would be things
+[21:47] that come to mind.
+[21:49] >> It's not bad.
+[21:50] >> What is your new profile picture?
+[21:53] >> Uh, it's me dressed up as Jedi for um
+[21:56] Halloween with Becky wearing Yoda ears.
+[21:58] >> No, it's like you in the bushes.
+[22:00] >> No, that was the old one. There's a new
+[22:02] one.
+[22:02] >> There's a new one.
+[22:03] >> There's a new one. You're behind. You're
+[22:04] behind, Molly.
+[22:05] >> Damn.
+[22:06] >> You're way behind. Yes.
+[22:07] >> We'll have to check that one out.
+[22:09] >> Yeah, we're [laughter] dressed up. It's
+[22:10] a family all with lightsabers.
+[22:12] >> My daughter has a peak lightsaber
+[22:13] chronicles for your child of the dune.
+[22:16] >> 100%. Yes. The children's dune. It's
+[22:19] going to be amazing. [laughter]
+[22:20] Yeah.
+[22:21] >> Awesome. Well, thanks so much.

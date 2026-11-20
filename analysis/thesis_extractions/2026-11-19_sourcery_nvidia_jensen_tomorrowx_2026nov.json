@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "source": "Sourcery with Molly O'Shea",
+    "date": "2026-11-19",
+    "host": "Molly O'Shea",
+    "topic": "Nvidia CEO succession, AI selloff, enterprise AI demand, Starship, orbital compute",
+    "duration_estimate_min": 22
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "AI demand remains fundamentally strong despite stock market pricing implying imminent demand weakness",
+      "detail": "Baker argues the market is making a flawed calculation by comparing ~$2T in hyperscaler capex only against visible frontier AI revenues (~$120-200B from Anthropic, OpenAI, Grok, etc.), while ignoring the massive open-source AI ecosystem. Fireworks AI's top customer grew 13x in 9-10 months of 2026, and open-source tokens carry lower margins, dragging more compute demand with them.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker explicitly calls the market calculation 'flawed,' cites specific data points from conference conversations, and draws on 27 years of semiconductor investing experience to assert a 'discontinuity between really strong fundamentals and what stocks are discounting.'",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "AMD",
+        "AVGO"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "open-source AI ecosystem"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "discontinuity between really strong fundamentals and what stocks are discounting"
+    },
+    {
+      "id": "T2",
+      "summary": "Enterprise on-premise AI adoption (AI factories) is a massive, undercounted source of compute demand",
+      "detail": "Michael Dell disclosed that Dell sold 3,200 AI factories in 2024-2025 combined, then 3,300 in just the last 9 months of 2026 \u2014 over 6,000 discrete enterprises buying GPU servers and running open-source AI. This demand does not appear in frontier AI revenue figures the market uses to assess ROI on capex.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker cites specific, named data points from Michael Dell directly at the conference, framing it as 'really important' and a key flaw in the market's ROI calculation.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "DELL",
+        "NVDA",
+        "AMD"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "enterprise AI adoption",
+        "open-source AI ecosystem"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "3,300 in the last 9 months, over 6,000 discrete enterprises"
+    },
+    {
+      "id": "T3",
+      "summary": "Open-source AI ecosystem is a structurally large and growing source of compute demand that the market underestimates",
+      "detail": "Because open-source model tokens carry lower margins than proprietary frontier AI tokens, they require proportionally more compute per dollar of revenue. Companies like Fireworks AI that specialize and customize open-source models for enterprise use cases are growing extremely fast and represent a large aggregate demand signal invisible in frontier AI revenue metrics.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker calls this 'a huge amount of AI demand' and ties it directly to his core thesis about the market's flawed ROI calculation. Fireworks is an Atreides portfolio company, giving him direct insight.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "AMD",
+        "AVGO"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "open-source AI ecosystem",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "lower margins on open source tokens drags more compute demand with it"
+    },
+    {
+      "id": "T4",
+      "summary": "Nvidia at current valuation is cheap even assuming low single-digit to low double-digit revenue growth",
+      "detail": "Baker argues that if Nvidia (and most AI stocks) grow at even 5-10% per year from current guide levels, the stock is cheap. The market is overly focused on second derivatives \u2014 peak growth rate \u2014 and may be wrong if the AI buildout resembles the railroad buildout and continues for decades.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states explicitly 'it's a cheap stock' twice and frames the railroad analogy as a plausible multi-decade scenario. He applies this logic to 'most AI stocks.'",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "grow 8%, 5%, 10% a year \u2014 it's a cheap stock"
+    },
+    {
+      "id": "T5",
+      "summary": "Jensen Huang's removal from Nvidia is a major risk to Nvidia's competitive position and American AI leadership",
+      "detail": "Baker co-authored a letter with Brad Gerstner to the Nvidia board urging a slow, deliberate approach and consideration of reinstating Jensen as CEO. Key risks of permanent removal: (1) Jensen's unparalleled Asian supply chain relationships (no contract with TSMC, handshake deals, preferred pricing/volume); (2) Jensen as the leading advocate for American open-source AI; (3) risk that Jensen joins a competitor. Baker has known Jensen since 2000 and vouches for his patriotism.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker co-authored a public letter to the board, speaks from 27 years of personal relationship with Jensen, and frames this as one of his most important current views.",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [
+        "TSM"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure",
+        "geopolitics/national security"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "I've been doing this 27 years and I've met one Jensen"
+    },
+    {
+      "id": "T6",
+      "summary": "US export control policy shift (post-Jensen) risks accelerating Huawei's AI hardware ecosystem development",
+      "detail": "Baker argues Jensen's policy of allowing less-powerful Nvidia GPUs into China was strategically slowing Huawei's hardware development because Huawei chips weren't being used at scale. Now that Chinese AI labs are forced to use Huawei hardware exclusively, usage will drive rapid improvement. This is framed as a grave national security risk from well-intentioned but misguided Washington policy.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker makes this argument forcefully and at length, framing it as a structural geopolitical risk with direct investment implications for Nvidia's long-term competitive moat.",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "geopolitics/national security",
+        "semiconductor supply chain",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "Huawei hardware is going to be used by every Chinese AI lab, it might get better really fast"
+    },
+    {
+      "id": "T7",
+      "summary": "SpaceX's Starship rapid reusability enables orbital compute and Starlink Direct-to-Cell, representing transformative value creation",
+      "detail": "Baker states SpaceX controls 85% of mass to orbit. Rapid reusability of Starship (including catching the upper stage) is the key enabling technology for: (1) orbital compute satellites (first launch targeted 2027 per Brad Gerstner); (2) Starlink Direct-to-Cell. SpaceX engineers have solved cooling and design challenges for orbital compute satellites \u2014 their remaining concern is Starship reusability, which is now being addressed.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker has spent significant time at Starbase, spoke directly with SpaceX engineers, and frames orbital compute as a near-certain outcome contingent on Starship reusability progress now being demonstrated.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "space/orbital compute",
+        "AI datacenter infrastructure",
+        "national defense"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "first orbital compute satellites in 2027, you needed Starship for that"
+    },
+    {
+      "id": "T8",
+      "summary": "Grok/xAI's first-party AI revenue is approaching ~$10B and growing very rapidly, significantly underappreciated",
+      "detail": "Baker estimates based on third-party data that xAI's (SpaceX's) first-party AI business (Grokbot) is approaching $10B in revenue \u2014 high-margin and growing 'really really really fast.' He personally uses Grokbot more than X and calls it the most valuable AI tool to him, suggesting strong product-market fit beyond what is publicly appreciated.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker qualifies with 'I don't know it but if I were to have an estimate based on third party data' \u2014 moderate confidence, not direct knowledge. But he frames it as a significant underappreciated data point.",
+      "tickers_named": [],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "open-source AI ecosystem"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "getting pretty close to 10 billion, very high margin revenue growing really really fast"
+    },
+    {
+      "id": "T9",
+      "summary": "Astera Labs business has accelerated since earnings two weeks ago",
+      "detail": "Baker spoke with Chachendra (CEO of Astera Labs) at the conference, who indicated that since reporting earnings two weeks prior, business has accelerated and things have gotten better \u2014 a positive demand signal for AI connectivity infrastructure.",
+      "confidence": "moderate",
+      "confidence_evidence": "Direct conversation with Astera CEO at conference, but brief mention without elaboration on specifics.",
+      "tickers_named": [],
+      "tickers_implied": [
+        "ALAB"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "since they reported earnings two weeks ago business has accelerated"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "NVDA",
+      "reasoning": "Stock is cheap even at 5-10% annual growth from current guide levels; market is mispricing by focusing on second derivatives rather than absolute earnings power; AI demand on the ground is strong.",
+      "confidence": "high_conviction"
+    },
+    {
+      "direction": "buy",
+      "target": "AI infrastructure stocks broadly",
+      "reasoning": "Strong on-the-ground demand signals from Astera Labs, Dell AI factories, Fireworks AI, SpaceX \u2014 market pricing implies imminent demand issue that Baker believes is not materializing.",
+      "confidence": "high_conviction"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Open-source AI infrastructure / enterprise on-premise AI",
+      "over": "Frontier AI revenue as a demand proxy",
+      "reasoning": "Open-source ecosystem demand is large, fast-growing, and invisible in the market's ROI calculation; enterprise AI factories are accelerating rapidly"
+    },
+    {
+      "preferred": "Space/orbital compute",
+      "over": "Traditional terrestrial compute for certain use cases",
+      "reasoning": "SpaceX's Starship reusability solves the key bottleneck; orbital compute satellites planned for 2027; SpaceX controls 85% of mass to orbit"
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "US AI export control policy / American AI hardware dominance",
+      "nature": "geopolitical",
+      "detail": "Post-Jensen policy shift forces Chinese AI labs onto Huawei hardware exclusively, which will accelerate Huawei's hardware improvement through usage. Baker frames this as a grave national security risk that could erode Nvidia's long-term competitive moat in China and globally."
+    },
+    {
+      "target": "NVDA",
+      "nature": "structural_risk",
+      "detail": "Permanent removal of Jensen Huang risks losing irreplaceable supply chain relationships with TSMC and Asian partners, advocacy for American open-source AI, and creates risk of Jensen joining a competitor."
+    },
+    {
+      "target": "AI capex ROI narrative",
+      "nature": "overhyped",
+      "detail": "Market's calculation comparing ~$2T capex to ~$120-200B visible frontier AI revenue is structurally flawed \u2014 it ignores the entire open-source ecosystem and 6,000+ enterprise AI factory deployments."
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Companies provide 2027 guidance",
+      "timing": "Early 2027 (earnings season)",
+      "impact": "Baker expects 2027 guides to force market to shift from voting machine to weighing machine, potentially re-rating AI stocks upward if demand remains strong",
+      "beneficiaries": [
+        "NVDA",
+        "AI infrastructure stocks",
+        "DELL",
+        "ALAB"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Orbital compute satellite first launch",
+      "timing": "2027",
+      "impact": "Validates SpaceX orbital compute thesis; opens new market for AI inference in space; demonstrates Starship reusability ROI",
+      "beneficiaries": [
+        "SpaceX (private)"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Nvidia independent investigation conclusion and Jensen congressional testimony",
+      "timing": "Near-term (months)",
+      "impact": "If Jensen is cleared of national security allegations, Baker expects board to consider reinstating him as CEO, which would be a significant positive catalyst for NVDA",
+      "beneficiaries": [
+        "NVDA"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Starship upper stage catch / rapid reusability demonstration",
+      "timing": "Already occurring (Starship 15)",
+      "impact": "Removes key bottleneck for Starlink Direct-to-Cell and orbital compute; dramatically reduces launch costs",
+      "beneficiaries": [
+        "SpaceX (private)",
+        "Starlink ecosystem"
+      ],
+      "losers": []
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "Market psychology on AI stocks",
+      "view": "Market is in 'voting machine' phase, mispricing strong fundamentals",
+      "detail": "Baker invokes Buffett's voting/weighing machine framework \u2014 current market is emotionally focused on second derivatives (peak growth rate) rather than absolute earnings power. Expects reversion to fundamentals as 2027 guides are issued."
+    },
+    {
+      "topic": "AI ROI measurement",
+      "view": "Frontier AI revenue is the wrong denominator for measuring AI capex ROI",
+      "detail": "The correct measure must include open-source ecosystem revenue, enterprise on-premise AI deployments, and productivity gains \u2014 none of which appear in Anthropic/OpenAI revenue figures."
+    },
+    {
+      "topic": "Jensen Huang / Nvidia leadership",
+      "view": "Jensen is irreplaceable; board should take time and consider reinstatement",
+      "detail": "Baker and Brad Gerstner co-authored letter to Nvidia board. Baker has known Jensen since 2000, vouches for his patriotism, and argues his supply chain relationships and open-source advocacy are unparalleled and unreplicable."
+    },
+    {
+      "topic": "SpaceX / Elon Musk",
+      "view": "SpaceX is America's most important national defense contractor and a force for global good",
+      "detail": "Controls 85% of mass to orbit; Starlink connecting underserved global populations; orbital compute and asteroid mining as long-term theses. Baker is a close associate of Elon Musk."
+    },
+    {
+      "topic": "American open-source AI",
+      "view": "Vibrant American open-source AI ecosystem is a national security and cultural imperative",
+      "detail": "Baker argues against a world dominated by 2-3 frontier AIs with embedded value systems; open-source AI allows diversity of values and customization. Jensen was the leading industry advocate for this."
+    }
+  ]
+}

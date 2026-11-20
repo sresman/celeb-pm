@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-17",
+  "source": "TomorrowX Summit (iConnections) \u2014 Opening session: retail as most powerful market force, AI buildout railroad vs telecom, P(doom) vs P(boom)",
+  "thesis_id": "T7",
+  "summary": "Zero interest rate environment would have caused a dangerous AI overbuild; higher real rates and supply constraints are preventing this",
+  "summary_extended": "Baker argues that the current AI infrastructure buildout is structurally protected from a catastrophic overbuild cycle precisely because interest rates are elevated and physical supply constraints (power/watts, wafers, and HBM capacity) are binding. He contrasts this with a hypothetical zero interest rate environment, where he claims TSMC, Micron, Samsung, and SK Hynix would be expanding capacity by 200%, which \u2014 based on 400 years of capitalist history \u2014 would guarantee a ruinous overbuild. The investment implication is that current constraints act as a circuit breaker, making the AI buildout more analogous to a disciplined infrastructure cycle than the speculative telecom bubble of the late 1990s. Baker presents this as a high-conviction structural observation: the combination of higher real rates and physical bottlenecks in wafers and power is what separates this cycle from prior boom-bust patterns in semiconductors and infrastructure.",
+  "detail": "Baker explicitly contrasts the current environment with a hypothetical ZIRP world where TSMC, Micron, Samsung, and SK Hynix would be expanding capacity 200%, guaranteeing an overbuild. He cites this as the historical pattern of 400 years of capitalism. Current constraints (rates, watts, wafers) are the circuit breaker.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this as a structural historical observation with high conviction; names specific companies as examples",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "power/energy"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "Taiwan semi micron Samsung highex were expanding capacity 200%... we'd for sure get an overbuild",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "TSM",
+    "MU"
+  ],
+  "tickers_subject": [
+    "TSM",
+    "MU"
+  ],
+  "tickers_implied_original": [
+    "TSM",
+    "MU",
+    "Samsung (005930.KS)",
+    "SK Hynix (000660.KS)"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "TSMC is explicitly named by Baker as one of the companies that would be expanding wafer capacity 200% in a ZIRP world; it is a direct subject of the capacity discipline thesis and a direct beneficiary of the constrained, non-overbuild environment."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Micron is explicitly named by Baker as a company that would be dangerously overbuilding in a ZIRP environment; as the only US-listed HBM/DRAM producer, it is a direct subject of this supply constraint thesis and benefits from the disciplined capacity environment."
+    }
+  ]
+}

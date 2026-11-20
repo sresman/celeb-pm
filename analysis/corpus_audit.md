@@ -106,6 +106,7 @@ Status: **HAVE** = in corpus · **MISSING** = not in corpus · **EXCLUDE** = not
 - **Sohn Hong Kong / Sohn NY pre-2026** — none. His Sohn footprint is Australia (2020, 2021), Montreal (2025), NY (2026).
 - **The Meb Faber Show / Idea Farm original interview** — likely a re-post of ILTB EP.385 (see uncertainty flag above).
 - **On The Tape / RiskReversal beyond 2022-03-25** — later "Baker" hits are quotes of his X posts, not appearances.
+- **Boston Investment Conference 2026 (added 2026-11-20)** — CONFIRMED appearance, NO RECORDING. 15th annual, InterContinental Boston, 2026-10-29, 2:45–3:30pm ET: Gavin Baker with Ted Seides ([agenda](https://bostoninvestmentconference.com/agenda)). No video, podcast episode or write-up found as of 2026-11-20. Recorded as a comment in `tools/transcripts/targets.py`; not registered, so it is not in the corpus.
 
 ---
 

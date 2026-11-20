@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-19",
+  "source": "Sourcery with Molly O'Shea \u2014 Nvidia CEO succession, AI selloff, enterprise AI demand, Starship, orbital compute",
+  "thesis_id": "T3",
+  "summary": "Open-source AI ecosystem is a structurally large and growing source of compute demand that the market underestimates",
+  "summary_extended": "Baker argues that the open-source AI ecosystem represents a structurally underappreciated and growing source of compute demand that consensus models systematically miss. His core reasoning is that open-source model tokens carry lower margins than proprietary frontier AI tokens, which means that for every dollar of revenue generated, open-source deployments require proportionally more compute \u2014 creating a hidden multiplier on aggregate GPU demand. Companies like Fireworks AI (an Atreides portfolio company, giving Baker direct visibility) that specialize in customizing and deploying open-source models for enterprise use cases are growing extremely fast, yet this demand is invisible in frontier AI revenue metrics that most investors track. Baker contends that the market's ROI skepticism about AI is partly flawed because it fails to account for this large, diffuse, compute-intensive open-source demand layer sitting beneath the headline hyperscaler and frontier model numbers. The investment implication is that compute infrastructure suppliers \u2014 particularly GPU and networking vendors \u2014 face higher sustained demand than consensus estimates suggest.",
+  "detail": "Because open-source model tokens carry lower margins than proprietary frontier AI tokens, they require proportionally more compute per dollar of revenue. Companies like Fireworks AI that specialize and customize open-source models for enterprise use cases are growing extremely fast and represent a large aggregate demand signal invisible in frontier AI revenue metrics.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls this 'a huge amount of AI demand' and ties it directly to his core thesis about the market's flawed ROI calculation. Fireworks is an Atreides portfolio company, giving him direct insight.",
+  "themes": [
+    "AI datacenter infrastructure",
+    "open-source AI ecosystem",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "lower margins on open source tokens drags more compute demand with it",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "AVGO"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is the dominant supplier of GPUs consumed by open-source AI inference and training workloads. If open-source AI demand is structurally larger than the market estimates, NVDA is the clearest and most direct beneficiary of that incremental compute demand."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD competes in the GPU/accelerator market but Baker makes no specific claim about AMD's positioning in open-source AI workloads. Its inclusion appears to be loose thematic association rather than a direct implication of this thesis."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Broadcom supplies networking and custom ASIC silicon relevant to AI datacenters, but Baker's thesis is specifically about aggregate compute demand from open-source tokens, not custom silicon or networking. No specific claim ties AVGO to this thesis."
+    }
+  ]
+}
