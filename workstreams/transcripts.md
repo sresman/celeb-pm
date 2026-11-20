@@ -17,6 +17,25 @@ Branch: **`main`**. `trigger-denominator-ex-spcx` fast-forwarded into it on
 
 ---
 
+## Current State (as of 2026-11-20) — NOV 2026 APPEARANCES ADDED; STOPPED BEFORE BASKET CURATION
+
+Branch **`transcripts-nov-2026`** (pushed, NOT merged): `ee84d1e` v11 committed
+unchanged · `56eca2f` new appearances. Corpus **51 → 54 appearances, 648 → 673
+theses**; all 25 new theses `subject` on two-of-two (100% agreement; cue
+instrument agrees). Existing 648 theses byte-identical to v11. Notes:
+`analysis/transcripts_nov2026_implementation_notes.md`.
+
+- **Added:** CNBC Squawk 2026-11-17 (Eisen, live from TomorrowX; whisper
+  medium via the project venv's existing install), TomorrowX opening session
+  2026-11-17 `OmEfHDQ3B6c`, Sourcery 2026-11-19 `drpASO63CJc`.
+- **Boston Investment Conference 2026-10-29** (with Ted Seides): no recording,
+  recorded as a comment in `targets.py` + `corpus_audit.md`.
+- **Excluded:** White House panel 2026-09-29 and every TomorrowX session Baker
+  moderated (Heller House rule: interviewer, not subject).
+- **`reaudit_tickers` catch-up reverted:** it re-audited 6 *existing*
+  theses that earlier builds had skipped and changed tickers on 2. Held for the
+  operator (results in the session scratchpad; detail in the notes).
+
 ## Current State (as of 2026-10-28) — v11 BUILT; STOPPED BEFORE BASKET CURATION
 
 **Deliverable: `analysis/step4_signal_events_v11_with_returns_extended.{csv,xlsx}`**
@@ -404,6 +423,19 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 ---
 
 ## Immediate Next Steps
+
+**From 2026-11-20 — basket curation now covers v11 + Nov 2026 together.**
+
+1. **Operator: review/merge `transcripts-nov-2026`.**
+2. **Decide on the 6 deferred ticker re-audits** (All-In 2025-08-09 T3:
+   drop GOOGL, AMZN; a16z 2026-08-31 T1: drop NVDA, META; 4 no-ops). If applied,
+   re-run `reaudit_tickers` (it redoes them for ~$0.05) before returns.
+3. **Curation for the Nov theses** (see handoff 2026-11-20-transcripts): 17 of 25
+   match no theme regex, most of them by meaning existing themes ("Open source AI
+   bullish for hardware", "AI bubble not happening", "Nvidia GPU moat",
+   "Anthropic valuation", "xAI competitive position"). Genuinely new: enterprise
+   on-prem AI factories (DELL), retail-as-market-force. Tickers: `DELL` and `TSM`
+   are in no basket, and `TSMC` is a malformed ticker (should be `TSM`).
 
 **From 2026-10-28 — v12 is the next run (operator-specified). In order:**
 

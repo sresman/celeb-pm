@@ -470,3 +470,28 @@ not act on since both are excluded. So the rule costs 6 theses / 10 named ticker
 and buys a defensible floor — a good trade. The rule does **not** protect against
 correlated error: the 5 cold-open false positives are seen identically by both
 passes.
+
+## 2026-11-20 — Nov 2026 appearances (branch `transcripts-nov-2026`)
+
+- **Moderator sessions stay out (Heller House rule applied twice).** The White
+  House / America.gov panel (2026-09-29) and every TomorrowX session where Baker
+  interviews someone else are excluded. Operator decision. Only sessions where Baker
+  is a subject (guest or panelist) are registered.
+- **No-recording appearances are recorded as dated comments**, not registry
+  entries (there was no placeholder convention). First case: Boston Investment
+  Conference 2026-10-29. If a recording appears, register it then.
+- **Duplicates:** a compilation that repeats a standalone segment (Sourcery
+  `cTFNOTt-jGs`) is excluded, the same choice as the TBPN segment over the full show.
+- **Dating:** an interview recorded at an event but published later is dated to
+  publication (Sourcery 2026-11-19), because that is when it became public.
+- **Whisper:** the existing install is `.venv/bin/whisper` (not on PATH unless
+  the venv is active); models are cached in `~/.cache/whisper`. CNBC video audio uses
+  medium, by the hand route (yt-dlp audio → whisper → header + row in
+  `transcripts/whisper/_manifest_cnbc.json` + `SUPPLEMENTARY_METADATA`).
+- **Run `fetch_youtube` with no args when adding videos.** With IDs, it
+  overwrites `transcripts/youtube/_manifest.json` with only those rows, and
+  `build_manifest` would then drop every other YouTube appearance.
+- **`reaudit_tickers` is corpus-wide, not scoped to new theses.** A
+  "new appearances only" run must diff `thesis_audits/` afterwards. On
+  2026-11-20 it picked up 6 never-re-audited existing theses; reverted and held for
+  the operator.
