@@ -157,3 +157,20 @@ CNBC files, which no fetcher covers.
   subject: it would join Nvidia GPU moat on the same date as T1, so no row change.
 - Curation proposal simulated read-only (scratchpad `sim_curation.py`):
   0 existing theses gain or lose a theme. Awaiting approval.
+
+## 2026-11-25 — Curation applied, v12 rebuilt in place (operator-approved)
+
+- `theme_baskets_v3.json` keyword additions: Nvidia GPU moat `odds of returning
+  as nvidia ceo` (T1); AI bubble not happening `more like the railroad era`,
+  `semiconductor stocks are at historically attractive valuations`,
+  `gpu rental prices rising` (T3–T5); Anthropic valuation `anthropic going public` (T9).
+  T6 (non-memory share gainers; auditor-inferred AVGO/MRVL/ALAB) and T8 (bear
+  case, no trade) left unthemed. T7 left as attributed (`other`). Operator decisions.
+- `theme_returns_v2 --force-refetch` + `build_repeat_mention_events --force-refetch`,
+  v12 rebuilt in place (no version bump). Prices now through 2026-11-25.
+  234 → 238 mention rows, 177 → 181 repeat, **80 → 80 meet criteria**.
+  New rows (all 2026-11-23, none meet criteria): AI bubble not happening m6 (SMH),
+  AI capex ROI positive m10 (NO_BASKET), Anthropic valuation m7 (NO_BASKET),
+  Nvidia GPU moat m12 (NVDA). Existing rows: only `total_theme_mentions` on those
+  4 themes (31 rows) and benchmark windows that completed with the new prices
+  (13 rows). mypy (`-p tools.transcripts`) clean; pytest green.
