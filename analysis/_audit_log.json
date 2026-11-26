@@ -1,17 +1,17 @@
 {
   "model": "claude-sonnet-4-6",
-  "theses_selected": 673,
-  "ok": 25,
-  "skipped": 648,
+  "theses_selected": 682,
+  "ok": 9,
+  "skipped": 673,
   "errors": [],
-  "tickers_removed_tangential": 506,
-  "tickers_added": 164,
+  "tickers_removed_tangential": 524,
+  "tickers_added": 165,
   "avg_summary_len": 132.5,
-  "avg_summary_extended_len": 1026.7,
-  "timeline_v2_entries": 673,
-  "total_input_tokens": 31711,
-  "total_output_tokens": 7572,
-  "estimated_cost_usd": 0.2087,
+  "avg_summary_extended_len": 1027.0,
+  "timeline_v2_entries": 682,
+  "total_input_tokens": 11701,
+  "total_output_tokens": 4246,
+  "estimated_cost_usd": 0.0988,
   "rows": [
     {
       "date": "2019-11-26",
@@ -5850,225 +5850,306 @@
       "source_label": "cnbc_squawk_nvidia_letter_2026nov",
       "thesis_id": "T1",
       "output": "analysis/thesis_audits/2026-11-17_cnbc_squawk_nvidia_letter_2026nov_T1.json",
-      "status": "ok",
-      "input_tokens": 1291,
-      "output_tokens": 299
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "cnbc_squawk_nvidia_letter_2026nov",
       "thesis_id": "T2",
       "output": "analysis/thesis_audits/2026-11-17_cnbc_squawk_nvidia_letter_2026nov_T2.json",
-      "status": "ok",
-      "input_tokens": 1273,
-      "output_tokens": 284
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "cnbc_squawk_nvidia_letter_2026nov",
       "thesis_id": "T3",
       "output": "analysis/thesis_audits/2026-11-17_cnbc_squawk_nvidia_letter_2026nov_T3.json",
-      "status": "ok",
-      "input_tokens": 1249,
-      "output_tokens": 297
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "cnbc_squawk_nvidia_letter_2026nov",
       "thesis_id": "T4",
       "output": "analysis/thesis_audits/2026-11-17_cnbc_squawk_nvidia_letter_2026nov_T4.json",
-      "status": "ok",
-      "input_tokens": 1292,
-      "output_tokens": 391
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "cnbc_squawk_nvidia_letter_2026nov",
       "thesis_id": "T5",
       "output": "analysis/thesis_audits/2026-11-17_cnbc_squawk_nvidia_letter_2026nov_T5.json",
-      "status": "ok",
-      "input_tokens": 1303,
-      "output_tokens": 342
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "cnbc_squawk_nvidia_letter_2026nov",
       "thesis_id": "T6",
       "output": "analysis/thesis_audits/2026-11-17_cnbc_squawk_nvidia_letter_2026nov_T6.json",
-      "status": "ok",
-      "input_tokens": 1284,
-      "output_tokens": 287
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "cnbc_squawk_nvidia_letter_2026nov",
       "thesis_id": "T7",
       "output": "analysis/thesis_audits/2026-11-17_cnbc_squawk_nvidia_letter_2026nov_T7.json",
-      "status": "ok",
-      "input_tokens": 1275,
-      "output_tokens": 194
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "cnbc_squawk_nvidia_letter_2026nov",
       "thesis_id": "T8",
       "output": "analysis/thesis_audits/2026-11-17_cnbc_squawk_nvidia_letter_2026nov_T8.json",
-      "status": "ok",
-      "input_tokens": 1266,
-      "output_tokens": 289
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "tomorrowx_opening_session_2026nov",
       "thesis_id": "T1",
       "output": "analysis/thesis_audits/2026-11-17_tomorrowx_opening_session_2026nov_T1.json",
-      "status": "ok",
-      "input_tokens": 1251,
-      "output_tokens": 217
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "tomorrowx_opening_session_2026nov",
       "thesis_id": "T2",
       "output": "analysis/thesis_audits/2026-11-17_tomorrowx_opening_session_2026nov_T2.json",
-      "status": "ok",
-      "input_tokens": 1270,
-      "output_tokens": 230
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "tomorrowx_opening_session_2026nov",
       "thesis_id": "T3",
       "output": "analysis/thesis_audits/2026-11-17_tomorrowx_opening_session_2026nov_T3.json",
-      "status": "ok",
-      "input_tokens": 1254,
-      "output_tokens": 316
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "tomorrowx_opening_session_2026nov",
       "thesis_id": "T4",
       "output": "analysis/thesis_audits/2026-11-17_tomorrowx_opening_session_2026nov_T4.json",
-      "status": "ok",
-      "input_tokens": 1194,
-      "output_tokens": 165
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "tomorrowx_opening_session_2026nov",
       "thesis_id": "T5",
       "output": "analysis/thesis_audits/2026-11-17_tomorrowx_opening_session_2026nov_T5.json",
-      "status": "ok",
-      "input_tokens": 1232,
-      "output_tokens": 245
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "tomorrowx_opening_session_2026nov",
       "thesis_id": "T6",
       "output": "analysis/thesis_audits/2026-11-17_tomorrowx_opening_session_2026nov_T6.json",
-      "status": "ok",
-      "input_tokens": 1235,
-      "output_tokens": 190
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "tomorrowx_opening_session_2026nov",
       "thesis_id": "T7",
       "output": "analysis/thesis_audits/2026-11-17_tomorrowx_opening_session_2026nov_T7.json",
-      "status": "ok",
-      "input_tokens": 1287,
-      "output_tokens": 385
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-17",
       "source_label": "tomorrowx_opening_session_2026nov",
       "thesis_id": "T8",
       "output": "analysis/thesis_audits/2026-11-17_tomorrowx_opening_session_2026nov_T8.json",
-      "status": "ok",
-      "input_tokens": 1264,
-      "output_tokens": 218
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-19",
       "source_label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
       "thesis_id": "T1",
       "output": "analysis/thesis_audits/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_T1.json",
-      "status": "ok",
-      "input_tokens": 1304,
-      "output_tokens": 506
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-19",
       "source_label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
       "thesis_id": "T2",
       "output": "analysis/thesis_audits/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_T2.json",
-      "status": "ok",
-      "input_tokens": 1284,
-      "output_tokens": 454
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-19",
       "source_label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
       "thesis_id": "T3",
       "output": "analysis/thesis_audits/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_T3.json",
-      "status": "ok",
-      "input_tokens": 1271,
-      "output_tokens": 453
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-19",
       "source_label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
       "thesis_id": "T4",
       "output": "analysis/thesis_audits/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_T4.json",
-      "status": "ok",
-      "input_tokens": 1255,
-      "output_tokens": 300
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-19",
       "source_label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
       "thesis_id": "T5",
       "output": "analysis/thesis_audits/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_T5.json",
-      "status": "ok",
-      "input_tokens": 1303,
-      "output_tokens": 504
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-19",
       "source_label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
       "thesis_id": "T6",
       "output": "analysis/thesis_audits/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_T6.json",
-      "status": "ok",
-      "input_tokens": 1282,
-      "output_tokens": 354
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-19",
       "source_label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
       "thesis_id": "T7",
       "output": "analysis/thesis_audits/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_T7.json",
-      "status": "ok",
-      "input_tokens": 1304,
-      "output_tokens": 220
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-19",
       "source_label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
       "thesis_id": "T8",
       "output": "analysis/thesis_audits/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_T8.json",
-      "status": "ok",
-      "input_tokens": 1287,
-      "output_tokens": 211
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "date": "2026-11-19",
       "source_label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
       "thesis_id": "T9",
       "output": "analysis/thesis_audits/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_T9.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "date": "2026-11-23",
+      "source_label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T1",
+      "output": "analysis/thesis_audits/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_T1.json",
       "status": "ok",
-      "input_tokens": 1201,
-      "output_tokens": 221
+      "input_tokens": 1286,
+      "output_tokens": 265
+    },
+    {
+      "date": "2026-11-23",
+      "source_label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T2",
+      "output": "analysis/thesis_audits/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_T2.json",
+      "status": "ok",
+      "input_tokens": 1370,
+      "output_tokens": 515
+    },
+    {
+      "date": "2026-11-23",
+      "source_label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T3",
+      "output": "analysis/thesis_audits/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_T3.json",
+      "status": "ok",
+      "input_tokens": 1294,
+      "output_tokens": 577
+    },
+    {
+      "date": "2026-11-23",
+      "source_label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T4",
+      "output": "analysis/thesis_audits/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_T4.json",
+      "status": "ok",
+      "input_tokens": 1291,
+      "output_tokens": 353
+    },
+    {
+      "date": "2026-11-23",
+      "source_label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T5",
+      "output": "analysis/thesis_audits/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_T5.json",
+      "status": "ok",
+      "input_tokens": 1318,
+      "output_tokens": 502
+    },
+    {
+      "date": "2026-11-23",
+      "source_label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T6",
+      "output": "analysis/thesis_audits/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_T6.json",
+      "status": "ok",
+      "input_tokens": 1293,
+      "output_tokens": 436
+    },
+    {
+      "date": "2026-11-23",
+      "source_label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T7",
+      "output": "analysis/thesis_audits/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_T7.json",
+      "status": "ok",
+      "input_tokens": 1314,
+      "output_tokens": 666
+    },
+    {
+      "date": "2026-11-23",
+      "source_label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T8",
+      "output": "analysis/thesis_audits/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_T8.json",
+      "status": "ok",
+      "input_tokens": 1310,
+      "output_tokens": 554
+    },
+    {
+      "date": "2026-11-23",
+      "source_label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T9",
+      "output": "analysis/thesis_audits/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_T9.json",
+      "status": "ok",
+      "input_tokens": 1225,
+      "output_tokens": 378
     }
   ]
 }

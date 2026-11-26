@@ -1,0 +1,122 @@
+{
+  "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley \u2014 Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "host": "Jack Farley (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Jensen Huang's odds of returning as Nvidia CEO are dramatically higher than the 10% implied by prediction markets",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "odds that Jensen comes back as CEO are dramatically higher than 10%",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 5 directly addresses 'Gavin' and asks about prediction market odds on Jensen; turn 7 is the immediate reply containing the quote."
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "The AI ROI calculation used by bears is materially incomplete because it ignores high-growth private AI companies and on-premise open-weight model deployments",
+      "tickers": [
+        "NVDA",
+        "DELL"
+      ],
+      "quote": "6,500 customers putting GPU racks in and running open weight models on premise",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The long monologue with no speaker markers follows a pattern of Baker's CIO-register analysis; turn 39 later addresses 'Gavin' confirming he was the prior speaker throughout this stretch."
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "The AI infrastructure buildout will be more like the railroad era than any prior technology cycle \u2014 a multi-decade, GDP-scale investment",
+      "tickers": [
+        "NVDA",
+        "TSM"
+      ],
+      "quote": "buildout for AI may end up being more like the railroads",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous monologue as T2, confirmed as Baker's by the surrounding direct address to 'Gavin' in turn 39."
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Semiconductor stocks are at historically attractive valuations \u2014 not exhibiting the peak-multiple-on-peak-earnings pattern that signals cycle tops",
+      "tickers": [
+        "NVDA",
+        "MU"
+      ],
+      "quote": "valuations are certainly really really attractive right now",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Continuous with T2/T3 monologue attributed to Baker; turn 39 addresses 'Gavin' confirming he was speaking throughout."
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "GPU rental prices rising sharply are the key real-time signal that AI is becoming more economically useful and that compute demand is healthy",
+      "tickers": [
+        "NVDA",
+        "CRWV"
+      ],
+      "quote": "GPU rental prices going straight up, up dramatically over the last month",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 37 is Baker's reply to turn 36's question directed at him; turn 39 then addresses 'Gavin' confirming turn 37-38 are his."
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Non-memory semiconductor companies taking dramatic market share at low multiples are the most interesting valuation opportunity in the AI ecosystem",
+      "tickers": [
+        "AVGO",
+        "MRVL",
+        "ALAB"
+      ],
+      "quote": "companies taking a lot of share at pretty low multiples",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 40 is a direct response to turn 39 which addresses 'Gavin' by name, so turn 40 is Baker's."
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Jensen Huang's departure as CEO is a structural negative for Nvidia and a structural positive for all of Nvidia's competitors",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Jensen leaving as CEO is a godsend for all of Nvidia's competitors",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jack Farley",
+      "evidence": "Turn 35 is the host's question that contains the quote; it is framed as a question to Baker ('what is your view right now?') and Baker's answer begins in turn 36."
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "The primary AI bear case \u2014 no increasing returns to intelligence / diminishing returns to scale \u2014 is the most important unknowable risk",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "if there are not increasing returns to intelligence, that would be a problem",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 37 is Baker's reply to turn 36's question; turn 39 subsequently addresses 'Gavin' confirming he was the speaker in turn 37."
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Anthropic going public would be an important positive catalyst for the AI investment thesis",
+      "tickers": [],
+      "quote": "Anthropic going public is going to be important for the AI trade",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "medium",
+      "likely_speaker": "",
+      "evidence": "Turn 38 continues directly from Baker's turn 37 monologue before turn 39 addresses 'Gavin', suggesting turn 38 is still Baker speaking."
+    }
+  ]
+}

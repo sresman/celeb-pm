@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley \u2014 Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "thesis_id": "T6",
+  "summary": "Non-memory semiconductor companies taking dramatic market share at low multiples are the most interesting valuation opportunity in the AI ecosystem",
+  "summary_extended": "Baker argues that the most compelling valuation opportunity in the AI ecosystem is a specific subset of non-memory semiconductor and AI infrastructure companies that are taking dramatic market share while trading at low multiples \u2014 a combination he believes the market is not paying sufficient attention to. He distinguishes these companies from commodity memory businesses (which he explicitly excludes), emphasizing that they possess significant IP, real barriers to entry, and are growing at high rates driven by share gains rather than pure unit volume sensitivity. Because their growth is structurally driven by share capture rather than cyclical volume, Baker views them as more durable and less exposed to typical semi cycle risks. He frames this as a multi-year opportunity ('could work over the next several years') and positions it as a contrarian observation about where value is being overlooked in the AI buildout. No specific tickers or price targets are named, but the implied universe includes fabless semi companies with proprietary silicon and networking/connectivity IP benefiting from AI datacenter infrastructure spending.",
+  "detail": "Baker highlights a category of semi and AI ecosystem companies that are: not commodity businesses, growing at high rates, have significant IP and real barriers to entry, less sensitive to unit volumes because they are taking dramatic share, and currently trading at low multiples. He contrasts these explicitly with memory (which he excludes). He suggests these share-gainers could work over the next several years.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker calls this 'an interesting place to look' and frames it as what people are not paying attention to, but does not name specific tickers or give price targets",
+  "themes": [
+    "semiconductor supply chain",
+    "AI datacenter infrastructure",
+    "share gainers"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "companies taking a lot of share at pretty low multiples",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "AVGO",
+    "MRVL",
+    "ALAB"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "AVGO",
+    "MRVL",
+    "ALAB"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "AVGO",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Broadcom is a leading non-memory semiconductor company with significant AI networking and custom ASIC IP, growing AI revenue through share gains in datacenter connectivity and custom silicon \u2014 a strong fit for Baker's described category."
+    },
+    {
+      "ticker": "MRVL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Marvell is a non-commodity semi company with proprietary IP in data infrastructure and custom AI silicon, actively taking share in AI datacenter workloads at valuations that have at times been considered low relative to growth \u2014 fits Baker's described profile."
+    },
+    {
+      "ticker": "ALAB",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Astera Labs is an AI connectivity semiconductor company with significant IP and barriers to entry, taking share in the AI datacenter interconnect market at growth rates consistent with Baker's described category."
+    }
+  ]
+}

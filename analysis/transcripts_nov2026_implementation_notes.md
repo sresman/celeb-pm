@@ -125,3 +125,35 @@ CNBC files, which no fetcher covers.
   because of the existing theme-level event override (operator 2026-07-16, "never-a-trade").
   The proposal's "SMH" was wrong. Opening T1/T5/T6 and Sourcery T1 therefore carry no basket.
 - All new rows: returns INSUFFICIENT_DATA (prices end 2026-11-19; 1m needs ~2026-12-17).
+
+## 2026-11-25 — Nov round 2: Monetary Matters (operator-approved), stopped at curation
+
+- Branch `transcripts-nov-2026` (not merged, so continued on it).
+- Discovery: fomo `state/` diffed against the 2026-11-19 snapshot (44 new YouTube
+  IDs, 0 RSS, 5 digest-queue items), plus YouTube date search and web search.
+  One new first-party appearance: Monetary Matters with Jack Farley
+  `2XhpxKX3d0M`, published 2026-11-23 (recorded 2026-11-18 at TomorrowX), 941s,
+  `en-orig` captions. Podcast episode (929s) is the same conversation.
+  Excluded: Baker-moderated iConnections uploads (Musk, Feldman, Xu, Jensen
+  montage), clips/Shorts, Korean/Chinese re-uploads, commentary, Aschenbrenner
+  noise, one private video.
+- **Decision:** dated 2026-11-23 (publication), the Sourcery precedent.
+- `fetch_youtube 2XhpxKX3d0M` then no-args: YouTube manifest 38 → 39 rows, none
+  lost. Master manifest 54 → 55.
+- Extraction 9 theses (673 → 682), ~$0.08. Audit ~$0.10. `reaudit_tickers`
+  touched only the new T7 (1 ok, 21 skipped), ~$0.01; no existing audit file changed.
+- Attribution, original instrument, `--all --dates 2026-11-23` into
+  `attribution_audit_pass{1,2}_v2/`; reconciled to `attribution_resolved.json`.
+  Two passes byte-identical. 8 subject / 1 other (T7). Cue instrument
+  (`attribution_audit_cue_pass{1,2}/` → `attribution_resolved_cue.json`, feeds
+  nothing): agrees on T1–T8, T9 indeterminate (cue: none). Existing pass files
+  md5-unchanged; 0 existing resolved verdicts changed; all 673 existing timeline
+  entries identical to before. ~$0.12.
+- **FLAG (not changed): T7 looks like a false `other`.** The captions drop the
+  `>>` marker between Farley's ASIC question ([10:19]) and Baker's answer
+  ([10:37] "He was the one pushing Nvidia ... a godsend for all of Nvidia's
+  competitors"), so the quote sits inside the host's turn. No precedent for a
+  hand attribution correction; method unchanged per task. Impact if it were
+  subject: it would join Nvidia GPU moat on the same date as T1, so no row change.
+- Curation proposal simulated read-only (scratchpad `sim_curation.py`):
+  0 existing theses gain or lose a theme. Awaiting approval.

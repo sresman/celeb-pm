@@ -367,6 +367,14 @@ YOUTUBE_VIDEOS: dict[str, YoutubeTarget] = {
         "source": "Sourcery with Molly O'Shea", "host": "Molly O'Shea (Gavin Baker guest)", "subject_role": "guest",
         "topic": "Nvidia CEO succession and the Baker/Gerstner letter, AI selloff, enterprise AI demand (Dell, Fireworks), Starship, orbital compute",
     },
+    # Published 2026-11-23; recorded 2026-11-18 at TomorrowX. Dated to
+    # publication, when it became public (Sourcery precedent). The podcast
+    # episode (929s) is the same conversation; counted once.
+    "2XhpxKX3d0M": {
+        "label": "monetary_matters_jensen_semis_tomorrowx_2026nov", "date": "2026-11-23",
+        "source": "Monetary Matters with Jack Farley", "host": "Jack Farley (Gavin Baker guest)", "subject_role": "guest",
+        "topic": "Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+    },
     # ---- NOT REGISTERED -- no recording (2026-11-20). Boston Investment
     # Conference (15th annual), InterContinental Boston, 2026-10-29,
     # 2:45-3:30pm ET: Gavin Baker with Ted Seides (Capital Allocators).

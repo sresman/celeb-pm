@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley \u2014 Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "thesis_id": "T2",
+  "summary": "The AI ROI calculation used by bears is materially incomplete because it ignores high-growth private AI companies and on-premise open-weight model deployments",
+  "summary_extended": "Baker argues that the bear case on AI ROI is structurally flawed because it relies on an incomplete revenue numerator when evaluating returns on the ~$1.5 trillion in AI capex being deployed. Bears typically sum visible ARR from Anthropic (~$120B), OpenAI, Grok, and Gemini (~$30B combined), add incremental ad revenue, and conclude the ROI math doesn't work \u2014 but Baker contends this misses two critical categories: (1) numerous private AI companies growing at Anthropic-like rates while burning less cash, many powered by open-source/open-weight models that themselves drive additional compute demand and capex; and (2) on-premise enterprise deployments, which Michael Dell specifically quantified at 6,500 enterprise customers installing GPU racks and running open-weight models internally \u2014 none of which appears in any public ARR figure but all of which represents real, measurable customer ROI. Baker frames this omission as the primary reason semiconductor stocks sold off, calling it 'very important' and 'missing' from the bear narrative. The investment implication is that AI infrastructure demand is substantially larger than bears estimate, supporting continued capex and benefiting GPU and server hardware suppliers.",
+  "detail": "Bears sum up Anthropic and OpenAI ARR (~$120B), add Grok/Gemini (~$30B), add incremental ad revenue, and conclude ROI on ~$1.5T capex is poor. But this misses: (1) many private companies growing at Anthropic-like rates while burning less cash, fueled by open-source models that drag additional compute/capex; (2) Michael Dell noted 6,500 enterprise customers deploying GPU racks on-premise running open-weight models \u2014 none of which appears in the public ARR calculation but all of which represents real customer ROI.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker frames this as the primary reason semis sold off and explicitly calls it 'very important' and 'missing'; cites specific Dell data point from the conference",
+  "themes": [
+    "AI datacenter infrastructure",
+    "AI software & applications",
+    "on-premise AI compute"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "6,500 customers putting GPU racks in and running open weight models on premise",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "DELL"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "DELL",
+    "AVGO"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is the dominant GPU supplier for both cloud and on-premise AI deployments; the thesis that on-premise enterprise GPU rack deployments are undercounted directly supports incremental GPU demand, making NVDA a direct beneficiary."
+    },
+    {
+      "ticker": "DELL",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Michael Dell's specific data point about 6,500 enterprise customers deploying GPU racks on-premise is central evidence in this thesis, and Dell is a primary supplier of on-premise AI server infrastructure, making it a direct beneficiary of the undercounted demand Baker describes."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Broadcom is not mentioned in the thesis and does not have a specific or unambiguous connection to the on-premise open-weight model deployment argument Baker is making; its inclusion appears to be bleed-over from adjacent AI infrastructure themes in the same transcript."
+    }
+  ]
+}

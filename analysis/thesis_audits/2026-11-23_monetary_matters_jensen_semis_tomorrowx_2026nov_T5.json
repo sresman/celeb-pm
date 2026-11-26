@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley \u2014 Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "thesis_id": "T5",
+  "summary": "GPU rental prices rising sharply are the key real-time signal that AI is becoming more economically useful and that compute demand is healthy",
+  "summary_extended": "Baker argues that GPU rental prices rising sharply over the last month, three months, and one year are the single most important real-time market signal confirming that AI is becoming more economically useful and that compute demand remains healthy. His reasoning is that GPU rental prices represent the downstream aggregation of AI economic utility and positive token demand elasticity \u2014 if enterprises and developers are paying more to rent GPUs, it means AI workloads are generating sufficient returns to justify higher input costs. Baker identifies two key variables to monitor for AI fundamentals: (1) whether intelligence is becoming more economically useful over time, and (2) whether token demand elasticity is positive (i.e., lower inference costs drive proportionally greater usage). Rising GPU rental prices also improve the ROI math for hyperscalers by validating the revenue side of their massive capex, addressing concerns about financing constraints and return on AI infrastructure investment. The investment implication is that rising GPU rental prices are a bullish signal for the entire AI compute stack, most directly benefiting GPU manufacturers and cloud GPU rental platforms.",
+  "detail": "GPU rental prices are up dramatically over the last month, three months, and year. Baker frames this as the market signal that filters through from AI economic utility and positive token demand elasticity. Higher GPU rental prices also improve ROI math for hyperscalers, addressing financing constraint concerns. The two most important things to watch for AI fundamentals are: (1) whether intelligence is becoming more economically useful, and (2) whether token demand elasticity is positive.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker explicitly identifies GPU rental prices as 'where that filters through to the market' and calls token demand elasticity and economic utility 'the two most important things to watch'",
+  "themes": [
+    "AI datacenter infrastructure",
+    "GPU compute rental",
+    "AI demand signals"
+  ],
+  "time_horizon": "near_term",
+  "contrarian": false,
+  "quote_fragment": "GPU rental prices going straight up, up dramatically over the last month",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "CRWV"
+  ],
+  "tickers_subject": [
+    "CRWV"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "CoreWeave",
+    "Lambda Labs"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is the dominant supplier of GPUs being rented; rising GPU rental prices signal strong demand for Nvidia hardware and validate continued hyperscaler and cloud GPU capex on Nvidia products."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD makes competing GPUs but Baker's thesis is specifically about GPU rental price signals and does not reference AMD as a beneficiary or subject; AMD's share of the GPU rental market is too small and speculative to be an unambiguous beneficiary here."
+    },
+    {
+      "ticker": "CRWV",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "CoreWeave is a major GPU cloud rental platform and is the most direct subject of a thesis about GPU rental prices rising \u2014 higher rental prices directly improve CoreWeave's revenue and margins."
+    },
+    {
+      "ticker": "LMND",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Lambda Labs is a private GPU cloud company and not US-listed; it cannot be included as a ticker. Even conceptually, Baker did not specifically name Lambda Labs in the context of this thesis."
+    }
+  ]
+}

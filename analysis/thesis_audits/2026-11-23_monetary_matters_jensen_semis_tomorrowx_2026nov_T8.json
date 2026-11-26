@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley \u2014 Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "thesis_id": "T8",
+  "summary": "The primary AI bear case \u2014 no increasing returns to intelligence / diminishing returns to scale \u2014 is the most important unknowable risk",
+  "summary_extended": "Baker identifies the primary AI bear case as the possibility that there are no increasing returns to intelligence \u2014 meaning that as models scale, they do not become proportionally more capable or economically valuable. He argues that if smaller, distilled models (e.g., Claude Haiku) can match the performance of frontier models (e.g., Claude Opus), the economic justification for massive compute buildouts collapses, since customers would simply use cheaper, smaller models rather than paying for frontier inference. Baker labels this the 'ultimate unknowable bear case,' acknowledging he cannot assign it a probability, but partially rebuts it by pointing to concrete examples of increasing returns: models solving Navier-Stokes equations and making novel scientific discoveries that smaller models cannot replicate. The investment implication is that if this bear case materializes, the entire capital expenditure thesis underpinning hyperscaler GPU demand and semiconductor infrastructure spending would be undermined, making it the single most important risk to monitor for anyone long AI infrastructure.",
+  "detail": "If models plateau such that there are not increasing returns to intelligence, and if smaller distilled models (e.g., Claude Haiku vs. Opus) can match frontier performance, the economic case for massive compute buildout weakens. Baker acknowledges this is the 'ultimate unknowable bear case.' He partially rebuts it by citing models solving Navier-Stokes and making new scientific discoveries as proof points of increasing returns.",
+  "confidence": "moderate",
+  "confidence_evidence": "Baker explicitly labels this the 'biggest bear case' and 'ultimate unknowable' \u2014 he takes it seriously but does not assign it high probability",
+  "themes": [
+    "AI scaling laws",
+    "AI bear case",
+    "semiconductor supply chain"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": false,
+  "quote_fragment": "if there are not increasing returns to intelligence, that would be a problem",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "GOOGL",
+    "MSFT",
+    "META"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "Nvidia is the primary beneficiary of the AI compute buildout thesis; if the bear case (diminishing returns to scale) materializes, GPU demand collapses and NVDA is the most directly impacted company. This thesis is fundamentally about the risk to the compute buildout, making NVDA a direct subject."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is a secondary GPU supplier but this thesis is about the macro AI scaling law bear case, not specifically about AMD's competitive position. AMD's exposure is derivative and not specifically discussed in this thesis."
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Google is a hyperscaler with AI exposure but this thesis does not specifically discuss Google's capex or model strategy. Its inclusion appears to be bleed-over from adjacent transcript segments."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is a hyperscaler and AI investor but is not specifically named or implicated in this thesis about scaling law risks. Tangential bleed-over from the broader transcript."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta is a large AI spender but is not specifically discussed in this thesis about diminishing returns to scale. Tangential bleed-over from the broader transcript."
+    }
+  ]
+}

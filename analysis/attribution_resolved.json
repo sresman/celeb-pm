@@ -1,48 +1,48 @@
 {
-  "generated": "2026-11-20T15:47:05+00:00",
+  "generated": "2026-11-25T22:43:17+00:00",
   "pass1_dir": "analysis/attribution_audit_pass1_v2",
   "pass2_dir": "analysis/attribution_audit_pass2_v2",
   "rule": "two-of-two agreement; disagreement resolves to indeterminate",
   "summary": {
     "subject_by_cue": {
       "not_recorded": {
-        "theses": 528,
-        "tickers": 628
+        "theses": 536,
+        "tickers": 641
       }
     },
     "total": {
-      "theses": 673,
-      "tickers": 766,
-      "subject": 528,
-      "tickers_subject": 628,
-      "other": 45,
-      "tickers_other": 44,
+      "theses": 682,
+      "tickers": 780,
+      "subject": 536,
+      "tickers_subject": 641,
+      "other": 46,
+      "tickers_other": 45,
       "indeterminate": 100,
       "tickers_indeterminate": 94
     },
     "pass1_only": {
-      "theses": 673,
-      "tickers": 766,
-      "subject": 534,
-      "tickers_subject": 636,
-      "other": 54,
-      "tickers_other": 56,
+      "theses": 682,
+      "tickers": 780,
+      "subject": 542,
+      "tickers_subject": 649,
+      "other": 55,
+      "tickers_other": 57,
       "indeterminate": 85,
       "tickers_indeterminate": 74
     },
-    "agreement_rate": 0.9658,
-    "agreed": 650,
+    "agreement_rate": 0.9663,
+    "agreed": 659,
     "disagreed": 23,
     "confusion": {
       "indeterminate->indeterminate": 77,
       "indeterminate->other": 3,
       "indeterminate->subject": 5,
       "other->indeterminate": 6,
-      "other->other": 45,
+      "other->other": 46,
       "other->subject": 3,
       "subject->indeterminate": 3,
       "subject->other": 3,
-      "subject->subject": 528
+      "subject->subject": 536
     },
     "episodes": [
       {
@@ -431,6 +431,21 @@
         "subject": 8,
         "tickers_subject": 10,
         "other": 3,
+        "tickers_other": 1,
+        "indeterminate": 0,
+        "tickers_indeterminate": 0
+      },
+      {
+        "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+        "date": "2026-11-23",
+        "source": "Monetary Matters with Jack Farley — Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+        "host": "Jack Farley (Gavin Baker guest)",
+        "kind": "panel",
+        "theses": 9,
+        "tickers": 14,
+        "subject": 8,
+        "tickers_subject": 13,
+        "other": 1,
         "tickers_other": 1,
         "indeterminate": 0,
         "tickers_indeterminate": 0
@@ -15277,6 +15292,262 @@
         "confidence": "high",
         "likely_speaker": "",
         "evidence": "Continuous monologue from same speaker as T8 with no speaker change marker; 'I do think that probably the most logical way to regulate them' is Baker's CIO analytical register.",
+        "cue_type": "not_recorded"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T1",
+      "speaker_attribution": "subject",
+      "cue_type": "not_recorded",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "Jensen Huang's odds of returning as Nvidia CEO are dramatically higher than the 10% implied by prediction markets",
+      "quote": "odds that Jensen comes back as CEO are dramatically higher than 10%",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 5 directly addresses 'Gavin' and asks about prediction market odds on Jensen; turn 7 is the immediate reply containing the quote.",
+        "cue_type": "not_recorded"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 5 directly addresses 'Gavin' and asks about prediction market odds on Jensen; turn 7 is the immediate reply containing the quote.",
+        "cue_type": "not_recorded"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T2",
+      "speaker_attribution": "subject",
+      "cue_type": "not_recorded",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "DELL"
+      ],
+      "summary": "The AI ROI calculation used by bears is materially incomplete because it ignores high-growth private AI companies and on-premise open-weight model deployments",
+      "quote": "6,500 customers putting GPU racks in and running open weight models on premise",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "The long monologue with no speaker markers follows a pattern of Baker's CIO-register analysis; turn 39 later addresses 'Gavin' confirming he was the prior speaker throughout this stretch.",
+        "cue_type": "not_recorded"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "The long monologue with no speaker markers follows a pattern of Baker's CIO-register analysis; turn 39 later addresses 'Gavin' confirming he was the prior speaker throughout this stretch.",
+        "cue_type": "not_recorded"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T3",
+      "speaker_attribution": "subject",
+      "cue_type": "not_recorded",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "TSM"
+      ],
+      "summary": "The AI infrastructure buildout will be more like the railroad era than any prior technology cycle — a multi-decade, GDP-scale investment",
+      "quote": "buildout for AI may end up being more like the railroads",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Same continuous monologue as T2, confirmed as Baker's by the surrounding direct address to 'Gavin' in turn 39.",
+        "cue_type": "not_recorded"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Same continuous monologue as T2, confirmed as Baker's by the surrounding direct address to 'Gavin' in turn 39.",
+        "cue_type": "not_recorded"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T4",
+      "speaker_attribution": "subject",
+      "cue_type": "not_recorded",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "MU"
+      ],
+      "summary": "Semiconductor stocks are at historically attractive valuations — not exhibiting the peak-multiple-on-peak-earnings pattern that signals cycle tops",
+      "quote": "valuations are certainly really really attractive right now",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Continuous with T2/T3 monologue attributed to Baker; turn 39 addresses 'Gavin' confirming he was speaking throughout.",
+        "cue_type": "not_recorded"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Continuous with T2/T3 monologue attributed to Baker; turn 39 addresses 'Gavin' confirming he was speaking throughout.",
+        "cue_type": "not_recorded"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T5",
+      "speaker_attribution": "subject",
+      "cue_type": "not_recorded",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "CRWV"
+      ],
+      "summary": "GPU rental prices rising sharply are the key real-time signal that AI is becoming more economically useful and that compute demand is healthy",
+      "quote": "GPU rental prices going straight up, up dramatically over the last month",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 37 is Baker's reply to turn 36's question directed at him; turn 39 then addresses 'Gavin' confirming turn 37-38 are his.",
+        "cue_type": "not_recorded"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 37 is Baker's reply to turn 36's question directed at him; turn 39 then addresses 'Gavin' confirming turn 37-38 are his.",
+        "cue_type": "not_recorded"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T6",
+      "speaker_attribution": "subject",
+      "cue_type": "not_recorded",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "AVGO",
+        "MRVL",
+        "ALAB"
+      ],
+      "summary": "Non-memory semiconductor companies taking dramatic market share at low multiples are the most interesting valuation opportunity in the AI ecosystem",
+      "quote": "companies taking a lot of share at pretty low multiples",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 40 is a direct response to turn 39 which addresses 'Gavin' by name, so turn 40 is Baker's.",
+        "cue_type": "not_recorded"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 40 is a direct response to turn 39 which addresses 'Gavin' by name, so turn 40 is Baker's.",
+        "cue_type": "not_recorded"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T7",
+      "speaker_attribution": "other",
+      "cue_type": "not_recorded",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "Jensen Huang's departure as CEO is a structural negative for Nvidia and a structural positive for all of Nvidia's competitors",
+      "quote": "Jensen leaving as CEO is a godsend for all of Nvidia's competitors",
+      "pass1": {
+        "speaker_attribution": "other",
+        "confidence": "high",
+        "likely_speaker": "Jack Farley",
+        "evidence": "Turn 35 is the host's question that contains the quote; it is framed as a question to Baker ('what is your view right now?') and Baker's answer begins in turn 36.",
+        "cue_type": "not_recorded"
+      },
+      "pass2": {
+        "speaker_attribution": "other",
+        "confidence": "high",
+        "likely_speaker": "Jack Farley",
+        "evidence": "Turn 35 is the host's question that contains the quote; it is framed as a question to Baker ('what is your view right now?') and Baker's answer begins in turn 36.",
+        "cue_type": "not_recorded"
+      },
+      "speaker_name": "Jack Farley"
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T8",
+      "speaker_attribution": "subject",
+      "cue_type": "not_recorded",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "The primary AI bear case — no increasing returns to intelligence / diminishing returns to scale — is the most important unknowable risk",
+      "quote": "if there are not increasing returns to intelligence, that would be a problem",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 37 is Baker's reply to turn 36's question; turn 39 subsequently addresses 'Gavin' confirming he was the speaker in turn 37.",
+        "cue_type": "not_recorded"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 37 is Baker's reply to turn 36's question; turn 39 subsequently addresses 'Gavin' confirming he was the speaker in turn 37.",
+        "cue_type": "not_recorded"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T9",
+      "speaker_attribution": "subject",
+      "cue_type": "not_recorded",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Anthropic going public would be an important positive catalyst for the AI investment thesis",
+      "quote": "Anthropic going public is going to be important for the AI trade",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Turn 38 continues directly from Baker's turn 37 monologue before turn 39 addresses 'Gavin', suggesting turn 38 is still Baker speaking.",
+        "cue_type": "not_recorded"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "medium",
+        "likely_speaker": "",
+        "evidence": "Turn 38 continues directly from Baker's turn 37 monologue before turn 39 addresses 'Gavin', suggesting turn 38 is still Baker speaking.",
         "cue_type": "not_recorded"
       },
       "speaker_name": ""

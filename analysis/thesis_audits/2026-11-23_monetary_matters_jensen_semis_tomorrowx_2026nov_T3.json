@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley \u2014 Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "thesis_id": "T3",
+  "summary": "The AI infrastructure buildout will be more like the railroad era than any prior technology cycle \u2014 a multi-decade, GDP-scale investment",
+  "summary_extended": "Baker argues that the AI infrastructure buildout is structurally analogous to the railroad era, when railroad construction represented a significant share of American GDP for roughly 60 years \u2014 a multi-decade, sustained capital investment cycle rather than a typical boom-bust technology wave. He contends that this analogy is the most important framework for understanding the current AI capex cycle, explicitly distinguishing it from prior semiconductor cycles where the standard playbook was to sell when the second derivative of growth peaked. Because the duration of investment is expected to be far longer than any recent memory semiconductor cycle, Baker believes the usual cyclical sell signals are less applicable and that investors should not treat this as a normal semi upcycle. The investment implication is that companies at the core of AI infrastructure buildout \u2014 particularly those supplying the dominant compute hardware \u2014 should be evaluated on a longer time horizon than typical semiconductor cycle analysis would suggest, with NVDA as the clearest beneficiary given its dominance in AI GPU supply.",
+  "detail": "Baker draws the railroad analogy explicitly: railroads were a large chunk of American GDP for 60 years. He believes AI infrastructure capex could follow a similarly long-duration path, making the typical semiconductor cycle playbook (sell when second derivative peaks) less applicable here. He expects this to be a semiconductor cycle much longer than any in recent memory.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker states this directly and unprompted, calls it 'the most important analog', and uses it to explain why this time is different from prior semi cycles",
+  "themes": [
+    "AI datacenter infrastructure",
+    "semiconductor supply chain",
+    "long-duration capex cycle"
+  ],
+  "time_horizon": "long_term",
+  "contrarian": true,
+  "quote_fragment": "buildout for AI may end up being more like the railroads",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [],
+  "tickers_direct": [
+    "NVDA",
+    "TSM"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "TSM"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is the dominant supplier of AI training and inference GPUs and is the clearest direct beneficiary of a prolonged, railroad-scale AI infrastructure capex cycle. Baker's thesis about long-duration AI capex directly supports sustained demand for Nvidia's products."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is a competitor in AI accelerators but Baker's thesis does not specifically reference AMD, and AMD's share of AI infrastructure capex is marginal relative to NVDA. Its inclusion appears to be bleed-over from adjacent semiconductor discussion rather than a direct implication of this specific thesis."
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Broadcom is involved in custom AI ASICs and networking, but Baker's railroad analogy thesis does not specifically implicate AVGO. Its inclusion appears tangential \u2014 it is a semiconductor company in the same thematic space but not a direct subject or clearly implied beneficiary of this specific structural argument."
+    },
+    {
+      "ticker": "TSM",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "TSMC is the primary manufacturer of leading-edge AI chips including Nvidia's GPUs and other AI accelerators. A multi-decade, GDP-scale AI infrastructure buildout would sustain elevated demand for TSMC's advanced node capacity, making it a direct beneficiary of this thesis. However, TSMC is Taiwan-listed; its US-listed ADR trades as TSM and qualifies for inclusion."
+    }
+  ]
+}

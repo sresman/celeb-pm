@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley \u2014 Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "thesis_id": "T4",
+  "summary": "Semiconductor stocks are at historically attractive valuations \u2014 not exhibiting the peak-multiple-on-peak-earnings pattern that signals cycle tops",
+  "summary_extended": "Baker argues that semiconductor stocks are currently at historically attractive valuations, representing the opposite of the cycle-top pattern where peak multiples coincide with peak earnings. He notes that despite strong fundamental performance \u2014 including Nvidia raising guidance \u2014 multiples across the sector remain subdued, which he characterizes as unusual and bullish. As an extreme illustration of market skepticism, Baker cites a Japanese NAND memory producer (Kioxia) trading at under 2x forward earnings, a level he views as pricing in near-catastrophic outcomes. The prevailing sentiment is bearish, with what Baker calls 'bearish triumphalism' even among bulls, which he sees as a contrarian setup; his investment implication is that semis broadly, and memory names specifically, offer a compelling medium-term entry point given the disconnect between fundamentals and valuations.",
+  "detail": "Historically semis were tricky because they got peak multiples on peak earnings and trough multiples on trough earnings. Currently, multiples are not elevated despite strong earnings (Nvidia raised guidance). Baker notes a Japanese NAND memory producer trading at under 2x forward earnings as an extreme example of market skepticism. Sentiment is bearish with 'bearish triumphalism' even among bulls.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker calls valuations 'really really attractive right now' and provides the specific <2x forward multiple example; frames current setup as opposite of cycle-top conditions",
+  "themes": [
+    "semiconductor supply chain",
+    "valuation",
+    "memory"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": true,
+  "quote_fragment": "valuations are certainly really really attractive right now",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA",
+    "MU"
+  ],
+  "tickers_subject": [],
+  "tickers_implied_original": [
+    "Kioxia"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": true,
+      "reasoning": "Nvidia is cited as evidence of strong sector fundamentals (raised guidance) within the broader semiconductor valuation thesis, making it a direct beneficiary of the re-rating argument, though the thesis is not specifically about Nvidia alone."
+    },
+    {
+      "ticker": "MU",
+      "classification": "DIRECT_BENEFICIARY",
+      "was_original": false,
+      "reasoning": "Micron is the primary US-listed memory/NAND producer and directly benefits from the thesis that memory stocks are trading at historically depressed multiples; the Kioxia example generalizes to the memory subsector, and MU is the most liquid US-listed proxy for that trade."
+    }
+  ]
+}

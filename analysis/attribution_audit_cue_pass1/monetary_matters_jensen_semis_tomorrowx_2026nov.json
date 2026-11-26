@@ -1,0 +1,131 @@
+{
+  "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley \u2014 Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "host": "Jack Farley (Gavin Baker guest)",
+  "kind": "panel",
+  "model": "claude-sonnet-4-6",
+  "results": [
+    {
+      "thesis_id": "T1",
+      "summary": "Jensen Huang's odds of returning as Nvidia CEO are dramatically higher than the 10% implied by prediction markets",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "odds that Jensen comes back as CEO are dramatically higher than 10%",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 5 addresses 'Gavin' by name and asks his view; turn 7 is the direct reply containing the quote.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T2",
+      "summary": "The AI ROI calculation used by bears is materially incomplete because it ignores high-growth private AI companies and on-premise open-weight model deployments",
+      "tickers": [
+        "NVDA",
+        "DELL"
+      ],
+      "quote": "6,500 customers putting GPU racks in and running open weight models on premise",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "The long unmarked monologue is continuous with T1/T3 content attributed to Baker, and the expert CIO register discussing conference conversations with Michael Dell and portfolio-level ROI analysis is consistent with Baker; turn 39 later addresses 'Gavin' confirming he was the prior speaker throughout this stretch.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T3",
+      "summary": "The AI infrastructure buildout will be more like the railroad era than any prior technology cycle \u2014 a multi-decade, GDP-scale investment",
+      "tickers": [
+        "NVDA",
+        "TSM"
+      ],
+      "quote": "buildout for AI may end up being more like the railroads",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous unmarked monologue as T2, attributed to Baker via the naming cue in turn 39 confirming Gavin was speaking throughout this segment.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T4",
+      "summary": "Semiconductor stocks are at historically attractive valuations \u2014 not exhibiting the peak-multiple-on-peak-earnings pattern that signals cycle tops",
+      "tickers": [
+        "NVDA",
+        "MU"
+      ],
+      "quote": "valuations are certainly really really attractive right now",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Same continuous unmarked monologue as T2 and T3, attributed to Baker via continuity and the naming cue in turn 39.",
+      "cue_type": "continuity"
+    },
+    {
+      "thesis_id": "T5",
+      "summary": "GPU rental prices rising sharply are the key real-time signal that AI is becoming more economically useful and that compute demand is healthy",
+      "tickers": [
+        "NVDA",
+        "CRWV"
+      ],
+      "quote": "GPU rental prices going straight up, up dramatically over the last month",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 37 is Baker's reply to the bear-case question posed in turn 36, and turn 39 addresses 'Gavin' confirming he was the speaker in turn 37.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T6",
+      "summary": "Non-memory semiconductor companies taking dramatic market share at low multiples are the most interesting valuation opportunity in the AI ecosystem",
+      "tickers": [
+        "AVGO",
+        "MRVL",
+        "ALAB"
+      ],
+      "quote": "companies taking a lot of share at pretty low multiples",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 39 addresses 'Gavin' by name and asks what he is excited about; turn 40 is the direct reply containing the quote.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T7",
+      "summary": "Jensen Huang's departure as CEO is a structural negative for Nvidia and a structural positive for all of Nvidia's competitors",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "Jensen leaving as CEO is a godsend for all of Nvidia's competitors",
+      "speaker_attribution": "other",
+      "attribution_confidence": "high",
+      "likely_speaker": "Jack Farley",
+      "evidence": "Turn 35 is the host's question that contains the quote; it opens with 'Mhm. Um, I'm curious your view\u2026' and turn 36 is Baker's answer, placing the quote in the host's turn.",
+      "cue_type": "structural"
+    },
+    {
+      "thesis_id": "T8",
+      "summary": "The primary AI bear case \u2014 no increasing returns to intelligence / diminishing returns to scale \u2014 is the most important unknowable risk",
+      "tickers": [
+        "NVDA"
+      ],
+      "quote": "if there are not increasing returns to intelligence, that would be a problem",
+      "speaker_attribution": "baker",
+      "attribution_confidence": "high",
+      "likely_speaker": "",
+      "evidence": "Turn 36 asks Baker 'what are the bear cases you're taking most seriously'; turn 37 containing the quote is his direct reply, and turn 39 names Gavin confirming he was speaking in turn 37.",
+      "cue_type": "naming"
+    },
+    {
+      "thesis_id": "T9",
+      "summary": "Anthropic going public would be an important positive catalyst for the AI investment thesis",
+      "tickers": [],
+      "quote": "Anthropic going public is going to be important for the AI trade",
+      "speaker_attribution": "indeterminate",
+      "attribution_confidence": "low",
+      "likely_speaker": "",
+      "evidence": "Turn 38 is a sentence fragment that could be a continuation of Baker's turn 37 or a host interjection; no naming or structural cue disambiguates the speaker.",
+      "cue_type": "none"
+    }
+  ]
+}

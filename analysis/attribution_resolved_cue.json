@@ -1,21 +1,21 @@
 {
-  "generated": "2026-11-20T15:47:05+00:00",
+  "generated": "2026-11-25T22:43:17+00:00",
   "pass1_dir": "analysis/attribution_audit_cue_pass1",
   "pass2_dir": "analysis/attribution_audit_cue_pass2",
   "rule": "two-of-two agreement; disagreement resolves to indeterminate",
   "summary": {
     "subject_by_cue": {
       "naming": {
-        "theses": 17,
-        "tickers": 14
+        "theses": 21,
+        "tickers": 21
       },
       "structural": {
         "theses": 8,
         "tickers": 8
       },
       "continuity": {
-        "theses": 18,
-        "tickers": 23
+        "theses": 21,
+        "tickers": 29
       },
       "style": {
         "theses": 9,
@@ -23,33 +23,33 @@
       }
     },
     "total": {
-      "theses": 59,
-      "tickers": 61,
-      "subject": 52,
-      "tickers_subject": 50,
-      "other": 3,
-      "tickers_other": 8,
-      "indeterminate": 4,
+      "theses": 68,
+      "tickers": 75,
+      "subject": 59,
+      "tickers_subject": 63,
+      "other": 4,
+      "tickers_other": 9,
+      "indeterminate": 5,
       "tickers_indeterminate": 3
     },
     "pass1_only": {
-      "theses": 59,
-      "tickers": 61,
-      "subject": 52,
-      "tickers_subject": 50,
-      "other": 3,
-      "tickers_other": 8,
-      "indeterminate": 4,
+      "theses": 68,
+      "tickers": 75,
+      "subject": 59,
+      "tickers_subject": 63,
+      "other": 4,
+      "tickers_other": 9,
+      "indeterminate": 5,
       "tickers_indeterminate": 3
     },
-    "agreement_rate": 0.9831,
-    "agreed": 58,
+    "agreement_rate": 0.9853,
+    "agreed": 67,
     "disagreed": 1,
     "confusion": {
-      "indeterminate->indeterminate": 3,
+      "indeterminate->indeterminate": 4,
       "indeterminate->subject": 1,
-      "other->other": 3,
-      "subject->subject": 52
+      "other->other": 4,
+      "subject->subject": 59
     },
     "episodes": [
       {
@@ -81,6 +81,21 @@
         "tickers_other": 0,
         "indeterminate": 2,
         "tickers_indeterminate": 2
+      },
+      {
+        "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+        "date": "2026-11-23",
+        "source": "Monetary Matters with Jack Farley — Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+        "host": "Jack Farley (Gavin Baker guest)",
+        "kind": "panel",
+        "theses": 9,
+        "tickers": 14,
+        "subject": 7,
+        "tickers_subject": 13,
+        "other": 1,
+        "tickers_other": 1,
+        "indeterminate": 1,
+        "tickers_indeterminate": 0
       },
       {
         "label": "cnbc_squawk_nvidia_letter_2026nov",
@@ -892,6 +907,262 @@
         "likely_speaker": "",
         "evidence": "The open-weight models quote is part of Baker's continuous response following Sara Eisen's question about Anthropic, within the same named-guest segment.",
         "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T1",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "Jensen Huang's odds of returning as Nvidia CEO are dramatically higher than the 10% implied by prediction markets",
+      "quote": "odds that Jensen comes back as CEO are dramatically higher than 10%",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 5 addresses 'Gavin' by name and asks his view; turn 7 is the direct reply containing the quote.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 5 addresses 'Gavin' by name and asks his view; turn 7 is the direct reply containing the quote.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T2",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "DELL"
+      ],
+      "summary": "The AI ROI calculation used by bears is materially incomplete because it ignores high-growth private AI companies and on-premise open-weight model deployments",
+      "quote": "6,500 customers putting GPU racks in and running open weight models on premise",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "The long unmarked monologue is continuous with T1/T3 content attributed to Baker, and the expert CIO register discussing conference conversations with Michael Dell and portfolio-level ROI analysis is consistent with Baker; turn 39 later addresses 'Gavin' confirming he was the prior speaker throughout this stretch.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "The long unmarked monologue is continuous with T1/T3 content attributed to Baker, and the expert CIO register discussing conference conversations with Michael Dell and portfolio-level ROI analysis is consistent with Baker; turn 39 later addresses 'Gavin' confirming he was the prior speaker throughout this stretch.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T3",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "TSM"
+      ],
+      "summary": "The AI infrastructure buildout will be more like the railroad era than any prior technology cycle — a multi-decade, GDP-scale investment",
+      "quote": "buildout for AI may end up being more like the railroads",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Same continuous unmarked monologue as T2, attributed to Baker via the naming cue in turn 39 confirming Gavin was speaking throughout this segment.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Same continuous unmarked monologue as T2, attributed to Baker via the naming cue in turn 39 confirming Gavin was speaking throughout this segment.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T4",
+      "speaker_attribution": "subject",
+      "cue_type": "continuity",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "MU"
+      ],
+      "summary": "Semiconductor stocks are at historically attractive valuations — not exhibiting the peak-multiple-on-peak-earnings pattern that signals cycle tops",
+      "quote": "valuations are certainly really really attractive right now",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Same continuous unmarked monologue as T2 and T3, attributed to Baker via continuity and the naming cue in turn 39.",
+        "cue_type": "continuity"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Same continuous unmarked monologue as T2 and T3, attributed to Baker via continuity and the naming cue in turn 39.",
+        "cue_type": "continuity"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T5",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA",
+        "CRWV"
+      ],
+      "summary": "GPU rental prices rising sharply are the key real-time signal that AI is becoming more economically useful and that compute demand is healthy",
+      "quote": "GPU rental prices going straight up, up dramatically over the last month",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 37 is Baker's reply to the bear-case question posed in turn 36, and turn 39 addresses 'Gavin' confirming he was the speaker in turn 37.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 37 is Baker's reply to the bear-case question posed in turn 36, and turn 39 addresses 'Gavin' confirming he was the speaker in turn 37.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T6",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "AVGO",
+        "MRVL",
+        "ALAB"
+      ],
+      "summary": "Non-memory semiconductor companies taking dramatic market share at low multiples are the most interesting valuation opportunity in the AI ecosystem",
+      "quote": "companies taking a lot of share at pretty low multiples",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 39 addresses 'Gavin' by name and asks what he is excited about; turn 40 is the direct reply containing the quote.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 39 addresses 'Gavin' by name and asks what he is excited about; turn 40 is the direct reply containing the quote.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T7",
+      "speaker_attribution": "other",
+      "cue_type": "structural",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "Jensen Huang's departure as CEO is a structural negative for Nvidia and a structural positive for all of Nvidia's competitors",
+      "quote": "Jensen leaving as CEO is a godsend for all of Nvidia's competitors",
+      "pass1": {
+        "speaker_attribution": "other",
+        "confidence": "high",
+        "likely_speaker": "Jack Farley",
+        "evidence": "Turn 35 is the host's question that contains the quote; it opens with 'Mhm. Um, I'm curious your view…' and turn 36 is Baker's answer, placing the quote in the host's turn.",
+        "cue_type": "structural"
+      },
+      "pass2": {
+        "speaker_attribution": "other",
+        "confidence": "high",
+        "likely_speaker": "Jack Farley",
+        "evidence": "Turn 35 is the host's question that contains the quote; it opens with 'Mhm. Um, I'm curious your view…' and turn 36 is Baker's answer, placing the quote in the host's turn.",
+        "cue_type": "structural"
+      },
+      "speaker_name": "Jack Farley"
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T8",
+      "speaker_attribution": "subject",
+      "cue_type": "naming",
+      "agreement": true,
+      "note": "",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "The primary AI bear case — no increasing returns to intelligence / diminishing returns to scale — is the most important unknowable risk",
+      "quote": "if there are not increasing returns to intelligence, that would be a problem",
+      "pass1": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 36 asks Baker 'what are the bear cases you're taking most seriously'; turn 37 containing the quote is his direct reply, and turn 39 names Gavin confirming he was speaking in turn 37.",
+        "cue_type": "naming"
+      },
+      "pass2": {
+        "speaker_attribution": "subject",
+        "confidence": "high",
+        "likely_speaker": "",
+        "evidence": "Turn 36 asks Baker 'what are the bear cases you're taking most seriously'; turn 37 containing the quote is his direct reply, and turn 39 names Gavin confirming he was speaking in turn 37.",
+        "cue_type": "naming"
+      },
+      "speaker_name": ""
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "thesis_id": "T9",
+      "speaker_attribution": "indeterminate",
+      "cue_type": "none",
+      "agreement": true,
+      "note": "",
+      "tickers": [],
+      "summary": "Anthropic going public would be an important positive catalyst for the AI investment thesis",
+      "quote": "Anthropic going public is going to be important for the AI trade",
+      "pass1": {
+        "speaker_attribution": "indeterminate",
+        "confidence": "low",
+        "likely_speaker": "",
+        "evidence": "Turn 38 is a sentence fragment that could be a continuation of Baker's turn 37 or a host interjection; no naming or structural cue disambiguates the speaker.",
+        "cue_type": "none"
+      },
+      "pass2": {
+        "speaker_attribution": "indeterminate",
+        "confidence": "low",
+        "likely_speaker": "",
+        "evidence": "Turn 38 is a sentence fragment that could be a continuation of Baker's turn 37 or a host interjection; no naming or structural cue disambiguates the speaker.",
+        "cue_type": "none"
       },
       "speaker_name": ""
     },

@@ -1,12 +1,12 @@
 {
   "model": "claude-sonnet-4-6",
-  "transcripts_processed": 54,
-  "ok": 3,
-  "skipped": 51,
+  "transcripts_processed": 55,
+  "ok": 1,
+  "skipped": 54,
   "errors": [],
-  "total_input_tokens": 25715,
-  "total_output_tokens": 9251,
-  "estimated_cost_usd": 0.2159,
+  "total_input_tokens": 8107,
+  "total_output_tokens": 3471,
+  "estimated_cost_usd": 0.0764,
   "rows": [
     {
       "label": "iltb_tech_consumer_2019nov",
@@ -524,10 +524,9 @@
       "source": "CNBC Squawk on the Street",
       "filepath": "transcripts/whisper/2026-11-17_cnbc_squawk_nvidia_letter_2026nov.txt",
       "output": "analysis/thesis_extractions/2026-11-17_cnbc_squawk_nvidia_letter_2026nov.json",
-      "status": "ok",
-      "input_tokens": 6906,
-      "output_tokens": 3368,
-      "counts": "8 theses, 2 recommendations, 5 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "tomorrowx_opening_session_2026nov",
@@ -535,10 +534,9 @@
       "source": "TomorrowX Summit (iConnections)",
       "filepath": "transcripts/youtube/2026-11-17_tomorrowx_opening_session_2026nov_OmEfHDQ3B6c.txt",
       "output": "analysis/thesis_extractions/2026-11-17_tomorrowx_opening_session_2026nov.json",
-      "status": "ok",
-      "input_tokens": 8595,
-      "output_tokens": 2503,
-      "counts": "8 theses, 0 recommendations, 2 catalysts"
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
     },
     {
       "label": "sourcery_nvidia_jensen_tomorrowx_2026nov",
@@ -546,9 +544,19 @@
       "source": "Sourcery with Molly O'Shea",
       "filepath": "transcripts/youtube/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov_drpASO63CJc.txt",
       "output": "analysis/thesis_extractions/2026-11-19_sourcery_nvidia_jensen_tomorrowx_2026nov.json",
+      "status": "skipped_exists",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "label": "monetary_matters_jensen_semis_tomorrowx_2026nov",
+      "date": "2026-11-23",
+      "source": "Monetary Matters with Jack Farley",
+      "filepath": "transcripts/youtube/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov_2XhpxKX3d0M.txt",
+      "output": "analysis/thesis_extractions/2026-11-23_monetary_matters_jensen_semis_tomorrowx_2026nov.json",
       "status": "ok",
-      "input_tokens": 10214,
-      "output_tokens": 3380,
+      "input_tokens": 8107,
+      "output_tokens": 3471,
       "counts": "9 theses, 2 recommendations, 4 catalysts"
     }
   ]

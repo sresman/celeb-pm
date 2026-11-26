@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley — Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "thesis_id": "T7",
+  "summary": "Jensen Huang's departure as CEO is a structural negative for Nvidia and a structural positive for all of Nvidia's competitors",
+  "criteria": "B",
+  "tickers_direct_before": [
+    "NVDA",
+    "AMD",
+    "AVGO",
+    "MRVL"
+  ],
+  "tickers_audited": [
+    {
+      "ticker": "NVDA",
+      "action": "KEEP",
+      "reasoning": "NVDA is the direct subject of the thesis — Baker's entire argument is about the structural negative impact of Jensen Huang's departure on Nvidia specifically."
+    },
+    {
+      "ticker": "AMD",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name AMD as a beneficiary of Jensen's departure in this thesis. The connection is inferential — AMD is a GPU competitor — but Baker did not explicitly call out AMD as a direct beneficiary of this specific supply chain/leadership thesis."
+    },
+    {
+      "ticker": "AVGO",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Broadcom in connection with this thesis about Jensen's departure and supply chain relationships. The link is analyst inference, not a direct statement by Baker tying AVGO to this specific claim."
+    },
+    {
+      "ticker": "MRVL",
+      "action": "REMOVE",
+      "reasoning": "Baker did not specifically name Marvell in connection with this thesis. Like AVGO, the inclusion appears to be inferential bleed-over from a general custom silicon narrative rather than a direct statement by Baker connecting MRVL to Jensen's departure thesis."
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "metadata": {
+    "source": "Monetary Matters with Jack Farley",
+    "date": "2026-11-23",
+    "host": "Jack Farley",
+    "topic": "Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+    "duration_estimate_min": 15
+  },
+  "theses": [
+    {
+      "id": "T1",
+      "summary": "Jensen Huang's odds of returning as Nvidia CEO are dramatically higher than the 10% implied by prediction markets",
+      "detail": "Baker believes Jensen has not been charged with anything, that the innuendo around export ban violations is unfounded, and that he was pro-national security. Shareholder, employee, and partner consensus is unanimously in favor of Jensen's return. The stock's negative reaction to strong earnings after the board chair ruled out reinstatement is shareholders voting with their feet.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states odds are 'dramatically higher than 10%', cites unanimous shareholder/employee/partner support, and interprets stock price action as a vote for Jensen's return",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "corporate governance"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": true,
+      "quote_fragment": "odds that Jensen comes back as CEO are dramatically higher than 10%"
+    },
+    {
+      "id": "T2",
+      "summary": "The AI ROI calculation used by bears is materially incomplete because it ignores high-growth private AI companies and on-premise open-weight model deployments",
+      "detail": "Bears sum up Anthropic and OpenAI ARR (~$120B), add Grok/Gemini (~$30B), add incremental ad revenue, and conclude ROI on ~$1.5T capex is poor. But this misses: (1) many private companies growing at Anthropic-like rates while burning less cash, fueled by open-source models that drag additional compute/capex; (2) Michael Dell noted 6,500 enterprise customers deploying GPU racks on-premise running open-weight models \u2014 none of which appears in the public ARR calculation but all of which represents real customer ROI.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker frames this as the primary reason semis sold off and explicitly calls it 'very important' and 'missing'; cites specific Dell data point from the conference",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "DELL",
+        "AVGO"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "AI software & applications",
+        "on-premise AI compute"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "6,500 customers putting GPU racks in and running open weight models on premise"
+    },
+    {
+      "id": "T3",
+      "summary": "The AI infrastructure buildout will be more like the railroad era than any prior technology cycle \u2014 a multi-decade, GDP-scale investment",
+      "detail": "Baker draws the railroad analogy explicitly: railroads were a large chunk of American GDP for 60 years. He believes AI infrastructure capex could follow a similarly long-duration path, making the typical semiconductor cycle playbook (sell when second derivative peaks) less applicable here. He expects this to be a semiconductor cycle much longer than any in recent memory.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker states this directly and unprompted, calls it 'the most important analog', and uses it to explain why this time is different from prior semi cycles",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "AMD",
+        "AVGO",
+        "TSM"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "semiconductor supply chain",
+        "long-duration capex cycle"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": true,
+      "quote_fragment": "buildout for AI may end up being more like the railroads"
+    },
+    {
+      "id": "T4",
+      "summary": "Semiconductor stocks are at historically attractive valuations \u2014 not exhibiting the peak-multiple-on-peak-earnings pattern that signals cycle tops",
+      "detail": "Historically semis were tricky because they got peak multiples on peak earnings and trough multiples on trough earnings. Currently, multiples are not elevated despite strong earnings (Nvidia raised guidance). Baker notes a Japanese NAND memory producer trading at under 2x forward earnings as an extreme example of market skepticism. Sentiment is bearish with 'bearish triumphalism' even among bulls.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker calls valuations 'really really attractive right now' and provides the specific <2x forward multiple example; frames current setup as opposite of cycle-top conditions",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [
+        "Kioxia"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "valuation",
+        "memory"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": true,
+      "quote_fragment": "valuations are certainly really really attractive right now"
+    },
+    {
+      "id": "T5",
+      "summary": "GPU rental prices rising sharply are the key real-time signal that AI is becoming more economically useful and that compute demand is healthy",
+      "detail": "GPU rental prices are up dramatically over the last month, three months, and year. Baker frames this as the market signal that filters through from AI economic utility and positive token demand elasticity. Higher GPU rental prices also improve ROI math for hyperscalers, addressing financing constraint concerns. The two most important things to watch for AI fundamentals are: (1) whether intelligence is becoming more economically useful, and (2) whether token demand elasticity is positive.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker explicitly identifies GPU rental prices as 'where that filters through to the market' and calls token demand elasticity and economic utility 'the two most important things to watch'",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "AMD",
+        "CoreWeave",
+        "Lambda Labs"
+      ],
+      "themes": [
+        "AI datacenter infrastructure",
+        "GPU compute rental",
+        "AI demand signals"
+      ],
+      "time_horizon": "near_term",
+      "contrarian": false,
+      "quote_fragment": "GPU rental prices going straight up, up dramatically over the last month"
+    },
+    {
+      "id": "T6",
+      "summary": "Non-memory semiconductor companies taking dramatic market share at low multiples are the most interesting valuation opportunity in the AI ecosystem",
+      "detail": "Baker highlights a category of semi and AI ecosystem companies that are: not commodity businesses, growing at high rates, have significant IP and real barriers to entry, less sensitive to unit volumes because they are taking dramatic share, and currently trading at low multiples. He contrasts these explicitly with memory (which he excludes). He suggests these share-gainers could work over the next several years.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker calls this 'an interesting place to look' and frames it as what people are not paying attention to, but does not name specific tickers or give price targets",
+      "tickers_named": [],
+      "tickers_implied": [
+        "AVGO",
+        "MRVL",
+        "ALAB"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "AI datacenter infrastructure",
+        "share gainers"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "companies taking a lot of share at pretty low multiples"
+    },
+    {
+      "id": "T7",
+      "summary": "Jensen Huang's departure as CEO is a structural negative for Nvidia and a structural positive for all of Nvidia's competitors",
+      "detail": "Jensen had unparalleled supply chain relationships built over 30 years with Asian suppliers, which were an enormous competitive advantage for Nvidia. His absence as CEO is described as a 'godsend for all of Nvidia's competitors and a disaster for Nvidia shareholders.' The board's decision not to reinstate him weakens Nvidia's ability to push technology frontiers and maintain preferential supplier terms.",
+      "confidence": "high_conviction",
+      "confidence_evidence": "Baker uses strong language ('godsend for competitors', 'disaster for shareholders') and specifically cites supply chain relationships and technology leadership as the mechanisms",
+      "tickers_named": [
+        "NVDA"
+      ],
+      "tickers_implied": [
+        "AMD",
+        "AVGO",
+        "MRVL",
+        "GOOGL",
+        "MSFT",
+        "META",
+        "AMZN"
+      ],
+      "themes": [
+        "semiconductor supply chain",
+        "corporate governance",
+        "AI datacenter infrastructure"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Jensen leaving as CEO is a godsend for all of Nvidia's competitors"
+    },
+    {
+      "id": "T8",
+      "summary": "The primary AI bear case \u2014 no increasing returns to intelligence / diminishing returns to scale \u2014 is the most important unknowable risk",
+      "detail": "If models plateau such that there are not increasing returns to intelligence, and if smaller distilled models (e.g., Claude Haiku vs. Opus) can match frontier performance, the economic case for massive compute buildout weakens. Baker acknowledges this is the 'ultimate unknowable bear case.' He partially rebuts it by citing models solving Navier-Stokes and making new scientific discoveries as proof points of increasing returns.",
+      "confidence": "moderate",
+      "confidence_evidence": "Baker explicitly labels this the 'biggest bear case' and 'ultimate unknowable' \u2014 he takes it seriously but does not assign it high probability",
+      "tickers_named": [],
+      "tickers_implied": [
+        "NVDA",
+        "AMD",
+        "GOOGL",
+        "MSFT",
+        "META"
+      ],
+      "themes": [
+        "AI scaling laws",
+        "AI bear case",
+        "semiconductor supply chain"
+      ],
+      "time_horizon": "long_term",
+      "contrarian": false,
+      "quote_fragment": "if there are not increasing returns to intelligence, that would be a problem"
+    },
+    {
+      "id": "T9",
+      "summary": "Anthropic going public would be an important positive catalyst for the AI investment thesis",
+      "detail": "Baker states that Anthropic going public is going to be important for the AI trade, implying it would provide public market visibility into private AI company revenues and growth rates that are currently missing from the ROI calculation bears use.",
+      "confidence": "passing_mention",
+      "confidence_evidence": "Single sentence, no elaboration on mechanism or timeline",
+      "tickers_named": [],
+      "tickers_implied": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "themes": [
+        "AI software & applications",
+        "AI demand signals"
+      ],
+      "time_horizon": "medium_term",
+      "contrarian": false,
+      "quote_fragment": "Anthropic going public is going to be important for the AI trade"
+    }
+  ],
+  "explicit_recommendations": [
+    {
+      "direction": "buy",
+      "target": "Non-memory semiconductor and AI ecosystem share-gainers at low multiples",
+      "reasoning": "Companies with high IP, real barriers to entry, high growth rates, taking dramatic market share, and trading at low multiples represent the most dislocated valuation opportunity in the AI ecosystem",
+      "confidence": "moderate"
+    },
+    {
+      "direction": "hold",
+      "target": "NVDA",
+      "reasoning": "Strong fundamentals (raised guidance), but near-term overhang from Jensen's departure as CEO creates uncertainty; Baker is long-term bullish but acknowledges the governance situation is a headwind",
+      "confidence": "moderate"
+    }
+  ],
+  "sector_rankings": [
+    {
+      "preferred": "Non-memory AI semiconductor share-gainers",
+      "over": "Memory semiconductors",
+      "reasoning": "Baker explicitly excludes memory when identifying valuation opportunities, noting non-memory companies have IP, barriers to entry, and are less commodity-like"
+    },
+    {
+      "preferred": "AI infrastructure (long-duration capex cycle)",
+      "over": "Traditional semiconductor cyclicals",
+      "reasoning": "The railroad analogy implies AI capex is a multi-decade structural buildout, not a typical semi cycle where you sell when the second derivative peaks"
+    }
+  ],
+  "risk_warnings": [
+    {
+      "target": "Kioxia (Japanese NAND memory producer)",
+      "nature": "overvalued",
+      "detail": "Trading at less than 2x forward earnings \u2014 either the market is extremely cautious or sell-side estimates for next 12-24 months are dramatically too high; Baker does not take a clear view on which"
+    },
+    {
+      "target": "Nvidia (NVDA)",
+      "nature": "structural_risk",
+      "detail": "Jensen Huang's departure removes 30 years of supplier relationships and technology leadership; board's refusal to reinstate him is described as a disaster for shareholders and a godsend for competitors"
+    },
+    {
+      "target": "AI capex ROI narrative",
+      "nature": "structural_risk",
+      "detail": "Bears' ROI calculation is missing private company revenues and on-premise open-weight deployments; but if those are also insufficient to justify ~$1.5T capex, the bear case becomes more serious"
+    },
+    {
+      "target": "AI scaling / intelligence returns",
+      "nature": "structural_risk",
+      "detail": "If increasing returns to intelligence plateau and smaller distilled models match frontier performance, the economic justification for massive GPU buildout weakens materially"
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "Jensen Huang testifies before Congress and is exonerated of export ban violations",
+      "timing": "near_term",
+      "impact": "Would dramatically increase odds of Jensen's reinstatement as Nvidia CEO, likely positive for NVDA stock",
+      "beneficiaries": [
+        "NVDA"
+      ],
+      "losers": [
+        "AMD",
+        "AVGO",
+        "MRVL",
+        "custom ASIC vendors"
+      ]
+    },
+    {
+      "event": "Anthropic IPO",
+      "timing": "medium_term",
+      "impact": "Would make private AI company revenues visible in public markets, improving the AI ROI calculation and potentially re-rating AI infrastructure stocks",
+      "beneficiaries": [
+        "NVDA",
+        "AI infrastructure broadly"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Market gains confidence in 2027 and 2028 AI capex growth",
+      "timing": "medium_term",
+      "impact": "Would stabilize and potentially re-rate semiconductor stocks that have sold off on second-derivative concerns",
+      "beneficiaries": [
+        "NVDA",
+        "AMD",
+        "AVGO",
+        "MRVL",
+        "TSM"
+      ],
+      "losers": []
+    },
+    {
+      "event": "Continued rise in GPU rental prices",
+      "timing": "near_term",
+      "impact": "Signals positive token demand elasticity and improving AI ROI, validates the bull case for AI infrastructure capex",
+      "beneficiaries": [
+        "NVDA",
+        "GPU cloud providers",
+        "hyperscalers"
+      ],
+      "losers": []
+    }
+  ],
+  "meta_views": [
+    {
+      "topic": "AI ROI calculation methodology",
+      "view": "Consensus bear calculation is structurally flawed",
+      "detail": "Adding up public AI company ARR (Anthropic, OpenAI, Grok, Gemini) and comparing to hyperscale capex misses two large buckets: high-growth private AI companies running on open-source, and 6,500+ enterprise customers deploying on-premise GPU clusters \u2014 both of which represent real economic returns on compute spend"
+    },
+    {
+      "topic": "Semiconductor cycle framework",
+      "view": "Classic 'sell when second derivative peaks' rule does not apply to AI infrastructure",
+      "detail": "Historically, semi cycles mean once growth slows you get double-ordering and inventory corrections. But if AI capex is a 60-year railroad-style buildout, the second derivative peaking is not a sell signal \u2014 it is a normal feature of a long-duration structural cycle"
+    },
+    {
+      "topic": "Token demand elasticity",
+      "view": "Positive token demand elasticity is the single most important AI fundamental to monitor",
+      "detail": "As long as intelligence becomes more economically useful and demand for tokens grows with lower prices, the AI compute buildout is justified. GPU rental prices are the real-time market signal for this"
+    },
+    {
+      "topic": "Jensen Huang / Nvidia governance",
+      "view": "Passive shareholders will ultimately support Jensen's reinstatement if it is in shareholder interest",
+      "detail": "Baker notes large passive holders have voted for controversial pay packages before (e.g., Elon Musk) when they deemed it in shareholder interest; the stock's negative reaction to strong earnings post-board announcement is shareholders signaling their preference"
+    },
+    {
+      "topic": "Semiconductor valuation timing",
+      "view": "Buy when PEs are high and earnings are low; be cautious when PEs are low and earnings are high",
+      "detail": "The classic semi cycle adage is that peak multiples coincide with peak earnings (sell signal) and trough multiples with trough earnings (buy signal). Currently multiples are not elevated despite strong earnings, suggesting the market is not at a cycle top"
+    }
+  ]
+}

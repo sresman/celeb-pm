@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-23",
+  "source": "Monetary Matters with Jack Farley \u2014 Jensen Huang and Nvidia, why semis sold off, AI ROI math missing private companies and on-prem open-weight models, railroads analogy, valuations, AI bear case, GPU rental prices",
+  "thesis_id": "T7",
+  "summary": "Jensen Huang's departure as CEO is a structural negative for Nvidia and a structural positive for all of Nvidia's competitors",
+  "summary_extended": "Baker argues that Jensen Huang's departure as CEO of Nvidia represents a structural negative for the company and a structural positive for all of Nvidia's competitors. The core reasoning is that Jensen built irreplaceable, 30-year-deep supply chain relationships with Asian suppliers \u2014 relationships that gave Nvidia preferential terms, priority allocation, and a technology-pushing dynamic that no successor can replicate overnight. Baker uses unusually strong language, calling the departure a 'godsend for all of Nvidia's competitors and a disaster for Nvidia shareholders,' signaling high conviction that this is not a transient risk but a durable competitive disadvantage. The investment implication is to be cautious on NVDA while viewing GPU/AI chip competitors and hyperscaler custom silicon developers as structural beneficiaries, as the supply chain and technology leadership moat that kept rivals at bay begins to erode.",
+  "detail": "Jensen had unparalleled supply chain relationships built over 30 years with Asian suppliers, which were an enormous competitive advantage for Nvidia. His absence as CEO is described as a 'godsend for all of Nvidia's competitors and a disaster for Nvidia shareholders.' The board's decision not to reinstate him weakens Nvidia's ability to push technology frontiers and maintain preferential supplier terms.",
+  "confidence": "high_conviction",
+  "confidence_evidence": "Baker uses strong language ('godsend for competitors', 'disaster for shareholders') and specifically cites supply chain relationships and technology leadership as the mechanisms",
+  "themes": [
+    "semiconductor supply chain",
+    "corporate governance",
+    "AI datacenter infrastructure"
+  ],
+  "time_horizon": "medium_term",
+  "contrarian": false,
+  "quote_fragment": "Jensen leaving as CEO is a godsend for all of Nvidia's competitors",
+  "speaker_attribution": "indeterminate",
+  "speaker_name": "",
+  "attribution_evidence": "",
+  "attribution_cue_type": "not_recorded",
+  "tickers_named_original": [
+    "NVDA"
+  ],
+  "tickers_direct": [
+    "NVDA"
+  ],
+  "tickers_subject": [
+    "NVDA"
+  ],
+  "tickers_implied_original": [
+    "AMD",
+    "AVGO",
+    "MRVL",
+    "GOOGL",
+    "MSFT",
+    "META",
+    "AMZN"
+  ],
+  "ticker_audit": [
+    {
+      "ticker": "NVDA",
+      "classification": "DIRECT_SUBJECT",
+      "was_original": true,
+      "reasoning": "The thesis is specifically about Nvidia and the negative impact of Jensen Huang's departure as CEO on its competitive position."
+    },
+    {
+      "ticker": "AMD",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "AMD is Nvidia's most direct GPU competitor and would directly benefit from any erosion of Nvidia's supply chain advantages and technology leadership. [RE-AUDIT: Baker did not specifically name AMD as a beneficiary of Jensen's departure in this thesis. The connection is inferential \u2014 AMD is a GPU competitor \u2014 but Baker did not explicitly call out AMD as a direct beneficiary of this specific supply chain/leadership thesis.]"
+    },
+    {
+      "ticker": "AVGO",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Broadcom is a leading developer of custom AI silicon (XPUs) for hyperscalers and directly benefits if Nvidia's competitive moat weakens, as customers may accelerate custom chip adoption. [RE-AUDIT: Baker did not specifically name Broadcom in connection with this thesis about Jensen's departure and supply chain relationships. The link is analyst inference, not a direct statement by Baker tying AVGO to this specific claim.]"
+    },
+    {
+      "ticker": "MRVL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Marvell is another custom silicon provider for hyperscalers competing in the AI infrastructure space and would benefit from a weakened Nvidia. [RE-AUDIT: Baker did not specifically name Marvell in connection with this thesis. Like AVGO, the inclusion appears to be inferential bleed-over from a general custom silicon narrative rather than a direct statement by Baker connecting MRVL to Jensen's departure thesis.]"
+    },
+    {
+      "ticker": "GOOGL",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "While Google develops TPUs that compete with Nvidia, the thesis is specifically about Jensen's departure and supply chain relationships \u2014 Google is not a direct subject or primary beneficiary of this specific structural claim."
+    },
+    {
+      "ticker": "MSFT",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Microsoft is a major Nvidia customer but is not a competitor or direct beneficiary of Nvidia's supply chain weakening; its inclusion appears to be bleed-over from adjacent AI infrastructure theses."
+    },
+    {
+      "ticker": "META",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Meta is a large Nvidia customer developing custom silicon but is not a primary beneficiary of this specific thesis about Jensen's departure and supply chain moat erosion."
+    },
+    {
+      "ticker": "AMZN",
+      "classification": "TANGENTIAL",
+      "was_original": true,
+      "reasoning": "Amazon/AWS develops Trainium and Inferentia chips but the thesis is narrowly about Jensen's departure as a supply chain and leadership event, not a broad hyperscaler custom silicon thesis."
+    }
+  ],
+  "appearance_label": "monetary_matters_jensen_semis_tomorrowx_2026nov"
+}
