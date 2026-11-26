@@ -17,6 +17,24 @@ Branch: **`main`**. `trigger-denominator-ex-spcx` fast-forwarded into it on
 
 ---
 
+## Current State (as of 2026-11-25) — MONETARY MATTERS ADDED; v12 REBUILT IN PLACE
+
+Branch `transcripts-nov-2026` (pushed, NOT merged): `b95317c` appearance ·
+`babbe26` curation + v12 rebuild. Corpus **55 appearances, 682 theses** (536 subject).
+
+- **Added:** Monetary Matters with Jack Farley `2XhpxKX3d0M`, published 2026-11-23
+  (recorded 11-18 at TomorrowX), 9 theses. Two-of-two: 8 subject, 1 other.
+- **T7 likely a false `other`** (captions drop the `>>` before Baker's answer at
+  [10:37]); left as attributed (operator). No row impact: it would join Nvidia GPU
+  moat on T1's date.
+- **Curation:** keys added to Nvidia GPU moat (T1), AI bubble not happening (T3–T5),
+  Anthropic valuation (T9). T6 (non-memory share gainers, auditor-inferred
+  AVGO/MRVL/ALAB) and T8 (bear case) unthemed (operator).
+- **v12 rebuilt in place:** 238 mention rows / 181 repeat / **80 meet criteria
+  (unchanged)**. No signal rows since 2026-11-19; the 4 new 2026-11-23 rows are
+  repeat mentions without criteria (m6 SMH, m10 NO_BASKET, m7 NO_BASKET, m12 NVDA).
+  Prices through 2026-11-25. Log: `analysis/transcripts_nov2026_implementation_notes.md`.
+
 ## Current State (as of 2026-11-20, late) — v12 BUILT (Nov curation applied)
 
 **Deliverable: `analysis/step4_signal_events_v12_with_returns_extended.{csv,xlsx}`**
@@ -446,9 +464,14 @@ prompt + schema live in `tools/transcripts/extraction_prompt.py`.
 
 ## Immediate Next Steps
 
+**From 2026-11-25 — Monetary Matters added, v12 rebuilt in place.**
+
+1. **Operator: review/merge `transcripts-nov-2026`** (v12 deliverable on it, now
+   including Monetary Matters 2026-11-23).
+
 **From 2026-11-20 (late) — v12 built; Nov curation done.**
 
-1. **Operator: review/merge `transcripts-nov-2026`** (v12 deliverable on it).
+1. (superseded by the line above)
 2. **v11 curation backlog still open:** 11 of 14 TBPN Oct and 7 of 9 All-In
    2025-08-09 subject theses match no theme (GPU-compute contango, in-the-money
    compute contracts, Anthropic S-1, DGX Pod, Apple AI strategy).

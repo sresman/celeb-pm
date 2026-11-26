@@ -516,3 +516,19 @@ passes.
   (v10→v11→v12 precedent).
 - Broad AI bullish is NO_BASKET for every mention (theme-level override, 2026-07-16).
   Assigning theses there adds mention rows but never a tradeable signal.
+
+## 2026-11-25 — Monetary Matters (Nov round 2)
+
+- **Publication date anchors a conference-recorded podcast** (Sourcery precedent):
+  Monetary Matters recorded 2026-11-18 at TomorrowX, dated 2026-11-23.
+- **A podcast episode and its YouTube upload are one appearance**; length match
+  (929s vs 941s) confirms the YouTube video is the full episode, not a clip.
+- **No hand correction of speaker attribution** (operator). A missing caption
+  `>>` marker made Monetary Matters T7 read as the host's turn; it stays `other`.
+  The method is not patched per case.
+- **Auditor-inferred tickers do not justify a new theme** (operator): T6 named no
+  companies; AVGO/MRVL/ALAB came from the audit's inference, so it stays unthemed
+  rather than seeding a basket.
+- **Bear-case / risk statements with no trade stay unthemed** (T8).
+- **Same-round rebuilds keep the version number** ("rebuild v12 in place").
+
